@@ -26,9 +26,9 @@
 
 PRGNAM=LibreOffice
 SRCNAM=libreoffice
-VERSION=${VERSION:-5.3.1.2}
+VERSION=${VERSION:-5.3.3.2}
 SHORT_VERSION=${VERSION%.*.*}
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_SBo}
 PACKAGER=${PACKAGER:-"AnonymousCoward"}
 
@@ -87,6 +87,15 @@ avahi=""             ; [ "${AVAHI:-no}" != "no" ]      && avahi="--enable-avahi"
 vlc=""               ; [ "${VLC:-no}" != "no" ]        && vlc="--enable-vlc"
 kde4="--enable-kde4" ; [ "${KDE4:-yes}" != "yes" ]     && kde4="--disable-kde4"
 LOLANGS=${LOLANGS:-"de es fr id it ja nl vi zh-CN"}
+use_ccache="--disable-ccache" ; [ "${USE_CCACHE:-no}" != "no" ] && use_ccache=""
+
+# By default, LibreOffice ignores MAKEFLAGS -j option and uses all available cpu cores.
+parallel=""
+# If MAKEFLAGS contains -j option, we extract its value to override the default.
+jval="$(echo $MAKEFLAGS |grep -o "\-j *[0-9]*" | grep -o "[0-9]*")" || true
+[ -n "$jval" ] && parallel="--with-parallelism=$jval"
+# If PARALLEL environment variable is set, use that to override everything.
+[ "${PARALLEL:-0}" != "0" ] && parallel="--with-parallelism=$PARALLEL"
 
 JAVA=${JAVA:-openjdk}
 if [ "$JAVA" = "openjdk" ]; then
@@ -102,7 +111,6 @@ elif [ "$JAVA" = "no" ]; then
   use_java="--with-java=no"
 fi
 
-#    --with-system-harfbuzz \
 ./configure \
     CFLAGS="$SLKCFLAGS" \
     CXXFLAGS="$SLKCFLAGS" \
@@ -123,7 +131,9 @@ fi
     $avahi \
     $vlc \
     $kde4 \
+    $use_ccache \
     $use_java \
+    $parallel \
     --with-x \
     --with-tls="nss" \
     --without-krb5 \
@@ -203,7 +213,7 @@ EOF
 cat <<EOF >$PKG/etc/profile.d/libreoffice.csh
 setenv UNO_PATH $sd_prog
 setenv URE_BOOTSTRAP vnd.sun.star.pathname:$sd_prog/fundamentalrc
-setenv PATH \$PATH:$sd_prog
+setenv PATH \${PATH}:$sd_prog
 EOF
 chmod 0755 $PKG/etc/profile.d/libreoffice.{csh,sh}
 

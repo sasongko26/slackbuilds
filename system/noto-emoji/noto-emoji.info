@@ -1,10 +1,10 @@
 PRGNAM="noto-emoji"
-VERSION="git732cb45"
+VERSION="git8056f38"
 HOMEPAGE="https://www.google.com/get/noto/help/emoji/"
-DOWNLOAD="https://github.com/googlei18n/noto-emoji/archive/732cb454ac854efe6ce00630fee9ae5499062056/noto-emoji-732cb454ac854efe6ce00630fee9ae5499062056.tar.gz \
-          https://github.com/googlei18n/nototools/archive/4bcd7d5bc55963c30cceaadf637836446662fec3/nototools-4bcd7d5bc55963c30cceaadf637836446662fec3.tar.gz"
-MD5SUM="760193841db3b502fbb3462384eca64b \
-        40d0a5ac9d5ad1aeb9e9be43017828f3"
+DOWNLOAD="https://github.com/googlei18n/noto-emoji/archive/8056f381ac3c117ab3694cb111bc723431e71b2d/noto-emoji-8056f381ac3c117ab3694cb111bc723431e71b2d.tar.gz \
+          https://github.com/googlei18n/nototools/archive/21eb580489fc5864e7091fc6f0bd4781008fc91e/nototools-21eb580489fc5864e7091fc6f0bd4781008fc91e.tar.gz"
+MD5SUM="65ba8fd89a8a55c95b135877b3e2377f \
+        5a65e300e0a52fc929e207da14408e42"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="optipng python-fonttools"

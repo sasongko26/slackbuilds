@@ -29,6 +29,7 @@ GITHASH=${GITHASH:-c6d412e}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
+SRCNAM=moby
 SRCVER=$VERSION-ce
 
 if [ -z "$ARCH" ]; then
@@ -49,9 +50,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$SRCVER
-tar xvf $CWD/$PRGNAM-$SRCVER.tar.gz
-cd $PRGNAM-$SRCVER
+rm -rf $SRCNAM-$SRCVER
+tar xvf $CWD/$SRCNAM-$SRCVER.tar.gz
+cd $SRCNAM-$SRCVER
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -82,7 +83,7 @@ install -D -m 0644 contrib/completion/fish/docker.fish $PKG/usr/share/fish/vendo
 
 install -D -m 0644 $CWD/config/docker.default $PKG/etc/default/docker.new
 install -D -m 0644 $CWD/config/docker.logrotate $PKG/etc/logrotate.d/docker.new
-install -D -m 0755 $CWD/config/rc.docker $PKG/etc/rc.d/rc.docker.new
+install -D -m 0644 $CWD/config/rc.docker $PKG/etc/rc.d/rc.docker.new
 
 # Install udev rules.
 install -D -m 0644 contrib/udev/80-docker.rules $PKG/lib/udev/rules.d/80-docker.rules

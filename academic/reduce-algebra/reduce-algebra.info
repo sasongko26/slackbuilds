@@ -1,10 +1,10 @@
 PRGNAM="reduce-algebra"
-VERSION="20170304svn3932"
+VERSION="20170516svn4052"
 HOMEPAGE="http://reduce-algebra.sourceforge.net"
-DOWNLOAD="http://downloads.sourceforge.net/reduce-algebra/snapshot_2017-03-04/Reduce-svn3932-src.tar.gz \
-          http://downloads.sourceforge.net/reduce-algebra/snapshot_2017-03-04/reduce-common_2017-03-04_all.tgz"
-MD5SUM="a2eac8d1e6bf0e93b72886661422468c \
-        c515a8c36b89614648d5460dc519e21d"
+DOWNLOAD="http://downloads.sourceforge.net/reduce-algebra/snapshot_2017-05-16/Reduce-svn4052-src.tar.gz \
+          http://downloads.sourceforge.net/reduce-algebra/snapshot_2017-05-16/reduce-common_2017-05-16_all.tgz"
+MD5SUM="86cc787879a7c248364fae0ce28a2ddc \
+        9b211656fe9a4b27ad706ce93cd7ecb3"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -1,6 +1,8 @@
 #!/bin/sh
 # Slackware build script for freeciv
 
+# Yth | Pont-en-Royans, France | yth@ythogtha.org
+
 # Ryan P.C. McQuen | Everett, WA | ryanpcmcquen@member.fsf.org
 
 # Original version written by Iskar Enev <iskar.enev[@]gmail.com>
@@ -26,7 +28,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=freeciv
-VERSION=${VERSION:-2.5.6}
+VERSION=${VERSION:-2.5.7}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

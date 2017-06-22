@@ -33,9 +33,7 @@
 # 2014-10-23 - changed to build rbsec's fork from github
 
 PRGNAM=sslscan
-VERSION=${VERSION:-1.11.8_rbsec}
-SRCVERS=$(echo "$VERSION" | tr _ -)
-BASEVERS=$(echo "$VERSION" | sed 's/_.*$//' )
+VERSION=${VERSION:-1.11.10}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -71,20 +69,19 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$SRCVERS
-tar xvf $CWD/$PRGNAM-$SRCVERS.tar.gz
-cd $PRGNAM-$SRCVERS
+rm -rf $PRGNAM-$VERSION-rbsec
+tar xvf $CWD/$PRGNAM-$VERSION-rbsec.tar.gz
+cd $PRGNAM-$VERSION-rbsec
 
-patch -p1 < $CWD/Makefile.diff
-
-sed -i "s/^GIT_VERSION = .*$/GIT_VERSION = $BASEVERS/" Makefile
+sed -i 's/^\(\.openssl.is.fresh:\).*$/\1/' Makefile
+sed -i "s/^GIT_VERSION = .*$/GIT_VERSION = $VERSION/" Makefile
 
 STATIC=${STATIC:-yes}
 
 if [ "$STATIC" = "yes" ] ; then
-  OPENSSLVERSION=${OPENSSLVERSION:-1.0.2k}
-  tar xf $CWD/openssl-OpenSSL_"$(echo "$OPENSSLVERSION" | tr '.' '_')".tar.gz
-  mv openssl-OpenSSL_"$(echo "$OPENSSLVERSION" | tr '.' '_')" openssl
+  OPENSSLVERSION=${OPENSSLVERSION:-83abb7af5cee7dd1c9ab500a10a776c586a18f1b}
+  tar xf "$CWD/openssl-$OPENSSLVERSION.tar.gz"
+  mv "openssl-$OPENSSLVERSION" openssl
 fi
 
 chown -R root:root .
@@ -102,9 +99,9 @@ sed -i "s|^\(PREFIX\).*$|\1 = $PKG/usr|" Makefile
 sed -i "s|^\(MANDIR\).*$|\1 = $PKG/usr/man|" Makefile
 
 if [ "$STATIC" = "yes" ] ; then
-  make static
+  make -j1 static
 else
-  make
+  make -j1
 fi
 
 make install

@@ -297,18 +297,24 @@ Number of retries (default is 10), or "infinite".
 .RE
 .TP
 .B \-\-fragment\-retries \f[I]RETRIES\f[]
-Number of retries for a fragment (default is 10), or "infinite" (DASH
-and hlsnative only)
+Number of retries for a fragment (default is 10), or "infinite" (DASH,
+hlsnative and ISM)
 .RS
 .RE
 .TP
 .B \-\-skip\-unavailable\-fragments
-Skip unavailable fragments (DASH and hlsnative only)
+Skip unavailable fragments (DASH, hlsnative and ISM)
 .RS
 .RE
 .TP
 .B \-\-abort\-on\-unavailable\-fragment
 Abort downloading when some fragment is not available
+.RS
+.RE
+.TP
+.B \-\-keep\-fragments
+Keep downloaded fragments on disk after downloading is finished;
+fragments are erased by default
 .RS
 .RE
 .TP
@@ -841,12 +847,14 @@ Write metadata to the video file
 .TP
 .B \-\-metadata\-from\-title \f[I]FORMAT\f[]
 Parse additional metadata like song title / artist from the video title.
-The format syntax is the same as \-\-output, the parsed parameters
-replace existing values.
-Additional templates: %(album)s, %(artist)s.
-Example: \-\-metadata\-from\-title "%(artist)s \- %(title)s" matches a
-title like "Coldplay \- Paradise"
+The format syntax is the same as \-\-output.
+Regular expression with named capture groups may also be used.
+The parsed parameters replace existing values.
+Example: \-\-metadata\-from\- title "%(artist)s \- %(title)s" matches a
+title like "Coldplay \- Paradise".
+Example (regex): \-\-metadata\-from\-title "(?P.+?) \- (?P
 .RS
+\&.+)"
 .RE
 .TP
 .B \-\-xattrs
@@ -981,6 +989,13 @@ file (#configuration).
 .PP
 On Windows you may also need to setup the \f[C]%HOME%\f[] environment
 variable manually.
+For example:
+.IP
+.nf
+\f[C]
+set\ HOME=%USERPROFILE%
+\f[]
+.fi
 .SH OUTPUT TEMPLATE
 .PP
 The \f[C]\-o\f[] option allows users to indicate a template for the
@@ -1295,9 +1310,9 @@ in use \- \f[C]vcodec\f[]: Name of the video codec in use \-
 \f[C]container\f[]: Name of the container format \- \f[C]protocol\f[]:
 The protocol that will be used for the actual download, lower\-case
 (\f[C]http\f[], \f[C]https\f[], \f[C]rtsp\f[], \f[C]rtmp\f[],
-\f[C]rtmpe\f[], \f[C]mms\f[], \f[C]f4m\f[], \f[C]ism\f[], \f[C]m3u8\f[],
-or \f[C]m3u8_native\f[]) \- \f[C]format_id\f[]: A short description of
-the format
+\f[C]rtmpe\f[], \f[C]mms\f[], \f[C]f4m\f[], \f[C]ism\f[],
+\f[C]http_dash_segments\f[], \f[C]m3u8\f[], or \f[C]m3u8_native\f[]) \-
+\f[C]format_id\f[]: A short description of the format
 .PP
 Note that none of the aforementioned meta fields are guaranteed to be
 present since this solely depends on the metadata obtained by particular

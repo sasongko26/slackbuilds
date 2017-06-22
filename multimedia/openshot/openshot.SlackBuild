@@ -3,7 +3,7 @@
 # Copyright 2009, Jonathan Larsen (agentc0re), SLC, UT
 # Contact Info: agentc0re 'AT' learnix 'DOT' net
 #
-# Copyright 2016-2017 Christoph Willing Brisbane, Australia
+# Copyright 2016-2017 Christoph Willing, Brisbane Australia
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -41,12 +41,12 @@
 # Oct 2nd, 2012
 #	Version upgrade to 1.4.3 - Matteo Bernardini <ponce@slackbuilds.org>
 #
-# Oct 22nd, 2016
-#	Version upgrade to 2.1.0 - Christoph Willing <chris.willing@linux.com>
+# From Oct 22nd, 2016
+#	Maintenance & various version upgrades - Christoph Willing <chris.willing@linux.com>
 
 PRGNAM=openshot
 SRCNAM=openshot-qt
-VERSION=${VERSION:-2.2.0}
+VERSION=${VERSION:-2.3.4}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

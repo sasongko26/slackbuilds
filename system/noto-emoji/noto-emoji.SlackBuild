@@ -23,8 +23,8 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=noto-emoji
-GITREV=${GITREV:-732cb454ac854efe6ce00630fee9ae5499062056}
-NOTOTOOLSGITREV=${NOTOTOOLSGITREV:-4bcd7d5bc55963c30cceaadf637836446662fec3}
+GITREV=${GITREV:-8056f381ac3c117ab3694cb111bc723431e71b2d}
+NOTOTOOLSGITREV=${NOTOTOOLSGITREV:-21eb580489fc5864e7091fc6f0bd4781008fc91e}
 VERSION=${VERSION:-git$(echo "$GITREV" | sed 's/^\(.\{7\}\).*$/\1/')}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
@@ -78,7 +78,7 @@ export PYTHONPATH=$(pwd)
 cd ..
 
 # Slackware's Python is a narrow-build - workaround
-for sha in d34c13fb99f07d09c0c98192e7998186a622e28c 1e8488167c26ac1e780e374961d08f1fb1d1e880 ; do
+for sha in c8259f2cb0fe0579e1391811edaf8ed5bb86e220 293da509043595a052efbead51a9effbbb13794c ; do
   patch -p1 < $CWD/patches/$sha.patch
 done
 
@@ -87,8 +87,8 @@ CXXFLAGS="$SLKCFLAGS" \
 make VERBOSE=true
 
 install -d $PKG/usr/share/fonts/TTF/
-install -m644 *Emoji.ttf $PKG/usr/share/fonts/TTF/
 install -m644 fonts/*.ttf $PKG/usr/share/fonts/TTF/
+install -m644 *Emoji.ttf $PKG/usr/share/fonts/TTF/
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \

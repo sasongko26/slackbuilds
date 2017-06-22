@@ -2,7 +2,7 @@
 
 # Slackware build script for kea
 
-# Copyright 2016 Thibaut Notteboom, Paris, FRANCE
+# Copyright 2016-2017 Thibaut Notteboom, Paris, FRANCE
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,8 +23,8 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=kea
-VERSION=${VERSION:-1.1.0}
-BUILD=${BUILD:-1}
+VERSION=${VERSION:-1.2.0}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
@@ -55,6 +55,7 @@ else
 fi
 
 if [ -x /usr/bin/pg_config ]; then PGSQL=""; else PGSQL="out"; fi
+if [ -x /usr/bin/botan ]; then OPENSSL="out"; else OPENSSL=""; fi
 
 set -e
 
@@ -71,6 +72,7 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+CPPFLAGS="-std=gnu++11" \
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
@@ -80,11 +82,12 @@ CXXFLAGS="$SLKCFLAGS" \
   --localstatedir=/var \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --disable-static \
   --with-log4cplus \
-  --with-openssl \
   --with-dhcp-mysql \
+  --with${OPENSSL}-openssl \
   --with${PGSQL}-dhcp-pgsql \
+  --enable-shell \
+  --disable-static \
   --build=$ARCH-slackware-linux
 
 make

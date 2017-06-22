@@ -9,6 +9,18 @@
 
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
+# 20170607 bkw:
+# - Updated for v0.186.
+# - Link with ld.gold instead of the default ld, which saves *2 hours* of
+#   build time on my test box (build is 3x as fast as it was).
+
+# 20170428 bkw:
+# - Updated for v0.185.
+
+# 20170404 bkw:
+# - mame.ini: get rid of $HOME in bgfx_path. Thanks to Doogster for
+# reporting this.
+
 # 20170330 bkw:
 # - Updated for v0.184.
 
@@ -67,8 +79,8 @@
 # - Update .ini file slightly (sound=sdl, not sound=1)
 
 PRGNAM=mame
-VERSION=${VERSION:-0.184}
-BUILD=${BUILD:-2}
+VERSION=${VERSION:-0.186}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
@@ -196,7 +208,8 @@ if [ -e "$GROOVYDIFF" ]; then
 fi
 
 
-# Having ARCH set in the env will break the build, hence ARCH=""
+# Having ARCH set in the env will break the build, hence ARCH="".
+# Using ld.gold is *much* faster, and I see no disadvantage to it.
 
 make USE_QTDEBUG=$QTOPT \
      USE_SYSTEM_LIB_EXPAT=1 \
@@ -204,6 +217,7 @@ make USE_QTDEBUG=$QTOPT \
      USE_SYSTEM_LIB_JPEG=1 \
      USE_SYSTEM_LIB_FLAC=1 \
      OPT_FLAGS="$SLKCFLAGS" \
+	  LDOPTS="-fuse-ld=gold" \
      OVERRIDE_CC="$( which gcc )" \
      OVERRIDE_CXX="$( which g++ )" \
      ARCH="" \
