@@ -23,7 +23,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=opera
-VERSION=${VERSION:-45.0.2552.898}
+VERSION=${VERSION:-46.0.2597.32}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -48,17 +48,21 @@ if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"
   LIBDIRSUFFIX=""
   BITS="i386"
+  echo "This package is currently only available for 64bit."
+  exit 1
 elif [ "$ARCH" = "i686" ]; then
   SLKCFLAGS="-O2 -march=i686 -mtune=i686"
   LIBDIRSUFFIX=""
   BITS="i386"
+  echo "This package is currently only available for 64bit."
+  exit 1
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
   LIBDIRSUFFIX="64"
   BITS="amd64"
 else
-  SLKCFLAGS="-O2"
-  LIBDIRSUFFIX=""
+  echo "Package for $(uname -m) architecture is not available."
+  exit 1
 fi
 
 rm -rf $PKG
@@ -66,7 +70,7 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-${VERSION}-${BITS}
 mkdir -p $PRGNAM-${VERSION}
-ar p $CWD/${SRCNAM}_${VERSION}_${BITS}.deb data.tar.xz | xz -dv | tar -xf- \
+ar p $CWD/${SRCNAM}_${VERSION}_${BITS}.deb data.tar.xz | xz -d | tar -xvf- \
    --transform="s,/lib/.*-linux-gnu,/lib$LIBDIRSUFFIX," \
    --exclude="./usr/share/lintian" --exclude="./usr/share/menu" -C $PRGNAM-${VERSION}
 cd $PRGNAM-${VERSION}

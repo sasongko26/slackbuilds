@@ -1,3 +1,404 @@
+Sat Jul  8 00:12:48 UTC 2017
+academic/amd: BUILD bump for SuiteSparse 4.5.5.
+academic/btf: BUILD bump for SuiteSparse 4.5.5.
+academic/camd: BUILD bump for SuiteSparse 4.5.5.
+academic/ccolamd: BUILD bump for SuiteSparse 4.5.5.
+academic/cholmod: BUILD bump for SuiteSparse 4.5.5.
+academic/colamd: BUILD bump for SuiteSparse 4.5.5.
+academic/csparse: BUILD bump for SuiteSparse 4.5.5.
+academic/cxsparse: BUILD bump for SuiteSparse 4.5.5.
+academic/klu: BUILD bump for SuiteSparse 4.5.5.
+academic/ldl: BUILD bump for SuiteSparse 4.5.5.
+academic/rbio: BUILD bump for SuiteSparse 4.5.5.
+academic/siril: Added (Astronomical Image Processing Tool).
+academic/spqr: Updated for version 2.0.8.
+academic/suitesparseconfig: Updated for version 4.5.5.
+academic/umfpack: BUILD bump for SuiteSparse 4.5.5.
+audio/calf-ladspa: Remove extra deps, prepare for gcc7.
+audio/deezer-desktop-for-linux: Added (Deezer Desktop for Linux).
+desktop/lumina: Updated for version 1.3.0_p1.
+desktop/xed: Updated for version 1.4.5.
+development/Catch: Updated for version 1.9.6
+development/Sphinx: Updated for version 1.6.3.
+development/apache-ant: Updated for version 1.9.9.
+development/cc65: Updated for version 2.16_20170630.
+development/gnuradio: Support cppunit 1.14.0.
+development/google-go-lang: Updated for version 1.8.3.
+development/jupyter-nbconvert: Remove redundant dependency.
+development/kicad: Updated for version 4.0.6.
+development/monodevelop: Updated for version 6.3.0.864
+development/newtonsoft-json: Removed (No longer build with mono 5).
+development/ola: Updated for version git_98ee4066.
+development/perf: Updated for version 4.4.75.
+development/pycharm: Updated for version 2017.1.4.
+development/sbcl: Updated for version 1.3.19.
+development/universal-ctags: Updated for version b5c9b76
+development/vala: Updated for version 0.34.9.
+development/vscode: Updated for version 1.13.1
+games/Scorched3D: Fix build on -current.
+games/bloodcm: Fix MD5SUM.
+games/doomretro: Updated for version 2.5.1.
+games/fortune-dune: Switch to github URL.
+games/glestae: Support cppunit 1.14.0.
+games/icebreaker: Updated for version 1.9.7.
+games/mame: Updated for version 0.187.
+games/pangzero: Fix DOWNLOAD.
+games/tome4: Removed (renamed to tome).
+games/tome: Added (RPG game).
+games/torcs: Fix build on -current.
+games/ufoai: Fix build on -current.
+gis/josm: Updated for version 12450.
+gis/postgis: Updated for version 2.3.3.
+graphics/OpenCASCADE: Forward compatibility fix for VTK.
+graphics/Pixie: Fix build on current.
+graphics/exact-image: Fix build on -current.
+graphics/fbida: Updated for version 2.13.
+graphics/gifsicle: Switch to github URL.
+graphics/gimagereader: Updated for version 3.2.3.
+graphics/hugin: Updated for version 2017.0.0.
+graphics/mftrace: Updated for version 1.2.19.
+graphics/opencollada: Updated for version 1.6.56
+libraries/GitPython: Updated for version 2.1.5.
+libraries/VTK: Updated for version 8.0.0
+libraries/audioread: Updated for version 2.1.5.
+libraries/cal3d: Fix build on -current.
+libraries/cfitsio: Updated for version 3.41.
+libraries/collada-dom: Fix build on -current.
+libraries/folly: Updated for version 2017.07.03.00
+libraries/ftgl: Support cppunit 1.14.0.
+libraries/gf2x: Updated for version 1.2.
+libraries/gitdb2: Updated for version 2.0.2.
+libraries/gtkglarea: Updated for version 2.1.0.
+libraries/hdf: Updated for version 4.2.13.
+libraries/libfastjson: Updated for version 0.99.6.
+libraries/libinput: Updated for version 1.8.0.
+libraries/libmpd: Update DOWNLOAD url.
+libraries/libmusicbrainz3: Support cppunit 1.14.0.
+libraries/libosinfo: Remove unrecognized parameter.
+libraries/librelp: Updated for version 1.2.14.
+libraries/libuv: Updated for version 1.13.0.
+libraries/oath-toolkit: Fix build on -current.
+libraries/podofo: Support cppunit 1.14.0.
+libraries/proxygen: Updated for version 2017.07.03.00
+libraries/rocksdb: Updated for version 5.5.1
+libraries/smmap2: Updated for version 2.0.3.
+libraries/wangle: Updated for version 2017.07.03.00
+libraries/wxGTK: Fix build on -current.
+misc/Colormake: Update script
+multimedia/opera-developer-ffmpeg-codecs: Updated for version 60.0.
+network/amsn: Removed (No longer working).
+network/bitcoin: Updated for version 0.14.2.
+network/ccnet: Fix tarball handling.
+network/google-cli: Updated for version 3.2.
+network/openresolv: Updated for version 3.9.0.
+network/opera-developer: Updated for version 48.0.2636.0.
+network/opera: Updated for version 46.0.2597.32.
+network/pydio-sync: Fix build on x86_64.
+network/telegram: Updated for version 1.1.9.
+network/tor-browser: Updated for version 7.0.2.
+network/unbound: Updated for version 1.6.4
+network/vivaldi: Updated for version 1.10.867.46.
+network/xdman: Updated for version 2016.6.2.
+network/youtube-dl: Fixed tarball handling.
+office/keepassxc: Change XC_HTTP default to ON.
+office/texlive-extra: Fix ARCH.
+perl/perl-CPAN-Perl-Releases: Updated for version 3.26.
+perl/perl-Mojolicious: Updated for version 7.35.
+python/Flask-Cors: Updated for version 3.0.3.
+python/invoke: Updated for version 0.19.0.
+python/ipython: Upgraded for version 5.4.1.
+python/mistune: Updated for version 0.7.4.
+python/ptyprocess: Updated for version 0.5.2.
+python/python-webencodings: Added (Character encoding for the web).
+python/regex: Updated for version 2017.06.23.
+python/sge-pygame: Updated for version 1.5.
+ruby/ruby-native-package-installer: Added (ruby module)
+system/arc: Switch to github URL.
+system/docker-machine: Updated for version 0.12.1.
+system/letsencrypt: Updated for version 0.16.0.
+system/man-pages-ja: Updated for version 20170615.
+system/nvidia-driver: Updated for version 375.66.
+system/nvidia-kernel: Updated for version 375.66.
+system/qterminal: Avoid pulling translation from git.
+system/rkhunter: Updated for version 1.4.4
+system/symbola-font-ttf: Updated for version 9.17.
+system/tpc: Moved to github.
+system/ttf-aller: Updated for version 1.0.
+system/usermin: Updated for version 1.720.
+system/zuluCrypt: Updated for version 5.2.0.
++--------------------------+
+Sat Jul  1 00:44:07 UTC 2017
+academic/cblas: Updated for version 3.7.1.
+academic/ds9: Added (Astronomical tool).
+academic/edsim51di: Updated for version 2.1.20.
+academic/ess: Fix DOWNLOAD.
+academic/lapacke: Updated for version 3.7.1.
+academic/qhull: Updated for version 2015.2.
+audio/calf: Updated for version 20170622.0873978.
+audio/caps: Fix build for -current.
+audio/drumkv1: Updated for version 0.8.3.
+audio/fIcy: Updated for version 1.0.20.
+audio/mp4tools: Update DEP.
+audio/nero-aac: Update DOWNLOAD.
+audio/opus: Updated for version 1.2.1.
+audio/samplv1: Updated for version 0.8.3.
+audio/synthv1: Updated for version 0.8.3.
+desktop/arc-theme: Updated for version 20170302.
+desktop/awoken-icon-theme: Updated for version 2.5.1.
+desktop/compton-conf: Added category patch.
+desktop/elementary-xfce: Updated for version 0.8.
+desktop/faba-icon-theme: Update script.
+desktop/moka-icon-theme: Updated for version 5.3.6.
+desktop/redshift: allow compilation against geoclue2.
+desktop/velox: Update HOMEPAGE and DOWNLOAD source.
+desktop/xed: Updated for version 1.4.4.
+development/android-studio: Updated for version 2.3.3.0_162_4069837.
+development/bfg: Updated for version 1.12.15.
+development/colordiff: Updated for version 1.0.18.
+development/cppunit: Updated for version 1.14.0.
+development/git-lfs: Updated for version 2.2.0.
+development/google-webdesigner: Updated for version 1.9.0.0619.
+development/ioncube-loader: Updated for version 6.1.0.
+development/kotlin: Updated for version 1.1.3.
+development/ltrace: Updated for version 0.7.3_6.
+development/perf: Updated for version 4.4.74.
+development/spice-protocol: Changed homepage and download link.
+development/textadept: Updated for version 9.4.
+development/universal-ctags: Updated for version cb4476e.
+games/4digits: Added (A Guess-the-number Puzzle Game).
+games/colem: Updated for version 4.0.
+games/pangzero: Fix download.
+games/rlvm: Update source.
+gis/Fiona: Updated for version 1.7.8.
+gis/GMT: Updated for version 5.4.2.
+gis/qgis: Updated for version 2.18.10.
+graphics/opencollada: Updated for version 1.6.55
+libraries/blas: Updated for version 3.7.1.
+libraries/hdf5: Update DOWNLOAD.
+libraries/lapack: Updated for version 3.7.1.
+libraries/libcacard: Changed homepage and download link.
+libraries/libftdi1: Updated for version 1.3.
+libraries/libpaper: Updated for version 1.1.24+nmu5.
+libraries/libpwquality: Updated for version 1.4.0.
+libraries/libreadline-java: Updated for version 0.8.2.
+libraries/libstatgrab: Changed homepage and download link.
+libraries/ntl: Updated for version 10.4.0.
+libraries/plplot: Added (Library for making scientific plots).
+misc/fcitx-qt5: Updated for version 1.1.0.
+misc/mosquitto: Updated for version 1.4.13
+multimedia/beets: Updated for version 1.4.5.
+multimedia/opera-developer-ffmpeg-codecs: Only for x86_64.
+multimedia/opera-ffmpeg-codecs: Updated for version 59.0.3071.86.
+multimedia/vivaldi-codecs-ffmpeg-extra: Updated for version 59.0.
+network/dropbear: Update script.
+network/opera-developer: Stop building for non x86_64.
+network/opera: Updated for version 46.0.2597.26.
+network/owncloud-client: Updated for version 2.3.2.
+network/phpmyadmin: Updated for version 4.7.2.
+network/serialmail: Added (pass mail over intermittent links).
+network/spice-gtk: Changed homepage and download link.
+network/spice: Changed homepage and download link.
+network/surf: Updated for version 2.0.
+network/uget-chrome-wrapper: Added (download manager).
+network/vivaldi: Updated for version 1.10.867.42.
+network/weechat: Updated for version 1.9.
+network/youtube-dl: Updated for version 2017.06.25.
+office/MasterPDFEditor: Updated for version 4.2.30.
+office/keepassxc: Updated for version 2.2.0.
+office/pdfstudio12: Added (PDF editor).
+office/texlive-docs: Updated for version 2017.170622.
+office/texlive-extra: Updated for version 2017.170622.
+office/texlive-fonts: Updated for version 2017.170622.
+office/texlive: Updated for version 2017.170622.
+perl/perl-Module-ScanDeps: Updated for version 1.24.
+perl/perl-MusicBrainz-DiscID: Updated for version 0.04.
+perl/perl-Time-Piece: Updated for version 1.3201.
+perl/perlbrew: Updated for version 0.80.
+python/Flask-RESTful: Updated for version 0.3.6.
+python/cheroot: Updated for version 5.7.0.
+python/entrypoints: Updated for version 0.2.3.
+python/flask-paginate: Updated for version 0.5.0.
+python/monty: Updated for version 1.0.0.
+python/portend: Updated for version 2.1.
+python/pygame: Updated for version 1.9.3 + new maintainer.
+python/pytest: Updated for version 3.1.2.
+python/python-docker: Updated for version 2.4.2.
+python/tempora: Updated for version 1.8.
+python/testpath: Updated for version 0.3.1.
+python/tqdm: Updated for version 4.14.0.
+python/turses: Removed (abandoned upstream).
+system/apache-activemq: Updated for version 5.14.5.
+system/containerd: Updated for version 0.2.6.
+system/dar: Updated for version 2.5.11.
+system/docker-compose: Updated for version 1.14.0.
+system/docker: Updated for version 17.03.2.
+system/forkstat: Updated for version 0.02.00.
+system/intel-microcode: Update script.
+system/kbfs: Updated for version 1.0.24_20170622160028.
+system/man-pages-extras-fr: Removed (now part of man-pages-fr)
+system/man-pages-fr: New maintainer, add -extras.
+system/parallel: Updated for version 20170622.
+system/phoronix/test-suite: Updated for version 7.2.1.
+system/spice-vdagent: Changed homepage and download link.
+system/untex: New maintainer, minor fixes.
+system/usbredir: Changed homepage and download link.
+system/webmin: Updated for version 1.850.
+system/wine-staging: Updated for version 2.11.
+system/xf86-video-qxl: Changed homepage and download link.
+system/xonsh: Updated for version 0.5.12.
++--------------------------+
+Sat Jun 24 01:33:39 UTC 2017
+academic/karma: Fix library issue.
+academic/mpmath: Switch to i586.
+academic/pulseview: Updated for version 0.4.0.
+academic/scidavis: Updated for version 1.18.
+academic/sigrok-cli: Updated for version 0.7.0.
+accessibility/espeak: Fix build for -current.
+accessibility/xdotool: Minor script tweak.
+audio/bristol: Fix build for -current.
+audio/foo-yc20: Fix build for -current.
+audio/klick: Fix build for -current.
+audio/lingot: Fix download URL.
+audio/opus: Updated for version 1.2.
+audio/sayonara-player: Updated for version 0.9.3 + new maintainer.
+audio/sooperlooper: Fix build for -current.
+desktop/elementary-xfce: Changed download location and maintainer.
+desktop/neofetch: Updated for version 3.2.0.
+desktop/wmwebcam: Fix homepage and download.
+desktop/xed: Updated for version 1.4.3.
+desktop/zuki-themes: Updated for version 3.24.1.
+development/Catch: Updated for version 1.9.5.
+development/SQLAlchemy: Updated for version 1.1.11.
+development/cargo-vendor: Updated for version 0.1.11.
+development/f2c: Added (Fortran-to-C converter).
+development/henplus: Added (SQL shell).
+development/jupyter_client: Updated for version 5.1.0.
+development/kotlin: Updated for version 1.1.2_5.
+development/ldns: Update md5sum for root-anchors.xml
+development/mono-addins: Update HOMEPAGE.
+development/p4: Updated for version 2017.1.1511680.
+development/p4d: Updated for version 2017.1.1511680.
+development/p4v: Updated for version 2017.2.1518788.
+development/qbs: Updated for version 1.8.0.
+development/qt-creator: Updated for version 4.3.0.
+development/sbcl: Updated for version 1.3.18.
+development/simavr: Corrected source download url.
+development/srcML: Clarify java dependency in the README.
+development/watchman: Fix build for -current.
+games/adl: Fix build for -current.
+games/bstone: Fix build for -current.
+games/crack-attack: Added (Multiplayer puzzle game).
+games/crispy-doom: Updated for version 4.1.
+games/game_1945: Fixed download location.
+games/glbsp: Fix build for -current.
+games/liquidwar6: Fix build for -current.
+games/lutris: Updated for version 0.4.12.
+games/oblige-legacy4: Fix build for -current.
+games/opentyrian: Fix build for -current.
+games/pingus: Fix download location.
+games/ppsspp: Updated for version 1.4.2.
+games/stella: Fix build for -current.
+games/trackballs: Fix build for -current.
+games/wmquake: Fix download URL.
+games/zoom: Fix build for -current.
+gis/gpsbabel: Updated for version 1.5.4, moved from system/.
+graphics/LDView: Fixed md5sum.
+graphics/dcraw: Updated for version 9.27.0.
+graphics/vuescan: Updated for version 9.5.80.
+libraries/Botan: Updated for version 2.1.0.
+libraries/SDL2: Update HOMEPAGE and DOWNLOAD url.
+libraries/SDL2_image: Update HOMEPAGE and DOWNLOAD url.
+libraries/SDL2_mixer: Update HOMEPAGE and DOWNLOAD url.
+libraries/SDL2_net: Update HOMEPAGE and DOWNLOAD url.
+libraries/SDL2_ttf: Update HOMEPAGE and DOWNLOAD url.
+libraries/capnproto: Updated for version 0.6.1.
+libraries/flatbuffers: Updated for version 1.7.1.
+libraries/libbluray: Updated for version 1.0.1
+libraries/libgaminggear: Updated for version 0.15.1
+libraries/libnfs: Updated for version 2.0.0
+libraries/libowfat: Updated for version 0.31.
+libraries/libreadline-java: Forced -j1, build bump.
+libraries/libsigrok: Updated for version 0.5.0.
+libraries/libsigrokdecode: Updated for version 0.5.0.
+libraries/liburcu: Updated for version 0.10.0.
+libraries/tinyxml2: Updated for version 5.0.0
+libraries/vigra: Updated for version 1.11.1.
+misc/ibus-unikey: Fixed download location.
+misc/ibus: Fixed download location.
+misc/sigrok-firmware-fx2lafw: Updated for version 0.1.5.
+multimedia/flashplayer-plugin: Updated for version 26.0.0.131.
+multimedia/gpac: Updated for version 0.7.1.
+multimedia/mkclean: Updated for version 0.8.9.
+multimedia/mkvalidator: Updated for version 0.5.1.
+multimedia/nted: Fix build for -current.
+multimedia/nted: Fix download URL.
+multimedia/obs-studio: Updated for version 19.0.3
+multimedia/opera-developer-ffmpeg-codecs: Updated for version 60.0.
+multimedia/pepperflash-plugin: Updated for version 26.0.0.131.
+network/asciinema: Update HOMEPAGE.
+network/c-toxcore: Updated for version 0.1.9.
+network/deluge: Updated for version 1.3.15
+network/fail2ban: Updated for version 0.9.7.
+network/ip2location-c: Fixed build.
+network/memcached: Updated for version 1.4.37.
+network/netqmail: Added (the qmail MTA).
+network/nginx: Remove -Werror from CFLAGS
+network/offlineimap: Updated for version 7.1.1.
+network/onioncat: Updated for version 0.2.2.r578.
+network/opera-developer: Updated for version 47.0.2628.0.
+network/opera-legacy: Updated for version 12.16.1860.
+network/phpmyadmin: Updated for version 4.7.1.
+network/sqlmap: Updated for version 1.1.6.
+network/swaks: Added (Swiss Army Knife for SMTP).
+network/transmission: Fix build for -current.
+network/unbound: Updated for version 1.6.3
+network/youtube-dl: Updated for version 2017.06.18.
+office/LibreOffice: Updated for 5.3.4.2
+office/libreoffice-helppack: Updated for version 5.3.4.
+office/libreoffice-langpack: Updated for version 5.3.4.
+office/libreoffice: Updated for version 5.3.4.
+office/mupdf: Fix build for -current.
+perl/perl-CPAN-Perl-Releases: Updated for version 3.24.
+perl/perl-File-Slurp-Tiny: Added (renamed from perl-Slurp-Tiny).
+perl/perl-Slurp-Tiny: Removed (renamed to perl-File-Slurp-Tiny).
+perl/perl-Time-Piece: Updated for version 1.32.
+perl/perl-tree-dagnode: Updated dep.
+python/hyperlink: Added (A featureful, correct URL for Python.).
+python/pelican: Updated for version 3.7.1.
+python/python-twisted: Updated for version 17.5.0.
+python/python3-jupyter_client: Updated for version 5.1.0.
+python/python3-ptyprocess: Updated for version 0.5.2.
+python/webassets: Updated for version 0.12.1.
+ruby/rbenv: Updated for version 1.1.1.
+system/Iosevka: Updated for version 1.13.1.
+system/avfs: Updated for version 1.0.5.
+system/bindfs: Updated for version 1.13.7.
+system/cndrvcups-capt: Updated for version 2.71.
+system/cndrvcups-common: Updated for version 3.21.
+system/csh: Fix build for -current.
+system/disk-manager: Updated for version 1.1.1.
+system/exfat-utils: Updated for version 1.2.7.
+system/fbterm: Fix build for -current.
+system/fio: Updated for version 2.21.
+system/forkstat: Updated for version 0.01.18.
+system/fuse-exfat: Updated for version 1.2.7.
+system/gsmartcontrol: Fix MD5SUM.
+system/kitchen-sync: Updated for version 0.1.11.
+system/noto-emoji: Updated for version git8692845.
+system/noto-fonts: Updated for version 20170428.
+system/overpass-desktop-fonts: Updated for version 3.0.2.
+system/overpass-webfonts: Added (Open Source web fonts by RedHat).
+system/rar2fs: Updated for version 1.25.2.
+system/rar: Updated for version 5.5.b4.
+system/reptyr: Fix build for -current.
+system/unicode-character-database: Updated for version 10.0.0.
+system/unrar: Updated for version 5.5.5.
+system/vifm: Updated for version 0.9.
+system/vlock: Fix build for -current.
+system/winetricks: Updated for version 20170614.
+system/worker: Updated for version 3.10.0.
+system/xen: XSA 216-225 update.
++--------------------------+
 Sat Jun 17 00:33:32 UTC 2017
 development/atom-amd64: Updated for version 1.18.0.
 development/global: Updated for version 6.5.7.

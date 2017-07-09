@@ -4,7 +4,7 @@
 
 # Copyright 2009  Patrick J. Volkerding, Sebeka, MN, USA
 # Copyright 2009-2014  Robby Workman, Northport, AL, USA
-# Copyright 2016  Johannes Schoepfer
+# Copyright 2016-2017  Johannes Schoepfer, Germany
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,8 +25,8 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=texlive-extra
-VERSION=${VERSION:-2016.161031}
-BUILD=${BUILD:-1}
+VERSION=${VERSION:-2017.170622}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_SBo}
 
 CWD=$(pwd)
@@ -34,15 +34,28 @@ TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-ARCH=noarch
-
 set -e
+
+if [ -z "$ARCH" ]; then
+  case "$( uname -m )" in
+    i?86) ARCH=i586 ;;
+    arm*) ARCH=arm ;;
+       *) ARCH=$( uname -m ) ;;
+  esac
+fi
 
 rm -rf $PKG
 mkdir -p $TMP $PKG/usr/share $OUTPUT
 tar xvf $CWD/$PRGNAM-$VERSION.tar.xz -C $PKG/usr/share
 chown -R root:root $PKG
 chmod -R u+w,go-w,a+rX-st $PKG
+
+# Move biber binary to $PATH
+case $ARCH in
+	"x86_64") mv $PKG/usr/share/texmf-dist/bin/x86_64-linux/biber $PKG/usr/bin ;;
+	"i586") mv $PKG/usr/share/texmf-dist/bin/i386-linux/biber $PKG/usr/bin ;;
+esac
+rm -rf $PKG/usr/share/texmf-dist/bin
 
 mkdir -p $PKG/install
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
