@@ -1,7 +1,11 @@
 PRGNAM="vifm"
 VERSION="0.9"
 HOMEPAGE="https://vifm.info"
+<<<<<<< HEAD
 DOWNLOAD="http://downloads.sourceforge.net/vifm/vifm-0.9.tar.bz2"
+=======
+DOWNLOAD="https://downloads.sourceforge.net/vifm/vifm-0.9.tar.bz2"
+>>>>>>> willy/master
 MD5SUM="a523a16a7a0170141b5a36cb67251490"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
