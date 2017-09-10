@@ -2,7 +2,8 @@
 
 # Slackware build script for rust
 
-# Copyright 2017 Andrew Clemons, Wellington New Zealand
+# Copyright 2017  Andrew Clemons, Wellington, New Zealand
+# Copyright 2017  Patrick J. Volkerding, Sebeka, Minnesota, USA
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,23 +25,74 @@
 
 PRGNAM=rust
 SRCNAM="${PRGNAM}c"
-VERSION=${VERSION:-1.19.0}
+VERSION=${VERSION:-1.20.0}
 
 # src/stage0.txt
-RSTAGE0_VERSION=${RSTAGE0_VERSION:-1.18.0}
-RSTAGE0_DIR=${RSTAGE0_DIR:-2017-06-08}
-CSTAGE0_VERSION=${CSTAGE0_VERSION:-0.19.0}
+RSTAGE0_VERSION=${RSTAGE0_VERSION:-1.19.0}
+RSTAGE0_DIR=${RSTAGE0_DIR:-2017-07-20}
+CSTAGE0_VERSION=${CSTAGE0_VERSION:-0.20.0}
 CSTAGE0_DIR=${CSTAGE0_DIR:-$RSTAGE0_DIR}
 
-BUILD=${BUILD:-2}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
-    i686) ARCH=i686 ;;
+    i?86) ARCH=i586 ;;
     arm*) ARCH=arm ;;
        *) ARCH=$( uname -m ) ;;
   esac
+fi
+
+# if you already have rust and cargo installed, you can bootstrap from the
+# previous version.
+if [ "$LOCAL_BOOTSTRAP" = "" ] && [ -x /usr/bin/cargo ] && [ -x /usr/bin/rustc ] ; then
+  LOCAL_BOOTSTRAP=yes
+fi
+
+# https://forge.rust-lang.org/platform-support.html
+# Bootstrapping ARCH:
+if [ "$ARCH" = "i586" ]; then
+  if [ "$LOCAL_BOOTSTRAP" = "yes" ] ; then
+    if rustc -Vv | grep host | grep i586 > /dev/null ; then
+      BARCH="$ARCH"
+    else
+      echo "Your exising rust cannot bootstrap an i586 toolchain. Either set LOCAL_BOOTSTRAP=no or remove your existing rust package and do a full bootstrap."
+      exit 1
+    fi
+  else
+    # i586 must be built on a i686 machine, since the bootstrap compiler is i686
+    BARCH="i686"
+
+    if case "$( uname -m )" in i586) true ;; *) false ;; esac ; then
+      echo "rust must be bootstrapped from an i686 machine"
+      exit 1
+    fi
+  fi
+else
+  BARCH="$ARCH"
+fi
+
+TARCH="$ARCH"
+
+# Bootstrapping ABI:
+if [ "$ARCH" = "arm" ]; then
+  if readelf -h /bin/bash | grep Flags | grep hard > /dev/null 2>&1 ; then
+    # hardfloat
+    BABI="gnueabihf"
+    BARCH="armv7"
+    TARCH="$BARCH"
+  else
+    # softfloat
+    BABI="gnueabi"
+
+    if case "$( uname -m )" in armv5*) true ;; *) false ;; esac ; then
+      echo "rust must be bootstrapped from an armv6 machine or later"
+      exit 1
+    fi
+  fi
+else
+  BABI="gnu"
 fi
 
 CWD=$(pwd)
@@ -48,15 +100,25 @@ TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-if [ "$ARCH" = "i686" ]; then
+if [ "$ARCH" = "i586" ]; then
+  SLKCFLAGS="-O2 -march=i586 -mtune=i686"
+  LIBDIRSUFFIX=""
+elif [ "$ARCH" = "i686" ]; then
   SLKCFLAGS="-O2 -march=i686 -mtune=i686"
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
   LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "arm" ] ; then
+  SLKCFLAGS="-O2"
+  LIBDIRSUFFIX=""
+
+  if [ "$BABI" = "gnueabihf" ] ; then
+    SLKCFLAGS="$SLKCFLAGS -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard"
+  fi
 else
-  echo "$ARCH is unsupported"
-  exit 1
+  SLKCFLAGS="-O2"
+  LIBDIRSUFFIX=""
 fi
 
 set -e
@@ -68,47 +130,59 @@ rm -rf $SRCNAM-$VERSION-src
 tar xvf $CWD/$SRCNAM-$VERSION-src.tar.gz
 cd $SRCNAM-$VERSION-src
 
-# if you already have rust and cargo installed, you can bootstrap from the
-# previous version.
-if [ "$LOCAL_BOOTSTRAP" = "" ] && [ -x /usr/bin/cargo ] && [ -x /usr/bin/rustc ] ; then
-  LOCAL_BOOTSTRAP=yes
-fi
-
 if [ "$LOCAL_BOOTSTRAP" != "yes" ] ; then
   # rust requires bootstrapping with the previous rust version.
   # versions are defined in src/stage0.txt
   mkdir -p build/cache/$RSTAGE0_DIR
-  cp $CWD/$PRGNAM-std-$RSTAGE0_VERSION-$ARCH-unknown-linux-gnu.tar.gz \
-     $CWD/$SRCNAM-$RSTAGE0_VERSION-$ARCH-unknown-linux-gnu.tar.gz \
+  cp $CWD/$PRGNAM-std-$RSTAGE0_VERSION-$BARCH-unknown-linux-$BABI.tar.gz \
+     $CWD/$SRCNAM-$RSTAGE0_VERSION-$BARCH-unknown-linux-$BABI.tar.gz \
      build/cache/$RSTAGE0_DIR
 
+  if [ "$TARCH" = "i586" ] ; then
+    cp $CWD/$PRGNAM-std-$RSTAGE0_VERSION-$TARCH-unknown-linux-$BABI.tar.gz \
+       build/cache/$RSTAGE0_DIR
+  fi
+
   mkdir -p build/cache/$CSTAGE0_DIR
-  cp $CWD/cargo-$CSTAGE0_VERSION-$ARCH-unknown-linux-gnu.tar.gz build/cache/$CSTAGE0_DIR
+  cp $CWD/cargo-$CSTAGE0_VERSION-$BARCH-unknown-linux-$BABI.tar.gz build/cache/$CSTAGE0_DIR
 fi
 
 # src/bootstrap/config.toml.example
 cat << EOF > config.toml
 [build]
+build = "$BARCH-unknown-linux-$BABI"
+host = ["$TARCH-unknown-linux-$BABI"]
+target = ["$TARCH-unknown-linux-$BABI"]
 vendor = true
 extended = true
 
 [install]
 prefix = "/usr"
-docdir = "doc/rust"
+docdir = "doc/rust-$VERSION"
 libdir = "lib$LIBDIRSUFFIX"
 mandir = "man"
 
 [rust]
 codegen-units = 0
-debuginfo = true
+debuginfo = false
 channel = "stable"
 rpath = false
 codegen-tests = false
 
-[target.$ARCH-unknown-linux-gnu]
+[target.i586-unknown-linux-gnu]
 llvm-config = "/usr/bin/llvm-config"
-# build fails using the system jemalloc
-# jemalloc = "/usr/lib$LIBDIRSUFFIX/libjemalloc_pic.a"
+
+[target.i686-unknown-linux-gnu]
+llvm-config = "/usr/bin/llvm-config"
+
+[target.x86_64-unknown-linux-gnu]
+llvm-config = "/usr/bin/llvm-config"
+
+[target.arm-unknown-linux-gnuabi]
+llvm-config = "/usr/bin/llvm-config"
+
+[target.armv7-unknown-linux-gnuabihf]
+llvm-config = "/usr/bin/llvm-config"
 EOF
 
 if [ "$LOCAL_BOOTSTRAP" = "yes" ] ; then
@@ -122,7 +196,37 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-export RUSTFLAGS="$RUSTFLAGS -C link-args=-lffi"
+if [ "$BARCH" = "i686" ] && [ "$TARCH" = "i586" ] ; then
+  # this will cause some messages like:
+  # warning: redundant linker flag specified for library `m`
+  # but will keep the build from falling over when doing the stage1 compiler
+  # linking for the i586 compiler. seems the correct flags don't get passed
+  # through and we end up failures like:
+  # error: linking with `clang` failed: exit code: 1
+  # /tmp/SBo/rustc-1.20.0-src/build/i686-unknown-linux-gnu/stage1-rustc/i586-unknown-linux-gnu/release/deps/librustc_llvm-4ab259c9aed547db.so: undefined reference to `xxx`
+  export RUSTFLAGS="$RUSTFLAGS -C link-args=-lffi -lrt -ldl -lcurses -lpthread -lz -lm"
+else
+  # https://github.com/rust-lang/rust/issues/39880
+  # $ llvm-config --system-libs
+  # -lrt -ldl -lcurses -lpthread -lz -lm
+  export RUSTFLAGS="$RUSTFLAGS -C link-args=-lffi"
+fi
+
+export PKG_CONFIG_ALLOW_CROSS=1
+
+if [ "$BARCH" = "i586" ] ; then
+  # when bootstrapping from i586 (rust already installed), also build a i686
+  # rustlib
+
+  # from config.toml.example:
+
+  # In addition to all host triples, other triples to produce the standard library
+  # for. Each host triple will be used to produce a copy of the standard library
+  # for each target triple.
+  #target = ["x86_64-unknown-linux-gnu"] # defaults to just the build triple
+
+  sed -i 's/^target =.*$/target = ["i686-unknown-linux-gnu"]/' config.toml
+fi
 
 # README.md says gcc 4.7 / clang 3.x or later needed
 # but building fails for me with GCC 5.3 from slackware 14.2
@@ -131,14 +235,19 @@ CXX=clang++ \
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 python x.py build
-
 DESTDIR=$PKG python x.py install
 
-rm -rf $PKG/usr/lib$LIBDIRSUFFIX/rustlib/components
-rm -rf $PKG/usr/lib$LIBDIRSUFFIX/rustlib/install.log
-rm -rf $PKG/usr/lib$LIBDIRSUFFIX/rustlib/manifest-*
-rm -rf $PKG/usr/lib$LIBDIRSUFFIX/rustlib/rust-installer-version
-rm -rf $PKG/usr/lib$LIBDIRSUFFIX/rustlib/uninstall.sh
+# Eh, none of this is all that big. Might as well leave it around as a
+# reference.
+#rm -f $PKG/usr/lib$LIBDIRSUFFIX/rustlib/components
+#rm -f $PKG/usr/lib$LIBDIRSUFFIX/rustlib/install.log
+#rm -f $PKG/usr/lib$LIBDIRSUFFIX/rustlib/manifest-*
+#rm -f $PKG/usr/lib$LIBDIRSUFFIX/rustlib/rust-installer-version
+#rm -f $PKG/usr/lib$LIBDIRSUFFIX/rustlib/uninstall.sh
+# Make sure the paths are correct, though:
+sed -i "s,$PKG/,/,g" $PKG/usr/lib$LIBDIRSUFFIX/rustlib/install.log $PKG/usr/lib$LIBDIRSUFFIX/rustlib/manifest-*
+# And a little compression doesn't hurt either:
+gzip -9 $PKG/usr/lib$LIBDIRSUFFIX/rustlib/manifest-*
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
@@ -147,7 +256,12 @@ find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a *.md COPYRIGHT LICENSE-APACHE LICENSE-MIT $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a *.md COPYRIGHT* LICENSE* $PKG/usr/doc/$PRGNAM-$VERSION
+# Include licenses from third party vendors:
+mkdir $PKG/usr/doc/$PRGNAM-$VERSION/vendor
+( cd src/vendor
+  tar cf - $(find . -maxdepth 2 | grep -e README -e LICENSE -e COPYING -e CHANGELOG -e PERFORMANCE -e UPGRADE ) | ( cd $PKG/usr/doc/$PRGNAM-$VERSION/vendor ; tar xf - )
+)
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
