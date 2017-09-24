@@ -6,14 +6,14 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
         |-----handy-ruler------------------------------------------------------|
-tiled-qt: tiled-qt (Tiled map editor)
-tiled-qt:
-tiled-qt: Tiled is a general purpose map editor. It is built to be easy to use,
-tiled-qt: yet flexible enough to work with various game engines, whether your
-tiled-qt: game is an RPG, platformer or Breakout clone. Tiled is free software
-tiled-qt: and written in C++, using the Qt application framework.
-tiled-qt:
-tiled-qt: http://www.mapeditor.org
-tiled-qt:
-tiled-qt:
-tiled-qt:
+newsboat: newsboat (RSS console feed reader)
+newsboat:
+newsboat: Newsboat is an open-source RSS/Atom feed reader for text terminals.
+newsboat: Newsboat's configurability and features make it a good choice for
+newsboat: users that want a fast feed reader controlled by the keyboard.
+newsboat: Newsboat can sync with TinyTinyRSS and can download podcasts
+newsboat: distributed through RSS feeds.
+newsboat:
+newsboat:
+newsboat:
+newsboat:
