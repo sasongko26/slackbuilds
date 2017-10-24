@@ -1,3 +1,136 @@
+Sat Oct 21 00:09:49 UTC 2017
+academic/xiphos: Updated for version 4.0.7.
+audio/qmmp-plugin-pack: Updated for version 0.10.3.
+desktop/cbatticon: Updated for version 1.6.7.
+desktop/siva-flat-themes: Fixed theme folder.
+development/composer: Updated for version 1.5.2
+development/dpkg: Updated for version 1.19.0.2.
+development/git-lfs: Updated for version 2.3.3.
+development/git-lfs: Updated for version 2.3.4.
+development/jupyter_console: Updated for version 5.2.0.
+development/openvr: Added (VR hardware access library).
+development/racer: Added (Rust Code Completion utility).
+development/rustfmt: Added (Format Rust code).
+development/sbcl: Updated for version 1.4.0.
+development/universal-ctags: Updated for version ccac4df
+games/angband: Update script.
+games/jfsw: Fixed github md5sum.
+gis/postgis: Updated for version 2.4.1.
+graphics/feh: Updated for version 2.21.
+libraries/cffi: Updated for version 1.11.2.
+libraries/rest: Updated for version 0.8.1.
+libraries/webkit2gtk: Updated for version 2.18.1.
+misc/nixnote: Updated for version 2.0.2.
+misc/xwinwrap: New download location.
+multimedia/flashplayer-plugin: Updated for version 27.0.0.170.
+multimedia/obs-studio: Updated for version 2.1.0
+multimedia/pepperflash-plugin: Updated for version 27.0.0.170.
+network/MEGAsync: Fixed github md5sum.
+network/aria2: Updated for version 1.33.0.
+network/clipgrab: Updated for version 3.6.6.
+network/nextcloud-client: Fixed github md5sum.
+network/nextcloud-server: Added (nextcloud sync & share server).
+network/nginx: Updated for version 1.12.2
+network/opera-developer: Updated for version 50.0.2743.0.
+network/opera: Updated for version 48.0.2685.50.
+network/owncloud-server: Updated for version 8.2.11.
+network/slack: Updated for version 2.8.2.
+network/slimjet: Updated for version .
+network/tinyproxy: Updated for version 1.8.4.
+network/xombrero: Removed (retired and no longer developed).
+network/yle-dl: Updated for version 2.26.
+office/calibre: Updated for version 3.9.0
+perl/perl-Astro-SunTime: Updated for version 0.06.
+perl/perl-CDDB-get: Updated for version 2.28.1.
+perl/perl-Time-modules: Remove make test.
+python/psutil: Updated for version 5.4.0
+python/pytest: Updated for version 3.2.3.
+python/python-fonttools: Updated for version 3.17.0.
+system/fzf: Updated for version 0.17.1.
+system/ksh-openbsd: Updated for version 20171016.
+system/mingetty: Added (virtual terminal).
+system/mongo-tools: Updated for version 3.4.9.
+system/mongodb: Updated for version 3.4.9.
+system/nvidia-driver: Updated for version 384.90.
+system/nvidia-kernel: Updated for version 384.90.
+system/openrc-services: Updated for version 20171007.
+system/openrc: Updated for version 0.32.1.
+system/sysdig: Updated for version 0.19.1
+system/xen: XSA 237-245 update.
++--------------------------+
+Sat Oct 14 23:15:57 UTC 2017
+graphics/vuescan: Updated for version 9.5.89.
+libraries/gwenhywfar: Updated for version 4.18.0.
+multimedia/MediathekView: Updated for version 13.0.3.
+network/you-get: Updated for version 0.4.939.
+network/youtube-dl: Updated for version 2017.10.12.
+perl/perl-Package-Stash: Fix dep to avoid dependency loop.
++--------------------------+
+Sat Oct 14 13:52:35 UTC 2017
+academic/PhyTime: Removed (Included in PhyML).
+academic/libqalculate: Updated for version 2.1.0
+academic/qalculate-gtk: Updated for version 2.1.0
+desktop/gtk-theme-Greybird: Updated for version 3.18.0.
+desktop/zuki-themes: Updated for version 3.18.1.
+development/argagg: Added (Argument Aggregator).
+development/camlp5: Updated for version 7.02.
+development/cargo-vendor: Fix build on i?86.
+development/d-tools: Added (D compiler).
+development/dmd: Updated for version 2.076.1
+development/eclipse-cpp: Updated for version 4.7.1a.
+development/eclipse-java: Updated for version 4.7.1a.
+development/eclipse-jee: Updated for version 4.7.1a.
+development/gauche: Updated for version 0.9.5.
+development/geany-plugins: Updated for v. 1.31.0, new maintainer.
+development/geany: Updated for version 1.31.0 + new maintainer.
+development/jupyter-notebook: Updated for version 5.2.0.
+development/rust: Updated for version 1.21.0.
+games/doomretro: Updated for version 2.5.7.
+games/minetest: Fix man and doc directories.
+games/minetest_game: Update script.
+games/planetblupi: Added (port of Epsitec SA 1997).
+gis/osm2pgrouting: Updated for version 2.3.0.
+gis/pdal: Updated for version 1.6.
+gis/pgrouting: Updated for version 2.5.1.
+gis/saga-gis: Updated for version 6.0.0.
+graphics/exact-image: Updated for version 1.0.1.
+graphics/rawtherapee: Updated for version 5.3.
+graphics/scrot: New maintainer.
+ham/rtl-sdr: Updated for version 20170919.
+libraries/SDL_kitchensink: Added (SDL2 library for audio and video).
+libraries/allegro: Updated for version 5.2.3.0.
+multimedia/ffmpeg: Patched to build against openjpeg-2.3.0.
+multimedia/opera-developer-ffmpeg-codecs: Updated for v 63.0.3218.0.
+network/PaleMoon: Updated for version 27.5.1.
+network/WireGuard: Updated for version 0.0.20171011.
+network/clamav-unofficial-sigs: Add note to README.
+network/conkeror: Added (programmable web browser).
+network/opera-developer: Updated for version 50.0.2739.0.
+network/opera: Updated for version 48.0.2685.39.
+network/wireshark: Updated for version 2.4.2.
+network/yate: Added (Yet Another Telephony Engine).
+perl/perl-CPAN-Meta-Check: Added (perl module).
+perl/perl-Class-Tiny: Added (perl module).
+perl/perl-Eval-Closure: Added (perl module).
+perl/perl-List-MoreUtils-XS: Update DEP.
+perl/perl-Package-DeprecationManager: Updated for version 0.17.
+perl/perl-Params-ValidationCompiler: Added (perl module).
+perl/perl-SOAP-Lite: Updated for version 1.22.
+perl/perl-Scope-Guard: Added (perl module).
+perl/perl-Sub-Name: Added (perl module).
+perl/perl-Test-File-ShareDir-Dist: Added (perl module).
+perl/perl-XSLoader: Removed (Included in perl).
+python/python-libnacl: Updated for version 1.6.0
+system/btrbk: Updated for version 0.26.0.
+system/displaylink: Updated for version 1.4.210
+system/dosbox-dev: Updated for version 0.74.r4059.
+system/evdi-kernel: Updated for version 1.5.0
+system/evdi: Updated for version 1.5.0
+system/exa: Updated for new zoneinfo crate.
+system/fwupd: Updated for version 1.0.0.
+system/kitchen-sync: Updated for version 0.99.1.
+system/slpkg: Updated for version 3.3.1.
++--------------------------+
 Tue Oct 10 23:20:54 UTC 2017
 academic/FCSalyzer: Updated for version 0.9.14_alpha.
 academic/PhyML: Updated for version 3.3.20170530.
