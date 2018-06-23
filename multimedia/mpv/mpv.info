@@ -1,4 +1,5 @@
 PRGNAM="mpv"
+<<<<<<< HEAD
 VERSION="0.27.0"
 HOMEPAGE="https://mpv.io/"
 DOWNLOAD="https://github.com/mpv-player/mpv/archive/v0.27.0/mpv-0.27.0.tar.gz \
@@ -8,5 +9,16 @@ MD5SUM="ec86f42b091d891f9a932de0f6e873ad \
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="ffmpeg libass docutils"
+=======
+VERSION="0.27.2"
+HOMEPAGE="https://mpv.io/"
+DOWNLOAD="https://github.com/mpv-player/mpv/archive/v0.27.2/mpv-0.27.2.tar.gz \
+          https://waf.io/waf-1.9.8"
+MD5SUM="8cfb48e921e58c0d9d181d96d4809beb \
+        fbb646eafa430f959743010c85e269be"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="docutils ffmpeg libass lua"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MAINTAINER="Andreas Guldstrand"
 EMAIL="andreas.guldstrand@gmail.com"

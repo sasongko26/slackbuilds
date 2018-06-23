@@ -13,7 +13,11 @@ case "$1" in
         ;;
     stop)
         echo "Stopping all geomyidae processes"
+<<<<<<< HEAD
         [ -n "$PID" ] && kill ${PID[@]} &>/dev/null
+=======
+        [ -n "$PID" ] && kill ${PID[@]} >/dev/null
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
         if [ $? -gt 0 ] && [ -n "$PID" ]; then
             echo "Stopping failed for at least one process"
         fi

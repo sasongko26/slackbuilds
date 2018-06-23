@@ -24,13 +24,18 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+<<<<<<< HEAD
+=======
+# 20180103 bkw: update for v0.6.2. Which is from 9+ years ago...
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # 20170309 bkw:
 # - take over maintenance
 # - i486 => i586
 # - minor tweaks
 
 PRGNAM=wput
-VERSION=${VERSION:-0.6.1}
+VERSION=${VERSION:-0.6.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

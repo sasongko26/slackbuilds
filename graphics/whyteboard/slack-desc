@@ -13,7 +13,11 @@ whyteboard: the annotation of pdf, postcript documents and various image
 whyteboard: formats with common drawing tools (pen, rectangles, ellipses,
 whyteboard: text)
 whyteboard:
+<<<<<<< HEAD
 whyteboard: Homepage: http://whyteboard.org/
+=======
+whyteboard:
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 whyteboard:
 whyteboard:
 whyteboard:

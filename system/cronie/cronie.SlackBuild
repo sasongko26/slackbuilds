@@ -3,7 +3,11 @@
 
 # Copyright 2012, 2013  Chris Abela, Malta
 # Copyright 2014  Ryan P.C. McQuen | Everett, WA | ryanpcmcquen@member.fsf.org
+<<<<<<< HEAD
 # Copyright 2017  Aaditya Bagga <aaditya_gnulinux@zoho.com>
+=======
+# Copyright 2017-2018  Aaditya Bagga <aaditya_gnulinux@zoho.com>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,7 +28,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=cronie
+<<<<<<< HEAD
 VERSION=${VERSION:-1.5.1}
+=======
+VERSION=${VERSION:-1.5.2}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

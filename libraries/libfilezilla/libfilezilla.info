@@ -1,8 +1,15 @@
 PRGNAM="libfilezilla"
+<<<<<<< HEAD
 VERSION="0.11.1"
 HOMEPAGE="https://lib.filezilla-project.org/"
 DOWNLOAD="http://download.filezilla-project.org/libfilezilla/libfilezilla-0.11.1.tar.bz2"
 MD5SUM="092dbaf6bece6d89c51c29a69503ad7a"
+=======
+VERSION="0.12.3"
+HOMEPAGE="https://lib.filezilla-project.org/"
+DOWNLOAD="http://download.filezilla-project.org/libfilezilla/libfilezilla-0.12.3.tar.bz2"
+MD5SUM="28faa13d86fbb7b5e3edac22956449ca"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

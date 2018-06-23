@@ -2,7 +2,11 @@
 #
 # Slackware build script for xdman.
 #
+<<<<<<< HEAD
 # Copyright 2015-2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+=======
+# Copyright 2015-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +27,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=xdman
+<<<<<<< HEAD
 VERSION=${VERSION:-2016.6.2}
+=======
+VERSION=${VERSION:-2018.7.2.7}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -56,23 +64,35 @@ fi
 
 set -e
 
+<<<<<<< HEAD
 SRCNAM=${SRCNAM:-xdm-setup}
+=======
+SRCNAM=${SRCNAM:-xdm-2018}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 rm -rf $TMP/$PRGNAM-$VERSION
 cd $TMP
 
+<<<<<<< HEAD
 if [ "$ARCH" = "i586" ] || [ "$ARCH" = "i686" ]; then
    tar xvf $CWD/$SRCNAM-x86.tar.xz
 elif [ "$ARCH" = "x86_64" ]; then
    tar xvf $CWD/$SRCNAM-x64.tar.xz
+=======
+mkdir -p $PRGNAM-$VERSION
+
+if [ "$ARCH" = "i586" ] || [ "$ARCH" = "i686" ]; then
+   tar xvf $CWD/$SRCNAM-x86.tar.xz -C $PRGNAM-$VERSION
+elif [ "$ARCH" = "x86_64" ]; then
+   tar xvf $CWD/$SRCNAM-x64.tar.xz -C $PRGNAM-$VERSION
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 else
   echo "$ARCH is not supported."
   exit 1
 fi
 
-mv $SRCNAM $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
@@ -81,12 +101,21 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+<<<<<<< HEAD
 7z x install.sh
 install -d -m755 $PKG/opt/xdman
 install -D -m644 xdman.jar $PKG/opt/xdman/xdman.jar
 install -D -m775 $CWD/xdman $PKG/opt/xdman
 install -D -m644 $CWD/xdman.desktop $PKG/usr/share/applications/xdman.desktop
 install -D -m644 $CWD/xdman.png $PKG/usr/share/pixmaps/xdman.png
+=======
+7z x -y install.sh
+install -d -m755 $PKG/opt/xdman
+install -D -m644 xdman.jar $PKG/opt/xdman/xdman.jar
+install -D -m775 $CWD/xdman $PKG/opt/xdman
+install -D -m644 xdman.desktop $PKG/usr/share/applications/xdman.desktop
+install -D -m644 icon.png $PKG/usr/share/pixmaps/icon.png
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

@@ -2,7 +2,11 @@
 #
 # Slackware build script for moka-icon-theme.
 #
+<<<<<<< HEAD
 # Copyright 2015-217  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+=======
+# Copyright 2015-218  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +27,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM="moka-icon-theme"
+<<<<<<< HEAD
 VERSION=${VERSION:-20171021}
+=======
+VERSION=${VERSION:-5.4.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -36,17 +44,30 @@ CWD=$(pwd)
 
 SRCVER=${SRCVER:-d63bd966332fb6de5034d8bbc00ba0e14825ed07}
 
+<<<<<<< HEAD
 set -e
 
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
+<<<<<<< HEAD
 tar xvf $CWD/$PRGNAM-$SRCVER.tar.gz
 mv $PRGNAM-$SRCVER $PRGNAM-$VERSION
+=======
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cd $PRGNAM-$VERSION
 chown -R root:root .
+find -L . \
+ \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+  -o -perm 511 \) -exec chmod 755 {} \; -o \
+ \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+<<<<<<< HEAD
 CFLAGS="$SLKCFLAGS"
 CXXFLAGS="$SLKCFLAGS"
 ./autogen.sh \
@@ -64,6 +85,13 @@ make install DESTDIR=$PKG
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp AUTHORS COPYING INSTALL LICENSE* README.md $PKG/usr/doc/$PRGNAM-$VERSION
+=======
+meson --prefix $PKG/usr build
+ninja -C build install
+
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cp AUTHORS COPYING LICENSE* README.md $PKG/usr/doc/$PRGNAM-$VERSION
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

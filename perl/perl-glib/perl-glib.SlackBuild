@@ -5,7 +5,11 @@
 # (C) 2007 Michael Wagner <lapinours@web.de>
 # Copyright 2010, 2012  Binh Nguyen <binhvng@gmail.com>
 # Copyright 2014-2017  Glenn Becker <burningc@sdf.org>
+<<<<<<< HEAD
 # Copyright 2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+=======
+# Copyright 2017-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 #
 # All rights reserved.
 #
@@ -27,7 +31,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=perl-glib
+<<<<<<< HEAD
 VERSION=${VERSION:-1.326}
+=======
+VERSION=${VERSION:-1.327}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

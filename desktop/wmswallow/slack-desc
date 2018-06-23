@@ -10,7 +10,11 @@ wmswallow: wmswallow (app docker)
 wmswallow:
 wmswallow: Dock any (!) application into the WindowMaker dock.
 wmswallow:
+<<<<<<< HEAD
 wmswallow: homepage: http://www.dockapps.net/wmswallow
+=======
+wmswallow: homepage: https://www.dockapps.net/wmswallow
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 wmswallow:
 wmswallow:
 wmswallow:

@@ -2,7 +2,7 @@
 
 # Slackware build script for DMD
 
-# Copyright 2016-2017 Eugene Wissner, Dachau, Germany
+# Copyright 2016-2018 Eugene Wissner, Dachau, Germany
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -23,7 +23,11 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=dmd
+<<<<<<< HEAD
 VERSION=${VERSION:-2.077.1}
+=======
+VERSION=${VERSION:-2.080.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -81,7 +85,18 @@ find $PKG/usr/include/dmd -name "*.S" -print0 | xargs -0 rm
 # Phobos.
 mv linux/lib${ARCHSUFFIX}/libphobos2.* $PKG/usr/lib${LIBDIRSUFFIX}
 mv src/phobos/std $PKG/usr/include/dmd
+<<<<<<< HEAD
 mv src/phobos/etc/* $PKG/usr/include/dmd/etc
+=======
+mv src/phobos/etc/c $PKG/usr/include/dmd/etc
+rm -r $PKG/usr/include/dmd/etc/c/zlib
+
+# DMD.
+mv src/dmd/dmd $PKG/usr/include/dmd
+
+# Remove C/C++ sources.
+find $PKG/usr/include/dmd \( -name "*.c" -or -name "*.h" \) -print0 | xargs -0 rm
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 mv html/d/* $PKG/usr/doc/$PRGNAM-$VERSION

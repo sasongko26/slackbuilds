@@ -1,7 +1,11 @@
 PRGNAM="generatorrunner"
 VERSION="0.6.16"
 HOMEPAGE="https://github.com/pyside/Generatorrunner"
+<<<<<<< HEAD
 DOWNLOAD="http://pkgs.fedoraproject.org/repo/pkgs/generatorrunner/generatorrunner-0.6.16.tar.bz2/c7011b8ee08e228779a769b7cfa90f5f/generatorrunner-0.6.16.tar.bz2"
+=======
+DOWNLOAD="https://distfiles.macports.org/generatorrunner/generatorrunner-0.6.16.tar.bz2"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="c7011b8ee08e228779a769b7cfa90f5f"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

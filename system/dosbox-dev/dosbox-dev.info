@@ -1,8 +1,15 @@
 PRGNAM="dosbox-dev"
+<<<<<<< HEAD
 VERSION="0.74.r4063"
 HOMEPAGE="http://dosbox.sourceforge.net"
 DOWNLOAD="https://sourceforge.net/projects/slackbuildsdirectlinks/files/dosbox/dosbox-dev-0.74.r4063.tar.xz"
 MD5SUM="f354b1f0f78051c3b0544561f8906114"
+=======
+VERSION="0.74.r4112"
+HOMEPAGE="http://dosbox.sourceforge.net"
+DOWNLOAD="https://sourceforge.net/projects/slackbuildsdirectlinks/files/dosbox/dosbox-dev-0.74.r4112.tar.xz"
+MD5SUM="8492deadf50f848124c6ba9b4572a7ab"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

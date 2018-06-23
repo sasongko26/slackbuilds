@@ -23,7 +23,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=pyta-lib
+<<<<<<< HEAD
 PRGFILE=TA_Lib
+=======
+PRGFILE=ta-lib-TA_Lib
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 VERSION=${VERSION:-0.4.10}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
@@ -62,7 +66,11 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGFILE-$VERSION
 tar xvf $CWD/$PRGFILE-$VERSION.tar.gz
+<<<<<<< HEAD
 cd ta-lib-$PRGFILE-$VERSION
+=======
+cd $PRGFILE-$VERSION
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \

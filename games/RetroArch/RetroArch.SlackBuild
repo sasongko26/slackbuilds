@@ -2,7 +2,11 @@
 
 # Slackware build script for RetroArch
 
+<<<<<<< HEAD
 # Copyright 2016-2017 Hunter Sezen California, USA
+=======
+# Copyright 2016-2018 Hunter Sezen California, USA
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,8 +27,13 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=RetroArch
+<<<<<<< HEAD
 VERSION=${VERSION:-1.6.9}
 BUILD=${BUILD:-1}
+=======
+VERSION=${VERSION:-1.7.3}
+BUILD=${BUILD:-2}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
@@ -70,10 +79,15 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 if [ "${DEBUG:=0}" != 0 ]; then
+<<<<<<< HEAD
+=======
+  [ "${ASAN:=}" != '' ] && ASAN=address
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   DEBUG=1
   RELEASE=debug
   SLKCFLAGS="$(printf %s "$SLKCFLAGS" | sed 's/-O2/-O0 -g/')"
 else
+<<<<<<< HEAD
   RELEASE=release
 fi
 
@@ -87,6 +101,26 @@ fi
 
 if [ "${PYTHON:-0}" = 1 ]; then
   python='--enable-python'
+=======
+  ASAN=
+  RELEASE=release
+fi
+
+lib=
+
+if [ "${GLES:-0}" != 0 ]; then
+  lib="${lib} --enable-opengles"
+elif [ "${GLES3:-0}" != 0 ]; then
+  lib="${lib} --enable-opengles --enable-opengles3"
+fi
+
+pkg-config --exists flac && lib="${lib} --disable-builtinflac"
+
+[ -d /usr/include/miniupnpc ] && lib="${lib} --disable-builtinminiupnpc"
+
+if [ "${PYTHON:-0}" != 0 ]; then
+  lib="${lib} --enable-python"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   # Needed for python3 in the 14.1 SBo branch.
   if ! pkg-config --exists python3 && pkg-config --exists python-3.5; then
     sed -i 's/python3/python-3.5/' qb/config.libs.sh
@@ -96,7 +130,11 @@ fi
 # Disable downloading cores with the online updater
 # https://github.com/libretro/RetroArch/issues/3237
 SED_CORE=; SED_INFO=; SED_MENU=
+<<<<<<< HEAD
 if [ "${BUILDBOT:-0}" != 1 ]; then
+=======
+if [ "${BUILDBOT:-0}" = 0 ]; then
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   SED_CORE="s|# libretro_directory =|libretro_directory = /usr/lib${LIBDIRSUFFIX}/libretro|"
   SED_INFO="s|# libretro_info_path =|libretro_info_path = /usr/lib${LIBDIRSUFFIX}/libretro/info|"
   SED_MENU='s|# menu_show_core_updater = true|menu_show_core_updater = false|'
@@ -108,10 +146,19 @@ sed -e "s|# audio_filter_dir =|audio_filter_dir = /usr/lib${LIBDIRSUFFIX}/retroa
     -e "$SED_CORE;$SED_INFO;$SED_MENU" \
     -i retroarch.cfg
 
+# Qt: only check for pending events of the main thread
+# https://github.com/libretro/RetroArch/commit/c2ad8d47d382c7460bb54c8a7116573d95648f95
+# https://github.com/libretro/RetroArch/issues/6726
+zcat $CWD/qt.patch.gz | patch -p1
+
+# Set $lib to a portable array
+eval "set -- $lib"
+
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix=/usr \
+<<<<<<< HEAD
   --with-bin_dir=/usr/games \
   --with-man_dir=/usr/man \
   --with-assets_dir=/usr/share/games \
@@ -120,6 +167,17 @@ CXXFLAGS="$SLKCFLAGS" \
   $gles $python
 
 make GL_DEBUG=$DEBUG VULKAN_DEBUG=$DEBUG
+=======
+  --bindir=/usr/games \
+  --mandir=/usr/man \
+  --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --with-assets_dir=/usr/share/games \
+  --disable-update_assets \
+  --build=$ARCH-slackware-linux \
+  "$@"
+
+make GL_DEBUG=$DEBUG VULKAN_DEBUG=$DEBUG SANITIZER=$ASAN
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 make install DESTDIR=$PKG
 
 for filter in audio video; do
@@ -133,11 +191,18 @@ for filter in audio video; do
       DIR="gfx/${filter}_filters"
     ;;
   esac
+<<<<<<< HEAD
   make -C $DIR build=$RELEASE
   install -dm0755 $PKG/usr/lib${LIBDIRSUFFIX}/retroarch/filters/$filter
   for ext in $EXT so; do
     install -m0644 $DIR/*.$ext $PKG/usr/lib${LIBDIRSUFFIX}/retroarch/filters/$filter
   done
+=======
+  ( cd $DIR ; make build=$RELEASE )
+  mkdir -p $PKG/usr/lib${LIBDIRSUFFIX}/retroarch/filters/$filter
+  cp $DIR/*.$EXT $DIR/*.so $PKG/usr/lib${LIBDIRSUFFIX}/retroarch/filters/$filter
+  chmod 0644 $PKG/usr/lib${LIBDIRSUFFIX}/retroarch/filters/$filter/*
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 done
 
 mv $PKG/etc/retroarch.cfg $PKG/etc/retroarch.cfg.new
@@ -151,8 +216,12 @@ find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+<<<<<<< HEAD
 cp -a CHANGES.md CONTRIBUTING.md COPYING README* $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a media/assets/COPYING $PKG/usr/doc/$PRGNAM-$VERSION/COPYING.assets
+=======
+cp -a CHANGES.md CONTRIBUTING.md README-* $PKG/usr/doc/$PRGNAM-$VERSION
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

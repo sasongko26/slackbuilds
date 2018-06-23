@@ -1,4 +1,5 @@
 PRGNAM="rust"
+<<<<<<< HEAD
 VERSION="1.22.1"
 HOMEPAGE="https://www.rust-lang.org"
 DOWNLOAD="https://static.rust-lang.org/dist/rustc-1.22.1-src.tar.xz \
@@ -23,6 +24,32 @@ MD5SUM_x86_64="210472cdde0d83962ba06419f2a7ce54 \
                b870d85feb8958727dbdad476007d65c \
                b6e348e588a789eca369b5404e7d7656 \
                6b5b084cb997d20d11b7b2b566ffccdd"
+=======
+VERSION="1.26.2"
+HOMEPAGE="https://www.rust-lang.org"
+DOWNLOAD="https://static.rust-lang.org/dist/rustc-1.26.2-src.tar.xz \
+          https://static.rust-lang.org/dist/2018-03-29/cargo-0.26.0-i686-unknown-linux-gnu.tar.gz \
+          https://static.rust-lang.org/dist/2018-03-29/rust-std-1.25.0-i686-unknown-linux-gnu.tar.gz \
+          https://static.rust-lang.org/dist/2018-03-29/rustc-1.25.0-i686-unknown-linux-gnu.tar.gz \
+          https://static.rust-lang.org/dist/2018-03-29/cargo-0.26.0-arm-unknown-linux-gnueabi.tar.gz \
+          https://static.rust-lang.org/dist/2018-03-29/rust-std-1.25.0-arm-unknown-linux-gnueabi.tar.gz \
+          https://static.rust-lang.org/dist/2018-03-29/rustc-1.25.0-arm-unknown-linux-gnueabi.tar.gz"
+MD5SUM="5185c661cab0d34121e78a2a5c28af5f \
+        d49b79a5425ea14c0f54d8d4abe48cc7 \
+        5f248be4a20a53419d0bf5c5120ebe04 \
+        d6c7c406e1a783b174aaf1414e9f0900 \
+        4fe96e55897f156fdbc80c96a0913516 \
+        3e1a27b11f17428290a6133a1b0211c8 \
+        5f277935c04a431fb64bbac160d53118"
+DOWNLOAD_x86_64="https://static.rust-lang.org/dist/rustc-1.26.2-src.tar.xz \
+                 https://static.rust-lang.org/dist/2018-03-29/cargo-0.26.0-x86_64-unknown-linux-gnu.tar.gz \
+                 https://static.rust-lang.org/dist/2018-03-29/rust-std-1.25.0-x86_64-unknown-linux-gnu.tar.gz \
+                 https://static.rust-lang.org/dist/2018-03-29/rustc-1.25.0-x86_64-unknown-linux-gnu.tar.gz"
+MD5SUM_x86_64="5185c661cab0d34121e78a2a5c28af5f \
+               b0de62d86f0ba71078471d09916873c6 \
+               37e9f9193413caba47134af3306328c5 \
+               6e9c8ae2946cf6626ad6511c7a1d6c2a"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES="patchelf"
 MAINTAINER="Andrew Clemons"
 EMAIL="andrew.clemons@gmail.com"

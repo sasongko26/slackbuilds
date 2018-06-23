@@ -23,7 +23,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=dart
+<<<<<<< HEAD
 VERSION=${VERSION:-1.24.2}
+=======
+VERSION=${VERSION:-1.24.3}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 # this version of dart SDK does not have x86 dartium, use the one from previous
@@ -45,6 +49,7 @@ PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 if [ "$ARCH" = "x86_64" ]; then
+<<<<<<< HEAD
   PKG_PLATFORM="x64"
 elif [ "$ARCH" = "i586" ] || [ "$ARCH" = "i686" ]; then
   PKG_PLATFORM="ia32"
@@ -54,6 +59,15 @@ elif [ "$ARCH" = "arm" ]; then
 else
   echo "$ARCH is not supported." >&2
   exit 1
+=======
+    PKG_PLATFORM="x64"
+    DARTIUM_VERSION=1.24.2
+elif [ "$ARCH" = "i586" ] || [ "$ARCH" = "i686" ]; then
+    PKG_PLATFORM="ia32"
+    DARTIUM_VERSION=1.22.0
+elif [ "$ARCH" = "arm" ]; then
+    PKG_PLATFORM="arm"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 fi
 
 set -e

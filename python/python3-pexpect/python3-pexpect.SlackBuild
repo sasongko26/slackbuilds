@@ -4,7 +4,11 @@
 
 # Copyright (c) 2007 Javier Rojas <jerojasro@gmail.com>
 # Copyright 2014-2017 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+<<<<<<< HEAD
 # Copyright 2017 Benjamin Trigona-Harany <slackbuilds@jaxartes.net>
+=======
+# Copyright 2017-2018 Benjamin Trigona-Harany <slackbuilds@jaxartes.net>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -26,7 +30,11 @@
 
 SRCNAM=pexpect
 PRGNAM=python3-$SRCNAM
+<<<<<<< HEAD
 VERSION=${VERSION:-4.3.0}
+=======
+VERSION=${VERSION:-4.6.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -75,7 +83,13 @@ find -L . \
 python3 setup.py install --root=$PKG
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+<<<<<<< HEAD
 cp -a LICENSE README.rst $PKG/usr/doc/$PRGNAM-$VERSION
+=======
+cp -a \
+  LICENSE README.rst \
+  $PKG/usr/doc/$PRGNAM-$VERSION
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

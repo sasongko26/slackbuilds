@@ -2,7 +2,11 @@
 #
 # Slackware build script for wxSQLite3.
 #
+<<<<<<< HEAD
 # Copyright 2015-2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+=======
+# Copyright 2015-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +27,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=wxSQLite3
+<<<<<<< HEAD
 VERSION=${VERSION:-3.5.8}
+=======
+VERSION=${VERSION:-4.0.3}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -93,7 +101,12 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+<<<<<<< HEAD
 cp LICENCE.txt readme.md $PKG/usr/doc/$PRGNAM-$VERSION/
+=======
+cp COPYING.txt GPL-3.0.txt LGPL-3.0.txt LICENCE.txt readme.md \
+  $PKG/usr/doc/$PRGNAM-$VERSION/
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

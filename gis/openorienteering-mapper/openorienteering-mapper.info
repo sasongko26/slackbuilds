@@ -1,8 +1,15 @@
 PRGNAM="openorienteering-mapper"
+<<<<<<< HEAD
 VERSION="0.7.0"
 HOMEPAGE="http://www.openorienteering.org/apps/mapper/"
 DOWNLOAD="https://github.com/OpenOrienteering/mapper/archive/v0.7.0/mapper-0.7.0.tar.gz"
 MD5SUM="2b750ea2dbb26328f188f8e64e63c890"
+=======
+VERSION="0.8.1"
+HOMEPAGE="http://www.openorienteering.org/apps/mapper/"
+DOWNLOAD="https://github.com/OpenOrienteering/mapper/archive/v0.8.1/mapper-0.8.1.tar.gz"
+MD5SUM="203aa28e8fba24772f600ec9a55b3df9"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="gdal polyclipping proj qt5"

@@ -12,7 +12,11 @@ rubygem-activesupport: A toolkit of support libraries and Ruby core extensions e
 rubygem-activesupport: from the Rails framework. Rich support for multibyte strings,
 rubygem-activesupport: internationalization, time zones, and testing.
 rubygem-activesupport:
+<<<<<<< HEAD
 rubygem-activesupport: Homepage: http://rubyonrails.org/
+=======
+rubygem-activesupport: Homepage: https://rubyonrails.org/
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 rubygem-activesupport:
 rubygem-activesupport:
 rubygem-activesupport:

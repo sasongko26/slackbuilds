@@ -1,7 +1,12 @@
 PRGNAM="perl-CPAN-Meta-Check"
 VERSION="0.014"
+<<<<<<< HEAD
 HOMEPAGE="http://search.cpan.org/dist/CPAN-Meta-Check/"
 DOWNLOAD="http://search.cpan.org/CPAN/authors/id/L/LE/LEONT/CPAN-Meta-Check-0.014.tar.gz"
+=======
+HOMEPAGE="https://metacpan.org/release/CPAN-Meta-Check"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/L/LE/LEONT/CPAN-Meta-Check-0.014.tar.gz"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="ccd4448a7b08e1e3ef6f475030b282c9"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

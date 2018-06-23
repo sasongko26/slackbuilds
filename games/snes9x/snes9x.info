@@ -1,10 +1,15 @@
 PRGNAM="snes9x"
-VERSION="1.54.1"
+VERSION="1.56.1"
 HOMEPAGE="https://github.com/snes9xgit/snes9x"
+<<<<<<< HEAD
 DOWNLOAD="https://github.com/snes9xgit/snes9x/archive/1.54.1/snes9x-1.54.1.tar.gz"
 MD5SUM="ea8e97bbde690345b4d3b1af9facc1f0"
+=======
+DOWNLOAD="https://github.com/snes9xgit/snes9x/archive/1.56.1/snes9x-1.56.1.tar.gz"
+MD5SUM="c0693887e54e775a4f971a27fb4975ab"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES=""
+REQUIRES="SDL2"
 MAINTAINER="B. Watson"
 EMAIL="yalhcru@gmail.com"

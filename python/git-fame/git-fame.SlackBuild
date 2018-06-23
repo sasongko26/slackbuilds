@@ -2,7 +2,11 @@
 
 # Slackware build script for git-fame
 
+<<<<<<< HEAD
 # Copyright 2017 Andrew Clemons, Wellington New Zealand
+=======
+# Copyright 2017-2018 Andrew Clemons, Wellington New Zealand
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +27,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=git-fame
+<<<<<<< HEAD
 VERSION=${VERSION:-1.2.0}
+=======
+VERSION=${VERSION:-1.4.2}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -74,8 +82,16 @@ python setup.py install --root=$PKG
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
+<<<<<<< HEAD
 mkdir -p $PKG/etc/bash_completion.d/
 cp git-fame_completion.bash $PKG/etc/bash_completion.d/
+=======
+find $PKG/usr/man -type f -exec gzip -9 {} \;
+for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
+
+mkdir -p $PKG/usr/share/bash-completion/completions
+install -m 644 git-fame_completion.bash $PKG/usr/share/bash-completion/completions/git-fame
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \

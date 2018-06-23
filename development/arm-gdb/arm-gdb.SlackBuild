@@ -25,7 +25,11 @@
 # Written by thorsten <thorsten (dot) johannvorderbrueggen (at) t-online (dot) de>
 
 PRGNAM=arm-gdb
+<<<<<<< HEAD
 VERSION=${VERSION:-7.8.1}
+=======
+VERSION=${VERSION:-8.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -81,6 +85,7 @@ CXXFLAGS_FOR_BUILD="$SLKCFLAGS" \
   --localstatedir=/var \
   --infodir=/usr/info \
   --mandir=/usr/man \
+<<<<<<< HEAD
   --target=arm-none-eabi \
   --disable-nls \
   --enable-languages=c,c++ \
@@ -91,25 +96,46 @@ CXXFLAGS_FOR_BUILD="$SLKCFLAGS" \
   --program-prefix="arm-none-eabi-" \
   --program-suffix="" \
   --build=$ARCH-slackware-linux
+=======
+  --build=$ARCH-slackware-linux \
+  --target="arm-none-eabi" \
+  --enable-languages="c,c++" \
+  --enable-interwork \
+  --enable-multilib \
+  --disable-nls \
+  --with-python=/usr/bin/python \
+  --with-system-gdbinit=/etc/gdb/gdbinit
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 make
 make install DESTDIR=$PKG
 
+<<<<<<< HEAD
+=======
+# Remove stuff that would replace files in Slackware's gdb package
+rm -rf $PKG/usr/share/
+rm -rf $PKG/usr/info
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
+<<<<<<< HEAD
 rm -f $PKG/usr/info/dir
 gzip -9 $PKG/usr/info/*.info*
 
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 for file in COPYING* ChangeLog MAINTAINERS README*; do
   cp ../gdb-$VERSION/$file $PKG/usr/doc/$PRGNAM-$VERSION
 done
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
+<<<<<<< HEAD
 # Remove useless stuff
 rm -rf $PKG/usr/lib${LIBDIRSUFFIX}/libiberty.a
 rm -rf $PKG/usr/include/gdb
@@ -117,6 +143,8 @@ rm -rf $PKG/usr/share/gdb
 rm -rf $PKG/usr/share/info
 rm -rf $PKG/usr/share/man
 
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 

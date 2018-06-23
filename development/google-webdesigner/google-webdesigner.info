@@ -1,10 +1,18 @@
 PRGNAM="google-webdesigner"
+<<<<<<< HEAD
 VERSION="2.0.0.1113"
+=======
+VERSION="3.0.0.0312"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 HOMEPAGE="https://www.google.com/webdesigner/"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
 DOWNLOAD_x86_64="https://dl.google.com/linux/direct/google-webdesigner_current_amd64.deb"
+<<<<<<< HEAD
 MD5SUM_x86_64="a1f6f3793f463bf86e0638fea4b64bd9"
+=======
+MD5SUM_x86_64="ddd3aedf5fe08fc5af44126356ca43b8"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES=""
 MAINTAINER="Willy Sudiarto Raharjo"
 EMAIL="willysr@slackbuilds.org"

@@ -2,7 +2,11 @@
 
 # Slackware build script for python-fonttools
 
+<<<<<<< HEAD
 # Copyright 2017 Andrew Clemons, Wellington New Zealand
+=======
+# Copyright 2017-2018 Andrew Clemons, Wellington New Zealand
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,7 +28,11 @@
 
 PRGNAM=python-fonttools
 SRCNAM=fonttools
+<<<<<<< HEAD
 VERSION=${VERSION:-3.20.1}
+=======
+VERSION=${VERSION:-3.28.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -107,7 +115,11 @@ for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; r
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
+<<<<<<< HEAD
   LICENSE NEWS.rst README.rst \
+=======
+  LICENSE.* NEWS.rst README.rst \
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 

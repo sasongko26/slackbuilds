@@ -1,4 +1,5 @@
 PRGNAM="urlwatch"
+<<<<<<< HEAD
 VERSION="2.7"
 HOMEPAGE="https://thp.io/2008/urlwatch/"
 DOWNLOAD="https://pypi.python.org/packages/50/9f/0311a0aa74d82001d1fa470cfa472fd75881475257e7765e86007a7d10aa/urlwatch-2.7.tar.gz"
@@ -6,5 +7,14 @@ MD5SUM="1380be3896c16e559836e5b896479c08"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python3 python3-PyYAML minidb python-requests python-keyring python3-appdirs"
+=======
+VERSION="2.12"
+HOMEPAGE="https://thp.io/2008/urlwatch/"
+DOWNLOAD="https://files.pythonhosted.org/packages/26/33/b8e646660776965f46bc8de7f3182e1a18d369da6206954a8556c32ae246/urlwatch-2.12.tar.gz"
+MD5SUM="92bd607954eb8ce43166a114c3ab6bf2"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="python3-PyYAML minidb python-requests python-keyring python3-appdirs pycodestyle"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MAINTAINER="Dimitris Zlatanidis"
 EMAIL="d.zlatanidis@gmail.com"

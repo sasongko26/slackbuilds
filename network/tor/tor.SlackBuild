@@ -26,7 +26,11 @@
 # Updated by Fernando Lopez Jr. fernando.lopezjr@gmail.com
 
 PRGNAM=tor
+<<<<<<< HEAD
 VERSION=${VERSION:-0.3.1.8}
+=======
+VERSION=${VERSION:-0.3.3.6}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

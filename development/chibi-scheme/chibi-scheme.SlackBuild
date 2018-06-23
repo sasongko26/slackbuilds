@@ -2,7 +2,7 @@
 
 # Slackware build script for chibi-scheme
 
-# Copyright 2014 Erik Falor, Utah, USA
+# Copyright 2018 Erik Falor, Utah, USA
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +23,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM='chibi-scheme'
+<<<<<<< HEAD
 VERSION=${VERSION:-0.7.3}
+=======
+VERSION=${VERSION:-0.8}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -70,7 +74,11 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 # Don't ldconfig the build box, installpkg will do that
+<<<<<<< HEAD
 sed -i -e '/ldconfig/d' Makefile
+=======
+sed -i -e '/LDCONFIG/d' Makefile
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 make -j1 \
   CFLAGS="$SLKCFLAGS" \
@@ -96,7 +104,8 @@ find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a AUTHORS VERSION COPYING README README.libs RELEASE TODO $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a AUTHORS COPYING README-win32.md README.libs README.md RELEASE TODO VERSION examples \
+    $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

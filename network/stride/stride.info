@@ -1,10 +1,19 @@
 PRGNAM="stride"
+<<<<<<< HEAD
 VERSION="1.6.20"
 HOMEPAGE="https://www.stride.com"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
 DOWNLOAD_x86_64="https://stride-desktop-downloads.s3.amazonaws.com/releases/linux/deb/64/prod/stride_amd64.deb"
 MD5SUM_x86_64="13526781d18d2eaff90222bf6911cbf1"
+=======
+VERSION="1.8.18"
+HOMEPAGE="https://www.stride.com"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="http://ponce.cc/slackware/sources/repo/stride_amd64.deb"
+MD5SUM_x86_64="db0e0401b5394fd0d46fd544d0d0dd94"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES=""
 MAINTAINER="Gerardo Zamudio"
 EMAIL="gerardo.zamudio@linux.com"

@@ -10,7 +10,11 @@ opera-ffmpeg-codecs: opera-ffmpeg-codecs (Extra ffmpeg codec for Opera browser)
 opera-ffmpeg-codecs:
 opera-ffmpeg-codecs: Additional support for proprietary codecs for Opera Stable.
 opera-ffmpeg-codecs:
+<<<<<<< HEAD
 opera-ffmpeg-codecs: Home Page: https://repo.herecura.eu/
+=======
+opera-ffmpeg-codecs: Home Page: https://www.archlinux.org/packages/community/
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 opera-ffmpeg-codecs:
 opera-ffmpeg-codecs:
 opera-ffmpeg-codecs:

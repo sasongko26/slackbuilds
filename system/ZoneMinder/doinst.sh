@@ -11,8 +11,13 @@ config() {
   # Otherwise, we leave the .new copy for the admin to consider...
 }
 
+<<<<<<< HEAD
 config etc/zm.conf.new
 config etc/httpd/extra/zm.conf.new
+=======
+config etc/httpd/extra/zm.conf.new
+config etc/zm.conf.new
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 config etc/logrotate.d/zm.new
 config etc/rc.d/rc.zm.new
 

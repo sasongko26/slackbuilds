@@ -23,7 +23,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=pyaes
+<<<<<<< HEAD
 VERSION=${VERSION:-1.6.0}
+=======
+VERSION=${VERSION:-1.6.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -71,6 +75,13 @@ find -L . \
 
 python setup.py install --root=$PKG
 
+<<<<<<< HEAD
+=======
+if $(python3 -c 'import sys' 2>/dev/null); then
+  python3 setup.py install --root=$PKG
+fi
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 

@@ -1,8 +1,15 @@
 PRGNAM="exiftool"
+<<<<<<< HEAD
 VERSION="10.55"
 HOMEPAGE="https://metacpan.org/pod/Image::ExifTool"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/E/EX/EXIFTOOL/Image-ExifTool-10.55.tar.gz"
 MD5SUM="925fa97c439efd7dd93b88046729dcec"
+=======
+VERSION="11.01"
+HOMEPAGE="https://www.sno.phy.queensu.ca/~phil/exiftool/"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/E/EX/EXIFTOOL/Image-ExifTool-11.01.tar.gz"
+MD5SUM="d313a327b0fd57b985f78e287fe3da85"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

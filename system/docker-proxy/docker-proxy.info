@@ -1,10 +1,19 @@
 PRGNAM="docker-proxy"
+<<<<<<< HEAD
 VERSION="20170120_7b2b1fe"
 HOMEPAGE="https://github.com/docker/libnetwork"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
 DOWNLOAD_x86_64="https://github.com/docker/libnetwork/archive/7b2b1fe/libnetwork-7b2b1feb1de4817d522cc372af149ff48d25028e.tar.gz"
 MD5SUM_x86_64="a9beb9207b291373dc4e376f04056e8a"
+=======
+VERSION="20180412_c15b372"
+HOMEPAGE="https://github.com/docker/libnetwork"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://github.com/docker/libnetwork/archive/c15b372/libnetwork-c15b372ef22125880d378167dde44f4b134e1a77.tar.gz"
+MD5SUM_x86_64="557e972b9b6a42c872ab0c9aca023c9f"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES="google-go-lang"
 MAINTAINER="Audrius Kažukauskas"
 EMAIL="audrius@neutrino.lt"

@@ -1,8 +1,15 @@
 PRGNAM="mutagen"
+<<<<<<< HEAD
 VERSION="1.39"
 HOMEPAGE="https://github.com/quodlibet/mutagen"
 DOWNLOAD="https://github.com/quodlibet/mutagen/archive/release-1.39/mutagen-release-1.39.tar.gz"
 MD5SUM="3952ac09951d5c9b77bda8f76537fa8b"
+=======
+VERSION="1.40.0"
+HOMEPAGE="https://github.com/quodlibet/mutagen"
+DOWNLOAD="https://github.com/quodlibet/mutagen/archive/release-1.40.0/mutagen-release-1.40.0.tar.gz"
+MD5SUM="9e8fa0cd987eac0da0a399c2080aa61a"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

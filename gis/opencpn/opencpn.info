@@ -1,8 +1,15 @@
 PRGNAM="opencpn"
+<<<<<<< HEAD
 VERSION="4.8.0"
 HOMEPAGE="https://opencpn.org/ocpn/"
 DOWNLOAD="https://github.com/OpenCPN/OpenCPN/archive/v4.8.0/OpenCPN-4.8.0.tar.gz"
 MD5SUM="6fe962ee769995c6f2b176465e6bb360"
+=======
+VERSION="4.8.4"
+HOMEPAGE="https://opencpn.org/ocpn/"
+DOWNLOAD="https://github.com/OpenCPN/OpenCPN/archive/v4.8.4/OpenCPN-4.8.4.tar.gz"
+MD5SUM="3f2f35d0f8d5f18c3ab25cf623e50570"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="gpsd tinyxml libmspack portaudio wxGTK3"

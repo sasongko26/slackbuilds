@@ -1,10 +1,19 @@
 PRGNAM="reduce-algebra"
+<<<<<<< HEAD
 VERSION="20171112svn4264"
 HOMEPAGE="http://reduce-algebra.sourceforge.net"
 DOWNLOAD="http://downloads.sourceforge.net/reduce-algebra/snapshot_2017-11-12/Reduce-svn4264-src.tar.gz \
           http://downloads.sourceforge.net/reduce-algebra/snapshot_2017-11-12/reduce-common_2017-11-12_all.tgz"
 MD5SUM="f77f773f9ae6d9f4d401ac6ecc4dd1b3 \
         b187be41f2b147443833b9915e36779d"
+=======
+VERSION="20180406svn4567"
+HOMEPAGE="http://reduce-algebra.sourceforge.net"
+DOWNLOAD="http://downloads.sourceforge.net/reduce-algebra/snapshot_2018-04-06/Reduce-svn4567-src.tar.gz \
+          http://downloads.sourceforge.net/reduce-algebra/snapshot_2018-04-06/linux64/reduce-common_4567_all.tgz"
+MD5SUM="0893a2dc002afef62e812892d0d8fc01 \
+        92afa1ec0d8f74f73e3e40efcfd82244"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

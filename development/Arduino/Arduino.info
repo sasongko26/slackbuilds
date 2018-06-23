@@ -33,7 +33,11 @@ DOWNLOAD="https://github.com/arduino/Arduino/archive/1.8.3/Arduino-1.8.3.tar.gz 
           http://distribute.atmel.no/tools/opensource/Atmel-AVR-GNU-Toolchain/3.5.3/avr-binutils.tar.bz2 \
           http://mirror.switch.ch/ftp/mirror/gnu/gmp/gmp-5.0.2.tar.bz2 \
           http://mirror.switch.ch/ftp/mirror/gnu/mpfr/mpfr-3.0.0.tar.bz2 \
+<<<<<<< HEAD
           http://www.multiprecision.org/mpc/download/mpc-0.9.tar.gz \
+=======
+          http://ponce.cc/slackware/sources/repo/mpc-0.9.tar.gz \
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
           http://distribute.atmel.no/tools/opensource/Atmel-AVR-GNU-Toolchain/3.5.3/avr-gcc.tar.bz2 \
           http://distribute.atmel.no/tools/opensource/Atmel-AVR-GNU-Toolchain/3.5.3/avr-libc.tar.bz2 \
           http://distribute.atmel.no/tools/opensource/Atmel-AVR-GNU-Toolchain/3.5.3/avr8-headers.zip \

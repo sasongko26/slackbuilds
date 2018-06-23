@@ -1,8 +1,15 @@
 PRGNAM="googler"
+<<<<<<< HEAD
 VERSION="3.3"
 HOMEPAGE="https://github.com/jarun/googler"
 DOWNLOAD="https://github.com/jarun/googler/archive/v3.3/googler-3.3.tar.gz"
 MD5SUM="5bcfd3a11a1e59e28b3560f744681f3e"
+=======
+VERSION="3.5"
+HOMEPAGE="https://github.com/jarun/googler"
+DOWNLOAD="https://github.com/jarun/googler/archive/v3.5/googler-3.5.tar.gz"
+MD5SUM="fa505cd5c1dd171c7c291a1c7754303e"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python3"

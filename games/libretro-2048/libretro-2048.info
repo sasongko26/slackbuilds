@@ -1,10 +1,21 @@
 PRGNAM="libretro-2048"
+<<<<<<< HEAD
 VERSION="2017.01.20_5415b1b"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/libretro-2048-2017.01.20_5415b1b.tar.xz"
 MD5SUM="475cb94406b6647ddeab609f65f43e4e"
+=======
+VERSION="2017.10.23_04b708a"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/libretro-2048-2017.10.23_04b708a.tar.xz"
+MD5SUM="c1af1da05b16515655e8fe350f505a7d"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
 MAINTAINER="Hunter Sezen"
+<<<<<<< HEAD
 EMAIL="ovariegata@yahoo.com"
+=======
+EMAIL="orbea@fredslev.dk"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

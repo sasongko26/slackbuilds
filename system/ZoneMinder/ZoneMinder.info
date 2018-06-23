@@ -1,4 +1,5 @@
 PRGNAM="ZoneMinder"
+<<<<<<< HEAD
 VERSION="1.30.0"
 HOMEPAGE="https://www.zoneminder.com"
 DOWNLOAD="https://github.com/ZoneMinder/ZoneMinder/releases/download/v1.30.0/ZoneMinder-1.30.0.tar.gz \
@@ -12,3 +13,18 @@ MD5SUM_x86_64=""
 REQUIRES="perl-Module-Build perl-Date-Manip perl-Sys-Mmap libwww-perl perl-Sys-CPU perl-Sys-MemInfo"
 MAINTAINER="Geno Bob"
 EMAIL="geno.bob@gmail.com"
+=======
+VERSION="1.31.1"
+HOMEPAGE="https://www.zoneminder.com"
+DOWNLOAD="http://urchlay.naptime.net/~urchlay/src/ZoneMinder-1.31.1.tar.gz \
+          http://www.andywilcock.com/code/cambozola/cambozola-0.935.tar.gz \
+          https://downloads.sourceforge.net/jscalendar/jscalendar-1.0.zip"
+MD5SUM="c4fb54ec542fed09e03e0d5830106c39 \
+        6c48fd994685d4d72668850eeb613e24 \
+        10f2160fe68294013efcd1473cd36f72"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="perl-Date-Manip perl-Sys-Mmap perl-LWP-Protocol-https SDL2"
+MAINTAINER="Gene Baxter"
+EMAIL="GenoBob@gmail.com"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

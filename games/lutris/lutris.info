@@ -1,8 +1,15 @@
 PRGNAM="lutris"
+<<<<<<< HEAD
 VERSION="0.4.13"
 HOMEPAGE="https://lutris.net/"
 DOWNLOAD="http://lutris.net/releases/lutris_0.4.13.tar.xz"
 MD5SUM="2aea856639388099e7b428d952979490"
+=======
+VERSION="0.4.14"
+HOMEPAGE="https://lutris.net/"
+DOWNLOAD="http://lutris.net/releases/lutris_0.4.14.tar.xz"
+MD5SUM="1550826b2022af03f5e249c8c624a608"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="pygobject3-python3 dbus-python3 python3-PyYAML pyxdg"

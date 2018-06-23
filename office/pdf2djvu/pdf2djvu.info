@@ -1,8 +1,15 @@
 PRGNAM="pdf2djvu"
+<<<<<<< HEAD
 VERSION="0.9.7"
 HOMEPAGE="http://jwilk.net/software/pdf2djvu"
 DOWNLOAD="https://github.com/jwilk/pdf2djvu/releases/download/0.9.7/pdf2djvu-0.9.7.tar.xz"
 MD5SUM="e7eb7a856d52f3d7f9d884216303a07a"
+=======
+VERSION="0.9.8"
+HOMEPAGE="http://jwilk.net/software/pdf2djvu"
+DOWNLOAD="https://github.com/jwilk/pdf2djvu/releases/download/0.9.8/pdf2djvu-0.9.8.tar.xz"
+MD5SUM="ccea955e536fada8f6119507cebc95f1"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="nose GraphicsMagick"

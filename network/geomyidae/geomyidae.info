@@ -1,8 +1,15 @@
 PRGNAM="geomyidae"
+<<<<<<< HEAD
 VERSION="git20171114"
 HOMEPAGE="gopher://bitreich.org/1/scm/geomyidae/log.gph"
 DOWNLOAD="http://unrealize.co.uk/source/geomyidae-git20171114.tar.gz"
 MD5SUM="3fff3417afca7ee8f2d576be80b01e6f"
+=======
+VERSION="v0.32"
+HOMEPAGE="gopher://bitreich.org/1/scm/geomyidae/log.gph"
+DOWNLOAD="ftp://bitreich.org/releases/geomyidae/geomyidae-v0.32.tgz"
+MD5SUM="4813053fe2b94bd572ebb002f070ecb7"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

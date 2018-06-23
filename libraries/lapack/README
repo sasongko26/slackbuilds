@@ -2,5 +2,11 @@ LAPACK provides routines for solving systems of simultaneous linear
 equations, least-squares solutions of linear systems of equations,
 eigenvalue problems, and singular value problems.
 
+<<<<<<< HEAD
+=======
+To build a static library in addition to the shared library,
+pass STATIC=yes to the script.
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 Note: If you want good performance, then use the BLAS libraries provided by
       your CPU vendor, or OpenBLAS or atlas provided by SlackBuilds.org.

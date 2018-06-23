@@ -1,8 +1,15 @@
 PRGNAM="perl-Params-ValidationCompiler"
+<<<<<<< HEAD
 VERSION="0.25"
 HOMEPAGE="https://metacpan.org/pod/Params::ValidationCompiler"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Params-ValidationCompiler-0.25.tar.gz"
 MD5SUM="dd2da8991e880b481c9d3f9ab933ce5f"
+=======
+VERSION="0.27"
+HOMEPAGE="https://metacpan.org/pod/Params::ValidationCompiler"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/Params-ValidationCompiler-0.27.tar.gz"
+MD5SUM="a6937d7aba4417ad7d4edeb1f9988ac3"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="perl-Exception-Class perl-Eval-Closure"

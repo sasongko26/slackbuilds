@@ -2,7 +2,11 @@
 #
 # Slackware build script for paper-gtk-theme.
 #
+<<<<<<< HEAD
 # Copyright 2016-2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+=======
+# Copyright 2016-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +27,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM="paper-gtk-theme"
+<<<<<<< HEAD
 VERSION=${VERSION:-20160816}
+=======
+VERSION=${VERSION:-20171207}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -34,7 +42,11 @@ PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 CWD=$(pwd)
 
+<<<<<<< HEAD
 SRCVER=${SRCVER:-f75724fd76fd2e5681a367cca246a51f845320c3}
+=======
+SRCVER=${SRCVER:-770aba45a6441f9af4d02e04c0acc237533d341f}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 set -e
 
@@ -68,6 +80,10 @@ make
 make install DESTDIR=$PKG
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+<<<<<<< HEAD
+=======
+rm -f $PKG/usr/share/themes/Paper/README.md
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cp AUTHORS LICENSE README.md $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 

@@ -1,8 +1,15 @@
 PRGNAM="fail2ban"
+<<<<<<< HEAD
 VERSION="0.10.1"
 HOMEPAGE="https://github.com/fail2ban/fail2ban/"
 DOWNLOAD="https://github.com/fail2ban/fail2ban/archive/0.10.1/fail2ban-0.10.1.tar.gz"
 MD5SUM="bfcb1dec6d181d5996e00560bdcbfabf"
+=======
+VERSION="0.10.3.1"
+HOMEPAGE="https://github.com/fail2ban/fail2ban/"
+DOWNLOAD="https://github.com/fail2ban/fail2ban/archive/0.10.3.1/fail2ban-0.10.3.1.tar.gz"
+MD5SUM="d47e854378cf0458ddcdc5786768d226"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

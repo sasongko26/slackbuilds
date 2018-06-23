@@ -2,7 +2,11 @@
 #
 # Slackware build script for python-faulthandler.
 #
+<<<<<<< HEAD
 # Copyright 2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+=======
+# Copyright 2017-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +27,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=python-faulthandler
+<<<<<<< HEAD
 VERSION=${VERSION:-3.0}
+=======
+VERSION=${VERSION:-3.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -54,7 +62,11 @@ else
   LIBDIRSUFFIX=""
 fi
 
+<<<<<<< HEAD
 SRCNAM="faulthandler"
+=======
+SRCNAM=${SRCNAM:-faulthandler}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 set -e
 

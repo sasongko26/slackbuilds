@@ -7,7 +7,11 @@
 #
 
 PRGNAM=etherpad-lite
+<<<<<<< HEAD
 VERSION=${VERSION:-1.6.1}
+=======
+VERSION=${VERSION:-1.6.5}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -1,8 +1,15 @@
 PRGNAM="inxi"
+<<<<<<< HEAD
 VERSION="2.3.39"
 HOMEPAGE="https://github.com/smxi/inxi"
 DOWNLOAD="https://sources.archlinux.org/other/community/inxi/inxi-2.3.39.tar.gz"
 MD5SUM="581e4b5e49d87c06397dcac65a167c12"
+=======
+VERSION="3.0.09"
+HOMEPAGE="https://github.com/smxi/inxi"
+DOWNLOAD="https://github.com/smxi/inxi/archive/3.0.09-1.tar.gz"
+MD5SUM="88250e8945f338a37e41984097fa6fc4"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

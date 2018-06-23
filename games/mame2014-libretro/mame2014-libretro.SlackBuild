@@ -2,7 +2,7 @@
 
 # Slackware build script for mame2014-libretro
 
-# Copyright 2017 Hunter Sezen California, USA
+# Copyright 2017-2018 Hunter Sezen California, USA
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,8 +23,12 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=mame2014-libretro
+<<<<<<< HEAD
 LIBNAM=$(echo $PRGNAM | tr - _)
 VERSION=${VERSION:-2017.02.01_ee898d836c}
+=======
+VERSION=${VERSION:-2017.12.31_62a932c}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -41,25 +45,10 @@ TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-# requires patching the Makefile to properly use
-# the default CFLAGS and CXXFLAGS are probably fine
-if [ "$ARCH" = "i586" ]; then
-  SLKCFLAGS="-O2 -march=i586 -mtune=i686"
-  LIBDIRSUFFIX=""
-elif [ "$ARCH" = "i686" ]; then
-  SLKCFLAGS="-O2 -march=i686 -mtune=i686"
-  LIBDIRSUFFIX=""
-elif [ "$ARCH" = "x86_64" ]; then
-  SLKCFLAGS="-O2 -fPIC"
-  LIBDIRSUFFIX="64"
-else
-  SLKCFLAGS="-O2"
-  LIBDIRSUFFIX=""
-fi
+LIBDIRSUFFIX=
+[ "$ARCH" = x86_64 ] && LIBDIRSUFFIX=64
 
-DEBUG=${DEBUG:-0}
-
-set -e
+set -eu
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -74,18 +63,26 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-make DEBUG=$DEBUG GIT_VERSION=${VERSION#*_}
+[ "${DEBUG:=0}" != 0 ] && DEBUG=1
 
-install -Dm0644 $LIBNAM.so $PKG/usr/lib${LIBDIRSUFFIX}/libretro/$LIBNAM.so
-install -Dm0644 $LIBNAM.info $PKG/usr/lib${LIBDIRSUFFIX}/libretro/info/$LIBNAM.info
+[ "${CORE:=mame}" = all ] && CORE='mame mess ume'
 
-if [ "$DEBUG" = "0" ]; then
+for TARGET in $CORE; do
+  LIBNAM="${TARGET}2014_libretro"
+  make TARGET="$TARGET" DEBUG=$DEBUG GIT_VERSION="${VERSION#*_}"
+  install -Dm0644 $LIBNAM.so \
+    $PKG/usr/lib${LIBDIRSUFFIX}/libretro/$LIBNAM.so
+  install -Dm0644 $LIBNAM.info \
+    $PKG/usr/lib${LIBDIRSUFFIX}/libretro/info/$LIBNAM.info
+done
+
+if [ $DEBUG = 0 ]; then
   find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
     | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 fi
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a README.md docs/* $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a docs/* $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

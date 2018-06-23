@@ -24,7 +24,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=fish
+<<<<<<< HEAD
 VERSION=${VERSION:-2.7.0}
+=======
+VERSION=${VERSION:-2.7.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -83,7 +87,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --build=$ARCH-slackware-linux
 
-make V=1
+make
 make install DESTDIR=$PKG
 
 # Let's not clobber the config

@@ -1,10 +1,17 @@
 PRGNAM="lsyncd"
+<<<<<<< HEAD
 VERSION="2.2.2"
 HOMEPAGE="https://github.com/axkibe/lsyncd"
 DOWNLOAD="https://github.com/axkibe/lsyncd/archive/release-2.2.2/lsyncd-release-2.2.2.tar.gz"
 MD5SUM="70cc240d4b1595e14cb8ecd25d53f82d"
+=======
+VERSION="2.2.3"
+HOMEPAGE="https://github.com/axkibe/lsyncd"
+DOWNLOAD="https://github.com/axkibe/lsyncd/archive/release-2.2.3/lsyncd-release-2.2.3.tar.gz"
+MD5SUM="25d36b73946bec822d5c7f258262d9f3"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="lua"
+REQUIRES="lua53"
 MAINTAINER="Arkadiusz Drabczyk"
 EMAIL="arkadiusz@drabczyk.org"

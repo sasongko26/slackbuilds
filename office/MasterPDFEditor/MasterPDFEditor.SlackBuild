@@ -2,7 +2,7 @@
 
 # Slackware build script for MasterPDFEditor
 
-# Copyright 2014-2017 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+# Copyright 2014-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,8 +24,13 @@
 
 PRGNAM=MasterPDFEditor
 SRCNAM=master-pdf-editor
+<<<<<<< HEAD
 VERSION=${VERSION:-4.3.61}
 MAJVER=4
+=======
+VERSION=${VERSION:-5.0.25}
+MAJVER=${MAJVER:-5}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -77,7 +82,7 @@ mv $SRCNAM-$MAJVER $PKG/opt
 cd $PKG/opt/$SRCNAM-$MAJVER
 
 mkdir -p $PKG/usr/bin
-( ln -s /opt/$SRCNAM-$MAJVER/masterpdfeditor4 $PKG/usr/bin/ )
+( ln -s /opt/$SRCNAM-$MAJVER/masterpdfeditor${MAJVER} $PKG/usr/bin/ )
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 mv license.txt $PKG/usr/doc/$PRGNAM-$VERSION

@@ -1,7 +1,11 @@
 #!/bin/sh
 # Slackware build script for surfraw
 
+<<<<<<< HEAD
 # Copyright 2017 Frédéric Galusik Lyon, France
+=======
+# Copyright 2017-2018 Frédéric Galusik Lyon, France
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # Copyright 2007 Martin Lefebvre <dadexter@slackadelic.com>
 # Copyright 2010-2011 Grigorios Bouzakis <grbzks@xsmail.com>
 # Copyright 2014 Glenn Becker <burningc@sdf.org>
@@ -23,8 +27,13 @@
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=surfraw
+<<<<<<< HEAD
 VERSION=${VERSION:-2.2.9}
 BUILD=${BUILD:-2}
+=======
+VERSION=${VERSION:-2.3.0}
+BUILD=${BUILD:-1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}
 
 ARCH=noarch
@@ -49,9 +58,6 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-# fix man page symlinking
-sed -i 's,\.gz,,g' links.IN
-
 ./configure \
   --prefix=/usr \
   --sysconfdir=/etc \
@@ -72,8 +78,14 @@ find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+<<<<<<< HEAD
 cp -a AUTHORS COPYING ChangeLog HACKING INSTALL NEWS README TODO \
       $PKG/usr/doc/$PRGNAM-$VERSION
+=======
+cp -a \
+	AUTHORS COPYING ChangeLog HACKING INSTALL NEWS README STYLE TODO \
+	$PKG/usr/doc/$PRGNAM-$VERSION
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

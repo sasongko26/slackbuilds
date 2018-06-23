@@ -24,7 +24,11 @@
 
 
 PRGNAM=rclone
+<<<<<<< HEAD
 VERSION=${VERSION:-1.37}
+=======
+VERSION=${VERSION:-1.40}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

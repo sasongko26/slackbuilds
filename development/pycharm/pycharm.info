@@ -1,8 +1,15 @@
 PRGNAM="pycharm"
+<<<<<<< HEAD
 VERSION="2017.2.4"
 HOMEPAGE="https://www.jetbrains.com/pycharm/"
 DOWNLOAD="https://download.jetbrains.com/python/pycharm-community-2017.2.4.tar.gz"
 MD5SUM="56c93254ffdce5a4cd82e165fe1a4198"
+=======
+VERSION="2018.1.3"
+HOMEPAGE="https://www.jetbrains.com/pycharm/"
+DOWNLOAD="https://download.jetbrains.com/python/pycharm-community-2018.1.3.tar.gz"
+MD5SUM="cdc7939c1319fc0695246a34e1d86037"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="jdk"

@@ -1,8 +1,15 @@
 PRGNAM="sxhkd"
+<<<<<<< HEAD
 VERSION="0.5.8"
 HOMEPAGE="https://github.com/baskerville/sxhkd"
 DOWNLOAD="https://github.com/baskerville/sxhkd/archive/0.5.8/sxhkd-0.5.8.tar.gz"
 MD5SUM="1fbd4590cdbf021856b1e7b9c614d59f"
+=======
+VERSION="0.5.9"
+HOMEPAGE="https://github.com/baskerville/sxhkd"
+DOWNLOAD="https://github.com/baskerville/sxhkd/archive/0.5.9/sxhkd-0.5.9.tar.gz"
+MD5SUM="3e5456555c809ed554ff416b165d3699"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

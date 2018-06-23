@@ -1,8 +1,15 @@
 PRGNAM="SDL2_image"
+<<<<<<< HEAD
 VERSION="2.0.2"
 HOMEPAGE="https://www.libsdl.org/projects/SDL_image/"
 DOWNLOAD="https://www.libsdl.org/projects/SDL_image/release/SDL2_image-2.0.2.tar.gz"
 MD5SUM="d0a83b9a2ca8371a3c85aefe402ae680"
+=======
+VERSION="2.0.3"
+HOMEPAGE="https://www.libsdl.org/projects/SDL_image/"
+DOWNLOAD="https://www.libsdl.org/projects/SDL_image/release/SDL2_image-2.0.3.tar.gz"
+MD5SUM="c6baf6dfa80fa8a66853661a36a6034e"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="SDL2"

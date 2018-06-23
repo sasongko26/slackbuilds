@@ -8,7 +8,11 @@
 
 PRGNAM=perl-file-libmagic
 TARNAM=File-LibMagic
+<<<<<<< HEAD
 VERSION=${VERSION:-1.15}
+=======
+VERSION=${VERSION:-1.16}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -4,7 +4,11 @@
 
 
 PRGNAM=frescobaldi
+<<<<<<< HEAD
 VERSION=${VERSION:-2.19.0}
+=======
+VERSION=${VERSION:-2.20.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -3,7 +3,11 @@
 # Slackware Package Build Script for fail2ban
 # Git Hub: https://github.com/fail2ban/fail2ban/
 
+<<<<<<< HEAD
 # Copyright (c) 2008-2017, Nishant Limbachia, Hoffman Estates, IL, USA
+=======
+# Copyright (c) 2008-2018, Nishant Limbachia, Hoffman Estates, IL, USA
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # <nishant _AT_ mnspace _DOT_ net>
 # All rights reserved.
 
@@ -26,7 +30,11 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM="fail2ban"
+<<<<<<< HEAD
 VERSION=${VERSION:-0.10.1}
+=======
+VERSION=${VERSION:-0.10.3.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -88,6 +96,14 @@ install -D -m 0644 $CWD/config/paths-slackware.conf $PKG/etc/fail2ban/paths-slac
 
 # remove non-slackware specific config files
 rm -f $PKG/etc/fail2ban/paths-{arch,debian,fedora,freebsd,osx,opensuse}.conf.new
+<<<<<<< HEAD
+=======
+
+# install bash completion script if requested
+if [ "$BASH_COMPLETION" = "yes" ]; then
+  install -D -m 0644 files/bash-completion $PKG/etc/bash_completion.d/fail2ban.new
+fi
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 # install logrotate script
 install -D -m 0644 files/fail2ban-logrotate $PKG/etc/logrotate.d/fail2ban.new
@@ -108,12 +124,15 @@ cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
+<<<<<<< HEAD
 
 # install bash completion script if requested
 if [ "${BASH_COMPLETION:-no}" = "yes" ]; then
   install -D -m 0644 files/bash-completion $PKG/etc/bash_completion.d/fail2ban.new
   echo "config etc/bash_completion.d/fail2ban.new" >> $PKG/install/doinst.sh
 fi
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

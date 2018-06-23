@@ -23,13 +23,22 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=vstudio
+<<<<<<< HEAD
 VERSION=${VERSION:-7.5.3}
+=======
+VERSION=${VERSION:-8.3.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
 case "$( uname -m )" in
+<<<<<<< HEAD
   i?86) ARCH=i586 ; BASENAME=${BASENAME:-vstudio_7_lin} ;;
   x86_64) ARCH=x86_64 ; BASENAME=${BASENAME:-vstudio_x64_7_lin} ;;
+=======
+  i?86) ARCH=i586 ; BASENAME=${BASENAME:-vstudio_8_lin} ;;
+  x86_64) ARCH=x86_64 ; BASENAME=${BASENAME:-vstudio_x64_8_lin} ;;
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   *) echo "Package for $(uname -m) architecture is not available." ; exit 1 ;;
 esac
 
@@ -53,6 +62,11 @@ find -L . \
 
 # Make sure top-level perms are correct:
 chmod 0755 .
+
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a $PKG/usr/share/doc/vstudio/* $PKG/usr/doc/$PRGNAM-$VERSION
+rm -rf $PKG/usr/share/doc
+cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

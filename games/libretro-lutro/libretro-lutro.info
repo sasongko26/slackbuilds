@@ -1,10 +1,17 @@
 PRGNAM="libretro-lutro"
+<<<<<<< HEAD
 VERSION="2017.01.24_be1efa6"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/libretro-lutro-2017.01.24_be1efa6.tar.xz"
 MD5SUM="9702bf39fc53b8c62f8167602b91f420"
+=======
+VERSION="2017.12.18_128153c"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/libretro-lutro-2017.12.18_128153c.tar.xz"
+MD5SUM="774625327ecdbc2124d04c118d6e7f02"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
 MAINTAINER="Hunter Sezen"
-EMAIL="ovariegata@yahoo.com"
+EMAIL="orbea@fredslev.dk"

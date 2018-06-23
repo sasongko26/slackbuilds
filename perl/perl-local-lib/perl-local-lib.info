@@ -1,8 +1,15 @@
 PRGNAM="perl-local-lib"
+<<<<<<< HEAD
 VERSION="2.000023"
 HOMEPAGE="https://metacpan.org/pod/local::lib"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/H/HA/HAARG/local-lib-2.000023.tar.gz"
 MD5SUM="954136511a59b2eadfdd95607517d1fe"
+=======
+VERSION="2.000024"
+HOMEPAGE="https://metacpan.org/pod/local::lib"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/H/HA/HAARG/local-lib-2.000024.tar.gz"
+MD5SUM="f9ce59c65137fde81c426f525cffc4e5"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

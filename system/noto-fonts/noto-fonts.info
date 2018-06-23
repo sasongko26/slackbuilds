@@ -1,8 +1,15 @@
 PRGNAM="noto-fonts"
+<<<<<<< HEAD
 VERSION="20171026"
 HOMEPAGE="https://github.com/googlei18n/noto-fonts"
 DOWNLOAD="https://github.com/googlei18n/noto-fonts/archive/95558bd828a48c17a5cbe7f9d971495afcd16abd/noto-fonts-95558bd828a48c17a5cbe7f9d971495afcd16abd.tar.gz"
 MD5SUM="68a81d855aa676381295440688899260"
+=======
+VERSION="20180322"
+HOMEPAGE="https://github.com/googlei18n/noto-fonts"
+DOWNLOAD="https://github.com/googlei18n/noto-fonts/archive/b207fc31b093948dfc6d77b47042ce2f335bc631/noto-fonts-b207fc31b093948dfc6d77b47042ce2f335bc631.tar.gz"
+MD5SUM="10ddf3ea3edbd8409b7b532a068214ee"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

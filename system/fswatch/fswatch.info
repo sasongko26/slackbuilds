@@ -1,8 +1,15 @@
 PRGNAM="fswatch"
+<<<<<<< HEAD
 VERSION="1.9.3"
 HOMEPAGE="https://github.com/emcrisostomo/fswatch"
 DOWNLOAD="https://github.com/emcrisostomo/fswatch/releases/download/1.9.3/fswatch-1.9.3.tar.gz"
 MD5SUM="37595ca5c584709864cac81a8ed1753b"
+=======
+VERSION="1.11.2"
+HOMEPAGE="https://github.com/emcrisostomo/fswatch"
+DOWNLOAD="https://github.com/emcrisostomo/fswatch/releases/download/1.11.2/fswatch-1.11.2.tar.gz"
+MD5SUM="aacebb97d5415dc31bd113d4b330cac0"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

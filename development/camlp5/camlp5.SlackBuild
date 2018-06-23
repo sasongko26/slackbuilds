@@ -19,8 +19,13 @@
 # Rewrite for updated camlp5 Panagiotis Nikolaou, Culver City, CA
 
 PRGNAM=camlp5
+<<<<<<< HEAD
 VERSION=${VERSION:-7.02}
 SRCVER=rel702
+=======
+VERSION=${VERSION:-7.05}
+SRCVER=rel705
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

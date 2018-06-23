@@ -10,7 +10,11 @@ perl-cairo: perl-cairo (perl bindings for Cairo)
 perl-cairo:
 perl-cairo: Perl bindings to the Cairo graphics library.
 perl-cairo:
+<<<<<<< HEAD
 perl-cairo: Home page: http://search.cpan.org/dist/Cairo
+=======
+perl-cairo: Home page: https://metacpan.org/release/Cairo
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 perl-cairo:
 perl-cairo:
 perl-cairo:

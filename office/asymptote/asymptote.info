@@ -1,8 +1,15 @@
 PRGNAM="asymptote"
+<<<<<<< HEAD
 VERSION="2.41"
 HOMEPAGE="http://asymptote.sourceforge.net/"
 DOWNLOAD="https://downloads.sourceforge.net/sourceforge/asymptote/asymptote-2.41.src.tgz"
 MD5SUM="d16909a9189a3177ad2f8cb8161e32e1"
+=======
+VERSION="2.44"
+HOMEPAGE="http://asymptote.sourceforge.net/"
+DOWNLOAD="https://downloads.sourceforge.net/sourceforge/asymptote/asymptote-2.44.src.tgz"
+MD5SUM="98cd8858841e6e833039b85e0b814257"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="texlive"

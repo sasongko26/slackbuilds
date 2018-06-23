@@ -1,4 +1,7 @@
 This package contains cross compiling version of GNU binutils, which can be
 used to assemble and link binaries for the ARM platform.
+<<<<<<< HEAD
 
 cpu arch: cortex-m4
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

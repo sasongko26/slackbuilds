@@ -6,8 +6,18 @@
 
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
+<<<<<<< HEAD
 PRGNAM=open-adventure
 VERSION=${VERSION:-1.0}
+=======
+# 20180114 bkw:
+# - Update for v1.4.
+# - Include upstream's icon and .desktop.
+# - New dependencies in .info file :(
+
+PRGNAM=open-adventure
+VERSION=${VERSION:-1.4}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -52,7 +62,11 @@ rm -rf $PRGNAM-$VERSION-*
 # handle both possibilities here. I know how to avoid this with github
 # downloads, but not gitlab. Also, notice the * in the 2nd filename
 # (and in the 'cd' below): I'm *not* hard-coding the full git hash here.
+<<<<<<< HEAD
 tar xvf $CWD/archive.tar.bz2\?ref=1.0 ||
+=======
+tar xvf $CWD/archive.tar.bz2\?ref=$VERSION ||
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 tar xvf $CWD/$PRGNAM-$VERSION-*.tar.bz2
 
 cd $PRGNAM-$VERSION-*
@@ -63,10 +77,16 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+<<<<<<< HEAD
 # This thing is small enough that it's not worth trying to fix parallel
 # make. Plus, upstream's already fixed it in git, -j1 won't be needed for
 # the next release.
 make -j1 CCFLAGS="-std=c99 $SLKCFLAGS"
+=======
+# It'd be nice if I could pass my own CFLAGS without editing the Makefile...
+sed -i "s,-O2,$SLKCFLAGS," Makefile
+make
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 make $EXE.6
 
 # no 'make install' target:
@@ -78,6 +98,14 @@ gzip -9c < $EXE.6 > $PKG/usr/man/man6/$EXE.6.gz
 ln -s $EXE.6.gz $PKG/usr/man/man6/$PRGNAM.6.gz
 ln -s $EXE $PKG/usr/games/$PRGNAM
 
+<<<<<<< HEAD
+=======
+# icon converted from advent.svg (rather not script that here)
+mkdir -p $PKG/usr/share/applications $PKG/usr/share/pixmaps
+cat $EXE.desktop > $PKG/usr/share/applications/$EXE.desktop
+cat $CWD/$EXE.png > $PKG/usr/share/pixmaps/$EXE.png
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # don't bother with advent.adoc, it's the man page.
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a COPYING NEWS README.adoc TODO h*.adoc $PKG/usr/doc/$PRGNAM-$VERSION

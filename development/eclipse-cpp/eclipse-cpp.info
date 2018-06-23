@@ -1,10 +1,19 @@
 PRGNAM="eclipse-cpp"
+<<<<<<< HEAD
 VERSION="4.7.1a"
 HOMEPAGE="http://www.eclipse.org"
 DOWNLOAD="http://download.eclipse.org/technology/epp/downloads/release/oxygen/1a/eclipse-cpp-oxygen-1a-linux-gtk.tar.gz"
 MD5SUM="69e823708e0a397c6b0eb141460d6874"
 DOWNLOAD_x86_64="http://download.eclipse.org/technology/epp/downloads/release/oxygen/1a/eclipse-cpp-oxygen-1a-linux-gtk-x86_64.tar.gz"
 MD5SUM_x86_64="4842b4c7ac77ed897904dafbb9227ebc"
+=======
+VERSION="4.7.3a"
+HOMEPAGE="http://www.eclipse.org"
+DOWNLOAD="http://download.eclipse.org/technology/epp/downloads/release/oxygen/3a/eclipse-cpp-oxygen-3a-linux-gtk.tar.gz"
+MD5SUM="e091754b6d8dc7fc1c422be1fc4c1058"
+DOWNLOAD_x86_64="http://download.eclipse.org/technology/epp/downloads/release/oxygen/3a/eclipse-cpp-oxygen-3a-linux-gtk-x86_64.tar.gz"
+MD5SUM_x86_64="44bd0218dec17e9f6aa26d8e2af6645d"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES="jdk webkitgtk"
 MAINTAINER="Andrew Clemons"
 EMAIL="andrew.clemons@gmail.com"

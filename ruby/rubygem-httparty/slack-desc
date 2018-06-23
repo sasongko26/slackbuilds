@@ -11,7 +11,11 @@ rubygem-httparty:
 rubygem-httparty: Makes http fun! Also, makes consuming restful web services dead
 rubygem-httparty: easy.
 rubygem-httparty:
+<<<<<<< HEAD
 rubygem-httparty: Homepage: https://johnnunemaker.com/httparty/
+=======
+rubygem-httparty: Homepage: https://github.com/jnunemaker/httparty
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 rubygem-httparty:
 rubygem-httparty:
 rubygem-httparty:

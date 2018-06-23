@@ -28,8 +28,13 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=freeciv
+<<<<<<< HEAD
 VERSION=${VERSION:-2.6.0_beta1}
 SRCVERSION=${SRCVERSION:-2.6.0-beta1}
+=======
+VERSION=${VERSION:-2.6.0_beta3}
+SRCVERSION=${SRCVERSION:-2.6.0-beta3}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -84,9 +89,10 @@ CXXFLAGS="$SLKCFLAGS" \
   --localstatedir=/var \
   --mandir=/usr/man \
   --without-ggz-client \
-  --enable-client=gtk \
+  --enable-client=gtk3 \
   --enable-static=no \
   --enable-shared=yes \
+  --with-readline \
   --build=$ARCH-slackware-linux
 
 make V=1

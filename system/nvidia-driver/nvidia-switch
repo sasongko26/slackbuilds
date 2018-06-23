@@ -65,10 +65,17 @@ save_GL(){
       mv libGL.la-nvidia libGL.la
 
       if [ "$GLVND" = "yes" ]; then
+<<<<<<< HEAD
         ln -sf libGL.so.1.0.0 libGL.so.1
 	ln -sf libGL.so.1.0.0 libGL.so
         ln -sf libEGL.so.1-nvidia libEGL.so.1
 	ln -sf libEGL.so.1-nvidia libEGL.so
+=======
+        ln -sf libGL.so.1.7.0 libGL.so.1
+	ln -sf libGL.so.1.7.0 libGL.so
+        ln -sf libEGL.so.1.1.0-nvidia libEGL.so.1.1.0
+	ln -sf libEGL.so.1.1.0-nvidia libEGL.so
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
       else
         ln -sf libGL.so.$NV_VERSION libGL.so.1
         ln -sf libGL.so.$NV_VERSION libGL.so
@@ -76,11 +83,21 @@ save_GL(){
         ln -sf libEGL.so.$NV_VERSION libEGL.so
       fi
 
+<<<<<<< HEAD
       ln -sf libGLESv1_CM.so.1-nvidia libGLESv1_CM.so.1
       ln -sf libGLESv1_CM.so.1-nvidia libGLESv1_CM.so
 
       ln -sf libGLESv2.so.2-nvidia libGLESv2.so.2
       ln -sf libGLESv2.so.2-nvidia libGLESv2.so
+=======
+      ln -sf libGLESv1_CM.so.1.2.0-nvidia libGLESv1_CM.so.1.2.0
+      ln -sf libGLESv1_CM.so.1.2.0-nvidia libGLESv1_CM.so.1
+      ln -sf libGLESv1_CM.so.1.2.0-nvidia libGLESv1_CM.so
+
+      ln -sf libGLESv2.so.2.1.0-nvidia libGLESv2.so.2.1.0
+      ln -sf libGLESv2.so.2.1.0-nvidia libGLESv2.so.2
+      ln -sf libGLESv2.so.2.1.0-nvidia libGLESv2.so
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
     ;;
 
     "xorg")
@@ -95,11 +112,20 @@ save_GL(){
        ln -sf libGL.so.$GL_VERSION libGL.so
        ln -sf libEGL.so.1.0.0 libEGL.so.1
        ln -sf libEGL.so.1.0.0 libEGL.so
+<<<<<<< HEAD
+=======
+       rm -f libEGL.so.1.1.0
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
        ln -sf libGLESv1_CM.so.1.1.0 libGLESv1_CM.so.1
        ln -sf libGLESv1_CM.so.1.1.0 libGLESv1_CM.so
        ln -sf libGLESv2.so.2.0.0 libGLESv2.so.2
        ln -sf libGLESv2.so.2.0.0 libGLESv2.so
+<<<<<<< HEAD
+=======
+       rm -f libGLESv1_CM.so.1.2.0
+       rm -f libGLESv2.so.2.1.0
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   ;;
 
   *)

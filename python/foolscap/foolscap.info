@@ -1,8 +1,15 @@
 PRGNAM="foolscap"
+<<<<<<< HEAD
 VERSION="0.12.6"
 HOMEPAGE="http://foolscap.lothar.com/trac"
 DOWNLOAD="http://foolscap.lothar.com/releases/foolscap-0.12.6.tar.gz"
 MD5SUM="18991026c5ed8531858c90e8bfa6017f"
+=======
+VERSION="0.13.1"
+HOMEPAGE="http://foolscap.lothar.com/trac"
+DOWNLOAD="http://foolscap.lothar.com/releases/foolscap-0.13.1.tar.gz"
+MD5SUM="5eaa9a3b0e1944b09358e7b192b6dd05"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python-twisted pyOpenSSL txtorcon txi2p"

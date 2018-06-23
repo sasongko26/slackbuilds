@@ -1,8 +1,15 @@
 PRGNAM="dakota"
+<<<<<<< HEAD
 VERSION="6.6"
 HOMEPAGE="http://dakota.sandia.gov/"
 DOWNLOAD="http://dakota.sandia.gov/sites/default/files/distributions/public/dakota-6.6-public.src-UI.tar.gz"
 MD5SUM="a048041bdc5bcc5a76c1cc1b912cfd02"
+=======
+VERSION="6.8"
+HOMEPAGE="https://dakota.sandia.gov/"
+DOWNLOAD="https://dakota.sandia.gov/sites/default/files/distributions/public/dakota-6.8-release-public.src-UI.tar.gz"
+MD5SUM="85375e8c4df406fe017beda63ab28215"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="blas lapack"

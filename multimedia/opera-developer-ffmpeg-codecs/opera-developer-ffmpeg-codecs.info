@@ -1,10 +1,19 @@
 PRGNAM="opera-developer-ffmpeg-codecs"
+<<<<<<< HEAD
 VERSION="64.0.3260.2"
 HOMEPAGE="https://repo.herecura.eu/"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
 DOWNLOAD_x86_64="https://repo.herecura.be/herecura/x86_64/opera-developer-ffmpeg-codecs-64.0.3260.2-1-x86_64.pkg.tar.xz"
 MD5SUM_x86_64="da444a40ba6dceccd02fadd8f3de238e"
+=======
+VERSION="68.0.3440.15"
+HOMEPAGE="https://repo.herecura.eu/"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://repo.herecura.be/herecura/x86_64/opera-developer-ffmpeg-codecs-68.0.3440.15-1-x86_64.pkg.tar.xz"
+MD5SUM_x86_64="ac13230c79c636957266766bfe864a43"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES="opera-developer"
 MAINTAINER="Edinaldo P. Silva"
 EMAIL="edps.mundognu@gmail.com"

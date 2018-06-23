@@ -1,8 +1,15 @@
 PRGNAM="jgmenu"
+<<<<<<< HEAD
 VERSION="0.7.5"
 HOMEPAGE="https://www.github.com/johanmalm/jgmenu/"
 DOWNLOAD="https://github.com/johanmalm/jgmenu/archive/v0.7.5/jgmenu-0.7.5.tar.gz"
 MD5SUM="246754761cc7a7d7dacdeec15d542922"
+=======
+VERSION="1.0"
+HOMEPAGE="https://www.github.com/johanmalm/jgmenu/"
+DOWNLOAD="https://github.com/johanmalm/jgmenu/archive/v1.0/jgmenu-1.0.tar.gz"
+MD5SUM="60a5e67d6ff66a4174117a1dfe9cbc5b"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python3 menu-cache"

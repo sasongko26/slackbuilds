@@ -1,10 +1,17 @@
 PRGNAM="girara"
+<<<<<<< HEAD
 VERSION="0.2.7"
 HOMEPAGE="https://github.com/pwmt/girara"
 DOWNLOAD="https://github.com/pwmt/girara/archive/0.2.7/girara-0.2.7.tar.gz"
 MD5SUM="9aea6ba35159360fffe61e80fcc8fcf9"
+=======
+VERSION="0.3.0"
+HOMEPAGE="https://github.com/pwmt/girara"
+DOWNLOAD="https://github.com/pwmt/girara/archive/0.3.0/girara-0.3.0.tar.gz"
+MD5SUM="7f419ce20326dd7c9ef5118bb6d628b1"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES=""
+REQUIRES="meson"
 MAINTAINER="B. Watson"
 EMAIL="yalhcru@gmail.com"

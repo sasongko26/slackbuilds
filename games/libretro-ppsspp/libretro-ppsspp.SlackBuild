@@ -2,7 +2,11 @@
 
 # Slackware build script for libretro-ppsspp
 
+<<<<<<< HEAD
 # Copyright 2016-2017 Hunter Sezen
+=======
+# Copyright 2016-2018 Hunter Sezen
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,7 +28,11 @@
 
 PRGNAM=libretro-ppsspp
 LIBNAM=ppsspp_libretro
+<<<<<<< HEAD
 VERSION=${VERSION:-2017.09.29_25d3bab}
+=======
+VERSION=${VERSION:-2018.01.23_af33ca2}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -74,12 +82,20 @@ find -L . \
 
 [ "${DEBUG:=0}" != 0 ] && DEBUG=1
 
+<<<<<<< HEAD
 make -C libretro DEBUG="$DEBUG"
+=======
+make -C libretro DEBUG=$DEBUG
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 install -Dm0644 libretro/$LIBNAM.so $PKG/usr/lib${LIBDIRSUFFIX}/libretro/$LIBNAM.so
 install -Dm0644 $LIBNAM.info $PKG/usr/lib${LIBDIRSUFFIX}/libretro/info/$LIBNAM.info
 
+<<<<<<< HEAD
 if [ "$DEBUG" = "0" ]; then
+=======
+if [ $DEBUG = 0 ]; then
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
     | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 fi

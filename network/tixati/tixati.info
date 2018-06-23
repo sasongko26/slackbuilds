@@ -1,10 +1,19 @@
 PRGNAM="tixati"
+<<<<<<< HEAD
 VERSION="2.55_1"
 HOMEPAGE="https://www.tixati.com/"
 DOWNLOAD="https://www.tixati.com/download/tixati-2.55-1.i686.manualinstall.tar.gz"
 MD5SUM="306af3b769f99810e689f6a8e58166e7"
 DOWNLOAD_x86_64="https://www.tixati.com/download/tixati-2.55-1.x86_64.manualinstall.tar.gz"
 MD5SUM_x86_64="43a519d48c9e8e354b68c5184bb4bba2"
+=======
+VERSION="2.57_1"
+HOMEPAGE="https://www.tixati.com/"
+DOWNLOAD="https://download2.tixati.com/download/tixati-2.57-1.i686.manualinstall.tar.gz"
+MD5SUM="a09529fb55ed2f324a51603cab805db8"
+DOWNLOAD_x86_64="https://download2.tixati.com/download/tixati-2.57-1.x86_64.manualinstall.tar.gz"
+MD5SUM_x86_64="8b7864ad9a9839c876ac905aa6823ab4"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES=""
 MAINTAINER="Dimitris Zlatanidis"
 EMAIL="d.zlatanidis@gmail.com"

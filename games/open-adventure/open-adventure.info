@@ -1,4 +1,5 @@
 PRGNAM="open-adventure"
+<<<<<<< HEAD
 VERSION="1.0"
 HOMEPAGE="https://gitlab.com/esr/open-adventure"
 DOWNLOAD="https://gitlab.com/esr/open-adventure/repository/archive.tar.bz2?ref=1.0"
@@ -6,5 +7,14 @@ MD5SUM="889d762a40f8aa8f7866ec436dff301d"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
+=======
+VERSION="1.4"
+HOMEPAGE="https://gitlab.com/esr/open-adventure"
+DOWNLOAD="https://gitlab.com/esr/open-adventure/repository/archive.tar.bz2?ref=1.4"
+MD5SUM="6ef2df9618276028adcaf669ee11ae5b"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="PyYAML libedit"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MAINTAINER="B. Watson"
 EMAIL="yalhcru@gmail.com"

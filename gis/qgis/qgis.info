@@ -1,8 +1,15 @@
 PRGNAM="qgis"
+<<<<<<< HEAD
 VERSION="2.18.14"
 HOMEPAGE="http://qgis.org/"
 DOWNLOAD="http://qgis.org/downloads/qgis-2.18.14.tar.bz2"
 MD5SUM="7d9cdc35ad8e991136328ecb4d4d003b"
+=======
+VERSION="2.18.18"
+HOMEPAGE="http://qgis.org/"
+DOWNLOAD="http://qgis.org/downloads/qgis-2.18.18.tar.bz2"
+MD5SUM="297a0bf4e04e00f7f8d091691499f69d"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="gdal Jinja2 libspatialindex numpy OWSLib Pygments psycopg2 pyspatialite qwtpolar"

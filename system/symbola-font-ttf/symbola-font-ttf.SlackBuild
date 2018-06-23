@@ -23,7 +23,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=symbola-font-ttf
+<<<<<<< HEAD
 VERSION=${VERSION:-10.03}
+=======
+VERSION=${VERSION:-10.24}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -51,10 +55,14 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 mkdir -p $PKG/usr/share/fonts/TTF/
-cp -a Symbola_hint.ttf $PKG/usr/share/fonts/TTF/
+cp -a hintedSymbola.ttf $PKG/usr/share/fonts/TTF/
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+<<<<<<< HEAD
 cp -a Symbola.pdf $PKG/usr/doc/$PRGNAM-$VERSION
+=======
+cp -a Symbola.pdf Symbola.odt $PKG/usr/doc/$PRGNAM-$VERSION
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

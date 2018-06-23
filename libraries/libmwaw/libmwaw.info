@@ -1,10 +1,17 @@
 PRGNAM="libmwaw"
+<<<<<<< HEAD
 VERSION="0.3.12"
 HOMEPAGE="https://sourceforge.net/p/libmwaw/wiki/Home/"
 DOWNLOAD="https://sourceforge.net/projects/libmwaw/files/libmwaw/libmwaw-0.3.12/libmwaw-0.3.12.tar.xz"
 MD5SUM="feba044fe0bfd37fa421acbc7debd59a"
+=======
+VERSION="0.3.14"
+HOMEPAGE="https://sourceforge.net/p/libmwaw/wiki/Home/"
+DOWNLOAD="https://sourceforge.net/projects/libmwaw/files/libmwaw/libmwaw-0.3.14/libmwaw-0.3.14.tar.xz"
+MD5SUM="df03f34343c0ebd5d7e96bef5de0345b"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
 MAINTAINER="Hunter Sezen"
-EMAIL="ovariegata@yahoo.com"
+EMAIL="orbea@fredslev.dk"

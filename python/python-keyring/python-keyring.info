@@ -1,4 +1,5 @@
 PRGNAM="python-keyring"
+<<<<<<< HEAD
 VERSION="10.3.3"
 HOMEPAGE="https://bitbucket.org/kang/python-keyring-lib"
 DOWNLOAD="https://pypi.python.org/packages/6b/38/4032c9767db98701384184ad973219172f785d58a686bb80eec58d9d6b62/keyring-10.3.3.tar.gz"
@@ -6,5 +7,14 @@ MD5SUM="743bdb52c245e19e2032d598fd3af2d8"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="setuptools-scm secretstorage"
+=======
+VERSION="12.0.1"
+HOMEPAGE="https://bitbucket.org/kang/python-keyring-lib"
+DOWNLOAD="https://pypi.python.org/packages/b9/f5/26c0d2195b2d3c2f3ecf11eff0903d5eca3a53d3999da2a7d4a2035cc769/keyring-12.0.1.tar.gz"
+MD5SUM="92848a76fcef144b07573cc1cc7b9f5b"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="setuptools-scm entrypoints"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MAINTAINER="Dimitris Zlatanidis"
 EMAIL="d.zlatanidis@gmail.com"

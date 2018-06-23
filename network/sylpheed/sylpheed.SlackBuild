@@ -4,7 +4,11 @@
 #
 # Copyright 2006 Martin Lefebvre <dadexter@sekurity.com>
 # Copyright 2008-2010 GPLeo <gpleomail@gmail.com>
+<<<<<<< HEAD
 # Copyright 2017 Alan Ianson <agianson@gmail.com>
+=======
+# Copyright 2017-2018 Alan Ianson <agianson@gmail.com>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,10 +28,12 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# Modified by the SlackBuilds.org project
-
 PRGNAM=sylpheed
+<<<<<<< HEAD
 VERSION=${VERSION:-3.6.0}
+=======
+VERSION=${VERSION:-3.7.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

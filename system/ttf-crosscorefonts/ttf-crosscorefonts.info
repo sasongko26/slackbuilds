@@ -1,8 +1,15 @@
 PRGNAM="ttf-crosscorefonts"
+<<<<<<< HEAD
 VERSION="1.31.0"
 HOMEPAGE="https://fonts.google.com/"
 DOWNLOAD="http://gsdview.appspot.com/chromeos-localmirror/distfiles/croscorefonts-1.31.0.tar.bz2"
 MD5SUM="3c90ac73fd13bd79684d9dc073840328"
+=======
+VERSION="20180322"
+HOMEPAGE="https://github.com/googlei18n/noto-fonts"
+DOWNLOAD="https://github.com/googlei18n/noto-fonts/archive/b207fc31b093948dfc6d77b47042ce2f335bc631/noto-fonts-b207fc31b093948dfc6d77b47042ce2f335bc631.tar.gz"
+MD5SUM="10ddf3ea3edbd8409b7b532a068214ee"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

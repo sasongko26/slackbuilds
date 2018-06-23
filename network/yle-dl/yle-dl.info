@@ -1,4 +1,5 @@
 PRGNAM="yle-dl"
+<<<<<<< HEAD
 VERSION="2.28"
 HOMEPAGE="https://aajanki.github.io/yle-dl/"
 DOWNLOAD="https://github.com/aajanki/yle-dl/archive/2.28/yle-dl-2.28.tar.gz"
@@ -6,5 +7,14 @@ MD5SUM="937b07c619460aee4b29d9b7bb1097b3"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="ffmpeg lxml pyamf pycrypto python-requests"
+=======
+VERSION="2.33"
+HOMEPAGE="https://aajanki.github.io/yle-dl/"
+DOWNLOAD="https://github.com/aajanki/yle-dl/archive/2.33/yle-dl-2.33.tar.gz"
+MD5SUM="6da30a1f61a7218a69681c6f8615d9f1"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="ffmpeg lxml mini-amf pycryptodome PySocks python-future python-requests"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MAINTAINER="Markus Rinne"
 EMAIL="markus.ka.rinne@gmail.com"

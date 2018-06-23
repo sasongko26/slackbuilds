@@ -1,10 +1,17 @@
 PRGNAM="mame2014-libretro"
+<<<<<<< HEAD
 VERSION="2017.02.01_ee898d836c"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/mame2014-libretro-2017.02.01_ee898d836c.tar.xz"
 MD5SUM="84c322cbcd458150360e761fb921a0a6"
+=======
+VERSION="2017.12.31_62a932c"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/mame2014-libretro-2017.12.31_62a932c.tar.xz"
+MD5SUM="224515b1a2b7d8ca5895baaa5359416e"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
 MAINTAINER="Hunter Sezen"
-EMAIL="ovariegata@yahoo.com"
+EMAIL="orbea@fredslev.dk"

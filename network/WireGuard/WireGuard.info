@@ -1,8 +1,15 @@
 PRGNAM="WireGuard"
+<<<<<<< HEAD
 VERSION="0.0.20171127"
 HOMEPAGE="https://www.wireguard.com/"
 DOWNLOAD="https://git.zx2c4.com/WireGuard/snapshot/WireGuard-0.0.20171127.tar.xz"
 MD5SUM="06357657f6649dc96099bf1cbcd473a4"
+=======
+VERSION="0.0.20180620"
+HOMEPAGE="https://www.wireguard.com/"
+DOWNLOAD="https://git.zx2c4.com/WireGuard/snapshot/WireGuard-0.0.20180620.tar.xz"
+MD5SUM="73c363aae93d2c802efe3abd67cd2ed4"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

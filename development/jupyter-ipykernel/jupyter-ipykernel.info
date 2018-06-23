@@ -1,10 +1,17 @@
 PRGNAM="jupyter-ipykernel"
+<<<<<<< HEAD
 VERSION="4.6.1"
 HOMEPAGE="https://jupyter.org/"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/i/ipykernel/ipykernel-4.6.1.tar.gz"
 MD5SUM="1b320ff87a1a0b049e83df2de91b7f7c"
+=======
+VERSION="4.8.2"
+HOMEPAGE="https://jupyter.org/"
+DOWNLOAD="https://files.pythonhosted.org/packages/source/i/ipykernel/ipykernel-4.8.2.tar.gz"
+MD5SUM="91af54e6a4ad908ded0bed383dd03374"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="ipython jupyter-notebook"
+REQUIRES="ipython jupyter_client tornado"
 MAINTAINER="Benjamin Trigona-Harany"
 EMAIL="slackbuilds@jaxartes.net"

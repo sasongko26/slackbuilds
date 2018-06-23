@@ -24,7 +24,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=cppcms
+<<<<<<< HEAD
 VERSION=${VERSION:-1.1.0}
+=======
+VERSION=${VERSION:-1.2.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -98,7 +102,11 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
+<<<<<<< HEAD
 cp -a COPYING.TXT LGPLv3.txt THIRD_PARTY_SOFTWARE.TXT $PKG/usr/doc/$PRGNAM-$VERSION
+=======
+cp -a COPYING.TXT MIT.TXT THIRD_PARTY_SOFTWARE.TXT $PKG/usr/doc/$PRGNAM-$VERSION
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

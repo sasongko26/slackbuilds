@@ -1,7 +1,11 @@
 PRGNAM="fldigi"
 VERSION="4.0.12"
 HOMEPAGE="http://www.w1hkj.com/"
+<<<<<<< HEAD
 DOWNLOAD="http://w1hkj.com/files/fldigi/fldigi-4.0.12.tar.gz"
+=======
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/fldigi-4.0.12.tar.gz"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="c343b7f87315dd08ee4cdcd5e9c6938c"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

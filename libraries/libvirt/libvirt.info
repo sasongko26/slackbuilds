@@ -1,8 +1,15 @@
 PRGNAM="libvirt"
+<<<<<<< HEAD
 VERSION="3.9.0"
 HOMEPAGE="http://libvirt.org"
 DOWNLOAD="ftp://libvirt.org/libvirt/libvirt-3.9.0.tar.xz"
 MD5SUM="ba10eb6c54c6319cd58c015b678bdb7a"
+=======
+VERSION="4.0.0"
+HOMEPAGE="http://libvirt.org"
+DOWNLOAD="ftp://libvirt.org/libvirt/libvirt-4.0.0.tar.xz"
+MD5SUM="ff0dbdd8ec4ac1277588dfe3b245d0e9"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="yajl urlgrabber"

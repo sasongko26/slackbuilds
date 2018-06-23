@@ -1,7 +1,11 @@
 PRGNAM="calcurse"
 VERSION="4.2.2"
 HOMEPAGE="http://calcurse.org/"
+<<<<<<< HEAD
 DOWNLOAD="http://calcurse.org/files/calcurse-4.2.2.tar.gz"
+=======
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/calcurse-4.2.2.tar.gz"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="5b429561569159008c855a106e0f1a21"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

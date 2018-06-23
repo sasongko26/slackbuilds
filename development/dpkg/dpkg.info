@@ -1,8 +1,15 @@
 PRGNAM="dpkg"
+<<<<<<< HEAD
 VERSION="1.19.0.4"
 HOMEPAGE="https://wiki.debian.org/Teams/Dpkg"
 DOWNLOAD="http://snapshot.debian.org/archive/debian/20171028T093455Z/pool/main/d/dpkg/dpkg_1.19.0.4.tar.xz"
 MD5SUM="63cfe8d94bc906b6a49daf659600f783"
+=======
+VERSION="1.19.0.5"
+HOMEPAGE="https://wiki.debian.org/Teams/Dpkg"
+DOWNLOAD="http://snapshot.debian.org/archive/debian/20180121T094839Z/pool/main/d/dpkg/dpkg_1.19.0.5.tar.xz"
+MD5SUM="704ea5ca7a799bbb5a4de17a0fccae6c"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

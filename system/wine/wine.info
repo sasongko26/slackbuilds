@@ -1,9 +1,17 @@
 PRGNAM="wine"
+<<<<<<< HEAD
 VERSION="2.0.3"
 HOMEPAGE="http://www.winehq.com/"
 DOWNLOAD="http://prdownloads.sourceforge.net/wine/wine-2.0.3.tar.xz"
 MD5SUM="f85b3919cf45aa640f7784d3093a8995"
 DOWNLOAD_x86_64="UNSUPPORTED"
+=======
+VERSION="3.0.1"
+HOMEPAGE="http://www.winehq.com/"
+DOWNLOAD="https://dl.winehq.org/wine/source/3.0/wine-3.0.1.tar.xz"
+MD5SUM="f97b7ed4dbd328e1d751f88a87043b0b"
+DOWNLOAD_x86_64=""
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM_x86_64=""
 REQUIRES=""
 MAINTAINER="David Woodfall"

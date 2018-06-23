@@ -1,10 +1,21 @@
 PRGNAM="feh"
+<<<<<<< HEAD
 VERSION="2.22.2"
 HOMEPAGE="https://feh.finalrewind.org"
 DOWNLOAD="https://feh.finalrewind.org/feh-2.22.2.tar.bz2"
 MD5SUM="09dbf7668897d308a68fc104729558ad"
+=======
+VERSION="2.26.3"
+HOMEPAGE="https://feh.finalrewind.org"
+DOWNLOAD="https://feh.finalrewind.org/feh-2.26.3.tar.bz2"
+MD5SUM="22c7d2c9e180c3e2429b85c2ed33ba04"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="imlib2"
 MAINTAINER="Hunter Sezen"
+<<<<<<< HEAD
 EMAIL="ovariegata@yahoo.com"
+=======
+EMAIL="orbea@fredslev.dk"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

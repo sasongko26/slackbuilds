@@ -96,8 +96,13 @@ CXXFLAGS="$SLKCFLAGS" \
   --with-kbuild=/lib/modules/$KERNEL/build \
   --build=$ARCH-slackware-linux
 
+<<<<<<< HEAD
 make
 make install DESTDIR=$PKG \
+=======
+env -u ARCH make
+env -u ARCH make install DESTDIR=$PKG \
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
              INSTALLDIRS=vendor \
              INST_ETC=$PKG/etc/$PRGNAM \
              INSTALL_MOD_PATH=$PKG

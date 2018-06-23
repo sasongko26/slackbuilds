@@ -1,8 +1,15 @@
 PRGNAM="cadabra2"
+<<<<<<< HEAD
 VERSION="2.1.7"
 HOMEPAGE="https://cadabra.science"
 DOWNLOAD="https://downloads.sourceforge.net/slackbuildsdirectlinks/cadabra2-2.1.7.tar.gz"
 MD5SUM="a4c2f9fd1bdae99a3fc2b8f6b34d82b2"
+=======
+VERSION="2.2.0"
+HOMEPAGE="https://cadabra.science"
+DOWNLOAD="https://downloads.sourceforge.net/slackbuildsdirectlinks/cadabra2/cadabra2-2.2.0.tar.gz"
+MD5SUM="a6d2d94584a2b917a04df01e64b7a237"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

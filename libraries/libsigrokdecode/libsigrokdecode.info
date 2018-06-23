@@ -1,8 +1,15 @@
 PRGNAM="libsigrokdecode"
+<<<<<<< HEAD
 VERSION="0.5.0"
 HOMEPAGE="https://sigrok.org/wiki/Libsigrokdecode"
 DOWNLOAD="https://sigrok.org/download/source/libsigrokdecode/libsigrokdecode-0.5.0.tar.gz"
 MD5SUM="0f23ad53cb67948bf4f091bbaacba13d"
+=======
+VERSION="0.5.1"
+HOMEPAGE="https://sigrok.org/wiki/Libsigrokdecode"
+DOWNLOAD="https://sigrok.org/download/source/libsigrokdecode/libsigrokdecode-0.5.1.tar.gz"
+MD5SUM="1e950dfb4c521a334e150640348efcd4"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python3"

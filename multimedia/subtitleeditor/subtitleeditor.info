@@ -1,7 +1,11 @@
 PRGNAM="subtitleeditor"
 VERSION="0.52.1"
 HOMEPAGE="https://launchpad.net/subtitleeditor"
+<<<<<<< HEAD
 DOWNLOAD="http://slackware.uk/sbosrcarch/by-name/multimedia/subtitleeditor/subtitleeditor-0.52.1.tar.gz"
+=======
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/subtitleeditor-0.52.1.tar.gz"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="d25a3f6966f4d6355485d3dfbcfb437a"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

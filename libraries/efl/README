@@ -3,6 +3,10 @@ It provides the basic building blocks for creating applications and
 user interfaces.
 
 This package supersedes the following packages:
+<<<<<<< HEAD
 	e_dbus ecore edje eet efreet eina eio elementary embryo emotion ethumb evas
+=======
+        e_dbus ecore edje eet efreet eina eio elementary embryo emotion ethumb evas
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 Please remove the above packages before installing this one.

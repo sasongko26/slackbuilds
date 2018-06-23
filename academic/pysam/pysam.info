@@ -1,10 +1,21 @@
 PRGNAM="pysam"
+<<<<<<< HEAD
 VERSION="0.12.0"
 HOMEPAGE="https://github.com/pysam-developers/pysam"
 DOWNLOAD="https://github.com/pysam-developers/pysam/archive/v0.12.0/pysam-0.12.0.tar.gz"
 MD5SUM="cc3c39951d0ac389925f338d31da27da"
+=======
+VERSION="0.14.1"
+HOMEPAGE="https://github.com/pysam-developers/pysam"
+DOWNLOAD="https://github.com/pysam-developers/pysam/archive/v0.14.1/pysam-0.14.1.tar.gz"
+MD5SUM="ad88fa5bbcc0fdf4a936734691d9c9d1"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
 MAINTAINER="Rob van Nues"
+<<<<<<< HEAD
 EMAIL="rvnues at tesco {dot} net"
+=======
+EMAIL="rvnues at disroot {dot} org"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

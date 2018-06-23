@@ -1,4 +1,4 @@
-ttf-crosscorefonts (Fonts created by Google for ChromeOS)
+ttf-crosscorefonts (Chrome OS core fonts)
 
 Google has created a set of fonts for its ChromeOS Operating system.
 
@@ -8,3 +8,8 @@ available under an OpenFont license.
 
 Tinos, Arimo and Cousine, appear to be variations of the old standard
 Times, Arial and Courier.
+<<<<<<< HEAD
+=======
+
+NOTE: This SlackBuild conflicts with "google-fonts" SlackBuild.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

@@ -1,6 +1,10 @@
 PRGNAM="oyranos"
 VERSION="0.9.6"
+<<<<<<< HEAD
 HOMEPAGE="http://www.oyranos.org/"
+=======
+HOMEPAGE="https://www.oyranos.org/"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD="https://github.com/oyranos-cms/oyranos/archive/0.9.6/oyranos-0.9.6.tar.gz"
 MD5SUM="2a8c9783f762906ba7ff9ef43612041f"
 DOWNLOAD_x86_64=""

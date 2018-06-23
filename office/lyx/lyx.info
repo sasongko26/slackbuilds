@@ -1,8 +1,15 @@
 PRGNAM="lyx"
+<<<<<<< HEAD
 VERSION="2.2.3"
 HOMEPAGE="http://www.lyx.org"
 DOWNLOAD="ftp://ftp.lyx.org/pub/lyx/stable/2.2.x/lyx-2.2.3.tar.gz"
 MD5SUM="2ca5c5011f69fe5f5a1c3ea65fdf17c0"
+=======
+VERSION="2.3.0"
+HOMEPAGE="http://www.lyx.org"
+DOWNLOAD="ftp://ftp.lyx.org/pub/lyx/stable/2.3.x/lyx-2.3.0.tar.gz"
+MD5SUM="547f2efe1604b7589d807c36f47f8054"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

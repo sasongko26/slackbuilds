@@ -13,7 +13,11 @@ python3-matplotlib: syntax similar to MATLAB.  Matplotlib produces publication
 python3-matplotlib: quality figures in a variety of hardcopy formats and
 python3-matplotlib: interactive environments across platforms.
 python3-matplotlib:
+<<<<<<< HEAD
 python3-matplotlib: Homepage: http://matplotlib.sourceforge.net/
+=======
+python3-matplotlib: Homepage: https://matplotlib.org/
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 python3-matplotlib:
 python3-matplotlib: This is the Python 3 version of matplotlib and can coexist with SBo's
 python3-matplotlib: matplotlib package.

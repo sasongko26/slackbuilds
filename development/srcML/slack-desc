@@ -16,4 +16,8 @@ srcML: and manipulation of source code in this form, and the conversion of
 srcML: srcML back to source code. The current parsing technologies support
 srcML: C/C++, C#, and Java.
 srcML:
+<<<<<<< HEAD
 srcML: http://www.srcml.org/
+=======
+srcML: https://www.srcml.org/
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

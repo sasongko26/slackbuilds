@@ -1,7 +1,11 @@
 #!/bin/sh
 #
 # Copyright 2006, 2011  Alan Hicks, Lizella, GA
+<<<<<<< HEAD
 # Copyright 2010, 2011, 2013, 2014, 2015, 2016, 2017  Mario Preksavec, Zagreb, Croatia
+=======
+# Copyright 2010, 2011, 2013, 2014, 2015, 2016, 2017, 2018  Mario Preksavec, Zagreb, Croatia
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -22,7 +26,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=postfix
+<<<<<<< HEAD
 VERSION=${VERSION:-3.2.4}
+=======
+VERSION=${VERSION:-3.3.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -171,8 +179,6 @@ make non-interactive-package \
   html_directory=/usr/doc/$PRGNAM-$VERSION/html \
   manpage_directory=/usr/man \
   readme_directory=/usr/doc/$PRGNAM-$VERSION/README_FILES
-
-rm -f $PKG/etc/postfix/{TLS_,}LICENSE
 
 install -D -m 0644 -oroot -groot $CWD/rc.postfix $PKG/etc/rc.d/rc.postfix.new
 find $PKG/etc/postfix -type f ! -name "*.default" ! -name "*.proto" ! -name "*.out" \

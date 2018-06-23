@@ -1,8 +1,15 @@
 PRGNAM="docutils"
+<<<<<<< HEAD
 VERSION="0.13.1"
 HOMEPAGE="http://docutils.sourceforge.net"
 DOWNLOAD="http://downloads.sourceforge.net/docutils/docutils-0.13.1.tar.gz"
 MD5SUM="ea4a893c633c788be9b8078b6b305d53"
+=======
+VERSION="0.14"
+HOMEPAGE="http://docutils.sourceforge.net"
+DOWNLOAD="http://downloads.sourceforge.net/docutils/docutils-0.14.tar.gz"
+MD5SUM="c53768d63db3873b7d452833553469de"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

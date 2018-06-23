@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 diff -Nur virt-manager-1.4.3.orig/virtinst/osdict.py virt-manager-1.4.3/virtinst/osdict.py
 --- virt-manager-1.4.3.orig/virtinst/osdict.py	2017-08-16 16:32:14.000000000 -0500
 +++ virt-manager-1.4.3/virtinst/osdict.py	2017-10-03 01:02:59.322660395 -0500
+=======
+diff -Nur virt-manager-1.5.0.orig/virtinst/osdict.py virt-manager-1.5.0/virtinst/osdict.py
+--- virt-manager-1.5.0.orig/virtinst/osdict.py	2018-01-27 14:57:20.000000000 -0600
++++ virt-manager-1.5.0/virtinst/osdict.py	2018-02-19 00:52:00.750416744 -0600
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 @@ -159,6 +159,7 @@
          "rhel5": "rhel5.0",
          "rhel6": "rhel6.0",
@@ -18,10 +24,17 @@ diff -Nur virt-manager-1.4.3.orig/virtinst/osdict.py virt-manager-1.4.3/virtinst
              "ubuntu13.04", "win8", "win2k12", "mageia5", "centos7.0"],
              check_clones=False, check_derives=False):
              return True
+<<<<<<< HEAD
 diff -Nur virt-manager-1.4.3.orig/virtinst/urlfetcher.py virt-manager-1.4.3/virtinst/urlfetcher.py
 --- virt-manager-1.4.3.orig/virtinst/urlfetcher.py	2017-09-14 16:49:00.000000000 -0500
 +++ virt-manager-1.4.3/virtinst/urlfetcher.py	2017-10-03 01:02:26.932287601 -0500
 @@ -1347,6 +1347,43 @@
+=======
+diff -Nur virt-manager-1.5.0.orig/virtinst/urlfetcher.py virt-manager-1.5.0/virtinst/urlfetcher.py
+--- virt-manager-1.5.0.orig/virtinst/urlfetcher.py	2018-01-27 14:57:20.000000000 -0600
++++ virt-manager-1.5.0/virtinst/urlfetcher.py	2018-02-19 00:52:00.751416752 -0600
+@@ -1379,6 +1379,43 @@
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
          return False
  
  

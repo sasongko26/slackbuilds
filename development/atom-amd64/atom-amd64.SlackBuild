@@ -23,9 +23,19 @@
 # with this program (most likely, a file named COPYING).  If not, see
 # <http://www.gnu.org/licenses/>.
 
+<<<<<<< HEAD
 PRGNAM=atom-amd64
 SRCNAM=atom-amd64
 VERSION=${VERSION:-1.21.0}
+=======
+# Credits:
+# Thanks Azar Shafiei for her helps and great encouragement.
+#
+
+PRGNAM=atom-amd64
+SRCNAM=atom-amd64
+VERSION=${VERSION:-1.27.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 SRCDIR=atom-$VERSION-amd64
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}

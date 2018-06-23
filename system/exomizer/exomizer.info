@@ -1,8 +1,15 @@
 PRGNAM="exomizer"
+<<<<<<< HEAD
 VERSION="2.0.9"
 HOMEPAGE="https://bitbucket.org/magli143/exomizer/wiki/Home"
 DOWNLOAD="https://bitbucket.org/magli143/exomizer/wiki/downloads/exomizer209.zip"
 MD5SUM="9ad0e5c1883fafc1505ccc7f88d024f7"
+=======
+VERSION="3.0.0"
+HOMEPAGE="https://bitbucket.org/magli143/exomizer/wiki/Home"
+DOWNLOAD="http://urchlay.naptime.net/~urchlay/src/exomizer-3.0.0.zip"
+MD5SUM="94eee44e01a531da8feeaa5de8b5c285"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

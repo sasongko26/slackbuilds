@@ -2,7 +2,11 @@
 
 # Slackware build script for termite
 
+<<<<<<< HEAD
 # Copyright 2017 Azure Zanculmarktum <zanculmarktum@gmail.com>
+=======
+# Copyright 2017-2018 Azure Zanculmarktum <zanculmarktum@gmail.com>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +27,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=termite
+<<<<<<< HEAD
 VERSION=${VERSION:-12}
+=======
+VERSION=${VERSION:-13}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -68,16 +76,28 @@ tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 
 # Extract the Git modules
+<<<<<<< HEAD
 tar xvf $CWD/$MODULENAM-$MODULEVER.tar.gz
 [ -e $MODULENAM ] && rm -rf $MODULENAM
+=======
+rm -rf $MODULENAM
+tar xvf $CWD/$MODULENAM-$MODULEVER.tar.gz
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 mv $MODULENAM-$MODULEVER $MODULENAM
 
 chown -R root:root .
 find -L . \
+<<<<<<< HEAD
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
   -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+=======
+  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+   -o -perm 511 \) -exec chmod 755 {} \; -o \
+  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 # Fix man pages path
 sed -i 's|\(\${DESTDIR}\${PREFIX}\)/share\(/man\)|\1\2|g' Makefile

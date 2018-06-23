@@ -1,6 +1,10 @@
 PRGNAM="wmwebcam"
 VERSION="0.3.5"
+<<<<<<< HEAD
 HOMEPAGE="http://www.dockapps.net/wmwebcam"
+=======
+HOMEPAGE="https://www.dockapps.net/wmwebcam"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD="http://urchlay.naptime.net/~urchlay/src/wmwebcam-0.3.5-fixed.tar.gz"
 MD5SUM="e0a65c02d9743f38c8639d8035bb13b0"
 DOWNLOAD_x86_64=""

@@ -1,10 +1,17 @@
 PRGNAM="snes9x2005"
+<<<<<<< HEAD
 VERSION="2017.01.29_b6006bc"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/snes9x2005-2017.01.29_b6006bc.tar.xz"
 MD5SUM="145e431ce53129aae4d3deada77ed1c5"
+=======
+VERSION="2017.10.23_00fd30f"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/snes9x2005-2017.10.23_00fd30f.tar.xz"
+MD5SUM="81e9db11c1606889823d423d5a699b83"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
 MAINTAINER="Hunter Sezen"
-EMAIL="ovariegata@yahoo.com"
+EMAIL="orbea@fredslev.dk"

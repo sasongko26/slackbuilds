@@ -1,4 +1,5 @@
 PRGNAM="d-tools"
+<<<<<<< HEAD
 VERSION="2.077.1"
 HOMEPAGE="https://dlang.org"
 DOWNLOAD="http://download.dlackware.com/hosted-sources/d-tools/dub-1.6.0.tar.gz \
@@ -7,6 +8,16 @@ DOWNLOAD="http://download.dlackware.com/hosted-sources/d-tools/dub-1.6.0.tar.gz 
 MD5SUM="c379f5d22c2e2f1591b9938b94e71ff4 \
         c422fee2fdf85b646a8e0fd1312f1dbd \
         fe48c62f5123f090f543aabbe4426b0c"
+=======
+VERSION="2.080.1"
+HOMEPAGE="https://dlang.org"
+DOWNLOAD="https://download.dlackware.com/hosted-sources/d-tools/dub-1.9.0.tar.gz \
+          https://download.dlackware.com/hosted-sources/d-tools/tools-2.080.1.tar.gz \
+          https://download.dlackware.com/hosted-sources/d-tools/D-Scanner-0.5.6.tar.xz"
+MD5SUM="5e8d7f7d9c6a079a914e93deb21ca250 \
+        44d4bf215498183128e2b5bd0f70091e \
+        3f6b9b411cd9b745d96251516f770f1b"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="dmd"

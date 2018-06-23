@@ -1,8 +1,15 @@
 PRGNAM="mozjpeg"
+<<<<<<< HEAD
 VERSION="3.2"
 HOMEPAGE="https://github.com/mozilla/mozjpeg"
 DOWNLOAD="https://github.com/mozilla/mozjpeg/archive/v3.2/mozjpeg-3.2.tar.gz"
 MD5SUM="5279e9e66f605f394af7dbe1368c42d7"
+=======
+VERSION="3.3.1"
+HOMEPAGE="https://github.com/mozilla/mozjpeg"
+DOWNLOAD="https://github.com/mozilla/mozjpeg/archive/v3.3.1/mozjpeg-3.3.1.tar.gz"
+MD5SUM="63bc152b325666465ae86dc046786118"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

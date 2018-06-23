@@ -1,8 +1,15 @@
 PRGNAM="vte3-ng"
+<<<<<<< HEAD
 VERSION="0.48.2.a"
 HOMEPAGE="https://github.com/thestinger/vte-ng"
 DOWNLOAD="https://github.com/thestinger/vte-ng/archive/0.48.2.a/vte-ng-0.48.2.a.tar.gz"
 MD5SUM="def6df6743d85cbdcb8ef5445772a48d"
+=======
+VERSION="0.50.2.a"
+HOMEPAGE="https://github.com/thestinger/vte-ng"
+DOWNLOAD="https://github.com/thestinger/vte-ng/archive/0.50.2.a/vte-ng-0.50.2.a.tar.gz"
+MD5SUM="af0863ef1b19250bedc903fc23c6bb08"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="pcre2 vala"

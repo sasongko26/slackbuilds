@@ -30,3 +30,8 @@ Optional dependencies:
 - spandsp
 - snappy
 - lz4
+<<<<<<< HEAD
+=======
+
+NOTE: Wireshark 2.6 is the last release to support the legacy GTK-based UI.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

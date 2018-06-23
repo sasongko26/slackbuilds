@@ -1,1 +1,7 @@
 fd - A simple, fast and user-friendly alternative to find.
+<<<<<<< HEAD
+=======
+
+Note:
+rust is required for building fd, but it not needed at runtime.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

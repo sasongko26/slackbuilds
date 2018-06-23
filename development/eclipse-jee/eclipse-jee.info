@@ -1,10 +1,19 @@
 PRGNAM="eclipse-jee"
+<<<<<<< HEAD
 VERSION="4.7.1a"
 HOMEPAGE="http://www.eclipse.org"
 DOWNLOAD="http://download.eclipse.org/technology/epp/downloads/release/oxygen/1a/eclipse-jee-oxygen-1a-linux-gtk.tar.gz"
 MD5SUM="92ad7fbb50119792805bba37ce7df90a"
 DOWNLOAD_x86_64="http://download.eclipse.org/technology/epp/downloads/release/oxygen/1a/eclipse-jee-oxygen-1a-linux-gtk-x86_64.tar.gz"
 MD5SUM_x86_64="5453b668183d6528c2c7b2eb388afe31"
+=======
+VERSION="4.7.3a"
+HOMEPAGE="http://www.eclipse.org"
+DOWNLOAD="http://download.eclipse.org/technology/epp/downloads/release/oxygen/3a/eclipse-jee-oxygen-3a-linux-gtk.tar.gz"
+MD5SUM="283355e64288a0ff418ecc6ecb501a61"
+DOWNLOAD_x86_64="http://download.eclipse.org/technology/epp/downloads/release/oxygen/3a/eclipse-jee-oxygen-3a-linux-gtk-x86_64.tar.gz"
+MD5SUM_x86_64="d1bd63fd1b4ecd222460d86639b3ef8a"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES="jdk webkitgtk"
 MAINTAINER="Andrew Clemons"
 EMAIL="andrew.clemons@gmail.com"

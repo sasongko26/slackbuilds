@@ -1,10 +1,19 @@
 PRGNAM="man-db"
+<<<<<<< HEAD
 VERSION="2.7.6.1"
 HOMEPAGE="http://www.nongnu.org/man-db/"
 DOWNLOAD="http://download.savannah.gnu.org/releases/man-db/man-db-2.7.6.1.tar.xz \
           http://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.4.1.tar.gz"
 MD5SUM="2948d49d0ed7265f60f83aa4a9ac9268 \
         e54590ec68d6c1239f67b5b44e92022c"
+=======
+VERSION="2.8.3"
+HOMEPAGE="http://www.nongnu.org/man-db/"
+DOWNLOAD="http://download.savannah.gnu.org/releases/man-db/man-db-2.8.3.tar.xz \
+          http://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.0.tar.gz"
+MD5SUM="6f3055e18fdd1ce5cbbdb30403991ec7 \
+        b7437a5020190cfa84f09c412db38902"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

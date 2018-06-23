@@ -1,7 +1,11 @@
 PRGNAM="Geraldo"
 VERSION="0.4.12"
 HOMEPAGE="https://github.com/marinho/geraldo"
+<<<<<<< HEAD
 DOWNLOAD="http://pypi.python.org/packages/source/G/Geraldo/Geraldo-0.4.12-stable.tar.gz"
+=======
+DOWNLOAD="https://pypi.python.org/packages/source/G/Geraldo/Geraldo-0.4.12-stable.tar.gz"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="26e164f4cd3bd28468139f15420fa053"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

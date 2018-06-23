@@ -1,8 +1,15 @@
 PRGNAM="beets"
+<<<<<<< HEAD
 VERSION="1.4.5"
 HOMEPAGE="http://beets.radbox.org"
 DOWNLOAD="https://pypi.python.org/packages/0a/85/7fac55e85ba45de5a326282ac4c1cb9189042ab33b8dd9e906b6c33974c8/beets-1.4.5.tar.gz"
 MD5SUM="cdbb623df2846c91b99c3caf834a0734"
+=======
+VERSION="1.4.7"
+HOMEPAGE="http://beets.radbox.org"
+DOWNLOAD="https://files.pythonhosted.org/packages/03/00/4e1bb1a979731721dc84559ef913a7aac196f57acdfe475d62633d514571/beets-1.4.7.tar.gz"
+MD5SUM="057dde4bc9ad2136a14b529f631b71b1"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="mutagen munkres Unidecode musicbrainzngs PyYAML enum34 jellyfish six"

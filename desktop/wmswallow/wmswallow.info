@@ -1,6 +1,10 @@
 PRGNAM="wmswallow"
 VERSION="0.6.1"
+<<<<<<< HEAD
 HOMEPAGE="http://www.dockapps.net/wmswallow"
+=======
+HOMEPAGE="https://www.dockapps.net/wmswallow"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/wmswallow.tar.Z"
 MD5SUM="7ab8efef879a0ad6b64980f346635841"
 DOWNLOAD_x86_64=""

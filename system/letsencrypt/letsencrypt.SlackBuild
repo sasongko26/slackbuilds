@@ -2,7 +2,7 @@
 
 # Slackware build script for letsencrypt
 
-# Copyright 2015-2017 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+# Copyright 2015-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,7 +24,11 @@
 
 PRGNAM=letsencrypt
 SRCNAM=certbot
+<<<<<<< HEAD
 VERSION=${VERSION:-0.19.0}
+=======
+VERSION=${VERSION:-0.24.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -73,6 +77,10 @@ find -L . \
 sed -i "/'argparse',/d" setup.py
 sed -i "/'argparse',/d" acme/setup.py
 sed -i 's/apache2ctl/apachectl/' certbot-apache/certbot_apache/constants.py
+<<<<<<< HEAD
+=======
+patch -p1 < $CWD/configurator.patch
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 for i in $(grep -ri /apache2 * | cut -d: -f1 | sort -u)
 do

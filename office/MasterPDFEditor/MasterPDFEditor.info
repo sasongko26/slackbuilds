@@ -1,10 +1,19 @@
 PRGNAM="MasterPDFEditor"
+<<<<<<< HEAD
 VERSION="4.3.61"
 HOMEPAGE="https://code-industry.net/"
 DOWNLOAD="http://get.code-industry.net/public/master-pdf-editor-4.3.61_i386.tar.gz"
 MD5SUM="4645af2b046dc30c42beae7d8e5093b1"
 DOWNLOAD_x86_64="http://get.code-industry.net/public/master-pdf-editor-4.3.61_qt4.amd64.tar.gz"
 MD5SUM_x86_64="cacdce254f6fd2fd8694235209cbdc3f"
+=======
+VERSION="5.0.25"
+HOMEPAGE="https://code-industry.net/"
+DOWNLOAD="https://code-industry.net/public/master-pdf-editor-5.0.25_i386.tar.gz"
+MD5SUM="c8756c64767b018247660633ce38d7ce"
+DOWNLOAD_x86_64="https://code-industry.net/public/master-pdf-editor-5.0.25_qt4.amd64.tar.gz"
+MD5SUM_x86_64="e2a7e7220e103fe9bc7524c0d9e97489"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES=""
 MAINTAINER="Willy Sudiarto Raharjo"
 EMAIL="willysr@slackbuilds.org"

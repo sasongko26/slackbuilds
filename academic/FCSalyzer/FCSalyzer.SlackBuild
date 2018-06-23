@@ -2,7 +2,7 @@
 
 # Slackware build script for FCSalyzer
 
-# Copyright 2017 Petar Petrov slackalaxy@gmail.com
+# Copyright 2017-2018 Petar Petrov slackalaxy@gmail.com
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,12 +23,20 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=FCSalyzer
+<<<<<<< HEAD
 VERSION=${VERSION:-0.9.14_alpha}
+=======
+VERSION=${VERSION:-0.9.15_alpha}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
 ARCH=noarch
+<<<<<<< HEAD
 SRCVER=0.9.14-alpha
+=======
+SRCVER=0.9.15-alpha
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 CWD=$(pwd)
 TMP=${TMP:-/tmp/SBo}

@@ -24,3 +24,14 @@ To disable the gpm mouse use the flag NOGPM=1
 or combine them:
 
 NOMOUSE=1 NOGPM=1 ./elinks.SlackBuild
+<<<<<<< HEAD
+=======
+
+This version is patched to fix the following issues:
+
+Fix gopher URL: html links.
+Fix gopher index queries.
+Fix gopher directory links.
+Make elinks verify ssl hostnames.
+Fix a few more issues with gopher links.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

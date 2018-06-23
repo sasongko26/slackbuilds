@@ -1,8 +1,15 @@
 PRGNAM="ps_mem"
+<<<<<<< HEAD
 VERSION="3.9"
 HOMEPAGE="https://github.com/pixelb/ps_mem/"
 DOWNLOAD="https://github.com/pixelb/ps_mem/archive/f0891def54f1edb78a70006603d2b025236b830f.tar.gz"
 MD5SUM="f863a9796d13e2a50c827e3aa11423dc"
+=======
+VERSION="3.12"
+HOMEPAGE="https://github.com/pixelb/ps_mem/"
+DOWNLOAD="https://github.com/pixelb/ps_mem/archive/v3.12/ps_mem-3.12.tar.gz"
+MD5SUM="44888ba627eccc338feff401c1785feb"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

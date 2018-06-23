@@ -1,8 +1,15 @@
 PRGNAM="rawtherapee"
+<<<<<<< HEAD
 VERSION="5.3"
 HOMEPAGE="http://rawtherapee.com/"
 DOWNLOAD="http://rawtherapee.com/shared/source/rawtherapee-5.3.tar.xz"
 MD5SUM="7f0162d1eca4259424aba7881c8c890b"
+=======
+VERSION="5.4"
+HOMEPAGE="http://rawtherapee.com/"
+DOWNLOAD="http://rawtherapee.com/shared/source/rawtherapee-5.4.tar.xz"
+MD5SUM="07bbb401dee4abaa3e38b4e1f3e498ce"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="lensfun libiptcdata"

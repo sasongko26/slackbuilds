@@ -10,6 +10,14 @@ The library includes bindings for both the C and C++ languages. It
 works on POSIX-compliant UNIX systems (GNU/Linux, Mac OS X, Solaris,
 FreeBSD) and Windows (2000, XP and later).
 
+<<<<<<< HEAD
+=======
+To install the library documentation (html and pdf) pass DOC=yes to
+the slackbuild as
+
+   DOC=yes ./libconfig.SlackBuild
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 To install the example programs and configuration files pass
 EXAMPLES=yes to the slackbuild as
 

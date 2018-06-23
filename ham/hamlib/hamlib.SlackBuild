@@ -3,7 +3,11 @@
 # SlackBuild script for Hamlib
 
 # Copyright 2010 Howard Pepper <h_pepper {at} bellsouth [dot] net>
+<<<<<<< HEAD
 # Copyright 2017 Nate Bargmann <n0nb@arrl.net>
+=======
+# Copyright 2017,2018 Nate Bargmann <n0nb@arrl.net>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,7 +28,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=hamlib
+<<<<<<< HEAD
 VERSION=${VERSION:-3.1}
+=======
+VERSION=${VERSION:-3.2}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -75,6 +83,43 @@ find -L . \
   -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+<<<<<<< HEAD
+=======
+
+if [ x"${PL_MOD}" = x"yes" ]; then
+  PERL_BINDING="--with-perl-binding"
+else
+  PERL_BINDING=""
+fi
+
+if { [ x"${PY_MOD}" = x"yes" ] || [ x"${PY3_MOD}" = x"yes" ]; } then
+  PYTHON_BINDING="--with-python-binding"
+  PYV=`python -c "import sys;t='{v[0]}.{v[1]}'.format(v=list(sys.version_info[:2]));sys.stdout.write(t)";`
+else
+  PYTHON_BINDING=""
+fi
+
+if [ x"${PY3_MOD}" = x"yes" ]; then
+  export PYTHON=`which python3`
+  PYV=`python3 -c "import sys;t='{v[0]}.{v[1]}'.format(v=list(sys.version_info[:2]));sys.stdout.write(t)";`
+fi
+
+if [ x"${TCL_MOD}" = x"yes" ]; then
+  TCL_BINDING="--with-tcl-binding"
+  TCLV=`echo 'puts $tcl_version;exit 0' | tclsh`
+else
+  TCL_BINDING=""
+fi
+
+# Only if Lua >= 5.2 installed
+if { [ x"${LUA_VER}" = x"5.2" ] || [ x"${LUA_VER}" = x"5.3" ]; } then
+  LUA_BINDING="--with-lua-binding"
+  export LUA_INCLUDE="-I/usr/include/lua${LUA_VER}"
+  export LUA="/usr/bin/lua${LUA_VER}"
+else
+  LUA_BINDING=""
+fi
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
@@ -82,6 +127,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
   --mandir=/usr/man \
+<<<<<<< HEAD
   --docdir=/usr/doc/$PRGNAM-$VERSION/manual \
   --infodir=/usr/info \
   --disable-static \
@@ -89,6 +135,16 @@ CXXFLAGS="$SLKCFLAGS" \
   --with-perl-binding \
   --with-python-binding \
   --with-tcl-binding
+=======
+  --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --infodir=/usr/info \
+  --disable-static \
+  --disable-html-matrix \
+  $PERL_BINDING \
+  $PYTHON_BINDING \
+  $TCL_BINDING \
+  $LUA_BINDING
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 # Fix linking when --libdir=/usr/lib64
 sed -i \
@@ -103,6 +159,7 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
+<<<<<<< HEAD
 
 rm -f $PKG/usr/info/dir
 gzip -9 $PKG/usr/info/*.info*
@@ -111,11 +168,24 @@ find $PKG -name perllocal.pod \
   -o -name ".packlist" \
   -o -name "*.bs" \
   | xargs rm -f
+=======
+
+rm -f $PKG/usr/info/dir
+gzip -9 $PKG/usr/info/*.info*
+
+if [ x"${PL_MOD}" = x"yes" ]; then
+  find $PKG -name perllocal.pod \
+  -o -name ".packlist" \
+  -o -name "*.bs" \
+  | xargs rm -f
+fi
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/
 cp -a $DOCFILES $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
+<<<<<<< HEAD
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/scripts
 mv $PKG/usr/lib${LIBDIRSUFFIX}/perl5/perltest.pl $PKG/usr/doc/$PRGNAM-$VERSION/scripts
 rm -f $PKG/usr/lib${LIBDIRSUFFIX}/python${PYV}/site-packages/Hamlib.pyo
@@ -124,6 +194,25 @@ rm -f $PKG/usr/lib${LIBDIRSUFFIX}/tcl/Hamlib/hamlibtcl.la
 mv $PKG/usr/lib${LIBDIRSUFFIX}/tcl $PKG/usr/lib${LIBDIRSUFFIX}/tcl${TCLV}
 cp -a bindings/tcltest.tcl $PKG/usr/doc/$PRGNAM-$VERSION/scripts
 chmod 644 $PKG/usr/doc/$PRGNAM-$VERSION/scripts/*
+=======
+if [ x"${PY_MOD}" = x"yes" ]; then
+  rm -f $PKG/usr/lib${LIBDIRSUFFIX}/python${PYV}/site-packages/_Hamlib.la
+  rm -f $PKG/usr/lib${LIBDIRSUFFIX}/python${PYV}/site-packages/Hamlib.pyo
+fi
+
+if [ x"${PY3_MOD}" = x"yes" ]; then
+  rm -f $PKG/usr/lib${LIBDIRSUFFIX}/python${PYV}/site-packages/_Hamlib.la
+  rm -f $PKG/usr/lib${LIBDIRSUFFIX}/python${PYV}/site-packages/__pycache__/Hamlib.cpython-36.opt-1.pyc
+fi
+
+if [ x"${TCL_MOD}" = x"yes" ]; then
+  rm -f $PKG/usr/lib${LIBDIRSUFFIX}/tcl${TCLV}/Hamlib/hamlibtcl.la
+fi
+
+if { [ x"${LUA_VER}" = x"5.2" ] || [ x"${LUA_VER}" = x"5.3" ]; } then
+  rm -f $PKG/usr/lib${LIBDIRSUFFIX}/lua/${LUA_VER}/Hamliblua.la
+fi
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

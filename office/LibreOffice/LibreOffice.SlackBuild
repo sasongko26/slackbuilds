@@ -4,7 +4,7 @@
 
 # Slackware build script for LibreOffice
 
-# Copyright 2015-2017 Christoph Willing Brisbane, Australia
+# Copyright 2015-2018 Christoph Willing Brisbane, Australia
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -26,7 +26,11 @@
 
 PRGNAM=LibreOffice
 SRCNAM=libreoffice
+<<<<<<< HEAD
 VERSION=${VERSION:-5.4.3.2}
+=======
+VERSION=${VERSION:-6.0.4.2}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 SHORT_VERSION=${VERSION%.*.*}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}

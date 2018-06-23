@@ -1,8 +1,15 @@
 PRGNAM="python-neovim"
+<<<<<<< HEAD
 VERSION="0.2.0"
 HOMEPAGE="http://neovim.org/"
 DOWNLOAD="https://github.com/neovim/python-client/archive/0.2.0/python-client-0.2.0.tar.gz"
 MD5SUM="32003df269d77e45978162010a5a0ca6"
+=======
+VERSION="0.2.6"
+HOMEPAGE="http://neovim.org/"
+DOWNLOAD="https://github.com/neovim/python-client/archive/0.2.6/python-client-0.2.6.tar.gz"
+MD5SUM="25544ac15b85755e5d444439d82e73fe"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="greenlet msgpack-python trollius"

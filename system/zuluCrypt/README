@@ -35,6 +35,7 @@ zuluMount-gui can also be used as a frontend to encfs.
 zuluMount-gui is ideal for use as a desktop environment/file manager
 independent tool for mounting/unmounting encrypted and unencrypted
 volumes.
+<<<<<<< HEAD
 
 NOTE:
 
@@ -44,3 +45,5 @@ If you want that feature, change the value -DNOGNOME=false or
 /usr/doc/$PRGNAM-$VERSION/BUILD_INSTRUCTIONS.
 
 Optional dependencies: tc-play or the (recommended): zuluplay.
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

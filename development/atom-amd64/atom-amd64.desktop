@@ -2,7 +2,11 @@
 Name=Atom
 GenericName=Editor
 Comment=Atom Editor
+<<<<<<< HEAD
 Icon=atom
+=======
+Icon=atom-amd64
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 Exec=atom
 TryExec=atom
 Terminal=false

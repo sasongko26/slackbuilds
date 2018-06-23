@@ -1,10 +1,17 @@
 PRGNAM="photoqt"
+<<<<<<< HEAD
 VERSION="1.5.1"
 HOMEPAGE="https://photoqt.org"
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/photoqt-1.5.1.tar.gz"
 MD5SUM="2809c745892a4c593da74a8f0092256d"
+=======
+VERSION="1.7.1"
+HOMEPAGE="https://photoqt.org"
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/photoqt-1.7.1.tar.gz"
+MD5SUM="656fee6f9923499992f069496a0aaa5d"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="qt5"
+REQUIRES="extra-cmake-modules qt5"
 MAINTAINER="Matteo Bernardini"
 EMAIL="ponce@slackbuilds.org"

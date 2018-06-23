@@ -7,4 +7,10 @@ It parses image files’ header and return image size.
     JPEG2000
     GIF
 
+<<<<<<< HEAD
 This is a pure Python library.
+=======
+This is a pure Python library.
+
+Optional dependency: python3 (automatically detected)
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

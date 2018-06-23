@@ -1,10 +1,21 @@
 PRGNAM="libzmf"
+<<<<<<< HEAD
 VERSION="0.0.1"
 HOMEPAGE="https://wiki.documentfoundation.org/DLP/Libraries/libzmf"
 DOWNLOAD="http://dev-www.libreoffice.org/src/libzmf/libzmf-0.0.1.tar.xz"
 MD5SUM="5a002c50af653b67b3c2aedd979a2972"
+=======
+VERSION="0.0.2"
+HOMEPAGE="https://wiki.documentfoundation.org/DLP/Libraries/libzmf"
+DOWNLOAD="http://dev-www.libreoffice.org/src/libzmf/libzmf-0.0.2.tar.xz"
+MD5SUM="e4b089f35a85a042ba4da3c143b1dc5a"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
 MAINTAINER="Hunter Sezen"
+<<<<<<< HEAD
 EMAIL="ovariegata@yahoo.com"
+=======
+EMAIL="orbea@fredslev.dk"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

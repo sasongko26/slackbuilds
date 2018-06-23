@@ -2,7 +2,7 @@
 #
 # Slackware build script for paper-icon-theme.
 #
-# Copyright 2016-2017 Edinaldo P. Silva, Rio de Janeiro, Brazil.
+# Copyright 2016-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +23,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM="paper-icon-theme"
+<<<<<<< HEAD
 VERSION=${VERSION:-20171120}
+=======
+VERSION=${VERSION:-1.5.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -42,8 +46,13 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
+<<<<<<< HEAD
 tar xvf $CWD/$PRGNAM-$SRCVER.tar.gz
 mv $PRGNAM-$SRCVER $PRGNAM-$VERSION
+=======
+tar xvf $CWD/$PRGNAM-v.$VERSION.tar.gz
+mv $PRGNAM-v.$VERSION $PRGNAM-$VERSION
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
@@ -52,6 +61,7 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+<<<<<<< HEAD
 CFLAGS="$SLKCFLAGS"
 CXXFLAGS="$SLKCFLAGS"
 ./autogen.sh \
@@ -66,6 +76,10 @@ CXXFLAGS="$SLKCFLAGS"
 
 make
 make install DESTDIR=$PKG
+=======
+meson --prefix $PKG/usr build
+ninja -C build install
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp AUTHORS COPYING LICENSE README.md $PKG/usr/doc/$PRGNAM-$VERSION

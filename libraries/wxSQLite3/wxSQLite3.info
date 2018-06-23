@@ -1,8 +1,15 @@
 PRGNAM="wxSQLite3"
+<<<<<<< HEAD
 VERSION="3.5.8"
 HOMEPAGE="http://utelle.github.io/wxsqlite3/docs/html/index.html"
 DOWNLOAD="https://github.com/utelle/wxsqlite3/archive/v3.5.8/wxsqlite3-3.5.8.tar.gz"
 MD5SUM="a2f650a3abca1b628ee4ac400794f7c7"
+=======
+VERSION="4.0.3"
+HOMEPAGE="https://utelle.github.io/wxsqlite3/docs/html/index.html"
+DOWNLOAD="https://github.com/utelle/wxsqlite3/archive/v4.0.3/wxsqlite3-4.0.3.tar.gz"
+MD5SUM="a2dce46a76dbcf67310ec2d778cf5921"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="wxPython"

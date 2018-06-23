@@ -1,10 +1,19 @@
 PRGNAM="xdman"
+<<<<<<< HEAD
 VERSION="2016.6.2"
 HOMEPAGE="http://xdman.sourceforge.net/"
 DOWNLOAD="https://sourceforge.net/projects/xdman/files/xdm-setup-x86.tar.xz"
 MD5SUM="cc78f0f5d8f132d87d9bb7ad4c1fe6f7"
 DOWNLOAD_x86_64="https://sourceforge.net/projects/xdman/files/xdm-setup-x64.tar.xz"
 MD5SUM_x86_64="0403c2a750be035b1c03cd232f0054fb"
+=======
+VERSION="2018.7.2.7"
+HOMEPAGE="http://xdman.sourceforge.net/"
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/xdm-2018-x86.tar.xz"
+MD5SUM="e95f69226510119843e2fa9759f53e36"
+DOWNLOAD_x86_64="http://ponce.cc/slackware/sources/repo/xdm-2018-x64.tar.xz"
+MD5SUM_x86_64="af02c4e49c6b69ae0535559b7105b5e0"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES="jdk p7zip"
 MAINTAINER="Edinaldo P. Silva"
 EMAIL="edps.mundognu@gmail.com"

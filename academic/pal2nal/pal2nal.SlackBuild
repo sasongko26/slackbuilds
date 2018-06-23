@@ -2,7 +2,11 @@
 
 # Slackware build script for pal2nal
 
+<<<<<<< HEAD
 # Copyright 2017 Petar Petrov slackalaxy@gmail.com
+=======
+# Copyright 2017-2018 Petar Petrov slackalaxy@gmail.com
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,8 +27,13 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=pal2nal
+<<<<<<< HEAD
 VERSION=${VERSION:-14.0}
 SRCVER=v14
+=======
+VERSION=${VERSION:-14.1}
+SRCVER=v14.1
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

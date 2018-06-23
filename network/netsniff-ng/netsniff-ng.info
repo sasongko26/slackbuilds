@@ -1,8 +1,15 @@
 PRGNAM="netsniff-ng"
+<<<<<<< HEAD
 VERSION="0.6.3"
 HOMEPAGE="http://netsniff-ng.org"
 DOWNLOAD="http://pub.netsniff-ng.org/netsniff-ng/netsniff-ng-0.6.3.tar.xz"
 MD5SUM="e892a7f2e025fba07d0f0a330e9917df"
+=======
+VERSION="0.6.4"
+HOMEPAGE="http://netsniff-ng.org"
+DOWNLOAD="http://pub.netsniff-ng.org/netsniff-ng/netsniff-ng-0.6.4.tar.xz"
+MD5SUM="1b9639d503015e3edbb6d26baf3f7974"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libcli libnet nacl liburcu GeoIP"

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 SDL_kitchensink - FFmpeg and SDL2 based library for audio and video 
+=======
+SDL_kitchensink - FFmpeg and SDL2 based library for audio and video
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 playback, written in C99.
 
 Features:

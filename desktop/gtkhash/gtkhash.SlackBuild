@@ -23,7 +23,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=gtkhash
+<<<<<<< HEAD
 VERSION=${VERSION:-1.1}
+=======
+VERSION=${VERSION:-1.1.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -70,7 +74,8 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 # cmd line args
-thunar_params=""    ; [ "${THUNAR:-no}" != "no" ]    && thunar_params="--enable-thunar"
+libb2_params="--disable-blake2"   ; [ "${BLAKE2:-no}" != "no" ] && libb2_params=""
+thunar_params=""   ; [ "${THUNAR:-no}" != "no" ] && thunar_params="--enable-thunar"
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
@@ -82,7 +87,12 @@ CXXFLAGS="$SLKCFLAGS" \
   --build=$ARCH-slackware-linux \
   --enable-linux-crypto \
   --enable-gcrypt \
+<<<<<<< HEAD
   $thunar_params \
+=======
+  $libb2_params \
+  $thunar_params
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 #  --enable-libcrypto \
 #  --enable-mbedtls \
 #  --enable-mhash \
@@ -100,7 +110,7 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  AUTHORS COPYING ChangeLog INSTALL NEWS README.md TODO \
+  AUTHORS COPYING ChangeLog NEWS README.md TODO \
     $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 

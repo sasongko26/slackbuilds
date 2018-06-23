@@ -6,7 +6,11 @@
 # 2017-09-08 - Maintainer changed to Andreas Guldstrand.
 
 PRGNAM=perl-Text-CSV_XS
+<<<<<<< HEAD
 VERSION=${VERSION:-1.31}
+=======
+VERSION=${VERSION:-1.35}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

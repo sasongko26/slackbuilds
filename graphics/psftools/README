@@ -18,3 +18,9 @@ font formats:
 ...and can also convert fonts to XBM, PBM, C source, and human-readable
 text files. psftools can also merge font files together, and transform
 them in various ways (scaling, flipping, adjusting the bounding box, etc).
+<<<<<<< HEAD
+=======
+
+The package also includes few console fonts, taken from the open source
+release of the GEM operating system.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 PyGSL (python interface for GSL)
 
 PyGSL is a Python interface for the GNU scientific library (GSL).
 The wrapper covers nearly everything GSL provides.
+=======
+PyGSL (a python interface for the GNU scientific library)
+
+PyGSL is a Python interface to the GSL library. The wrapper
+covers nearly everything GSL provides.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

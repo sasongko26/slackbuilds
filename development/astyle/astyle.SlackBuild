@@ -2,7 +2,11 @@
 
 # Slackware build script for Artistic Style
 
+<<<<<<< HEAD
 # Nate Bargmann <n0nb@arrl.net>
+=======
+# Copyright 2017,2018 Nate Bargmann <n0nb@arrl.net>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 # Ryan P.C. McQuen | Everett, WA | ryanpcmcquen@member.fsf.org
 
@@ -33,7 +37,11 @@
 # not, see <http://www.gnu.org/licenses/>.
 
 PRGNAM=${PRGNAM:-astyle}
+<<<<<<< HEAD
 VERSION=${VERSION:-3.0.1}
+=======
+VERSION=${VERSION:-3.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -1,8 +1,15 @@
 PRGNAM="sqlmap"
+<<<<<<< HEAD
 VERSION="1.1.9"
 HOMEPAGE="http://sqlmap.org/"
 DOWNLOAD="https://github.com/sqlmapproject/sqlmap/archive/1.1.9/sqlmap-1.1.9.tar.gz"
 MD5SUM="05d487e86241066833c7041da004eb36"
+=======
+VERSION="1.2.4"
+HOMEPAGE="http://sqlmap.org/"
+DOWNLOAD="https://github.com/sqlmapproject/sqlmap/archive/1.2.4/sqlmap-1.2.4.tar.gz"
+MD5SUM="9351ef6f8e9009e6292ab1cba6d99620"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

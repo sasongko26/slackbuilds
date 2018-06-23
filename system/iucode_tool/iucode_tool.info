@@ -1,8 +1,15 @@
 PRGNAM="iucode_tool"
+<<<<<<< HEAD
 VERSION="2.2"
 HOMEPAGE="https://gitlab.com/groups/iucode-tool"
 DOWNLOAD="https://gitlab.com/iucode-tool/releases/raw/master/iucode-tool_2.2.tar.xz"
 MD5SUM="f6cc22c89b66e4f1ff87af36197cdfaa"
+=======
+VERSION="2.3.1"
+HOMEPAGE="https://gitlab.com/iucode-tool"
+DOWNLOAD="https://gitlab.com/iucode-tool/releases/raw/master/iucode-tool_2.3.1.tar.xz"
+MD5SUM="63b33cc0ea1f8c73b443412abbf39d6f"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

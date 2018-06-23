@@ -1,6 +1,10 @@
 PRGNAM="lxdm"
 VERSION="20170805_e3e7517"
+<<<<<<< HEAD
 HOMEPAGE="http://lxde.org/"
+=======
+HOMEPAGE="https://lxde.org/"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/lxde/lxdm-20170805_e3e7517.tar.xz \
           http://ponce.cc/slackware/sources/repo/InduSlack-lxdm-theme-20170818.tar.gz"
 MD5SUM="80865c1a8fbdcbc5e9cfbf96e7f3a956 \

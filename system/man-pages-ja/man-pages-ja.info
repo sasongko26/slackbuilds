@@ -1,8 +1,15 @@
 PRGNAM="man-pages-ja"
+<<<<<<< HEAD
 VERSION="20170615"
 HOMEPAGE="http://linuxjm.sourceforge.jp/"
 DOWNLOAD="http://linuxjm.sourceforge.jp/man-pages-ja-20170615.tar.gz"
 MD5SUM="ee20907738e957d4956197bb0163c9cd"
+=======
+VERSION="20171215"
+HOMEPAGE="http://linuxjm.sourceforge.jp/"
+DOWNLOAD="http://linuxjm.sourceforge.jp/man-pages-ja-20171215.tar.gz"
+MD5SUM="679767d28b95a1004a43b0568629f37e"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="man-db"

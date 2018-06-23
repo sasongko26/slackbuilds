@@ -6,3 +6,9 @@ programs are independent, but can be combined to perform rather
 complex analyses. These programs use the interface helper tools of the
 libraries, and hence share the same syntax. They also have several
 options in common, which may also be shared by third-party software.
+<<<<<<< HEAD
+=======
+
+Detailed documentation can be found (as PDF and HTML) here:
+https://github.com/BioPP/bppsuite/releases/tag/v2.3.2
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

@@ -1,8 +1,15 @@
 PRGNAM="veracrypt"
+<<<<<<< HEAD
 VERSION="1.21"
 HOMEPAGE="https://www.veracrypt.fr/"
 DOWNLOAD="https://launchpad.net/veracrypt/trunk/1.21/+download/VeraCrypt_1.21_Source.tar.bz2"
 MD5SUM="00c0f7101c2956e99c54cb8966e7fc92"
+=======
+VERSION="1.22"
+HOMEPAGE="https://www.veracrypt.fr/"
+DOWNLOAD="https://launchpad.net/veracrypt/trunk/1.22/+download/VeraCrypt_1.22_Source.tar.bz2"
+MD5SUM="54dd43d2d9155cf54504dbc57984e822"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="wxGTK3 makeself"

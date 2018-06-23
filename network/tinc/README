@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 tinc is a Virtual Private Network (VPN) daemon that uses tunnelling and 
 encryption to create a secure private network between hosts on the 
+=======
+tinc is a Virtual Private Network (VPN) daemon that uses tunnelling and
+encryption to create a secure private network between hosts on the
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 Internet.
 
 tinc is Free Software and licensed under the GNU General Public License

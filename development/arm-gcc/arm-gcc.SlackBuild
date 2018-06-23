@@ -98,7 +98,11 @@ CXXFLAGS_FOR_BUILD="$SLKCFLAGS" \
   --enable-lto \
   --enable-plugin \
  --target=arm-none-eabi \
+<<<<<<< HEAD
  --with-cpu=cortex-m4 \
+=======
+ --with-cpu=cortex-m3 \
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
  --with-fpu=fpv4-sp-d16 \
  --with-float=hard \
  --with-mode=thumb \
@@ -115,7 +119,11 @@ CXXFLAGS_FOR_BUILD="$SLKCFLAGS" \
   --program-prefix="arm-none-eabi-" \
   --program-suffix="" \
   --build=$ARCH-slackware-linux \
+<<<<<<< HEAD
   --enable-languages=c,c++ \
+=======
+  --enable-languages="c" \
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   --with-newlib \
   --with-headers=/usr/include/newlib/libc/include
 

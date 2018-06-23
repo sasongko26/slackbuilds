@@ -2,3 +2,9 @@ ripgrep - line oriented search tool
 
 ripgrep is a line oriented search tool that combines the usability of
 The Silver Searcher (similar to ack) with the raw speed of GNU grep.
+<<<<<<< HEAD
+=======
+
+Note:
+rust is required for building ripgrep, but it not needed at runtime.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

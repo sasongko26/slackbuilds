@@ -2,7 +2,11 @@
 
 # Slackware build script for MEGASync input plugin
 
+<<<<<<< HEAD
 # Copyright 2017 Felipe Bugno <capent@yahoo.com>
+=======
+# Copyright 2017,2018 Felipe Bugno <capent@yahoo.com>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 #
 # All rights reserved.
 #
@@ -24,8 +28,13 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=MEGAsync
+<<<<<<< HEAD
 VERSION=${VERSION:-3.1.4.0}
 SDK=${SDK:-3.1.4}
+=======
+VERSION=${VERSION:-3.6.6.0}
+SDK=${SDK:-3.3.3}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

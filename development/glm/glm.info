@@ -1,8 +1,15 @@
 PRGNAM="glm"
+<<<<<<< HEAD
 VERSION="0.9.8.4"
 HOMEPAGE="http://glm.g-truc.net/"
 DOWNLOAD="https://github.com/g-truc/glm/archive/0.9.8.4.tar.gz"
 MD5SUM="26ca8792038da90f67301fa0a3d5b693"
+=======
+VERSION="0.9.8.5"
+HOMEPAGE="http://glm.g-truc.net/"
+DOWNLOAD="https://github.com/g-truc/glm/archive/0.9.8.5/glm-0.9.8.5.tar.gz"
+MD5SUM="70eac538d5681132dd363f814c81ce22"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

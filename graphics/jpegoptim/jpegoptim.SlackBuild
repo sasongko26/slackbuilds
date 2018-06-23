@@ -25,13 +25,18 @@
 # with this program (most likely, a file named COPYING).  If not, see
 # <https://www.gnu.org/licenses/>.
 
+<<<<<<< HEAD
+=======
+# 20180612 bkw: update for v1.4.6.
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # 20170309 bkw:
 # - take over maintenance
 # - use long-form github URL
 # - update configure to match template (actually use SLKCFLAGS).
 
 PRGNAM=jpegoptim
-VERSION=${VERSION:-1.4.4}
+VERSION=${VERSION:-1.4.6}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

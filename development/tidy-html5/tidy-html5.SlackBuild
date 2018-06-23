@@ -23,7 +23,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=tidy-html5
+<<<<<<< HEAD
 VERSION=${VERSION:-5.4.0}
+=======
+VERSION=${VERSION:-5.6.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -100,7 +104,10 @@ cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
+<<<<<<< HEAD
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

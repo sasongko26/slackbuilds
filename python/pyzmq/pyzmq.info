@@ -1,8 +1,15 @@
 PRGNAM="pyzmq"
+<<<<<<< HEAD
 VERSION="16.0.3"
 HOMEPAGE="https://github.com/zeromq/pyzmq"
 DOWNLOAD="https://github.com/zeromq/pyzmq/archive/v16.0.3.tar.gz"
 MD5SUM="3545107626276a010babad9e50ff6477"
+=======
+VERSION="17.0.0"
+HOMEPAGE="https://github.com/zeromq/pyzmq"
+DOWNLOAD="https://github.com/zeromq/pyzmq/archive/v17.0.0.tar.gz"
+MD5SUM="29dcd90cd6e862ce9b4a0e5efd74ada8"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="zeromq"

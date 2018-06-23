@@ -1,8 +1,15 @@
 PRGNAM="arm-binutils"
+<<<<<<< HEAD
 VERSION="2.29"
 HOMEPAGE="http://www.gnu.org/software/binutils"
 DOWNLOAD="https://ftp.gnu.org/gnu/binutils/binutils-2.29.tar.xz"
 MD5SUM="87978750715952fbb9f870940e9dcbeb"
+=======
+VERSION="2.30"
+HOMEPAGE="http://www.gnu.org/software/binutils"
+DOWNLOAD="https://ftp.gnu.org/gnu/binutils/binutils-2.30.tar.xz"
+MD5SUM="ffc476dd46c96f932875d1b2e27e929f"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -2,7 +2,11 @@
 
 # Slackware build script for paraview
 
+<<<<<<< HEAD
 # Copyright 2016-2017 Christoph Willing  Brisbane, Australia
+=======
+# Copyright 2016-2018 Christoph Willing  Brisbane, Australia
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,9 +28,15 @@
 
 PRGNAM=paraview
 SRCNAM=ParaView
+<<<<<<< HEAD
 VERSION=${VERSION:-5.4.1}
 SHORT_VERSION=${SHORT_VERSION:-5.4}
 DOC_VERSION=${DOC_VERSION:-5.4.0}
+=======
+VERSION=${VERSION:-5.5.2}
+SHORT_VERSION=${SHORT_VERSION:-5.5}
+DOC_VERSION=${DOC_VERSION:-5.5.2}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -74,7 +84,11 @@ cd $TMP
 rm -rf $SRCNAM-v$VERSION
 tar xvf $CWD/$SRCNAM-v$VERSION.tar.gz
 cd $SRCNAM-v$VERSION
+<<<<<<< HEAD
 patch -p0 < $CWD/010_doc_path.diff
+=======
+patch -p0 < $CWD/011_doc_path.diff
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 patch -p0 < $CWD/020_vtkdocs.diff
 sed -i -e 's/@PARAVIEW_VERSION_FULL@/1.0/'  Applications/ParaView/paraview.desktop.in
 echo "Exec=paraview" >> Applications/ParaView/paraview.desktop.in

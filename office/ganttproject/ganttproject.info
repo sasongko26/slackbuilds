@@ -1,8 +1,15 @@
 PRGNAM="ganttproject"
+<<<<<<< HEAD
 VERSION="2.8.5"
 HOMEPAGE="http://www.ganttproject.biz"
 DOWNLOAD="https://github.com/bardsoftware/ganttproject/archive/ganttproject-2.8.5/ganttproject-ganttproject-2.8.5.tar.gz"
 MD5SUM="1761fd1f97b17de4ff3e05e08e0b4ab7"
+=======
+VERSION="2.8.7"
+HOMEPAGE="http://www.ganttproject.biz"
+DOWNLOAD="https://github.com/bardsoftware/ganttproject/archive/ganttproject-2.8.7/ganttproject-ganttproject-2.8.7.tar.gz"
+MD5SUM="e19271d7820cf6432d733ff6d2a9342f"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="apache-ant jdk"

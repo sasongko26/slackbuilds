@@ -1,6 +1,10 @@
 PRGNAM="libLAS"
 VERSION="1.8.1"
+<<<<<<< HEAD
 HOMEPAGE="https://www.liblas.org/"
+=======
+HOMEPAGE="https://liblas.org/"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD="http://download.osgeo.org/liblas/libLAS-1.8.1.tar.bz2"
 MD5SUM="2e6a975dafdf57f59a385ccb87eb5919"
 DOWNLOAD_x86_64=""

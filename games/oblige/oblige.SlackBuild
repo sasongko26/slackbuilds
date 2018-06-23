@@ -6,6 +6,12 @@
 
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
+<<<<<<< HEAD
+=======
+# 20171220 bkw:
+# - update for 7.70. Upstream calls this the final release :(
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # 20170817 bkw:
 # - update for 7.666. Sadly this might be the last update, upstream is
 #   tired of working on oblige :(
@@ -35,7 +41,11 @@
 # in /usr/share.
 
 PRGNAM=oblige
+<<<<<<< HEAD
 VERSION=${VERSION:-7.666}
+=======
+VERSION=${VERSION:-7.70}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -94,6 +104,12 @@ find -L . \
 
 # 'make install' would install the .desktop and icon to /usr, not PREFIX.
 sed -i '/xdg-/d' Makefile
+
+# if there's no prefabs/ dir, don't try to install it. doing it this
+# way allows this script to still build oblige 7.666, if needed.
+if [ ! -d prefabs ]; then
+  sed -i '/\/prefabs/d' Makefile
+fi
 
 make PREFIX=/usr OPTIMISE="$SLKCFLAGS"
 make install PREFIX=$PKG/usr

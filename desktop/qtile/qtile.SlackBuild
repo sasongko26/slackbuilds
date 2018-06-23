@@ -2,7 +2,11 @@
 
 # Slackware build script for qtile
 
+<<<<<<< HEAD
 # Copyright 2014-2017  Dimitris Zlatanidis  Orestiada, Greece
+=======
+# Copyright 2014-2018  Dimitris Zlatanidis  Orestiada, Greece
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +27,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=qtile
+<<<<<<< HEAD
 VERSION=${VERSION:-0.10.7}
+=======
+VERSION=${VERSION:-0.11.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -68,6 +76,12 @@ find -L . \
   -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+<<<<<<< HEAD
+=======
+
+# Fix setup install for Slackware
+patch -p1 < $CWD/setup.patch
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 python setup.py install --root=$PKG
 

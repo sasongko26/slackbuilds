@@ -2,7 +2,11 @@
 
 # Slackware build script for docker-proxy
 
+<<<<<<< HEAD
 # Copyright 2017 Audrius Kažukauskas <audrius@neutrino.lt>
+=======
+# Copyright 2017-2018 Audrius Kažukauskas <audrius@neutrino.lt>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,8 +27,13 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=docker-proxy
+<<<<<<< HEAD
 VERSION=${VERSION:-20170120_7b2b1fe}
 GITHASH=${GITHASH:-7b2b1feb1de4817d522cc372af149ff48d25028e}
+=======
+VERSION=${VERSION:-20180412_c15b372}
+GITHASH=${GITHASH:-c15b372ef22125880d378167dde44f4b134e1a77}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -57,6 +66,13 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+<<<<<<< HEAD
+=======
+mkdir build
+mv vendor build/src
+
+GOPATH=$TMP/$SRCNAM-$GITHASH/build \
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 go build -o $PKG/usr/bin/docker-proxy ./cmd/proxy
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION

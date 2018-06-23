@@ -1,8 +1,15 @@
 PRGNAM="SQLAlchemy"
+<<<<<<< HEAD
 VERSION="1.1.14"
 HOMEPAGE="http://www.sqlalchemy.org"
 DOWNLOAD="https://pypi.python.org/packages/a3/d1/eacdedd964ad43fbc4cc7110dac33fbf1dbd7bf50dedb4dc1799c42972c1/SQLAlchemy-1.1.14.tar.gz"
 MD5SUM="b32669d53e903b3512065026552f3bff"
+=======
+VERSION="1.2.8"
+HOMEPAGE="http://www.sqlalchemy.org"
+DOWNLOAD="https://files.pythonhosted.org/packages/b4/9c/411a9bac1a471bed54ec447dc183aeed12a75c1b648307e18b56e3829363/SQLAlchemy-1.2.8.tar.gz"
+MD5SUM="c946af59804e07729eb20586c98799f3"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

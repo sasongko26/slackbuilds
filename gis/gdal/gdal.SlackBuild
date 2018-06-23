@@ -25,7 +25,11 @@
 # Maintained by David Spencer <baildon.research@googlemail.com>
 
 PRGNAM=gdal
+<<<<<<< HEAD
 VERSION=${VERSION:-2.2.2}
+=======
+VERSION=${VERSION:-2.2.4}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -143,6 +147,17 @@ CXXFLAGS="$SLKCFLAGS" \
 make
 make install DESTDIR=$PKG
 
+<<<<<<< HEAD
+=======
+if $(python3 -c 'import sys' 2>/dev/null); then
+  cd swig/python
+    rm -rf build
+    python3 setup.py build
+    python3 setup.py install --root=$PKG --prefix=/usr
+  cd - >/dev/null
+fi
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 find $PKG | xargs file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 

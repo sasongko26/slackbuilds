@@ -13,6 +13,10 @@ dina-font: It is relatively compact to allow a lot of code on screen while
 dina-font: clear enough to remain readable even at high resolutions.
 dina-font:
 dina-font: This package includes X11 @ANDCONSOLE@fonts@ONLY@.
+<<<<<<< HEAD
+=======
+dina-font:
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 dina-font:
 dina-font:
 dina-font: Homepage: http://www.donationcoder.com/Software/Jibz/Dina/index.html

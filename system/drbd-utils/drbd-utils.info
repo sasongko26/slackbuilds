@@ -1,8 +1,15 @@
 PRGNAM="drbd-utils"
+<<<<<<< HEAD
 VERSION="9.1.0"
 HOMEPAGE="http://www.drbd.org"
 DOWNLOAD="http://www.drbd.org/download/drbd/utils/drbd-utils-9.1.0.tar.gz"
 MD5SUM="6d37a45b0c5af451b6bceb10a91187ec"
+=======
+VERSION="9.3.0"
+HOMEPAGE="http://www.drbd.org"
+DOWNLOAD="http://www.drbd.org/download/drbd/utils/drbd-utils-9.3.0.tar.gz"
+MD5SUM="bcf5288f01f43d7418031e1d85544894"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

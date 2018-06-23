@@ -1,10 +1,17 @@
 PRGNAM="image-analyzer"
+<<<<<<< HEAD
 VERSION="3.0.1"
 HOMEPAGE="http://cdemu.sourceforge.net/about/analyzer/"
 DOWNLOAD="http://downloads.sourceforge.net/cdemu/image-analyzer-3.0.1.tar.bz2"
 MD5SUM="3cc52e88432f3db836ca1d6356944c23"
+=======
+VERSION="3.1.0"
+HOMEPAGE="http://cdemu.sourceforge.net/about/analyzer/"
+DOWNLOAD="http://downloads.sourceforge.net/cdemu/image-analyzer-3.1.0.tar.bz2"
+MD5SUM="e8b638fb92a4b6fda9e9e8d38cc50a01"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libmirage"
-MAINTAINER="Niels Horn"
-EMAIL="niels.horn@gmail.com"
+MAINTAINER="Isaac Yu"
+EMAIL="isaacyu1@isaacyu1.com"

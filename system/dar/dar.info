@@ -1,8 +1,15 @@
 PRGNAM="dar"
+<<<<<<< HEAD
 VERSION="2.5.13"
 HOMEPAGE="http://dar.linux.free.fr/"
 DOWNLOAD="http://downloads.sourceforge.net/dar/dar-2.5.13.tar.gz"
 MD5SUM="08a484d0d99f6b146152a4b6faea7c17"
+=======
+VERSION="2.5.15"
+HOMEPAGE="http://dar.linux.free.fr/"
+DOWNLOAD="http://downloads.sourceforge.net/dar/dar-2.5.15.tar.gz"
+MD5SUM="73e32759823bc258854553246e3ac50d"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

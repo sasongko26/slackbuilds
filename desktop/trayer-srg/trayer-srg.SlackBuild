@@ -24,6 +24,11 @@
 
 # Now maintained by B. Watson (yalhcru@gmail.com)
 
+<<<<<<< HEAD
+=======
+# 20180612 bkw: updated for v1.1.8.
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # 20170708 bkw:
 # - updated for v1.1.7.
 # - stop installing INSTALL in doc dir.
@@ -38,7 +43,11 @@
 # - Upstream now uses a (non-autotools) ./configure script.
 
 PRGNAM=trayer-srg
+<<<<<<< HEAD
 VERSION=${VERSION:-1.1.7}
+=======
+VERSION=${VERSION:-1.1.8}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

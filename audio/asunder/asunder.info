@@ -1,8 +1,15 @@
 PRGNAM="asunder"
+<<<<<<< HEAD
 VERSION="2.9.2"
 HOMEPAGE="http://littlesvr.ca/asunder/"
 DOWNLOAD="http://littlesvr.ca/asunder/releases/asunder-2.9.2.tar.bz2"
 MD5SUM="f9b86a3860691267290b08cdcb66b232"
+=======
+VERSION="2.9.3"
+HOMEPAGE="http://littlesvr.ca/asunder/"
+DOWNLOAD="http://littlesvr.ca/asunder/releases/asunder-2.9.3.tar.bz2"
+MD5SUM="fe20004f6f7699b4959e7f0458488ebf"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

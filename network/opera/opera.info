@@ -1,10 +1,19 @@
 PRGNAM="opera"
+<<<<<<< HEAD
 VERSION="49.0.2725.39"
 HOMEPAGE="http://www.opera.com/browser/"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
 DOWNLOAD_x86_64="http://download3.operacdn.com/pub/opera/desktop/49.0.2725.39/linux/opera-stable_49.0.2725.39_amd64.deb"
 MD5SUM_x86_64="aefcb5debdbced2aa65493fff0eb5abf"
+=======
+VERSION="53.0.2907.99"
+HOMEPAGE="https://www.opera.com/"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="http://download3.operacdn.com/pub/opera/desktop/53.0.2907.99/linux/opera-stable_53.0.2907.99_amd64.deb"
+MD5SUM_x86_64="50621fa268e074639bb9c3062fd24b8f"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES=""
 MAINTAINER="Edinaldo P. Silva"
 EMAIL="edps.mundognu@gmail.com"

@@ -1,8 +1,15 @@
 PRGNAM="cacti"
+<<<<<<< HEAD
 VERSION="1.1.28"
 HOMEPAGE="https://www.cacti.net/"
 DOWNLOAD="https://www.cacti.net/downloads/cacti-1.1.28.tar.gz"
 MD5SUM="8ad64ec03da234a207bcb50e97ad8cc9"
+=======
+VERSION="1.1.38"
+HOMEPAGE="https://www.cacti.net/"
+DOWNLOAD="https://www.cacti.net/downloads/cacti-1.1.38.tar.gz"
+MD5SUM="a1ffe414280ec6518de7f0f16a5960c5"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="rrdtool"

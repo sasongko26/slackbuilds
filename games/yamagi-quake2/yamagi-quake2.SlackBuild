@@ -25,7 +25,11 @@
 # Includes components from the Arch Linux AUR builds.
 
 PRGNAM=yamagi-quake2
+<<<<<<< HEAD
 VERSION=${VERSION:-7.02}
+=======
+VERSION=${VERSION:-7.20}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

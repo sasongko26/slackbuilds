@@ -2,3 +2,8 @@ GtkHash is a desktop utility for computing message digests or checksums.
 
 Most well-known hash functions are supported, including MD5, SHA1, SHA2
 (SHA256/SHA512), and SHA3.
+<<<<<<< HEAD
+=======
+
+libb2 is an optional dependency; see README.Slackware for more details.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

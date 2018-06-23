@@ -1,8 +1,15 @@
 PRGNAM="geojson"
+<<<<<<< HEAD
 VERSION="2.3.0"
 HOMEPAGE="https://github.com/frewsxcv/python-geojson"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/g/geojson/geojson-2.3.0.tar.gz"
 MD5SUM="832898dc14097cd01c735fac253bf1f0"
+=======
+VERSION="2.4.0"
+HOMEPAGE="https://github.com/frewsxcv/python-geojson"
+DOWNLOAD="https://github.com/frewsxcv/python-geojson/archive/2.4.0/python-geojson-2.4.0.tar.gz"
+MD5SUM="c5536d4c6ba133646d9558f7ec5fbc76"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -1,8 +1,13 @@
 PRGNAM="fotoxx"
 VERSION="16.01.1"
 HOMEPAGE="http://kornelix.net/fotoxx/fotoxx.html"
+<<<<<<< HEAD
 DOWNLOAD="http://slackware.uk/sbosrcarch/by-name/graphics/fotoxx/fotoxx-16.01.1.tar.gz \
           http://slackware.uk/sbosrcarch/by-name/graphics/fotoxx/fotoxx-maps-1.1.tar.gz"
+=======
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/fotoxx-16.01.1.tar.gz \
+          http://ponce.cc/slackware/sources/repo/fotoxx-maps-1.1.tar.gz"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="b818c87c14a9f8047016096274f27981 \
         0d9f2d2715fea15ad9f4189caaf1112f"
 DOWNLOAD_x86_64=""

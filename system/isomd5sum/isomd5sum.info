@@ -1,8 +1,15 @@
 PRGNAM="isomd5sum"
+<<<<<<< HEAD
 VERSION="1.2.1"
 HOMEPAGE="https://github.com/rhinstaller/isomd5sum/"
 DOWNLOAD="https://github.com/rhinstaller/isomd5sum/archive/1.2.1/isomd5sum-1.2.1.tar.gz"
 MD5SUM="b2bc8e63e5be588ce3039b0801a6b21b"
+=======
+VERSION="1.2.3"
+HOMEPAGE="https://github.com/rhinstaller/isomd5sum/"
+DOWNLOAD="https://github.com/rhinstaller/isomd5sum/archive/1.2.3/isomd5sum-1.2.3.tar.gz"
+MD5SUM="c4e04bba46a162ff60ca6dea04ab3e21"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

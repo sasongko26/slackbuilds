@@ -23,7 +23,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=ZoneMinder
+<<<<<<< HEAD
 VERSION=${VERSION:-1.30.0}
+=======
+VERSION=${VERSION:-1.31.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -94,6 +98,15 @@ make install DESTDIR=$PKG INSTALLDIRS=vendor INSTALLVENDORMAN3DIR=/usr/man/man3
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
+<<<<<<< HEAD
+=======
+# Compress manpages
+mkdir -p $PKG/usr/man/man3
+mv $PKG/usr/share/man/man3/* $PKG/usr/man/man3/
+mkdir -p $PKG/usr/man/man8
+mv $PKG/usr/share/man/man8/* $PKG/usr/man/man8/
+rm -rf $PKG/usr/share/man
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 mv $PKG/usr/share/man/man8 $PKG/usr/man/
 rm -rf $PKG/usr/share/man
@@ -101,6 +114,10 @@ rm -rf $PKG/usr/share/man
 find $PKG -name perllocal.pod \
   -o -name ".packlist" \
   -o -name "*.bs" \
+  -o -name ".editorconfig" \
+  -o -name ".packlist" \
+  -o -name ".git" \
+  -o -name "empty" \
   | xargs rm -f || true
 
 find $PKG/usr -depth -type d -empty -delete || true
@@ -109,7 +126,7 @@ mkdir -p $PKG/var/{log,lock/subsys}
 install -d -o $DOCOWN -g $DOCGRP $PKG/var/log/zm
 
 for DIR in events images sound; do
-  install -d -o $DOCOWN -g $DOCGRP $PKG$DOCROOT/$DIR
+  install -d -o $DOCOWN -g $DOCGRP $PKG/var/lib/zoneminder/$DIR
 done
 
 # Install logrotate script

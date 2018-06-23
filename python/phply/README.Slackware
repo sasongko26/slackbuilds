@@ -8,3 +8,16 @@ $ phplex /path/to/file_name.php
 For the parser test execute in a shell:
 
 $ phpparse /path/to/file_name.php
+<<<<<<< HEAD
+=======
+
+For the JSON dump:
+
+$ cd /usr/doc/phply-$VERSION/tools
+$ python ./php2json.py < input.php > output.json
+
+For the Jinja2 converter:
+
+$ cd /usr/doc/phply-$VERSION/tools
+$ python ./php2jinja.py <input.php > output.html
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

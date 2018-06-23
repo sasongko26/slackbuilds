@@ -1,8 +1,15 @@
 PRGNAM="symbola-font-ttf"
+<<<<<<< HEAD
 VERSION="10.03"
 HOMEPAGE="http://users.teilar.gr/~g1951d/"
 DOWNLOAD="http://downloads.sourceforge.net/slackbuildsdirectlinks/symbola-font-ttf-10.03.zip"
 MD5SUM="f4ef2094f0be2c52117ab5634dc60ae9"
+=======
+VERSION="10.24"
+HOMEPAGE="http://users.teilar.gr/~g1951d/"
+DOWNLOAD="http://downloads.sourceforge.net/slackbuildsdirectlinks/symbola-font-ttf-10.24.zip"
+MD5SUM="359d6b29e337f7259fb84a0569b56a53"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

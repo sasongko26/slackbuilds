@@ -1,8 +1,15 @@
 PRGNAM="awscli"
+<<<<<<< HEAD
 VERSION="1.11.120"
 HOMEPAGE="https://aws.amazon.com/cli/"
 DOWNLOAD="https://pypi.python.org/packages/45/46/a7bc15548429118cbc5b3d93a5abe1bf8485d4b952d02f7bfac2ac4ce49a/awscli-1.11.120.tar.gz"
 MD5SUM="8f32c60ec8e1b4f1b87329a274d5c94c"
+=======
+VERSION="1.15.14"
+HOMEPAGE="https://aws.amazon.com/cli/"
+DOWNLOAD="https://files.pythonhosted.org/packages/ba/7d/245a8852d149cf8794503f88a464212d67b4fde2d42bfdc2d624038ab3b2/awscli-1.15.14.tar.gz"
+MD5SUM="5def3263c190fe2d15eb064f5828ebc5"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="s3transfer colorama rsa PyYAML"

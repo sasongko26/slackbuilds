@@ -1,7 +1,11 @@
 PRGNAM="xwxapt"
 VERSION="2.4"
 HOMEPAGE="http://www.qsl.net/5b4az/"
+<<<<<<< HEAD
 DOWNLOAD="http://slackware.uk/sbosrcarch/by-name/ham/xwxapt/xwxapt-2.4.tar.bz2"
+=======
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/xwxapt-2.4.tar.bz2"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="1d82e5db1e65dc8bfdc79a8d6f479958"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

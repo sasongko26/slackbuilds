@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 bunsen-themes (GTK2|GTK3 Themes)
 
 GTK  and  Openbox  themes  for  BunsenLabs and Debian Jessie. Made by
 hhh from the Crunchbang forums.
+=======
+bunsen-themes (BunsenLabs Theme Collection)
+
+GTK and Openbox themes for BunsenLabs "Helium" and Debian "Stretch".
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

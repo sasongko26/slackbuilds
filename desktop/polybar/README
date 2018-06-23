@@ -5,3 +5,7 @@ black belt in shell scripting.
 Optional dependencies for extended module support:
   * jsoncpp required by internal/i3
   * libmpdclient required by internal/mpd
+<<<<<<< HEAD
+=======
+  * siji-font for additional font support
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

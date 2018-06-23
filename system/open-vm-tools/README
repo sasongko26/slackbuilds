@@ -6,3 +6,12 @@ and seamless user interactions with, guests. It includes kernel
 modules for enhancing the performance of virtual machines
 running Linux or other VMware supported Unix like guest
 operating systems.
+<<<<<<< HEAD
+=======
+
+Multiple options in SlackBuild :
+
+VGAUTH=no     # Default option
+VGAUTH=yes    # xml-security-c is required
+VGAUTH=xmlsec # xmlsec is required
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

@@ -1,10 +1,19 @@
 PRGNAM="vivaldi"
+<<<<<<< HEAD
 VERSION="1.13.1008.34"
 HOMEPAGE="https://vivaldi.com"
 DOWNLOAD="http://repo.vivaldi.com/archive/deb/pool/main/vivaldi-stable_1.13.1008.34-1_i386.deb"
 MD5SUM="675a37c31d70fb9d76f74b10d2872d53"
 DOWNLOAD_x86_64="http://repo.vivaldi.com/archive/deb/pool/main/vivaldi-stable_1.13.1008.34-1_amd64.deb"
 MD5SUM_x86_64="5ae385ac229a0d54e7f93ed7c65e354a"
+=======
+VERSION="1.15.1147.47"
+HOMEPAGE="https://vivaldi.com"
+DOWNLOAD="https://downloads.vivaldi.com/stable/vivaldi-stable_1.15.1147.47-1_i386.deb"
+MD5SUM="976b21355bd35fa93bf888cbc3cedc85"
+DOWNLOAD_x86_64="https://downloads.vivaldi.com/stable/vivaldi-stable_1.15.1147.47-1_amd64.deb"
+MD5SUM_x86_64="ef13f62765ef3dd97721a88f2d1da559"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES=""
 MAINTAINER="Alexander Verbovetsky"
 EMAIL="alik@ejik.org"

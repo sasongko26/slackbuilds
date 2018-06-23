@@ -24,7 +24,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=mkslack
+<<<<<<< HEAD
 VERSION=${VERSION:-5.1}
+=======
+VERSION=${VERSION:-5.2}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 ARCH=noarch
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
@@ -43,7 +47,11 @@ mkdir -p $TMP $PKG/usr/bin $PKG/usr/share/mkslack/templates $PKG/etc/mkslack \
 cd $TMP
 rm -rf $PRGNAM-$VERSION
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+<<<<<<< HEAD
 cd $PRGNAM-$VERSION
+=======
+cd $PRGNAM-$VERSION/$PRGNAM-$VERSION
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \

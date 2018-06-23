@@ -23,6 +23,13 @@
 
 # Modified by the SlackBuilds.org project.
 
+<<<<<<< HEAD
+=======
+# 20180612 bkw: updated for 2.0.2.
+
+# 20171219 bkw: updated for 2.0.1.
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # 20170302 bkw: use long-format github URL
 
 # 20170126 bkw:
@@ -41,11 +48,11 @@
 # - Correct README, plus cosmetic reformatting.
 
 PRGNAM=vbam
-VERSION=${VERSION:-2.0.0beta3}
+VERSION=${VERSION:-2.0.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
-SRCVER="Beta-3"
+SRCVER="$VERSION"
 SRCNAM="visualboyadvance-m"
 
 # Set to ON to enable FFMPEG A/V recording.
@@ -102,11 +109,11 @@ find -L . \
 # confusion, force the correct version.
 WXCONF=${WXCONF:-/usr/lib$LIBDIRSUFFIX/wx/config/gtk2-unicode-3.0}
 
-# install binary to /usr/games, since it's got a section 6 man page.
-sed -i '/DESTINATION bin/s,bin,games,' CMakeLists.txt
-
-# man pages go in Slack standard location.
-sed -i 's,share/man,man,g' CMakeLists.txt
+# upstream cleverly parses their own ChangeLog to get the version number
+# that gets compiled into the binary. They un-cleverly failed to follow
+# their own formatting rules for v2.0.2, meaning the 2.0.2 executable
+# says 2.0.1 in its window title. So:
+sed -i '/\[2\.0\.2\]/s,Bug fix release,-,' CHANGELOG.md
 
 mkdir -p build
 cd build
@@ -120,6 +127,10 @@ cd build
     -DENABLE_FFMPEG=${FFMPEG} \
     -DCMAKE_BUILD_TYPE=Release ..
   make
+  sed -i \
+      -e 's,/usr/share/man,/usr/man,g' \
+      -e 's,/usr/bin,/usr/games,g' \
+      cmake_install.cmake
   make install DESTDIR=$PKG
 cd ..
 

@@ -1,4 +1,5 @@
 PRGNAM="etherape"
+<<<<<<< HEAD
 VERSION="0.9.15"
 HOMEPAGE="http://etherape.sourceforge.net/"
 DOWNLOAD="http://downloads.sourceforge.net/etherape/etherape-0.9.15.tar.gz"
@@ -6,5 +7,14 @@ MD5SUM="a8765c76149f10cd852a88cbeab924d1"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libgnomeui c-ares"
+=======
+VERSION="0.9.18"
+HOMEPAGE="http://etherape.sourceforge.net/"
+DOWNLOAD="http://downloads.sourceforge.net/etherape/etherape-0.9.18.tar.gz"
+MD5SUM="6d6a6c03e03e2d6aae3a59cd42752ac1"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="goocanvas2 c-ares"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MAINTAINER="Willy Sudiarto Raharjo"
 EMAIL="willysr@slackbuilds.org"

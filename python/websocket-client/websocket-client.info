@@ -1,8 +1,15 @@
 PRGNAM="websocket-client"
+<<<<<<< HEAD
 VERSION="0.41.1"
 HOMEPAGE="https://github.com/liris/websocket-client"
 DOWNLOAD="https://github.com/liris/websocket-client/archive/v0.41.1/websocket-client-0.41.1.tar.gz"
 MD5SUM="ef060e8af0e18471e5b74af5798c008f"
+=======
+VERSION="0.48.0"
+HOMEPAGE="https://github.com/liris/websocket-client"
+DOWNLOAD="https://github.com/liris/websocket-client/archive/v0.48.0/websocket-client-0.48.0.tar.gz"
+MD5SUM="de2e52d917700f6b87edaf60942183e6"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

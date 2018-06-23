@@ -1,10 +1,19 @@
 PRGNAM="smplayer"
+<<<<<<< HEAD
 VERSION="17.10.2"
 HOMEPAGE="https://www.smplayer.info/"
 DOWNLOAD="https://downloads.sourceforge.net/smplayer/smplayer-17.10.2.tar.bz2 \
           https://downloads.sourceforge.net/smplayer/smplayer-themes-17.3.0.tar.bz2 \
           https://downloads.sourceforge.net/smplayer/smplayer-skins-15.2.0.tar.bz2"
 MD5SUM="14a7db262deed0967b8a49637d66cee7 \
+=======
+VERSION="18.5.0"
+HOMEPAGE="https://www.smplayer.info/"
+DOWNLOAD="https://downloads.sourceforge.net/smplayer/smplayer-18.5.0.tar.bz2 \
+          https://downloads.sourceforge.net/smplayer/smplayer-themes-17.3.0.tar.bz2 \
+          https://downloads.sourceforge.net/smplayer/smplayer-skins-15.2.0.tar.bz2"
+MD5SUM="ef54d18ad0031aca00c1581b74976bd4 \
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
         33c063c5a80c5b1625f51ddbb7bfd3a1 \
         57e165cf9a95808fafd179e5322b7f15"
 DOWNLOAD_x86_64=""

@@ -1,8 +1,15 @@
 PRGNAM="cppcms"
+<<<<<<< HEAD
 VERSION="1.1.0"
 HOMEPAGE="http://cppcms.com"
 DOWNLOAD="https://github.com/artyom-beilis/cppcms/archive/v1.1.0/cppcms-1.1.0.tar.gz"
 MD5SUM="ef9fd6dd06fe07beb33b1b427a26534c"
+=======
+VERSION="1.2.1"
+HOMEPAGE="http://cppcms.com"
+DOWNLOAD="https://github.com/artyom-beilis/cppcms/archive/v1.2.1/cppcms-1.2.1.tar.gz"
+MD5SUM="638892c22c2520837eef754d50206b51"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

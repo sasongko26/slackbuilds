@@ -23,7 +23,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=stone_soup
+<<<<<<< HEAD
 VERSION=${VERSION:-0.20.1}
+=======
+VERSION=${VERSION:-0.21.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -74,7 +78,7 @@ cd source
     prefix=/usr \
     COPY_FONTS=1 \
     DATADIR=/usr/share/games/crawl \
-    SAVEDIR=~/.crawl/ \
+    SAVEDIR='~/.crawl/' \
     SDL2=1 \
     TILES=1
   make $TARGET install \
@@ -82,14 +86,14 @@ cd source
     COPY_FONTS=1 \
     DATADIR=/usr/share/games/crawl \
     DESTDIR=$PKG \
-    SAVEDIR=~/.crawl/ \
+    SAVEDIR='~/.crawl/' \
     SDL2=1 \
     TILES=1
   make clean
   make $TARGET \
     prefix=/usr \
     DATADIR=/usr/share/games/crawl \
-    SAVEDIR=~/.crawl/
+    SAVEDIR='~/.crawl/'
 cp crawl $PKG/usr/games/crawl-ascii
 cd ..
 

@@ -23,7 +23,14 @@ Sayonara features: https://sayonara-player.com/features.php
 
 Optional dependencies: gst-plugins-ugly, lame.
 
+<<<<<<< HEAD
 ******************************************************************
 * NOTE: Sayonara Player requires gst-plugins-bad with soundtouch *
 * support enabled.                                               *
 ******************************************************************
+=======
+****************************************************************
+*NOTE: Sayonara Player requires gst-plugins-bad with soundtouch*
+*support enabled.                                              *
+****************************************************************
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

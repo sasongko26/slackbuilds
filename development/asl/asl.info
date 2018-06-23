@@ -1,8 +1,15 @@
 PRGNAM="asl"
+<<<<<<< HEAD
 VERSION="142_bld119"
 HOMEPAGE="http://john.ccac.rwth-aachen.de:8000/as/"
 DOWNLOAD="http://john.ccac.rwth-aachen.de:8000/ftp/as/source/c_version/asl-current-142-bld119.tar.bz2"
 MD5SUM="274525b52baf0f5d89a9391924b6f39c"
+=======
+VERSION="142_bld134"
+HOMEPAGE="http://john.ccac.rwth-aachen.de:8000/as/"
+DOWNLOAD="http://john.ccac.rwth-aachen.de:8000/ftp/as/source/c_version/asl-current-142-bld134.tar.bz2"
+MD5SUM="35d437306f78341cd1d16ba4809fc91c"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

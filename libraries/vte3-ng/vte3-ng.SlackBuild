@@ -2,7 +2,11 @@
 
 # Slackware build script for vte3-ng
 
+<<<<<<< HEAD
 # Copyright 2017 Azure Zanculmarktum <zanculmarktum@gmail.com>
+=======
+# Copyright 2017-2018 Azure Zanculmarktum <zanculmarktum@gmail.com>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,11 +27,19 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=vte3-ng
+<<<<<<< HEAD
 VERSION=${VERSION:-0.48.2.a}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
 SRCNAM="$(sed 's/3//' <<< $PRGNAM)"
+=======
+VERSION=${VERSION:-0.50.2.a}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_SBo}
+
+SRCNAM=${PRGNAM%3*}${PRGNAM#*3}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -58,15 +70,25 @@ fi
 
 set -e
 
+<<<<<<< HEAD
 ( cd /var/log/packages
   for f in vte3*; do
     if grep '^vte3-[^-]*-[^-]*-[^-]*$' <<< "$f" > /dev/null 2>&1; then
+=======
+cd /var/log/packages
+  for f in vte3*; do
+    if echo "$f" | grep '^vte3-[^-]*-[^-]*-[^-]*$' >/dev/null 2>&1; then
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
       echo "vte3 package exists. Remove it first before continuing."
       echo "  # /sbin/removepkg vte3"
       exit 1
     fi
   done
+<<<<<<< HEAD
 )
+=======
+cd - >/dev/null
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -76,10 +98,17 @@ tar xvf $CWD/$SRCNAM-$VERSION.tar.gz
 cd $SRCNAM-$VERSION
 chown -R root:root .
 find -L . \
+<<<<<<< HEAD
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
   -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+=======
+  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+   -o -perm 511 \) -exec chmod 755 {} \; -o \
+  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 ./autogen.sh
 

@@ -26,7 +26,11 @@
 
 
 PRGNAM=slack
+<<<<<<< HEAD
 VERSION=${VERSION:-2.8.2}
+=======
+VERSION=${VERSION:-3.1.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

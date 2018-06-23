@@ -7,7 +7,11 @@
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
 PRGNAM=gifsicle
+<<<<<<< HEAD
 VERSION=${VERSION:-1.90}
+=======
+VERSION=${VERSION:-1.91}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

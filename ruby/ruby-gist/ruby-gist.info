@@ -1,8 +1,15 @@
 PRGNAM="ruby-gist"
+<<<<<<< HEAD
 VERSION="4.6.1"
 HOMEPAGE="https://rubygems.org/gems/gist"
 DOWNLOAD="https://rubygems.org/downloads/gist-4.6.1.gem"
 MD5SUM="0e15b5fe7c7ac062f0d441990159bd94"
+=======
+VERSION="5.0.0"
+HOMEPAGE="https://rubygems.org/gems/gist"
+DOWNLOAD="https://rubygems.org/downloads/gist-5.0.0.gem"
+MD5SUM="f6fe38a0c49de029848f38138a3be74e"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

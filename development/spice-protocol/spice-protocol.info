@@ -1,8 +1,15 @@
 PRGNAM="spice-protocol"
+<<<<<<< HEAD
 VERSION="0.12.13"
 HOMEPAGE="https://www.spice-space.org"
 DOWNLOAD="https://www.spice-space.org/download/releases/spice-protocol-0.12.13.tar.bz2"
 MD5SUM="50a1d951d1fa96d1478ff0cc7f3b1442"
+=======
+VERSION="0.12.14"
+HOMEPAGE="https://www.spice-space.org"
+DOWNLOAD="https://www.spice-space.org/download/releases/spice-protocol-0.12.14.tar.bz2"
+MD5SUM="255230c9a554c79c391b8bf21a0b656b"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

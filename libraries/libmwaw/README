@@ -4,4 +4,8 @@ images, spreadsheets and databases of many formats. The library is a
 part of the Document Liberation Project.
 
 To build the doxygen html documentation use:
+<<<<<<< HEAD
   DOC="yes".
+=======
+  DOC="yes" ./libmwaw.SlackBuild
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

@@ -3,6 +3,7 @@ vtcol - Colour schemes for the Linux console
 Change the colour scheme of the virtual Linux console.
 
 Note:
+<<<<<<< HEAD
 rust is a dependency at build-time, not a runtime dep.
 
 By default, the slackbuild requires all crate dependencies to be downloaded
@@ -12,3 +13,6 @@ single directory and then compressed together as a tarball.
 
 The script vtcol-mkvendortarball.sh will generate this for you. The slackbuild
 will automatically use this tarball if found in the current directory.
+=======
+rust is required for building vtcol, but it not needed at runtime.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

@@ -16,4 +16,8 @@ paml: reconstructed trees using other programs such as PAUP*, PHYLIP,
 paml: MOLPHY, PhyML, RaxML, etc.
 paml:
 paml: Home: http://abacus.gene.ucl.ac.uk/software/paml.html
+<<<<<<< HEAD
 paml: References: /usr/doc/paml-4.9e/References
+=======
+paml:
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

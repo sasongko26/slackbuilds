@@ -1,7 +1,11 @@
 PRGNAM="a2jmidid"
 VERSION="7"
 HOMEPAGE="http://repo.or.cz/a2jmidid.git"
+<<<<<<< HEAD
 DOWNLOAD="http://slackware.uk/sbosrcarch/by-name/multimedia/a2jmidid/a2jmidid-7.tar.bz2"
+=======
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/a2jmidid-7.tar.bz2"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="195f5587904ce307cbcd4ef89f2c791f"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

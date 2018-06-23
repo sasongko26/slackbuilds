@@ -1,8 +1,15 @@
 PRGNAM="MediathekView"
+<<<<<<< HEAD
 VERSION="13.0.3"
 HOMEPAGE="http://www.mediathekview.de"
 DOWNLOAD="https://download.mediathekview.de/stabil/MediathekView-13.0.3.tar.gz"
 MD5SUM="e16d119e37108c7d152c9cfe613ec925"
+=======
+VERSION="13.0.6"
+HOMEPAGE="http://www.mediathekview.de"
+DOWNLOAD="https://download.mediathekview.de/stabil/MediathekView-13.0.6.tar.gz"
+MD5SUM="bb54e79e9c7a540f52e7d2abbfbe02cf"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="jdk"

@@ -1,7 +1,11 @@
 PRGNAM="stgit"
 VERSION="0.15"
 HOMEPAGE="http://procode.org/stgit/"
+<<<<<<< HEAD
 DOWNLOAD="http://slackware.uk/sbosrcarch/by-name/development/stgit/stgit-0.15.tar.gz"
+=======
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/stgit-0.15.tar.gz"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="a4721b2a5f529cf5450109f9fcb4db19"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

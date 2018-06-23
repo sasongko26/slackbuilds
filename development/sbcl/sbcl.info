@@ -1,8 +1,15 @@
 PRGNAM="sbcl"
+<<<<<<< HEAD
 VERSION="1.4.1"
 HOMEPAGE="http://www.sbcl.org/"
 DOWNLOAD="http://downloads.sourceforge.net/sbcl/sbcl-1.4.1-source.tar.bz2"
 MD5SUM="cddcd0690a9ebc290880909586f4b340"
+=======
+VERSION="1.4.8"
+HOMEPAGE="http://www.sbcl.org/"
+DOWNLOAD="http://downloads.sourceforge.net/sbcl/sbcl-1.4.8-source.tar.bz2"
+MD5SUM="f21d0fa3424a23731201560a63341014"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

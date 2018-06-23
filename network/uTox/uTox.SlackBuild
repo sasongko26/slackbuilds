@@ -3,7 +3,11 @@
 # Slackware build script for uTox
 #
 # Copyright 2015 Gethyn ThomasQuail <gethyn@bloodbathsoftworks.com>
+<<<<<<< HEAD
 # Copyright 2016-2017 Christoph Willing  Brisbane, Australia
+=======
+# Copyright 2016-2018 Christoph Willing  Brisbane, Australia
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Permission to use, copy, modify, and/or distribute this software for any
@@ -19,8 +23,13 @@
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 PRGNAM=uTox
+<<<<<<< HEAD
 VERSION=${VERSION:-0.16.1}
 BUILD=${BUILD:-1}
+=======
+VERSION=${VERSION:-0.17.0}
+BUILD=${BUILD:-2}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
@@ -55,9 +64,15 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
+<<<<<<< HEAD
 rm -rf $PRGNAM-$VERSION
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz || tar xvf $CWD/v$VERSION.tar.gz
 cd $PRGNAM-$VERSION
+=======
+rm -rf ${PRGNAM}-${VERSION}
+tar xvf $CWD/${PRGNAM}-${VERSION}-full.tar.gz
+cd ${PRGNAM}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -65,8 +80,13 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+<<<<<<< HEAD
 # Use GTK2 as default
 [ GTK3=${GTK3:-no} != "yes" ] && patch -p0 < $CWD/gtk2.diff
+=======
+# Optionally use GTK2
+[ "${GTK2:-no}" != "no" ] && patch -p0 < $CWD/gtk2.diff
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 mkdir -p build
 cd build

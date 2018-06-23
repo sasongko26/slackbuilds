@@ -1,4 +1,5 @@
 PRGNAM="pdfstudio12"
+<<<<<<< HEAD
 VERSION="12.0.5"
 HOMEPAGE="https://www.qoppa.com/pdfstudio/"
 DOWNLOAD="https://download.qoppa.com/pdfstudio/v12/PDFStudio_v12_0_5_linux.deb \
@@ -9,6 +10,18 @@ DOWNLOAD_x86_64="https://download.qoppa.com/pdfstudio/v12/PDFStudio_v12_0_5_linu
                  http://www.qoppa.com/files/pdfstudio/guide/pdfstudio12_userguide.pdf"
 MD5SUM_x86_64="0784a5469fab95062a7affa7f6179b20 \
                a8ac724a34230b99ed4c4578b8b8d2e8"
+=======
+VERSION="12.0.7"
+HOMEPAGE="https://www.qoppa.com/pdfstudio/"
+DOWNLOAD="https://download.qoppa.com/pdfstudio/v12/PDFStudio_v12_0_7_linux.deb \
+          http://ponce.cc/slackware/sources/repo/pdfstudio12_userguide.pdf"
+MD5SUM="549848976e78ac0769fbf945f274aa49 \
+        14d7dba62244bd5a2d381acb7f457ad2"
+DOWNLOAD_x86_64="https://download.qoppa.com/pdfstudio/v12/PDFStudio_v12_0_7_linux64.deb \
+                 http://ponce.cc/slackware/sources/repo/pdfstudio12_userguide.pdf"
+MD5SUM_x86_64="ec6ebfa91c422ea50f699f61d9cefb49 \
+               14d7dba62244bd5a2d381acb7f457ad2"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES="jdk"
 MAINTAINER="Alexander Verbovetsky"
 EMAIL="alik@ejik.org"

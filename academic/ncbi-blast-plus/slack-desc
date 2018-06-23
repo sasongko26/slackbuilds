@@ -13,7 +13,11 @@ ncbi-blast-plus: Toolkit. The BLAST+ applications have a number of performance a
 ncbi-blast-plus: feature improvements over the legacy BLAST applications (ncbi-blast).
 ncbi-blast-plus:
 ncbi-blast-plus: Home: https://blast.ncbi.nlm.nih.gov/
+<<<<<<< HEAD
 ncbi-blast-plus: References: /usr/doc/ncbi-blast-plus-2.2.31/References
+=======
+ncbi-blast-plus:
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 ncbi-blast-plus:
 ncbi-blast-plus:
 ncbi-blast-plus:

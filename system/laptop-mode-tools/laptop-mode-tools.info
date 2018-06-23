@@ -1,4 +1,5 @@
 PRGNAM="laptop-mode-tools"
+<<<<<<< HEAD
 VERSION="1.71"
 HOMEPAGE="https://github.com/rickysarraf/laptop-mode-tools"
 DOWNLOAD="https://github.com/rickysarraf/laptop-mode-tools/archive/1.71/laptop-mode-tools-1.71.tar.gz"
@@ -6,5 +7,14 @@ MD5SUM="8b9a2d9db7dd9d0a99b635a1185f292c"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
+=======
+VERSION="1.72.2"
+HOMEPAGE="https://github.com/rickysarraf/laptop-mode-tools"
+DOWNLOAD="https://github.com/rickysarraf/laptop-mode-tools/archive/1.72.2/laptop-mode-tools-1.72.2.tar.gz"
+MD5SUM="8a7b3658b0137ce893fe6a224fffd7ba"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="python3-PyQt5"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MAINTAINER="Willy Sudiarto Raharjo"
 EMAIL="willysr@slackbuilds.org"

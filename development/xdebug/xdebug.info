@@ -1,8 +1,15 @@
 PRGNAM="xdebug"
+<<<<<<< HEAD
 VERSION="2.5.4"
 HOMEPAGE="http://xdebug.org"
 DOWNLOAD="http://xdebug.org/files/xdebug-2.5.4.tgz"
 MD5SUM="5ace88583b0c7a85161cd3650f69cb23"
+=======
+VERSION="2.5.5"
+HOMEPAGE="http://xdebug.org"
+DOWNLOAD="http://xdebug.org/files/xdebug-2.5.5.tgz"
+MD5SUM="81bca42ea6a1f7080f501b00d8122a01"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libedit"

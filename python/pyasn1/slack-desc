@@ -15,5 +15,9 @@ pyasn1: - Generic implementation of ASN.1 types (X.208)
 pyasn1: - Fully standard compliant BER/CER/DER codecs
 pyasn1: - 100% Python, works with Python 2.2 and later
 pyasn1:
+<<<<<<< HEAD
 pyasn1: Homepage: https://sourceforge.net/projects/pyasn1/
+=======
+pyasn1: Homepage: https://github.com/etingof/pyasn1
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 pyasn1:

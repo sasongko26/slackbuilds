@@ -1,8 +1,15 @@
 PRGNAM="pd"
+<<<<<<< HEAD
 VERSION="0.47.1"
 HOMEPAGE="http://msp.ucsd.edu/software.html"
 DOWNLOAD="http://msp.ucsd.edu/Software/pd-0.47-1.src.tar.gz"
 MD5SUM="78f012826bdbebcc683e15e5f8a94db9"
+=======
+VERSION="0.48_1"
+HOMEPAGE="http://msp.ucsd.edu/software.html"
+DOWNLOAD="http://msp.ucsd.edu/Software/pd-0.48-1.src.tar.gz"
+MD5SUM="8c4deff54b47a10d2f55e363022cc634"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -1,8 +1,15 @@
 PRGNAM="universal-ctags"
+<<<<<<< HEAD
 VERSION="248cffc"
 HOMEPAGE="https://ctags.io/"
 DOWNLOAD="http://download.dlackware.com/hosted-sources/universal-ctags/ctags-248cffc95fb5a5071faeb8656a01163c6d974b79.tar.xz"
 MD5SUM="e26f61f51f093a92391cc945201b8191"
+=======
+VERSION="6aa62c9"
+HOMEPAGE="https://ctags.io/"
+DOWNLOAD="https://download.dlackware.com/hosted-sources/universal-ctags/ctags-6aa62c97c7ac47c308c89c36bae10b40081aa2cc.tar.xz"
+MD5SUM="58fd9979370961411ee3c6aac1f68cae"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="%README%"

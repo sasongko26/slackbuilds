@@ -31,7 +31,11 @@
 # Maintained by David Spencer <baildon.research@googlemail.com>
 
 PRGNAM=GeoIP
+<<<<<<< HEAD
 VERSION=${VERSION:-1.6.11}
+=======
+VERSION=${VERSION:-1.6.12}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

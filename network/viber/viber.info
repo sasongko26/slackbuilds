@@ -1,10 +1,14 @@
 PRGNAM="viber"
+<<<<<<< HEAD
 VERSION="6.5.5.1481"
+=======
+VERSION="7.0.0.1035"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 HOMEPAGE="https://www.viber.com/products/linux"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
 DOWNLOAD_x86_64="http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb"
-MD5SUM_x86_64="b952d0c15184e665e8603b498159e48f"
+MD5SUM_x86_64="4e6f4759fbaef187765190c8d6adaa72"
 REQUIRES="qt5"
 MAINTAINER="Roberto Metere"
 EMAIL="roberto@metere.it"

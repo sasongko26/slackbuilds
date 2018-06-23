@@ -1,8 +1,15 @@
 PRGNAM="owncloud-client"
+<<<<<<< HEAD
 VERSION="2.3.3"
 HOMEPAGE="https://owncloud.org/"
 DOWNLOAD="https://download.owncloud.com/desktop/stable/owncloudclient-2.3.3.tar.xz"
 MD5SUM="bba20fc6f38e0b14f6ceb9ab432d1802"
+=======
+VERSION="2.4.0"
+HOMEPAGE="https://owncloud.org/"
+DOWNLOAD="https://download.owncloud.com/desktop/stable/owncloudclient-2.4.0.tar.xz"
+MD5SUM="0bcf807665d53ff29b3c588a240f8f12"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="qt5-webkit qtkeychain"

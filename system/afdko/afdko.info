@@ -1,6 +1,10 @@
 PRGNAM="afdko"
 VERSION="2.5.65322"
+<<<<<<< HEAD
 HOMEPAGE="http://www.adobe.com/devnet/opentype/afdko.html"
+=======
+HOMEPAGE="https://www.adobe.com/devnet/opentype/afdko.html"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD="https://github.com/adobe-type-tools/afdko/archive/2.5.65322/afdko-2.5.65322.tar.gz"
 MD5SUM="414b572a74a7b786606423e860938835"
 DOWNLOAD_x86_64=""

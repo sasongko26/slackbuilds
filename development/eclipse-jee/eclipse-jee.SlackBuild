@@ -27,8 +27,13 @@
 # This script is just a binary repackaging.
 
 PRGNAM=eclipse-jee
+<<<<<<< HEAD
 VERSION=${VERSION:-4.7.1a}
 SRCVERSION=${SRCVERSION:-oxygen-1a}
+=======
+VERSION=${VERSION:-4.7.3a}
+SRCVERSION=${SRCVERSION:-oxygen-3a}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -1,8 +1,15 @@
 PRGNAM="clyrics"
+<<<<<<< HEAD
 VERSION="0.09"
 HOMEPAGE="https://github.com/trizen/clyrics/"
 DOWNLOAD="https://github.com/trizen/clyrics/archive/0.09/clyrics-0.09.tar.gz"
 MD5SUM="ed6606d7e0c908cdcf4a997f74ccf216"
+=======
+VERSION="0.10"
+HOMEPAGE="https://github.com/trizen/clyrics/"
+DOWNLOAD="https://github.com/trizen/clyrics/archive/0.10/clyrics-0.10.tar.gz"
+MD5SUM="23b3a0ad82838b4de8efaf47c670560b"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="perl-LWP-Protocol-https perl-www-mechanize"

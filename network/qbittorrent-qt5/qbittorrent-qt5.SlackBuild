@@ -23,8 +23,13 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=qbittorrent-qt5
+<<<<<<< HEAD
 SRCNAM=qbittorrent
 VERSION=${VERSION:-3.3.15}
+=======
+SRCNAM=qBittorrent
+VERSION=${VERSION:-4.1.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -60,9 +65,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $SRCNAM-$VERSION
-tar xvf $CWD/$SRCNAM-$VERSION.tar.?z*
-cd $SRCNAM-$VERSION
+rm -rf $SRCNAM-release-$VERSION
+tar xvf $CWD/$SRCNAM-release-$VERSION.tar.?z*
+cd $SRCNAM-release-$VERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -73,7 +78,14 @@ find -L . \
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
-  --prefix=/usr
+  --prefix=/usr \
+  --libdir=/usr/lib${LIBDIRSUFFIX} \
+  --sysconfdir=/etc \
+  --localstatedir=/var \
+  --mandir=/usr/man \
+  --infodir=/usr/info \
+  --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --build=$ARCH-slackware-linux
 
 make
 make install INSTALL_ROOT=$PKG
@@ -83,7 +95,14 @@ CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix=/usr \
-  --disable-gui
+  --libdir=/usr/lib${LIBDIRSUFFIX} \
+  --sysconfdir=/etc \
+  --localstatedir=/var \
+  --mandir=/usr/man \
+  --infodir=/usr/info \
+  --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --disable-gui \
+  --build=$ARCH-slackware-linux
 
 make
 mv src/qbittorrent-nox $PKG/usr/bin
@@ -91,7 +110,6 @@ mv src/qbittorrent-nox $PKG/usr/bin
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-mv $PKG/usr/share/man $PKG/usr
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 

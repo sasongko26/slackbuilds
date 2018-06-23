@@ -1,6 +1,10 @@
 PRGNAM="keepassx"
 VERSION="2.0.3"
+<<<<<<< HEAD
 HOMEPAGE="https:///www.keepassx.org/"
+=======
+HOMEPAGE="https://www.keepassx.org/"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD="https://www.keepassx.org/releases/2.0.3/keepassx-2.0.3.tar.gz"
 MD5SUM="7852c9f1a0c04971c10370a757257dcd"
 DOWNLOAD_x86_64=""

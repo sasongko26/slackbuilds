@@ -3,7 +3,11 @@
 # Slackware build script for vivaldi-codecs-ffmpeg-extra.
 #
 # Copyright 2015-2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+<<<<<<< HEAD
 # Copyright 2017, Alexander Verbovetsky, Moscow, Russia
+=======
+# Copyright 2017-2018, Alexander Verbovetsky, Moscow, Russia
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,7 +28,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM="vivaldi-codecs-ffmpeg-extra"
+<<<<<<< HEAD
 VERSION=${VERSION:-62.0.3202.94}
+=======
+VERSION=${VERSION:-65.0.3325.181}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -39,6 +47,10 @@ fi
 case "$ARCH" in
     i?86) BITS="i386" ;;
   x86_64) BITS="amd64" ;;
+<<<<<<< HEAD
+=======
+    arm*) BITS="armhf" ;;
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
        *) echo "$ARCH is not supported."
           exit 1 ;;
 esac

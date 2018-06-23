@@ -4,7 +4,11 @@
 # Written by Andrew Lobanov <spline @ rooker dot ru>
 
 PRGNAM=instead
+<<<<<<< HEAD
 VERSION=${VERSION:-3.1.2}
+=======
+VERSION=${VERSION:-3.2.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -57,7 +61,11 @@ cd build
     -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DBINDIR=bin \
+<<<<<<< HEAD
     -DDOCDIR=doc/instead \
+=======
+    -DDOCDIR=doc/$PRGNAM-$VERSION \
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
     -DMANDIR=man \
     -DDATADIR=share/instead \
     -DICONDIR=share/pixmaps \

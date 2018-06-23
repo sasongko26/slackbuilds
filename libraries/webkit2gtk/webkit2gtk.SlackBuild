@@ -24,7 +24,11 @@
 
 PRGNAM=webkit2gtk
 SRCNAM=webkitgtk
+<<<<<<< HEAD
 VERSION=${VERSION:-2.18.3}
+=======
+VERSION=${VERSION:-2.20.3}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -82,6 +86,8 @@ cd build
 	-DCMAKE_INSTALL_PREFIX=/usr \
         -DLIB_INSTALL_DIR=/usr/lib${LIBDIRSUFFIX} \
 	-DLIBEXEC_INSTALL_DIR=/usr/lib${LIBDIRSUFFIX}/webkit2gtk-4.0 \
+        -DENABLE_MEDIA_SOURCE=NO \
+        -DUSE_GSTREAMER_GL=NO \
         ..
 make
 make install DESTDIR=$PKG

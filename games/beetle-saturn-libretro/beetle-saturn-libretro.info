@@ -1,10 +1,19 @@
 PRGNAM="beetle-saturn-libretro"
+<<<<<<< HEAD
 VERSION="2017.01.24_bb5d0c1"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
 DOWNLOAD_x86_64="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/beetle-saturn-libretro-2017.01.24_bb5d0c1.tar.xz"
 MD5SUM_x86_64="fffd151e0ea5446c834a602911c5aaff"
+=======
+VERSION="2017.12.20_a0a6dad"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/beetle-saturn-libretro-2017.12.20_a0a6dad.tar.xz"
+MD5SUM="c08dea5a495204d0cc98556e7e891006"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES="RetroArch"
 MAINTAINER="Hunter Sezen"
-EMAIL="ovariegata@yahoo.com"
+EMAIL="orbea@fredslev.dk"

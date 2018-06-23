@@ -15,5 +15,9 @@ AlsaMixer.app: handle any sound source.
 AlsaMixer.app: Sound sources can be easily muted and there is also wheel mouse
 AlsaMixer.app: support.
 AlsaMixer.app:
+<<<<<<< HEAD
 AlsaMixer.app: Home page: http://www.dockapps.net/alsamixerapp
+=======
+AlsaMixer.app: Home page: https://www.dockapps.net/alsamixerapp
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 AlsaMixer.app:

@@ -1,8 +1,15 @@
 PRGNAM="hamlib"
+<<<<<<< HEAD
 VERSION="3.1"
 HOMEPAGE="http://www.hamlib.org"
 DOWNLOAD="https://sourceforge.net/projects/hamlib/files/hamlib/3.1/hamlib-3.1.tar.gz"
 MD5SUM="01aaf7dd84468a2fd492bf373f51bc4b"
+=======
+VERSION="3.2"
+HOMEPAGE="http://www.hamlib.org"
+DOWNLOAD="https://sourceforge.net/projects/hamlib/files/hamlib/3.2/hamlib-3.2.tar.gz"
+MD5SUM="986fe89df6d43f00b9a5ddf939dc9ca1"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -6,10 +6,17 @@
 # You are free to modify or redistribute this in any way you wish.
 
 PRGNAM=tint2
+<<<<<<< HEAD
 VERSION=${VERSION:-15.3}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 COMMIT=${COMMIT:-d8770ed590b6a8af6345a1a6644e111a62ce3755}
+=======
+VERSION=${VERSION:-16.2}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_SBo}
+COMMIT=${COMMIT:-b810bad93ff65854137fbd2f344ad2f99338008f}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in

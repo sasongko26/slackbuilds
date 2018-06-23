@@ -25,7 +25,11 @@
 # in Help/About)
 
 PRGNAM=transcribe
+<<<<<<< HEAD
 VERSION=${VERSION:-8.70}
+=======
+VERSION=${VERSION:-8.71}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

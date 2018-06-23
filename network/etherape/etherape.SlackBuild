@@ -4,7 +4,11 @@
 
 # Copyright 2011-2013  Chris Abela, Malta
 # Copyright 2014  Ryan P.C. McQuen, WA, ryanpcmcquen@member.fsf.org
+<<<<<<< HEAD
 # Copyright 2017 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+=======
+# Copyright 2017-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,7 +29,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=etherape
+<<<<<<< HEAD
 VERSION=${VERSION:-0.9.15}
+=======
+VERSION=${VERSION:-0.9.18}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -80,10 +88,15 @@ LDFLAGS="$SLKLDFLAGS" \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --build=$ARCH-slackware-linux \
+<<<<<<< HEAD
   --disable-scrollkeeper \
   --with-c-ares \
   --without-help-dir \
   --without-omf-dir
+=======
+  --with-c-ares \
+  --without-help-dir
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 make
 make install DESTDIR=$PKG

@@ -1,8 +1,15 @@
 PRGNAM="snpEff"
+<<<<<<< HEAD
 VERSION="4.3r"
 HOMEPAGE="http://snpeff.sourceforge.net/"
 DOWNLOAD="https://sourceforge.net/projects/snpeff/files/snpEff_v4_3r_core.zip"
 MD5SUM="a13bdcf06d133a05e05664d242c80aac"
+=======
+VERSION="4.3t"
+HOMEPAGE="http://snpeff.sourceforge.net/"
+DOWNLOAD="https://sourceforge.net/projects/snpeff/files/snpEff_v4_3t_core.zip"
+MD5SUM="1fa84a703580a423e27f1e14a945901c"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="jdk"

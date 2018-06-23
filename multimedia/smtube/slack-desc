@@ -13,7 +13,11 @@ smtube: YouTube videos. Videos are played back with a media player instead
 smtube: of a flash player, this allows better performance, particularly
 smtube: with HD content.
 smtube:
+<<<<<<< HEAD
 smtube: Homepage: http://www.smtube.org/
+=======
+smtube: Homepage: https://www.smtube.org/
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 smtube:
 smtube:
 smtube:

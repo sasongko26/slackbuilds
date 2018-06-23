@@ -2,7 +2,11 @@
 #
 # Slackware build script for QMPlay2.
 #
+<<<<<<< HEAD
 # Copyright 2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+=======
+# Copyright 2017-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +27,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=QMPlay2
+<<<<<<< HEAD
 VERSION=${VERSION:-17.10.24}
+=======
+VERSION=${VERSION:-18.04.01}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -75,7 +83,10 @@ cmake \
   -DCMAKE_INSTALL_PREFIX=/usr \
   -DLANGUAGES=All \
   -DUSE_LINK_TIME_OPTIMIZATION=ON \
+<<<<<<< HEAD
   -DUSE_QT5=NO \
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   -DUSE_JEMALLOC=OFF \
   -DUSE_CHIPTUNE_SID=OFF \
   .

@@ -2,7 +2,11 @@
 
 # Slackware build script for tome
 
+<<<<<<< HEAD
 # Copyright 2014-2017  Dimitris Zlatanidis  Orestiada, Greece
+=======
+# Copyright 2014-2018  Dimitris Zlatanidis  Orestiada, Greece
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,7 +28,11 @@
 
 PRGNAM=tome
 SRCNAM=t-engine4-src
+<<<<<<< HEAD
 VERSION=${VERSION:-1.5.5}
+=======
+VERSION=${VERSION:-1.5.8}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -77,7 +85,11 @@ sed -i "s/opt\/SDL-2.0/usr/" premake4.lua
 
 # build game
 premake4 gmake
+<<<<<<< HEAD
 make
+=======
+env -u ARCH make
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

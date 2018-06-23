@@ -1,8 +1,7 @@
 Chocolate Doom is a Doom source port that accurately reproduces the
 experience of Doom and Doom II as they were played in the 1990s.
 
-Starting with version 2.3.0, Chocolate Doom also supports Heretic, Hexen,
-Strife, and Chex Quest.
+Chocolate Doom also supports Heretic, Hexen, Strife, and Chex Quest.
 
 To play chocolate-doom, you need at least one of:
   doom2.wad from Doom II

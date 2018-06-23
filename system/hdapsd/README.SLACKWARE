@@ -1,5 +1,9 @@
 hdapsd README.SLACKWARE - 20090329 <rworkman@slackbuilds.org>
 Applies also for hdaps-20090401 <hba.nihilismus@gmail.com>
+<<<<<<< HEAD
+=======
+and newer hdaps-20141203 <mchagas@member.fsf.org>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 We have added a custom /etc/hdapsd.conf file in which you can specify
 various details about your system without editing the installed init

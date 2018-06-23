@@ -1,10 +1,17 @@
 PRGNAM="tornado"
+<<<<<<< HEAD
 VERSION="4.5.2"
 HOMEPAGE="http://www.tornadoweb.org"
 DOWNLOAD="https://github.com/tornadoweb/tornado/archive/v4.5.2/tornado-4.5.2.tar.gz"
 MD5SUM="2c8d8c06afdf6d0d685d0ff7e968eeb9"
+=======
+VERSION="5.0.2"
+HOMEPAGE="http://www.tornadoweb.org"
+DOWNLOAD="https://github.com/tornadoweb/tornado/archive/v5.0.2/tornado-5.0.2.tar.gz"
+MD5SUM="df2dcccbf58d95d9167e18b0cdeb5879"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="backports-abc backports-ssl-match-hostname"
+REQUIRES="backports-abc python-certifi futures singledispatch"
 MAINTAINER="Benjamin Trigona-Harany"
 EMAIL="slackbuilds@jaxartes.net"

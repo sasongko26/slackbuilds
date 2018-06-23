@@ -14,6 +14,10 @@ amd-app-sdk: applications accelerated by AMD APP technology. The SDK allows you 
 amd-app-sdk: develop your applications in a high-level language, OpenCL.
 amd-app-sdk:
 amd-app-sdk: Homepage:
+<<<<<<< HEAD
 amd-app-sdk: http://developer.amd.com/amd-accelerated-parallel-processing-app-sdk/
+=======
+amd-app-sdk: https://developer.amd.com/amd-accelerated-parallel-processing-app-sdk/
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 amd-app-sdk:
 amd-app-sdk:

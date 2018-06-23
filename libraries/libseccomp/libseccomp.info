@@ -1,8 +1,15 @@
 PRGNAM="libseccomp"
+<<<<<<< HEAD
 VERSION="2.3.2"
 HOMEPAGE="https://github.com/seccomp/libseccomp"
 DOWNLOAD="https://github.com/seccomp/libseccomp/archive/v2.3.2/libseccomp-2.3.2.tar.gz"
 MD5SUM="710c87d942fecec5e169fab21a26c30a"
+=======
+VERSION="2.3.3"
+HOMEPAGE="https://github.com/seccomp/libseccomp"
+DOWNLOAD="https://github.com/seccomp/libseccomp/archive/v2.3.3/libseccomp-2.3.3.tar.gz"
+MD5SUM="68dec88c8c436d8d5c2ee1fe423e0a44"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

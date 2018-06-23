@@ -1,10 +1,17 @@
 PRGNAM="Craft-libretro"
+<<<<<<< HEAD
 VERSION="2017.01.20_4a11641"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/Craft-libretro-2017.01.20_4a11641.tar.xz"
 MD5SUM="02b12c92c7364768d6f71414e55ba5c6"
+=======
+VERSION="2017.10.24_7dc449e"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/Craft-libretro-2017.10.24_7dc449e.tar.xz"
+MD5SUM="d4651e772519ba3040fea50f3d19e0ce"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
 MAINTAINER="Hunter Sezen"
-EMAIL="ovariegata@yahoo.com"
+EMAIL="orbea@fredslev.dk"

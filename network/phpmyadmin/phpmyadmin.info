@@ -1,8 +1,15 @@
 PRGNAM="phpmyadmin"
+<<<<<<< HEAD
 VERSION="4.7.5"
 HOMEPAGE="http://www.phpmyadmin.net/home_page/index.php"
 DOWNLOAD="https://files.phpmyadmin.net/phpMyAdmin/4.7.5/phpMyAdmin-4.7.5-all-languages.tar.xz"
 MD5SUM="23f65155f37bef0addb7324d45671a4e"
+=======
+VERSION="4.8.2"
+HOMEPAGE="http://www.phpmyadmin.net/home_page/index.php"
+DOWNLOAD="https://files.phpmyadmin.net/phpMyAdmin/4.8.2/phpMyAdmin-4.8.2-all-languages.tar.xz"
+MD5SUM="047b340a038b89e9e34f426084101f03"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

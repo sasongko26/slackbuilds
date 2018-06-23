@@ -10,7 +10,11 @@ perl-glib: perl-glib (perl module)
 perl-glib:
 perl-glib: This module provides perl access to Glib and GLib's GObject libraries.
 perl-glib:
+<<<<<<< HEAD
 perl-glib: Home page: http://search.cpan.org/dist/Glib/
+=======
+perl-glib: Home page: https://metacpan.org/pod/Glib
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 perl-glib:
 perl-glib:
 perl-glib:

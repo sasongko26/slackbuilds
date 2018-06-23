@@ -1,9 +1,17 @@
 PRGNAM="noto-emoji"
+<<<<<<< HEAD
 VERSION="git11275b5"
 HOMEPAGE="https://www.google.com/get/noto/help/emoji/"
 DOWNLOAD="https://github.com/googlei18n/noto-emoji/archive/11275b5a2e8295924c335f16e096a60ac48edf90/noto-emoji-11275b5a2e8295924c335f16e096a60ac48edf90.tar.gz \
           https://gist.githubusercontent.com/hexchain/47f550472e79d0805060/raw/d9ecd5a5fcb901bcfb75115f4b602f6c1d3020c1/51-noto-color-emoji.conf.xml"
 MD5SUM="66317217b2c2a78bf8dc63b6ebeb26ba \
+=======
+VERSION="20180424"
+HOMEPAGE="https://www.google.com/get/noto/help/emoji/"
+DOWNLOAD="https://github.com/googlei18n/noto-emoji/archive/v2018-04-24-pistol-update/noto-emoji-2018-04-24-pistol-update.tar.gz \
+          https://gist.githubusercontent.com/hexchain/47f550472e79d0805060/raw/d9ecd5a5fcb901bcfb75115f4b602f6c1d3020c1/51-noto-color-emoji.conf.xml"
+MD5SUM="17fc2779525683269bbe17edb68e4eeb \
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
         e2d9cf0460fa0315a8da5d8dedacf702"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

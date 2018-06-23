@@ -1,10 +1,19 @@
 PRGNAM="skypeforlinux"
+<<<<<<< HEAD
 VERSION="8.11.0.4"
 HOMEPAGE="https://www.skype.com/"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
 DOWNLOAD_x86_64="https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.11.0.4_amd64.deb"
 MD5SUM_x86_64="70a34a452c9d8cd8c841c0409d368174"
+=======
+VERSION="8.18.0.6"
+HOMEPAGE="https://www.skype.com/"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://repo.skype.com/deb/pool/main/s/skypeforlinux/skypeforlinux_8.18.0.6_amd64.deb"
+MD5SUM_x86_64="5d6371612114f6c4a8d2cde0921e5d54"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES=""
 MAINTAINER="Mario Preksavec"
 EMAIL="mario at slackware dot hr"

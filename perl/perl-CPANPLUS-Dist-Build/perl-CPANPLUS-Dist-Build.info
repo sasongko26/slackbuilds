@@ -1,8 +1,15 @@
 PRGNAM="perl-CPANPLUS-Dist-Build"
+<<<<<<< HEAD
 VERSION="0.88"
 HOMEPAGE="https://metacpan.org/pod/CPANPLUS::Dist::Build"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/B/BI/BINGOS/CPANPLUS-Dist-Build-0.88.tar.gz"
 MD5SUM="ce4cfe7da5100dbdeb346845dfba9982"
+=======
+VERSION="0.90"
+HOMEPAGE="https://metacpan.org/pod/CPANPLUS::Dist::Build"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/B/BI/BINGOS/CPANPLUS-Dist-Build-0.90.tar.gz"
+MD5SUM="1fbf2c087bbe10a4c1536b415e45c960"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="perl-CPANPLUS perl-Module-Build"

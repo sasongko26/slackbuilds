@@ -26,7 +26,11 @@
 # Maintained by David Spencer <baildon.research@googlemail.com>
 
 PRGNAM=lbench
+<<<<<<< HEAD
 VERSION=${VERSION:-3.4}
+=======
+VERSION=${VERSION:-3.5}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -72,9 +76,12 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+<<<<<<< HEAD
 # The makefile fails to create this directory
 mkdir -p $PKG/usr/share/icons
 
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 CXXFLAGS="$SLKCFLAGS" \
 PREFIX=/usr \
 make \
@@ -101,7 +108,11 @@ sed -i \
   -e "s|/usr/bin/lbench|lbench|" \
   -e "s|/usr/share/lbench/icons/lbench.png|lbench|" \
   $PKG/usr/share/applications/$PRGNAM.desktop
+<<<<<<< HEAD
 cp icons/$PRGNAM.png $PKG/usr/share/pixmaps/
+=======
+cp $PRGNAM.png $PKG/usr/share/pixmaps/
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

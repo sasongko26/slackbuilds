@@ -10,7 +10,11 @@ perl-File-Slurp-Tiny: perl-File-Slurp-Tiny (perl module)
 perl-File-Slurp-Tiny:
 perl-File-Slurp-Tiny: File::Slurp::Tiny is a simple, sane and efficient file slurper.
 perl-File-Slurp-Tiny:
+<<<<<<< HEAD
 perl-File-Slurp-Tiny: Homepage: http://search.cpan.org/dist/File-Slurp-Tiny/
+=======
+perl-File-Slurp-Tiny: Homepage: https://metacpan.org/release/File-Slurp-Tiny
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 perl-File-Slurp-Tiny:
 perl-File-Slurp-Tiny:
 perl-File-Slurp-Tiny:

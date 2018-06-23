@@ -1,8 +1,15 @@
 PRGNAM="xtitle"
+<<<<<<< HEAD
 VERSION="20170206"
 HOMEPAGE="https://github.com/baskerville/xtitle"
 DOWNLOAD="https://master.dl.sourceforge.net/project/slackbuildsdirectlinks/xtitle/xtitle-20170206.tar.gz"
 MD5SUM="83b5e49bb24bef576e3f8e6efa0e1a27"
+=======
+VERSION="0.4.3"
+HOMEPAGE="https://github.com/baskerville/xtitle"
+DOWNLOAD="https://github.com/baskerville/xtitle/archive/0.4.3/xtitle-0.4.3.tar.gz"
+MD5SUM="884843193195e8b6293bafd510ecb69e"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

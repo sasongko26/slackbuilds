@@ -1,8 +1,15 @@
 PRGNAM="perl-CPAN-Perl-Releases"
+<<<<<<< HEAD
 VERSION="3.34"
 HOMEPAGE="https://github.com/bingos/cpan-perl-releases"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/B/BI/BINGOS/CPAN-Perl-Releases-3.34.tar.gz"
 MD5SUM="33cfaba582ebb25d41acdd8ac76c7d33"
+=======
+VERSION="3.56"
+HOMEPAGE="https://github.com/bingos/cpan-perl-releases"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/B/BI/BINGOS/CPAN-Perl-Releases-3.56.tar.gz"
+MD5SUM="ffc6cd8f9b926509e3550c0386a02274"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

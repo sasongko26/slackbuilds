@@ -5,7 +5,11 @@
 # Written by David Sullins <david.sullins@gmail.com>
 
 PRGNAM=p4d
+<<<<<<< HEAD
 VERSION=${VERSION:-2017.1.1574018}
+=======
+VERSION=${VERSION:-2018.1.1660568}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

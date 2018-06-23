@@ -24,7 +24,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=redeclipse
+<<<<<<< HEAD
 VERSION=${VERSION:-1.5.8}
+=======
+VERSION=${VERSION:-1.6.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 SRCNAM=base
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
@@ -67,10 +71,21 @@ cd $SRCNAM-$VERSION
 
 # Unpack the submodules
 for SUBMODULE in `cat $CWD/submodules-list`; do
+<<<<<<< HEAD
   rm -r data/$SUBMODULE
   tar xvf $CWD/${SUBMODULE}-${VERSION}.tar.gz
   mv ${SUBMODULE}-${VERSION} data/${SUBMODULE}
   rm data/${SUBMODULE}/.gitmodules
+=======
+  if [ -d data/$SUBMODULE ]; then
+    rm -r data/$SUBMODULE
+  fi
+  tar xvf $CWD/${SUBMODULE}-${VERSION}.tar.gz
+  mv ${SUBMODULE}-${VERSION} data/${SUBMODULE}
+  if [ -e data/${SUBMODULE}/.gitmodules ]; then
+    rm data/${SUBMODULE}/.gitmodules
+  fi
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 done
 
 chown -R root:root .

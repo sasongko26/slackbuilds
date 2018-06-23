@@ -2,7 +2,11 @@
 #
 # Slackware build script for noto-fonts.
 #
+<<<<<<< HEAD
 # Copyright 2016-2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+=======
+# Copyright 2016-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +27,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=noto-fonts
+<<<<<<< HEAD
 VERSION=${VERSION:-20171026}
+=======
+VERSION=${VERSION:-20180322}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -34,16 +42,27 @@ TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
+<<<<<<< HEAD
 SRCNAM=${SRCNAM:-95558bd828a48c17a5cbe7f9d971495afcd16abd}
+=======
+SRCVER=${SRCVER:-b207fc31b093948dfc6d77b47042ce2f335bc631}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 set -e
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
+<<<<<<< HEAD
 rm -rf $PRGNAM-$SRCNAM
 tar xvf $CWD/$PRGNAM-$SRCNAM.tar.gz --exclude=hinted/{Arimo*.ttf,Cousine*.ttf,Tinos*.ttf}
 cd $PRGNAM-$SRCNAM
+=======
+rm -rf $PRGNAM-$SRCVER
+tar xvf $CWD/$PRGNAM-$SRCVER.tar.gz --exclude=hinted/{Arimo*.ttf,Cousine*.ttf,Tinos*.ttf}
+mv $PRGNAM-$SRCVER $PRGNAM-$VERSION
+cd $PRGNAM-$VERSION
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -59,9 +78,12 @@ install -m644 alpha/Noto*.tt[fc] $PKG/usr/share/fonts/TTF/
 install -m644 hinted/Noto*.tt[fc] $PKG/usr/share/fonts/TTF/
 install -m644 unhinted/Noto*.tt[fc] $PKG/usr/share/fonts/TTF/
 
+<<<<<<< HEAD
 # Already in NotoSans-*.ttc
 rm -f $PKG/usr/share/fonts/TTF/NotoSans{,UI}-*.ttf
 
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 mkdir -p $PKG/etc/fonts/conf.avail
 install -m644 $CWD/*.conf $PKG/etc/fonts/conf.avail/
 

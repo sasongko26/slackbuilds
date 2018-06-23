@@ -1,8 +1,15 @@
 PRGNAM="python3-pexpect"
+<<<<<<< HEAD
 VERSION="4.3.0"
 HOMEPAGE="https://github.com/pexpect/pexpect"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/p/pexpect/pexpect-4.3.0.tar.gz"
 MD5SUM="047a486dcd26134b74f2e67046bb61a0"
+=======
+VERSION="4.6.0"
+HOMEPAGE="https://github.com/pexpect/pexpect"
+DOWNLOAD="https://files.pythonhosted.org/packages/source/p/pexpect/pexpect-4.6.0.tar.gz"
+MD5SUM="d4f3372965a996238d57d19b95d2e03a"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python3-ptyprocess"

@@ -12,7 +12,11 @@ mrboom: Mr.Boom is an 8 players Bomberman clone. This is an SDL2 version of
 mrboom: the original 1999 version of Mr. Boom. The goal of the game is to
 mrboom: bomb away your enemies and other players.
 mrboom:
+<<<<<<< HEAD
 mrboom:
+=======
+mrboom: RetroArch is an optional dependency required to run the libretro core.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 mrboom:
 mrboom:
 mrboom:

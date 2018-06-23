@@ -1,8 +1,15 @@
 PRGNAM="wcd"
+<<<<<<< HEAD
 VERSION="6.0.0"
 HOMEPAGE="http://waterlan.home.xs4all.nl/"
 DOWNLOAD="http://waterlan.home.xs4all.nl/wcd/wcd-6.0.0.tar.gz"
 MD5SUM="335510f6fad5ea20dde769ccee16f160"
+=======
+VERSION="6.0.2"
+HOMEPAGE="http://waterlan.home.xs4all.nl/"
+DOWNLOAD="http://waterlan.home.xs4all.nl/wcd/wcd-6.0.2.tar.gz"
+MD5SUM="b3b51b398fb808afdd4cf25fab5f215a"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

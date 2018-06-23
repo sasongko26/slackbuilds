@@ -11,7 +11,11 @@ laszip:
 laszip: LASzip quickly turns bulky LAS files into compact LAZ files without
 laszip: information loss.
 laszip:
+<<<<<<< HEAD
 laszip: Website: https://www.laszip.org/
+=======
+laszip: Website: https://laszip.org/
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 laszip:
 laszip:
 laszip:

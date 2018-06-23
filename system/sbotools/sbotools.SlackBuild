@@ -5,7 +5,11 @@
 # Licensed under the WTFPL <http://sam.zoy.org/wtfpl/COPYING>
 
 PRGNAM=sbotools
+<<<<<<< HEAD
 VERSION=${VERSION:-2.4}
+=======
+VERSION=${VERSION:-2.5}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

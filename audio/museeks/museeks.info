@@ -1,10 +1,19 @@
 PRGNAM="museeks"
+<<<<<<< HEAD
 VERSION="0.8.1"
 HOMEPAGE="https://github.com/KeitIG/museeks"
 DOWNLOAD="https://github.com/KeitIG/museeks/releases/download/0.8.1/museeks-linux-ia32.zip"
 MD5SUM="50a3d4ed5294e9f38378dc67c87de9cf"
 DOWNLOAD_x86_64="https://github.com/KeitIG/museeks/releases/download/0.8.1/museeks-linux-x64.zip"
 MD5SUM_x86_64="77e73d47252b3c333d42770d373afb45"
+=======
+VERSION="0.9.4"
+HOMEPAGE="https://github.com/KeitIG/museeks"
+DOWNLOAD="https://github.com/KeitIG/museeks/releases/download/0.9.4/museeks-i386.deb"
+MD5SUM="205a7e8a8302fe699f21a8726e517f16"
+DOWNLOAD_x86_64="https://github.com/KeitIG/museeks/releases/download/0.9.4/museeks-amd64.deb"
+MD5SUM_x86_64="4140d6079b92831f5be3824e935cfde4"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES=""
 MAINTAINER="Edinaldo P. Silva"
 EMAIL="edps.mundognu@gmail.com"

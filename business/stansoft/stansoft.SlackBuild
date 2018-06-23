@@ -23,7 +23,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=stansoft
+<<<<<<< HEAD
 VERSION=${VERSION:-7.11}
+=======
+VERSION=${VERSION:-7.13}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -66,9 +70,15 @@ if [ "$ARCH" = "i586" ]; then
 elif [ "$ARCH" = "i686" ]; then
   SARCH=x86
 elif [ "$ARCH" = "x86_64" ]; then
+<<<<<<< HEAD
   SARCH=$ARCH
 else
   SARCH=x86_64
+=======
+  SARCH=x86_64
+else
+  SARCH=$ARCH
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 fi
 
 set -e

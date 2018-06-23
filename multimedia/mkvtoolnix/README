@@ -11,4 +11,8 @@ Configure will use the internal versions if it fails to find them or
 they are unusable.
 
 Interested parties can build QT version of GUI by passing QTGUI=yes.
+<<<<<<< HEAD
 This requires QT5, libinput and libxkbcommon to be installed.
+=======
+This requires QT5, libinput, and libxkbcommon to be installed.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

@@ -1,8 +1,15 @@
 PRGNAM="sleuthkit"
+<<<<<<< HEAD
 VERSION="4.4.2"
 HOMEPAGE="http://www.sleuthkit.org/sleuthkit/"
 DOWNLOAD="https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-4.4.2/sleuthkit-4.4.2.tar.gz"
 MD5SUM="381786a2e52a6dc7dc9f60e8150c0357"
+=======
+VERSION="4.6.0"
+HOMEPAGE="http://www.sleuthkit.org/sleuthkit/"
+DOWNLOAD="https://github.com/sleuthkit/sleuthkit/releases/download/sleuthkit-4.6.0/sleuthkit-4.6.0.tar.gz"
+MD5SUM="a7fcf73835768f6a436475fe0f117c30"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

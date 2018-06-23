@@ -2,7 +2,11 @@
 #
 # Slackware build script for forkstat.
 #
+<<<<<<< HEAD
 # Copyright 2015-2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+=======
+# Copyright 2015-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +27,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=forkstat
+<<<<<<< HEAD
 VERSION=${VERSION:-0.02.00}
+=======
+VERSION=${VERSION:-0.02.03}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -84,7 +92,7 @@ find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a COPYING $PKG/usr/doc/$PRGNAM-$VERSION/LICENSE
+cp COPYING $PKG/usr/doc/$PRGNAM-$VERSION/LICENSE
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

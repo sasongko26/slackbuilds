@@ -1,8 +1,15 @@
 PRGNAM="redis"
+<<<<<<< HEAD
 VERSION="4.0.2"
 HOMEPAGE="https://redis.io/"
 DOWNLOAD="http://download.redis.io/releases/redis-4.0.2.tar.gz"
 MD5SUM="f0497cc1311cd10dfdf215e9e6fd7416"
+=======
+VERSION="4.0.9"
+HOMEPAGE="https://redis.io/"
+DOWNLOAD="http://download.redis.io/releases/redis-4.0.9.tar.gz"
+MD5SUM="23e34838590c028e2d5b3037dbbef335"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

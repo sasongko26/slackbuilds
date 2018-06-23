@@ -8,6 +8,10 @@ Terminal=false
 X-MultipleArgs=false
 Type=Application
 Icon=palemoon
+<<<<<<< HEAD
 Categories=Network;WebBrowser;
+=======
+Categories=Network;WebBrowser
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;x-scheme-handler/chrome;video/webm;application/x-xpinstall;
 StartupNotify=true

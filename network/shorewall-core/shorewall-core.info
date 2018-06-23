@@ -1,8 +1,15 @@
 PRGNAM="shorewall-core"
+<<<<<<< HEAD
 VERSION="5.0.15.3"
 HOMEPAGE="http://www.shorewall.net"
 DOWNLOAD="http://www.shorewall.net/pub/shorewall/5.0/shorewall-5.0.15/shorewall-core-5.0.15.3.tar.bz2"
 MD5SUM="66fc22791bed2e9aebb9e7268bf0a93c"
+=======
+VERSION="5.2.0.4"
+HOMEPAGE="http://www.shorewall.net"
+DOWNLOAD="http://www.shorewall.net/pub/shorewall/5.2/shorewall-5.2.0/shorewall-core-5.2.0.4.tar.bz2"
+MD5SUM="be73e2f76b2438e7813f62873a50c203"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

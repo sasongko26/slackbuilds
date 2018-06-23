@@ -1,4 +1,5 @@
 PRGNAM="Iosevka"
+<<<<<<< HEAD
 VERSION="1.13.3"
 HOMEPAGE="https://be5invis.github.io/Iosevka/"
 DOWNLOAD="https://github.com/be5invis/Iosevka/releases/download/v1.13.3/01-iosevka-1.13.3.zip \
@@ -11,6 +12,20 @@ MD5SUM="749e2891448fc3c6cd21bc87a199471e \
         e7e3ae1c8f6e2f46754997e5cce08d6b \
         38f38ab3d16981ce201781f444ce767c \
         743eeced01152cc26ffbb5fef1575795"
+=======
+VERSION="1.14.3"
+HOMEPAGE="https://be5invis.github.io/Iosevka/"
+DOWNLOAD="https://github.com/be5invis/Iosevka/releases/download/v1.14.3/01-iosevka-1.14.3.zip \
+          https://github.com/be5invis/Iosevka/releases/download/v1.14.3/02-iosevka-term-1.14.3.zip \
+          https://github.com/be5invis/Iosevka/releases/download/v1.14.3/03-iosevka-type-1.14.3.zip \
+          https://github.com/be5invis/Iosevka/releases/download/v1.14.3/04-iosevka-cc-1.14.3.zip \
+          https://github.com/be5invis/Iosevka/releases/download/v1.14.3/05-iosevka-slab-1.14.3.zip"
+MD5SUM="96b9f5538e914d08587a06ae1a23e39d \
+        783397f121d4e03a3834b212594e8529 \
+        23fc673755f4a748848217716ab8645a \
+        b5c0b5f099b40f1339619e77f8188dde \
+        6738ae8d40cdf2c029e1919f9ab5c071"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

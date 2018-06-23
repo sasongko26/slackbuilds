@@ -9,6 +9,13 @@
 
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
+<<<<<<< HEAD
+=======
+# 20180612 bkw: Updated for v0.198 (missed a few releases...)
+# 20180130 bkw: Updated for v0.194.
+# 20180101 bkw: Updated for v0.193.
+# 20171210 bkw: Updated for v0.192.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # 20170927 bkw: Updated for v0.190.
 
 # 20170902 bkw: Updated for v0.189.
@@ -82,7 +89,11 @@
 # - Update .ini file slightly (sound=sdl, not sound=1)
 
 PRGNAM=mame
+<<<<<<< HEAD
 VERSION=${VERSION:-0.190}
+=======
+VERSION=${VERSION:-0.198}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

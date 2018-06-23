@@ -1,6 +1,10 @@
 PRGNAM="vamp-plugin-sdk"
 VERSION="2.7.1"
+<<<<<<< HEAD
 HOMEPAGE="http://www.vamp-plugins.org"
+=======
+HOMEPAGE="https://www.vamp-plugins.org"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD="https://code.soundsoftware.ac.uk/attachments/download/2206/vamp-plugin-sdk-2.7.1.tar.gz"
 MD5SUM="41129f07c252dd721ea81ef0265777fd"
 DOWNLOAD_x86_64=""

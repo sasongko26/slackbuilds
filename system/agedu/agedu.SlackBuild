@@ -6,11 +6,20 @@
 
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
+<<<<<<< HEAD
+=======
+# 20180612 bkw: Update for v20180522.5b12791.
+# 20171219 bkw: Update for v20171202.8a8299e.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # 20170921 bkw: Update for v20170831.fc6b2b5. Switch to self-hosted source
 # as upstream deletes the old version as soon as a new one is released.
 
 PRGNAM=agedu
+<<<<<<< HEAD
 VERSION=${VERSION:-20170831.fc6b2b5}
+=======
+VERSION=${VERSION:-20180522.5b12791}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

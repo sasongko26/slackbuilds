@@ -1,7 +1,11 @@
 PRGNAM="idea"
 VERSION="2017.1"
 HOMEPAGE="http://www.jetbrains.com/idea/"
+<<<<<<< HEAD
 DOWNLOAD="https://download-cf.jetbrains.com/idea/ideaIC-2017.1-no-jdk.tar.gz"
+=======
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/ideaIC-2017.1-no-jdk.tar.gz"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="e3b5620d79b44edc823d03523b631381"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

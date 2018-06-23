@@ -1,7 +1,11 @@
 #!/bin/sh
 
 # Slackware build script for geoclue2
+<<<<<<< HEAD
 # Copyright 2017 Aaditya Bagga <aaditya_gnulinux@zoho.com>
+=======
+# Copyright 2017-2018 Aaditya Bagga <aaditya_gnulinux@zoho.com>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -70,8 +74,13 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+<<<<<<< HEAD
 # to avoid avahi as a dependency add --disable-nmea-source
 # to the configure options
+=======
+avahi_opts='--disable-nmea-source'
+[ "${AVAHI:-no}" != "no" ] && avahi_opts=''
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
@@ -83,6 +92,10 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man \
   --infodir=/usr/info \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
+<<<<<<< HEAD
+=======
+  $avahi_opts \
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   --enable-static=no \
   --build=$ARCH-slackware-linux
 

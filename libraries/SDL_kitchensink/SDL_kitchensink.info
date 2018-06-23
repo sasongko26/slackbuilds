@@ -1,7 +1,13 @@
 PRGNAM="SDL_kitchensink"
+<<<<<<< HEAD
 VERSION="0.0.7_alpha"
 HOMEPAGE="https://github.com/katajakasa/SDL_kitchensink"
 DOWNLOAD="https://github.com/katajakasa/SDL_kitchensink/archive/0.0.7-alpha/SDL_kitchensink-0.0.7_alpha.tar.gz"
+=======
+VERSION="0.0.7"
+HOMEPAGE="https://github.com/katajakasa/SDL_kitchensink"
+DOWNLOAD="https://github.com/katajakasa/SDL_kitchensink/archive/0.0.7-alpha/SDL_kitchensink-0.0.7-alpha.tar.gz"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="ff973ae6a78dd0b90c045ddb2eab7979"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

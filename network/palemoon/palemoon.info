@@ -1,4 +1,5 @@
 PRGNAM="palemoon"
+<<<<<<< HEAD
 VERSION="27.6.2"
 HOMEPAGE="https://www.palemoon.org/"
 DOWNLOAD="http://linux.palemoon.org/datastore/release/palemoon-27.6.2.en-US.linux-i686.tar.bz2"
@@ -8,3 +9,16 @@ MD5SUM_x86_64="3b54bd1c0c80fa1df71d63ac71e4def0"
 REQUIRES=""
 MAINTAINER="skaendo"
 EMAIL="skaendo@excite.com"
+=======
+VERSION="27.9.3"
+HOMEPAGE="http://www.palemoon.org/"
+DOWNLOAD="https://github.com/MoonchildProductions/Pale-Moon/archive/27.9.3_Release/Pale-Moon-27.9.3_Release.tar.gz \
+          http://ponce.cc/slackware/sources/repo/autoconf-2.13.tar.xz"
+MD5SUM="9c6401f95883123033d8d079b342ab00 \
+        f2994d302cf736e7e71974edfa51da3c"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="ffmpeg"
+MAINTAINER="khronosschoty"
+EMAIL="khronosschoty@posteo.org"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

@@ -3,7 +3,11 @@
 # Slackware build script for docker
 
 # Copyright 2014-2015 Vincent Batts <vbatts@hashbangbash.com>
+<<<<<<< HEAD
 # Copyright 2017 Audrius Kažukauskas <audrius@neutrino.lt>
+=======
+# Copyright 2017-2018 Audrius Kažukauskas <audrius@neutrino.lt>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,8 +28,13 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=docker
+<<<<<<< HEAD
 VERSION=${VERSION:-17.09.0}
 GITHASH=${GITHASH:-afdb6d4}
+=======
+VERSION=${VERSION:-18.03.1}
+GITHASH=${GITHASH:-9ee9f40}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -70,23 +79,41 @@ mkdir -p build/src/github.com/docker
 cd components/engine
 DOCKER_GITCOMMIT=$GITHASH \
 DOCKER_BUILDTAGS="seccomp" \
+<<<<<<< HEAD
 GOPATH=$TMP/$SRCNAM-$SRCVER/build \
 ./hack/make.sh dynbinary
 
 install -D -m 0755 bundles/$SRCVER/dynbinary-daemon/dockerd-$SRCVER \
   $PKG/usr/bin/dockerd
 cd ../..
+=======
+VERSION=$(cat ../../VERSION) \
+GOPATH=$TMP/$SRCNAM-$SRCVER/build \
+./hack/make.sh dynbinary
+
+install -D -m 0755 $(readlink -f bundles/latest/dynbinary-daemon/dockerd) \
+  $PKG/usr/bin/dockerd
+cd -
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 # Build CLI.
 cd components/cli
 DISABLE_WARN_OUTSIDE_CONTAINER=1 \
 make dynbinary \
   GITCOMMIT=$GITHASH \
+<<<<<<< HEAD
   VERSION=$(cat VERSION) \
   GOPATH=$TMP/$SRCNAM-$SRCVER/build
 
 install -D -m 0755 build/docker-linux-amd64 $PKG/usr/bin/docker
 cd ../..
+=======
+  VERSION=$(cat ../../VERSION) \
+  GOPATH=$TMP/$SRCNAM-$SRCVER/build
+
+install -D -m 0755 build/docker-linux-amd64 $PKG/usr/bin/docker
+cd -
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 # Integrate required components.
 ln -s runc $PKG/usr/bin/docker-runc

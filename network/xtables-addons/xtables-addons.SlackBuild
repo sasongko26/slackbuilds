@@ -23,7 +23,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=xtables-addons
+<<<<<<< HEAD
 VERSION=${VERSION:-2.13}
+=======
+VERSION=${VERSION:-2.14}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -81,8 +85,8 @@ CFLAGS="$SLKCFLAGS" \
   --with-kbuild=/lib/modules/${KERNEL}/build \
   --build=$ARCH-slackware-linux || true
 
-make
-make install DESTDIR=$PKG
+env -u ARCH make
+env -u ARCH make install DESTDIR=$PKG
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

@@ -18,3 +18,9 @@ are the same.
 
 texlive is an optional dependency, required for synctex support. If you
 don't know what this is, you almost certainly don't need it.
+<<<<<<< HEAD
+=======
+
+zathura 0.3.8 is the last possible update for Slackware
+14.2. Newer versions would require a newer gtk+3.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

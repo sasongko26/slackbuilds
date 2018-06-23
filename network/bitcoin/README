@@ -13,6 +13,10 @@ If you just want to send and receive Bitcoins you should look at
 a light client like Electrum.
 
 Please make sure to read the release notes first before upgrading:
+<<<<<<< HEAD
 https://bitcoincore.org/en/releases/0.15.1/
+=======
+https://bitcoincore.org/en/releases/0.16.1/
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 qrencode is an optional but strongly recommended dependency.

@@ -1,7 +1,11 @@
 PRGNAM="xview"
 VERSION="3.2p4"
 HOMEPAGE="https://physionet.org/physiotools/xview/"
+<<<<<<< HEAD
 DOWNLOAD="http://cdn.xenu.tk/pub/xview/xview-3.2p4.tar.Z"
+=======
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/xview-3.2p4.tar.Z"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="27b10252d53d2ccee12650221d873e2b"
 DOWNLOAD_x86_64="UNSUPPORTED"
 MD5SUM_x86_64=""

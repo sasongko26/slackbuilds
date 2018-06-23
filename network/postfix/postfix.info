@@ -1,8 +1,15 @@
 PRGNAM="postfix"
+<<<<<<< HEAD
 VERSION="3.2.4"
 HOMEPAGE="http://www.postfix.org/"
 DOWNLOAD="http://cdn.postfix.johnriley.me/mirrors/postfix-release/official/postfix-3.2.4.tar.gz"
 MD5SUM="1137d95a3326ddf3d65296ba1c2d2430"
+=======
+VERSION="3.3.0"
+HOMEPAGE="http://www.postfix.org/"
+DOWNLOAD="http://cdn.postfix.johnriley.me/mirrors/postfix-release/official/postfix-3.3.0.tar.gz"
+MD5SUM="26529f3fdb668482176355e90a546a11"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

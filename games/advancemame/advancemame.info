@@ -1,8 +1,15 @@
 PRGNAM="advancemame"
+<<<<<<< HEAD
 VERSION="3.5"
 HOMEPAGE="http://advancemame.sourceforge.net"
 DOWNLOAD="https://github.com/amadvance/advancemame/releases/download/v3.5/advancemame-3.5.tar.gz"
 MD5SUM="b14886fbd5ceece756478f3cdd4fa82e"
+=======
+VERSION="3.7"
+HOMEPAGE="http://advancemame.sourceforge.net"
+DOWNLOAD="https://github.com/amadvance/advancemame/releases/download/v3.7/advancemame-3.7.tar.gz"
+MD5SUM="884735e2e38db3b621b10603c365bbc2"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

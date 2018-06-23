@@ -4,7 +4,7 @@
 
 # Copyright 2006,2007,2008,2009,2010  Robby Workman, Northport, Alabama, USA
 # Copyright 2010-2014 Niels Horn, Rio de Janeiro, RJ, Brazil
-# Copyright 2014-2017 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+# Copyright 2014-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,7 +25,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=libreoffice
+<<<<<<< HEAD
 VERSION=${VERSION:-"5.4.3"}
+=======
+VERSION=${VERSION:-"6.0.4"}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -119,8 +123,17 @@ cd $PKG/usr/bin
       rm -f $FILE
       ln -sf ../../opt/libreoffice$SRCSHORT/program/$FILE $FILE ;
   done
-cd -
 
+# The symlinks below are required to (directly) open documents
+# supported by libreoffice with Xfe file manager.
+ln -sf ../../opt/libreoffice$SRCSHORT/program/sbase    lobase
+ln -sf ../../opt/libreoffice$SRCSHORT/program/scalc    localc
+ln -sf ../../opt/libreoffice$SRCSHORT/program/sdraw    lodraw
+ln -sf ../../opt/libreoffice$SRCSHORT/program/simpress loimpress
+ln -sf ../../opt/libreoffice$SRCSHORT/program/smath    lomath
+ln -sf ../../opt/libreoffice$SRCSHORT/program/swriter  lowriter
+
+cd -
 # Remove DejaVu and Liberation fonts - these are included in other packages
 rm -f opt/libreoffice$SRCSHORT/share/fonts/truetype/{DejaVu,Liberation}*.ttf
 

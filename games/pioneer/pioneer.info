@@ -1,10 +1,17 @@
 PRGNAM="pioneer"
+<<<<<<< HEAD
 VERSION="20170827"
 HOMEPAGE="https://pioneerspacesim.net/"
 DOWNLOAD="https://github.com/pioneerspacesim/pioneer/archive/20170827/pioneer-20170827.tar.gz"
 MD5SUM="602b59d2240d6a65d12394202ca9b51a"
+=======
+VERSION="20180203"
+HOMEPAGE="https://pioneerspacesim.net/"
+DOWNLOAD="https://github.com/pioneerspacesim/pioneer/archive/20180203/pioneer-20180203.tar.gz"
+MD5SUM="fa8d854760c09e32e5fe0a9dfbfd3f5f"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="SDL2_image assimp"
 MAINTAINER="Hunter Sezen"
-EMAIL="ovariegata@yahoo.com"
+EMAIL="orbea@fredslev.dk"

@@ -1,8 +1,15 @@
 PRGNAM="rsyslog"
+<<<<<<< HEAD
 VERSION="8.30.0"
 HOMEPAGE="http://www.rsyslog.com/"
 DOWNLOAD="http://www.rsyslog.com/files/download/rsyslog/rsyslog-8.30.0.tar.gz"
 MD5SUM="62cda5d59c9c6c222b1ed8e05421e61c"
+=======
+VERSION="8.33.1"
+HOMEPAGE="https://www.rsyslog.com/"
+DOWNLOAD="https://www.rsyslog.com/files/download/rsyslog/rsyslog-8.33.1.tar.gz"
+MD5SUM="972f57f4c4cdbf48a803ee1ba0fce843"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="%README% docutils libee libestr libfastjson liblogging"

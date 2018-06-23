@@ -3,7 +3,11 @@
 # Slackware build script for sqlmap.
 
 # Copyright 2010-2011 Marco Bonetti <sid77@slackware.it>
+<<<<<<< HEAD
 # Copyright 2015-2017 Brenton Earl <brent@exitstatusone.com>
+=======
+# Copyright 2015-2018 Brenton Earl <brent@exitstatusone.com>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,7 +28,11 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=sqlmap
+<<<<<<< HEAD
 VERSION=${VERSION:-1.1.9}
+=======
+VERSION=${VERSION:-1.2.4}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 ARCH=noarch
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}

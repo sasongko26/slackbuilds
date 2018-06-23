@@ -2,9 +2,10 @@
 
 # Slackware build script for mupdf
 
-# Originally written by Hubert Hesse (slackbuilds@hubertscorner.de).
+# Originally written by Hubert Hesse (email removed).
 # Heavily modified by B. Watson (yalhcru@gmail.com).
 
+<<<<<<< HEAD
 # 20170711 bkw:
 # - version bump to 1.11.
 
@@ -87,6 +88,16 @@
 
 PRGNAM=mupdf
 VERSION=${VERSION:-1.11}
+=======
+# 20180615 bkw: update for 1.13.0, move old change comments to ChangeLog.old
+# 20180101 bkw: update for 1.12.0.
+# 20170711 bkw: update for 1.11.
+# 20170621 bkw: fix build with -current's newer openjpeg, BUILD=2.
+# 20170122 bkw: update for 1.10a.
+
+PRGNAM=mupdf
+VERSION=${VERSION:-1.13.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -174,7 +185,12 @@ make verbose=yes \
   mandir=/usr/man \
   docdir=/usr/doc/$PRGNAM-$VERSION \
   DESTDIR=$PKG \
-  install
+  all extra-apps install
+
+# 1.12.0 used to install this stuff with 'make install', 1.13.0 doesn't:
+for i in mjsgen muraster mupdf-x11-curl; do
+  [ -e build/release/$i ] && install -s -m0755 build/release/$i $PKG/usr/bin
+done
 
 strip $PKG/usr/bin/*
 

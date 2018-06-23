@@ -7,8 +7,13 @@
 # Currently maintained by Gerardo Zamudio <gerardo.zamudio@linux.com>
 
 PRGNAM=rkhunter
+<<<<<<< HEAD
 VERSION=${VERSION:-1.4.4}
 BUILD=${BUILD:-2}
+=======
+VERSION=${VERSION:-1.4.6}
+BUILD=${BUILD:-1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then

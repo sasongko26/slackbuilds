@@ -13,7 +13,11 @@ spkg: of Slackware's pkgtools.
 spkg: It's implemented in C (everything is libified) and optimized
 spkg: for speed.
 spkg:
+<<<<<<< HEAD
 spkg: homepage: https://spkg.megous.com
+=======
+spkg: homepage: https://github.com/megous/spkg/
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 spkg:
 spkg:
 spkg:

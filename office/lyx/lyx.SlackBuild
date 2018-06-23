@@ -5,7 +5,11 @@
 # Now maintained by R. S. Ananda Murthy (rsamurti@gmail.com)
 
 PRGNAM=lyx
+<<<<<<< HEAD
 VERSION=${VERSION:-2.2.3}
+=======
+VERSION=${VERSION:-2.3.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

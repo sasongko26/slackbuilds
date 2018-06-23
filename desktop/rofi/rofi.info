@@ -1,6 +1,10 @@
 PRGNAM="rofi"
 VERSION="1.4.2"
+<<<<<<< HEAD
 HOMEPAGE="https://davedavenport.github.io/rofi/"
+=======
+HOMEPAGE="https://github.com/DaveDavenport/rofi/"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD="https://github.com/DaveDavenport/rofi/releases/download/1.4.2/rofi-1.4.2.tar.xz"
 MD5SUM="eb530f63cb48031839592492cff0c56f"
 DOWNLOAD_x86_64=""

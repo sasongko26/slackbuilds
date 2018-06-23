@@ -1,7 +1,11 @@
 PRGNAM="libxbgi"
 VERSION="364"
 HOMEPAGE="http://libxbgi.sourceforge.net/"
+<<<<<<< HEAD
 DOWNLOAD="http://libxbgi.sourceforge.net/xbgi-364.tar.gz"
+=======
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/xbgi-364.tar.gz"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="954231210d11fb027bf0bb63bbc154fd"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

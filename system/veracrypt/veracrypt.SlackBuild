@@ -2,7 +2,11 @@
 
 # Slackware build script for VeraCrypt
 
+<<<<<<< HEAD
 # Copyright (c) 2016-2017 Thomas Szteliga <ts@websafe.pl>, Opole, PL
+=======
+# Copyright (c) 2016-2018 Thomas Szteliga <ts@websafe.pl>, Opole, PL
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +27,11 @@
 # THE SOFTWARE.
 
 PRGNAM=veracrypt
+<<<<<<< HEAD
 VERSION=${VERSION:-1.21}
+=======
+VERSION=${VERSION:-1.22}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

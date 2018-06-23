@@ -1,10 +1,17 @@
 PRGNAM="python-requests-kerberos"
+<<<<<<< HEAD
 VERSION="0.11.0"
 HOMEPAGE="https://github.com/requests/requests-kerberos"
 DOWNLOAD="https://github.com/requests/requests-kerberos/archive/v0.11.0/requests-kerberos-0.11.0.tar.gz"
 MD5SUM="f11eed3a482a63c0fd9cda603ab223e6"
+=======
+VERSION="0.12.0"
+HOMEPAGE="https://github.com/requests/requests-kerberos"
+DOWNLOAD="https://github.com/requests/requests-kerberos/archive/v0.12.0/requests-kerberos-0.12.0.tar.gz"
+MD5SUM="5d2332620942087b0dc951fd734a8bac"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="python-kerberos python-requests"
+REQUIRES="python-kerberos python-requests cryptography"
 MAINTAINER="Thibaut Notteboom"
 EMAIL="thibaut.notteboom@gmail.com"

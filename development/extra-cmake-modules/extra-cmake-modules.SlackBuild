@@ -25,7 +25,11 @@
 # Adapted by Fellype do Nascimento - fellype(at)gmail.com
 
 PRGNAM=extra-cmake-modules
+<<<<<<< HEAD
 VERSION=${VERSION:-5.36.0}
+=======
+VERSION=${VERSION:-5.46.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

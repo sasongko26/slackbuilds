@@ -16,4 +16,8 @@ veracrypt: and partitions encryption making it immune to new developments
 veracrypt: in brute-force attacks. VeraCrypt also solves many vulnerabilities
 veracrypt: and security issues found in TrueCrypt.
 veracrypt:
+<<<<<<< HEAD
 veracrypt: Project homepage: https://www.veracrypt.fr/
+=======
+veracrypt:
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

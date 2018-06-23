@@ -1,6 +1,10 @@
 PRGNAM="laszip"
 VERSION="2.2.0"
+<<<<<<< HEAD
 HOMEPAGE="https://www.laszip.org"
+=======
+HOMEPAGE="https://laszip.org"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD="https://github.com/LASzip/LASzip/releases/download/v2.2.0/laszip-src-2.2.0.tar.gz"
 MD5SUM="1693724d8284dc04f04eb0b86f7de2cc"
 DOWNLOAD_x86_64=""

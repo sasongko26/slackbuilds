@@ -1,8 +1,15 @@
 PRGNAM="Shapely"
+<<<<<<< HEAD
 VERSION="1.6.2"
 HOMEPAGE="https://github.com/Toblerity/Shapely"
 DOWNLOAD="https://github.com/Toblerity/Shapely/archive/1.6.2/Shapely-1.6.2.tar.gz"
 MD5SUM="d76588390fb25c5474e1f4cc8b811752"
+=======
+VERSION="1.6.4"
+HOMEPAGE="https://github.com/Toblerity/Shapely"
+DOWNLOAD="https://github.com/Toblerity/Shapely/archive/1.6.4/Shapely-1.6.4.tar.gz"
+MD5SUM="cf6f7abde575bb75ce0b39aaf061930f"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="geos"

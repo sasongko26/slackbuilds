@@ -1,8 +1,15 @@
 PRGNAM="you-get"
+<<<<<<< HEAD
 VERSION="0.4.964"
 HOMEPAGE="http://www.soimort.org/you-get/"
 DOWNLOAD="https://pypi.python.org/packages/b6/55/bed6e5568fb6885fb1a2362018d2296d9dd8b760f88b4c22c7192bd580eb/you-get-0.4.964.tar.gz"
 MD5SUM="1910a0d5d96607c6a99dcd02c712a694"
+=======
+VERSION="0.4.1040"
+HOMEPAGE="http://www.soimort.org/you-get/"
+DOWNLOAD="https://pypi.python.org/packages/f1/74/d95beb4fe4c4d161ae76e350953e26cee6e55513d51890d4e950485f94e0/you-get-0.4.1040.tar.gz"
+MD5SUM="53d62484e5b02035888bcbcb76f9a905"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python3"

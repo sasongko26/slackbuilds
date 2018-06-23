@@ -1,8 +1,15 @@
 PRGNAM="mlterm"
+<<<<<<< HEAD
 VERSION="3.8.3"
 HOMEPAGE="http://mlterm.sourceforge.net"
 DOWNLOAD="https://downloads.sourceforge.net/project/mlterm/01release/mlterm-3.8.3/mlterm-3.8.3.tar.gz"
 MD5SUM="802e6de62ccd3a5100d5277f4e3a4f34"
+=======
+VERSION="3.8.5"
+HOMEPAGE="http://mlterm.sourceforge.net"
+DOWNLOAD="https://sourceforge.net/projects/mlterm/files/01release/mlterm-3.8.5/mlterm-3.8.5.tar.gz"
+MD5SUM="26b1ed70ccadd37b72790fe331f4a667"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

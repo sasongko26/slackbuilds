@@ -29,6 +29,10 @@ TAG=${TAG:-_SBo}
 
 KERNEL=${KERNEL:-$(uname -r)}
 KERNELPATH=${KERNELPATH:-/lib/modules/$KERNEL/build}
+<<<<<<< HEAD
+=======
+PKGVER=${VERSION}_$(echo $KERNEL | tr - _)
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -48,7 +52,11 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
+<<<<<<< HEAD
 rm -rf $PRGNAM-$VERSION
+=======
+rm -rf evdi-$VERSION
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 tar xvf $CWD/evdi-$VERSION.tar.gz
 cd evdi-$VERSION
 chown -R root:root .
@@ -59,7 +67,11 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 pushd module
+<<<<<<< HEAD
 make KERN_DIR=${KERNELPATH}
+=======
+env -u ARCH make KERN_DIR=${KERNELPATH}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 popd
 
 mkdir -p $PKG/lib/modules/$KERNEL/misc
@@ -76,4 +88,8 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 sed "s%@KERNEL@%$KERNEL%" $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
+<<<<<<< HEAD
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
+=======
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$PKGVER-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

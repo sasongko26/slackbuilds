@@ -1,10 +1,19 @@
 PRGNAM="p4d"
+<<<<<<< HEAD
 VERSION="2017.1.1574018"
 HOMEPAGE="https://www.perforce.com/"
 DOWNLOAD="https://www.perforce.com/downloads/perforce/r17.1/bin.linux26x86/p4d"
 MD5SUM="1ee2f7f556bc440d70917e1cf02a23f4"
 DOWNLOAD_x86_64="https://www.perforce.com/downloads/perforce/r17.1/bin.linux26x86_64/p4d"
 MD5SUM_x86_64="a9374c0608b9cef789f1f91f5a5a90d7"
+=======
+VERSION="2018.1.1660568"
+HOMEPAGE="https://www.perforce.com/"
+DOWNLOAD="https://www.perforce.com/downloads/perforce/r18.1/bin.linux26x86/p4d"
+MD5SUM="7a32ff675366aecae36452703fd2cc7a"
+DOWNLOAD_x86_64="https://www.perforce.com/downloads/perforce/r18.1/bin.linux26x86_64/p4d"
+MD5SUM_x86_64="fb0f641f824c6867272bf2a84efc27be"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES=""
 MAINTAINER="David Sullins"
 EMAIL="david.sullins@gmail.com"

@@ -1,8 +1,15 @@
 PRGNAM="libfastjson"
+<<<<<<< HEAD
 VERSION="0.99.7"
 HOMEPAGE="http://www.rsyslog.com/"
 DOWNLOAD="http://download.rsyslog.com/libfastjson/libfastjson-0.99.7.tar.gz"
 MD5SUM="0b5f4a3f0f93eb7c789fe89e1332a1dd"
+=======
+VERSION="0.99.8"
+HOMEPAGE="https://www.rsyslog.com/"
+DOWNLOAD="http://download.rsyslog.com/libfastjson/libfastjson-0.99.8.tar.gz"
+MD5SUM="fe7b4eae1bf40499f6f92b51d7e5899e"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -10,7 +10,11 @@
 # http://sam.zoy.org/wtfpl/COPYING for more details.
 
 PRGNAM=qmapshack
+<<<<<<< HEAD
 VERSION=${VERSION:-1.9.1}
+=======
+VERSION=${VERSION:-1.11.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

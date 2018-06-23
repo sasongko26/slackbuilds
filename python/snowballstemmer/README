@@ -1,6 +1,10 @@
 snowballstemmer
 
+<<<<<<< HEAD
 This package provides 16 stemmer algorithms (15 + Poerter English stemmer) 
+=======
+This package provides 16 stemmer algorithms (15 + Poerter English stemmer)
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 generated from Snowball algorithms.
 
 It includes following language algorithms:
@@ -21,5 +25,11 @@ It includes following language algorithms:
     Swedish
     Turkish
 
+<<<<<<< HEAD
 This is a pure Python stemming library. 
 PyStemmer is an optional dependency.
+=======
+This is a pure Python stemming library.
+
+Optional dependencies: PyStemmer, python3
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

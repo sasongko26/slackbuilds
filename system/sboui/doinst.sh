@@ -11,4 +11,8 @@ config() {
 }
 
 config etc/sboui/sboui.conf.new
+<<<<<<< HEAD
+=======
+config etc/sboui/sboui-backend.conf.new
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 config etc/sboui/package_blacklist.new

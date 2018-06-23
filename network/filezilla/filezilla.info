@@ -1,8 +1,15 @@
 PRGNAM="filezilla"
+<<<<<<< HEAD
 VERSION="3.29.0"
 HOMEPAGE="https://filezilla-project.org/"
 DOWNLOAD="https://downloads.sourceforge.net/filezilla/FileZilla_3.29.0_src.tar.bz2"
 MD5SUM="4bd8098d01ee1083ddf2bbd5fea86369"
+=======
+VERSION="3.34.0"
+HOMEPAGE="https://filezilla-project.org/"
+DOWNLOAD="https://dl1.cdn.filezilla-project.org/client/FileZilla_3.34.0_src.tar.bz2"
+MD5SUM="de54afdd455bc368b35640ebf47d44e5"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="wxGTK3 libfilezilla"

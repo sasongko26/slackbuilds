@@ -1,8 +1,15 @@
 PRGNAM="ntl"
+<<<<<<< HEAD
 VERSION="10.5.0"
 HOMEPAGE="http://www.shoup.net/ntl/"
 DOWNLOAD="http://www.shoup.net/ntl/ntl-10.5.0.tar.gz"
 MD5SUM="c9128bfd37b0cceb1a80e792134f9a79"
+=======
+VERSION="11.1.0"
+HOMEPAGE="http://www.shoup.net/ntl/"
+DOWNLOAD="http://www.shoup.net/ntl/ntl-11.1.0.tar.gz"
+MD5SUM="8ffb4a72d4b2530081b3d9e1f023cc92"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="gf2x"

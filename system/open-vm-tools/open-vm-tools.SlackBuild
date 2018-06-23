@@ -3,6 +3,10 @@
 # Slackware build script for open-vm-tools
 
 # Copyright 2017 Jeremy HOCDE
+<<<<<<< HEAD
+=======
+# Copyright 2018 Alexander VERBOVETSKY
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,8 +27,13 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=open-vm-tools
+<<<<<<< HEAD
 VERSION=${VERSION:-10.1.5_5055683}
 BUILD=${BUILD:-1}
+=======
+VERSION=${VERSION:-10.2.0_7253323} # Remember to change VERSION - to _ !!!
+BUILD=${BUILD:-2}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}
 
 SRCVER=$(echo $VERSION | tr _ -)
@@ -56,6 +65,26 @@ else
   LIBDIRSUFFIX=""
 fi
 
+<<<<<<< HEAD
+=======
+VGAUTH=${VGAUTH:-no}
+case "$VGAUTH" in
+  no)
+    VGAUTH_OPTS="--disable-vgauth"
+    ;;
+  yes)
+    VGAUTH_OPTS=""
+    ;;
+  xmlsec)
+    VGAUTH_OPTS="--enable-xmlsec1"
+    ;;
+  *)
+    echo "eRRoR with VGAUTH parameter"
+    exit 1
+    ;;
+esac
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 set -e
 
 rm -rf $PKG
@@ -74,6 +103,10 @@ find -L . \
 autoreconf -i
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
+<<<<<<< HEAD
+=======
+LIBS=-lcrypt \
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 ./configure \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
@@ -82,8 +115,13 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --without-pam \
+<<<<<<< HEAD
   --without-xerces-c \
   --without-x \
+=======
+  --without-x \
+  $VGAUTH_OPTS \
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   --build=$ARCH-slackware-linux
 
 make

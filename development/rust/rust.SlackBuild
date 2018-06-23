@@ -2,8 +2,13 @@
 
 # Slackware build script for rust
 
+<<<<<<< HEAD
 # Copyright 2017  Andrew Clemons, Wellington, New Zealand
 # Copyright 2017  Patrick J. Volkerding, Sebeka, Minnesota, USA
+=======
+# Copyright 2017, 2018  Andrew Clemons, Wellington, New Zealand
+# Copyright 2017, 2018  Patrick J. Volkerding, Sebeka, Minnesota, USA
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # Copyright 2017  Stuart Winter
 # All rights reserved.
 #
@@ -26,6 +31,7 @@
 
 PRGNAM=rust
 SRCNAM="${PRGNAM}c"
+<<<<<<< HEAD
 VERSION=${VERSION:-1.22.1}
 
 # src/stage0.txt
@@ -37,6 +43,24 @@ CSTAGE0_DIR=${CSTAGE0_DIR:-$RSTAGE0_DIR}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
+=======
+VERSION=${VERSION:-1.26.2}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_SBo}
+
+# Set this to YES to build with the system LLVM, or NO to use the bundled LLVM.
+# YES is probably better (when it works...)
+# LLVM in Slackware14.2 is now too old to build rust 1.26.0
+SYSTEM_LLVM=${SYSTEM_LLVM:-NO}
+SYSTEM_LLVM=$(echo "$SYSTEM_LLVM" | tr '[:lower:]' '[:upper:]')
+
+# Bootstrap variables (might not be kept updated for latest Rust):
+RSTAGE0_VERSION=${RSTAGE0_VERSION:-1.25.0}
+RSTAGE0_DIR=${RSTAGE0_DIR:-2018-03-29}
+CSTAGE0_VERSION=${CSTAGE0_VERSION:-0.26.0}
+CSTAGE0_DIR=${CSTAGE0_DIR:-$RSTAGE0_DIR}
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i586 ;;
@@ -86,7 +110,10 @@ elif [ "$ARCH" = "arm" ]; then
   fi
 
   # there is tier3 support for armv5te, but it ftbfs for me
+<<<<<<< HEAD
   # https://github.com/rust-lang-nursery/compiler-builtins/pull/115
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   TARCH="$BARCH"
 else
   BARCH="$ARCH"
@@ -105,6 +132,13 @@ TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
+<<<<<<< HEAD
+=======
+# Not needed, as the build will automatically use as many jobs as there are
+# cores.
+#NUMJOBS=${NUMJOBS:-" -j7 "}
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 if [ "$ARCH" = "i586" ]; then
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"
   LIBDIRSUFFIX=""
@@ -132,7 +166,13 @@ tar xvf $CWD/$SRCNAM-$VERSION-src.tar.xz
 cd $SRCNAM-$VERSION-src
 
 # Link with -lffi in case of using system LLVM:
+<<<<<<< HEAD
 zcat $CWD/link_libffi.diff.gz | patch -p1 --verbose
+=======
+if [ "${SYSTEM_LLVM}" = "YES" ]; then
+  zcat $CWD/link_libffi.diff.gz | patch -p1 --verbose || exit 1
+fi
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 if [ "$LOCAL_BOOTSTRAP" != "yes" ] ; then
   # rust requires bootstrapping with the previous rust version.
@@ -150,10 +190,21 @@ fi
 # needed during the build, and then we'll strip the rpaths out of the
 # binaries later.
 cat << EOF > config.toml
+<<<<<<< HEAD
+=======
+[llvm]
+ccache = "/usr/bin/ccache"
+targets = "X86"
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 [build]
 build = "$BARCH-unknown-linux-$BABI"
 host = ["$TARCH-unknown-linux-$BABI"]
 target = ["$TARCH-unknown-linux-$BABI"]
+<<<<<<< HEAD
+=======
+full-bootstrap = false
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 submodules = false
 vendor = true
 extended = true
@@ -171,6 +222,18 @@ rpath = true
 codegen-tests = false
 ignore-git = true
 
+<<<<<<< HEAD
+=======
+EOF
+
+if [ "$ARCH" = "arm" ] ; then
+  sed -i 's/"X86"/"X86;ARM"//' config.toml
+fi
+
+if [ "${SYSTEM_LLVM}" = "YES" ]; then
+  cat << EOF >> config.toml
+# Add this stuff to build with the system LLVM:
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 [target.i586-unknown-linux-gnu]
 llvm-config = "/usr/bin/llvm-config"
 
@@ -180,14 +243,52 @@ llvm-config = "/usr/bin/llvm-config"
 [target.x86_64-unknown-linux-gnu]
 llvm-config = "/usr/bin/llvm-config"
 
+<<<<<<< HEAD
 [target.arm-unknown-linux-gnueabi]
 llvm-config = "/usr/bin/llvm-config"
 EOF
 
+=======
+[target.armv7-unknown-linux-gnueabihf]
+llvm-config = "/usr/bin/llvm-config"
+EOF
+
+  if [ "$(llvm-config --version | cut -d. -f1)" -gt 3 ] ; then
+    # llvm-config --cflags returns a set of flags including -Wcovered-switch-default
+    # and -Wstring-conversion which gcc does not support, breaking the build.
+    cat << EOF > local-llvm-config
+#!/bin/bash
+
+set -e
+set -o pipefail
+
+/usr/bin/llvm-config "\$@" | sed 's/-Wcovered-switch-default//g;s/-Wstring-conversion//g'
+EOF
+
+    chmod 0755 local-llvm-config
+    sed -i "s|/usr/bin/llvm-config|$(pwd)/local-llvm-config|" config.toml
+  fi
+fi
+
+FULL_BOOTSTRAP="${FULL_BOOTSTRAP:-no}"
+
+if [ "$FULL_BOOTSTRAP" = "yes" ] ; then
+  sed -i 's/^full-bootstrap.*$/full-bootstrap = true/' config.toml
+fi
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 if [ "$LOCAL_BOOTSTRAP" = "yes" ] ; then
   sed -i "s|^\(extended = true\)$|\1\nrustc = \"/usr/bin/rustc\"\ncargo = \"/usr/bin/cargo\"|" config.toml
 fi
 
+<<<<<<< HEAD
+=======
+
+if [ "$ARCH" = "x86_64" ] && [ "$LOCAL_BOOTSTRAP" = "yes" ] && [ "$(echo "$VERSION" | cut -d. -f 1)" -eq 1 ] && [ "$(echo "$VERSION" | cut -d. -f 2)" -gt 24 ] ; then
+  zcat $CWD/slackware64_local_bootstrap.diff.gz | patch -p1 --verbose || exit 1
+fi
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -217,14 +318,18 @@ fi
 if [ "$ARCH" = "arm" ] ; then
   python x.py dist
 else
+<<<<<<< HEAD
   # README.md says gcc 4.7 / clang 3.x or later needed
   # but building fails for me with GCC 5.3 from slackware 14.2
   CC=clang \
   CXX=clang++ \
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   CFLAGS="$SLKCFLAGS" \
   CXXFLAGS="$SLKCFLAGS" \
   python x.py dist
 fi
+<<<<<<< HEAD
 
 DESTDIR=$PKG python x.py install
 
@@ -243,13 +348,45 @@ gzip -9 $PKG/usr/lib$LIBDIRSUFFIX/rustlib/manifest-*
 # Correct permissions on shared libraries:
 find $PKG/usr/lib$LIBDIRSUFFIX -name "*.so" -exec chmod 755 "{}" \;
 
+=======
+
+DESTDIR=$PKG python x.py install
+
+# Eh, none of this is all that big. Might as well leave it around as a
+# reference.
+#rm -f $PKG/usr/lib$LIBDIRSUFFIX/rustlib/components
+#rm -f $PKG/usr/lib$LIBDIRSUFFIX/rustlib/install.log
+#rm -f $PKG/usr/lib$LIBDIRSUFFIX/rustlib/manifest-*
+#rm -f $PKG/usr/lib$LIBDIRSUFFIX/rustlib/rust-installer-version
+#rm -f $PKG/usr/lib$LIBDIRSUFFIX/rustlib/uninstall.sh
+# Make sure the paths are correct, though:
+sed -i "s,$PKG/,/,g" $PKG/usr/lib$LIBDIRSUFFIX/rustlib/install.log $PKG/usr/lib$LIBDIRSUFFIX/rustlib/manifest-*
+# And a little compression doesn't hurt either:
+gzip -9 $PKG/usr/lib$LIBDIRSUFFIX/rustlib/manifest-*
+
+# Correct permissions on shared libraries:
+find $PKG/usr/lib$LIBDIRSUFFIX -name "*.so" -exec chmod 755 "{}" \;
+
+# Evidently there are a lot of duplicated libraries in this tree, so let's
+# try to save some space:
+(
+  find "$PKG/usr/lib${LIBDIRSUFFIX}/rustlib" -type d -path '*/*-linux-gnu/*' -name 'lib' | while read -r dir ; do
+    cd "$dir" && for file in *.so ; do if cmp -s "$file" ../../../"$file" ; then ln -sf ../../../"$file" ; fi ; done
+  done
+)
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # Strip ELF objects:
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 # Remove any compiled-in RPATHs:
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+<<<<<<< HEAD
   | cut -f 1 -d : | xargs patchelf --remove-rpath 2> /dev/null || true
+=======
+  | cut -f 1 -d : | xargs -I xx patchelf --remove-rpath xx 2> /dev/null || true
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 # Compress man pages:
 find $PKG/usr/man -type f -exec gzip -9 {} \;

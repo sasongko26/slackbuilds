@@ -1,8 +1,15 @@
 PRGNAM="diffoscope"
+<<<<<<< HEAD
 VERSION="88"
 HOMEPAGE="https://diffoscope.org/"
 DOWNLOAD="https://pypi.python.org/packages/e6/c2/69bb309f254c94eab6f4b0effb45b95f2237bdabedfe0a774bb98ed3517a/diffoscope-88.tar.gz"
 MD5SUM="df4fb3a0a149671f22fbc3cb202b819b"
+=======
+VERSION="96"
+HOMEPAGE="https://diffoscope.org/"
+DOWNLOAD="https://files.pythonhosted.org/packages/4d/63/e6c1ac907f7eef81b5c53b07b0734e3f654a64d2302b86f47025a7b0d362/diffoscope-96.tar.gz"
+MD5SUM="e799b7fb27abed7c305d7d68b68463b2"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python-libarchive-c python-magic"

@@ -6,6 +6,24 @@
 
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
+<<<<<<< HEAD
+=======
+# 20180613 bkw: updated for 3.3.4.
+
+# 20180111 bkw:
+# - updated for 3.3.3.
+# - remove unneeded command history patch.
+
+# 20171225 bkw:
+# - updated for 3.3.2.
+# - add upstream patch (commit d857451) to fix a long-standing bug where
+#   youtube-viewer's command history wasn't being saved across sessions.
+#   NOTE TO SELF: remove this patch once 3.3.3 is released.
+
+# 20171219 bkw:
+# - updated for 3.3.1.
+
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # 20170921 bkw:
 # - updated for 3.2.9.
 # - add warning in README about outdated youtube-dl.
@@ -51,7 +69,11 @@
 # - Added support for gtk-youtube-viewer
 
 PRGNAM=youtube-viewer
+<<<<<<< HEAD
 VERSION=${VERSION:-3.2.9}
+=======
+VERSION=${VERSION:-3.3.4}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 ARCH=noarch
@@ -66,7 +88,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$VERSION.tar.gz || tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION/
 chown -R root:root .
 find -L . \

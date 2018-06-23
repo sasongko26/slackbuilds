@@ -1,8 +1,15 @@
 PRGNAM="firetools"
+<<<<<<< HEAD
 VERSION="0.9.50"
 HOMEPAGE="https://l3net.wordpress.com/projects/firejail/#firetools"
 DOWNLOAD="https://sourceforge.net/projects/firejail/files/firetools/firetools-0.9.50.tar.xz"
 MD5SUM="b05f6bb741d46b5ab1a7f121c1b4aad9"
+=======
+VERSION="0.9.52"
+HOMEPAGE="https://l3net.wordpress.com/projects/firejail/#firetools"
+DOWNLOAD="https://sourceforge.net/projects/firejail/files/firetools/firetools-0.9.52.tar.xz"
+MD5SUM="5c6dd64066d76b72cdae191330b42462"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="firejail"

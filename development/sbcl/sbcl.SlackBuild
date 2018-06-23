@@ -25,7 +25,11 @@
 # Modified by Eugene M., <damagedone at gmx dot com>
 
 PRGNAM=sbcl
+<<<<<<< HEAD
 VERSION=${VERSION:-1.4.1}
+=======
+VERSION=${VERSION:-1.4.8}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -82,7 +86,7 @@ INFO_DIR=$PKG/usr/info \
 DOC_DIR=$PKG/usr/doc/$PRGNAM-$VERSION \
 sh install.sh
 
-# Fixup /usr/lib -> /usr/lib64 if on x86_64:
+# Fixup /usr/lib -> /usr/lib64 if x86_64:
 if [ "$ARCH" = "x86_64" ]; then
   mv $PKG/usr/lib $PKG/usr/lib${LIBDIRSUFFIX}
 fi

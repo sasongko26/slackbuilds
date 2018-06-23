@@ -11,3 +11,9 @@ By default, CUSTOM_CSS=no.
 
 pepperflash-plugin, ffmpeg, vivaldi-codecs-ffmpeg-extra are optional
 recommended dependencies.
+<<<<<<< HEAD
+=======
+
+Vivaldi for ARM can be downloaded at
+https://downloads.vivaldi.com/stable/vivaldi-stable_X.X.X.X-1_armhf.deb
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

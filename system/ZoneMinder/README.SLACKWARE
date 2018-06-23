@@ -36,7 +36,11 @@ Uncomment mod_php
 Uncomment LoadModule cgid_module
 Uncomment AddHandler cgi-script .cgi
 Add this line to httpd.conf:
+<<<<<<< HEAD
 Include /etc/httpd/extra/zm.conf# You may need to chmod +x /etc/rc.d/rc.httpd first
+=======
+        Include /etc/zm/zm_apache.conf
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 Restart apache with "/etc/rc.d/rc.httpd restart".
 

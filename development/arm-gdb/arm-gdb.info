@@ -1,8 +1,15 @@
 PRGNAM="arm-gdb"
+<<<<<<< HEAD
 VERSION="7.8.1"
 HOMEPAGE="http://www.gnu.org/software/gdb/"
 DOWNLOAD="ftp://ftp.gnu.org/pub/gnu/gdb/gdb-7.8.1.tar.xz"
 MD5SUM="8072be87a94be0936bc3b4b6941b0862"
+=======
+VERSION="8.1"
+HOMEPAGE="http://www.gnu.org/software/gdb/"
+DOWNLOAD="ftp://ftp.gnu.org/pub/gnu/gdb/gdb-8.1.tar.xz"
+MD5SUM="f46487561f9a16916a8102316f7fd105"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="arm-gcc"

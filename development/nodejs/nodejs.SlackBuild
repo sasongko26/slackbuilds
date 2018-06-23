@@ -26,7 +26,11 @@
 
 PRGNAM=nodejs
 SRCNAM=node
+<<<<<<< HEAD
 VERSION=${VERSION:-6.11.5}
+=======
+VERSION=${VERSION:-8.11.3}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -81,6 +85,7 @@ sed -i "s|lib/|lib${LIBDIRSUFFIX}/|g" tools/install.py
 sed -i "s/'lib'/'lib${LIBDIRSUFFIX}'/" lib/module.js
 sed -i "s|\"lib\"|\"lib${LIBDIRSUFFIX}\"|" deps/npm/lib/npm.js
 
+sed -i "s|math.h|cmath|" src/node_crypto.cc
 ./configure \
   --prefix=/usr \
   --shared-zlib \

@@ -2,7 +2,11 @@
 
 # Slackware build script for PhyML
 
+<<<<<<< HEAD
 # Copyright 2011-2017 Petar Petrov slackalaxy@gmail.com
+=======
+# Copyright 2011-2018 Petar Petrov slackalaxy@gmail.com
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -26,7 +30,11 @@
 
 PRGNAM=PhyML
 SRCNAM=$(echo $PRGNAM | tr A-Z a-z)
+<<<<<<< HEAD
 VERSION=${VERSION:-3.3.20170530}
+=======
+VERSION=${VERSION:-3.3.20180214}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -163,13 +171,11 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 # Include some examples
 mkdir -p $PKG/usr/share/$PRGNAM
-cp -a \
-  examples/{lg4x,phyrex_input_files,nexus_example.nxs,nucleic,proteic} \
-  $PKG/usr/share/$PRGNAM
+cp -a examples $PKG/usr/share/$PRGNAM
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  doc/$SRCNAM-manual.pdf AUTHORS ChangeLog COPYING LICENSE README \
+  doc/{$SRCNAM-manual.pdf,ref.bib,$SRCNAM-manual.tex,fig} README \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/References > $PKG/usr/doc/$PRGNAM-$VERSION/References

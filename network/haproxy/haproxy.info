@@ -1,8 +1,15 @@
 PRGNAM="haproxy"
+<<<<<<< HEAD
 VERSION="1.7.9"
 HOMEPAGE="https://www.haproxy.org/"
 DOWNLOAD="https://www.haproxy.org/download/1.7/src/haproxy-1.7.9.tar.gz"
 MD5SUM="a2bbbdd45ffe18d99cdcf26aa992f92d"
+=======
+VERSION="1.8.1"
+HOMEPAGE="https://www.haproxy.org/"
+DOWNLOAD="https://www.haproxy.org/download/1.8/src/haproxy-1.8.1.tar.gz"
+MD5SUM="e42892d4b6ee33200fccaa1d81837e49"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -1,8 +1,15 @@
 PRGNAM="suitesparse"
+<<<<<<< HEAD
 VERSION="4.5.6"
 HOMEPAGE="http://faculty.cse.tamu.edu/davis/suitesparse.html"
 DOWNLOAD="http://faculty.cse.tamu.edu/davis/SuiteSparse/SuiteSparse-4.5.6.tar.gz"
 MD5SUM="eeb87a842a9b3b0425cf08d97fb3c5ec"
+=======
+VERSION="5.2.0"
+HOMEPAGE="http://faculty.cse.tamu.edu/davis/suitesparse.html"
+DOWNLOAD="http://faculty.cse.tamu.edu/davis/SuiteSparse/SuiteSparse-5.2.0.tar.gz"
+MD5SUM="8e625539dbeed061cc62fbdfed9be7cf"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="lapack metis chrpath"

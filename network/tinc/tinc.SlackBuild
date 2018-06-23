@@ -32,7 +32,11 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=tinc
+<<<<<<< HEAD
 VERSION=${VERSION:-1.0.32}
+=======
+VERSION=${VERSION:-1.0.34}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -104,7 +108,11 @@ cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 # Add an init script
 mkdir -p $PKG/etc/rc.d
 cat $CWD/rc.$PRGNAM > $PKG/etc/rc.d/rc.$PRGNAM.new
+<<<<<<< HEAD
 chmod 0644 $PKG/etc/rc.d/rc.$PRGNAM.new
+=======
+chmod 0755 $PKG/etc/rc.d/rc.$PRGNAM.new
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 mkdir -p $PKG/etc/logrotate.d
 cat $CWD/$PRGNAM.logrotate > $PKG/etc/logrotate.d/$PRGNAM.new

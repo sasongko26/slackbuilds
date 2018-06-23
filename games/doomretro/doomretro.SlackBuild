@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Slackware build script for <doomretro>
+# Slackware build script for doomretro
 
 # Copyright 2017 Dugan Chen Canada
 # All rights reserved.
@@ -23,8 +23,13 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=doomretro
+<<<<<<< HEAD
 VERSION=${VERSION:-2.6}
 BUILD=${BUILD:-2}
+=======
+VERSION=${VERSION:-2.6.9}
+BUILD=${BUILD:-1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then

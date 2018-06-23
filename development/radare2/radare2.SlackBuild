@@ -24,7 +24,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=radare2
+<<<<<<< HEAD
 VERSION=${VERSION:-2.0.0}
+=======
+VERSION=${VERSION:-2.5.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -60,7 +64,11 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
+<<<<<<< HEAD
 rm -rf $TMP/$PRGNAM-$VERSION
+=======
+rm -rf $PRGNAM-$VERSION
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 chown -R root:root .
@@ -75,6 +83,7 @@ patch -p0 --verbose < $CWD/asm_mips_cs.c.patch
 
 CFLAGS="$SLKCFLAGS" \
 ./configure \
+<<<<<<< HEAD
     --prefix=/usr \
     --libdir=/usr/lib${LIBDIRSUFFIX} \
     --sysconfdir=/etc \
@@ -83,6 +92,18 @@ CFLAGS="$SLKCFLAGS" \
     --with-openssl \
     --with-syszip \
     --with-syscapstone
+=======
+  --prefix=/usr \
+  --libdir=/usr/lib${LIBDIRSUFFIX} \
+  --sysconfdir=/etc \
+  --localstatedir=/var \
+  --mandir=/usr/man \
+  --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --with-openssl \
+  --with-syszip \
+  --with-syscapstone\
+  --build=$ARCH-slackware-linux
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 make
 make install DESTDIR=$PKG
@@ -91,13 +112,15 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
-for i in $(find $PKG/usr/man -type l) ; do ln -s $(readlink $i).gz $i.gz ; rm $i ; done
+for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a COPYING* README.md DEVELOPERS.md CONTRIBUTING.md AUTHORS.md $PKG/usr/doc/$PRGNAM-$VERSION
+<<<<<<< HEAD
 mv $PKG/usr/share/doc/radare2/* $PKG/usr/doc/$PRGNAM-$VERSION
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
-rm -rf $PKG/usr/share/doc
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

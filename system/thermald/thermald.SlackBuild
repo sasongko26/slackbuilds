@@ -25,7 +25,11 @@
 
 PRGNAM=thermald
 SRCNAM=thermal_daemon
+<<<<<<< HEAD
 VERSION=${VERSION:-1.7.1}
+=======
+VERSION=${VERSION:-1.7.2}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -84,9 +88,12 @@ find -L . \
 make
 make install DESTDIR=$PKG
 
+<<<<<<< HEAD
 # Remove /etc/init but keep dbus config
 rm -r $PKG/etc/init
 
+=======
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # Don't clobber configs
 mv $PKG/etc/thermald/thermal-conf.xml $PKG/etc/thermald/thermal-conf.xml.new
 mv $PKG/etc/thermald/thermal-cpu-cdev-order.xml $PKG/etc/thermald/thermal-cpu-cdev-order.xml.new

@@ -2,7 +2,11 @@
 
 # Slackware build script for plowshare-modules
 
+<<<<<<< HEAD
 # Copyright 2017 Jeremy Hansen <jebrhansen+SBo -at- gmail.com>
+=======
+# Copyright 2017-2018 Jeremy Hansen <jebrhansen+SBo -at- gmail.com>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # Copyright 2010 Mikhail Cuddy <mikhailcuddy@gmail.com>
 # All rights reserved.
 #
@@ -24,9 +28,15 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=plowshare-modules
+<<<<<<< HEAD
 VERSION=${VERSION:-952eceb}
 SRCNAM=${PRGNAM}-legacy
 SRCVER=${MODVER:-952eceb3971987ef34a87801c3fa9db86910fca9}
+=======
+VERSION=${VERSION:-e94a905}
+SRCNAM=${PRGNAM}-legacy
+SRCVER=${MODVER:-e94a9051f54abb66fd3963933587b2d4057a1614}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

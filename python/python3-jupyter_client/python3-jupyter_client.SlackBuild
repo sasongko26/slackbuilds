@@ -24,7 +24,11 @@
 
 SRCNAM=jupyter_client
 PRGNAM=python3-$SRCNAM
+<<<<<<< HEAD
 VERSION=${VERSION:-5.1.0}
+=======
+VERSION=${VERSION:-5.2.3}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

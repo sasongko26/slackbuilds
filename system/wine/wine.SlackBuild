@@ -24,17 +24,13 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=wine
+<<<<<<< HEAD
 VERSION=${VERSION:-2.0.3}
+=======
+VERSION=${VERSION:-3.0.1}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
-if [ -z "$ARCH" ]; then
-  case "$( uname -m )" in
-    i?86) ARCH=i586 ;;
-    arm*) ARCH=arm ;;
-       *) ARCH=$( uname -m ) ;;
-  esac
-fi
-
 CWD=$(pwd)
 TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
@@ -42,6 +38,7 @@ OUTPUT=${OUTPUT:-/tmp}
 
 # If your video card does not support hardware accelerated OpenGL,
 # then run the script like:   OPENGL=NO ./wine.SlackBuild
+<<<<<<< HEAD
 OPENGL=${OPENGL:-YES}
 
 if [ "$ARCH" = "i586" ]; then
@@ -53,10 +50,48 @@ elif [ "$ARCH" = "i686" ]; then
 elif [ "$ARCH" = "x86_64" ]; then
   SLKCFLAGS="-O2 -fPIC"
   LIBDIRSUFFIX=""
+=======
+if [ "${OPENGL:-YES}" = "YES" ]; then
+	do_opengl="with"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 else
-  SLKCFLAGS="-O2"
-  LIBDIRSUFFIX=""
+	do_opengl="without"
 fi
+
+if [ -z "$ARCH" ]; then
+	case "$(uname -m)" in
+		i?86) ARCH=i586 ;;
+		arm*) ARCH=arm ;;
+		*) ARCH=$(uname -m) ;;
+	esac
+fi
+
+if [ -n "$NOWIN32" ] && [ -z "$WIN64" ]; then
+	echo "Both 64 and 32 bit builds disabled. Nothing to do."
+	exit 1
+fi
+
+# These should work for anything not specified below
+BUILD_ARCH=$ARCH"-slackware-linux"
+SLKCFLAGS="-O2"
+
+case "$ARCH" in
+	arm)
+		BUILD_ARCH=$ARCH"-slackware-linux-gnueabi"
+		;;
+	i?86)
+		# -Os was -O2, fix for:
+		# https://bugs.winehq.org/show_bug.cgi?id=42406
+		# https://gcc.gnu.org/bugzilla/show_bug.cgi?id=78911
+		# https://bugs.gentoo.org/613128
+		SLKCFLAGS="-Os -march=$ARCH -mtune=i686"
+		;;
+	x86_64)
+		[ -n "$WIN64" ] && WIN64="--enable-win64"
+		SLKCFLAGS="-O2 -fPIC"
+		LIBDIRSUFFIX="64"
+		;;
+esac
 
 set -e
 
@@ -68,6 +103,7 @@ tar xvf $CWD/$PRGNAM-$VERSION.tar.xz
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
+<<<<<<< HEAD
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
   -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
@@ -79,23 +115,83 @@ if [ "$OPENGL" = "YES" ]; then
   else
     do_opengl="without"
 fi
+=======
+	\( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
+	-o -perm 511 \) -exec chmod 755 {} \; -o \
+	\( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
+	-o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 # Fix for flex
 patch -p1 --verbose < $CWD/0001-winhlp32-Workaround-a-bug-in-Flex.patch
 
-./configure \
-  --prefix=/usr \
-  --mandir=/usr/man \
-  --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --with-gnutls=yes \
-  --${do_opengl}-opengl \
-  --build=$ARCH-slackware-linux
+# Remove -fPIC for i?86 or the build will hang
+if [ "$ARCH" == "i?86" ]; then
+	patch -p1 --verbose < $CWD/x86_remove_fpic.patch
+fi
 
-make
-make install DESTDIR=$PKG
+if [ -n "$WIN64" ]; then
+	wine64="--with-wine64=../wine64"
+	mkdir wine64
+	cd wine64
+
+	LDFLAGS="-L/usr/lib64 -ldl" \
+	CFLAGS="$SLKCFLAGS" \
+	CXXFLAGS="$SLKCFLAGS" \
+	../configure \
+	  --enable-win64 \
+		--prefix=/usr \
+		--libdir=/usr/lib64 \
+		--localstatedir=/var \
+		--sysconfdir=/etc \
+		--mandir=/usr/man \
+		--with-x \
+		--with-gnutls \
+		--${do_opengl}-opengl \
+		--program-prefix= \
+		--program-suffix= \
+		--disable-tests \
+		--build=$BUILD_ARCH
+
+	make depend
+	make
+	make install DESTDIR=$PKG
+	cd ..
+fi
+
+
+if [ -z "$NOWIN32" ]; then
+	mkdir wine32
+	cd wine32
+
+	export PKG_CONFIG_PATH="/usr/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+	LDFLAGS="-L/usr/lib -ldl" \
+	CFLAGS="$SLKCFLAGS" \
+	CXXFLAGS="$SLKCFLAGS" \
+	../configure \
+		$wine64 \
+		--prefix=/usr \
+		--libdir=/usr/lib \
+		--localstatedir=/var \
+		--sysconfdir=/etc \
+		--mandir=/usr/man \
+		--with-x \
+		--with-gnutls \
+		--${do_opengl}-opengl \
+		--program-prefix= \
+		--program-suffix= \
+		--disable-tests \
+		--build=$BUILD_ARCH
+
+	make depend
+	make
+	make install DESTDIR=$PKG
+	cd ..
+fi
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+	| cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done

@@ -23,7 +23,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=vuescan
+<<<<<<< HEAD
 VERSION=${VERSION:-9.5.89}
+=======
+VERSION=${VERSION:-9.6.07}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 SRCVER=${SRCVER:-$(echo $VERSION | sed -e 's/\.//' -e 's/\..*//')}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}

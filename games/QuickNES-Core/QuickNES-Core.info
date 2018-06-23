@@ -1,10 +1,17 @@
 PRGNAM="QuickNES-Core"
+<<<<<<< HEAD
 VERSION="2017.01.24_f7238df"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/QuickNES-Core-2017.01.24_f7238df.tar.xz"
 MD5SUM="fbd366ed8ac6677ea79f1cd423be2170"
+=======
+VERSION="2017.10.23_7c0796d"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/QuickNES-Core-2017.10.23_7c0796d.tar.xz"
+MD5SUM="238d28f1818de189b89908a1aa0c3778"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
 MAINTAINER="Hunter Sezen"
-EMAIL="ovariegata@yahoo.com"
+EMAIL="orbea@fredslev.dk"

@@ -2,9 +2,15 @@
 
 # Slackware build script for lumina
 
+<<<<<<< HEAD
 # Sasongko Bawono <sasongko262@gmail.com> 
 
 # Thanks to : 
+=======
+# Sasongko Bawono <sasongko262@gmail.com>
+
+# Thanks to :
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 # Ryan P.C. McQuen <ryanpcmcquen@member.fsf.org>
 
@@ -82,11 +88,17 @@ qmake-qt5 \
   QMAKE_CXXFLAGS="$SLKCFLAGS" \
   QT5LIBDIR=/usr/lib${LIBDIRSUFFIX}/qt5 \
   L_ETCDIR=/etc \
+<<<<<<< HEAD
   
 make 
 make install \
   INSTALL_ROOT=$PKG \
   DESTDIR=$PKG
+=======
+
+make
+make install INSTALL_ROOT=$PKG DESTDIR=$PKG
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 mkdir -p $PKG/etc/X11/xinit
 install -m 0755 $CWD/xinitrc.lumina $PKG/etc/X11/xinit/xinitrc.lumina

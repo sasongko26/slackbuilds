@@ -7,5 +7,6 @@ web-of-trust to authenticate peers and OpenSSL to encrypt all
 communication. RetroShare provides filesharing, chat, messages,
 forums and channels.
 
-NOTE: Plugins no longer build and so are disabled.
+To build the "Tor Only" version, use the build option "RETROTOR=yes", e.g.
 
+  RETROTOR=yes ./retroshare.SlackBuild

@@ -1,7 +1,11 @@
 PRGNAM="demorse"
 VERSION="1.2"
 HOMEPAGE="http://www.qsl.net/5b4az/"
+<<<<<<< HEAD
 DOWNLOAD="http://slackware.uk/sbosrcarch/by-name/ham/demorse/demorse-1.2.tar.bz2"
+=======
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/demorse-1.2.tar.bz2"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="d4800b759ef4c8ffb6e73d173bcd563b"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

@@ -1,8 +1,15 @@
 PRGNAM="efivar"
+<<<<<<< HEAD
 VERSION="32"
 HOMEPAGE="https://github.com/rhboot/efivar"
 DOWNLOAD="https://github.com/rhboot/efivar/archive/32/efivar-32.tar.gz"
 MD5SUM="9284b2357f2a19d7854b72c61f6cb855"
+=======
+VERSION="36"
+HOMEPAGE="https://github.com/rhboot/efivar"
+DOWNLOAD="https://github.com/rhboot/efivar/archive/36/efivar-36.tar.gz"
+MD5SUM="76c65e96ec3a0086809fb91a493b11b5"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

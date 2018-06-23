@@ -14,6 +14,10 @@ efl:
 efl: It provides the basic building blocks for creating applications and
 efl: user interfaces.
 efl:
+<<<<<<< HEAD
 efl: homepage: http://www.enlightenment.org
+=======
+efl: homepage: https://www.enlightenment.org
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 efl:
 efl:

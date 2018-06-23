@@ -1,10 +1,19 @@
 PRGNAM="flashplayer-plugin"
+<<<<<<< HEAD
 VERSION="27.0.0.187"
 HOMEPAGE="https://get.adobe.com/flashplayer/"
 DOWNLOAD="https://fpdownload.adobe.com/get/flashplayer/pdc/27.0.0.187/flash_player_npapi_linux.i386.tar.gz"
 MD5SUM="199ccf4504cead429e54c829d1189072"
 DOWNLOAD_x86_64="https://fpdownload.adobe.com/get/flashplayer/pdc/27.0.0.187/flash_player_npapi_linux.x86_64.tar.gz"
 MD5SUM_x86_64="0859330909f5314a30032fcbf8e90ca2"
+=======
+VERSION="30.0.0.113"
+HOMEPAGE="https://get.adobe.com/flashplayer/"
+DOWNLOAD="https://fpdownload.adobe.com/get/flashplayer/pdc/30.0.0.113/flash_player_npapi_linux.i386.tar.gz"
+MD5SUM="6b4e15341d2c96271e89c896cb8a11e8"
+DOWNLOAD_x86_64="https://fpdownload.adobe.com/get/flashplayer/pdc/30.0.0.113/flash_player_npapi_linux.x86_64.tar.gz"
+MD5SUM_x86_64="5e6b0108ce6c7811db05dd2084afc1a7"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES=""
 MAINTAINER="Robby Workman"
 EMAIL="rworkman@slackbuilds.org"

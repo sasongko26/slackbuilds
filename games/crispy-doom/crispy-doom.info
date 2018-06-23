@@ -1,8 +1,15 @@
 PRGNAM="crispy-doom"
+<<<<<<< HEAD
 VERSION="5.0"
 HOMEPAGE="http://www.chocolate-doom.org/wiki/index.php/Crispy_Doom"
 DOWNLOAD="https://github.com/fabiangreffrath/crispy-doom/archive/crispy-doom-5.0.tar.gz"
 MD5SUM="a4f826901707cc833edb837d7354c7af"
+=======
+VERSION="5.1"
+HOMEPAGE="http://www.chocolate-doom.org/wiki/index.php/Crispy_Doom"
+DOWNLOAD="https://github.com/fabiangreffrath/crispy-doom/archive/crispy-doom-5.1.tar.gz"
+MD5SUM="00b4ad39b87221b731cd0f0d2aed287d"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="SDL2 SDL2_net SDL2_mixer"

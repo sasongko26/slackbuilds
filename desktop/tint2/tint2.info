@@ -1,8 +1,15 @@
 PRGNAM="tint2"
+<<<<<<< HEAD
 VERSION="15.3"
 HOMEPAGE="https://gitlab.com/o9000/tint2"
 DOWNLOAD="https://gitlab.com/o9000/tint2/repository/archive.tar.gz?ref=15.3"
 MD5SUM="11ddcb975d257e897924b7644eeb585f"
+=======
+VERSION="16.2"
+HOMEPAGE="https://gitlab.com/o9000/tint2"
+DOWNLOAD="https://gitlab.com/o9000/tint2/repository/archive.tar.gz?ref=16.2"
+MD5SUM="c9990695bc0de7e8d029738014f982ab"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="imlib2"

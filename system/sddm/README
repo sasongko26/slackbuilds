@@ -18,4 +18,9 @@ run:
 
 usermod -d /var/lib/sddm sddm
 
+<<<<<<< HEAD
 when SDDM is *not* running.
+=======
+when SDDM is *not* running. Do this before installing or upgrading the
+package.
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

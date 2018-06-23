@@ -13,7 +13,11 @@ snpEff: annotates and predicts the effects of variants on genes (such
 snpEff: as amino acid changes).
 snpEff:
 snpEff: Home: http://snpeff.sourceforge.net/
+<<<<<<< HEAD
 snpEff: References: /usr/doc/snpEff-4.3k/References
+=======
+snpEff:
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 snpEff:
 snpEff:
 snpEff:

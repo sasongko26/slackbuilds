@@ -1,8 +1,14 @@
 perl-Module-Install (Standalone, extensible Perl module installer)
 
+<<<<<<< HEAD
 Module::Install  is  a  package  for   writing  installers  for  CPAN
 (or CPAN-like) distributions that are clean, simple, minimalist,  act
 in a strictly correct manner with  ExtUtils::MakeMaker,  and will run
+=======
+Module::Install is a package for writing installers for CPAN
+(or CPAN-like) distributions that are clean, simple, minimalist, act
+in a strictly correct manner with ExtUtils::MakeMaker, and will run
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 on any Perl installation version 5.005 or newer.
 
 The  intent  is  to make it as easy as possible for CPAN authors (and

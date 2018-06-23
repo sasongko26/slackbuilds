@@ -25,7 +25,11 @@
 
 PRGNAM=allegro
 SRCNAM=allegro5
+<<<<<<< HEAD
 VERSION=${VERSION:-5.2.3.0}
+=======
+VERSION=${VERSION:-5.2.4.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

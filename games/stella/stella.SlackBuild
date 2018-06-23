@@ -8,8 +8,14 @@
 
 # Now maintained by B. Watson <yalhcru@gmail.com>
 
+<<<<<<< HEAD
 # 20170821 bkw: update for 5.0.2
 
+=======
+# 20180611 bkw: update for 5.1.3, move binary to /usr/games
+# 20180206 bkw: update for 5.1
+# 20170821 bkw: update for 5.0.2
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # 20170723 bkw: update for 5.0.1
 
 # 20170620 bkw:
@@ -17,9 +23,13 @@
 # - invert changelog so oldest entries are at bottom.
 
 # 20170122 bkw: update for 4.7.3
+<<<<<<< HEAD
 
 # 20160804 bkw: update for 4.7.2
 
+=======
+# 20160804 bkw: update for 4.7.2
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # 20150509 bkw: update for 4.6.1
 
 # 20150322 bkw:
@@ -38,7 +48,11 @@
 # - StartupNotify=false in .desktop
 
 PRGNAM=stella
+<<<<<<< HEAD
 VERSION=${VERSION:-5.0.2}
+=======
+VERSION=${VERSION:-5.1.3}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -94,6 +108,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --prefix=/usr \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --datadir=/usr/share \
+  --bindir=/usr/games \
   --disable-static \
   --enable-shared
 

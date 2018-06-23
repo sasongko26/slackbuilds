@@ -2,7 +2,11 @@
 
 # Slackware build script for perl-Params-ValidationCompiler
 
+<<<<<<< HEAD
 # Copyright 2017 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+=======
+# Copyright 2017-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +27,11 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=perl-Params-ValidationCompiler
+<<<<<<< HEAD
 VERSION=${VERSION:-0.25}
+=======
+VERSION=${VERSION:-0.27}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

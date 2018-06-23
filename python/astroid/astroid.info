@@ -1,8 +1,15 @@
 PRGNAM="astroid"
+<<<<<<< HEAD
 VERSION="1.5.3"
 HOMEPAGE="https://bitbucket.org/logilab/astroid"
 DOWNLOAD="https://pypi.python.org/packages/d7/b7/112288f75293d6f12b1e41bac1e822fd0f29b0f88e2c4378cdd295b9d838/astroid-1.5.3.tar.gz"
 MD5SUM="6f65e4ea8290ec032320460905afb828"
+=======
+VERSION="1.6.3"
+HOMEPAGE="https://bitbucket.org/logilab/astroid"
+DOWNLOAD="https://pypi.python.org/packages/c7/fc/7a6e48b7bea11e53cab81fcb463c943167c274cafa98bf8faca69129b3bb/astroid-1.6.3.tar.gz"
+MD5SUM="7d7dc000b25f0cbfcca20cb9a8dc0310"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="six python-lazy-object-proxy python-wrapt"

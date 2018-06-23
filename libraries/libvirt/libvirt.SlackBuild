@@ -5,7 +5,11 @@
 # Maintained by Robby Workman <rworkman@slackbuilds.org>
 
 PRGNAM=libvirt
+<<<<<<< HEAD
 VERSION=${VERSION:-3.9.0}
+=======
+VERSION=${VERSION:-4.0.0}
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

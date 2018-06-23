@@ -1,8 +1,15 @@
 PRGNAM="hscolour"
+<<<<<<< HEAD
 VERSION="1.24.2"
 HOMEPAGE="http://hackage.haskell.org/package/hscolour/"
 DOWNLOAD="http://hackage.haskell.org/package/hscolour-1.24.2/hscolour-1.24.2.tar.gz"
 MD5SUM="fded11883c22758faafeb92334908d80"
+=======
+VERSION="1.24.4"
+HOMEPAGE="http://hackage.haskell.org/package/hscolour/"
+DOWNLOAD="http://hackage.haskell.org/package/hscolour-1.24.4/hscolour-1.24.4.tar.gz"
+MD5SUM="3b071820df13cbee7e90199e8e598007"
+>>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="ghc"
