@@ -3,10 +3,14 @@
 # Slackware build script for ripgrep
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017 Andrew Clemons, Wellington New Zealand
 =======
 # Copyright 2017-2018 Andrew Clemons, Wellington New Zealand
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-2020 Andrew Clemons, Wellington New Zealand
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=ripgrep
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.7.1}
 =======
 VERSION=${VERSION:-0.8.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-12.1.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -102,6 +110,7 @@ mkdir vendor
 (
   cd vendor
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   for dependency in aho-corasick=0.6.3 \
                     ansi_term=0.9.0 \
@@ -187,6 +196,15 @@ mkdir vendor
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
     dep="$(echo "$dependency" | cut -d= -f1)"
     ver="$(echo "$dependency" | cut -d= -f2)"
+=======
+  grep -h -A 3 "\[\[package\]\]" $(find ../ -maxdepth 1 -mindepth 1 -name Cargo.lock | tr '\n' ' ') | \
+    sed 's/[[:space:]]*=[[:space:]]*/=/g;s/^--//;s/^\[\[/--\n[[/' | \
+    awk 'BEGIN { RS = "--\n" ; FS="\n" } { print $2, $3, $4 }' | sed 's/"//g;s/name=//;s/ version=/=/' | \
+    grep crates\.io-index | sed 's/ source=.*$//' | sort -u | while read -r dep ; do
+
+    ver="$(printf "%s\n" "$dep" | cut -d= -f2)"
+    dep="$(printf "%s\n" "$dep" | cut -d= -f1)"
+>>>>>>> upstream/master
 
     tar xvf $CWD/$dep-$ver.crate
 
@@ -208,7 +226,7 @@ mkdir vendor
       sha256sum "$CWD/$dep-$ver.crate" | cut -f1 -d' ' | sed 's/$/"/'
 
       printf "}\n"
-    } | python -c "import sys, json; data = sys.stdin.read(); print json.dumps(json.loads(data), sort_keys=True, indent=4, separators=(',', ' : '))" > $dep-$ver/.cargo-checksum.json
+    } > $dep-$ver/.cargo-checksum.json
   done
 )
 
@@ -254,10 +272,14 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 <<<<<<< HEAD
+<<<<<<< HEAD
 cp -a CHANGELOG.md COPYING LICENSE-MIT README.md UNLICENSE $PKG/usr/doc/$PRGNAM-$VERSION
 =======
 cp -a CHANGELOG.md COPYING FAQ.md GUIDE.md ISSUE_TEMPLATE.md LICENSE-MIT README.md UNLICENSE $PKG/usr/doc/$PRGNAM-$VERSION
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+cp -a CHANGELOG.md COPYING FAQ.md GUIDE.md LICENSE-MIT README.md RELEASE-CHECKLIST.md UNLICENSE $PKG/usr/doc/$PRGNAM-$VERSION
+>>>>>>> upstream/master
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

@@ -1,5 +1,6 @@
 PRGNAM="museeks"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.8.1"
 HOMEPAGE="https://github.com/KeitIG/museeks"
 DOWNLOAD="https://github.com/KeitIG/museeks/releases/download/0.8.1/museeks-linux-ia32.zip"
@@ -14,6 +15,14 @@ MD5SUM="205a7e8a8302fe699f21a8726e517f16"
 DOWNLOAD_x86_64="https://github.com/KeitIG/museeks/releases/download/0.9.4/museeks-amd64.deb"
 MD5SUM_x86_64="4140d6079b92831f5be3824e935cfde4"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.11.2"
+HOMEPAGE="https://github.com/martpie/museeks"
+DOWNLOAD="https://github.com/martpie/museeks/releases/download/0.11.2/museeks-i386.deb"
+MD5SUM="4e833e42b2b34829e2496e908ef86dbc"
+DOWNLOAD_x86_64="https://github.com/martpie/museeks/releases/download/0.11.2/museeks-amd64.deb"
+MD5SUM_x86_64="4ad99b341d8fd12aefb16563809f0bca"
+>>>>>>> upstream/master
 REQUIRES=""
-MAINTAINER="Edinaldo P. Silva"
-EMAIL="edps.mundognu@gmail.com"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere"

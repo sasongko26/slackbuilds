@@ -2,6 +2,7 @@
 
 # Slackware build script for Gambas 3
 
+# updates since version 3.11.2 Copyright 2018-2020 Tim Dickson dickson.tim@googlemail.com
 # Copyright 2012-2015  Fridrich von Stauffenberg <cancellor2@gmail.com>
 # All rights reserved.
 #
@@ -23,11 +24,10 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=gambas3
-VERSION=${VERSION:-3.9.1}
-BUILD=${BUILD:-2}
+SRCNAM=gambas
+VERSION=${VERSION:-3.15.2}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
-
-SHORT_PRGNAM=${PRGNAM%$(cut -d . -f 1 <<< $VERSION)}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -57,25 +57,25 @@ else
 fi
 
 set -e
-
+if [ "x`ls /var/log/packages|grep ^$PRGNAM|wc -l`" = "x1" ]; then
+  #current installs of gambas should be uninstalled before
+  #attempting to create this gambas3 package
+  echo "you must uninstall $PRGNAM before creating package $PRGNAM ver $VERSION"
+  exit 2
+fi
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.bz2
-cd $PRGNAM-$VERSION
+rm -rf $SRCNAM-$VERSION
+tar xvf $CWD/$SRCNAM-$VERSION.tar.bz2
+cd $SRCNAM-$VERSION
 chown -R root:root .
-
-# Fix building against qt5 >= 5.7.0
-# https://sourceforge.net/p/gambas/mailman/message/35618038/
-patch -p3 < $CWD/qt5-ext-5.7.patch
-patch -p3 < $CWD/qt5-5.7.patch
-patch -p3 < $CWD/qt5-webkit-5.7.patch
 
 ./reconf-all
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
+LLVM_CONFIG=llvm-config \
 ./configure \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
@@ -83,24 +83,30 @@ CXXFLAGS="$SLKCFLAGS" \
   $qt5
 
 make
-make -j1 install-strip DESTDIR=$PKG XDG_UTILS=""
+make -j1 install DESTDIR=$PKG XDG_UTILS=""
+
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+mv $PKG/usr/share/man $PKG/usr
+find $PKG/usr/man -type f -exec gzip -9 {} \;
 
 mkdir -p $PKG/usr/share/icons/hicolor/{scalable/apps,48x48/apps,64x64/mimetypes}
 cp -a app/desktop/$PRGNAM.svg $PKG/usr/share/icons/hicolor/scalable/apps
 cp -a app/desktop/$PRGNAM.png $PKG/usr/share/icons/hicolor/48x48/apps
-cp -a app/mime/application-x-${SHORT_PRGNAM}{script,serverpage}.png \
+cp -a app/mime/application-x-${SRCNAM}{script,serverpage}.png \
   $PKG/usr/share/icons/hicolor/64x64/mimetypes
 cp -a main/mime/application-x-$PRGNAM.png \
   $PKG/usr/share/icons/hicolor/64x64/mimetypes
-
 mkdir -p $PKG/usr/share/{applications,mime/packages}
 cp -a app/desktop/$PRGNAM.desktop $PKG/usr/share/applications
-cp -a app/mime/application-x-${SHORT_PRGNAM}{script,serverpage}.xml \
+cp -a app/mime/application-x-${SRCNAM}{script,serverpage}.xml \
   $PKG/usr/share/mime/packages
 cp -a main/mime/application-x-$PRGNAM.xml $PKG/usr/share/mime/packages
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a COPYING ChangeLog INSTALL README TODO $PKG/usr/doc/$PRGNAM-$VERSION
+#ChangeLog is empty so miss out for now
+cp -a COPYING INSTALL README TODO $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

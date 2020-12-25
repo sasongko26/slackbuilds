@@ -3,10 +3,14 @@
 # Slackware build script for netsniff-ng
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2013-2017 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 =======
 # Copyright 2013-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2013-2020 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=netsniff-ng
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.6.3}
 =======
 VERSION=${VERSION:-0.6.4}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.6.7}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

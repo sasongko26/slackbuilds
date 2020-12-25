@@ -2,7 +2,7 @@
 
 # SlackBuild script for OTB
 
-# Copyright 2014-2018 Benjamin Trigona-Harany <slackbuilds@jaxartes.net>
+# Copyright 2014-2020 Benjamin Trigona-Harany <slackbuilds@jaxartes.net>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -25,8 +25,8 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=OTB
-VERSION=${VERSION:-6.6.0}
-BUILD=${BUILD:-2}
+VERSION=${VERSION:-7.2.0}
+BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
@@ -71,17 +71,28 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+sed -i "s/VERSION 3.10.2/VERSION 2.5.2/" \
+  CMakeLists.txt
 sed -i "s/lib\b/lib${LIBDIRSUFFIX}/" \
   CMakeLists.txt \
   CMake/OTBModuleExternal.cmake \
   CMake/OTBStandaloneModuleMacros.cmake \
-  CMake/OTBApplicationMacros.cmake \
-  CMake/CPackFunctions.cmake
+  CMake/OTBApplicationMacros.cmake
+sed -i '1i\using namespace std;' \
+  Modules/ThirdParty/OssimPlugins/src/gdal/*.cpp \
+  Modules/ThirdParty/OssimPlugins/src/ossim/*.{h,cpp} \
+  Modules/ThirdParty/OssimPlugins/src/ossim/otb/*.cpp \
+  Modules/Adapters/OSSIMAdapters/src/*.cxx
+sed -i "s/[{]0.0[}]//" \
+  Modules/{Learning,Segmentation,Filtering,Registration}/*/include/*.h \
+  Modules/Core/Common/include/otbImageRegionAdaptativeSplitter.h \
+  Modules/Core/Transform/include/otbImageToGenericRSOutputParameters.h
 
 MONTEVERDI=${MONTEVERDI:-OFF}
 BUILD_MONTEVERDI="-DOTB_USE_QWT=$MONTEVERDI -DOTB_USE_GLEW=$MONTEVERDI -DOTB_USE_OPENGL=$MONTEVERDI"
 BUILD_QT="-DOTB_USE_QT=${QTGUI:-ON}"
 
+# TODO: set WRAP_PYTHON=ON when cmake is upgraded
 mkdir -p build
 cd build
   cmake \
@@ -97,11 +108,10 @@ cd build
     -DOTB_USE_OPENCV=${OPENCV:-OFF} \
     -DOTB_USE_OPENMP=ON \
     -DOTB_USE_SHARK=ON \
-    -DOTB_WRAP_PYTHON=ON \
-    -DOTB_INSTALL_PYTHON_DIR=$(python -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())") \
-    -DOTB_WRAP_PYTHON3=ON \
-    -DOTB_INSTALL_PYTHON3_DIR=$(python3 -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())") \
+    -DOTB_INSTALL_PYTHON_DIR=$(python3 -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())") \
+    -DOTB_WRAP_PYTHON=OFF \
     -DOTB_INSTALL_DOC_DIR=doc/$PRGNAM-$VERSION \
+    -DGDAL_CONFIG_CHECKING:BOOL=OFF \
     $BUILD_MONTEVERDI \
     $BUILD_QT \
     ..

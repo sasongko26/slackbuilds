@@ -1,5 +1,6 @@
 PRGNAM="ds9"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="7.5"
 HOMEPAGE="http://ds9.si.edu/site/Home.html"
 DOWNLOAD="http://ds9.si.edu/archive/source/ds9.7.5.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://ds9.si.edu/site/Home.html"
 DOWNLOAD="http://ds9.si.edu/archive/source/ds9.7.6.tar.gz"
 MD5SUM="b700dd815fe1f7fa93e3e3bba1132ca7"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="8.1"
+HOMEPAGE="http://ds9.si.edu/site/Home.html"
+DOWNLOAD="http://ds9.si.edu/archive/source/ds9.8.1.tar.gz"
+MD5SUM="d9b3c43c9375328e4872b7eefb0f86bc"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

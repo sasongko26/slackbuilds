@@ -1,5 +1,6 @@
 PRGNAM="strongswan"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="5.3.4"
 HOMEPAGE="https://www.strongswan.org"
 DOWNLOAD="https://download.strongswan.org/strongswan-5.3.4.tar.bz2"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.strongswan.org"
 DOWNLOAD="https://download.strongswan.org/strongswan-5.6.2.tar.bz2"
 MD5SUM="46aa3aa18fbc4bd528f9a0345ce79913"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="5.8.1"
+HOMEPAGE="https://www.strongswan.org"
+DOWNLOAD="https://download.strongswan.org/strongswan-5.8.1.tar.bz2"
+MD5SUM="5a6b9980cd1ac4fad3c24b55ed960ac9"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

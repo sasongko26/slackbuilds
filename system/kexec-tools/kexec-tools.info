@@ -1,5 +1,6 @@
 PRGNAM="kexec-tools"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.0.15"
 HOMEPAGE="http://horms.net/projects/kexec/"
 DOWNLOAD="https://www.kernel.org/pub/linux/utils/kernel/kexec/kexec-tools-2.0.15.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://horms.net/projects/kexec/"
 DOWNLOAD="https://www.kernel.org/pub/linux/utils/kernel/kexec/kexec-tools-2.0.17.tar.xz"
 MD5SUM="f72c11e3bd80de23cae144ce8683d96b"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.0.20"
+HOMEPAGE="http://horms.net/projects/kexec/"
+DOWNLOAD="https://mirrors.edge.kernel.org/pub/linux/utils/kernel/kexec/kexec-tools-2.0.20.tar.xz"
+MD5SUM="3b3ee68064648b1b9e86ad93b1c50644"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

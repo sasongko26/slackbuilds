@@ -1,5 +1,6 @@
 PRGNAM="aubio"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.4.2"
 HOMEPAGE="https://aubio.org/"
 DOWNLOAD="https://aubio.org/pub/aubio-0.4.2.tar.bz2"
@@ -10,6 +11,12 @@ HOMEPAGE="https://aubio.org/"
 DOWNLOAD="https://aubio.org/pub/aubio-0.4.6.tar.bz2"
 MD5SUM="78d326e5e44d19b0d21a5abf834bae20"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.4.9"
+HOMEPAGE="https://aubio.org/"
+DOWNLOAD="https://aubio.org/pub/aubio-0.4.9.tar.bz2"
+MD5SUM="50c9c63b15a2692378af5d602892f16a"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

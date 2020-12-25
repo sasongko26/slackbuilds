@@ -1,5 +1,6 @@
 PRGNAM="xtrkcad"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.3.0"
 HOMEPAGE="http://sourceforge.net/projects/xtrkcad-fork"
 DOWNLOAD="http://sourceforge.net/projects/xtrkcad-fork/files/XTrackCad/Version%204.3.0/xtrkcad-source-4.3.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://www.xtrkcad.org"
 DOWNLOAD="http://sourceforge.net/projects/xtrkcad-fork/files/XTrackCad/Version%205.1.1/xtrkcad-source-5.1.1-1.tar.gz"
 MD5SUM="63a2309528dc4189e16db09c73bcdc7a"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="5.1.2a"
+HOMEPAGE="http://www.xtrkcad.org"
+DOWNLOAD="http://sourceforge.net/projects/xtrkcad-fork/files/XTrackCad/Version%205.1.2/xtrkcad-source-5.1.2a.tar.gz"
+MD5SUM="e7e1c7a9cb4572b88a1dfa222861fcf1"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="webkitgtk"

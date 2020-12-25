@@ -3,10 +3,14 @@
 # Slackware build script for borgbackup
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017 Andrzej Telszewski, Banie
 =======
 # Copyright 2018 Andrzej Telszewski, Szczecin
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2020 Andrzej Telszewski, Szczecin
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=borgbackup
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.0.11}
 BUILD=${BUILD:-2}
 =======
 VERSION=${VERSION:-1.1.5}
+=======
+VERSION=${VERSION:-1.1.13}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}

@@ -1,5 +1,6 @@
 PRGNAM="fmsx-libretro"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.01.24_0386da0"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/fmsx-libretro-2017.01.24_0386da0.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/fmsx-libretro-2017.10.23_8ca1dca.tar.xz"
 MD5SUM="c331834293b26c037ad5fff6667f474a"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.09.29_a61ef7b"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/fmsx-libretro-2018.09.29_a61ef7b.tar.xz"
+MD5SUM="ec4f1a3f891e2c5d2ad5ef07beaaf67a"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"

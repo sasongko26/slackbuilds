@@ -26,10 +26,14 @@
 
 PRGNAM=arm-gdb
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-7.8.1}
 =======
 VERSION=${VERSION:-8.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-10.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -66,9 +70,10 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf gdb-$VERSION arm-gdb-build-$VERSION
-tar xvf $CWD/gdb-$VERSION.tar.xz
+tar xvf $CWD/gdb-$VERSION.tar.?z
 mkdir arm-gdb-build-$VERSION
 cd arm-gdb-build-$VERSION
+
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -86,6 +91,7 @@ CXXFLAGS_FOR_BUILD="$SLKCFLAGS" \
   --infodir=/usr/info \
   --mandir=/usr/man \
 <<<<<<< HEAD
+<<<<<<< HEAD
   --target=arm-none-eabi \
   --disable-nls \
   --enable-languages=c,c++ \
@@ -97,12 +103,17 @@ CXXFLAGS_FOR_BUILD="$SLKCFLAGS" \
   --program-suffix="" \
   --build=$ARCH-slackware-linux
 =======
+=======
+  --program-prefix="arm-none-eabi-" \
+  --program-suffix="" \
+>>>>>>> upstream/master
   --build=$ARCH-slackware-linux \
   --target="arm-none-eabi" \
   --enable-languages="c,c++" \
   --enable-interwork \
   --enable-multilib \
   --disable-nls \
+  --disable-libssp \
   --with-python=/usr/bin/python \
   --with-system-gdbinit=/etc/gdb/gdbinit
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
@@ -113,13 +124,16 @@ make install DESTDIR=$PKG
 <<<<<<< HEAD
 =======
 # Remove stuff that would replace files in Slackware's gdb package
+rm -rf $PKG/usr/man/
+rm -rf $PKG/usr/info/
 rm -rf $PKG/usr/share/
-rm -rf $PKG/usr/info
+rm -rf $PKG/usr/include/
 
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
+<<<<<<< HEAD
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
@@ -129,6 +143,8 @@ gzip -9 $PKG/usr/info/*.info*
 
 =======
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+>>>>>>> upstream/master
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 for file in COPYING* ChangeLog MAINTAINERS README*; do
   cp ../gdb-$VERSION/$file $PKG/usr/doc/$PRGNAM-$VERSION

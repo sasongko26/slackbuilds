@@ -6,10 +6,14 @@
 # Copyright (c) 2014  Andrew Clemons, Wellington, New Zealand
 # Copyright (c) 2015  Andrew Clemons, Leimen, Germany
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright (c) 2016-2017  Andrew Clemons, Wellington, New Zealand
 =======
 # Copyright (c) 2016-2018  Andrew Clemons, Wellington, New Zealand
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright (c) 2016-2020  Andrew Clemons, Wellington, New Zealand
+>>>>>>> upstream/master
 # All rights reserved.
 #
 #   Permission to use, copy, modify, and distribute this software for
@@ -38,10 +42,14 @@
 
 PRGNAM=sslscan
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.11.10}
 =======
 VERSION=${VERSION:-1.11.11}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.0.6}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -77,9 +85,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$VERSION-rbsec
-tar xvf $CWD/$PRGNAM-$VERSION-rbsec.tar.gz
-cd $PRGNAM-$VERSION-rbsec
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+cd $PRGNAM-$VERSION
 
 sed -i 's/^\(\.openssl.is.fresh:\).*$/\1/' Makefile
 sed -i "s/^GIT_VERSION = .*$/GIT_VERSION = $VERSION/" Makefile
@@ -87,7 +95,7 @@ sed -i "s/^GIT_VERSION = .*$/GIT_VERSION = $VERSION/" Makefile
 STATIC=${STATIC:-yes}
 
 if [ "$STATIC" = "yes" ] ; then
-  OPENSSLVERSION=${OPENSSLVERSION:-83abb7af5cee7dd1c9ab500a10a776c586a18f1b}
+  OPENSSLVERSION=${OPENSSLVERSION:-5795acffd8706e1cb584284ee5bb3a30986d0e75}
   tar xf "$CWD/openssl-$OPENSSLVERSION.tar.gz"
   mv "openssl-$OPENSSLVERSION" openssl
 fi
@@ -101,18 +109,15 @@ find -L . \
 
 mkdir -p $PKG/usr/bin $PKG/usr/man/man1
 
-sed -i "s/^\(CFLAGS.*$\)/\1 $SLKCFLAGS/" Makefile
-
-sed -i "s|^\(PREFIX\).*$|\1 = $PKG/usr|" Makefile
-sed -i "s|^\(MANDIR\).*$|\1 = $PKG/usr/man|" Makefile
+sed -i "s|share/man|man|" Makefile
 
 if [ "$STATIC" = "yes" ] ; then
-  make -j1 static
+  CLFAGS=$SLKCFLAGS make -j1 static
 else
-  make -j1
+  CLFAGS=$SLKCFLAGS make -j1
 fi
 
-make install
+make install DESTDIR=$PKG
 
 find $PKG | xargs file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

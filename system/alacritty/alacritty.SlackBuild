@@ -3,10 +3,14 @@
 # Slackware build script for alacritty
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017 Andrew Clemons, Wellington New Zealand
 =======
 # Copyright 2017-2018 Andrew Clemons, Wellington New Zealand
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-2020 Andrew Clemons, Wellington New Zealand
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,11 +32,15 @@
 
 PRGNAM=alacritty
 <<<<<<< HEAD
+<<<<<<< HEAD
 GITREV=${GITREV:-8ff3c5d170abe47554f5d2a41ad35ddc451d254d}
 =======
 GITREV=${GITREV:-128c25ee8b31473a6514e9bcaa59d8f9e66ea3a7}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 VERSION=${VERSION:-git$(echo "$GITREV" | sed 's/^\(.\{7\}\).*$/\1/')}
+=======
+VERSION=${VERSION:-0.4.3}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -93,12 +101,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$GITREV
-tar xvf $CWD/$PRGNAM-$GITREV.tar.gz
-cd $PRGNAM-$GITREV
-
-# force offline for git crate dependencies
-patch -p1 < $CWD/patch_crate_deps.diff
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+cd $PRGNAM-$VERSION
 
 # build offline
 # configuration tells cargo to use the configured directory
@@ -114,11 +119,11 @@ directory = '$(pwd)/vendor'
 EOF
 
 # deps and versions come from Cargo.lock
-# cargo vender can be used to generate the checksums
 mkdir vendor
 (
   cd vendor
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   for dependency in aho-corasick=0.6.3 \
                     android_glue=0.2.3 \
@@ -460,6 +465,17 @@ mkdir vendor
       crate="$CWD/$dep-$ver.crate"
       tar xvf "$crate"
     fi
+=======
+  grep -h -A 3 "\[\[package\]\]" $(find ../ -maxdepth 1 -mindepth 1 -name Cargo.lock | tr '\n' ' ') | \
+    sed 's/[[:space:]]*=[[:space:]]*/=/g;s/^--//;s/^\[\[/--\n[[/' | \
+    awk 'BEGIN { RS = "--\n" ; FS="\n" } { print $2, $3, $4 }' | sed 's/"//g;s/name=//;s/ version=/=/' | \
+    grep crates\.io-index | sed 's/ source=.*$//' | sort -u | while read -r dep ; do
+
+    ver="$(printf "%s\n" "$dep" | cut -d= -f2)"
+    dep="$(printf "%s\n" "$dep" | cut -d= -f1)"
+
+    tar xvf $CWD/$dep-$ver.crate
+>>>>>>> upstream/master
 
     touch $dep-$ver/.cargo-ok
 
@@ -476,17 +492,10 @@ mkdir vendor
       printf "    },\n"
       printf '    "package": "'
 
-      if [ "$dep" = "servo-fontconfig" ] || [ "$dep" = "servo-fontconfig-sys" ] ; then
-        checksum="$(tar cz $dep-$ver | sha256sum | cut -f1 -d' ')"
-        sed -i "s/^\(\"checksum $dep [^=]*\)= \".*$/\1= \"$checksum\"/" ../Cargo.lock
-
-        printf "%s\"\n" "$checksum"
-      else
-        sha256sum "$crate" | cut -f1 -d' ' | sed 's/$/"/'
-      fi
+      sha256sum "$CWD/$dep-$ver.crate" | cut -f1 -d' ' | sed 's/$/"/'
 
       printf "}\n"
-    } | python -c "import sys, json; data = sys.stdin.read(); print json.dumps(json.loads(data), sort_keys=True, indent=4, separators=(',', ' : '))" > $dep-$ver/.cargo-checksum.json
+    } > $dep-$ver/.cargo-checksum.json
   done
 )
 
@@ -511,30 +520,62 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 <<<<<<< HEAD
 =======
 mkdir -p $PKG/usr/man/man1
-install -m644 alacritty.man $PKG/usr/man/man1/alacritty.1
+
+if [ -e alacritty.man ] ; then
+  install -m644 alacritty.man $PKG/usr/man/man1/alacritty.1
+elif [ -e  extra/alacritty.man ] ; then
+  install -m644 extra/alacritty.man $PKG/usr/man/man1/alacritty.1
+fi
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/share/bash-completion/completions
-install -m644 alacritty-completions.bash $PKG/usr/share/bash-completion/completions/alacritty
+if [ -e alacritty-completions.bash ] ; then
+  install -m644 alacritty-completions.bash $PKG/usr/share/bash-completion/completions/alacritty
+elif [ -e extra/completions/alacritty.bash ] ; then
+  install -m644 extra/completions/alacritty.bash $PKG/usr/share/bash-completion/completions/alacritty
+fi
 
 mkdir -p $PKG/usr/share/zsh/site-functions
-install -m644 alacritty-completions.zsh $PKG/usr/share/zsh/site-functions/_alacritty
+if [ -e alacritty-completions.zsh ] ; then
+  install -m644 alacritty-completions.zsh $PKG/usr/share/zsh/site-functions/_alacritty
+elif [ -e extra/completions/_alacritty ] ; then
+  install -m644 extra/completions/_alacritty $PKG/usr/share/zsh/site-functions/_alacritty
+fi
 
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 mkdir -p $PKG/usr/share/terminfo
-tic -o $PKG/usr/share/terminfo alacritty.info
+if [ -e alacritty.info ] ; then
+  tic -o $PKG/usr/share/terminfo alacritty.info
+elif [ -e extra/alacritty.info ] ; then
+  tic -o $PKG/usr/share/terminfo -xe alacritty,alacritty-direct extra/alacritty.info
+fi
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a LICENSE-APACHE README.md alacritty.yml $PKG/usr/doc/$PRGNAM-$VERSION
+<<<<<<< HEAD
 mkdir -p $PKG/usr/share/applications
 <<<<<<< HEAD
 install -m 644 Alacritty.desktop $PKG/usr/share/applications
 =======
 install -m 644 $PRGNAM.desktop $PKG/usr/share/applications
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+>>>>>>> upstream/master
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+
+mkdir -p $PKG/usr/share/applications
+if [ -e $PRGNAM.desktop ] ; then
+  install -m 644 $PRGNAM.desktop $PKG/usr/share/applications
+elif [ -e extra/linux/$PRGNAM.desktop ] ; then
+  install -m 644 extra/linux/$PRGNAM.desktop $PKG/usr/share/applications
+fi
+
+if [ -e extra/logo/alacritty-term.svg ] ; then
+  mkdir -p $PKG/usr/share/pixmaps
+  install -m 644 extra/logo/alacritty-term.svg $PKG/usr/share/pixmaps/Alacritty.svg
+fi
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

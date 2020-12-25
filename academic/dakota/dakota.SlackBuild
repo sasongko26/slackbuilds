@@ -2,7 +2,7 @@
 
 # Slackware build script for Dakota
 
-# Copyright 2017 Lorenzo Trevisan, Caorle, Venice, Italy
+# Copyright 2017, 2018, 2019, 2020 Lorenzo Trevisan, Caorle, Venice, Italy
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,10 +24,14 @@
 
 PRGNAM=dakota
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-6.6}
 =======
 VERSION=${VERSION:-6.8}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-6.11.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

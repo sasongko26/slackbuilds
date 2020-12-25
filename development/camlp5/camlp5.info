@@ -1,5 +1,6 @@
 PRGNAM="camlp5"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="7.02"
 HOMEPAGE="https://camlp5.github.io/"
 DOWNLOAD="https://master.dl.sourceforge.net/project/slackbuildsdirectlinks/camlp5/camlp5-rel702.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://camlp5.github.io/"
 DOWNLOAD="https://github.com/camlp5/camlp5/archive/rel705/camlp5-rel705.tar.gz"
 MD5SUM="cf9d909191711afb1b634f75acbe1cfe"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="7.10"
+HOMEPAGE="https://camlp5.github.io/"
+DOWNLOAD="https://github.com/camlp5/camlp5/archive/rel710/camlp5-rel710.tar.gz"
+MD5SUM="1c396142b981c5af1af7470bb23bf0ce"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="ocaml"

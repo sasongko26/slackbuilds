@@ -1,5 +1,6 @@
 PRGNAM="transcribe"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="8.70"
 HOMEPAGE="http://www.seventhstring.com/"
 DOWNLOAD="https://www.seventhstring.com/xscribe/downlinux32/xscsetup.tar.gz"
@@ -14,6 +15,14 @@ MD5SUM="2f089229edf91f0e04d6d3fd638c8f74"
 DOWNLOAD_x86_64="https://www.seventhstring.com/xscribe/downlinux64/xsc64setup.tar.gz"
 MD5SUM_x86_64="6da56d0683d82885c22cfb32dfe4836d"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="8.73"
+HOMEPAGE="http://www.seventhstring.com/"
+DOWNLOAD="https://slackware.uk/~urchlay/src/xscsetup.tar.gz"
+MD5SUM="1c4e09cf87671e0c11afc2a089c3367c"
+DOWNLOAD_x86_64="https://slackware.uk/~urchlay/src/xsc64setup.tar.gz"
+MD5SUM_x86_64="1d6e705d01938fd69cc6395975fdafe5"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="B. Watson"
 EMAIL="yalhcru@gmail.com"

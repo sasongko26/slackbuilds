@@ -24,10 +24,14 @@
 
 PRGNAM=gpodder
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.9.3}
 =======
 VERSION=${VERSION:-3.10.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.10.11}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

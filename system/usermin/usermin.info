@@ -1,5 +1,6 @@
 PRGNAM="usermin"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.720"
 HOMEPAGE="http://webmin.com/usermin.html"
 DOWNLOAD="http://jaist.dl.sourceforge.net/project/webadmin/usermin/1.720/usermin-1.720.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://webmin.com/usermin.html"
 DOWNLOAD="http://jaist.dl.sourceforge.net/project/webadmin/usermin/1.741/usermin-1.741.tar.gz"
 MD5SUM="5f60cbf5cc0c18d6511626ad357fe930"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.812"
+HOMEPAGE="http://webmin.com/usermin.html"
+DOWNLOAD="http://jaist.dl.sourceforge.net/project/webadmin/usermin/1.812/usermin-1.812.tar.gz"
+MD5SUM="05cafeadc0166846bccc2babe2d82b9e"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="webmin"

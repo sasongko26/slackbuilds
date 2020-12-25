@@ -1,5 +1,6 @@
 PRGNAM="allegro"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="5.2.3.0"
 HOMEPAGE="https://www.allegro.cc/"
 DOWNLOAD="https://github.com/liballeg/allegro5/archive/5.2.3.0/allegro5-5.2.3.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.allegro.cc/"
 DOWNLOAD="https://github.com/liballeg/allegro5/archive/5.2.4.0/allegro5-5.2.4.0.tar.gz"
 MD5SUM="45353bd5e518db537bd127705d922421"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="5.2.6.0"
+HOMEPAGE="https://liballeg.org/"
+DOWNLOAD="https://github.com/liballeg/allegro5/archive/5.2.6.0/allegro5-5.2.6.0.tar.gz"
+MD5SUM="ba218861ee98ee855213af3f602a6049"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

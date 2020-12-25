@@ -1,5 +1,6 @@
 PRGNAM="sqlcl"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="17.2.0.184.1230"
 HOMEPAGE="http://oracle.com/technetwork/developer-tools/sqlcl/overview"
 DOWNLOAD="http://download.oracle.com/otn/java/sqldeveloper/sqlcl-17.2.0.184.1230-no-jre.zip"
@@ -10,6 +11,12 @@ HOMEPAGE="http://oracle.com/technetwork/developer-tools/sqlcl/overview"
 DOWNLOAD="http://download.oracle.com/otn/java/sqldeveloper/sqlcl-17.4.0.354.2224-no-jre.zip"
 MD5SUM="bbda6c9a82d242764d1a8a8081cb4a29"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="18.2.0"
+HOMEPAGE="http://oracle.com/technetwork/developer-tools/sqlcl/overview"
+DOWNLOAD="http://download.oracle.com/otn/java/sqldeveloper/sqlcl-18.2.0.zip"
+MD5SUM="840f08b3ae8dace7f9ab7dceec9b580f"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="jdk"

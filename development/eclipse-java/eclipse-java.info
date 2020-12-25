@@ -1,5 +1,6 @@
 PRGNAM="eclipse-java"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.7.1a"
 HOMEPAGE="http://www.eclipse.org"
 DOWNLOAD="http://download.eclipse.org/technology/epp/downloads/release/oxygen/1a/eclipse-java-oxygen-1a-linux-gtk.tar.gz"
@@ -15,5 +16,14 @@ DOWNLOAD_x86_64="http://download.eclipse.org/technology/epp/downloads/release/ox
 MD5SUM_x86_64="8b7bac974f0e6823ddd08bcd100ec03d"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES="jdk webkitgtk"
+=======
+VERSION="4.15"
+HOMEPAGE="http://www.eclipse.org"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="http://download.eclipse.org/technology/epp/downloads/release/2020-03/R/eclipse-java-2020-03-R-linux-gtk-x86_64.tar.gz"
+MD5SUM_x86_64="1f4485a89895dd830489dbbb9581c3ae"
+REQUIRES="jdk webkit2gtk"
+>>>>>>> upstream/master
 MAINTAINER="Andrew Clemons"
 EMAIL="andrew.clemons@gmail.com"

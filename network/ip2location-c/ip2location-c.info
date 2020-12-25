@@ -1,5 +1,6 @@
 PRGNAM="ip2location-c"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="7.0.0"
 HOMEPAGE="http://www.ip2location.com/developers/c-7"
 DOWNLOAD="http://www.ip2location.com/downloads/ip2location-c-7.0.0.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="http://www.ip2location.com/developers/c"
 DOWNLOAD="https://github.com/chrislim2888/IP2Location-C-Library/archive/8.0.7/IP2Location-C-Library-8.0.7.tar.gz"
 MD5SUM="8c33ffe6d66baba942dffa8bf75ea45b"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="8.0.9"
+HOMEPAGE="http://www.ip2location.com/developers/c"
+DOWNLOAD="https://github.com/chrislim2888/IP2Location-C-Library/archive/8.0.9/IP2Location-C-Library-8.0.9.tar.gz"
+MD5SUM="a232a7ed1cdfb4d972da60261fe4f38e"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
 MAINTAINER="Jason Graham"
-EMAIL="jgraha8@gmail.com"
+EMAIL="jgraham@compukix.net"

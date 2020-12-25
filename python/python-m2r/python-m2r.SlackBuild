@@ -24,10 +24,14 @@
 
 PRGNAM=python-m2r
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.1.12}
 =======
 VERSION=${VERSION:-0.1.14}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.2.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

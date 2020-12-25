@@ -1,9 +1,8 @@
-QuickNES is a Nintendo Entertainment System video game system emulator
-that can be used as a libretro core.
+QuickNES is the fastest NES emulator available via libretro,
+though this speed comes at the cost of some accuracy.
 
-Nes_Emu, the core NES emulator library used by QuickNES, began as a
-very simple NES emulator sometime in 2004. It was based on the 6502 CPU
-core and APU sound core used in the Game_Music_Emu sound engine.
+This core should be used only when performance is of the
+utmost concern and even FCEUmm is too demanding.
 
 To build the debugging symbols use:
   DEBUG=1 QuickNES-Core.SlackBuild

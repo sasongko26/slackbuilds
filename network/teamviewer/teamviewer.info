@@ -1,5 +1,6 @@
 PRGNAM="teamviewer"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="12.0.85001"
 HOMEPAGE="https://www.teamviewer.com/"
 DOWNLOAD="https://download.teamviewer.com/download/teamviewer_i386.deb"
@@ -9,11 +10,14 @@ MD5SUM_x86_64=""
 REQUIRES="libpng-legacy12"
 =======
 VERSION="13.1.8286"
+=======
+VERSION="15.13.6"
+>>>>>>> upstream/master
 HOMEPAGE="https://www.teamviewer.com/"
-DOWNLOAD="https://download.teamviewer.com/download/linux/teamviewer_i386.deb"
-MD5SUM="21ef538cc63d1811d6ba9a56ba621804"
-DOWNLOAD_x86_64="https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
-MD5SUM_x86_64="43378201788f667f76b198894d22f971"
+DOWNLOAD="https://dl.tvcdn.de/download/linux/version_15x/teamviewer_15.13.6_i386.deb"
+MD5SUM="19bc780b22044510bb51d11c05a1611a"
+DOWNLOAD_x86_64="https://dl.tvcdn.de/download/linux/version_15x/teamviewer_15.13.6_amd64.deb"
+MD5SUM_x86_64="b940874ff5bb866c6a9fc6802215e82a"
 REQUIRES="qt5-webkit"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MAINTAINER="Willy Sudiarto Raharjo"

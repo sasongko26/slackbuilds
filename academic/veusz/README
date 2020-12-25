@@ -18,11 +18,22 @@ manipulation and editing of datasets. Data can be captured from
 external sources such as Internet sockets or other programs.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 See the complete release notes for Veusz 2.1.1 at
 https://veusz.github.io/releasenotes/2.1.1.txt
 =======
 See the complete release notes for Veusz 3.0 at
 https://veusz.github.io/releasenotes/3.0.txt
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+See the complete release notes for Veusz 3.3.1 at
+https://veusz.github.io/releasenotes/3.3.1.txt
+>>>>>>> upstream/master
 
 Sphinx is an optional dependency (used to rebuild the manual).
+
+****
+Note:
+The veusz.SlackBuild script moved from Python2 to Python3 in version
+3.3.1. Please, check the dependencies.
+****

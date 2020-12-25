@@ -6,14 +6,14 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
               |-----handy-ruler------------------------------------------------------|
-android-studio: android-studio (Android Development Tool)
+android-studio: android-studio (Android Studio IDE)
 android-studio:
-android-studio: Android Studio is a new Android development environment based on
-android-studio: IntelliJ IDEA. It provides new features and improvements over
-android-studio: Eclipse ADT and will be the official Android IDE once it's ready.
+android-studio: Android Studio is is an integrated development environment (IDE) for
+android-studio: Google's Android operating system, built on JetBrains' IntelliJ IDEA
+android-studio: software and designed specifically for Android development.
 android-studio:
+android-studio: It is a replacement for the Eclipse Android Development Tools (ADT)
+android-studio: as the primary IDE for native Android application development.
 android-studio:
-android-studio: Homepage: https://developer.android.com/studio/
-android-studio:
-android-studio:
+android-studio: homepage: https://developer.android.com/studio
 android-studio:

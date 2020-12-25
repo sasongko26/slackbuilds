@@ -3,10 +3,14 @@
 # Slackware build script for sboui
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017 | Daniel Prosser | Lexington Park, MD
 =======
 # Copyright 2018 | Daniel Prosser | Lexington Park, MD
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2019 | Daniel Prosser | Lexington Park, MD
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=sboui
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.5}
 =======
 VERSION=${VERSION:-1.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -77,15 +85,37 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+# Build options
+USE_NINJA="${USE_NINJA:-no}"
+GRAPHICAL_SU="${GRAPHICAL_SU:-kdesu}"
+TERMINAL_EMULATOR="${TERMINAL_EMULATOR:-xterm}"
+INSTALL_SYSTRAY_NOTIFIER="${INSTALL_SYSTRAY_NOTIFIER:-no}"
+if [ "$USE_NINJA" == "yes" ]; then
+  GENERATOR="Ninja"
+  BUILDCMD="ninja"
+else
+  GENERATOR="Unix Makefiles"
+  BUILDCMD="make"
+fi
+if [ "$INSTALL_SYSTRAY_NOTIFIER" == "yes" ]; then
+  NOTIFIER="ON"
+else
+  NOTIFIER="OFF"
+fi
+
 mkdir -p build
 cd build
   cmake \
     -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
     -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
-    -DCMAKE_INSTALL_PREFIX=/usr \
-    -DCMAKE_BUILD_TYPE=Release ..
-  make
-  make install DESTDIR=$PKG
+    -DCMAKE_INSTALL_PREFIX:PATH=/usr \
+    -DCMAKE_BUILD_TYPE:STRING="Release" \
+    -DGRAPHICAL_SU:STRING="$GRAPHICAL_SU" \
+    -DTERMINAL_EMULATOR:STRING="$TERMINAL_EMULATOR" \
+    -DINSTALL_SYSTRAY_NOTIFIER:BOOL="$NOTIFIER" \
+    -G "$GENERATOR" ..
+  $BUILDCMD
+  DESTDIR=$PKG $BUILDCMD install
 cd ..
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \

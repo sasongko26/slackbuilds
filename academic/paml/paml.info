@@ -1,5 +1,6 @@
 PRGNAM="paml"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.9e"
 HOMEPAGE="http://abacus.gene.ucl.ac.uk/software/paml.html"
 DOWNLOAD="http://slackware.uk/sbosrcarch/by-name/academic/paml/paml4.9e.tgz \
@@ -7,11 +8,18 @@ DOWNLOAD="http://slackware.uk/sbosrcarch/by-name/academic/paml/paml4.9e.tgz \
 MD5SUM="27930055f729f16f84ceb44c0f1581b9 \
 =======
 VERSION="4.9h"
+=======
+VERSION="4.9j"
+>>>>>>> upstream/master
 HOMEPAGE="http://abacus.gene.ucl.ac.uk/software/paml.html"
-DOWNLOAD="http://abacus.gene.ucl.ac.uk/software/paml4.9h.tgz \
+DOWNLOAD="http://abacus.gene.ucl.ac.uk/software/paml4.9j.tgz \
           http://ponce.cc/slackware/sources/repo/MCMCtree.Tutorials.pdf"
+<<<<<<< HEAD
 MD5SUM="b45d60cc0a82e4835e8dcda6a4c32040 \
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+MD5SUM="50c1760512b7a5df50305e5fd26d0ca5 \
+>>>>>>> upstream/master
         29c851d887eea56b949c01ab42cc48fb"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

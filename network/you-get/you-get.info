@@ -1,5 +1,6 @@
 PRGNAM="you-get"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.4.964"
 HOMEPAGE="http://www.soimort.org/you-get/"
 DOWNLOAD="https://pypi.python.org/packages/b6/55/bed6e5568fb6885fb1a2362018d2296d9dd8b760f88b4c22c7192bd580eb/you-get-0.4.964.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://www.soimort.org/you-get/"
 DOWNLOAD="https://pypi.python.org/packages/f1/74/d95beb4fe4c4d161ae76e350953e26cee6e55513d51890d4e950485f94e0/you-get-0.4.1040.tar.gz"
 MD5SUM="53d62484e5b02035888bcbcb76f9a905"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.4.1355"
+HOMEPAGE="http://www.soimort.org/you-get/"
+DOWNLOAD="https://files.pythonhosted.org/packages/9f/41/b2bb0bb994b6511f3bb306f237dbd56b9920b331d6db48e7ce7d473e68f7/you-get-0.4.1355.tar.gz"
+MD5SUM="0d77679e86c3e5c19c526f046cf9e31f"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python3"

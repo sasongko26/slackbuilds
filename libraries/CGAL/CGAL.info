@@ -1,5 +1,6 @@
 PRGNAM="CGAL"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.9.1"
 HOMEPAGE="https://www.cgal.org/"
 DOWNLOAD="https://github.com/CGAL/cgal/releases/download/releases%2FCGAL-4.9.1/CGAL-4.9.1.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.cgal.org/"
 DOWNLOAD="https://github.com/CGAL/cgal/releases/download/releases%2FCGAL-4.12/CGAL-4.12.tar.xz"
 MD5SUM="b12fd24dedfa889a04abfaea565a88bd"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.13"
+HOMEPAGE="https://www.cgal.org/"
+DOWNLOAD="https://github.com/CGAL/cgal/releases/download/releases%2FCGAL-4.13/CGAL-4.13.tar.xz"
+MD5SUM="63a248572cdba7cedd1595ac5a81f865"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

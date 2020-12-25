@@ -4,14 +4,15 @@ This project aims to make updating firmware on Linux automatic, safe and
 reliable.
 
 Options (all default to false):
-  ENABLE_COLORHUG: true|false - requires colord
-  ENABLE_DELL: true|false - requires fwupdate (and transitively libsmbios)
-  ENABLE_SYNAPTICS: true|false - requires ENABLE_DELL=true and its dependencies
-  ENABLE_UEFI: true|false - requires fwupdate
-  ENABLE_UEFI_LABELS: true|false - requires pygobject3-python3 python3-pillow py3cairo
+  ENABLE_UEFI: true|false - requires pygobject3-python3 python3-pillow
+                                     py3cairo
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   https://github.com/hughsie/fwupd/blob/0.9.7/meson_options.txt
 =======
   https://github.com/hughsie/fwupd/blob/1.0.5/meson_options.txt
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+  https://github.com/fwupd/fwupd/blob/1.2.13/meson_options.txt
+>>>>>>> upstream/master

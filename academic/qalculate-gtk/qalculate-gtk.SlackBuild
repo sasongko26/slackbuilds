@@ -3,10 +3,14 @@
 # Slackware build script for qalculate-gtk
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2016-2017 Larry Hajali <larryhaja[at]gmail[dot]com>
 =======
 # Copyright 2016-2018 Larry Hajali <larryhaja[at]gmail[dot]com>
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2016-2020 Larry Hajali <larryhaja[at]gmail[dot]com>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=qalculate-gtk
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.1.0}
 =======
 VERSION=${VERSION:-2.2.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.10.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -77,14 +85,12 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-# Fix .desktop file.
-sed -i 's|.png||' data/$PRGNAM.desktop.in
-
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix=/usr \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --mandir=/usr/man \
   --disable-silent-rules \
   --build=$ARCH-slackware-linux
 
@@ -93,6 +99,8 @@ make install DESTDIR=$PKG
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+find $PKG/usr/man -type f -exec gzip -9 {} \;
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a AUTHORS ChangeLog COPYING NEWS README TODO $PKG/usr/doc/$PRGNAM-$VERSION

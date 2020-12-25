@@ -1,5 +1,6 @@
 PRGNAM="ioquake3"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="r20170419"
 HOMEPAGE="https://ioquake3.org/"
 DOWNLOAD="https://www.dropbox.com/s/w14dnk4sf0by47o/ioquake3-r20170419.tar.gz \
@@ -7,11 +8,18 @@ DOWNLOAD="https://www.dropbox.com/s/w14dnk4sf0by47o/ioquake3-r20170419.tar.gz \
 MD5SUM="6608473553e537268fd6589ea4d0729a \
 =======
 VERSION="r20180602"
+=======
+VERSION="r20200211"
+>>>>>>> upstream/master
 HOMEPAGE="https://ioquake3.org/"
-DOWNLOAD="https://www.dropbox.com/s/recg70ntwbr8ovn/ioquake3-r20180602.tar.gz \
+DOWNLOAD="https://www.dropbox.com/s/1pwzisj5rsexn7d/ioquake3-r20200211.tar.gz \
           http://ftp.gwdg.de/pub/misc/ftp.idsoftware.com/idstuff/quake3/linux/linuxq3apoint-1.32b-3.x86.run"
+<<<<<<< HEAD
 MD5SUM="f7acf4bc1ccfbec54162fc8ecfff2e72 \
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+MD5SUM="3d3ba4910adb990432f414df6fff7e43 \
+>>>>>>> upstream/master
         c71fdddccb20e8fc393d846e9c61d685"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

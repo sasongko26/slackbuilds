@@ -1,5 +1,6 @@
 PRGNAM="beetle-vb-libretro"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.01.24_1809ea7"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/beetle-vb-libretro-2017.01.24_1809ea7.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/beetle-vb-libretro-2017.12.20_474d795.tar.xz"
 MD5SUM="5b3cd523b2c5c49cd9deb616f96b4f9f"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.09.29_93f5b60"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/beetle-vb-libretro-2018.09.29_93f5b60.tar.xz"
+MD5SUM="d9f0d74d96840dfd8db1c729b53379e3"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"

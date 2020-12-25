@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Slackware build script for AtomicParsley
-# Copyright 2017 David Woodfall <dave@dawoodfall.net>
+# Copyright 2017 David Woodfall <dave@slackbuilds.org>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -22,9 +22,9 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=AtomicParsley
-SRCNAM=AtomicParsley-source
-VERSION=${VERSION:-0.9.0}
-BUILD=${BUILD:-1}
+SRCNAM=$( echo $PRGNAM | tr A-Z a-z )
+VERSION=${VERSION:-0.9.6}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
@@ -59,9 +59,8 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf __MACOSX
 rm -rf $SRCNAM-$VERSION
-unzip $CWD/$SRCNAM-$VERSION.zip
+tar xvf $CWD/$SRCNAM-$VERSION.tar.gz
 cd $SRCNAM-$VERSION
 chown -R root:root .
 find -L . \
@@ -70,18 +69,33 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-patch -p1 <$CWD/build-fix.patch
-./build
+./autogen.sh
 
-mkdir -p $PKG/usr/bin
-cp AtomicParsley $PKG/usr/bin
+CFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS" \
+./configure \
+  --prefix=/usr \
+  --libdir=/usr/lib${LIBDIRSUFFIX} \
+  --sysconfdir=/etc \
+  --localstatedir=/var \
+  --mandir=/usr/man \
+  --infodir=/usr/info \
+  --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --build=$ARCH-slackware-linux
+
+make
+make install DESTDIR=$PKG
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a  Using\ AtomicParsley.rtf $PKG/usr/doc/$PRGNAM-$VERSION
+mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION/tools
+cp -a  \
+   COPYING CREDITS Changes.txt README.md $CWD/Using_AtomicParsley.{rtf,txt} \
+   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+install -D -m0755 tools/iTunMOVI-1.1.pl \
+  $PKG/usr/doc/$PRGNAM-$VERSION/tools/iTunMOVI-1.1.pl
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

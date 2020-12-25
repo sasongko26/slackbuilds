@@ -1,5 +1,6 @@
 PRGNAM="perl-Mojolicious"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="7.46"
 HOMEPAGE="http://mojolicious.org/"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojolicious-7.46.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://mojolicious.org/"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojolicious-7.76.tar.gz"
 MD5SUM="c39177393d9b1bdb5b9757a529852969"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="8.11"
+HOMEPAGE="https://mojolicious.org/"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/S/SR/SRI/Mojolicious-8.11.tar.gz"
+MD5SUM="00419dac75fec23d06fe8695e4bde303"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

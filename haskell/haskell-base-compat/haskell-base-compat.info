@@ -1,5 +1,6 @@
 PRGNAM="haskell-base-compat"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.9.3"
 HOMEPAGE="https://hackage.haskell.org/package/base-compat"
 DOWNLOAD="https://hackage.haskell.org/package/base-compat-0.9.3/base-compat-0.9.3.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://hackage.haskell.org/package/base-compat"
 DOWNLOAD="https://hackage.haskell.org/package/base-compat-0.10.1/base-compat-0.10.1.tar.gz"
 MD5SUM="c13df39369ac6402b325b0001853ece5"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.10.4"
+HOMEPAGE="https://hackage.haskell.org/package/base-compat"
+DOWNLOAD="https://hackage.haskell.org/package/base-compat-0.10.4/base-compat-0.10.4.tar.gz"
+MD5SUM="63b67cf818ce2c7c1c039c589570ec47"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="ghc"

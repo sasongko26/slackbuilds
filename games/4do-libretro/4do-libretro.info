@@ -1,5 +1,6 @@
 PRGNAM="4do-libretro"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.01.24_b8b029b"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/4do-libretro-2017.01.24_b8b029b.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/4do-libretro-2017.12.16_9a29f31.tar.xz"
 MD5SUM="24760f321fc9680fd5f6ef251ed34b31"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.09.29_e1fec6e"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/4do-libretro-2018.09.29_e1fec6e.tar.xz"
+MD5SUM="28e12061c358882e436dbbeeb6c63c16"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"

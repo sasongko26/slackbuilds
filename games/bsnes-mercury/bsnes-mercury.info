@@ -1,5 +1,6 @@
 PRGNAM="bsnes-mercury"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.06.28_b68bd0a"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/bsnes-mercury-2017.06.28_b68bd0a.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/bsnes-mercury-2017.12.05_559b513.tar.xz"
 MD5SUM="57755ccacc4413dc2147b59d718298db"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.08.03_4e221df"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/bsnes-mercury-2018.08.03_4e221df.tar.xz"
+MD5SUM="f7779264f2a7808f623cf3219a7006de"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"

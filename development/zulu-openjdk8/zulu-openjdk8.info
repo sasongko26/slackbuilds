@@ -1,5 +1,6 @@
 PRGNAM="zulu-openjdk8"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="8u144"
 HOMEPAGE="http://zulu.org"
 DOWNLOAD="UNSUPPORTED"
@@ -14,6 +15,14 @@ MD5SUM=""
 DOWNLOAD_x86_64="http://cdn.azul.com/zulu/bin/zulu8.25.0.1-jdk8.0.152-linux_x64.tar.gz"
 MD5SUM_x86_64="cc6e9ff13c27d27033220208d5450f2d"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="8.0.232"
+HOMEPAGE="http://zulu.org"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://cdn.azul.com/zulu/bin/zulu8.42.0.23-ca-jdk8.0.232-linux_x64.tar.gz"
+MD5SUM_x86_64="755a1e9b77f76d4a6012e4d104a59200"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="Sébastien Ballet"
 EMAIL="slacker6896@gmail.com"

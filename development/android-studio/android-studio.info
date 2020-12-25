@@ -1,5 +1,6 @@
 PRGNAM="android-studio"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.0.1.0_171_4443003"
 HOMEPAGE="https://developer.android.com/studio/index.html"
 DOWNLOAD="https://dl.google.com/dl/android/studio/ide-zips/3.0.1.0/android-studio-ide-171.4443003-linux.zip"
@@ -15,3 +16,14 @@ MD5SUM_x86_64=""
 REQUIRES=""
 MAINTAINER="Roberto Metere"
 EMAIL="roberto@metere.it"
+=======
+VERSION="3.5.0_191.5791312"
+HOMEPAGE="https://developer.android.com/studio"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://dl.google.com/dl/android/studio/ide-zips/3.5.0.21/android-studio-ide-191.5791312-linux.tar.gz"
+MD5SUM_x86_64="faacd845796792ecdfd5cb7efd46d6b2"
+REQUIRES="jdk"
+MAINTAINER="Sukma Wardana"
+EMAIL="sukma.wardana@mail.com"
+>>>>>>> upstream/master

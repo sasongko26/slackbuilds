@@ -1,5 +1,6 @@
 PRGNAM="barman"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.3"
 HOMEPAGE="http://www.pgbarman.org/"
 DOWNLOAD="https://pypi.python.org/packages/60/34/087699b4eea0e66ec29aeadf8e6c694ba4e6db0343ad06c24d2270009399/barman-2.3.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://www.pgbarman.org/"
 DOWNLOAD="https://files.pythonhosted.org/packages/6b/37/862e1394617d78a325ae51b430d19b833358f3c76bc4a796b5493e25e327/barman-2.4.tar.gz"
 MD5SUM="ad3f4d5f5ea2014108e33796311205bf"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.10"
+HOMEPAGE="http://www.pgbarman.org/"
+DOWNLOAD="https://files.pythonhosted.org/packages/cc/fb/dca92b36ca6c77da2e8d69382666069504ce6d9ec846bb81a0f81fc9f0ce/barman-2.10.tar.gz"
+MD5SUM="6ae19fc6cd493b296f7b8514992440d9"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="psycopg2 argh python-dateutil argcomplete"

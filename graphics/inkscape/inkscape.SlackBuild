@@ -24,10 +24,14 @@
 
 PRGNAM=inkscape
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.92.2}
 =======
 VERSION=${VERSION:-0.92.3}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.92.4}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -78,6 +82,7 @@ find -L . \
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS -std=c++11" \
 ./configure \
+  --enable-strict-build=no \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
   --sysconfdir=/etc \

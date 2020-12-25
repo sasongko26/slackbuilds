@@ -1,5 +1,6 @@
 PRGNAM="clipgrab"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.6.6"
 HOMEPAGE="http://clipgrab.org/"
 DOWNLOAD="https://download.clipgrab.org/clipgrab-3.6.6.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="http://clipgrab.org/"
 DOWNLOAD="https://download.clipgrab.org/clipgrab-3.6.8.tar.gz"
 MD5SUM="43273a4fd34e77fa85970156e1e25561"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.8.10"
+HOMEPAGE="http://clipgrab.org/"
+DOWNLOAD="https://download.clipgrab.org/clipgrab-3.8.10.tar.gz"
+MD5SUM="9b992e77d14fa22b079d3f64f4cf3451"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="ffmpeg"
+REQUIRES="pcre2 opus qt5 ffmpeg"
 MAINTAINER="Edinaldo P. Silva"
 EMAIL="edps.mundognu@gmail.com"

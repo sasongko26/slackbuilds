@@ -1,5 +1,6 @@
 PRGNAM="composer"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.5.2"
 HOMEPAGE="https://getcomposer.org/"
 DOWNLOAD="https://getcomposer.org/download/1.5.2/composer.phar"
@@ -10,6 +11,12 @@ HOMEPAGE="https://getcomposer.org/"
 DOWNLOAD="https://getcomposer.org/download/1.6.5/composer.phar"
 MD5SUM="5969d20761e89e8cffb8288c4587f699"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.0.7"
+HOMEPAGE="https://getcomposer.org/"
+DOWNLOAD="https://getcomposer.org/download/2.0.7/composer.phar"
+MD5SUM="6b7955b7f9954f21353896e80553ec76"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

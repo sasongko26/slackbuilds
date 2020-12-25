@@ -1,5 +1,6 @@
 PRGNAM="dropbox"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="39.4.49"
 HOMEPAGE="http://www.dropbox.com"
 DOWNLOAD="https://d1ilhw0800yew8.cloudfront.net/client/dropbox-lnx.x86-39.4.49.tar.gz"
@@ -14,6 +15,14 @@ MD5SUM="9ec72edd8dd50cc20da3db3bd677f94b"
 DOWNLOAD_x86_64="https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-50.4.71.tar.gz"
 MD5SUM_x86_64="a4d148d04d42bd9571c3a39f1efeb14e"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="111.4.472"
+HOMEPAGE="https://www.dropbox.com"
+DOWNLOAD="https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86-111.4.472.tar.gz"
+MD5SUM="3e519ff9eb078a021f2911698ce2841e"
+DOWNLOAD_x86_64="https://clientupdates.dropboxstatic.com/dbx-releng/client/dropbox-lnx.x86_64-111.4.472.tar.gz"
+MD5SUM_x86_64="d456ed3ef149e2801d4640b5d60c1634"
+>>>>>>> upstream/master
 REQUIRES=""
-MAINTAINER="Amit Ugol"
-EMAIL="amit.ugol@gmail.com"
+MAINTAINER="Willy Sudiarto Raharjo"
+EMAIL="willysr@slackbuilds.org"

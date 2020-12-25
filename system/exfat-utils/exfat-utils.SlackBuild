@@ -4,10 +4,14 @@
 
 # Copyright 2012  Vliegendehuiskat, vliegendehuiskat [at] gmail [dot] com
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2015, 2017  Mario Preksavec, Zagreb, Croatia
 =======
 # Copyright 2015, 2017, 2018  Mario Preksavec, Zagreb, Croatia
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2015, 2017, 2018, 2019  Mario Preksavec, Zagreb, Croatia
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,10 +33,14 @@
 
 PRGNAM=exfat-utils
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.2.7}
 =======
 VERSION=${VERSION:-1.2.8}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.3.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

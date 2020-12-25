@@ -3,10 +3,14 @@
 # Slackware build script for racer
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017 Andrew Clemons, Wellington New Zealand
 =======
 # Copyright 2017-2018 Andrew Clemons, Wellington New Zealand
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-2018,2020 Andrew Clemons, Wellington New Zealand
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=racer
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.0.12}
 =======
 VERSION=${VERSION:-2.0.14}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.1.41}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -102,6 +110,7 @@ mkdir vendor
 (
   cd vendor
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   for dependency in aho-corasick=0.5.3 \
                     ansi_term=0.9.0 \
@@ -207,6 +216,15 @@ mkdir vendor
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
     dep="$(echo "$dependency" | cut -d= -f1)"
     ver="$(echo "$dependency" | cut -d= -f2)"
+=======
+  grep -h -A 3 "\[\[package\]\]" $(find ../ -maxdepth 1 -mindepth 1 -name Cargo.lock | tr '\n' ' ') | \
+    sed 's/[[:space:]]*=[[:space:]]*/=/g;s/^--//;s/^\[\[/--\n[[/' | \
+    awk 'BEGIN { RS = "--\n" ; FS="\n" } { print $2, $3, $4 }' | sed 's/"//g;s/name=//;s/ version=/=/' | \
+    grep crates\.io-index | sed 's/ source=.*$//' | sort -u | while read -r dep ; do
+
+    ver="$(printf "%s\n" "$dep" | cut -d= -f2)"
+    dep="$(printf "%s\n" "$dep" | cut -d= -f1)"
+>>>>>>> upstream/master
 
     tar xvf $CWD/$dep-$ver.crate
 
@@ -228,7 +246,7 @@ mkdir vendor
       sha256sum "$CWD/$dep-$ver.crate" | cut -f1 -d' ' | sed 's/$/"/'
 
       printf "}\n"
-    } | python -c "import sys, json; data = sys.stdin.read(); print json.dumps(json.loads(data), sort_keys=True, indent=4, separators=(',', ' : '))" > $dep-$ver/.cargo-checksum.json
+    } > $dep-$ver/.cargo-checksum.json
   done
 )
 
@@ -242,11 +260,19 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+(
+  mkdir rustup-bin
+  cd rustup-bin
+  ln -s /usr/bin/rustup rustc
+)
+
+PATH="$(pwd)/rustup-bin:$PATH" \
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
-cargo build --release $CARGOTARGET
+rustup run nightly-2020-11-27 cargo build --release $CARGOTARGET
 
-mkdir -p $PKG/usr/bin
+mkdir -p $PKG/usr/bin/
+
 find target -name racer -exec install -m 755 {} $PKG/usr/bin/racer \;
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \

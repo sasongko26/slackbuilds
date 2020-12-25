@@ -8,12 +8,12 @@
       |-----handy-ruler------------------------------------------------------|
 gpxsee: gpxsee (GPS log file viewer and analyzer)
 gpxsee:
-gpxsee: GPXSee is a GPS log file viewer and analyzer that supports
-gpxsee: GPX, TCX, KML, FIT, IGC, NMEA and OziExplorer files.
+gpxsee: GPXSee is a Qt-based GPS log file viewer and analyzer that supports
+gpxsee: all common GPS log file formats.
 gpxsee:
 gpxsee:
 gpxsee:
-gpxsee: Homepage: http://www.gpxsee.org/
+gpxsee: Homepage: https://www.gpxsee.org/
 gpxsee:
 gpxsee:
 gpxsee:

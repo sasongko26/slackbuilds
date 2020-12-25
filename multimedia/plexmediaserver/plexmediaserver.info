@@ -1,5 +1,6 @@
 PRGNAM="plexmediaserver"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.4.2.3400_ab906953b"
 HOMEPAGE="https://plex.tv/"
 DOWNLOAD="https://downloads.plex.tv/plex-media-server/1.4.2.3400-ab906953b/plexmediaserver_1.4.2.3400-ab906953b_i386.deb"
@@ -14,6 +15,14 @@ MD5SUM="7c78ffe6f3aa51b617807e309b1c3089"
 DOWNLOAD_x86_64="https://downloads.plex.tv/plex-media-server/1.13.2.5154-fd05be322/plexmediaserver_1.13.2.5154-fd05be322_amd64.deb"
 MD5SUM_x86_64="17fdad5d9239d6f690b3a003fe59d3a2"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.21.1.3795_ee64ab56f"
+HOMEPAGE="https://plex.tv/"
+DOWNLOAD="https://downloads.plex.tv/plex-media-server-new/1.21.1.3795-ee64ab56f/debian/plexmediaserver_1.21.1.3795-ee64ab56f_i386.deb"
+MD5SUM="b24bf84f56e80debdcec4fcacbbde275"
+DOWNLOAD_x86_64="https://downloads.plex.tv/plex-media-server-new/1.21.1.3795-ee64ab56f/debian/plexmediaserver_1.21.1.3795-ee64ab56f_amd64.deb"
+MD5SUM_x86_64="b6e2ce1333077f9de6a6bd5854a2f26c"
+>>>>>>> upstream/master
 REQUIRES=""
-MAINTAINER="Kevin Matthew"
-EMAIL="kevin@kevinmatthew.com"
+MAINTAINER="Stu Miller"
+EMAIL="slackbuilds@go4it2day.com"

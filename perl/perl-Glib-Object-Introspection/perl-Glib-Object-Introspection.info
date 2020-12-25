@@ -1,5 +1,6 @@
 PRGNAM="perl-Glib-Object-Introspection"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.044"
 HOMEPAGE="https://metacpan.org/release/Glib-Object-Introspection"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-Object-Introspection-0.044.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://metacpan.org/release/Glib-Object-Introspection"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-Object-Introspection-0.045.tar.gz"
 MD5SUM="e6f2370df3d016e6b1111de86649b686"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.049"
+HOMEPAGE="https://metacpan.org/release/Glib-Object-Introspection"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-Object-Introspection-0.049.tar.gz"
+MD5SUM="0d8ab0bf9c4d0a72eb35c16a2ff10d42"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="perl-glib"

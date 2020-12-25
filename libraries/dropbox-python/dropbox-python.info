@@ -1,5 +1,6 @@
 PRGNAM="dropbox-python"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="8.4.1"
 HOMEPAGE="https://www.dropbox.com/"
 DOWNLOAD="https://pypi.python.org/packages/c9/58/522f4559975f43e840a3859c0a71982244fb3b6a7dcf63f65c4f9a58467b/dropbox-8.4.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.dropbox.com/"
 DOWNLOAD="https://pypi.python.org/packages/f3/5e/39bf5507db73b9fd47ef2d39ffa41b14c6627f0bdf5ea947414161e6285b/dropbox-8.7.1.tar.gz"
 MD5SUM="f5c9941e72ed2347c25755b92b61cd5b"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="9.4.0"
+HOMEPAGE="https://www.dropbox.com/"
+DOWNLOAD="https://files.pythonhosted.org/packages/88/c9/899c5d112eb4aa48fb611153c2f2eadafd859cbdee637b376d140a60e50d/dropbox-9.4.0.tar.gz"
+MD5SUM="25f2106e9d4ee7b063749c8f22a567dc"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="pytest-runner six python-requests"

@@ -1,5 +1,6 @@
 PRGNAM="PyMOL"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.8.6.0"
 HOMEPAGE="http://pymol.org"
 DOWNLOAD="https://downloads.sourceforge.net/project/pymol/pymol/1.8/pymol-v1.8.6.0.tar.bz2"
@@ -10,8 +11,14 @@ HOMEPAGE="http://pymol.org"
 DOWNLOAD="https://sourceforge.net/projects/pymol/files/pymol/2/pymol-v2.1.0.tar.bz2"
 MD5SUM="ef2ab2ce11d65785ca3258b4e6982dfb"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.2.0"
+HOMEPAGE="http://pymol.org"
+DOWNLOAD="https://github.com/schrodinger/pymol-open-source/archive/v2.2.0/pymol-open-source-2.2.0.tar.gz"
+MD5SUM="aa6cde489112de7978daf377b265d748"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="python-pmw msgpack-c"
+REQUIRES="python-pmw msgpack-c glm"
 MAINTAINER="Dimitris Zlatanidis"
 EMAIL="d.zlatanidis@gmail.com"

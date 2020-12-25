@@ -3,10 +3,14 @@
 # Slackware build script for ncdu
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2009-2017  Erik W. Hanson, Minneapolis, MN, USA
 =======
 # Copyright 2009-2018  Erik W. Hanson, Minneapolis, MN, USA
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2009-2020  Erik W. Hanson, Minneapolis, MN, USA
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=ncdu
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.12}
 =======
 VERSION=${VERSION:-1.13}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.15.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

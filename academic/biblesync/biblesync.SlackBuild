@@ -2,7 +2,7 @@
 
 # Slackware build script for biblesync
 
-# Copyright (c) 2015/2018  Tim Dickson <dickson.tim@googlemail.com>
+# Copyright (c) 2015/2020  Tim Dickson <dickson.tim@googlemail.com>
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -31,7 +31,7 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=biblesync
-VERSION=${VERSION:-2.0.1}
+VERSION=${VERSION:-2.1.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -91,23 +91,18 @@ make install DESTDIR=$PKG
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-# Compress man page
-mkdir -p $PKG/usr/man/man7
-mv $PKG/usr/share/man/man7/$PRGNAM.7 $PKG/usr/man/man7/$PRGNAM.7
+mv $PKG/usr/share/man $PKG/usr/
 gzip $PKG/usr/man/man7/$PRGNAM.7
 
 #remove old man path
 rm -r $PKG/usr/share
 
-#copy over docs etc.
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a $DOCS $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
-cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
-#now to make the package
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

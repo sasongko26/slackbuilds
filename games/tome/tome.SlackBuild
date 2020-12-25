@@ -29,10 +29,14 @@
 PRGNAM=tome
 SRCNAM=t-engine4-src
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.5.5}
 =======
 VERSION=${VERSION:-1.5.8}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.5.10}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

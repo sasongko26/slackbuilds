@@ -25,10 +25,14 @@
 
 PRGNAM=global
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-6.5.7}
 =======
 VERSION=${VERSION:-6.6.2}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-6.6.5}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

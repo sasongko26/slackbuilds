@@ -28,10 +28,15 @@
 
 PRGNAM=tkdiff
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-4.2}
 =======
 VERSION=${VERSION:-4.3}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-5.1}
+SRCVERSION=$( echo $VERSION | tr . - )
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -43,11 +48,17 @@ PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # The next group of variables attempt to enable building 4.2
 TAR=${TAR:-unzip}                  #tar xvf
 SOURCE=${SOURCE:-tkdiff-4-3}       #tkdiff-unix
 TARFILE=${TARFILE:-tkdiff-4-3.zip} #$PRGNAM-$VERSION.tar.gz
+=======
+TAR=${TAR:-unzip}
+SOURCE=${SOURCE:-$PRGNAM-$SRCVERSION}
+TARFILE=${TARFILE:-$SOURCE.zip}
+>>>>>>> upstream/master
 
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 set -e
@@ -70,8 +81,8 @@ find -L . \
   -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
-mkdir -p $PKG/usr/bin
-cp -a $PRGNAM $PKG/usr/bin
+
+install -D -m 0755 $PRGNAM $PKG/usr/bin/$PRGNAM
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

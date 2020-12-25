@@ -17,7 +17,11 @@ ugene: and allows the retrieval of data from remote data sources.
 ugene:
 ugene: Home: http://ugene.net/
 <<<<<<< HEAD
+<<<<<<< HEAD
 ugene: References: /usr/doc/ugene-1.27.0/References
 =======
 ugene:
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+ugene: GitHub: https://github.com/ugeneunipro
+>>>>>>> upstream/master

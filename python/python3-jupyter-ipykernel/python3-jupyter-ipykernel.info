@@ -1,5 +1,6 @@
 PRGNAM="python3-jupyter-ipykernel"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.6.0"
 HOMEPAGE="https://jupyter.org/"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/i/ipykernel/ipykernel-4.6.0.tar.gz"
@@ -9,12 +10,19 @@ MD5SUM_x86_64=""
 REQUIRES="jupyter-notebook python3-ipython python3-jupyter_client python3-tornado"
 =======
 VERSION="4.8.2"
+=======
+VERSION="5.3.4"
+>>>>>>> upstream/master
 HOMEPAGE="https://jupyter.org/"
-DOWNLOAD="https://files.pythonhosted.org/packages/source/i/ipykernel/ipykernel-4.8.2.tar.gz"
-MD5SUM="91af54e6a4ad908ded0bed383dd03374"
+DOWNLOAD="https://files.pythonhosted.org/packages/source/i/ipykernel/ipykernel-5.3.4.tar.gz"
+MD5SUM="d9ad6a4a4235940d65300e33f541edf5"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
+<<<<<<< HEAD
 REQUIRES="python3-ipython python3-jupyter_client python3-tornado"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+REQUIRES="python3-ipython jupyter_client python3-tornado"
+>>>>>>> upstream/master
 MAINTAINER="Benjamin Trigona-Harany"
 EMAIL="slackbuilds@jaxartes.net"

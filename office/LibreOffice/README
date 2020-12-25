@@ -7,20 +7,38 @@ flowcharting application, Base, our database and database frontend,
 and Math for editing mathematics.
 
 This SlackBuild builds the entire project from its source code. In seeking a
-fully functional LibreOffice, most optional features are included by default.
-Build time environment variables that may set to vary features are as follows:
+fully functional LibreOffice, most optional features are included by default,
+using internal versions of any external software components that may be needed.
+This results in a very small number of directly required additional software
+packages.
+
+However most of this additional software is also available as SBo SlackBuilds.
+During configuration, the LibreOffice SlackBuild will detect any such packages
+that are already installed and use them in preference to building its own
+internal versions. Packages from SBo that will be use in this way are:
+    CoinMP cppunit glm libabw libcdr libcmis libe-book libeot libepubgen
+    libexttextcat libfreehand  libmspub libmwaw libnumbertext liborcus
+    libpagemaker libqxp libnumbertext libstaroffice libtommath libwps libzmf
+    lpsolve mythes postgresql qt5 valgrind ucpp unixODBC avahi
+    libetonyek xmlsec vlc
+
+Remember, these packages are not essential but entirely optional. If not found,
+LibreOffice will simply build its own internal versions.
+
+Also keep in mind that any package from the above list which is detected and
+used when building LibreOffice will most likely become a runtime dependency too
+e.g. if avahi is detected and used at build time, it will also need to be
+installed at run time.
+
+Build time environment variables that may be set to vary features are as follows:
 1. enable the experimental VLC avmedia backend (disabled by default) with:
   VLC="yes"
    This requires the vlc package (available from SBo) to be installed.
 
-2. enable avahi support (disabled by default) with:
-  AVAHI="yes"
-   This requires the avahi package (available from SBo) to be installed.
-
-3. disable kde4 support (enabled by default) with:
+2. disable kde4 support (enabled by default) with:
   KDE4="no"
 
-4. support additional languages by overriding the LOLANGS variable, whose
+3. support additional languages by overriding the LOLANGS variable, whose
    default setting is LOLANGS="de es fr id it ja nl vi zh-CN". Note that en-US
    is always added to whatever LOLANGS is set. Thus building with, for example,
       LOLANGS="de" sh LibreOffice
@@ -28,19 +46,19 @@ Build time environment variables that may set to vary features are as follows:
    Additionally, setting LOLANGS="ALL" will build in support for all available
    languages.
 
-5. A number of Java Development Kits are suitable for building LibreOffice.
-   The default JDK for this SlackBuild is openjdk. Others may be chosen by
+4. A number of Java Development Kits are suitable for building LibreOffice.
+   The default JDK for this SlackBuild is openjdk7. Others may be chosen by
    setting the JAVA environment variable when running the SlackBuild. Recognised
-   values are openjdk (the default, not explicitly required), openjdk8 and jdk
+   values are openjdk7 (the default, not explicitly required), openjdk8 and jdk
    e.g. JAVA=jdk (to use SBo jdk package with Oracle binary version). Using an
    alternate JDK will require presence of the appropriate package when building
-   LibreOffice. Since the apache-ant package is already required by openjdk,
+   LibreOffice. Since the apache-ant package is already required by openjdk7,
    hence openjdk8, its listing in the REQUIRES field is redundant in these cases.
    However it remains listed to accomodate the case of JAVA=jdk, in which the
    apache-ant package is needed to build LibreOffice.
    Finally, setting JAVA=no will build LibreOffice without any Java support.
 
-6. The number of parallel make jobs used by the LibreOffice build system defaults
+5. The number of parallel make jobs used by the LibreOffice build system defaults
    to the number of available cpu cores. If the MAKEFLAGS environment variable
    contains the -j option e.g.
        MAKEFLAGS=-j6
@@ -51,7 +69,7 @@ Build time environment variables that may set to vary features are as follows:
    which would limit building to a single make process, overriding any value set
    with the -j option in MAKEFLAGS.
 
-7. Use of ccache during building is turned off by default to save disk space (and
+6. Use of ccache during building is turned off by default to save disk space (and
    possible build failure due to lack of disk space). It may be reinstated by
    setting the USE_CCACHE environment to "yes" e.g.
        USE_CCACHE=yes sh LibreOffice.SlackBuild
@@ -72,5 +90,11 @@ to locate and open the downloaded .oxt file. The new dictionary will now appear
 in the Extension Manager.
 
 Some people have experienced difficulties building LibreOffice while a previoius
-version is still installed. It is therefore recommended that any previous version
-is removed while building LibreOffice.
+version is still installed. It is therefore recommended that any previous
+version should be removed before building LibreOffice. As well as removing any
+LibreOffice installation, it is important to also clear environment variables
+that were set by the installation i.e.
+       /sbin/removepkg LibreOffice
+       unset UNO_PATH
+       unset URE_BOOTSTRAP
+

@@ -1,7 +1,6 @@
 #!/bin/sh
-
 # Slackware build script for non
-# Copyright 2013 Klaatu @ member.fsf.org
+# Copyright 2019 Klaatu | Lawrence, NZ | Klaatu@member.fsf.org
 
 # GNU All-Permissive License
 # Copying and distribution of this file, with or without modification,
@@ -10,7 +9,7 @@
 # without any warranty.
 
 PRGNAM=non
-VERSION=${VERSION:-23092014}
+VERSION=${VERSION:-20200928}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -1,5 +1,6 @@
 PRGNAM="pyglet"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.3.0"
 HOMEPAGE="http://pyglet.readthedocs.org/en/pyglet-1.2-maintenance/"
 DOWNLOAD="https://pypi.python.org/packages/c1/71/09999c7e4ba16aa6a5f6a916bfef4bbdf6ad44454b4ede7b86da12e9c64a/pyglet-1.3.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://pyglet.readthedocs.org/en/pyglet-1.2-maintenance/"
 DOWNLOAD="https://files.pythonhosted.org/packages/9b/4b/6b023c829406f91787a81b7234d6d798e5da356d8a2ef18e64b27f89fc13/pyglet-1.3.2.tar.gz"
 MD5SUM="b3ea0d85aed911915f44ce6a14b19691"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.4.5"
+HOMEPAGE="http://pyglet.readthedocs.org/en/pyglet-1.2-maintenance/"
+DOWNLOAD="https://files.pythonhosted.org/packages/ce/5d/9b792449d0110fa1db672583f9ffa33521c6557970482b2dac4435dedaa9/pyglet-1.4.5.zip"
+MD5SUM="51cde083c4de0309185d8585b89d1a7e"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

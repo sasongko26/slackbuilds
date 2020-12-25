@@ -1,5 +1,6 @@
 PRGNAM="xawtv"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.104"
 HOMEPAGE="https://www.kraxel.org/blog/linux/xawtv/"
 DOWNLOAD="https://jaxartes.net/files/xawtv-3.104.tar.bz2"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.kraxel.org/blog/linux/xawtv/"
 DOWNLOAD="https://linuxtv.org/downloads/xawtv/xawtv-3.105.tar.bz2"
 MD5SUM="17ffe1cec52d12c37e55975613d85c1d"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.107"
+HOMEPAGE="https://www.kraxel.org/blog/linux/xawtv/"
+DOWNLOAD="https://linuxtv.org/downloads/xawtv/xawtv-3.107.tar.bz2"
+MD5SUM="3c9171aeeda7ca3eb2287f45ca7e86a9"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

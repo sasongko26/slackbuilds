@@ -3,10 +3,14 @@
 # Slackware build script for meld3
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2014-2017 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 =======
 # Copyright 2014-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2014-2019 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,10 +33,14 @@
 PRGNAM=meld3
 SRCNAM=meld
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.18.0}
 =======
 VERSION=${VERSION:-3.18.2}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.18.3}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -88,6 +96,7 @@ rm -rf $PKG/usr/share/doc/
 mv $PKG/usr/share/man $PKG/usr
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
+rm -f $PKG/usr/share/glib-2.0/schemas/gschemas.compiled
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

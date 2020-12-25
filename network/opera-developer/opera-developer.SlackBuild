@@ -3,10 +3,14 @@
 # Slackware build script for opera-developer.
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2016-2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 =======
 # Copyright 2016-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2016-2020  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=opera-developer
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-51.0.2791.0}
 =======
 VERSION=${VERSION:-55.0.2991.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-74.0.3890.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -75,7 +83,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-${VERSION}
-mkdir $PRGNAM-${VERSION}
+mkdir -p $PRGNAM-${VERSION}
 ar p $CWD/${PRGNAM}_${VERSION}_${BITS}.deb data.tar.xz | xz -d | tar -xvf- \
    --transform="s,/lib/.*-linux-gnu,/lib$LIBDIRSUFFIX," \
    --exclude="./usr/share/lintian" --exclude="./usr/share/menu" -C $PRGNAM-${VERSION}

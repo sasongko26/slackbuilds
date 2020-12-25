@@ -2,7 +2,7 @@
 
 # Slackware build script for YADIFA, Authoritative DNS server
 
-# Copyright (c) 2016, Sergey Fedosov <eleksir@gmail.com>
+# Copyright (c) 2016-2020 Sergey Fedosov <eleksir@gmail.com>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,21 +23,23 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=yadifa
-VERSION=${VERSION:-2.2.4}
-VSUFFIX=${VSUFFIX:-6924}
+VERSION=${VERSION:-2.4.0}
+VSUFFIX=${VSUFFIX:-9809}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
+SRCVERSION=$(echo $VERSION-$VSUFFIX | tr _ -)
+
 if ! grep -q "^yadifa:" /etc/group; then
-        echo "Error: $PRGNAM group (yadifa) doesn't exist."
-        echo "Try creating one with:"
+        echo "$0: Error: $PRGNAM group (yadifa) doesn't exist."
+        echo "$0: Try creating one with:"
         echo " # groupadd -g 332 yadifa"
         exit 1
 fi
 
 if ! grep -q "^yadifa:" /etc/passwd; then
-        echo "Error: $PRGNAM user (yadifa) doesn't exist."
-        echo "Try creating one with:"
+        echo "$0: Error: $PRGNAM user (yadifa) doesn't exist."
+        echo "$0: Try creating one with:"
         echo " # useradd -u 332 -d /var/lib/yadifa -g yadifa -s /bin/false yadifa"
         exit 1
 fi
@@ -69,14 +71,24 @@ else
   LIBDIRSUFFIX=""
 fi
 
+USESTATIC=${USESTATIC:-no}
+if [ "$USESTATIC" = "yes" ]; then
+  SHARED=no
+  STATIC=yes
+else
+  SHARED=yes
+  STATIC=no
+fi
+
+
 set -e
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf yadifa-$VERSION-${VSUFFIX}
-tar xvf $CWD/yadifa-$VERSION-${VSUFFIX}.tar.gz || tar xvf  $CWD/$VERSION-${VSUFFIX}.tar.gz
-cd yadifa-$VERSION-${VSUFFIX}
+rm -rf yadifa-$SRCVERSION
+tar xvf $CWD/yadifa-$SRCVERSION.tar.gz || tar xvf  $CWD/$SRCVERSION.tar.gz
+cd yadifa-$SRCVERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -87,15 +99,14 @@ find -L . \
 ./configure \
   --prefix=/usr \
   --sysconfdir=/etc/yadifa \
-  --libdir=/usr/lib${LIBDIRSUFFIX}/yadifa \
+  --libdir=/usr/lib/yadifa \
   --localstatedir=/var/lib/yadifa \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --build=$ARCH-slackware-linux \
   --with-logdir=/var/log/yadifa \
   --enable-silent-rules \
-  --enable-shared=yes \
-  --enable-static=no \
+  --enable-shared=$SHARED \
+  --enable-static=$STATIC \
   --enable-messages \
   --enable-ctrl \
   --build=$ARCH-slackware-linux
@@ -106,18 +117,16 @@ make install DESTDIR=$PKG
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-find $PKG/usr/man -type f -exec gzip -9 {} \;
-for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
-
+find $PKG/usr/man -type f -exec gzip -9 {} \+
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 install --mode=644 $CWD/$PRGNAM.SlackBuild $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
-cat $CWD/slack-desc > $PKG/install/slack-desc
-cat $CWD/doinst.sh > $PKG/install/doinst.sh
+install --mode=644 $CWD/slack-desc $PKG/install/slack-desc
+install --mode=755 $CWD/doinst.sh  $PKG/install/doinst.sh
 
 mkdir -p $PKG/etc/rc.d
-install --mode=644 $CWD/rc.yadifa  $PKG/etc/rc.d/rc.yadifa.new
+install --mode=755 $CWD/rc.yadifa  $PKG/etc/rc.d/rc.yadifa.new
 
 mkdir -p $PKG/var/run/yadifa
 chown yadifa:yadifa $PKG/var/run/yadifa
@@ -140,4 +149,4 @@ install --mode=644 $CWD/yadifa.logrotate $PKG/etc/logrotate.d/yadifa.new
 rm -rf $PKG/etc/yadifa/yadifad.conf
 
 cd $PKG
-/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-${VERSION}-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
+/sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

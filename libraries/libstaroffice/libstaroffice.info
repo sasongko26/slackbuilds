@@ -1,5 +1,6 @@
 PRGNAM="libstaroffice"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.0.4"
 HOMEPAGE="https://github.com/fosnola/libstaroffice"
 DOWNLOAD="https://github.com/fosnola/libstaroffice/releases/download/0.0.4/libstaroffice-0.0.4.tar.xz"
@@ -10,12 +11,22 @@ HOMEPAGE="https://github.com/fosnola/libstaroffice"
 DOWNLOAD="https://github.com/fosnola/libstaroffice/releases/download/0.0.6/libstaroffice-0.0.6.tar.xz"
 MD5SUM="3db5ccd618b67df20adc9555fe89560a"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.0.7"
+HOMEPAGE="https://github.com/fosnola/libstaroffice"
+DOWNLOAD="https://github.com/fosnola/libstaroffice/releases/download/0.0.7/libstaroffice-0.0.7.tar.xz"
+MD5SUM="340ace6dd1c0f95691a7dc554383c404"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
 MAINTAINER="Hunter Sezen"
 <<<<<<< HEAD
+<<<<<<< HEAD
 EMAIL="ovariegata@yahoo.com"
 =======
 EMAIL="orbea@fredslev.dk"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+EMAIL="orbea@riseup.net"
+>>>>>>> upstream/master

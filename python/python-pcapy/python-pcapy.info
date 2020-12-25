@@ -1,5 +1,6 @@
 PRGNAM="python-pcapy"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.11.1"
 HOMEPAGE="https://www.coresecurity.com/corelabs-research/open-source-tools/pcapy"
 DOWNLOAD="https://github.com/CoreSecurity/pcapy/archive/0.11.1/pcapy-0.11.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.coresecurity.com/corelabs-research/open-source-tools/pcapy
 DOWNLOAD="https://github.com/CoreSecurity/pcapy/archive/0.11.3/pcapy-0.11.3.tar.gz"
 MD5SUM="a52f104c3dcadfb40275a48794634557"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.11.4"
+HOMEPAGE="https://www.coresecurity.com/corelabs-research/open-source-tools/pcapy"
+DOWNLOAD="https://github.com/CoreSecurity/pcapy/archive/0.11.4/pcapy-0.11.4.tar.gz"
+MD5SUM="ccc0ece6114a095800c8764f85451677"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

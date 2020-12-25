@@ -3,10 +3,14 @@
 # Slackware build script for thin-provisioning-tools
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2016-2017 Marek Wodzinski
 =======
 # Copyright 2016-2018 Marek Wodzinski
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2016-2020 Marek Wodzinski
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,10 +33,14 @@
 
 PRGNAM=thin-provisioning-tools
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.7.1}
 =======
 VERSION=${VERSION:-0.7.6}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.9.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

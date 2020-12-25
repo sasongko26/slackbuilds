@@ -1,5 +1,6 @@
 PRGNAM="exim"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.89.1"
 HOMEPAGE="http://www.exim.org/"
 DOWNLOAD="ftp://ftp.exim.org/pub/exim/exim4/exim-4.89.1.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.exim.org/"
 DOWNLOAD="https://ftp.exim.org/pub/exim/exim4/exim-4.91.tar.xz"
 MD5SUM="d10144ed96314eb12a2ab40bc70d1ef2"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.94"
+HOMEPAGE="https://www.exim.org/"
+DOWNLOAD="https://ftp.exim.org/pub/exim/exim4/exim-4.94.tar.xz"
+MD5SUM="4d4bfd56e2e9f25ceab23f623ed2f84a"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="%README%"

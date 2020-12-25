@@ -1,5 +1,6 @@
 PRGNAM="python-m2r"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.1.12"
 HOMEPAGE="https://pypi.python.org/pypi/m2r"
 DOWNLOAD="https://pypi.python.org/packages/a0/95/7273d54664e74c3100d07206fe6b30247be046b39676972fc90ae04376a1/m2r-0.1.12.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://pypi.python.org/pypi/m2r"
 DOWNLOAD="https://files.pythonhosted.org/packages/af/5d/23146b34b38632a04ec6a176e8d2b7d138dce373a1af5efd91ea1515d858/m2r-0.1.14.tar.gz"
 MD5SUM="37da7a2dbb9412788ca09dad7d54c97a"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.2.1"
+HOMEPAGE="https://pypi.python.org/pypi/m2r"
+DOWNLOAD="https://files.pythonhosted.org/packages/source/m/m2r/m2r-0.2.1.tar.gz"
+MD5SUM="8bdb45c19e2b59bb5ffb9a0348e81ad8"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="docutils mistune"

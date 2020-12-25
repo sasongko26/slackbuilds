@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=golly
+Name=Golly
 Type=Application
-Comment=cellular automata simulator
+Comment=Cellular Automata Simulator
 Terminal=false
-Exec=golly
+Exec=/usr/games/golly
 Icon=golly
 Categories=Game;

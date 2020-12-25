@@ -1,5 +1,6 @@
 PRGNAM="prosystem-libretro"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.01.24_1cf5472"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/prosystem-libretro-2017.01.24_1cf5472.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/prosystem-libretro-2017.12.06_b8e9241.tar.xz"
 MD5SUM="f1cca3b46d5425a8550dd456793782da"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.09.29_247d5f2"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/prosystem-libretro-2018.09.29_247d5f2.tar.xz"
+MD5SUM="1e44cac327e0235df0e20b57f9790b69"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"

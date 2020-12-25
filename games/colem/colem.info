@@ -1,5 +1,6 @@
 PRGNAM="colem"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.1"
 HOMEPAGE="http://fms.komkon.org/ColEm/"
 DOWNLOAD="http://urchlay.naptime.net/~urchlay/src/ColEm41-Source.zip"
@@ -10,6 +11,12 @@ HOMEPAGE="http://fms.komkon.org/ColEm/"
 DOWNLOAD="http://urchlay.naptime.net/~urchlay/src/ColEm46-Source.zip"
 MD5SUM="ef991440e17ce46483ea3152acd3c98f"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="5.4"
+HOMEPAGE="http://fms.komkon.org/ColEm/"
+DOWNLOAD="https://slackware.uk/~urchlay/src/ColEm54-Source.zip"
+MD5SUM="f46008f7d4392d3070d32b819a113ad9"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -3,10 +3,14 @@
 # Slackware build script for ddrescue-gui.
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2015-2017 Edinaldo P. Silva, Rio de Janeiro, Brazil.
 =======
 # Copyright 2015-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2015-2020  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=ddrescue-gui
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.7.1}
 =======
 VERSION=${VERSION:-1.7.2}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.0.2}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -65,10 +73,14 @@ fi
 set -e
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 SRCVER=${SRCVER:-1.7.1~otherdistro-0ubuntu1~ppa1}
 =======
 SRCVER=${SRCVER:-1.7.2~otherdistro~update1-0ubuntu1~ppa1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+SRCVER=${SRCVER:-2.0.2~otherdistro-0ubuntu1~ppa1}
+>>>>>>> upstream/master
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
@@ -86,17 +98,23 @@ find -L . \
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-DATA="GetDevInfo Tests Tools images other AuthenticationDialog.py DDRescue-GUI.py Tests.py"
+DATA="Tests Tools docs images other DDRescue_GUI.py tests.py"
 
 mkdir -p $PKG/usr/share/$PRGNAM
-cp -a $DATA $PKG/usr/share/$PRGNAM
-install -D -m644 ddrescue-gui.desktop $PKG/usr/share/applications/ddrescue-gui.desktop
-install -D -m644 ddrescue-gui.png $PKG/usr/share/pixmaps/ddrescue-gui.png
+cp -r $DATA $PKG/usr/share/$PRGNAM
+
+install -Dm644 org.hamishmb.ddrescue-gui.policy $PKG/usr/share/polkit-1/actions/org.hamishmb.ddrescue-gui.policy
+install -Dm644 $CWD/ddrescue-gui.desktop $PKG/usr/share/applications/ddrescue-gui.desktop
+install -Dm644 ddrescue-gui.png $PKG/usr/share/pixmaps/ddrescue-gui.png
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp debian/changelog $PKG/usr/doc/$PRGNAM-$VERSION/ChangeLog
 cp debian/copyright $PKG/usr/doc/$PRGNAM-$VERSION/copyright
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
+
+install -Dm644 $CWD/ddrescue-gui.1 $PKG/usr/man/man1/ddrescue-gui.1
+find $PKG/usr/man -type f -exec gzip -9 {} \;
+for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

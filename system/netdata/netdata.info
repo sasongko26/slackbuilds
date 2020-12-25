@@ -1,5 +1,6 @@
 PRGNAM="netdata"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.8.0"
 HOMEPAGE="https://github.com/firehol/netdata"
 DOWNLOAD="https://github.com/firehol/netdata/archive/v1.8.0/netdata-1.8.0.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://github.com/firehol/netdata"
 DOWNLOAD="https://github.com/firehol/netdata/archive/v1.10.0/netdata-1.10.0.tar.gz"
 MD5SUM="9808206b2bd433f63f1697854a61d555"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.26.0"
+HOMEPAGE="https://github.com/netdata/netdata"
+DOWNLOAD="https://github.com/netdata/netdata/archive/v1.26.0/netdata-1.26.0.tar.gz"
+MD5SUM="c273bed113784f0c9479a432679ec91b"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="PyYAML"
+REQUIRES="PyYAML libuv"
 MAINTAINER="Willy Sudiarto Raharjo"
 EMAIL="willysr@slackbuilds.org"

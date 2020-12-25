@@ -1,5 +1,6 @@
 PRGNAM="Pyro4"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.63"
 HOMEPAGE="http://pythonhosted.org/Pyro4/"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/p/pyro4/Pyro4-4.63.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://pythonhosted.org/Pyro4/"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/p/pyro4/Pyro4-4.72.tar.gz"
 MD5SUM="b3f511b02ead53eb35dab165e3a2bd4f"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.77"
+HOMEPAGE="https://pythonhosted.org/Pyro4/"
+DOWNLOAD="https://files.pythonhosted.org/packages/source/p/pyro4/Pyro4-4.77.tar.gz"
+MD5SUM="21f015ae93cf9ea2bbbc418a2267e9fb"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python-serpent"

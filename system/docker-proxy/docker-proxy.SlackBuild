@@ -3,10 +3,14 @@
 # Slackware build script for docker-proxy
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017 Audrius Kažukauskas <audrius@neutrino.lt>
 =======
 # Copyright 2017-2018 Audrius Kažukauskas <audrius@neutrino.lt>
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-2020 Audrius Kažukauskas <audrius@neutrino.lt>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,12 +32,17 @@
 
 PRGNAM=docker-proxy
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-20170120_7b2b1fe}
 GITHASH=${GITHASH:-7b2b1feb1de4817d522cc372af149ff48d25028e}
 =======
 VERSION=${VERSION:-20180412_c15b372}
 GITHASH=${GITHASH:-c15b372ef22125880d378167dde44f4b134e1a77}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-20200102_9fd385b}
+GITHASH=${GITHASH:-9fd385be8302dbe1071a3ce124891893ff27f90f}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

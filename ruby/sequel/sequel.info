@@ -1,5 +1,6 @@
 PRGNAM="sequel"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="5.0.0"
 HOMEPAGE="http://sequel.jeremyevans.net/"
 DOWNLOAD="http://rubygems.org/downloads/sequel-5.0.0.gem"
@@ -10,6 +11,12 @@ HOMEPAGE="http://sequel.jeremyevans.net/"
 DOWNLOAD="https://rubygems.org/downloads/sequel-5.8.0.gem"
 MD5SUM="f0767a99eaebc40494599d3267c8de94"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="5.31.0"
+HOMEPAGE="http://sequel.jeremyevans.net/"
+DOWNLOAD="https://rubygems.org/downloads/sequel-5.31.0.gem"
+MD5SUM="ad2284309ed66c9fb5cc99ac28d557d3"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

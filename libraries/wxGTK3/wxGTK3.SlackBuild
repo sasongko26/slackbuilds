@@ -3,10 +3,14 @@
 # Slackware build script for wxGTK3
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2013-2017 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 =======
 # Copyright 2013-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2013-2020 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=wxGTK3
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.0.3.1}
 BUILD=${BUILD:-2}
 =======
 VERSION=${VERSION:-3.0.4}
+=======
+VERSION=${VERSION:-3.0.5}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}
@@ -134,8 +142,13 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 # Now let's fix the broken symlink created by the package
-ln -fs /usr/lib${LIBDIRSUFFIX}/wx/config/gtk2-unicode-3.0 \
+if [ "${STATIC:-no}" = "yes" ]; then
+ln -fs /usr/lib${LIBDIRSUFFIX}/wx/config/gtk2-unicode-static-3.0 \
+        $PKG/usr/bin/wx-config
+else
+  ln -fs /usr/lib${LIBDIRSUFFIX}/wx/config/gtk2-unicode-3.0 \
        $PKG/usr/bin/wx-config
+fi
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a docs/* $PKG/usr/doc/$PRGNAM-$VERSION

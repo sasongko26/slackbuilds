@@ -3,7 +3,7 @@
 # Slackware build script for youtube-dl
 # Copyright 2010 GPLeo <gpleomail@gmail.com>
 # Copyright 2010-2012 byteframe <byteframe@gmail.com>
-# Copyright 2015-2018  Dimitris Zlatanidis  Orestiada, Greece
+# Copyright 2015-2020  Dimitris Zlatanidis  Orestiada, Greece
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,11 +25,15 @@
 
 PRGNAM=youtube-dl
 <<<<<<< HEAD
+<<<<<<< HEAD
 SRCNAM=$(echo $PRGNAM | tr - _)
 VERSION=${VERSION:-2017.11.15}
 =======
 VERSION=${VERSION:-2018.06.02}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2020.09.14}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -67,10 +71,15 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
 <<<<<<< HEAD
+<<<<<<< HEAD
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz || tar xvf $CWD/$SRCNAM-$VERSION.tar.gz
 =======
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+mkdir $PRGNAM-$VERSION 
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz -C $PRGNAM-$VERSION --strip-components 1
+>>>>>>> upstream/master
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
@@ -82,7 +91,6 @@ find -L . \
 # setup.py patch
 patch -p1 < $CWD/setup.patch
 
-make
 python setup.py install --root=$PKG
 
 # Python 3 support.
@@ -90,18 +98,11 @@ if $(python3 -c 'import sys' 2>/dev/null); then
     python3 setup.py install --root=$PKG
 fi
 
-# enable bash and fish completion file
-chmod 0755 $PKG/etc/bash_completion.d/${PRGNAM}.bash-completion
-chmod 0755 $PKG/etc/fish/completions/${PRGNAM}.fish
-
-# install man page
-mkdir -p $PKG/usr/man/man1
-install -D -m0644 $CWD/$PRGNAM.1 $PKG/usr/man/man1/$PRGNAM.1
-gzip -9 $PKG/usr/man/man1/$PRGNAM.1
+find $PKG/usr/man -type f -exec gzip -9 {} \;
+for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a README.md LICENSE AUTHORS ${PRGNAM}.plugin.zsh docs/*.md \
-    $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a README.md LICENSE AUTHORS ChangeLog $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

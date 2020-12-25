@@ -13,6 +13,7 @@ optional packages are not available at build time, vlc will generally
 continue to build with a reduced feature set.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 Support for OpenCV is temporarily disabled by default due to build error.
 However it is possible to include opencv support using the somewhat
@@ -21,6 +22,15 @@ be explicitly enabled by setting the the OPENCV environment variable
 to "yes" e.g.
   OPENCV=yes sh vlc.SlackBuild
 This requires the opencv-legacy package to be installed at build time.
+=======
+Support for OpenCV is supported using either the "default" opencv
+package or the opencv-legacy package (version 3.1.0) from SBo. Either
+package will be detected and used if already installed. If opencv support
+is not wanted despite the presence of opencv or opencv-legacy, it can be
+explicitly disabled by setting the the OPENCV environment variable
+to "no" e.g.
+  OPENCV=no sh vlc.SlackBuild
+>>>>>>> upstream/master
 
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 Support for Wayland is a special case. It is not supported by default
@@ -31,11 +41,18 @@ This support also requires additional SBo packages wayland-egl and
 wayland-protocols. It also depends on the qt5 package having been
 built with wayland support i.e. wayland package was installed when the
 qt5 package was built.
- 
-The vsxu SlackBuild is now optional for x86 machines; removed from
-REQUIRES since it does not compile on arm machines at the moment.
+
+By default, the vlc runtime is not able to be run as root. This
+security feature may be side stepped by building vlc with the RUNASROOT
+environment variable set e.g.
+  RUNASROOT=yes sh vlc.SlackBuild
+
+Playing of AV1 encoded video is supported when either of SBo's
+multimedia/aom or libraries/dav1d packages is detected when vlc is built.
+One of these is expected to become required in a future release.
 
 Please advise the maintainer to suggest support for any further options.
+
 
 *NOTES*
 - the qt4 interface seems not to be working ATM so the qt5 one is

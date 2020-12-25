@@ -13,10 +13,14 @@ slibtool: libtool, written in C. slibtool is designed to be a clean, fast,
 slibtool: easy-to-use written in C.
 slibtool:
 <<<<<<< HEAD
+<<<<<<< HEAD
 slibtool: Homepage: http://midipix.org/
 =======
 slibtool: Homepage: https://midipix.org/
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+slibtool: Homepage: https://git.foss21.org/slibtool
+>>>>>>> upstream/master
 slibtool:
 slibtool:
 slibtool:

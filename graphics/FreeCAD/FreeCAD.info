@@ -1,5 +1,6 @@
 PRGNAM="FreeCAD"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.16"
 HOMEPAGE="https://www.freecadweb.org/"
 DOWNLOAD="https://github.com/FreeCAD/FreeCAD/archive/0.16.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.freecadweb.org/"
 DOWNLOAD="https://github.com/FreeCAD/FreeCAD/archive/0.17/FreeCAD-0.17.tar.gz"
 MD5SUM="fd736abfd79bc37374ea8e490d3a8374"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.17.13541"
+HOMEPAGE="https://www.freecadweb.org/"
+DOWNLOAD="https://github.com/FreeCAD/FreeCAD/archive/9948ee4/FreeCAD-9948ee4f1570df9216862a79705afb367b2c6ffb.tar.gz"
+MD5SUM="1cc16667376a7c9d981319144b857e46"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="OpenCASCADE Pivy matplotlib pyside pyside-tools shiboken xerces-c"

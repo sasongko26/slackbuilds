@@ -16,8 +16,12 @@ gtk-sharp:
 gtk-sharp:
 gtk-sharp:
 <<<<<<< HEAD
+<<<<<<< HEAD
 gtk-sharp: Website: http://www.mono-project.com/GtkSharp
 =======
 gtk-sharp: Website: http://www.mono-project.com/docs/gui/gtksharp/
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+gtk-sharp: Website: https://www.mono-project.com/docs/gui/gtksharp/
+>>>>>>> upstream/master
 gtk-sharp:

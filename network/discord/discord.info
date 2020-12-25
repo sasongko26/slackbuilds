@@ -1,5 +1,6 @@
 PRGNAM="discord"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.0.2"
 HOMEPAGE="https://discordapp.com"
 DOWNLOAD="UNSUPPORTED"
@@ -14,6 +15,14 @@ MD5SUM=""
 DOWNLOAD_x86_64="https://dl.discordapp.net/apps/linux/0.0.5/discord-0.0.5.deb"
 MD5SUM_x86_64="9ff20d3e4495184e438fee205d0bd3ec"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.0.13"
+HOMEPAGE="https://discordapp.com"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://dl.discordapp.net/apps/linux/0.0.13/discord-0.0.13.deb"
+MD5SUM_x86_64="dea4e1aec0d8bad0938e22dd8d8e8049"
+>>>>>>> upstream/master
 REQUIRES="libc++"
 MAINTAINER="Jeremy Hansen"
 EMAIL="jebrhansen+SBo@gmail.com"

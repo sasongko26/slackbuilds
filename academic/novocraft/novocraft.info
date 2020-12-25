@@ -1,5 +1,6 @@
 PRGNAM="novocraft"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.08.00"
 HOMEPAGE="http://www.novocraft.com/products/novoalign/"
 DOWNLOAD="UNSUPPORTED"
@@ -14,6 +15,14 @@ MD5SUM=""
 DOWNLOAD_x86_64="http://www.novocraft.com/support/download/download.php?filename=V3.08.02/novocraftV3.08.02.Linux3.10.0.tar.gz"
 MD5SUM_x86_64="239dff17fc56c2d2bc984e997dc3f924"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.09.03"
+HOMEPAGE="http://www.novocraft.com/products/novoalign/"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="http://www.novocraft.com/support/download/download.php?filename=V3.09.03/novocraftV3.09.03.Linux3.10.0.tar.gz"
+MD5SUM_x86_64="84c2dd55f8b469f4579dcb6951bc4069"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="Rob van Nues"
-EMAIL="rvnues at tesco {dot} net"
+EMAIL="sborg63@disroot.org"

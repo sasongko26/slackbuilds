@@ -2,7 +2,7 @@
 
 # Slackware build script for libixion
 
-# Copyright 2015-2017 Hunter Sezen California, USA
+# Copyright 2015-2020 Hunter Sezen California, USA
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,10 +24,14 @@
 
 PRGNAM=libixion
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.12.2}
 BUILD=${BUILD:-2}
 =======
 VERSION=${VERSION:-0.13.0}
+=======
+VERSION=${VERSION:-0.16.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}
@@ -74,6 +78,13 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+# Fix build with clang.
+# https://gitlab.com/ixion/ixion/-/merge_requests/31
+# https://gitlab.com/ixion/ixion/commit/1992b8ab9c7765b8da06b6054bb3c0ab990c62f7
+sed -i 's/nullptr_t/std::nullptr_t/' src/libixion/model_context.cpp
+
+autoreconf -fi
+
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
@@ -85,11 +96,11 @@ CXXFLAGS="$SLKCFLAGS" \
 make
 make install DESTDIR=$PKG
 
-find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" |
+  grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a AUTHORS ChangeLog LICENSE README $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a AUTHORS LICENSE $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

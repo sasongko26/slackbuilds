@@ -1,5 +1,6 @@
 PRGNAM="perl-Text-CSV_XS"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.31"
 HOMEPAGE="https://metacpan.org/pod/Text::CSV_XS"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.31.tgz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://metacpan.org/pod/Text::CSV_XS"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.35.tgz"
 MD5SUM="f32c18e86a8cc85c268e61e045a969ab"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.38"
+HOMEPAGE="https://metacpan.org/pod/Text::CSV_XS"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/H/HM/HMBRAND/Text-CSV_XS-1.38.tgz"
+MD5SUM="b3bf4096cc2edce38add5fe63216a184"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

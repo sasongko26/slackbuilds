@@ -2,7 +2,7 @@
 
 # Slackware build script for LAPACKE
 
-# Copyright 2016-2017 Kyle Guinn <elyk03@gmail.com>, USA
+# Copyright 2016-2020 Kyle Guinn <elyk03@gmail.com>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,10 +25,14 @@
 PRGNAM=lapacke
 SRCNAM=lapack
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.7.1}
 =======
 VERSION=${VERSION:-3.8.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.9.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -42,7 +46,7 @@ fi
 
 CWD=$(pwd)
 TMP=${TMP:-/tmp/SBo}
-PKG=$TMP/package-$PRGNAM
+PKG=$TMP/package-$PRGNAM-$VERSION
 OUTPUT=${OUTPUT:-/tmp}
 
 DOCS="LAPACKE/LICENSE LAPACKE/README DOCS/lapacke.pdf"
@@ -85,6 +89,7 @@ cd shared
     -DCMAKE_VERBOSE_MAKEFILE=TRUE \
     -DUSE_OPTIMIZED_LAPACK=ON \
     -DBUILD_LAPACKE=ON \
+    -DBUILD_DEPRECATED=ON \
     -DBUILD_SHARED_LIBS=ON \
     -DCMAKE_SKIP_RPATH=YES \
     ..
@@ -122,6 +127,7 @@ if [ "${STATIC:-no}" != "no" ]; then
       -DCMAKE_VERBOSE_MAKEFILE=TRUE \
       -DUSE_OPTIMIZED_LAPACK=ON \
       -DBUILD_LAPACKE=ON \
+      -DBUILD_DEPRECATED=ON \
       ..
     make
     make install/strip DESTDIR=$PKG

@@ -1,5 +1,6 @@
 PRGNAM="beetle-saturn-libretro"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.01.24_bb5d0c1"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="UNSUPPORTED"
@@ -8,12 +9,15 @@ DOWNLOAD_x86_64="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretr
 MD5SUM_x86_64="fffd151e0ea5446c834a602911c5aaff"
 =======
 VERSION="2017.12.20_a0a6dad"
+=======
+VERSION="2018.07.20_1983713"
+>>>>>>> upstream/master
 HOMEPAGE="https://www.libretro.com/"
-DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/beetle-saturn-libretro-2017.12.20_a0a6dad.tar.xz"
-MD5SUM="c08dea5a495204d0cc98556e7e891006"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/beetle-saturn-libretro-2018.07.20_1983713.tar.xz"
+MD5SUM="92c6614a0a7754756febb25d47aed43b"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES="RetroArch"
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"

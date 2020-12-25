@@ -1,5 +1,6 @@
 PRGNAM="qmmp-plugin-pack"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.10.3"
 HOMEPAGE="http://qmmp.ylsoftware.com/plugins.php"
 DOWNLOAD="http://qmmp.ylsoftware.com/files/plugins/qmmp-plugin-pack-0.10.3.tar.bz2"
@@ -10,6 +11,12 @@ HOMEPAGE="http://qmmp.ylsoftware.com/plugins.php"
 DOWNLOAD="http://qmmp.ylsoftware.com/files/plugins/qmmp-plugin-pack-0.11.1.tar.bz2"
 MD5SUM="086fd165355ea63252b14590cf757166"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.12.2"
+HOMEPAGE="http://qmmp.ylsoftware.com/plugins.php"
+DOWNLOAD="http://qmmp.ylsoftware.com/files/plugins/qmmp-plugin-pack-0.12.2.tar.bz2"
+MD5SUM="078d061572560591f6bd2b85b002d54d"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="qmmp"

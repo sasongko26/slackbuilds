@@ -1,5 +1,6 @@
 PRGNAM="nvidia-kernel"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="384.90"
 HOMEPAGE="http://www.nvidia.com"
 DOWNLOAD="https://download.nvidia.com/XFree86/Linux-x86/384.90/NVIDIA-Linux-x86-384.90.run"
@@ -14,6 +15,14 @@ MD5SUM="b5c859cf7d61dc90af93d21a7520f30f"
 DOWNLOAD_x86_64="https://download.nvidia.com/XFree86/Linux-x86_64/390.59/NVIDIA-Linux-x86_64-390.59.run"
 MD5SUM_x86_64="38cbf0033177bb3ce2c60459cdd128e7"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="450.80.02"
+HOMEPAGE="http://www.nvidia.com"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://download.nvidia.com/XFree86/Linux-x86_64/450.80.02/NVIDIA-Linux-x86_64-450.80.02.run"
+MD5SUM_x86_64="c68b3500fb5ceb17a0fcebcbb143dad8"
+>>>>>>> upstream/master
 REQUIRES=""
-MAINTAINER="Edward W. Koenig"
-EMAIL="kingbeowulf@gmail.com"
+MAINTAINER="Lenard Spencer"
+EMAIL="lenardrspencer@gmail.com"

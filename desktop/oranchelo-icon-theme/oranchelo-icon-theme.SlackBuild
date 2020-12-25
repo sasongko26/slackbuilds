@@ -2,7 +2,7 @@
 #
 # Slackware build script for oranchelo-icon-theme.
 #
-# Copyright 2016-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+# Copyright 2016-2020  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +23,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM="oranchelo-icon-theme"
-VERSION=${VERSION:-0.7.7}
+VERSION=${VERSION:-0.8.0.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -50,11 +50,11 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 mkdir -p $PKG/usr/share/icons
-cp -r Oranchelo Oranchelo-Beka Oranchelo-Classic-Folders Oranchelo-Green \
-  $PKG/usr/share/icons/
+cp -r Oranchelo Oranchelo-Beka Oranchelo-Classic-Folders \
+     Oranchelo-Green oranchelo-light $PKG/usr/share/icons/
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp Authors Changelog LICENSE README.md $PKG/usr/doc/$PRGNAM-$VERSION
+cp Authors LICENSE README.md $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
@@ -62,4 +62,11 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
+# 20200407 bkw: makepkg's symlink search and doinst.sh creation doesn't
+# scale well. This makes the build complete much faster, and create an
+# identical doinst.sh.
+find . -type l \
+  -printf '( cd %h ; rm -rf %f )\n( cd %h ; ln -sf %l %f )\n' -delete | \
+  sed 's,cd \./,cd ,' >> $PKG/install/doinst.sh
+
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

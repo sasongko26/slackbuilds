@@ -2,7 +2,8 @@
 
 # Slackware build script for cwm
 
-# Copyright 2014-2015 Leonard Schmidt <lems@gmx.net>
+# Copyright 2014-2015 Leonard Schmidt <email removed>
+# Copyright 2018 B. Watson <yalhcru@gmail.com>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -22,12 +23,26 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# 20201020 bkw: update for v6.7.
+# 20200221 bkw: update for v6.6.
+
+# 20180914 bkw:
+# - actually use SLKCFLAGS (BUILD=2).
+# - minor script simplification/cleanup.
+# - switch to github download link for ease of version tracking.
+
+# 20180802 bkw: take over maintenance, no script changes.
+
 PRGNAM=cwm
+<<<<<<< HEAD
 <<<<<<< HEAD
 VERSION=${VERSION:-6.2}
 =======
 VERSION=${VERSION:-6.3}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-6.7}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -64,27 +79,23 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$VERSION.tar.gz || tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
- -o -perm 511 \) -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
- -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+find -L .  -perm /111 -a \! -perm 755 -a -exec chmod 755 {} \+ -o \
+        \! -perm /111 -a \! -perm 644 -a -exec chmod 644 {} \+
 
-make PREFIX=/usr \
-MANPREFIX=/usr/man \
-DESTDIR="$PKG" \
-install
+sed -i "s,-O2,$SLKCFLAGS," Makefile
 
-install -m 0755 -D $CWD/xinitrc.cwm $PKG/etc/X11/xinit/xinitrc.cwm
+make \
+  PREFIX=/usr \
+  MANPREFIX=/usr/man \
+  DESTDIR="$PKG" \
+  install
 
-find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
-
-find $PKG/usr/man -type f -exec gzip -9 {} \;
-for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
+strip $PKG/usr/bin/$PRGNAM
+gzip -9 $PKG/usr/man/man?/*.?
+install -m 0755 -D $CWD/xinitrc.$PRGNAM $PKG/etc/X11/xinit/xinitrc.$PRGNAM
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a README $PKG/usr/doc/$PRGNAM-$VERSION

@@ -1,5 +1,6 @@
 PRGNAM="textadept"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="9.4"
 HOMEPAGE="https://foicica.com/textadept/"
 DOWNLOAD="https://foicica.com/textadept/download/textadept_9.4.i386.tgz"
@@ -14,6 +15,14 @@ MD5SUM="e6dd70862367f6b8226779a6d5f22a85"
 DOWNLOAD_x86_64="https://foicica.com/textadept/download/textadept_9.6.x86_64.tgz"
 MD5SUM_x86_64="0078223fed7a75dcc29e7583e6adf536"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="10.8"
+HOMEPAGE="https://foicica.com/textadept/"
+DOWNLOAD="https://foicica.com/textadept/download/textadept_10.8.i386.tgz"
+MD5SUM="47d24dd2416b8f4ee000fc945afbf80e"
+DOWNLOAD_x86_64="https://foicica.com/textadept/download/textadept_10.8.x86_64.tgz"
+MD5SUM_x86_64="69cccf0e9de7f005212ff5d7aa3c0e0e"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="Brenton Earl"
 EMAIL="brent@exitstatusone.com"

@@ -1,5 +1,6 @@
 PRGNAM="libreoffice-helppack"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="5.4.3"
 HOMEPAGE="http://www.libreoffice.org"
 DOWNLOAD="http://download.documentfoundation.org/libreoffice/stable/5.4.3/rpm/x86/LibreOffice_5.4.3_Linux_x86_rpm_helppack_en-US.tar.gz"
@@ -14,6 +15,14 @@ MD5SUM="af6460295f0d84ee01277eaea23d97ef"
 DOWNLOAD_x86_64="https://download.documentfoundation.org/libreoffice/stable/6.0.4/rpm/x86_64/LibreOffice_6.0.4_Linux_x86-64_rpm_helppack_en-US.tar.gz"
 MD5SUM_x86_64="e53b84980098d787928ccee7cd9c82de"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="6.2.8.2"
+HOMEPAGE="https://www.libreoffice.org"
+DOWNLOAD="https://downloadarchive.documentfoundation.org/libreoffice/old/6.2.8.2/rpm/x86/LibreOffice_6.2.8.2_Linux_x86_rpm_helppack_en-US.tar.gz"
+MD5SUM="49d2053569e09f1069ba100a073110d9"
+DOWNLOAD_x86_64="https://downloadarchive.documentfoundation.org/libreoffice/old/6.2.8.2/rpm/x86_64/LibreOffice_6.2.8.2_Linux_x86-64_rpm_helppack_en-US.tar.gz"
+MD5SUM_x86_64="dd505c6bd07187996a18d09f90e6432c"
+>>>>>>> upstream/master
 REQUIRES="libreoffice"
 MAINTAINER="Willy Sudiarto Raharjo"
 EMAIL="willysr@slackbuilds.org"

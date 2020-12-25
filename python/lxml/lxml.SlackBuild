@@ -3,10 +3,14 @@
 # Slackware build script for lxml
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2009-2017 Larry Hajali <larryhaja[at]gmail[dot]com>
 =======
 # Copyright 2009-2018 Larry Hajali <larryhaja[at]gmail[dot]com>
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2009-2019 Larry Hajali <larryhaja[at]gmail[dot]com>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=lxml
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.8.0}
 =======
 VERSION=${VERSION:-4.2.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-4.4.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -73,13 +81,11 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-python setup.py build --with-unicode-strings
-python setup.py install --skip-build --root=$PKG
+python2 setup.py build --with-unicode-strings
+python2 setup.py install --skip-build --root=$PKG
 
-if [ "${PYTHON3:-no}" == "yes" ]; then
-  python3 setup.py build --with-unicode-strings
-  python3 setup.py install --skip-build --root=$PKG
-fi
+python3 setup.py build --with-unicode-strings
+python3 setup.py install --skip-build --root=$PKG
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

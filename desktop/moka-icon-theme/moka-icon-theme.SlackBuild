@@ -3,10 +3,15 @@
 # Slackware build script for moka-icon-theme.
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2015-217  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 =======
 # Copyright 2015-218  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2015-2020  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+# Copyright 2020 Aaditya Bagga <aaditya_gnulinux@zoho.com>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -68,6 +73,7 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 CFLAGS="$SLKCFLAGS"
 CXXFLAGS="$SLKCFLAGS"
 ./autogen.sh \
@@ -88,6 +94,15 @@ cp AUTHORS COPYING INSTALL LICENSE* README.md $PKG/usr/doc/$PRGNAM-$VERSION
 =======
 meson --prefix $PKG/usr build
 ninja -C build install
+=======
+meson \
+  --prefix=/usr \
+  --datadir=/usr/share \
+  build
+
+ninja -C build
+DESTDIR=$PKG ninja -C build install
+>>>>>>> upstream/master
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp AUTHORS COPYING LICENSE* README.md $PKG/usr/doc/$PRGNAM-$VERSION

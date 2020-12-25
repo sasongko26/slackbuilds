@@ -1,5 +1,6 @@
 PRGNAM="munch"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.2.0"
 HOMEPAGE="https://github.com/Infinidat/munch"
 DOWNLOAD="https://github.com/Infinidat/munch/archive/2.2.0/munch-2.2.0.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://github.com/Infinidat/munch"
 DOWNLOAD="https://github.com/Infinidat/munch/archive/2.3.2/munch-2.3.2.tar.gz"
 MD5SUM="23780cd524c19588c25dad3d338f957e"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.5.0"
+HOMEPAGE="https://github.com/Infinidat/munch"
+DOWNLOAD="https://files.pythonhosted.org/packages/source/m/munch/munch-2.5.0.tar.gz"
+MD5SUM="ed84c3718416c8d4d03d0a6ef46e8e0c"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES=""
+REQUIRES="python3"
 MAINTAINER="Benjamin Trigona-Harany"
 EMAIL="slackbuilds@jaxartes.net"

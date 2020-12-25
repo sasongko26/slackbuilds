@@ -28,7 +28,7 @@
 # See changelog.txt
 
 PRGNAM=nvidia-legacy340-kernel
-VERSION=${VERSION:-340.104}
+VERSION=${VERSION:-340.108}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -80,12 +80,19 @@ find -L . \
 (cd kernel || exit 1
   make SYSSRC=$KERNELPATH module || exit 1
   cd uvm
+  sed -i "s|-O2$|-O2 -Wno-error=incompatible-pointer-types|" Makefile
   make SYSSRC=$KERNELPATH module || exit 1
 )
 
 mkdir -p $PKG/lib/modules/$KERNEL/kernel/drivers/video
 install -m 0664 kernel/nvidia.ko $PKG/lib/modules/$KERNEL/kernel/drivers/video/
-install -m 0664 kernel/uvm/nvidia-uvm.ko $PKG/lib/modules/$KERNEL/kernel/drivers/video/
+
+# Unified Memory kernel module is incompatible with recent Linux kernels,
+# and the GPU hardware generations that the 340.xx legacy driver series is
+# intended to support do not support Unified Memory.
+if [ -e kernel/uvm/nvidia-uvm.ko ]; then
+  install -m 0664 kernel/uvm/nvidia-uvm.ko $PKG/lib/modules/$KERNEL/kernel/drivers/video/
+fi
 
 # Make sure the X is specified to automagically load the
 # correct driver, since I always forget. You can remove

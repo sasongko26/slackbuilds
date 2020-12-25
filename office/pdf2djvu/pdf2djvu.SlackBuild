@@ -29,10 +29,14 @@
 
 PRGNAM=pdf2djvu
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.9.7}
 =======
 VERSION=${VERSION:-0.9.8}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.9.17.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -103,7 +107,7 @@ find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a doc/COPYING doc/changelog $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a doc/README doc/COPYING doc/changelog $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

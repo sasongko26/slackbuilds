@@ -1,5 +1,6 @@
 PRGNAM="geographiclib-python"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.48"
 HOMEPAGE="http://geographiclib.sourceforge.net/1.46/python/"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/g/geographiclib/geographiclib-1.48.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="http://geographiclib.sourceforge.net/1.49/python/"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/g/geographiclib/geographiclib-1.49.tar.gz"
 MD5SUM="eec8f975cd72af4f8ddebade1f613184"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.50"
+HOMEPAGE="http://geographiclib.sourceforge.net/1.50/python/"
+DOWNLOAD="https://files.pythonhosted.org/packages/source/g/geographiclib/geographiclib-1.50.tar.gz"
+MD5SUM="06cb02d3e8d84383f7d040c2df13e8ea"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES=""
+REQUIRES="python3"
 MAINTAINER="Benjamin Trigona-Harany"
 EMAIL="slackbuilds@jaxartes.net"

@@ -22,10 +22,14 @@
 
 PRGNAM=SDL_kitchensink
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.0.7_alpha}
 =======
 VERSION=${VERSION:-0.0.7}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.0.9}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -67,12 +71,17 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$SRCVER
 <<<<<<< HEAD
+<<<<<<< HEAD
 tar xvf $CWD/$PRGNAM-$SRCVER.tar.gz
 cd $PRGNAM-$SRCVER
 =======
 tar xvf $CWD/$PRGNAM-$SRCVER-alpha.tar.gz
 cd $PRGNAM-$SRCVER-alpha
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+tar xvf $CWD/$PRGNAM-$SRCVER.tar.gz
+cd $PRGNAM-$SRCVER
+>>>>>>> upstream/master
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -80,10 +89,20 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+for i in $CWD/*.patch
+do
+  echo
+  echo "Applying patch $i ..."
+  cat $i | patch -p1 || exit 1
+done
+# Adding SDL2/ before all #include <SDL*.h>
+grep -r "#include <SDL[^2]" | cut -d: -f1 | sort -u | xargs sed -i 's@#include <SDL@#include <SDL2/SDL@g'
+echo
+
 mkdir -p build
 cd build
   cmake \
-    -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
+    -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release ..
   make

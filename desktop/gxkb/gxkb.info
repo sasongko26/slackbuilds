@@ -1,5 +1,6 @@
 PRGNAM="gxkb"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.7.9"
 HOMEPAGE="https://zen-tools.github.io/gxkb/"
 DOWNLOAD="http://downloads.sourceforge.net/project/gxkb/gxkb-0.7.9.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://zen-tools.github.io/gxkb/"
 DOWNLOAD="http://downloads.sourceforge.net/project/gxkb/gxkb-0.8.0.tar.gz"
 MD5SUM="ec7cdf2a75bfeb63120a6658169c18dc"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.8.1"
+HOMEPAGE="https://zen-tools.github.io/gxkb/"
+DOWNLOAD="http://downloads.sourceforge.net/project/gxkb/gxkb-0.8.1.tar.gz"
+MD5SUM="4d27f71d04e065a9bab5eb6fcb7b3677"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -1,5 +1,6 @@
 PRGNAM="vifm"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.9"
 HOMEPAGE="https://vifm.info"
 <<<<<<< HEAD
@@ -14,8 +15,14 @@ HOMEPAGE="https://vifm.info"
 DOWNLOAD="https://downloads.sourceforge.net/vifm/vifm-0.9.1.tar.bz2"
 MD5SUM="b3293b1b6fdd14bc2fcab61fdbbd0d05"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.10.1"
+HOMEPAGE="https://vifm.info"
+DOWNLOAD="https://downloads.sourceforge.net/vifm/vifm-0.10.1.tar.bz2"
+MD5SUM="0afde44205424355ec5f90957971bb07"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
-MAINTAINER="Charles E. Kauffman"
-EMAIL="molbolom@gmail.com"
+MAINTAINER="B. Watson"
+EMAIL="yalhcru@gmail.com"

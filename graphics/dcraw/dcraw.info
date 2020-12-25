@@ -1,4 +1,5 @@
 PRGNAM="dcraw"
+<<<<<<< HEAD
 VERSION="9.27.0"
 HOMEPAGE="http://cybercom.net/~dcoffin/dcraw/"
 <<<<<<< HEAD
@@ -7,6 +8,12 @@ DOWNLOAD="http://cybercom.net/~dcoffin/dcraw/archive/dcraw-9.27.0.tar.gz"
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/dcraw-9.27.0.tar.gz"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="87ca3ec9d4e882f0d2250fed61b3326f"
+=======
+VERSION="9.28.0"
+HOMEPAGE="https://www.dechifro.org/dcraw/"
+DOWNLOAD="https://www.dechifro.org/dcraw/archive/dcraw-9.28.0.tar.gz"
+MD5SUM="e89175c1a7551a70744769049a139f9b"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

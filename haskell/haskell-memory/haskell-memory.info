@@ -1,5 +1,6 @@
 PRGNAM="haskell-memory"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.14.6"
 HOMEPAGE="https://hackage.haskell.org/package/memory"
 DOWNLOAD="https://hackage.haskell.org/package/memory-0.14.6/memory-0.14.6.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://hackage.haskell.org/package/memory"
 DOWNLOAD="https://hackage.haskell.org/package/memory-0.14.16/memory-0.14.16.tar.gz"
 MD5SUM="acf08945351351749b7e26e32668e128"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.14.18"
+HOMEPAGE="https://hackage.haskell.org/package/memory"
+DOWNLOAD="https://hackage.haskell.org/package/memory-0.14.18/memory-0.14.18.tar.gz"
+MD5SUM="8f243b636e65e0c1e40433f47a8c1cfd"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="haskell-foundation"

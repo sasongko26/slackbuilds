@@ -3,10 +3,14 @@
 # Slackware build script for pcsx2
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2016-2017 Hunter Sezen California, USA
 =======
 # Copyright 2016-2018 Hunter Sezen California, USA
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2016-2018, 2020 Hunter Sezen California, USA
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=pcsx2
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2017.08.09_8c37418e4}
 =======
 VERSION=${VERSION:-2018.05.16_290397d}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.6.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -68,7 +76,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.xz
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
@@ -93,8 +101,10 @@ if [ "$DEVEL" = yes ] || [ "$DEBUG" = yes ]; then
 # pcsx2 does not support x86_64 yet and does
 # not plan to for the foreseeable future.
 BINDIR=; MULTILIB=
-[ "$ARCH" = 'x86_64' ] && BINDIR='/32' \
+if [ "$ARCH" = 'x86_64' ]; then
+  BINDIR='/32'
   MULTILIB='-DCMAKE_TOOLCHAIN_FILE=cmake/linux-compiler-i386-multilib.cmake'
+fi
 
 RELEASE=Debug
 
@@ -121,9 +131,20 @@ esac
 [ "${EGL_API:=OFF}" != OFF ] && EGL_API=ON
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
+# Handle this in doinst.sh instead
+# https://github.com/PCSX2/pcsx2/issues/2699
+sed -i '/setcap/d' pcsx2/CMakeLists.txt
+
 # Use a font included with Slackware
 # osd error: 'Failed to init the freetype face'
-zcat $CWD/osd_font.diff.gz | patch -p1
+sed -i \
+  's|truetype/freefont/FreeSerif.ttf|TTF/LiberationSerif-Regular.ttf|' \
+  plugins/GSdx/GSdx.cpp
+
+# spu2-x: Make portaudio an optional dependency.
+# https://github.com/PCSX2/pcsx2/pull/3110
+# https://github.com/PCSX2/pcsx2/commit/84d090e2fde50c66b965b84c73abd9f04a1770dd
+patch -p1 < $CWD/portaudio.patch
 
 mkdir -p build
 cd build
@@ -136,7 +157,6 @@ cd build
     -DwxWidgets_CONFIG_EXECUTABLE=/usr/bin${BINDIR}/wx-config \
     -DwxWidgets_wxrc_EXECUTABLE=/usr/bin${BINDIR}/wxrc-3.0 \
     -DBUILD_REPLAY_LOADERS=TRUE \
-    -DDISABLE_ADVANCE_SIMD=ON \
     -DDISABLE_BUILD_DATE=ON \
     -DGSDX_LEGACY=ON \
     -DPACKAGE_MODE=ON \
@@ -158,9 +178,14 @@ cd ..
 if [ "$DEBUG" = no ] && [ "$DEVEL" = no ]; then
 =======
 if [ "$DEBUG" = 0 ]; then
+<<<<<<< HEAD
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
     | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+=======
+  find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" |
+    grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+>>>>>>> upstream/master
 fi
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
@@ -177,6 +202,7 @@ cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 # Fix doinst.sh for x86_64
 <<<<<<< HEAD
+<<<<<<< HEAD
 if [ "$ARCH" = 'x86_64' ]; then
   if ! grep -q 32 $PKG/install/doinst.sh; then
     sed -i 's|-loaders >|-loaders-32 >|' $PKG/install/doinst.sh
@@ -184,6 +210,9 @@ if [ "$ARCH" = 'x86_64' ]; then
 fi
 =======
 [ "$ARCH" = 'x86_64' ] && \
+=======
+[ "$ARCH" != 'x86_64' ] ||
+>>>>>>> upstream/master
   sed -i 's|-loaders |-loaders-32 |' $PKG/install/doinst.sh
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 

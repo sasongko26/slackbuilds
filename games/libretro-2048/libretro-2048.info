@@ -1,5 +1,6 @@
 PRGNAM="libretro-2048"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.01.20_5415b1b"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/libretro-2048-2017.01.20_5415b1b.tar.xz"
@@ -19,3 +20,14 @@ EMAIL="ovariegata@yahoo.com"
 =======
 EMAIL="orbea@fredslev.dk"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.09.30_80d462a"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/libretro-2048-2018.09.30_80d462a.tar.xz"
+MD5SUM="d87b62147df0261fafed1ec0d6d3fda6"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="RetroArch"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"
+>>>>>>> upstream/master

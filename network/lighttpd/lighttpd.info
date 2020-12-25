@@ -1,5 +1,6 @@
 PRGNAM="lighttpd"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.4.47"
 HOMEPAGE="http://www.lighttpd.net/"
 DOWNLOAD="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.47.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://www.lighttpd.net/"
 DOWNLOAD="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.49.tar.xz"
 MD5SUM="aaf8165379351c3766e5ad1e5c9dbe8b"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.4.56"
+HOMEPAGE="http://www.lighttpd.net/"
+DOWNLOAD="http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.56.tar.xz"
+MD5SUM="9d94f68c8106bfcdfe7aafa0a13f45a8"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

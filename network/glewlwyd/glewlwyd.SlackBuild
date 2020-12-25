@@ -21,7 +21,8 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=glewlwyd
-VERSION=${VERSION:-1.4.4}
+VERSION=${VERSION:-2.4.0}
+SRCVER=$(tr _ - <<< ${VERSION})
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -39,16 +40,16 @@ PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 if [ "$ARCH" = "i586" ]; then
-  SLKCFLAGS="-O2 -march=i586 -mtune=i686"
+  SLKCFLAGS="-O2 -march=i586 -mtune=i686 -Wno-error=maybe-uninitialized"
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "i686" ]; then
-  SLKCFLAGS="-O2 -march=i686 -mtune=i686"
+  SLKCFLAGS="-O2 -march=i686 -mtune=i686 -Wno-error=maybe-uninitialized"
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
-  SLKCFLAGS="-O2 -fPIC"
+  SLKCFLAGS="-O2 -fPIC -Wno-error=maybe-uninitialized"
   LIBDIRSUFFIX="64"
 else
-  SLKCFLAGS="-O2"
+  SLKCFLAGS="-O2 -Wno-error=maybe-uninitialized"
   LIBDIRSUFFIX=""
 fi
 
@@ -58,8 +59,8 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
-cd $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$SRCVER.tar.gz
+cd $PRGNAM-$SRCVER
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -82,7 +83,12 @@ cd ..
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
+# Default directory for SQLite3 database
+mkdir -p $PKG/var/cache/glewlwyd/
 mv $PKG/etc/glewlwyd/glewlwyd.conf $PKG/etc/glewlwyd/glewlwyd.conf.sample
+if [ ! -z "$LIBDIRSUFFIX" ]; then
+	sed -i 's#/usr/lib.*/glewlwyd/#/usr/lib'${LIBDIRSUFFIX}'/glewlwyd/#g' $PKG/etc/glewlwyd/glewlwyd.conf.sample
+fi
 
 mkdir -p $PKG/etc/rc.d/
 install -m 755 $CWD/rc.$PRGNAM $PKG/etc/rc.d/rc.$PRGNAM.new
@@ -96,6 +102,13 @@ mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 echo "preserve_perms etc/rc.d/rc.$PRGNAM.new" >> $PKG/install/doinst.sh
+if [ ! -z $GLEWLWYD_SQLITE_INIT ]; then
+	cat >>  $PKG/install/doinst.sh <<EOF
+if [ ! -f /var/cache/glewlwyd/glewlwyd.db ];then
+   sqlite3 /var/cache/glewlwyd/glewlwyd.db < /usr/share/glewlwyd/docs/database/init.sqlite3.sql
+fi
+EOF
+fi
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

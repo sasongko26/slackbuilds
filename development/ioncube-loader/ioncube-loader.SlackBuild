@@ -31,10 +31,14 @@
 PRGNAM=ioncube-loader
 SRCNAM=ioncube
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-10.0.4}
 =======
 VERSION=${VERSION:-10.2.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-10.3.9}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

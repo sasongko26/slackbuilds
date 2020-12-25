@@ -2,7 +2,7 @@
 
 # Slackware build script for mrustc
 
-# Copyright 2017-2018 Andrew Clemons, Wellington New Zealand
+# Copyright 2017-2020 Andrew Clemons, Wellington New Zealand
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,9 +23,9 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=mrustc
-GITREV=${GITREV:-5206b786247238f32a2b5ad8ed7f6d378a1d2d12}
-VERSION=${VERSION:-git$(echo "$GITREV" | sed 's/^\(.\{7\}\).*$/\1/')}
+VERSION=${VERSION:-0.9}
 RUSTCVERSION=${RUSTCVERSION:-1.19.0}
+MRUSTCTARGETVERSION=${MRUSTCTARGETVERSION:-1.19}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -43,23 +43,32 @@ PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 if [ "$ARCH" = "i586" ]; then
+  RUSTC_TARGET="i586-unknown-linux-gnu"
   SLKCFLAGS="-O2 -march=i586 -mtune=i686"
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "i686" ]; then
+  RUSTC_TARGET="i686-unknown-linux-gnu"
   SLKCFLAGS="-O2 -march=i686 -mtune=i686"
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "x86_64" ]; then
+  RUSTC_TARGET="x86_64-unknown-linux-gnu"
   SLKCFLAGS="-O2 -fPIC"
   LIBDIRSUFFIX="64"
+elif [ "$ARCH" = "arm" ] ; then
+  if readelf -h /bin/bash | grep Flags | grep hard > /dev/null 2>&1 ; then
+    # hardfloat
+    RUSTC_TARGET="armv7-unknown-linux-gnueabihf"
+    SLKCFLAGS="-O2 -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=hard"
+  else
+    # softfloat
+    RUSTC_TARGET="arm-unknown-linux-gnueabi"
+    SLKCFLAGS="-O2 -march=armv5te"
+  fi
+
+  LIBDIRSUFFIX=""
 else
   SLKCFLAGS="-O2"
   LIBDIRSUFFIX=""
-fi
-
-# https://github.com/thepowersgang/mrustc/issues/38#issuecomment-352158861
-if [ "$ARCH" != "x86_64" ]; then
-  echo "Sorry, mrustc currently only supports x86_64."
-  exit 1
 fi
 
 set -e
@@ -67,13 +76,19 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$GITREV
-tar xvf $CWD/$PRGNAM-$GITREV.tar.gz
-cd $PRGNAM-$GITREV
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+cd $PRGNAM-$VERSION
 
-cp $CWD/rustc-$RUSTCVERSION-src.tar.xz .
-sed -i '/curl -sS https:/d' Makefile
-sed -i 's/-src.tar.gz/-src.tar.xz/' Makefile
+tar -xf "$CWD/rustc-$RUSTCVERSION-src.tar.xz"
+
+(
+  cd "rustc-$RUSTCVERSION-src"
+  patch -p0 < ../"rustc-$RUSTCVERSION-src.patch"
+  echo "$RUSTCVERSION" > dl-version
+)
+
+sed -i 's/\(TargetVersion.*TargetVersion.*=.*\)TargetVersion::Rustc1_29/\1TargetVersion::Rustc1_19/' src/main.cpp
 
 chown -R root:root .
 find -L . \
@@ -82,34 +97,70 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-make RUSTCSRC
+CFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS" \
+RUSTC_VERSION="$RUSTCVERSION" \
+MRUSTC_TARGET_VER="$MRUSTCTARGETVERSION" \
+OUTDIR_SUF="" \
+CC=gcc \
+CXX=g++ \
+make RUSTC_TARGET="$RUSTC_TARGET"
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
+RUSTC_VERSION="$RUSTCVERSION" \
+MRUSTC_TARGET_VER="$MRUSTCTARGETVERSION" \
+OUTDIR_SUF="" \
 CC=gcc \
-make -f minicargo.mk
+CXX=g++ \
+make -f minicargo.mk LIBS RUSTC_TARGET="$RUSTC_TARGET"
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
+RUSTC_VERSION="$RUSTCVERSION" \
+MRUSTC_TARGET_VER="$MRUSTCTARGETVERSION" \
+OUTDIR_SUF="" \
 CC=gcc \
-make -j1 -C run_rustc
+CXX=g++ \
+make -C tools/minicargo RUSTC_TARGET="$RUSTC_TARGET"
+
+CFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS" \
+RUSTC_VERSION="$RUSTCVERSION" \
+MRUSTC_TARGET_VER="$MRUSTCTARGETVERSION" \
+OUTDIR_SUF="" \
+CC=gcc \
+CXX=g++ \
+make test RUSTC_TARGET="$RUSTC_TARGET"
 
 mkdir -p $PKG/usr/bin
 install -m 0755 bin/mrustc $PKG/usr/bin/mrustc
 install -m 0755 tools/bin/minicargo $PKG/usr/bin/minicargo
 
-mkdir -p $PKG/usr/share/mrustc
-find output -name '*.hir' -maxdepth 1 -exec install -m 0644 {} $PKG/usr/share/mrustc/ \;
+mkdir -p $PKG/usr/lib$LIBDIRSUFFIX/
+cp -a output $PKG/usr/lib$LIBDIRSUFFIX/mrust
 
-mkdir -p $PKG/usr/lib$LIBDIRSUFFIX/rustlib/$ARCH-unknown-linux-gnu/lib/
-cp -a run_rustc/prefix/lib/rustlib/$ARCH-unknown-linux-gnu/lib/* $PKG/usr/lib$LIBDIRSUFFIX/rustlib/$ARCH-unknown-linux-gnu/lib/
+find $PKG/usr/lib$LIBDIRSUFFIX -name '*.txt' -print0 | xargs -0 rm
 
-install -m 0755 output/rustc $PKG/usr/bin/rustc
-install -m 0755 output/cargo $PKG/usr/bin/cargo
-install -m 0755 output/rustc-build/rustdoc $PKG/usr/bin/rustdoc
+mkdir -p $PKG/usr/share/mrustc/run_rustc
+
+install -m 0644 run_rustc/Makefile $PKG/usr/share/mrustc/run_rustc/Makefile
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+mkdir -p $PKG/etc/profile.d
+cat << EOF > $PKG/etc/profile.d/$PRGNAM.csh
+#!/bin/csh
+setenv MRUSTC_PATH=/usr/bin/mrustc
+EOF
+
+cat << EOF > $PKG/etc/profile.d/$PRGNAM.sh
+#!/bin/sh
+export MRUSTC_PATH=/usr/bin/mrustc
+EOF
+
+chmod 0755 $PKG/etc/profile.d/*
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \

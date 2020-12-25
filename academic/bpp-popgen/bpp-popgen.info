@@ -1,5 +1,6 @@
 PRGNAM="bpp-popgen"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.3.1"
 HOMEPAGE="http://biopp.univ-montp2.fr/"
 DOWNLOAD="https://github.com/BioPP/bpp-popgen/archive/v2.3.1/bpp-popgen-2.3.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/BioPP/bpp-popgen/"
 DOWNLOAD="https://github.com/BioPP/bpp-popgen/archive/v2.4.0/bpp-popgen-2.4.0.tar.gz"
 MD5SUM="75a1d3fd33c75a6277a04ecad244d6e7"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.4.1"
+HOMEPAGE="https://github.com/BioPP/bpp-popgen/"
+DOWNLOAD="https://github.com/BioPP/bpp-popgen/archive/v2.4.1/bpp-popgen-2.4.1.tar.gz"
+MD5SUM="cdc84495e251b6ff4260385adecbea28"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="bpp-seq"

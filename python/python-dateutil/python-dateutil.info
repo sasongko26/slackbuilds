@@ -1,5 +1,6 @@
 PRGNAM="python-dateutil"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.6.1"
 HOMEPAGE="http://labix.org/python-dateutil"
 DOWNLOAD="https://pypi.python.org/packages/54/bb/f1db86504f7a49e1d9b9301531181b00a1c7325dc85a29160ee3eaa73a54/python-dateutil-2.6.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://labix.org/python-dateutil"
 DOWNLOAD="https://pypi.io/packages/source/p/python-dateutil/python-dateutil-2.7.3.tar.gz"
 MD5SUM="175b7c1a3cc0cb01151eced07c61c0b8"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.8.0"
+HOMEPAGE="http://labix.org/python-dateutil"
+DOWNLOAD="https://pypi.io/packages/source/p/python-dateutil/python-dateutil-2.8.0.tar.gz"
+MD5SUM="354db28843d949f1bc3e49e8458e22df"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="setuptools-scm six"

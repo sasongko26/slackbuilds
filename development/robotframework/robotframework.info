@@ -1,5 +1,6 @@
 PRGNAM="robotframework"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.0.2"
 HOMEPAGE="http://robotframework.org/"
 DOWNLOAD="https://github.com/robotframework/robotframework/archive/3.0.2/robotframework-3.0.2.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://robotframework.org/"
 DOWNLOAD="https://github.com/robotframework/robotframework/archive/v3.0.4/robotframework-3.0.4.tar.gz"
 MD5SUM="74acaf2138423f4c1d840bc83b79e242"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.2.2"
+HOMEPAGE="https://robotframework.org/"
+DOWNLOAD="https://github.com/robotframework/robotframework/archive/v3.2.2/robotframework-3.2.2.tar.gz"
+MD5SUM="4a151bbf0e6438cf4e12ce3caad2b96c"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

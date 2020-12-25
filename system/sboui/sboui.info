@@ -1,5 +1,6 @@
 PRGNAM="sboui"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.5"
 HOMEPAGE="https://github.com/montagdude/sboui"
 DOWNLOAD="https://github.com/montagdude/sboui/archive/0.5/sboui-0.5.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/montagdude/sboui"
 DOWNLOAD="https://github.com/montagdude/sboui/archive/1.1/sboui-1.1.tar.gz"
 MD5SUM="4ee722aacd76e571b8aa8e6618bf860f"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.1"
+HOMEPAGE="https://github.com/montagdude/sboui"
+DOWNLOAD="https://github.com/montagdude/sboui/archive/2.1/sboui-2.1.tar.gz"
+MD5SUM="c4f7c1c757efc1d7523cace75c1c1078"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libconfig"

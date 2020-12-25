@@ -1,5 +1,6 @@
 PRGNAM="perl-Date-Manip"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="6.60"
 HOMEPAGE="https://metacpan.org/pod/distribution/Date-Manip/lib/Date/Manip.pod"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-6.60.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://metacpan.org/pod/distribution/Date-Manip/lib/Date/Manip.pod"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-6.72.tar.gz"
 MD5SUM="b41b0d476fd7eae3ce81324386266a85"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="6.83"
+HOMEPAGE="https://metacpan.org/pod/distribution/Date-Manip/lib/Date/Manip.pod"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-6.83.tar.gz"
+MD5SUM="92be58690a9a64d51fb158198220fd63"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="perl-Test-Inter perl-Test-Pod perl-Test-Pod-Coverage perl-YAML-Syck"

@@ -26,10 +26,14 @@
 
 PRGNAM=gdal
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.2.2}
 =======
 VERSION=${VERSION:-2.2.4}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.0.4}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -148,6 +152,7 @@ make
 make install DESTDIR=$PKG
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 if $(python3 -c 'import sys' 2>/dev/null); then
   cd swig/python
@@ -156,6 +161,13 @@ if $(python3 -c 'import sys' 2>/dev/null); then
     python3 setup.py install --root=$PKG --prefix=/usr
   cd - >/dev/null
 fi
+=======
+cd swig/python
+  rm -rf build
+  python3 setup.py build
+  python3 setup.py install --root=$PKG --prefix=/usr
+cd - >/dev/null
+>>>>>>> upstream/master
 
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 find $PKG | xargs file | grep -e "executable" -e "shared object" | grep ELF \
@@ -170,7 +182,7 @@ make -f GNUmakefile -B docs
 # --docdir is ignored :-(
 make install-docs DESTDIR=$PKG INST_DOCS=/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  COMMITERS HOWTO-RELEASE LICENSE.TXT NEWS PROVENANCE.TXT VERSION \
+  COMMITTERS HOWTO-RELEASE LICENSE.TXT NEWS PROVENANCE.TXT VERSION \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 

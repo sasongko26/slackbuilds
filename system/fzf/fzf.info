@@ -1,5 +1,6 @@
 PRGNAM="fzf"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.17.1"
 HOMEPAGE="https://github.com/junegunn/fzf"
 DOWNLOAD="https://github.com/junegunn/fzf/archive/0.17.1/fzf-0.17.1.tar.gz \
@@ -64,6 +65,34 @@ MD5SUM="a8647be8405be2fc282298fe4619c3dc \
         91cd25c29b47931a8dc2b27434b5367a \
         87913c935b1e6067cc29635f7329c8b6"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.24.4"
+HOMEPAGE="https://github.com/junegunn/fzf"
+DOWNLOAD="https://github.com/junegunn/fzf/archive/0.24.4/fzf-0.24.4.tar.gz \
+          https://github.com/gdamore/tcell/archive/v1.3.0/tcell-1.3.0.tar.gz \
+          https://github.com/lucasb-eyer/go-colorful/archive/v1.0.3/go-colorful-1.0.3.tar.gz \
+          https://github.com/mattn/go-isatty/archive/v0.0.12/go-isatty-0.0.12.tar.gz \
+          https://github.com/mattn/go-runewidth/archive/v0.0.8/go-runewidth-0.0.8.tar.gz \
+          https://github.com/mattn/go-shellwords/archive/v1.0.9/go-shellwords-1.0.9.tar.gz \
+          https://github.com/saracen/walker/archive/324a081bae7e580aa0bf3afe8164acb16634afca/walker-324a081bae7e580aa0bf3afe8164acb16634afca.tar.gz \
+          https://github.com/golang/crypto/archive/69ecbb4d6d5dab05e49161c6e77ea40a030884e1/crypto-69ecbb4d6d5dab05e49161c6e77ea40a030884e1.tar.gz \
+          https://github.com/golang/sys/archive/d101bd2416d505c0448a6ce8a282482678040a89/sys-d101bd2416d505c0448a6ce8a282482678040a89.tar.gz \
+          https://github.com/golang/text/archive/v0.3.2/text-0.3.2.tar.gz \
+          https://github.com/golang/sync/archive/cd5d95a43a6e21273425c7ae415d3df9ea832eeb/sync-cd5d95a43a6e21273425c7ae415d3df9ea832eeb.tar.gz \
+          https://github.com/golang/xerrors/archive/a985d3407aa71f30cf86696ee0a2f409709f22e1/xerrors-a985d3407aa71f30cf86696ee0a2f409709f22e1.tar.gz"
+MD5SUM="e627828780d41ded82cb9209642ce985 \
+        ad4f913e9293c655c5b7cdeba02429e8 \
+        2a1b88991050673c3928342c11d404ae \
+        56a6121ba7ae8a13dad2925edd9f11b5 \
+        af51a12aa8aaf342d266d8ede5bbc919 \
+        2bc4ce5a2fb261259ea3fd9626a1c56f \
+        59d2a11dd00e6f405ebdebe0ec22e7ee \
+        8b46ea618fa02e5c8c5a836ebf9d3960 \
+        09d78ad8306fb264ebecd65e309e33ef \
+        5c3d2e3c8af2436fea967042a9623ba1 \
+        08d1d3802285a880954da8041653ad28 \
+        6396c1c7307899882c28f3938d4e6d18"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="google-go-lang"

@@ -1,5 +1,6 @@
 PRGNAM="Sphinx"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.6.5"
 HOMEPAGE="http://www.sphinx-doc.org"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/S/Sphinx/Sphinx-1.6.5.tar.gz"
@@ -9,12 +10,19 @@ MD5SUM_x86_64=""
 REQUIRES="alabaster babel docutils imagesize Jinja2 Pygments python-requests six snowballstemmer sphinxcontrib-websupport typing"
 =======
 VERSION="1.7.5"
+=======
+VERSION="3.3.1"
+>>>>>>> upstream/master
 HOMEPAGE="http://www.sphinx-doc.org"
-DOWNLOAD="https://files.pythonhosted.org/packages/source/S/Sphinx/Sphinx-1.7.5.tar.gz"
-MD5SUM="478a4d94506febd4786f47cc8ae297bb"
+DOWNLOAD="https://files.pythonhosted.org/packages/source/S/Sphinx/Sphinx-3.3.1.tar.gz"
+MD5SUM="a082ab4be33777ff9567c0bdb510c0f7"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
+<<<<<<< HEAD
 REQUIRES="alabaster babel docutils imagesize Jinja2 packaging Pygments python-requests snowballstemmer sphinxcontrib-websupport typing"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+REQUIRES="alabaster imagesize python3-babel docutils Jinja2 python3-packaging Pygments python-requests python3-six snowballstemmer sphinxcontrib-applehelp sphinxcontrib-devhelp sphinxcontrib-htmlhelp sphinxcontrib-jsmath sphinxcontrib-qthelp sphinxcontrib-serializinghtml python3-certifi"
+>>>>>>> upstream/master
 MAINTAINER="Benjamin Trigona-Harany"
 EMAIL="slackbuilds@jaxartes.net"

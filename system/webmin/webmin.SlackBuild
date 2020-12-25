@@ -2,7 +2,7 @@
 
 # Slackware build script for Webmin http://www.webmin.com
 
-# Copyright 2006-2015  David Somero (dsomero@hotmail.com)
+# Copyright 2006-2019  David Somero (dsomero@hotmail.com)
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,10 +24,14 @@
 
 PRGNAM=webmin
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.850}
 =======
 VERSION=${VERSION:-1.881}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.962}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -109,7 +113,7 @@ rm -rf $PKG/usr/libexec/webmin/acl/Authen-SolarisRBAC-0.1
 rm -f $PKG/usr/libexec/webmin/acl/Authen-SolarisRBAC-0.1.tar.gz
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a LICENCE* README $CWD/webmin.SlackBuild $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a LICENCE* README.md $CWD/webmin.SlackBuild $PKG/usr/doc/$PRGNAM-$VERSION
 chown -R root:root $PKG/usr/doc/$PRGNAM-$VERSION
 chmod 644 $PKG/usr/doc/$PRGNAM-$VERSION/*
 

@@ -3,9 +3,11 @@
 # Slackware build script for tint2
 
 # Written by Eugene Wissner <belka@caraus.de>
+# Updated (2019) by Aaditya Bagga <aaditya_gnulinux@zoho.com>
 # You are free to modify or redistribute this in any way you wish.
 
 PRGNAM=tint2
+<<<<<<< HEAD
 <<<<<<< HEAD
 VERSION=${VERSION:-15.3}
 BUILD=${BUILD:-1}
@@ -17,6 +19,11 @@ BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 COMMIT=${COMMIT:-b810bad93ff65854137fbd2f344ad2f99338008f}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-16.7}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_SBo}
+>>>>>>> upstream/master
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -46,10 +53,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-SRCDIR=${PRGNAM}-${VERSION}-${COMMIT}
-rm -rf ${SRCDIR}
-tar xvf ${CWD}/${SRCDIR}.tar.gz || tar xvf ${CWD}/archive.tar.gz\?ref\=${VERSION}
-cd ${SRCDIR}
+rm -rf $PRGNAM-$VERSION
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \

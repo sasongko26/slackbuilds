@@ -1,5 +1,6 @@
 PRGNAM="fcitx-qt5"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.1.1"
 HOMEPAGE="https://fcitx-im.org/"
 DOWNLOAD="https://download.fcitx-im.org/fcitx-qt5/fcitx-qt5-1.1.1.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://fcitx-im.org/"
 DOWNLOAD="https://download.fcitx-im.org/fcitx-qt5/fcitx-qt5-1.2.2.tar.xz"
 MD5SUM="24a61168dce91d005130d8fd73d3e027"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.2.3"
+HOMEPAGE="https://fcitx-im.org/"
+DOWNLOAD="https://download.fcitx-im.org/fcitx-qt5/fcitx-qt5-1.2.3.tar.xz"
+MD5SUM="0d7703f96729dfb756c6c7821cc8c5fd"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="fcitx qt5 extra-cmake-modules"

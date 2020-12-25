@@ -24,10 +24,14 @@
 
 PRGNAM=osm2pgrouting
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.3.2}
 =======
 VERSION=${VERSION:-2.3.5}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.3.6}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

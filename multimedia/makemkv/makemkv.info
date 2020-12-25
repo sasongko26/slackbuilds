@@ -1,5 +1,6 @@
 PRGNAM="makemkv"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.10.6"
 HOMEPAGE="http://www.makemkv.com/"
 DOWNLOAD="http://www.makemkv.com/download/makemkv-oss-1.10.6.tar.gz \
@@ -14,6 +15,14 @@ DOWNLOAD="http://www.makemkv.com/download/makemkv-oss-1.12.2.tar.gz \
 MD5SUM="2f9b765106aea740ddd51a69939d98a6 \
         5d2832b02a939c52d02600d910f27a7f"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.14.4"
+HOMEPAGE="http://www.makemkv.com/"
+DOWNLOAD="http://www.makemkv.com/download/old/makemkv-oss-1.14.4.tar.gz \
+          http://www.makemkv.com/download/old/makemkv-bin-1.14.4.tar.gz"
+MD5SUM="e738e5e2e0ff2d556f00002699253271 \
+        b7ec3c40359a9b5b5adb1a48dba36f30"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="ffmpeg"

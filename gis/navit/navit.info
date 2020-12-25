@@ -1,4 +1,5 @@
 PRGNAM="navit"
+<<<<<<< HEAD
 VERSION="R7651"
 HOMEPAGE="http://www.navit-project.org"
 <<<<<<< HEAD
@@ -7,6 +8,12 @@ DOWNLOAD="https://github.com/navit-gps/navit/archive/R7651/navit-R7651.tar.gz"
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/navit-R7651.tar.gz"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="cf23a4bc24d1b552da80861b93e86343"
+=======
+VERSION="0.5.4"
+HOMEPAGE="https://www.navit-project.org"
+DOWNLOAD="https://github.com/navit-gps/navit/archive/v0.5.4/navit-0.5.4.tar.gz"
+MD5SUM="75e0a62cb9be0776a8634beb02112182"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

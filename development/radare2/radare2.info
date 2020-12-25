@@ -1,5 +1,6 @@
 PRGNAM="radare2"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.0.0"
 HOMEPAGE="http://radare.org/"
 DOWNLOAD="https://github.com/radare/radare2/archive/2.0.0/radare2-2.0.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://radare.org/"
 DOWNLOAD="https://github.com/radare/radare2/archive/2.5.0/radare2-2.5.0.tar.gz"
 MD5SUM="2f4798a709c9d6782b1f5ea29398eb8f"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.5.1"
+HOMEPAGE="http://radare.org/"
+DOWNLOAD="https://github.com/radareorg/radare2/archive/4.5.1/radare2-4.5.1.tar.gz"
+MD5SUM="12fdc9db3936af7136f8830b4cc08c4a"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="capstone"

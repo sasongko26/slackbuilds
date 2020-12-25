@@ -1,5 +1,6 @@
 PRGNAM="docker"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="17.09.0"
 HOMEPAGE="https://www.docker.com/community-edition"
 DOWNLOAD="UNSUPPORTED"
@@ -14,6 +15,14 @@ MD5SUM=""
 DOWNLOAD_x86_64="https://github.com/docker/docker-ce/archive/v18.03.1-ce/docker-ce-18.03.1-ce.tar.gz"
 MD5SUM_x86_64="9666ed40c28ea401d5c7eb891581a3bb"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="19.03.8"
+HOMEPAGE="https://www.docker.com/products/container-runtime"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://github.com/docker/docker-ce/archive/v19.03.8/docker-ce-19.03.8.tar.gz"
+MD5SUM_x86_64="529b9e0767146ba03b6fda5833b5e1f6"
+>>>>>>> upstream/master
 REQUIRES="containerd docker-proxy tini"
 MAINTAINER="Audrius Kažukauskas"
 EMAIL="audrius@neutrino.lt"

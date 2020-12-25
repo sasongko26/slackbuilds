@@ -1,5 +1,6 @@
 PRGNAM="eaglemode"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.93.0"
 HOMEPAGE="http://eaglemode.sourceforge.net/"
 DOWNLOAD="https://downloads.sourceforge.net/project/eaglemode/eaglemode-0.93.0/eaglemode-0.93.0.tar.bz2"
@@ -10,6 +11,12 @@ HOMEPAGE="http://eaglemode.sourceforge.net/"
 DOWNLOAD="https://downloads.sourceforge.net/project/eaglemode/eaglemode-0.93.1/eaglemode-0.93.1.tar.bz2"
 MD5SUM="2acd8005e1578fef176d616478ab4862"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.94.1"
+HOMEPAGE="http://eaglemode.sourceforge.net/"
+DOWNLOAD="https://downloads.sourceforge.net/project/eaglemode/eaglemode-0.94.1/eaglemode-0.94.1.tar.bz2"
+MD5SUM="949a65b983480e65b5f73451316ac685"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

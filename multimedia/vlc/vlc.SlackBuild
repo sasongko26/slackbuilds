@@ -6,7 +6,7 @@
 # modified to build VLC only, shared libraries needed.
 
 # Copyright (c) 2007,2008,2009,2010,2011  Eric Hameleers, Eindhoven, Netherlands
-# Copyright (c) 2014-2018  Christoph Willing, Brisbane, Australia
+# Copyright (c) 2014-2020  Christoph Willing, Brisbane, Australia
 #
 #   Permission to use, copy, modify, and distribute this software for
 #   any purpose with or without fee is hereby granted, provided that
@@ -29,10 +29,14 @@
 
 PRGNAM=vlc
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-20170523_bec643e}
 =======
 VERSION=${VERSION:-3.0.3}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.0.11.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -59,14 +63,18 @@ else
   SLKCFLAGS="-O2"
   LIBDIRSUFFIX=""
 fi
+SLKLDFLAGS="-lrt"
 
 DOCS="ABOUT-NLS AUTHORS COPYING INSTALL NEWS README THANKS"
 qtversion="--enable-qt=4" ; [ "${QTVERSION:-5}" != "4" ] && qtversion="--enable-qt=5"
 wayland="--disable-wayland" ; [ "${WAYLAND:-no}" != "no" ] && wayland="--enable-wayland"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 opencv="--disable-opencv" ; [ "${OPENCV:-no}" != "no" ] && opencv="--enable-opencv"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+>>>>>>> upstream/master
 
 # In an ordinary virtual machine, since a different kernal is running,
 # a unique dbus id is needed.
@@ -88,8 +96,29 @@ rm -rf $PRGNAM-$VERSION
 tar xvf $CWD/$PRGNAM-$VERSION.tar.xz
 cd $PRGNAM-$VERSION
 
+patch -p0 < $CWD/patch-dvdread-503.diff
+patch -p0 < $CWD/patch-dvdnav-503.diff
 patch -p0 < $CWD/patch-projectM-fontpath.diff
 patch -p0 < $CWD/patch_vlc_cache_gen.diff
+
+opencv=""
+if [ "${OPENCV:-yes}" != "yes" ]; then
+  opencv="--disable-opencv" ;
+else
+  if pkg-config --exists opencv4 ; then
+    opencv="--enable-opencv"
+    patch -p0 < $CWD/patch-opencv4.diff
+    mv modules/video_filter/opencv_wrapper.c modules/video_filter/opencv_wrapper.cpp
+  elif pkg-config --exists opencv ; then
+    # opencv-legacy
+    opencv="--enable-opencv"
+  else
+    opencv="--disable-opencv"
+  fi
+fi
+
+# Enable vlc to be run as root
+runasroot=""; [ "${RUNASROOT:-no}" != "no" ] && runasroot="--enable-run-as-root"
 
 autoreconf -fiv
 
@@ -116,7 +145,11 @@ LDFLAGS="$SLKLDFLAGS" \
 <<<<<<< HEAD
 =======
   $opencv \
+<<<<<<< HEAD
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+  $runasroot \
+>>>>>>> upstream/master
   --enable-merge-ffmpeg \
   --enable-libva=no \
   --with-kde-solid=no \
@@ -143,7 +176,9 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" \
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
+###sbolint off
 sed -e s/%LIBDIRSUFFIX%/$LIBDIRSUFFIX/g $CWD/doinst.sh.in > $PKG/install/doinst.sh
+###sbolint on
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

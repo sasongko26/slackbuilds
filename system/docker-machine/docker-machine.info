@@ -1,5 +1,6 @@
 PRGNAM="docker-machine"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.13.0"
 HOMEPAGE="https://docs.docker.com/machine/"
 DOWNLOAD="UNSUPPORTED"
@@ -14,6 +15,14 @@ MD5SUM=""
 DOWNLOAD_x86_64="https://github.com/docker/machine/archive/v0.14.0/machine-0.14.0.tar.gz"
 MD5SUM_x86_64="a6cbade83ee92cc7e2851ccfa86a546b"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.16.0"
+HOMEPAGE="https://docs.docker.com/machine/"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://github.com/docker/machine/archive/v0.16.0/machine-0.16.0.tar.gz"
+MD5SUM_x86_64="0a114be15896b6d8cc1c2517097bd12a"
+>>>>>>> upstream/master
 REQUIRES="google-go-lang"
 MAINTAINER="Audrius Kažukauskas"
 EMAIL="audrius@neutrino.lt"

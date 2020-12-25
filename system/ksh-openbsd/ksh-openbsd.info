@@ -1,5 +1,6 @@
 PRGNAM="ksh-openbsd"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="20171122"
 HOMEPAGE="https://github.com/levaidaniel/ksh-openbsd"
 DOWNLOAD="https://github.com/levaidaniel/ksh-openbsd/archive/20171122.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/levaidaniel/ksh-openbsd"
 DOWNLOAD="https://github.com/levaidaniel/ksh-openbsd/archive/20180115.tar.gz"
 MD5SUM="738aaeaed76fa05feaa8900040fd16b1"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="20190804"
+HOMEPAGE="https://github.com/levaidaniel/ksh-openbsd"
+DOWNLOAD="https://github.com/levaidaniel/ksh-openbsd/archive/20190804.tar.gz"
+MD5SUM="e9f4502ecfa0bc61618ecfd819d1b9f0"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libbsd"

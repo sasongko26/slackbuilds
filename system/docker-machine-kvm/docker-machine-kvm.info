@@ -5,6 +5,7 @@ DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
 DOWNLOAD_x86_64="https://github.com/dhiltgen/docker-machine-kvm/archive/v0.10.0/docker-machine-kvm-0.10.0.tar.gz \
 <<<<<<< HEAD
+<<<<<<< HEAD
                  https://github.com/libvirt/libvirt-go/archive/v3.9.0/libvirt-go-3.9.0.tar.gz \
                  https://github.com/docker/machine/archive/v0.13.0/machine-0.13.0.tar.gz"
 MD5SUM_x86_64="ad81e6900ace350cbf19be148211dc72 \
@@ -17,6 +18,13 @@ MD5SUM_x86_64="ad81e6900ace350cbf19be148211dc72 \
                7c447ed4f800364ed7aaf4707e032f56 \
                a6cbade83ee92cc7e2851ccfa86a546b"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+                 https://github.com/libvirt/libvirt-go/archive/v4.5.0/libvirt-go-4.5.0.tar.gz \
+                 https://github.com/docker/machine/archive/v0.16.0/machine-0.16.0.tar.gz"
+MD5SUM_x86_64="ad81e6900ace350cbf19be148211dc72 \
+               a3acc9b5d1c75100a36a91fbff5269aa \
+               0a114be15896b6d8cc1c2517097bd12a"
+>>>>>>> upstream/master
 REQUIRES="docker-machine libvirt"
 MAINTAINER="Audrius Kažukauskas"
 EMAIL="audrius@neutrino.lt"

@@ -1,5 +1,6 @@
 PRGNAM="wxGTK3"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.0.3.1"
 HOMEPAGE="http://www.wxwidgets.org"
 DOWNLOAD="https://github.com/wxWidgets/wxWidgets/archive/v3.0.3.1/wxWidgets-3.0.3.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://www.wxwidgets.org"
 DOWNLOAD="https://github.com/wxWidgets/wxWidgets/archive/v3.0.4/wxWidgets-3.0.4.tar.gz"
 MD5SUM="148a57dc7e1a025b28d5dbffc99e38eb"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.0.5"
+HOMEPAGE="http://www.wxwidgets.org"
+DOWNLOAD="https://github.com/wxWidgets/wxWidgets/archive/v3.0.5/wxWidgets-3.0.5.tar.gz"
+MD5SUM="0acae8c9d8df226ed2523d745200bdc4"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

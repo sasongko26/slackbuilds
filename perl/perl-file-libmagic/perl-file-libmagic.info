@@ -1,5 +1,6 @@
 PRGNAM="perl-file-libmagic"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.15"
 HOMEPAGE="https://metacpan.org/pod/File::LibMagic"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/File-LibMagic-1.15.tar.gz"
@@ -10,6 +11,14 @@ HOMEPAGE="https://metacpan.org/pod/File::LibMagic"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/File-LibMagic-1.16.tar.gz"
 MD5SUM="de0cc720d1599428be01a7fa50a5cc5b"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.23"
+HOMEPAGE="https://metacpan.org/pod/File::LibMagic"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/File-LibMagic-1.23.tar.gz \
+          https://fastapi.metacpan.org/source/REHSACK/Config-AutoConf-0.313/lib/Config/AutoConf.pm"
+MD5SUM="7782e6f80a67c931a2682145eca6e832 \
+        233a630ea2ce0e7fdb2adcbb72896002"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -3,10 +3,14 @@
 # Slackware build script for clipgrab.
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2015-2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 =======
 # Copyright 2015-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2015-2020  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=clipgrab
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.6.6}
 =======
 VERSION=${VERSION:-3.6.8}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.8.10}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -77,7 +85,7 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-qmake clipgrab.pro
+qmake-qt5 clipgrab.pro
 make DESTDIR=$PKG
 
 install -Dm644 $CWD/clipgrab.desktop $PKG/usr/share/applications/clipgrab.desktop

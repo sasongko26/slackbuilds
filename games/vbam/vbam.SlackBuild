@@ -1,11 +1,10 @@
 #!/bin/sh
+
 # Slackbuild for vbam
 
-# Currently maintained by B. Watson <yalhcru@gmail.com>
-
-# Previously maintained by Dugan Chen <email removed>
-
-# Written by JK Wood <email removed>
+# Currently maintained by B. Watson <yalhcru@gmail.com>.
+# Previously maintained by Dugan Chen <email removed>.
+# Written by JK Wood <email removed>.
 
 # Slackbuild is released under the Dog-on-Fire License:
 # If use of this script causes your dog to catch on fire,
@@ -24,12 +23,19 @@
 # Modified by the SlackBuilds.org project.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+# 20191129 bkw: updated for 2.1.4.
+# 20180702 bkw: updated for 2.1.0.
+>>>>>>> upstream/master
 # 20180612 bkw: updated for 2.0.2.
-
 # 20171219 bkw: updated for 2.0.1.
+<<<<<<< HEAD
 
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+>>>>>>> upstream/master
 # 20170302 bkw: use long-format github URL
 
 # 20170126 bkw:
@@ -48,7 +54,7 @@
 # - Correct README, plus cosmetic reformatting.
 
 PRGNAM=vbam
-VERSION=${VERSION:-2.0.2}
+VERSION=${VERSION:-2.1.4}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -98,11 +104,8 @@ rm -rf $SRCNAM-$SRCVER
 tar xvf $CWD/$SRCNAM-$SRCVER.tar.gz
 cd $SRCNAM-$SRCVER
 chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-  -o -perm 511 \) -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
- -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+find -L .  -perm /111 -a \! -perm 755 -a -exec chmod 755 {} \+ -o \
+        \! -perm /111 -a \! -perm 644 -a -exec chmod 644 {} \+
 
 # if both wx(Python|GTK) 2 and 3 are installed, /usr/bin/wx-config
 # is a symlink to the config for whichever was installed last. Avoid

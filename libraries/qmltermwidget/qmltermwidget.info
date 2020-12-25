@@ -1,5 +1,6 @@
 PRGNAM="qmltermwidget"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="20160207_051e019"
 HOMEPAGE="https://github.com/Swordfish90/qmltermwidget"
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/qmltermwidget-20160207_051e019.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/Swordfish90/qmltermwidget"
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/qmltermwidget-20171027_08958f7.tar.xz"
 MD5SUM="bdabd3dc5385c04c92072bb926988e9e"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.2.0"
+HOMEPAGE="https://github.com/Swordfish90/qmltermwidget"
+DOWNLOAD="https://github.com/Swordfish90/qmltermwidget/archive/0.2.0/qmltermwidget-0.2.0.tar.gz"
+MD5SUM="1a5c76f0af285f1281549498f7e8c2e9"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="qt5"

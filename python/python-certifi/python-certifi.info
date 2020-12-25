@@ -1,5 +1,6 @@
 PRGNAM="python-certifi"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.11.5"
 HOMEPAGE="https://pypi.python.org/pypi/certifi/"
 DOWNLOAD="https://pypi.python.org/packages/23/3f/8be01c50ed24a4bd6b8da799839066ce0288f66f5e11f0367323467f0cbc/certifi-2017.11.5.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://pypi.python.org/pypi/certifi/"
 DOWNLOAD="https://pypi.python.org/packages/15/d4/2f888fc463d516ff7bf2379a4e9a552fef7f22a94147655d9b1097108248/certifi-2018.1.18.tar.gz"
 MD5SUM="068fd5c3c690ae47504b3e0bf4e56c4c"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2019.9.11"
+HOMEPAGE="https://certifi.io/en/latest/"
+DOWNLOAD="https://files.pythonhosted.org/packages/62/85/7585750fd65599e88df0fed59c74f5075d4ea2fe611deceb95dd1c2fb25b/certifi-2019.9.11.tar.gz"
+MD5SUM="cadd4e373fc08f649fa39b82aed9ad96"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

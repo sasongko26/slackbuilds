@@ -5,10 +5,14 @@
 
 # Copyright (c) 2011, Eric B. Pratt <eric.b.pratt@gmail.com>
 <<<<<<< HEAD
+<<<<<<< HEAD
 #               2015-17, Shrivatsan Sampathkumar <nastavs@gmail.com>
 =======
 #               2015-18, Shrivatsan Sampathkumar <nastavs@gmail.com>
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+#               2015-20, Shrivatsan Sampathkumar <nastavs@gmail.com>
+>>>>>>> upstream/master
 #
 # Permission to use, copy, modify, and/or distribute this software for any
 # purpose with or without fee is hereby granted, provided that the above
@@ -24,10 +28,14 @@
 
 PRGNAM=KeePass
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.36}
 =======
 VERSION=${VERSION:-2.39.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.46}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -122,12 +130,16 @@ done
 mkdir -p $PKG/usr/lib
 cp Ext/KeePass.exe.config Build/KeePass/Release/
 <<<<<<< HEAD
+<<<<<<< HEAD
 cp -a $TMP/$PRGNAM-$VERSION/Build/KeePass/ $PKG/usr/lib/KeePass-${VERSION}
 cp -a $TMP/$PRGNAM-$VERSION/Build/KeePassLib_Distrib/ $PKG/usr/lib/KeePass-${VERSION}
 
 mkdir -p $PKG/usr/bin
 echo -e '#!/bin/bash'"\nexec /usr/bin/mono /usr/lib/KeePass-${VERSION}/Release/KeePass.exe" > $PKG/usr/bin/keepass
 =======
+=======
+cp Ext/KeePass.config.xml Build/KeePass/Release/
+>>>>>>> upstream/master
 cp -a $TMP/$PRGNAM-$VERSION/Build/KeePass/ $PKG/usr/lib/KeePass
 cp -a $TMP/$PRGNAM-$VERSION/Build/KeePassLib_Distrib/ $PKG/usr/lib/KeePass
 

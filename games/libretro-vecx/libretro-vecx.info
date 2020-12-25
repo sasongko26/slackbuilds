@@ -1,5 +1,6 @@
 PRGNAM="libretro-vecx"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.01.24_30d39a0"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/libretro-vecx-2017.01.24_30d39a0.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/libretro-vecx-2017.11.10_56382b9.tar.xz"
 MD5SUM="c22d5a421c7aea71f23c294f73a2f580"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.09.29_fb70263"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/libretro-vecx-2018.09.29_fb70263.tar.xz"
+MD5SUM="5b313a4b412a9a2eb16fca806c371f65"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"

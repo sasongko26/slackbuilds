@@ -1,5 +1,6 @@
 PRGNAM="byacc"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="20170709"
 HOMEPAGE="http://invisible-island.net/byacc/"
 DOWNLOAD="http://invisible-island.net/datafiles/release/byacc.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://invisible-island.net/byacc/"
 DOWNLOAD="http://invisible-island.net/datafiles/release/byacc.tar.gz"
 MD5SUM="2d35fe8f66a089d884c67568b47aa190"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="20200910"
+HOMEPAGE="http://invisible-island.net/byacc/"
+DOWNLOAD="http://invisible-island.net/datafiles/release/byacc.tar.gz"
+MD5SUM="5726a5a655c6fd4e8f950552cceeae29"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

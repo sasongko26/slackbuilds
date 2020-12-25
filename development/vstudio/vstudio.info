@@ -1,5 +1,6 @@
 PRGNAM="vstudio"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="7.5.3"
 HOMEPAGE="http://www.valentina-db.com/"
 DOWNLOAD="http://valentina-db.com/download/prev_releases/7.5.3/lin_32/vstudio_7_lin.deb"
@@ -14,6 +15,14 @@ MD5SUM="e75eded21d7d2d50ebb483249fc4b18f"
 DOWNLOAD_x86_64="http://valentina-db.com/download/prev_releases/8.3.1/lin_64/vstudio_x64_8_lin.deb"
 MD5SUM_x86_64="01a5245273ee2bbe6e047a40ef7da562"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="10"
+HOMEPAGE="http://www.valentina-db.com/"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://www.valentina-db.com/en/all-downloads/vstudio/current/vstudio_x64_lin-deb"
+MD5SUM_x86_64="7a0e80bc55f9ddeb4e32decc6ace127b"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="Antonio Leal"
 EMAIL="antonioleal@yahoo.com"

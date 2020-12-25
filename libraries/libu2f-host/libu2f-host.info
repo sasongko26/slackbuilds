@@ -1,5 +1,6 @@
 PRGNAM="libu2f-host"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.1.4"
 HOMEPAGE="https://github.com/Yubico/libu2f-host"
 DOWNLOAD="https://github.com/Yubico/libu2f-host/archive/libu2f-host-1.1.4.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/Yubico/libu2f-host"
 DOWNLOAD="https://github.com/Yubico/libu2f-host/archive/libu2f-host-1.1.5/libu2f-host-libu2f-host-1.1.5.tar.gz"
 MD5SUM="6e8718ae5100034d08f84d60139968ce"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.1.10"
+HOMEPAGE="https://github.com/Yubico/libu2f-host"
+DOWNLOAD="https://github.com/Yubico/libu2f-host/archive/libu2f-host-1.1.10/libu2f-host-libu2f-host-1.1.10.tar.gz"
+MD5SUM="3a7de10d4ba92d7fa48b3d0affc62887"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="hidapi gengetopt"

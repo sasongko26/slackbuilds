@@ -1,4 +1,5 @@
 PRGNAM="perl-Template-Toolkit"
+<<<<<<< HEAD
 VERSION="2.27"
 <<<<<<< HEAD
 HOMEPAGE="http://search.cpan.org/~abw/Template-Toolkit/"
@@ -8,6 +9,12 @@ HOMEPAGE="https://metacpan.org/release/Template-Toolkit"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/A/AB/ABW/Template-Toolkit-2.27.tar.gz"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="a7fae5d4fe5918f33105d92a62134067"
+=======
+VERSION="3.009"
+HOMEPAGE="https://metacpan.org/release/Template-Toolkit"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/Template-Toolkit-3.009.tar.gz"
+MD5SUM="f1c401067b728337a8a8c0d4ae642af8"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="perl-AppConfig"

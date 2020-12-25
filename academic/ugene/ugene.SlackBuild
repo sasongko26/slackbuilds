@@ -3,10 +3,14 @@
 # Slackware build script for ugene
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2013-2017 Petar Petrov slackalaxy@gmail.com
 =======
 # Copyright 2013-2018 Petar Petrov slackalaxy@gmail.com
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2013-2020 Petar Petrov slackalaxy@gmail.com
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=ugene
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.27.0}
 =======
 VERSION=${VERSION:-1.30.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-35.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -87,7 +95,8 @@ sed -i "s:/share/man:/man:g" src/ugene_globals.pri
 
 qmake-qt5 $QMAKECONFIG -r \
 QMAKE_CFLAGS="$SLKCFLAGS" \
-QMAKE_CXXFLAGS="$SLKCFLAGS"
+QMAKE_CXXFLAGS="$SLKCFLAGS" \
+UGENE_EXCLUDE_LIST_ENABLED=1
 make
 make install INSTALL_ROOT=$PKG
 
@@ -96,7 +105,7 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  build.txt COPYRIGHT LICENSE.txt LICENSE.3rd_party.txt \
+  build.txt README.md LICENSE.txt LICENSE.3rd_party.txt \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 

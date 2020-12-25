@@ -3,6 +3,8 @@
 # Slackware build script for mpv
 
 # Copyright 2015 John Vogel Corning, NY USA
+# Copyright 2017,2018 (versions 0.25.0-0.29.1) Andreas Guldstrand
+# Copyright 2020 Christoph Willing  Brisbane Australia
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,10 +26,15 @@
 
 PRGNAM=mpv
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.27.0}
 =======
 VERSION=${VERSION:-0.27.2}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.33.0}
+WAF_VERSION=${WAF_VERSION:-2.0.20}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -67,9 +74,10 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
-cp $CWD/waf-1.9.8 $PRGNAM-$VERSION/waf
-chmod +x $PRGNAM-$VERSION/waf
 cd $PRGNAM-$VERSION
+cp $CWD/waf-$WAF_VERSION ./waf
+sed -i -e 's/python$/python3/' waf
+chmod +x waf
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -77,11 +85,14 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-DOCS="Copyright LICENSE README.md RELEASE_NOTES"
+DOCS="Copyright LICENSE.GPL LICENSE.LGPL README.md RELEASE_NOTES VERSION"
 MANUAL="DOCS/*.md DOCS/*.rst DOCS/*.txt"
 
-# This leaves an opening for build options.
+# This leaves an opening for additional build options.
 BUILD_OPTS=${BUILD_OPTS:-""}
+
+PKG_CONFIG_PATH="/usr/lib${LIBDIRSUFFIX}/ffmpeg4/pkgconfig"
+export PKG_CONFIG_PATH
 
 # Setting CFLAGS and CXXFLAGS breaks configure.
 ./waf configure \
@@ -90,6 +101,11 @@ BUILD_OPTS=${BUILD_OPTS:-""}
   --confdir=/etc/$PRGNAM \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --enable-libmpv-shared \
+  --enable-html-build \
+  --enable-dvdnav \
+  --enable-cdda \
+  --enable-dvbin \
   $BUILD_OPTS
 
 ./waf build

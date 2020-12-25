@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Lutris is an open gaming platform for Linux.
 =======
 Lutris is an open gaming platform for Linux.  It helps you install and manage
@@ -6,5 +7,11 @@ your games in a unified interface.  The goal is to support every game which
 runs on Linux, from native to Windows games (via Wine) to emulators and
 browser games.
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+Lutris is an open gaming platform for Linux.  It helps you install and
+manage your games in a unified interface.  The goal is to support every
+game which runs on Linux, from native to Windows games (via Wine) to
+emulators and browser games.
+>>>>>>> upstream/master
 
 allegro and wine are optional dependencies for some of the runners.

@@ -1,9 +1,9 @@
 #!/bin/sh
 # Slackware build script for mednafen
 
-# Copyright 2008-2014  Heinz Wiesinger, Amsterdam, The Netherlands
-# Copyright 2014-2016  Ryan P.C. McQuen | Everett, WA
-# Copyright 2017  Johannes Schoepfer, Germany
+# Copyright 2008 - 2014  Heinz Wiesinger, Amsterdam, The Netherlands
+# Copyright 2014 - 2016  Ryan P.C. McQuen | Everett, WA
+# Copyright 2017 - 2020  Johannes Schoepfer, Germany
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,7 +24,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=mednafen
-VERSION=${VERSION:-0.9.47}
+VERSION=${VERSION:-1.24.3}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -70,6 +70,48 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+# sanitize build flags, thanks to the gentoo folks
+sed \
+  -e '/-fno-fast-math/d' \
+  -e '/-fno-unsafe-math-optimizations/d' \
+  -e '/-fno-aggressive-loop-optimizations/d' \
+  -e '/-fno-ipa-icf/d' \
+  -e '/-fno-printf-return-value/d' \
+  -e '/-fomit-frame-pointer/d' \
+  -e '/-fno-pic/d' \
+  -e '/-fno-pie/d' \
+  -e '/-fno-PIC/d' \
+  -e '/-fno-PIE/d' \
+  -e '/-nopie/d' \
+  -e '/-no-pie/d' \
+  -e '/-fno-stack-protector/d' \
+  -e '/-fno-stack-protector-all/d' \
+  -e '/-fno-stack-protector-strong/d' \
+  -e '/-mtune=haswell/d' \
+  -i configure.ac
+
+# This warning is not true at least on x86_64
+if [ "$ARCH" = "x86_64" ]; then
+  sed -e '/Compiling with position-independent code generation enabled is not recommended, for performance reasons/d' \
+    -i src/types.h
+fi
+
+# provide buildtime pkgconfig file, which is missing in lzo-2.09
+cat << EOF > lzo2.pc
+prefix=/usr
+exec_prefix=\${prefix}
+includedir=\${prefix}/include
+libdir=/usr/lib$LIBDIRSUFFIX
+Name: lzo2
+Version: 2.09
+Description: LZO - a real-time data compression library
+URL: http://www.oberhumer.com/opensource/lzo/
+Cflags: -I\${includedir}/lzo
+Libs: -L\${libdir} -llzo2
+EOF
+
+autoreconf
+PKG_CONFIG_PATH=. \
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
@@ -77,14 +119,17 @@ CXXFLAGS="$SLKCFLAGS" \
   --libdir=/usr/lib$LIBDIRSUFFIX \
   --sysconfdir=/etc \
   --localstatedir=/var \
-  --disable-static \
+  --mandir=/usr/man \
+  --disable-debugger \
+  --with-external-lzo \
   --build=$ARCH-slackware-linux
 
 make
 make install-strip DESTDIR=$PKG
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -ar Documentation ABOUT-NLS ChangeLog COPYING INSTALL README  $PKG/usr/doc/$PRGNAM-$VERSION
+cp -ar ABOUT-NLS ChangeLog COPYING Documentation INSTALL \
+  README{,.DOS,.PORTING} TODO $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 rm -f $PKG/usr/doc/$PRGNAM-$VERSION/Documentation/Makefile.*
 

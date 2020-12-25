@@ -26,10 +26,14 @@
 
 PRGNAM=tiled
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.0.3}
 =======
 VERSION=${VERSION:-1.1.5}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.4.3}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -85,14 +89,12 @@ if [ "$ARCH" = "x86_64" ]; then
   patch -p0 < $CWD/tiled_lib64.patch
 fi
 
+qbs setup-qt /usr/bin/qmake-qt5 qt5
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
-  qmake-qt5 -r PREFIX=/usr LIBDIR=/usr/lib${LIBDIRSUFFIX} RPATH=no USE_FHS_PLUGIN_PATH=yes
+  qbs profile:qt5 qbs.installPrefix:"/usr" projects.Tiled.useRPaths:false
 
-CFLAGS="$SLKCFLAGS" \
-CXXFLAGS="$SLKCFLAGS" \
-  make
-make install INSTALL_ROOT=$PKG
+qbs install --install-root $PKG
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

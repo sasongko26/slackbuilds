@@ -2,7 +2,7 @@
 
 # Slackware build script for jupyter-ipykernel
 
-# Copyright 2017 Benjamin Trigona-Harany <slackbuilds@jaxartes.net>
+# Copyright 2017-2019 Benjamin Trigona-Harany <slackbuilds@jaxartes.net>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -22,6 +22,7 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+<<<<<<< HEAD
 SRCNAM=ipykernel
 PRGNAM=jupyter-$SRCNAM
 <<<<<<< HEAD
@@ -30,7 +31,14 @@ VERSION=${VERSION:-4.6.1}
 VERSION=${VERSION:-4.8.2}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
+=======
+PRGNAM=jupyter-ipykernel
+VERSION=${VERSION:-4.10.0}
+BUILD=${BUILD:-2}
+>>>>>>> upstream/master
 TAG=${TAG:-_SBo}
+
+SRCNAM=ipykernel
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -74,7 +82,8 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-python setup.py install --root=$PKG
+python2 setup.py install --root=$PKG
+sed -i "s| \"python\",| \"/usr/bin/python2\",|" $PKG/usr/share/jupyter/kernels/python2/kernel.json
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

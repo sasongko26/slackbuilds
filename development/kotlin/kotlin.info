@@ -1,5 +1,6 @@
 PRGNAM="kotlin"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.1.61"
 HOMEPAGE="https://kotlinlang.org/"
 DOWNLOAD="https://github.com/JetBrains/kotlin/releases/download/v1.1.61/kotlin-compiler-1.1.61.zip"
@@ -10,6 +11,12 @@ HOMEPAGE="https://kotlinlang.org/"
 DOWNLOAD="https://github.com/JetBrains/kotlin/releases/download/v1.2.50/kotlin-compiler-1.2.50.zip"
 MD5SUM="30bc567181dee6a84466505b48c0bb44"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.4.21"
+HOMEPAGE="https://kotlinlang.org/"
+DOWNLOAD="https://github.com/JetBrains/kotlin/releases/download/v1.4.21/kotlin-compiler-1.4.21.zip"
+MD5SUM="92db4794b40a8f0a09a5711c1c9a2c64"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="jdk setconf"

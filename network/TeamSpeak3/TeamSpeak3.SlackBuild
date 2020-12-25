@@ -29,10 +29,14 @@
 
 PRGNAM=TeamSpeak3
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.1.4}
 =======
 VERSION=${VERSION:-3.1.7}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.5.3}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

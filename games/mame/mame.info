@@ -1,5 +1,6 @@
 PRGNAM="mame"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.190"
 HOMEPAGE="http://mamedev.org/"
 DOWNLOAD="https://github.com/mamedev/mame/archive/mame0190/mame-mame0190.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://mamedev.org/"
 DOWNLOAD="https://github.com/mamedev/mame/archive/mame0198/mame-mame0198.tar.gz"
 MD5SUM="a6f072f3ab80d0b2f5067be732a44280"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.214"
+HOMEPAGE="http://mamedev.org/"
+DOWNLOAD="https://github.com/mamedev/mame/archive/mame0214/mame-mame0214.tar.gz"
+MD5SUM="cfe6428ae8a9e969e2a1f942ff37ffe8"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="SDL2_ttf"

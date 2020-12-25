@@ -1,5 +1,6 @@
 PRGNAM="zim"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.67"
 HOMEPAGE="http://zim-wiki.org/"
 DOWNLOAD="http://zim-wiki.org/downloads/zim-0.67.tar.gz"
@@ -15,3 +16,14 @@ MD5SUM_x86_64=""
 REQUIRES=""
 MAINTAINER="Brenton Earl"
 EMAIL="brent@exitstatusone.com"
+=======
+VERSION="0.73.3"
+HOMEPAGE="http://zim-wiki.org/"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://zim-wiki.org/downloads/zim-0.73.3.tar.gz"
+MD5SUM_x86_64="6accfefc11cc56a2eda7cd4f5710eaaa"
+REQUIRES="pygobject3-python3"
+MAINTAINER="Andrew Payne"
+EMAIL="phalange@komputermatrix.com"
+>>>>>>> upstream/master

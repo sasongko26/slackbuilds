@@ -1,5 +1,6 @@
 PRGNAM="posh"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.12.6"
 HOMEPAGE="https://packages.qa.debian.org/p/posh.html"
 DOWNLOAD="http://http.debian.net/debian/pool/main/p/posh/posh_0.12.6.tar.xz"
@@ -10,12 +11,22 @@ HOMEPAGE="https://packages.qa.debian.org/p/posh.html"
 DOWNLOAD="http://http.debian.net/debian/pool/main/p/posh/posh_0.13.1.tar.xz"
 MD5SUM="5503c24830a1c43ce7c31751a60b94aa"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.14.1"
+HOMEPAGE="https://packages.qa.debian.org/p/posh.html"
+DOWNLOAD="http://http.debian.net/debian/pool/main/p/posh/posh_0.14.1.tar.xz"
+MD5SUM="71f482c9a8815f209abf6ac134543bc9"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
 MAINTAINER="Hunter Sezen"
 <<<<<<< HEAD
+<<<<<<< HEAD
 EMAIL="ovariegata@yahoo.com"
 =======
 EMAIL="orbea@fredslev.dk"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+EMAIL="orbea@riseup.net"
+>>>>>>> upstream/master

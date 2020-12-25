@@ -1,5 +1,6 @@
 PRGNAM="Flask"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.12.2"
 HOMEPAGE="http://flask.pocoo.org/"
 DOWNLOAD="https://pypi.python.org/packages/eb/12/1c7bd06fcbd08ba544f25bf2c6612e305a70ea51ca0eda8007344ec3f123/Flask-0.12.2.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://flask.pocoo.org/"
 DOWNLOAD="https://files.pythonhosted.org/packages/4b/12/c1fbf4971fda0e4de05565694c9f0c92646223cff53f15b6eb248a310a62/Flask-1.0.2.tar.gz"
 MD5SUM="824f0f20aae1f44c9c7dc4054adb7969"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.1.1"
+HOMEPAGE="http://flask.pocoo.org/"
+DOWNLOAD="https://files.pythonhosted.org/packages/2e/80/3726a729de758513fd3dbc64e93098eb009c49305a97c6751de55b20b694/Flask-1.1.1.tar.gz"
+MD5SUM="0e3ed44ece1c489ed835d1b7047e349c"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="werkzeug Jinja2 itsdangerous click"

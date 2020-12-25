@@ -2,7 +2,7 @@
 
 # Slackware build script for Botan
 
-# Copyright (c) 2010-2017  Markus Reichelt, Aachen, DE
+# Copyright (c) 2010-2020  Markus Reichelt, Aachen, DE
 # All rights reserved.
 #
 #   Permission to use, copy, modify, and distribute this software for
@@ -26,7 +26,7 @@
 # Markus Reichelt, slackbuilds@mareichelt.de, 0xCCEEF115
 
 PRGNAM=Botan
-VERSION=${VERSION:-2.3.0}
+VERSION=${VERSION:-2.16.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -65,7 +65,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tgz
+tar xvf $CWD/$PRGNAM-$VERSION.tar.xz
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
@@ -81,22 +81,23 @@ python configure.py \
   --prefix=/usr \
   --docdir=doc \
   --libdir=lib$LIBDIRSUFFIX \
+  --mandir=/usr/man \
+  --disable-static \
   --with-doxygen
 
 make
-DESTDIR="$PKG/" \
-make install
+make check
+#in addition to running 'make check' as an alternative way to invoke the testsuite
+#is to uncomment the following line
+#LD_LIBRARY_PATH=. ./botan-test
+make install DESTDIR=$PKG
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 cp -a *.rst *.txt doc/ $PKG/usr/doc/$PRGNAMI-$VERSION/
 
-if [ -e /usr/bin/sphinx-build ]; then
-  rm $PKG/usr/doc/$PRGNAMI-$VERSION/manual/{.buildinfo,objects.inv}
-  rm -drf $PKG/usr/doc/$PRGNAMI-$VERSION/manual/_sources
-  rm -drf $PKG/usr/doc/$PRGNAMI-$VERSION/manual/.doctrees
-fi
+rm -rf $PKG/usr/doc/$PRGNAMI-$VERSION/doc
 
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAMI-$VERSION/$PRGNAM.SlackBuild
 

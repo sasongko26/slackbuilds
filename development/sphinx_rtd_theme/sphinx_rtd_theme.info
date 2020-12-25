@@ -1,5 +1,6 @@
 PRGNAM="sphinx_rtd_theme"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.2.4"
 HOMEPAGE="https://github.com/snide/sphinx_rtd_theme/"
 DOWNLOAD="https://github.com/snide/sphinx_rtd_theme/archive/0.2.4/sphinx_rtd_theme-0.2.4.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/rtfd/sphinx_rtd_theme"
 DOWNLOAD="https://github.com/rtfd/sphinx_rtd_theme/archive/0.3.1/sphinx_rtd_theme-0.3.1.tar.gz"
 MD5SUM="b226d072c016fbbf3d681335db740c9b"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.4.2"
+HOMEPAGE="https://github.com/rtfd/sphinx_rtd_theme"
+DOWNLOAD="https://github.com/rtfd/sphinx_rtd_theme/archive/0.4.2/sphinx_rtd_theme-0.4.2.tar.gz"
+MD5SUM="6f18f674d10fa41de8907c86decfe8db"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

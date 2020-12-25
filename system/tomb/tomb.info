@@ -1,5 +1,6 @@
 PRGNAM="tomb"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.4"
 HOMEPAGE="https://www.dyne.org/software/tomb/"
 DOWNLOAD="https://github.com/dyne/Tomb/archive/v2.4/Tomb-2.4.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.dyne.org/software/tomb/"
 DOWNLOAD="https://github.com/dyne/Tomb/archive/v2.5/Tomb-2.5.tar.gz"
 MD5SUM="5f4a233d6429bbfcfa8f5f94fac9c7fc"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.6"
+HOMEPAGE="https://www.dyne.org/software/tomb/"
+DOWNLOAD="https://github.com/dyne/Tomb/archive/v2.6/Tomb-2.6.tar.gz"
+MD5SUM="1c3d2d01f2ee70e725d544b41d6c8db3"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

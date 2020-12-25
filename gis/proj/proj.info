@@ -1,4 +1,5 @@
 PRGNAM="proj"
+<<<<<<< HEAD
 VERSION="5.1.0"
 HOMEPAGE="http://trac.osgeo.org/proj/"
 <<<<<<< HEAD
@@ -12,6 +13,12 @@ DOWNLOAD="http://download.osgeo.org/proj/proj-5.1.0.tar.gz \
 MD5SUM="68c46f6da7e4cd5708f83fe47af80db6 \
         156a20036ab6ce0e62fb1c3f1cb8d946"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="7.2.0"
+HOMEPAGE="https://www.osgeo.org/projects/proj/"
+DOWNLOAD="http://download.osgeo.org/proj/proj-7.2.0.tar.gz"
+MD5SUM="12748b74e4d6c12ade32ec3ca68dafc7"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

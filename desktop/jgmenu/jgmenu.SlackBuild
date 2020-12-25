@@ -3,10 +3,14 @@
 # Slackware build script for jgmenu.
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 =======
 # Copyright 2017-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-2020  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=jgmenu
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.7.5}
 =======
 VERSION=${VERSION:-1.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-4.2.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -77,10 +85,16 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-sed -i -i "s|/lib/|/lib$LIBDIRSUFFIX/|" Makefile.inc
+CFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS" \
+./configure \
+  --prefix=/usr \
+  --with-gtktheme \
+  --with-lx \
+  --with-pmenu
 
 make
-make DESTDIR=$PKG prefix=/usr install
+make install DESTDIR=$PKG
 
 <<<<<<< HEAD
 install -Dm644 docs/jgmenurc $PKG/etc/xdg/$PRGNAM/jgmenurc
@@ -99,7 +113,8 @@ find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $(find $PKG/usr/man -type l); do ln -s $(readlink $i).gz $i.gz; rm $i; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -r docs examples INSTALL.md LICENSE README.md TODO $PKG/usr/doc/$PRGNAM-$VERSION
+cp -r docs examples INSTALL.md LICENSE NEWS.md README.md TODO.md \
+   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

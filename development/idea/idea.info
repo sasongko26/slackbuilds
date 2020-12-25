@@ -1,14 +1,19 @@
 PRGNAM="idea"
-VERSION="2017.1"
+VERSION="2020.2"
 HOMEPAGE="http://www.jetbrains.com/idea/"
+<<<<<<< HEAD
 <<<<<<< HEAD
 DOWNLOAD="https://download-cf.jetbrains.com/idea/ideaIC-2017.1-no-jdk.tar.gz"
 =======
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/ideaIC-2017.1-no-jdk.tar.gz"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="e3b5620d79b44edc823d03523b631381"
+=======
+DOWNLOAD="https://download.jetbrains.com/idea/ideaIC-2020.2.tar.gz"
+MD5SUM="57f70ced0fd644be9521b138ba6596c6"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="jdk"
-MAINTAINER="Mario Antunes"
-EMAIL="mariolpantunes@gmail.com"
+MAINTAINER="Joielechong"
+EMAIL="joielechong@rilixtech.com"

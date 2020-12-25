@@ -1,5 +1,6 @@
 PRGNAM="python-scandir"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.5"
 HOMEPAGE="https://github.com/benhoyt/scandir"
 DOWNLOAD="https://pypi.python.org/packages/bd/f4/3143e0289faf0883228017dbc6387a66d0b468df646645e29e1eb89ea10e/scandir-1.5.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/benhoyt/scandir"
 DOWNLOAD="https://pypi.python.org/packages/13/bb/e541b74230bbf7a20a3949a2ee6631be299378a784f5445aa5d0047c192b/scandir-1.7.tar.gz"
 MD5SUM="037e5f24d1a0e78b17faca72dea9555f"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.10.0"
+HOMEPAGE="https://github.com/benhoyt/scandir"
+DOWNLOAD="https://files.pythonhosted.org/packages/df/f5/9c052db7bd54d0cbf1bc0bb6554362bba1012d03e5888950a4f5c5dadc4e/scandir-1.10.0.tar.gz"
+MD5SUM="f8378f4d9f95a6a78e97ab01aa900c1d"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

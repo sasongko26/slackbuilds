@@ -1,5 +1,6 @@
 PRGNAM="openjdk8"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="8u151b12"
 HOMEPAGE="http://openjdk.java.net"
 DOWNLOAD="http://icedtea.classpath.org/download/source/icedtea-3.6.0.tar.xz \
@@ -42,8 +43,30 @@ MD5SUM="e6a2a693291296a8e4b3cc76499b047e \
         e7f0b4ca8f2b897c8f4225d4fe3291fb \
         c0017c13ea1c5fc8026d9f2b2bed4a11"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="8u252"
+HOMEPAGE="http://openjdk.java.net"
+DOWNLOAD="http://icedtea.classpath.org/download/source/icedtea-3.16.0.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.16.0/openjdk.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.16.0/corba.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.16.0/jaxp.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.16.0/jaxws.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.16.0/jdk.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.16.0/langtools.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.16.0/nashorn.tar.xz \
+          http://icedtea.classpath.org/download/drops/icedtea8/3.16.0/hotspot.tar.xz"
+MD5SUM="a8a202fdd4aa170f80968508477cd986 \
+    0908aaf4976a9092ea41657a53aa3195 \
+    293716bae4f8519f5223efe3b03cc38f \
+    83d457c1eeb61874dbcb0a0dca06cc00 \
+    f0708de204b736ea0f5bb4125a7a8943 \
+    55a648609f76b93ac19878bc21ba0f35 \
+    5ba24b93a4f909e5725ad6c04b8f3ed4 \
+    6fd7950ea8afb9ae986272aab55ed721 \
+    a5e5491cf87903cae64bda8fef6e3314"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="openjdk"
+REQUIRES="openjdk7"
 MAINTAINER="Strahil Yordanov"
 EMAIL="strahilski@yahoo.com"

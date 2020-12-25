@@ -10,7 +10,11 @@
 # Copyright 2017  Johannes Schoepfer, Germany
 =======
 # Copyright 2017 - 2018  Johannes Schoepfer, Germany
+<<<<<<< HEAD
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Updated by Emmanuel N. Millan, Argentina, 2019
+>>>>>>> upstream/master
 #
 # Redistribution and use of this script, with or without modification, is
 # permitted provided that the following conditions are met:
@@ -31,10 +35,14 @@
 
 PRGNAM=i3
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-4.14.1}
 =======
 VERSION=${VERSION:-4.15}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-4.18.3}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -79,6 +87,10 @@ find -L . \
   -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+  
+autoreconf -fi
+
+cat ${CWD}/add_HAVE_strndup.diff | patch -p0 || exit
 
 mkdir -p build
 ( cd build

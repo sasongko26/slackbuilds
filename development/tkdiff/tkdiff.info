@@ -1,5 +1,6 @@
 PRGNAM="tkdiff"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.2"
 HOMEPAGE="https://sourceforge.net/projects/tkdiff/"
 DOWNLOAD="https://sourceforge.net/projects/tkdiff/files/tkdiff/4.2/tkdiff-4.2.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://sourceforge.net/projects/tkdiff/"
 DOWNLOAD="https://sourceforge.net/projects/tkdiff/files/tkdiff/4.3/tkdiff-4-3.zip"
 MD5SUM="8c807b1f629849f26594de792b7be7e1"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="5.1"
+HOMEPAGE="https://sourceforge.net/projects/tkdiff/"
+DOWNLOAD="https://sourceforge.net/projects/tkdiff/files/tkdiff/5.1/tkdiff-5-1.zip"
+MD5SUM="3c08e7985080e310c51ab29181df1856"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

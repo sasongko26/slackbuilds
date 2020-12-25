@@ -1,5 +1,6 @@
 PRGNAM="appstream-glib"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.7.4"
 HOMEPAGE="https://github.com/hughsie/appstream-glib"
 DOWNLOAD="https://github.com/hughsie/appstream-glib/archive/appstream_glib_0_7_4/appstream-glib-appstream_glib_0_7_4.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/hughsie/appstream-glib"
 DOWNLOAD="https://github.com/hughsie/appstream-glib/archive/appstream_glib_0_7_9/appstream-glib-appstream_glib_0_7_9.tar.gz"
 MD5SUM="961d168f1af2e9e09b09b5640577ac56"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.7.15"
+HOMEPAGE="https://github.com/hughsie/appstream-glib"
+DOWNLOAD="https://github.com/hughsie/appstream-glib/archive/appstream_glib_0_7_15/appstream-glib-appstream_glib_0_7_15.tar.gz"
+MD5SUM="60fda2d9c0f5b67a3d0eb8dd31a7211b"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="meson json-glib gcab"

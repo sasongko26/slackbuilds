@@ -1,5 +1,6 @@
 PRGNAM="yandex-browser-beta"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="17.9.1.982"
 HOMEPAGE="https://browser.yandex.com/desktop/main/"
 DOWNLOAD="UNSUPPORTED"
@@ -14,6 +15,14 @@ MD5SUM=""
 DOWNLOAD_x86_64="http://repo.yandex.ru/yandex-browser/deb/pool/main/y/yandex-browser-beta/yandex-browser-beta_18.3.1.1122-1_amd64.deb"
 MD5SUM_x86_64="7bcbec912cb1ea60aa234c3134d992fd"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="19.12.3.332"
+HOMEPAGE="https://browser.yandex.com/"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="http://repo.yandex.ru/yandex-browser/deb/pool/main/y/yandex-browser-beta/yandex-browser-beta_19.12.3.332-1_amd64.deb"
+MD5SUM_x86_64="f8f4be3913abaf37d2eb45530ebe177c"
+>>>>>>> upstream/master
 REQUIRES=""
-MAINTAINER="Edinaldo P. Silva"
-EMAIL="edps.mundognu@gmail.com"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere"

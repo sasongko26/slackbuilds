@@ -3,7 +3,7 @@
 # Slackware build script for JMRI
 
 # Copyright 2011 David Spencer, Baildon, West Yorkshire, U.K.
-# Copyright 2016-2017 Heiko Rosemann, Germany
+# Copyright 2016-2020 Heiko Rosemann, Germany
 
 # All rights reserved.
 #
@@ -26,12 +26,17 @@
 
 PRGNAM=jmri
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-4.8}
 REVISION=${REVISION:-Rbe0ff15}
 =======
 VERSION=${VERSION:-4.10}
 REVISION=${REVISION:-R419243e}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-4.20}
+REVISION=${REVISION:-Rc7ba8249b}
+>>>>>>> upstream/master
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -57,7 +62,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $TARNAM
-tar xvf $CWD/$TARNAM.$VERSION.$REVISION.tgz
+tar xvf $CWD/$TARNAM.$VERSION+$REVISION.tgz
 cd $TARNAM
 chown -R root:root .
 find -L . \

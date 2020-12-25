@@ -3,10 +3,14 @@
 # Slackware build script for slibtool
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017 Hunter Sezen California, USA
 =======
 # Copyright 2017-2018 Hunter Sezen California, USA
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-2018, 2020 Hunter Sezen California, USA
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=slibtool
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.5.17}
 =======
 VERSION=${VERSION:-0.5.19}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.5.31}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -77,19 +85,30 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-CFLAGS="$SLKCFLAGS" \
-./configure \
-  --prefix=/usr \
-  --libdir=/usr/lib${LIBDIRSUFFIX} \
-  --disable-static \
-  --enable-shared \
-  --build=$ARCH-slackware-linux
+[ "${DEBUG:=0}" = 0 ] ||
+  SLKCFLAGS="$(printf %s "$SLKCFLAGS" | sed 's/-O2/-O0 -g/')"
 
-make
-make install DESTDIR=$PKG
+(
+  mkdir -p build
+  cd build
 
-find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+  CFLAGS="$SLKCFLAGS" \
+  ../configure \
+    --prefix=/usr \
+    --libdir=/usr/lib${LIBDIRSUFFIX} \
+    --disable-static \
+    --enable-shared \
+    --pkgdurl='https://slackbuilds.org/apps/slibtool/' \
+    --build=$ARCH-slackware-linux
+
+  make
+  make install DESTDIR=$PKG
+)
+
+if [ "$DEBUG" = 0 ]; then
+  find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" |
+    grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+fi
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a CONTRIB COPYING.SLIBTOOL NEWS README THANKS $PKG/usr/doc/$PRGNAM-$VERSION

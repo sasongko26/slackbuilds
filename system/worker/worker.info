@@ -1,5 +1,6 @@
 PRGNAM="worker"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.12.0"
 HOMEPAGE="http://www.boomerangsworld.de/worker/"
 DOWNLOAD="http://www.boomerangsworld.de/cms/worker/downloads/worker-3.12.0.tar.bz2"
@@ -10,6 +11,12 @@ HOMEPAGE="http://www.boomerangsworld.de/worker/"
 DOWNLOAD="http://www.boomerangsworld.de/cms/worker/downloads/worker-3.15.1.tar.bz2"
 MD5SUM="0ca25d8f83543b9a76511d7370472827"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.6.1"
+HOMEPAGE="http://www.boomerangsworld.de/worker/"
+DOWNLOAD="http://www.boomerangsworld.de/cms/worker/downloads/worker-4.6.1.tar.bz2"
+MD5SUM="af486c576c31411bf30eafda7bd9e917"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="avfs"

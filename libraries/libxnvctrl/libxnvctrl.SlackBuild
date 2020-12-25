@@ -24,10 +24,14 @@
 
 PRGNAM=libxnvctrl
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-384.90}
 =======
 VERSION=${VERSION:-390.42}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-450.66}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -74,7 +78,7 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 #patch source to build static and shared library
-patch -p1 < $CWD/libxnvctrl_so.patch
+patch -p0 < $CWD/libxnvctrl_so.patch
 
 cd src/libXNVCtrl
 make clean
@@ -83,8 +87,8 @@ make
 
 #install shared and static libraries and headers
 install -Dm 644 *.h -t $PKG/usr/include/NVCtrl
-install -Dm 644 libXNVCtrl.a -t $PKG/usr/lib$LIBDIRSUFFIX
-install -Dm 755 libXNVCtrl.so.0.0.0 -t $PKG/usr/lib$LIBDIRSUFFIX
+install -Dm 644 _out/*/libXNVCtrl.a -t $PKG/usr/lib$LIBDIRSUFFIX
+install -Dm 755 _out/*/libXNVCtrl.so.0.0.0 -t $PKG/usr/lib$LIBDIRSUFFIX
 ln -s libXNVCtrl.so.0.0.0 $PKG/usr/lib$LIBDIRSUFFIX/libXNVCtrl.so.0
 ln -s libXNVCtrl.so.0 $PKG/usr/lib$LIBDIRSUFFIX/libXNVCtrl.so
 

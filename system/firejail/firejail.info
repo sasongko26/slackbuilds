@@ -1,5 +1,6 @@
 PRGNAM="firejail"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.9.50"
 HOMEPAGE="https://firejail.wordpress.com/"
 DOWNLOAD="https://sourceforge.net/projects/firejail/files/firejail/firejail-0.9.50.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://firejail.wordpress.com/"
 DOWNLOAD="https://sourceforge.net/projects/firejail/files/firejail/firejail-0.9.54.tar.xz"
 MD5SUM="0ca3bea349cf9b154f3cfa97e6483182"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.9.64"
+HOMEPAGE="https://firejail.wordpress.com/"
+DOWNLOAD="https://sourceforge.net/projects/firejail/files/firejail/firejail-0.9.64.tar.xz"
+MD5SUM="c3bdc7f0c6a86b910a333041fd6bd9c4"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

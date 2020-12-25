@@ -1,5 +1,6 @@
 PRGNAM="qbs"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.8.1"
 HOMEPAGE="http://qt-project.org/wiki/qbs"
 DOWNLOAD="https://github.com/qt-labs/qbs/archive/v1.8.1/qbs-1.8.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://wiki.qt.io/Qbs"
 DOWNLOAD="https://download.qt.io/official_releases/qbs/1.11.1/qbs-src-1.11.1.tar.gz"
 MD5SUM="05c9993f4190fe8298cda3d4e803f37e"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.16.0"
+HOMEPAGE="https://wiki.qt.io/Qbs"
+DOWNLOAD="https://download.qt.io/official_releases/qbs/1.16.0/qbs-src-1.16.0.tar.gz"
+MD5SUM="1981b1625328d8bf16a5552213d6912a"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="qt5"

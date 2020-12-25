@@ -1,5 +1,6 @@
 PRGNAM="gwyddion"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.49"
 HOMEPAGE="http://gwyddion.net"
 DOWNLOAD="http://downloads.sourceforge.net/gwyddion/gwyddion-2.49.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://gwyddion.net"
 DOWNLOAD="http://downloads.sourceforge.net/gwyddion/gwyddion-2.50.tar.xz"
 MD5SUM="9beea32d38b3dbc0cd85d4d2650472eb"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.56"
+HOMEPAGE="http://gwyddion.net"
+DOWNLOAD="http://downloads.sourceforge.net/gwyddion/gwyddion-2.56.tar.xz"
+MD5SUM="5f9fdb773fbaf3270b472de6081dd3a8"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="gtkglext"

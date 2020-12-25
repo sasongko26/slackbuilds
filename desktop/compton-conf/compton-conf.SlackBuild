@@ -3,10 +3,14 @@
 # Slackware build script for compton-conf.
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2015-2017  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 =======
 # Copyright 2015-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2015-2020  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM="compton-conf"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.2.1}
 BUILD=${BUILD:-2}
 =======
 VERSION=${VERSION:-0.3.0}
+=======
+VERSION=${VERSION:-0.14.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}
@@ -63,6 +71,8 @@ else
   LIBDIRSUFFIX=""
 fi
 
+L10N="lxqt-l10n"
+L10N_VER="0.13.0"
 set -e
 
 rm -rf $PKG
@@ -78,21 +88,23 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-patch -p1 < $CWD/desktop_entry.patch
+mkdir build; cd build
 
 cmake \
     -DCMAKE_INSTALL_PREFIX=/usr \
-    -DCMAKE_BUILD_TYPE=Release
+    -DCMAKE_BUILD_TYPE=Release \
+    -DPULL_TRANSLATIONS=No \
+    -Dlxqt-build-tools_DIR:PATH=/usr/share/cmake/lxqt-build-tools \
+    ..
 make
 make install DESTDIR=$PKG
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
-DOCS="AUTHORS CHANGELOG COPYING README.md compton.conf.example"
-
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a $DOCS $PKG/usr/doc/$PRGNAM-$VERSION
+cp ../{AUTHORS,CHANGELOG,COPYING,README.md,compton.conf.example} \
+ $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

@@ -1,5 +1,6 @@
 PRGNAM="ipython"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="5.5.0"
 HOMEPAGE="http://ipython.org"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/i/ipython/ipython-5.5.0.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="http://ipython.org"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/i/ipython/ipython-5.7.0.tar.gz"
 MD5SUM="ccf4f85bab1b086a439c1f9256e30c9a"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="5.8.0"
+HOMEPAGE="http://ipython.org"
+DOWNLOAD="https://files.pythonhosted.org/packages/source/i/ipython/ipython-5.8.0.tar.gz"
+MD5SUM="7014b8824981eef2cb893ea5398d6b8d"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="decorator jedi pexpect pickleshare prompt_toolkit Pygments shutil_get_terminal_size simplegeneric traitlets"
+REQUIRES="decorator jedi pexpect pickleshare prompt_toolkit1 Pygments shutil_get_terminal_size simplegeneric traitlets"
 MAINTAINER="Benjamin Trigona-Harany"
 EMAIL="slackbuilds@jaxartes.net"

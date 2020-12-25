@@ -1,5 +1,6 @@
 PRGNAM="FlightGear-data"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.3.1"
 HOMEPAGE="http://www.flightgear.org/"
 DOWNLOAD="http://cfhcable.dl.sourceforge.net/project/flightgear/release-2017.3/FlightGear-2017.3.1-data.tar.bz2"
@@ -10,8 +11,14 @@ HOMEPAGE="http://www.flightgear.org/"
 DOWNLOAD="https://sourceforge.net/projects/flightgear/files/release-2018.2/FlightGear-2018.2.2-data.tar.bz2"
 MD5SUM="7a79774a931868ba4db2cb410f0d9fa9"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2020.3.4"
+HOMEPAGE="http://www.flightgear.org/"
+DOWNLOAD="https://downloads.sourceforge.net/flightgear/FlightGear-2020.3.4-data.tar.bz2"
+MD5SUM="573478758dae4a3526884455c9c0702c"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
-MAINTAINER="Panagiotis Nikolaou"
-EMAIL="hostmaster@slackonly.com"
+MAINTAINER="Lenard Spencer"
+EMAIL="lenardrspencer@gmail.com"

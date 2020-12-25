@@ -3,10 +3,14 @@
 # Slackware build script for skypeforlinux
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017  Mario Preksavec, Zagreb, Croatia
 =======
 # Copyright 2017, 2018  Mario Preksavec, Zagreb, Croatia
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017, 2018, 2019, 2020  Mario Preksavec, Zagreb, Croatia
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=skypeforlinux
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-8.11.0.4}
 =======
 VERSION=${VERSION:-8.18.0.6}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-8.65.0.76}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -75,10 +83,20 @@ find -L . \
 
 rm -rf $PKG/opt
 
+# https://github.com/maelnor/skype-dbus-mock
+install -Dm 644 $CWD/skype-dbus-mock/skype-dbus-mock.conf \
+  $PKG/usr/share/dbus-1/system.d/skype-dbus-mock.conf
+install -Dm 644 $CWD/skype-dbus-mock/org.freedesktop.login1.service \
+  $PKG/usr/share/dbus-1/system-services/org.freedesktop.login1.service
+install -Dm 755 $CWD/skype-dbus-mock/skype-dbus-mock.py \
+  $PKG/usr/bin/skype-dbus-mock
+
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-mv $PKG/usr/share/skypeforlinux/LICENSE* $PKG/usr/doc/$PRGNAM-$VERSION
-mv $PKG/usr/share/doc/skypeforlinux/* $PKG/usr/doc/$PRGNAM-$VERSION
+mv $PKG/usr/share/$PRGNAM/LICENSE* $PKG/usr/doc/$PRGNAM-$VERSION
+mv $PKG/usr/share/doc/$PRGNAM/* $PKG/usr/doc/$PRGNAM-$VERSION
 rm -rf $PKG/usr/share/doc
+# Fixes: Help -> About Skype -> Third Party Notices
+ln -s $PRGNAM-$VERSION $PKG/usr/doc/$PRGNAM
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

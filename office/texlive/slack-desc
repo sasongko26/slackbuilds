@@ -14,6 +14,6 @@ texlive: Included are input files for TeX, runtime configuration files,
 texlive: hyphenation tables, manpages, and the computer modern fonts.
 texlive:
 texlive: SlackBuilds.org has more texmf files and documentation in the
-texlive: texlive-extra, texlive-fonts, and texlive-docs packages.
+texlive: texlive-extra and texlive-docs packages.
 texlive:
 texlive:

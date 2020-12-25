@@ -1,5 +1,6 @@
 PRGNAM="fio"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.0"
 HOMEPAGE="http://git.kernel.dk/cgit/fio/"
 DOWNLOAD="http://brick.kernel.dk/snaps/fio-3.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://git.kernel.dk/cgit/fio/"
 DOWNLOAD="http://brick.kernel.dk/snaps/fio-3.5.tar.gz"
 MD5SUM="ad9f143754d6bf843658cd9d05b19d3a"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.23"
+HOMEPAGE="http://git.kernel.dk/cgit/fio/"
+DOWNLOAD="http://brick.kernel.dk/snaps/fio-3.23.tar.gz"
+MD5SUM="497f8bad953723a8c4c46f2a58a13b24"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

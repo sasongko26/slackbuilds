@@ -1,5 +1,6 @@
 PRGNAM="vuescan"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="9.5.89"
 HOMEPAGE="http://www.hamrick.com"
 DOWNLOAD="http://www.hamrick.com/files/vuex3295.tgz"
@@ -14,6 +15,14 @@ MD5SUM="894ec35120bb4b68707444433542113d"
 DOWNLOAD_x86_64="http://ponce.cc/slackware/sources/repo/vuex6496.tgz"
 MD5SUM_x86_64="e7162320193b4b1e816f9eba10b1a2f0"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="9.7.37"
+HOMEPAGE="https://www.hamrick.com"
+DOWNLOAD="https://www.hamrick.com/files/vuex3297.tgz"
+MD5SUM="6af9fbd5a9adc8c986d5593789a55df7"
+DOWNLOAD_x86_64="https://www.hamrick.com/files/vuex6497.tgz"
+MD5SUM_x86_64="4ac8b7cf3471431fbe7053ff77bc3939"
+>>>>>>> upstream/master
 REQUIRES=""
-MAINTAINER="Heiko Rosemann"
-EMAIL="heiko.rosemann@web.de"
+MAINTAINER="Andrew Clemons"
+EMAIL="andrew.clemons@gmail.com"

@@ -3,12 +3,9 @@ vivaldi (web browser).
 A Browser for Our Friends. An advanced browser made with the power user
 in mind. Finally you can surf your way.
 
-Passing to the script the variable CUSTOM_CSS:
-CUSTOM_CSS=yes ./vivaldi.SlackBuild
-makes it possible to customize the user interface using the
-/opt/vivaldi/resources/vivaldi/style/custom.css file.
-By default, CUSTOM_CSS=no.
+Vivaldi for ARM/ARM64 can be downloaded from:
 
+<<<<<<< HEAD
 pepperflash-plugin, ffmpeg, vivaldi-codecs-ffmpeg-extra are optional
 recommended dependencies.
 <<<<<<< HEAD
@@ -17,3 +14,6 @@ recommended dependencies.
 Vivaldi for ARM can be downloaded at
 https://downloads.vivaldi.com/stable/vivaldi-stable_X.X.X.X-1_armhf.deb
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+    https://vivaldi.com/download/archive
+>>>>>>> upstream/master

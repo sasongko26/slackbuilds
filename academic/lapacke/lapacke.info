@@ -1,5 +1,6 @@
 PRGNAM="lapacke"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.7.1"
 HOMEPAGE="http://www.netlib.org/lapack/lapacke.html"
 DOWNLOAD="https://github.com/Reference-LAPACK/lapack/archive/v3.7.1/lapack-3.7.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://www.netlib.org/lapack/lapacke.html"
 DOWNLOAD="https://github.com/Reference-LAPACK/lapack/archive/v3.8.0/lapack-3.8.0.tar.gz"
 MD5SUM="96591affdbf58c450d45c1daa540dbd2"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.9.0"
+HOMEPAGE="http://www.netlib.org/lapack/lapacke.html"
+DOWNLOAD="https://github.com/Reference-LAPACK/lapack/archive/v3.9.0/lapack-3.9.0.tar.gz"
+MD5SUM="0b251e2a8d5f949f99b50dd5e2200ee2"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="lapack"

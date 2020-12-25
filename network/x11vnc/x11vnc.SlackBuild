@@ -8,19 +8,27 @@
 #       Updated for version 0.9.10 23/05/2010
 #       Updated for version 0.9.12 30/04/2011 Thanks to crocket.
 <<<<<<< HEAD
+<<<<<<< HEAD
 #	Maintained 2013-2017 by Christoph Willing
 =======
 #	Maintained 2013-2018 by Christoph Willing
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+#	Maintained 2013-2019 by Christoph Willing
+>>>>>>> upstream/master
 
 # Copyright 2009 Pierre Cazenave <pwcazenave {at} gmail [dot] com>
 # All rights reserved.
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017 Christoph Willing, Brisbane Australia
 =======
 # Copyright 2017-2018 Christoph Willing, Brisbane Australia
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-2019 Christoph Willing, Brisbane Australia
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -42,10 +50,14 @@
 
 PRGNAM=x11vnc
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.9.14}
 =======
 VERSION=${VERSION:-0.9.15}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.9.16}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

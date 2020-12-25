@@ -24,10 +24,14 @@
 
 PRGNAM=envytools
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2017.09.29_6a23a12}
 =======
 VERSION=${VERSION:-2018.03.10_dd0d6c2}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2018.10.30_16dd1ff}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

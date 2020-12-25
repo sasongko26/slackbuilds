@@ -1,5 +1,6 @@
 PRGNAM="protobuf3"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.3.2"
 HOMEPAGE="https://github.com/google/protobuf"
 DOWNLOAD="https://github.com/google/protobuf/archive/v3.3.2/protobuf-3.3.2.tar.gz \
@@ -13,6 +14,12 @@ DOWNLOAD="https://github.com/google/protobuf/archive/v3.5.2/protobuf-3.5.2.tar.g
 MD5SUM="ff6742018c172c66ecc627029ad54280 \
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 	16877098823401d1bf2ed7891d7dce36"
+=======
+VERSION="3.14.0"
+HOMEPAGE="https://github.com/google/protobuf"
+DOWNLOAD="https://github.com/google/protobuf/archive/v3.14.0/protobuf-3.14.0.tar.gz"
+MD5SUM="0c9d2a96f3656ba7ef3b23b533fb6170"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

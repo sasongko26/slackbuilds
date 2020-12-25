@@ -7,6 +7,7 @@
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 20170627 bkw:
 # - update for 0.8.3
 
@@ -17,6 +18,15 @@
 PRGNAM=drumkv1
 VERSION=${VERSION:-0.8.3}
 =======
+=======
+# 20201106 bkw: update for 0.9.18
+# 20200114 bkw: update for 0.9.12
+# 20191210 bkw: update for 0.9.11, document optional liblo dep, have slack-desc
+#               tell user whether or not optional deps are included.
+# 20181216 bkw: update for 0.9.4. Sadly, qt4 support was dropped.
+# 20180828 bkw: update for 0.9.2
+# 20180702 bkw: update for 0.9.1, install French man page correctly.
+>>>>>>> upstream/master
 # 20180615 bkw: update for 0.9.0
 # 20180101 bkw: update for 0.8.6
 # 20171220 bkw: updated for v0.8.5. Skipped 0.8.4 due to compile errors.
@@ -24,8 +34,12 @@ VERSION=${VERSION:-0.8.3}
 # 20170614 bkw: update for 0.8.2, drop qt5 dep, build with qt4
 
 PRGNAM=drumkv1
+<<<<<<< HEAD
 VERSION=${VERSION:-0.9.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.9.18}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -65,11 +79,10 @@ rm -rf $PRGNAM-$VERSION
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-  -o -perm 511 \) -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
-  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+find -L .  -perm /111 -a \! -perm 755 -a -exec chmod 755 {} \+ -o \
+        \! -perm /111 -a \! -perm 644 -a -exec chmod 644 {} \+
+
+export PATH=/usr/lib$LIBDIRSUFFIX/qt5/bin:$PATH
 
 LDFLAGS="-Wl,-s" \
 CFLAGS="$SLKCFLAGS" \
@@ -81,7 +94,6 @@ CXXFLAGS="$SLKCFLAGS" \
   --localstatedir=/var \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --enable-qt4 \
   --build=$ARCH-slackware-linux
 
 make
@@ -94,17 +106,36 @@ make install DESTDIR=$PKG
 [ -d $PKG/usr/share/metainfo ] && \
   mv $PKG/usr/share/metainfo $PKG/usr/share/appdata
 
+<<<<<<< HEAD
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# See comments in synthv1.SlackBuild to understand this.
+mkdir -p $PKG/usr/man/fr.UTF-8/man1
+mv $PKG/usr/man/fr/man1/$PRGNAM.1.gz $PKG/usr/man/fr.UTF-8/man1/$PRGNAM.1.gz
+zcat $PKG/usr/man/fr.UTF-8/man1/$PRGNAM.1.gz | \
+  iconv -f UTF-8 -t ISO-8859-1 | \
+  gzip -9c \
+  > $PKG/usr/man/fr/man1/$PRGNAM.1.gz
+
+>>>>>>> upstream/master
 # binaries already stripped, man page already gzipped. make symlink
 # to man page, to match the actual name of the binary.
-ln -s $PRGNAM.1.gz $PKG/usr/man/man1/${PRGNAM}_jack.1.gz
+for i in man1 fr/man1 fr.UTF-8/man1; do
+  ln -s $PRGNAM.1.gz $PKG/usr/man/$i/${PRGNAM}_jack.1.gz
+done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a AUTHORS COPYING ChangeLog README TODO $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
+LIBLO=no
+LV2=no
+ldd $PKG/usr/bin/${PRGNAM}_jack | grep -q liblo && LIBLO=yes
+[ -e $PKG/usr/lib$LIBDIRSUFFIX/lv2/$PRGNAM.lv2 ] && LV2=yes
+
 mkdir -p $PKG/install
-cat $CWD/slack-desc > $PKG/install/slack-desc
+sed -e "s,@LIBLO@,$LIBLO," -e "s,@LV2@,$LV2," $CWD/slack-desc \
+  > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 if [ "${SETCAP:-yes}" = "yes" ]; then

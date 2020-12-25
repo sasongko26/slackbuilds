@@ -1,5 +1,6 @@
 PRGNAM="libisoburn"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.4.6"
 HOMEPAGE="https://dev.lovelyhq.com/libburnia/web/wikis/Libisoburn"
 DOWNLOAD="http://files.libburnia-project.org/releases/libisoburn-1.4.6.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://dev.lovelyhq.com/libburnia/web/wikis/Libisoburn"
 DOWNLOAD="http://files.libburnia-project.org/releases/libisoburn-1.4.8.tar.gz"
 MD5SUM="5e64fb45f70e4920ebb2fb98012c8b6c"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.5.0"
+HOMEPAGE="https://dev.lovelyhq.com/libburnia/web/wikis/Libisoburn"
+DOWNLOAD="http://files.libburnia-project.org/releases/libisoburn-1.5.0.tar.gz"
+MD5SUM="760258ca2b7edf95109ee44de4665daf"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libburn libisofs"

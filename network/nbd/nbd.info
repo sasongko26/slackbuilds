@@ -1,5 +1,6 @@
 PRGNAM="nbd"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.16.2"
 HOMEPAGE="http://nbd.sourceforge.net/"
 DOWNLOAD="http://downloads.sourceforge.net/nbd/nbd-3.16.2.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://nbd.sourceforge.net/"
 DOWNLOAD="http://downloads.sourceforge.net/nbd/nbd-3.17.tar.xz"
 MD5SUM="98b74c655ed94a66686c5ba19480d98e"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.20"
+HOMEPAGE="https://nbd.sourceforge.io/"
+DOWNLOAD="https://downloads.sourceforge.net/nbd/nbd-3.20.tar.xz"
+MD5SUM="910fe6c152f8c30ad8608388e6a4ce89"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

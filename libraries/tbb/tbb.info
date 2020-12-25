@@ -1,5 +1,6 @@
 PRGNAM="tbb"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2018u1"
 HOMEPAGE="https://www.threadingbuildingblocks.org"
 DOWNLOAD="https://github.com/01org/tbb/archive/2018_U1/tbb-2018_U1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.threadingbuildingblocks.org"
 DOWNLOAD="https://github.com/01org/tbb/archive/2018_U3/tbb-2018_U3.tar.gz"
 MD5SUM="cd2e136598ffa5c136f077ee85a35b4c"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2020u2"
+HOMEPAGE="https://software.intel.com/en-us/tbb"
+DOWNLOAD="https://github.com/oneapi-src/oneTBB/archive/2020_U2/oneTBB-2020_U2.tar.gz"
+MD5SUM="1b711ae956524855088df3bbf5ec65dc"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

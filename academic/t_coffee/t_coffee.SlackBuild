@@ -2,7 +2,7 @@
 
 # Slackware build script for t_coffee
 
-# Copyright 2013-2016 Petar Petrov slackalaxy@gmail.com
+# Copyright 2013-2020 Petar Petrov slackalaxy@gmail.com
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,15 +23,16 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=t_coffee
-VERSION=${VERSION:-11.00.8cbe486}
+VERSION=${VERSION:-13.41.0_git28bdc39}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
-SRCNAM=T-COFFEE_distribution_Version
+TARNAM=tcoffee
+COMMIT=28bdc39911d10d8597db8513f9515fb2ed7a9158
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
-    i?86) ARCH=i486 ;;
+    i?86) ARCH=i586 ;;
     arm*) ARCH=arm ;;
        *) ARCH=$( uname -m ) ;;
   esac
@@ -42,8 +43,8 @@ TMP=${TMP:-/tmp/SBo}
 PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
-if [ "$ARCH" = "i486" ]; then
-  SLKCFLAGS="-O2 -march=i486 -mtune=i686"
+if [ "$ARCH" = "i586" ]; then
+  SLKCFLAGS="-O2 -march=i586 -mtune=i686"
   LIBDIRSUFFIX=""
 elif [ "$ARCH" = "i686" ]; then
   SLKCFLAGS="-O2 -march=i686 -mtune=i686"
@@ -61,9 +62,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf ${SRCNAM}_${VERSION}
-tar xvf $CWD/${SRCNAM}_${VERSION}.tar.gz
-cd ${SRCNAM}_${VERSION}
+rm -rf ${TARNAM}-${COMMIT}
+tar xvf $CWD/${TARNAM}-${COMMIT}.tar.gz
+cd ${TARNAM}-${COMMIT}
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -71,24 +72,18 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-cd t_coffee_source
+# Use our CFLAGS
+sed -i "/^CFLAGS/s/=/+=/" t_coffee/src/makefile
 
-CFLAGS="$SLKCFLAGS" \
-CC="gcc" \
-FCC="gfortran" \
-make -i all
-
-install -D -m755 $PRGNAM $PKG/usr/bin/$PRGNAM
-install -D -m755 TMalign $PKG/usr/bin/TMalign
-
-cd -
+CFLAGS="$SLKCFLAGS" make t_coffee -C t_coffee/src
+install -D -m755 t_coffee/src/$PRGNAM $PKG/usr/bin/$PRGNAM
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  install license.txt \
+  HOW_BUILD_WORKS.md README.md docs/*.rst \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 cat $CWD/References > $PKG/usr/doc/$PRGNAM-$VERSION/References

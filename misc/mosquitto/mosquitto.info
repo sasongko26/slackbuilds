@@ -1,5 +1,6 @@
 PRGNAM="mosquitto"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.4.14"
 HOMEPAGE="http://mosquitto.org/"
 DOWNLOAD="http://mosquitto.org/files/source/mosquitto-1.4.14.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://mosquitto.org/"
 DOWNLOAD="http://mosquitto.org/files/source/mosquitto-1.5.tar.gz"
 MD5SUM="70f62fe906afd1e199795238498e29a6"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.6.12"
+HOMEPAGE="https://mosquitto.org/"
+DOWNLOAD="https://mosquitto.org/files/source/mosquitto-1.6.12.tar.gz"
+MD5SUM="beb8d76d6e45f1e66d711006082a631f"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="c-ares"

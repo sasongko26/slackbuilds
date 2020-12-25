@@ -1,5 +1,6 @@
 PRGNAM="perl-CGI"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.37"
 HOMEPAGE="https://metacpan.org/pod/CGI"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/L/LE/LEEJO/CGI-4.37.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://metacpan.org/pod/CGI"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/L/LE/LEEJO/CGI-4.38.tar.gz"
 MD5SUM="0aeb8563d533e7f83724ed068b5bfc37"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.40"
+HOMEPAGE="https://metacpan.org/pod/CGI"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/L/LE/LEEJO/CGI-4.40.tar.gz"
+MD5SUM="69880e2d59799851d939c4fbe5664901"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="perl-html-parser perl-Test-Deep perl-test-warn"

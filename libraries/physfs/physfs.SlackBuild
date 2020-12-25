@@ -9,8 +9,12 @@
 =======
 # Copyright 2009 - 2013  Erik W. Hanson, Minneapolis, MN, USA
 # Copyright 2015  Andrew Strong, Blue Mountains Australia
+<<<<<<< HEAD
 # Copyright 2017 - 2018  Johannes Schoepfer, Germany
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017 - 2019  Johannes Schoepfer, Germany
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -32,10 +36,14 @@
 
 PRGNAM=physfs
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.0.3}
 =======
 VERSION=${VERSION:-3.0.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.0.2}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

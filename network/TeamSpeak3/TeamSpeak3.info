@@ -1,5 +1,6 @@
 PRGNAM="TeamSpeak3"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.1.4"
 HOMEPAGE="http://www.teamspeak.com/"
 DOWNLOAD="http://dl.4players.de/ts/releases/3.1.4/TeamSpeak3-Client-linux_x86-3.1.4.run"
@@ -15,5 +16,14 @@ DOWNLOAD_x86_64="http://dl.4players.de/ts/releases/3.1.7/TeamSpeak3-Client-linux
 MD5SUM_x86_64="70fbb85e535d59d60ca57551d12e4e13"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES=""
+=======
+VERSION="3.5.3"
+HOMEPAGE="https://www.teamspeak.com/en/"
+DOWNLOAD="https://files.teamspeak-services.com/releases/client/3.5.3/TeamSpeak3-Client-linux_x86-3.5.3.run"
+MD5SUM="7f18bda1c7df1e9cc25ccb5ca51c2560"
+DOWNLOAD_x86_64="https://files.teamspeak-services.com/releases/client/3.5.3/TeamSpeak3-Client-linux_amd64-3.5.3.run"
+MD5SUM_x86_64="5f822f58d380ac716c2208675eac310e"
+REQUIRES="libxkbcommon"
+>>>>>>> upstream/master
 MAINTAINER="Edward W. Koenig"
 EMAIL="kingbeowulf@gmail.com"

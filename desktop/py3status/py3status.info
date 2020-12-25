@@ -1,5 +1,6 @@
 PRGNAM="py3status"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.6"
 HOMEPAGE="https://github.com/ultrabug/py3status"
 DOWNLOAD="https://pypi.python.org/packages/6d/0f/2a797b8d50c73a1342ab22db8fa709bc0f3d59b3813053d5a2d0422dc85a/py3status-3.6.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/ultrabug/py3status"
 DOWNLOAD="https://pypi.python.org/packages/19/1b/52fc1b6956db0638a56292ce00537545d19b9a1d30a156a2b416675e4ac3/py3status-3.8.tar.gz"
 MD5SUM="543c9db548a3146f0f0801e7dd6d8144"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.22"
+HOMEPAGE="https://github.com/ultrabug/py3status"
+DOWNLOAD="https://files.pythonhosted.org/packages/8c/5e/38e13e14d877c3fee3ca6d6139812815e8f4038c33be9066548698822b14/py3status-3.22.tar.gz"
+MD5SUM="12adc31cd0caa6012e83ce8cd51139ab"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

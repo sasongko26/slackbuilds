@@ -1,5 +1,6 @@
 PRGNAM="osgEarth"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.8"
 HOMEPAGE="http://osgearth.org/"
 DOWNLOAD="http://slackware.uk/sbosrcarch/by-md5/4/0/4058576473bf3e6cbdf449a55d7f36f8/osgearth-2.8.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://osgearth.org/"
 DOWNLOAD="https://github.com/gwaldron/osgearth/archive/osgearth-2.9/osgearth-osgearth-2.9.tar.gz"
 MD5SUM="87d0ce80a9bb5c8b8ce4ae7b5b257c52"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.10.2"
+HOMEPAGE="http://osgearth.org/"
+DOWNLOAD="https://github.com/gwaldron/osgearth/archive/osgearth-2.10.2/osgearth-osgearth-2.10.2.tar.gz"
+MD5SUM="24f01afedb2eeac8154bf64772b7cbc7"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="OpenSceneGraph gdal"

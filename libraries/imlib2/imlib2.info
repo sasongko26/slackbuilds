@@ -1,5 +1,6 @@
 PRGNAM="imlib2"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.4.10"
 HOMEPAGE="https://www.enlightenment.org"
 DOWNLOAD="https://downloads.sourceforge.net/enlightenment/imlib2-1.4.10.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.enlightenment.org"
 DOWNLOAD="https://ufpr.dl.sourceforge.net/project/enlightenment/imlib2-src/1.5.1/imlib2-1.5.1.tar.gz"
 MD5SUM="2cb0dc2536cf82f4e10de751a9cb9a7d"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.7.0"
+HOMEPAGE="https://www.enlightenment.org"
+DOWNLOAD="https://sourceforge.net/projects/enlightenment/files/imlib2-src/1.7.0/imlib2-1.7.0.tar.bz2"
+MD5SUM="65a1fc5f6a50ffc54aa8f6758e725973"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

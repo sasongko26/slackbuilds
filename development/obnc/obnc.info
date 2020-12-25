@@ -1,5 +1,6 @@
 PRGNAM="obnc"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.9.1"
 HOMEPAGE="http://miasap.se/obnc"
 DOWNLOAD="http://miasap.se/obnc/downloads/obnc_0.9.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://miasap.se/obnc"
 DOWNLOAD="http://miasap.se/obnc/downloads/obnc_0.13.2.tar.gz"
 MD5SUM="17c4cae743fd35b57cffa391f9c4364d"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.16.1"
+HOMEPAGE="http://miasap.se/obnc"
+DOWNLOAD="http://miasap.se/obnc/downloads/obnc_0.16.1.tar.gz"
+MD5SUM="974245022410d7344134888c375a90fb"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

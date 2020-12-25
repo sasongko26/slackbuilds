@@ -2,7 +2,7 @@
 
 # Slackware build script for Libcmis
 
-# Copyright 2015, 2017 Hunter Sezen California, USA
+# Copyright 2015, 2017-2019 Hunter Sezen California, USA
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +23,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=libcmis
-VERSION=${VERSION:-0.5.1}
+VERSION=${VERSION:-0.5.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -75,18 +75,14 @@ else
   cppunit='--disable-tests'
 fi
 
-# libcmis is not a GNU-conformant project
-# https://github.com/tdf/libcmis/commit/ad89848c93d9357992f6d7d9a5b1e602f25e930c
-zcat $CWD/configure.patch.gz | patch -p1
-
 autoreconf -fi
+
 CFLAGS="$SLKCFLAGS" \
-CXXFLAGS="$SLKCFLAGS" \
+CXXFLAGS="$SLKCFLAGS -Wno-deprecated" \
 ./configure \
   --prefix=/usr \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
   --mandir=/usr/man \
-  --with-boost=/usr/include \
   --disable-static \
   --disable-werror \
   --build=$ARCH-slackware-linux \
@@ -95,8 +91,8 @@ CXXFLAGS="$SLKCFLAGS" \
 make
 make install DESTDIR=$PKG
 
-find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" |
+  grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done

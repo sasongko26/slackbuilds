@@ -1,5 +1,6 @@
 PRGNAM="leptonica"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.74.4"
 HOMEPAGE="http://www.leptonica.com/"
 DOWNLOAD="https://github.com/DanBloomberg/leptonica/archive/1.74.4/leptonica-1.74.4.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://www.leptonica.com/"
 DOWNLOAD="https://github.com/DanBloomberg/leptonica/archive/1.76.0/leptonica-1.76.0.tar.gz"
 MD5SUM="acb724d63929021ef175ed502ee5b20d"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.80.0"
+HOMEPAGE="http://www.leptonica.com/"
+DOWNLOAD="https://github.com/DanBloomberg/leptonica/archive/1.80.0/leptonica-1.80.0.tar.gz"
+MD5SUM="12fa1e165f7ad0bd2f49423669a62143"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

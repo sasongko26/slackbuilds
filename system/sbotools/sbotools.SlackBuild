@@ -6,10 +6,14 @@
 
 PRGNAM=sbotools
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.4}
 =======
 VERSION=${VERSION:-2.5}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.7}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

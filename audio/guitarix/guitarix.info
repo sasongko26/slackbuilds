@@ -1,5 +1,6 @@
 PRGNAM="guitarix"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.35.6"
 HOMEPAGE="http://guitarix.sourceforge.net/"
 DOWNLOAD="http://downloads.sourceforge.net/guitarix/guitarix2-0.35.6.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="http://guitarix.sourceforge.net/"
 DOWNLOAD="http://downloads.sourceforge.net/guitarix/guitarix2-0.37.1.tar.xz"
 MD5SUM="123f2ea027c03ba07021a0b1fa2d56b2"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.39.0"
+HOMEPAGE="http://guitarix.sourceforge.net/"
+DOWNLOAD="http://downloads.sourceforge.net/guitarix/guitarix2-0.39.0.tar.xz"
+MD5SUM="04c22ff9baaa69d256e2ca84ba288936"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="jack-audio-connection-kit liblrdf lilv"
+REQUIRES="jack liblrdf lilv"
 MAINTAINER="B. Watson"
 EMAIL="yalhcru@gmail.com"

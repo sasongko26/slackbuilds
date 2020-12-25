@@ -1,5 +1,6 @@
 PRGNAM="wine-staging"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.21"
 HOMEPAGE="http://www.wine-staging.com/"
 DOWNLOAD="https://github.com/wine-compholio/wine-patched/archive/staging-2.21/wine-patched-staging-2.21.tar.gz"
@@ -13,7 +14,16 @@ MD5SUM="eec9261ac33b46709f99537d359bd4ee \
         c0b369d69af1ab6ab1dafc5d517e3a84"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64="UNSUPPORTED"
+=======
+VERSION="5.20"
+HOMEPAGE="https://wiki.winehq.org/Wine-Staging"
+DOWNLOAD="https://dl.winehq.org/wine/source/5.x/wine-5.20.tar.xz \
+          https://github.com/wine-staging/wine-staging/archive/v5.20/wine-staging-5.20.tar.gz"
+MD5SUM="6cfefbef67048d2a8c54100c047af2aa \
+        995fe2e5b2cd716a9f49588ab98e56a0"
+DOWNLOAD_x86_64=""
+>>>>>>> upstream/master
 MD5SUM_x86_64=""
 REQUIRES=""
-MAINTAINER="Edinaldo P. Silva"
-EMAIL="edps.mundognu@gmail.com"
+MAINTAINER="Dave Woodfall"
+EMAIL="dave@slackbuilds.org"

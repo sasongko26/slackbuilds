@@ -1,12 +1,12 @@
 PRGNAM="subsurface"
-VERSION="4.6.4"
-HOMEPAGE="http://subsurface.hohndel.org/"
-DOWNLOAD="http://subsurface.hohndel.org/downloads/Subsurface-4.6.4.tgz \
-          http://subsurface-divelog.org/downloads/libdivecomputer-subsurface-branch-4.6.4.tgz \
-          http://subsurface-divelog.org/downloads/marble-subsurface-branch-4.6.4.tgz"
-MD5SUM="9c679b43d23bce8facd98e0b41d8939a \
-        7bc7cfc1226d7b1f1c6812a664fa0cd1 \
-        a696bba0d5b5eedaafe1ad67af99c8f0"
+VERSION="4.9.3"
+HOMEPAGE="https://subsurface-divelog.org"
+DOWNLOAD="https://subsurface-divelog.org/downloads/Subsurface-4.9.3.tgz \
+          https://subsurface-divelog.org/downloads/libdivecomputer-subsurface-branch-4.9.3.tgz \
+          https://github.com/vladest/googlemaps/archive/v.0.0.0.1/googlemaps-v.0.0.0.1.tar.gz"
+MD5SUM="758131ff304aa8c1e08cf8a4ba345bad \
+        46c0adcd7de0613be4174ffae97218bf \
+        da31bed9b00f168688987b338fa8cda3"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libgit2 grantlee-qt5 qt5-webkit"

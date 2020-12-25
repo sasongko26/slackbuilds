@@ -1,5 +1,6 @@
 PRGNAM="javacpc"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.9.5e"
 HOMEPAGE="http://cpc-live.com"
 DOWNLOAD="https://downloads.sourceforge.net/project/javacpc/JavaCPC%20Desktop/JavaCPC_Desktop_2.9.5e.zip"
@@ -10,6 +11,12 @@ HOMEPAGE="http://cpc-live.com"
 DOWNLOAD="https://downloads.sourceforge.net/project/javacpc/JavaCPC%20Desktop/JavaCPC_Desktop_2.9.6d.zip"
 MD5SUM="b29440df968b30108010aa7d959fa3b9"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.9.8f"
+HOMEPAGE="http://cpc-live.com"
+DOWNLOAD="https://downloads.sourceforge.net/project/javacpc/JavaCPC%20Desktop/JavaCPC_Desktop_2.9.8f.zip"
+MD5SUM="4fec6ebf5730f1bac7db59a67f194a8a"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="jdk"

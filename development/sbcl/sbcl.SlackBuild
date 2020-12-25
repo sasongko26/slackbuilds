@@ -26,10 +26,14 @@
 
 PRGNAM=sbcl
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.4.1}
 =======
 VERSION=${VERSION:-1.4.8}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.0.11}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -76,14 +80,13 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 sh make.sh clisp --prefix=/usr --fancy
-
-make -C doc/manual info pdf
+make -C doc/manual info
 
 SBCL_HOME="" \
 INSTALL_ROOT=$PKG/usr \
 MAN_DIR=$PKG/usr/man \
-INFO_DIR=$PKG/usr/info \
 DOC_DIR=$PKG/usr/doc/$PRGNAM-$VERSION \
+INFO_DIR=$PKG/usr/info \
 sh install.sh
 
 # Fixup /usr/lib -> /usr/lib64 if x86_64:

@@ -34,8 +34,12 @@ VERSION=${VERSION:-1.21.0}
 
 PRGNAM=atom-amd64
 SRCNAM=atom-amd64
+<<<<<<< HEAD
 VERSION=${VERSION:-1.27.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.28.0}
+>>>>>>> upstream/master
 SRCDIR=atom-$VERSION-amd64
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}

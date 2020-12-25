@@ -1,5 +1,6 @@
 PRGNAM="git-fame"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.2.0"
 HOMEPAGE="https://pypi.python.org/pypi/git-fame"
 DOWNLOAD="https://pypi.python.org/packages/a1/94/c1ca6b6971e8ae95e713c0dd754e56d335f7a5737b1dd0509ca6d66fdfae/git-fame-1.2.0.tar.gz"
@@ -9,12 +10,19 @@ MD5SUM_x86_64=""
 REQUIRES="docopt tqdm"
 =======
 VERSION="1.4.2"
+=======
+VERSION="1.11.0"
+>>>>>>> upstream/master
 HOMEPAGE="https://pypi.python.org/pypi/git-fame"
-DOWNLOAD="https://pypi.python.org/packages/8b/0f/dfb31752f4df3e0d5561efff4b7965614f1e47fe64ee65cf98e6e80e09cb/git-fame-1.4.2.tar.gz"
-MD5SUM="9ea9eee26a511ff569af786a19008678"
+DOWNLOAD="https://files.pythonhosted.org/packages/00/b6/4eb0f863ecdd62e8a1544f5c2fcd4076c787f84f35ec7209eef59432c07b/git-fame-1.11.0.tar.gz"
+MD5SUM="5d4c8e0131022be52966aa25ffb48538"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
+<<<<<<< HEAD
 REQUIRES="python-argopt docopt tqdm"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+REQUIRES="python-argopt docopt tqdm python-tabulate"
+>>>>>>> upstream/master
 MAINTAINER="Andrew Clemons"
 EMAIL="andrew.clemons@gmail.com"

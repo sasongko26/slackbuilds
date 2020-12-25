@@ -17,6 +17,11 @@
 # Note to self: git URL for guitarix is:
 # git://git.code.sf.net/p/guitarix/git/
 
+# 20201105 bkw: Add no-upgrade note to README.
+# 20200307 bkw: Updated for 3.39.0.
+# 20191211 bkw: Updated for 0.38.1.
+# 20180828 bkw: Updated for 0.37.3.
+
 # 20180619 bkw:
 # - Updated for 0.37.1.
 # - Force building with bundled zita-convolver and resampler libs.
@@ -118,8 +123,12 @@ VERSION=${VERSION:-0.35.6}
 =======
 
 PRGNAM=guitarix
+<<<<<<< HEAD
 VERSION=${VERSION:-0.37.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.39.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -163,6 +172,7 @@ rm -rf $PRGNAM-$VERSION
 tar xvf $CWD/$TARNAME-$VERSION.tar.xz
 cd $PRGNAM-$VERSION
 chown -R root:root .
+<<<<<<< HEAD
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
   -o -perm 511 \) -exec chmod 755 {} \+ -o \
@@ -176,6 +186,10 @@ find -L . \
 # -p2 patches (made with "git format-patch"), unusual for a slackbuild.
 patch -p2 < $CWD/patches/0001-fix-bug-59-Guitarix-crashes-when-click-online-for-pr.patch
 patch -p2 < $CWD/patches/0002-fix-bug-59-Guitarix-crashes-when-click-online-for-pr.patch
+=======
+find -L .  -perm /111 -a \! -perm 755 -a -exec chmod 755 {} \+ -o \
+        \! -perm /111 -a \! -perm 644 -a -exec chmod 644 {} \+
+>>>>>>> upstream/master
 
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # guitarix wants to install the roboto font in the wrong place for
@@ -199,7 +213,11 @@ LIBDIR="/usr/lib${LIBDIRSUFFIX}"
   --no-ldconfig \
   --no-desktop-update \
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+  --no-faust \
+>>>>>>> upstream/master
   --includeresampler \
   --includeconvolver \
   --ladspa \
@@ -210,6 +228,12 @@ LIBDIR="/usr/lib${LIBDIRSUFFIX}"
   $LV2OPT
 ./waf build # -v # verbose, shows actual commands
 ./waf install --destdir=$PKG
+
+# 20200307 bkw: 0.39.0 installs this in the wrong dir
+if [ "$VERSION" = "0.39.0" ]; then
+  mv $PKG/$LIBDIR/lv2/gx_wah.lv2/manifest.ttl $PKG/$LIBDIR/lv2/gx_colwah.lv2/
+  rmdir $PKG/$LIBDIR/lv2/gx_wah.lv2
+fi
 
 # --install-roboto-font does the wrong thing, we'll install it manually.
 mkdir -p $PKG/usr/share/fonts/TTF

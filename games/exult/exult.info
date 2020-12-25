@@ -1,6 +1,7 @@
 PRGNAM="exult"
-VERSION="2018.02.01_c3d7afb"
+VERSION="1.6"
 HOMEPAGE="http://exult.sourceforge.net/"
+<<<<<<< HEAD
 <<<<<<< HEAD
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/exult-1.5.0_svn.tar.xz \
           http://downloads.sourceforge.net/project/exult/exult-data/exult_audio.zip"
@@ -10,13 +11,22 @@ DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/exult-2018.02.
           http://downloads.sourceforge.net/project/exult/exult-data/exult_audio.zip"
 MD5SUM="0db3137ef430215344ac5a8bfa61567b \
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+DOWNLOAD="http://prdownloads.sourceforge.net/exult/exult-1.6.tar.gz \
+          http://downloads.sourceforge.net/project/exult/exult-data/exult_audio.zip"
+MD5SUM="1bf202d306f47850315c4f6a1e8b5a00 \
+>>>>>>> upstream/master
         1905328f00bbbfee33812c1942bc7880"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
 MAINTAINER="Hunter Sezen"
 <<<<<<< HEAD
+<<<<<<< HEAD
 EMAIL="ovariegata@yahoo.com"
 =======
 EMAIL="orbea@fredslev.dk"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+EMAIL="orbea@riseup.net"
+>>>>>>> upstream/master

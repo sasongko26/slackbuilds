@@ -24,6 +24,9 @@
 
 # Now maintained by B. Watson <yalhcru@gmail.com>
 
+# 20201106 bkw: update for 20201010
+# 20200306 bkw: update for 20200212
+# 20191211 bkw: update for 20181221
 # 20170214 bkw:
 # - update for v20170201
 # - i486 => i586
@@ -32,7 +35,7 @@
 #   portion of the bmake build.
 
 PRGNAM=bmake
-VERSION=${VERSION:-20170201}
+VERSION=${VERSION:-20201010}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -73,11 +76,8 @@ tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 mv $PRGNAM $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
 chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-  -o -perm 511 \) -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
-  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+find -L .  -perm /111 -a \! -perm 755 -a -exec chmod 755 {} \+ -o \
+        \! -perm /111 -a \! -perm 644 -a -exec chmod 644 {} \+
 
 # Fix an implicit declaration warning that *probably* doesn't hurt anything,
 # but might cause problems someday.
@@ -124,14 +124,14 @@ mv $PKG/usr/share/man $PKG/usr
 mv $PKG/usr/share/mk $PKG/usr/share/mk-$PRGNAM
 
 # Fix permissions of installed files.
-find -L $PKG \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-  -o -perm 511 \) -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
-  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+find -L $PKG  -perm /111 -a \! -perm 755 -a -exec chmod 755 {} \+ -o \
+        \! -perm /111 -a \! -perm 644 -a -exec chmod 644 {} \+
 
-# Binary is already stripped. Only have one man page:
-gzip -9 $PKG/usr/man/man1/$PRGNAM.1
+# Binary is already stripped. Only have one man page.
+# Oh FFS, 20201010 ignores MANTARGET, we get /usr/man/cat1.
+rm -rf $PKG/usr/man/*
+mkdir -p $PKG/usr/man/man1
+gzip -9c < $PRGNAM.1 > $PKG/usr/man/man1/$PRGNAM.1.gz
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 head -n70 main.c > LICENSE

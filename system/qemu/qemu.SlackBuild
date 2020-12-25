@@ -58,10 +58,18 @@ VERSION=${VERSION:-2.9.0}
 # 4.3	06-JAN-2018	version update to 2.10.x release
 # 4.4	17-Feb-2018	version update to 2.11.x release, Spectre/Meltdown mitigation
 # 4.5   03-Jun-2018     version update to 2.12.0 release, note new deps: sdl2, gtk+3
+# 5.0   14-Dec-2018	version update to 3.1.0 release, note minimum dependency versions on release notes
+# 6.0   14-JUL-2019	version update to 4.0.0 release, note minimum dependency versions on release notes, doc fixes
+# 6.1   19-AUG-2019	version update
+# 6.2   16-Nov-2020     version update, 14.2 final release.
 
 PRGNAM=qemu
+<<<<<<< HEAD
 VERSION=${VERSION:-2.12.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-4.1.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -193,7 +201,7 @@ fi
 
 # Add docs to the proper location
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a Changelog COPYING* CODING_STYLE HACKING LICENSE MAINTAINERS README qemu-*.html docs/* \
+cp -a Changelog COPYING* CODING_STYLE HACKING LICENSE MAINTAINERS README docs/* \
   $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 

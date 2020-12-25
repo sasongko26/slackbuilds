@@ -2,7 +2,7 @@
 
 # Slackware build script for jsawk
 
-# Copyright 2013,2016 Andrew Clemons, Wellington, New Zealand
+# Copyright 2013,2016,2018-2020 Andrew Clemons, Wellington, New Zealand
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,7 +25,7 @@
 
 PRGNAM=jsawk
 VERSION=${VERSION:-1.4}
-BUILD=${BUILD:-1}
+BUILD=${BUILD:-5}
 TAG=${TAG:-_SBo}
 
 ARCH=noarch
@@ -47,6 +47,10 @@ cp $CWD/jsawk $PKG/usr/bin
 chmod 0755 $PKG/usr/bin/jsawk
 chown root:root $PKG/usr/bin/jsawk
 
+if command -v js78 > /dev/null 2>&1 ; then
+  sed -i '/JSBIN=/s/-js/-js78/' $PKG/usr/bin/jsawk
+fi
+
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
@@ -55,4 +59,3 @@ cat $CWD/slack-desc > $PKG/install/slack-desc
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
-

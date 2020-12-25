@@ -1,5 +1,6 @@
 PRGNAM="x265"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.5"
 HOMEPAGE="https://www.videolan.org/developers/x265.html"
 DOWNLOAD="https://bitbucket.org/multicoreware/x265/get/2.5.tar.bz2"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.videolan.org/developers/x265.html"
 DOWNLOAD="https://bitbucket.org/multicoreware/x265/get/2.8.tar.bz2"
 MD5SUM="971071c9b77639810d16a6f04fda4030"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.4"
+HOMEPAGE="https://www.videolan.org/developers/x265.html"
+DOWNLOAD="https://github.com/videolan/x265/archive/3.4/x265-3.4.tar.gz"
+MD5SUM="d867c3a7e19852974cf402c6f6aeaaf3"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

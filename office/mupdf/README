@@ -12,10 +12,13 @@ features can be added on by integrators if they so desire.
 
 Notes:
 
-1. By default, mupdf is built without JavaScript support. If you want
-to try mupdf's experimental JavaScript support, build with MUJS=yes in
-the script's environment.
+1. It's no longer possible to build mupdf without JavaScript support.
 
-2. Two mupdf executables are installed in /usr/bin. mupdf-x11 is the
+2. Three mupdf executables are installed in /usr/bin. mupdf-x11 is the
 regular PDF viewer, and mupdf-x11-curl has support for fetching remote
 resources from the network (which may be considered a security risk).
+mupdf-gl uses OpenGL for rendering (and doesn't support curl).
+
+3. mupdf's PDF digital signature verification and signing support is
+disabled in this build, because Slackware 14.2's openssl is too old.
+For most users, this is a rarely- or never-used feature anyway.

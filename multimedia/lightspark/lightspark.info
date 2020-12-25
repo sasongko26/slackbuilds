@@ -1,5 +1,6 @@
 PRGNAM="lightspark"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.09.17_823fdba"
 HOMEPAGE="https://lightspark.github.io/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/lightspark-2017.09.17_823fdba.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://lightspark.github.io/"
 DOWNLOAD="https://github.com/lightspark/lightspark/archive/0.8.1/lightspark-0.8.1.tar.gz"
 MD5SUM="231aaafe3fb3bdeaa30bfc1bc0c71f82"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.8.3"
+HOMEPAGE="https://lightspark.github.io/"
+DOWNLOAD="https://github.com/lightspark/lightspark/archive/0.8.3/lightspark-0.8.3.tar.gz"
+MD5SUM="d9aed3452d00294c668845e99e6a6b97"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="ffmpeg rtmpdump SDL2_mixer"
 MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+EMAIL="orbea@riseup.net"

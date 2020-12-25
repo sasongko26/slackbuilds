@@ -1,5 +1,6 @@
 PRGNAM="jdk"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="8u152"
 HOMEPAGE="http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 DOWNLOAD="http://download.oracle.com/otn-pub/java/jdk/8u152-b16/aa0333dd3019491ca4f6ddbe78cdb6d0/jdk-8u152-linux-i586.tar.gz"
@@ -14,6 +15,14 @@ MD5SUM="0462f605ca1a558a0a95c52d46127071"
 DOWNLOAD_x86_64="http://download.oracle.com/otn-pub/java/jdk/8u172-b11/a58eab1ec242421181065cdc37240b08/jdk-8u172-linux-x64.tar.gz"
 MD5SUM_x86_64="eda2945e8c02b84adbf78f46c37b71c1"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="8u251"
+HOMEPAGE="https://www.oracle.com/technetwork/java/javase/downloads/index.html"
+DOWNLOAD="https://download.oracle.com/otn/java/jdk/8u251-b08/3d5a2bb8f8d4428bbe94aed7ec7ae784/jdk-8u251-linux-i586.tar.gz"
+MD5SUM="ca32e950891fe711691fcc5e4e4053a6"
+DOWNLOAD_x86_64="https://download.oracle.com/otn/java/jdk/8u251-b08/3d5a2bb8f8d4428bbe94aed7ec7ae784/jdk-8u251-linux-x64.tar.gz"
+MD5SUM_x86_64="becc86d9870fe5f48ca30c520c4b7ab8"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="Robby Workman"
 EMAIL="rworkman@slackbuilds.org"

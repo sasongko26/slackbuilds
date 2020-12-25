@@ -1,5 +1,6 @@
 PRGNAM="libuv"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.18.0"
 HOMEPAGE="http://libuv.org/"
 DOWNLOAD="http://dist.libuv.org/dist/v1.18.0/libuv-v1.18.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://libuv.org/"
 DOWNLOAD="https://dist.libuv.org/dist/v1.21.0/libuv-v1.21.0.tar.gz"
 MD5SUM="4b1d268505b940488a5e5e2e7dcab8a5"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.40.0"
+HOMEPAGE="http://libuv.org/"
+DOWNLOAD="https://dist.libuv.org/dist/v1.40.0/libuv-v1.40.0.tar.gz"
+MD5SUM="7cb2fdadb61a76fc55cbbe928e322862"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

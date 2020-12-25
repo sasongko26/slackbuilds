@@ -2,7 +2,8 @@
 
 # Slackware build script for python-evdev
 
-# Copyright 2015 Dugan Chen Canada
+# Copyright 2015 Dugan Chen, Canada <thedoogster@gmail.com>
+# Copyright 2020 Isaac Yu <isaacyu1@isaacyu1.com>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -22,9 +23,9 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+PRGNAM=python-evdev
 SRCNAM=evdev
-PRGNAM=python-$SRCNAM
-VERSION=${VERSION:-0.5.0}
+VERSION=${VERSION:-1.3.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -60,7 +61,7 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$VERSION
+rm -rf $SRCNAM-$VERSION
 tar xvf $CWD/$SRCNAM-$VERSION.tar.gz
 cd $SRCNAM-$VERSION
 chown -R root:root .
@@ -70,7 +71,14 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+# ... but upstream shipped evdev-1.0.0 with 660 permissions everywhere, so:
+find -L . -perm 660 -exec chmod 644 {} \;
+
 python setup.py install --root=$PKG
+
+if $(python3 -c 'import sys' 2>/dev/null); then
+  python3 setup.py install --root=$PKG
+fi
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

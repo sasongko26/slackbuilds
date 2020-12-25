@@ -1,5 +1,6 @@
 PRGNAM="libretro-desmume"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.01.24_62786c58"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/libretro-desmume-2017.01.24_62786c58.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/libretro-desmume-2017.10.24_9464582.tar.xz"
 MD5SUM="3b53456093fb7aebef1d6d3188d4660d"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.11.03_5f6f1ee"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/libretro-desmume-2018.11.03_5f6f1ee.tar.xz"
+MD5SUM="bca5173c6378b6b05cac012d66aaa159"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"

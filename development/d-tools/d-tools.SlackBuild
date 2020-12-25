@@ -3,10 +3,14 @@
 # Slackware build script for D tools
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017 Eugene Wissner, Dachau, Germany
 =======
 # Copyright 2017-2018 Eugene Wissner, Dachau, Germany
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-2019 Eugene Wissner, Dachau, Germany
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -28,6 +32,7 @@
 
 PRGNAM=d-tools
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.077.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
@@ -42,6 +47,15 @@ TAG=${TAG:-_SBo}
 DUB_VERSION=${DUB_VERSION:-1.9.0}
 DSCANNER_VERSION=${DSCANNER_VERSION:-0.5.6}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.094.2}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_SBo}
+
+DUB_VERSION=${DUB_VERSION:-1.23.0}
+DSCANNER_VERSION=${DSCANNER_VERSION:-0.11.0}
+DCD_VERSION=${DCD_VERSION:-0.13.1}
+>>>>>>> upstream/master
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -89,7 +103,7 @@ chmod -R u+w,go-w,a+rX-st .
 case "$DC" in
   *gdc) sh build-gdc.sh
         ;;
-     *) sh build.sh
+     *) dmd -run build.d
         ;;
 esac
 
@@ -136,6 +150,22 @@ case "$DC" in
         ;;
 esac
 mv bin/dscanner $PKG/usr/bin
+
+# Build DCD.
+cd $TMP
+rm -rf DCD-$DCD_VERSION
+tar xvf $CWD/DCD-$DCD_VERSION.tar.xz
+cd DCD-$DCD_VERSION
+chown -R root:root .
+chmod -R u+w,go-w,a+rX-st .
+
+case "$DC" in
+  *gdc) make gdc
+        ;;
+     *) make dmd
+        ;;
+esac
+mv bin/dcd-{client,server} $PKG/usr/bin
 
 # Copy documentation.
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION

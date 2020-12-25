@@ -22,10 +22,14 @@
 
 PRGNAM=libsass
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.4.7}
 =======
 VERSION=${VERSION:-3.5.4}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.6.4}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

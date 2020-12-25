@@ -1,5 +1,6 @@
 PRGNAM="gtk-vnc"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.7.1"
 HOMEPAGE="https://wiki.gnome.org/Projects/gtk-vnc"
 DOWNLOAD="http://ftp.gnome.org/pub/gnome/sources/gtk-vnc/0.7/gtk-vnc-0.7.1.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://wiki.gnome.org/Projects/gtk-vnc"
 DOWNLOAD="http://ftp.gnome.org/pub/gnome/sources/gtk-vnc/0.7/gtk-vnc-0.7.2.tar.xz"
 MD5SUM="1d4f3e16ad82498add90b7aae43e766d"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.0.0"
+HOMEPAGE="https://wiki.gnome.org/Projects/gtk-vnc"
+DOWNLOAD="http://ftp.gnome.org/pub/gnome/sources/gtk-vnc/1.0/gtk-vnc-1.0.0.tar.xz"
+MD5SUM="ff2e531525f6200be613643b9ee87fbf"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="vala"
+REQUIRES="vala meson"
 MAINTAINER="Willy Sudiarto Raharjo"
 EMAIL="willysr@slackbuilds.org"

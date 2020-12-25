@@ -1,5 +1,6 @@
 PRGNAM="python-serpent"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.23"
 HOMEPAGE="https://github.com/irmen/Serpent/"
 DOWNLOAD="https://pypi.io/packages/source/s/serpent/serpent-1.23.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/irmen/Serpent/"
 DOWNLOAD="https://pypi.io/packages/source/s/serpent/serpent-1.24.tar.gz"
 MD5SUM="d0c50f1943ff86d830eb3fe40f6dc1e3"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.28"
+HOMEPAGE="https://github.com/irmen/Serpent/"
+DOWNLOAD="https://pypi.io/packages/source/s/serpent/serpent-1.28.tar.gz"
+MD5SUM="15ef8b67c76a6d19bac9c16731a1e62a"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

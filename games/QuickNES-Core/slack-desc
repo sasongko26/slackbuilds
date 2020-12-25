@@ -6,14 +6,14 @@
 # customary to leave one space after the ':' except on otherwise blank lines.
 
              |-----handy-ruler------------------------------------------------------|
-QuickNES-Core: QuickNES-Core (libretro QuickNES core library)
+QuickNES-Core: QuickNES-Core (fast NES libretro core)
 QuickNES-Core:
-QuickNES-Core: Nes_Emu, the core NES emulator library used by QuickNES, began as a
-QuickNES-Core: very simple NES emulator sometime in 2004. It was based on the 6502
-QuickNES-Core: CPU core and APU sound core used in the Game_Music_Emu sound engine.
+QuickNES-Core: QuickNES is the fastest NES emulator available via libretro,
+QuickNES-Core: though this speed comes at the cost of some accuracy. This core
+QuickNES-Core: should be used only when performance is of the utmost concern and
+QuickNES-Core: even FCEUmm is too demanding
+QuickNES-Core:
 QuickNES-Core:
 QuickNES-Core: Homepage: https://www.libretro.com/
-QuickNES-Core:
-QuickNES-Core:
 QuickNES-Core:
 QuickNES-Core:

@@ -2,7 +2,7 @@
 
 # Slackware build script for pdal
 
-# Copyright 2013-2018 Benjamin Trigona-Harany <slackbuilds@jaxartes.net>
+# Copyright 2013-2020 Benjamin Trigona-Harany <slackbuilds@jaxartes.net>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,10 +25,14 @@
 PRGNAM=pdal
 SRCNAM=PDAL
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.6}
 =======
 VERSION=${VERSION:-1.7.2}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.1.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -74,9 +78,6 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-# prevent build failure on warnings
-sed -i "/Werror/d" cmake/unix_compiler_options.cmake
-
 mkdir -p build
 cd build
   cmake \
@@ -95,6 +96,8 @@ cd build
 =======
     -DBUILD_PLUGIN_PGPOINTCLOUD=ON \
     -DBUILD_PLUGIN_SQLITE=ON \
+    -DBUILD_PLUGIN_DELAUNAY=ON \
+    -DWITH_COMPLETION=ON \
     ..
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   make install DESTDIR=$PKG
@@ -108,7 +111,7 @@ mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a AUTHORS.txt ChangeLog LICENSE.txt README.md RELEASENOTES.txt $PKG/usr/doc/$PRGNAM-$VERSION
 =======
 cp -a \
-  AUTHORS.txt ChangeLog LICENSE.txt README.md RELEASENOTES.rst \
+  AUTHORS.txt CITATION LICENSE.txt README.md RELEASENOTES.txt \
   $PKG/usr/doc/$PRGNAM-$VERSION
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild

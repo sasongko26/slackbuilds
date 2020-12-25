@@ -2,7 +2,7 @@
 
 # Slackware build script for pkgconf
 
-# Copyright 2016-2018 Hunter Sezen California, USA
+# Copyright 2016-2020 Hunter Sezen California, USA
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,11 +24,16 @@
 
 PRGNAM=pkgconf
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.3.10}
 =======
 VERSION=${VERSION:-1.5.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
+=======
+VERSION=${VERSION:-1.7.3}
+BUILD=${BUILD:-2}
+>>>>>>> upstream/master
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
@@ -73,6 +78,11 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+[ "${DEBUG:=0}" != 0 ] &&
+  SLKCFLAGS="$(printf %s "$SLKCFLAGS" | sed 's/-O2/-O0 -g/')"
+
+autoreconf -fi
+
 CFLAGS="$SLKCFLAGS" \
 ./configure \
   --prefix=/usr \
@@ -88,9 +98,43 @@ make
 make install DESTDIR=$PKG
 
 ( cd $PKG/usr/bin; ln -sf $PRGNAM pkg-config )
+( cd $PKG/usr/man/man1; ln -s $PRGNAM.1 pkg-config.1 )
 
-find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+if [ "$ARCH" = x86_64 ]; then
+  if [ -f /usr/lib/libgcc_s.so ]; then
+    arch='i586 x86_64'
+  else
+    arch=x86_64
+  fi
+else
+  arch=i586
+fi
+
+platform=slackware-linux-gnu
+
+mkdir -p $PKG/usr/share/pkgconfig/personality.d
+
+# adapted from fedora and arch
+eval "set -- $arch"
+for i do
+  case "$i" in
+    i586) libdir= ;;
+    x86_64) libdir=64 ;;
+  esac
+
+  sed -e "s|@TARGET_PLATFORM@|$i-$platform|" \
+      -e "s|@PKGCONF_LIBDIRS@|/usr/local/lib$libdir/pkgconfig:/usr/local/share/pkgconfig:/usr/lib$libdir/pkgconfig:/usr/share/pkgconfig|" \
+      -e "s|@PKGCONF_SYSLIBDIR@|/usr/local/lib$libdir:/lib$libdir:/usr/lib$libdir|" \
+      -e "s|@PKGCONF_SYSINCDIR@|/usr/local/include:/usr/include|" \
+      < $CWD/platform-pkg-config.in \
+      > $PKG/usr/share/pkgconfig/personality.d/$i-$platform.personality
+  ( cd $PKG/usr/bin; ln -s $PRGNAM $i-$platform-pkg-config )
+done
+
+if [ "$DEBUG" = 0 ]; then
+  find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" |
+    grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+fi
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done

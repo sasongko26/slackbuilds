@@ -1,12 +1,12 @@
 PRGNAM="pyCRAC"
-VERSION="1.2.4.0"
-HOMEPAGE="https://bitbucket.org/sgrann/"
-DOWNLOAD="https://bitbucket.org/sgrann/pycrac/get/eadda2b95c34.tar.gz \
-          https://bitbucket.org/sgrann/kinetic_crac_pipeline/get/73dff1be9488.tar.gz"
-MD5SUM="c6b37913a6f7da123e3243166806aa56 \
-        8f968d1dca38aa2b3ac401ba8da70cef"
+VERSION="1.4.6"
+HOMEPAGE="http://sandergranneman.bio.ed.ac.uk/pycrac-software"
+DOWNLOAD="https://pypi.python.org/packages/source/p/pyCRAC/pyCRAC-1.4.6.tar.gz \
+  https://bitbucket.org/sgrann/kinetic_crac_pipeline/get/ffe91cc6bf7a.tar.gz"
+MD5SUM="ddbfbd08a5d8a178082056ef3efc99a8 \
+  8c19a15c439941cc5ae17e083f52143a"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="flexbar novocraft numpy pysam scipy pandas ruffus"
-MAINTAINER="rob van nues"
-EMAIL="rvnues at tesco {dot} net"
+REQUIRES="python3 flexbar novocraft numpy3 pysam scipy3 pandas ruffus"
+MAINTAINER="Rob van Nues"
+EMAIL="sborg63@disroot.org"

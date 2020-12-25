@@ -1,5 +1,6 @@
 PRGNAM="scidavis"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.22"
 HOMEPAGE="http://scidavis.sourceforge.net/"
 DOWNLOAD="https://ufpr.dl.sourceforge.net/project/scidavis/SciDAVis/1.22/scidavis-1.22.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://scidavis.sourceforge.net/"
 DOWNLOAD="https://ufpr.dl.sourceforge.net/project/scidavis/SciDAVis/1.23/scidavis-1.23.tar.gz"
 MD5SUM="e6459782ce41e63266a32be9bd4f8cb3"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.26"
+HOMEPAGE="http://scidavis.sourceforge.net/"
+DOWNLOAD="https://ufpr.dl.sourceforge.net/project/scidavis/SciDAVis/1.26/scidavis-1.26.tar.gz"
+MD5SUM="a3e6158c9607dbbaab193941836259bf"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="muParser qwt5 qwtplot3d"

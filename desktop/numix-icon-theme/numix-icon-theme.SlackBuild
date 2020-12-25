@@ -2,7 +2,8 @@
 #
 # Slackware build script for numix-icon-theme.
 #
-# Copyright 2015-2018  Edinaldo P. Silva, Rio de Janeiro, Brazil.
+# Copyright 2015-2018 Edinaldo P. Silva, Rio de Janeiro, Brazil.
+# Copyright 2020 Isaac Yu <isaacyu1@isaacyu1.com>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -22,12 +23,18 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# 20200406 bkw: modified by SlackBuilds.org
+
 PRGNAM="numix-icon-theme"
+<<<<<<< HEAD
 <<<<<<< HEAD
 VERSION=${VERSION:-20171110}
 =======
 VERSION=${VERSION:-20180405}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-20200320}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -39,10 +46,14 @@ OUTPUT=${OUTPUT:-/tmp}
 CWD=$(pwd)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 SRCVER=${SRCVER:-0.3+923~201711101702~ubuntu17.10.1}
 =======
 SRCVER=${SRCVER:-0.3+931~201804050035~ubuntu17.10.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+SRCVER=${SRCVER:-20.03.20}
+>>>>>>> upstream/master
 
 set -e
 
@@ -50,7 +61,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$SRCVER
-tar xvf $CWD/${PRGNAM}_${SRCVER}.tar.xz
+tar xvf $CWD/${PRGNAM}-${SRCVER}.tar.gz
 cd $PRGNAM-$SRCVER
 chown -R root:root .
 
@@ -58,12 +69,20 @@ mkdir -p $PKG/usr/share/icons
 cp -r Numix Numix-Light $PKG/usr/share/icons
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp debian/{changelog,copyright} license readme.md $PKG/usr/doc/$PRGNAM-$VERSION
+cp license readme.md $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
+# 20200406 bkw: create doinst.sh. Normally makepkg does this, but it's
+# *painfully* slow and we have over 17,000 symlinks to process. It takes
+# 15 minutes for makepkg to run on my test system. The find command
+# below runs in 1.5 seconds and creates an identical doinst.sh. This is
+# a 1000x speedup.
 cd $PKG
+find . -type l \
+  -printf '( cd %h ; rm -rf %f )\n( cd %h ; ln -sf %l %f )\n' -delete | \
+  sed 's,cd \./,cd ,' >> $PKG/install/doinst.sh
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

@@ -3,10 +3,14 @@
 # Slackware build script for CHOLMOD
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2013-2017 Kyle Guinn <elyk03@gmail.com>, USA
 =======
 # Copyright 2013-2018 Kyle Guinn <elyk03@gmail.com>, USA
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2013-2020 Kyle Guinn <elyk03@gmail.com>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -30,6 +34,7 @@ PRGNAM=cholmod
 SRCNAM=SuiteSparse
 SUBDIR=CHOLMOD
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.0.11}
 SRCVER=${SRCVER:-4.5.5}
 BUILD=${BUILD:-2}
@@ -38,6 +43,11 @@ VERSION=${VERSION:-3.0.12}
 SRCVER=${SRCVER:-5.2.0}
 BUILD=${BUILD:-1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.0.13}
+SRCVER=${SRCVER:-5.6.0}
+BUILD=${BUILD:-2}
+>>>>>>> upstream/master
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
@@ -80,9 +90,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $SRCNAM
-tar xvf $CWD/$SRCNAM-$SRCVER.tar.gz $SRCNAM/$SUBDIR
-cd $SRCNAM/$SUBDIR
+rm -rf $SRCNAM-$SRCVER
+tar xvf $CWD/$SRCNAM-$SRCVER.tar.gz $SRCNAM-$SRCVER/$SUBDIR
+cd $SRCNAM-$SRCVER/$SUBDIR
 chown -R root:root .
 chmod -R u+w,go-w,a+rX-st .
 

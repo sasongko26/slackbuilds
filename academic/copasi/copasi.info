@@ -1,5 +1,6 @@
 PRGNAM="copasi"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.22.170"
 HOMEPAGE="http://www.copasi.org"
 DOWNLOAD="https://github.com/copasi/COPASI/releases/download/Build-170/COPASI-4.22.170-Linux-32bit.tar.gz"
@@ -14,6 +15,14 @@ MD5SUM="37fb6a3bb6c29290e244a35e6476336c"
 DOWNLOAD_x86_64="https://github.com/copasi/COPASI/releases/download/Build-184/COPASI-4.23.184-Linux-64bit.tar.gz"
 MD5SUM_x86_64="9e414e708ef2665e395caf9b9473e032"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.28.226"
+HOMEPAGE="http://copasi.org"
+DOWNLOAD="https://github.com/copasi/COPASI/releases/download/Build-226/COPASI-4.28.226-Linux-32bit.tar.gz"
+MD5SUM="3fd18c60296def1158295b4b39a41085"
+DOWNLOAD_x86_64="https://github.com/copasi/COPASI/releases/download/Build-226/COPASI-4.28.226-Linux-64bit.tar.gz"
+MD5SUM_x86_64="9709892e02b9ec7e9ccb0d9ec7e8b08b"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="Pedro Mendes"
 EMAIL="pedro@gepasi.org"

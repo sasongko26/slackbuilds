@@ -3,7 +3,7 @@
 # Slackware build script for Qbs
 
 # Copyright 2014-2017 Nikos Giotis <nikos.giotis@mail.com>
-# Copyright 2018 Andrzej Telszewski, Szczecin
+# Copyright 2020 Andrzej Telszewski, Szczecin
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -37,7 +37,7 @@ VERSION=${VERSION:-1.8.1}
 BUILD=${BUILD:-2}
 =======
 PRGNAM=qbs
-VERSION=${VERSION:-1.11.1}
+VERSION=${VERSION:-1.16.0}
 BUILD=${BUILD:-1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}
@@ -70,6 +70,7 @@ else
 fi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 if [ -r /usr/bin/qbs ]; then
   echo "The qbs package needs to be removed before building"
   echo "in order to have a successful build"
@@ -77,14 +78,21 @@ if [ -r /usr/bin/qbs ]; then
 if [ -x /usr/bin/qbs ]; then
   echo "Please remove any previous Qbs installations before continuing."
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+set -e
+
+if which qbs &>/dev/null; then
+  echo "Found \"qbs\" in PATH."
+  echo "Please remove any previous Qbs installations before continuing."
+
+>>>>>>> upstream/master
   exit 1
 fi
-
-set -e
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
+
 rm -rf $PRGNAM-$VERSION
 <<<<<<< HEAD
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
@@ -93,12 +101,11 @@ tar xvf $CWD/$PRGNAM-src-$VERSION.tar.gz
 mv $PRGNAM-src-$VERSION $PRGNAM-$VERSION
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cd $PRGNAM-$VERSION
+
 chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-  -o -perm 511 \) -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
-  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+chmod -R a-st,u+rwX,go-w+rX .
+
+# Fix for missing *projectgeneratormanager.h*.
 
 <<<<<<< HEAD
 patch -p1 < $CWD/01-corelib.qbs.patch
@@ -108,18 +115,24 @@ patch -p0 < $CWD/corelib-tools.pri.patch
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 # Adjust docs location.
+
 sed -i "s|share/doc/qbs|doc/qbs-$VERSION|g" doc/doc.pri
 
-qmake-qt5 qbs.pro \
-  QMAKE_CXXFLAGS="$SLKCFLAGS" \
-  QBS_INSTALL_PREFIX=/usr \
-  QBS_LIBRARY_DIRNAME=lib$LIBDIRSUFFIX \
+qmake-qt5 qbs.pro                         \
+  QMAKE_CXXFLAGS="$SLKCFLAGS"             \
+  QBS_INSTALL_PREFIX=/usr                 \
+  QBS_LIBRARY_DIRNAME=lib$LIBDIRSUFFIX    \
   CONFIG+=qbs_enable_project_file_updates
 
 make
 make install INSTALL_ROOT=$PKG
-make docs
-make install_docs INSTALL_ROOT=$PKG
+
+if which qdoc-qt5 &>/dev/null; then
+  make docs
+  make install_docs INSTALL_ROOT=$PKG
+else
+  echo "qdoc-qt5 not found in PATH.  Docs won't be built nor installed."
+fi
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
@@ -131,11 +144,16 @@ rm -r $PKG/usr/share/man
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 <<<<<<< HEAD
+<<<<<<< HEAD
 cp -a LGPL_EXCEPTION.txt LICENSE.LGPLv21 LICENSE.LGPLv3 README \
 =======
 cp -a LGPL_EXCEPTION.txt LICENSE.GPL3-EXCEPT LICENSE.{LGPLv21,LGPLv3} README \
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
   $PKG/usr/doc/$PRGNAM-$VERSION
+=======
+cp -a CONTRIBUTING.md LGPL_EXCEPTION.txt LICENSE.GPL3-EXCEPT \
+  LICENSE.{LGPLv21,LGPLv3} README.md $PKG/usr/doc/$PRGNAM-$VERSION
+>>>>>>> upstream/master
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/usr/share/applications

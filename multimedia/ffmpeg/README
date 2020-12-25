@@ -27,7 +27,7 @@ MODPLUG=yes|no (default: no), requires libmodplug
 NETCDF=yes|no (default: no), requires netcdf
 OPENAL=yes|no (default: no), requires OpenAL
 OPENCORE=yes|no (default: no), requires opencore-amr
-OPENCV=yes|no (default: no), requires opencv
+OPENCV=yes|no (default: no), requires opencv-legacy
 OPENSSL=yes|no (default: no), creates non-redistributable binary
 OPUS=yes|no (default: no), requires opus
 RTMP=yes|no (default: no), requires rtmpdump
@@ -45,8 +45,8 @@ XVID=yes|no (default: no), requires xvidcore
 ZMQ=yes|no (default: no), requires zeromq
 ZVBI=yes|no (default: no), requires zvbi
 
-Additional optional (autodetected) dependencies are jack-audio-connection-kit and
-SDL2. The latter is needed for building ffplay.
+Additional optional (autodetected) dependencies are jack and SDL2. The
+latter is needed for building ffplay.
 
 Further, there are some more features with dependencies already available
 in core Slackware. These are enabled by default, but can be disabled similar

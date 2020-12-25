@@ -3,7 +3,7 @@
 # Slackware build script for ApacheTop
 
 # Written by Menno Duursma <druiloor@zonnet.nl>
-# Maintained by Willy Sudiarto Raharjo <willysr@slackware-id.org>
+# Maintained by Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 
 # This program is free software. It comes without any warranty.
 # Granted WTFPLv2, as published by Sam Hocevar dec 2004.
@@ -11,10 +11,14 @@
 
 PRGNAM=apachetop
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.17.4}
 =======
 VERSION=${VERSION:-0.18.4}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.19.7}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

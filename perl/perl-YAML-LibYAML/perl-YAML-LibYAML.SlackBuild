@@ -3,6 +3,7 @@
 # Slackware build script for perl-YAML-LibYAML
 
 # Copyright 2015 Glenn Becker <glenn.becker@gmail.com> Arlington, MA USA
+# Copyright 2017-2019 Andreas Guldstrand
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,10 +25,14 @@
 
 PRGNAM=perl-YAML-LibYAML
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.66}
 =======
 VERSION=${VERSION:-0.69}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.76}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

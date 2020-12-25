@@ -2,7 +2,7 @@
 
 # Slackware build script for fcitx-qt5 input plugin
 
-# Copyright 2017 CapEnt <capent@yahoo.com>
+# Copyright 2018 CapEnt <capent@yahoo.com>
 #
 # All rights reserved.
 #
@@ -25,10 +25,14 @@
 
 PRGNAM=fcitx-qt5
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.1.1}
 =======
 VERSION=${VERSION:-1.2.2}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.2.3}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

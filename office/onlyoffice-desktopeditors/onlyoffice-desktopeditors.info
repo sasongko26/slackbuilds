@@ -1,5 +1,6 @@
 PRGNAM="onlyoffice-desktopeditors"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.4.1.338"
 HOMEPAGE="https://www.onlyoffice.com/apps.aspx"
 DOWNLOAD="UNSUPPORTED"
@@ -9,11 +10,14 @@ MD5SUM_x86_64="a0a23ea3b475a7680b0d7638eba8bc54"
 REQUIRES=""
 =======
 VERSION="5.1.29.350"
+=======
+VERSION="6.0.2"
+>>>>>>> upstream/master
 HOMEPAGE="https://www.onlyoffice.com/apps.aspx"
 DOWNLOAD="UNSUPPORTED"
 MD5SUM=""
-DOWNLOAD_x86_64="https://github.com/ONLYOFFICE/DesktopEditors/releases/download/ONLYOFFICE-DesktopEditors-5.1.27/onlyoffice-desktopeditors_amd64.deb"
-MD5SUM_x86_64="1cc905bd9a40f349cdb21f49d630d6f4"
+DOWNLOAD_x86_64="https://github.com/ONLYOFFICE/DesktopEditors/releases/download/ONLYOFFICE-DesktopEditors-6.0.2/onlyoffice-desktopeditors_amd64.deb"
+MD5SUM_x86_64="3326386d5e27adb3e69214c04cf8ccc6"
 REQUIRES="gtkglext krb5 ttf-carlito"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MAINTAINER="Alexander Verbovetsky"

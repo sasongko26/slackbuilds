@@ -7,7 +7,7 @@ MD5SUM="75716b342e07deae58f56a2522362006"
 =======
 VERSION="3.99_u4_b5_s7"
 HOMEPAGE="https://web.archive.org/web/20120529111247/http://supermmx.org/linux/mac"
-DOWNLOAD="http://etree.org/shnutils/shntool/support/formats/ape/unix/3.99-u4-b5-s7/mac-3.99-u4-b5-s7.tar.gz"
+DOWNLOAD="http://ftp.netbsd.org/pub/pkgsrc/distfiles/mac-3.99-u4-b5-s7.tar.gz"
 MD5SUM="74df3c96476636387ddd12255b03bebe"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 DOWNLOAD_x86_64=""

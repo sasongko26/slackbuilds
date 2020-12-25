@@ -79,12 +79,17 @@ find -L . \
 sed -i 's|QApplication::applicationDirPath()|"/usr"|g' mainwindow.cpp
 sed -i 's|+= "/pamlx.conf"|= "~/.pamlX/pamlx.conf"|g' mainwindow.cpp
 <<<<<<< HEAD
+<<<<<<< HEAD
 sed -i 's|/doc/|/doc/paml-4.9e/|g' mainwindow.cpp
 sed -i 's|/doc/|/doc/paml-4.9e/|g' pamlhistorydialog.cpp
 =======
 sed -i 's|/doc/|/doc/paml-4.9h/|g' mainwindow.cpp
 sed -i 's|/doc/|/doc/paml-4.9h/|g' pamlhistorydialog.cpp
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+sed -i 's|/doc/|/doc/paml-4.9j/|g' mainwindow.cpp
+sed -i 's|/doc/|/doc/paml-4.9j/|g' pamlhistorydialog.cpp
+>>>>>>> upstream/master
 
 # If you want the "Help" menu to use something else than Okular for
 # viewing the PDF documentation, uncomment the appropriate line below

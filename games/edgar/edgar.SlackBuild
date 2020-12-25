@@ -3,10 +3,14 @@
 # Slackware build script for the legend of edgar
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017 Tim Dickson, dickson.tim@googlemail.com
 =======
 # Copyright 2017/8 Tim Dickson, dickson.tim@googlemail.com
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-20 Tim Dickson, dickson.tim@googlemail.com
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=edgar
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.27}
 =======
 VERSION=${VERSION:-1.29}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.33}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -1,5 +1,6 @@
 PRGNAM="mame2000-libretro"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.01.27_1083de2"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/mame2000-libretro-2017.01.27_1083de2.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/mame2000-libretro-2017.11.10_f8ae2de.tar.xz"
 MD5SUM="d0d67daa45cce6e2dba711c5e881d98b"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2020.10.21_6655a51"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="https://ilmich.github.io/src/mame2000-libretro-2020.10.21_6655a51.tar.xz"
+MD5SUM="b295ea55f54fc7d138d4ef2f3ed2e470"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="ilmich"
+EMAIL="ardutu@gmail.com"

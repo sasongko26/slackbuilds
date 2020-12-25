@@ -6,12 +6,17 @@
 # Modified by Mario Preksavec <mario@slackware.hr>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 KERNEL=${KERNEL:-4.4.88}
 XEN=${XEN:-4.9.0}
 =======
 KERNEL=${KERNEL:-4.4.118}
 XEN=${XEN:-4.10.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+KERNEL=${KERNEL:-4.4.240}
+XEN=${XEN:-4.13.1}
+>>>>>>> upstream/master
 BOOTLOADER=${BOOTLOADER:-lilo}
 
 ROOTMOD=${ROOTMOD:-ext4}

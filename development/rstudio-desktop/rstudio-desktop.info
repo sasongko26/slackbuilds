@@ -1,6 +1,7 @@
 PRGNAM="rstudio-desktop"
-VERSION="1.1.453"
+VERSION="1.1.463"
 HOMEPAGE="http://rstudio.com"
+<<<<<<< HEAD
 <<<<<<< HEAD
 DOWNLOAD="https://github.com/rstudio/rstudio/tarball/v0.98.501/rstudio-rstudio-v0.98.501-0-gc097d85.tar.gz \
           https://s3.amazonaws.com/rstudio-dictionaries/core-dictionaries.zip \
@@ -24,6 +25,12 @@ DOWNLOAD="https://download1.rstudio.org/rstudio-1.1.453-i386.deb"
 MD5SUM="6cfd86770c7b6dbc13e66f4f59c299ce"
 DOWNLOAD_x86_64="https://download1.rstudio.org/rstudio-1.1.453-amd64.deb"
 MD5SUM_x86_64="63e36e8138e369d19f9aaf4b0e995bbc"
+=======
+DOWNLOAD="https://download1.rstudio.org/rstudio-1.1.463-i386.deb"
+MD5SUM="8a6755fa9fae2bafce289df3358aaf63"
+DOWNLOAD_x86_64="https://download1.rstudio.org/rstudio-1.1.463-amd64.deb"
+MD5SUM_x86_64="bc50d6bd34926c1cc3ae4a209d67d649"
+>>>>>>> upstream/master
 REQUIRES="R"
 MAINTAINER="Ekin Akoglu"
 EMAIL="ekinakoglu@gmail.com"

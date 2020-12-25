@@ -2,9 +2,9 @@
 
 # Slackware build script for LibreOffice
 
-# Copyright 2006,2007,2008,2009,2010  Robby Workman, Northport, Alabama, USA
+# Copyright 2006.2007,2008,2009,2010  Robby Workman, Northport, Alabama, USA
 # Copyright 2010-2014 Niels Horn, Rio de Janeiro, RJ, Brazil
-# Copyright 2014-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+# Copyright 2014-2019 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -26,10 +26,14 @@
 
 PRGNAM=libreoffice
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-"5.4.3"}
 =======
 VERSION=${VERSION:-"6.0.4"}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-"6.2.8.2"}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -134,6 +138,24 @@ ln -sf ../../opt/libreoffice$SRCSHORT/program/smath    lomath
 ln -sf ../../opt/libreoffice$SRCSHORT/program/swriter  lowriter
 
 cd -
+
+# the .desktop files installed in /opt/libreoffice<VER>/share/xdg and
+# symlinks to that files in /usr/share/applications have version number
+# in their name (ex libreoffice6.1-writer.desktop) which force user to
+# re-create/update any link/reference (ex: on KDE/XFCE desktop, in fluxbox
+# menu file, in wmalauncher configuration file,...) to that files on each
+# libreoffice version number increment.
+#
+# To avoid that, the code below deletes the "versioned" symlinks
+# and creates news without version number in their names.
+#
+cd $PKG/usr/share/applications
+  for APP in base calc draw impress math startcenter writer xsltfilter ; do
+    rm -f $PRGNAM$SRCSHORT-$APP.desktop
+    ln -sf ../../../opt/libreoffice$SRCSHORT/share/xdg/$APP.desktop $PRGNAM-$APP.desktop
+  done
+cd -
+
 # Remove DejaVu and Liberation fonts - these are included in other packages
 rm -f opt/libreoffice$SRCSHORT/share/fonts/truetype/{DejaVu,Liberation}*.ttf
 
@@ -160,6 +182,10 @@ cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 if [ "$DISABLE_JAVA" = "YES" ]; then
   chmod -x $PKG/opt/libreoffice$SRCSHORT/program/javaldx
 fi
+
+# Add libreoffice.sh to set SAL_USE_VCLPLUGIN=gtk
+mkdir -p $PKG/etc/profile.d/
+install -m755  $CWD/libreoffice.sh $PKG/etc/profile.d/
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

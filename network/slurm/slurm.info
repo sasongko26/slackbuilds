@@ -1,5 +1,6 @@
 PRGNAM="slurm"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="17.02.9"
 HOMEPAGE="http://slurm.schedmd.com/"
 DOWNLOAD="http://www.schedmd.com/download/latest/slurm-17.02.9.tar.bz2"
@@ -10,6 +11,12 @@ HOMEPAGE="http://slurm.schedmd.com/"
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/slurm-17.11.6.tar.bz2"
 MD5SUM="bd4e2afa44233a3e947ce2acf340161f"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="19.05.5"
+HOMEPAGE="https://slurm.schedmd.com/"
+DOWNLOAD="https://download.schedmd.com/slurm/slurm-19.05.5.tar.bz2"
+MD5SUM="bb0ade8740e2fbc00dca394995269dae"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="munge"

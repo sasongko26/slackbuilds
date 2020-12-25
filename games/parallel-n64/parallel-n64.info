@@ -1,5 +1,6 @@
 PRGNAM="parallel-n64"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.08.07_7ee9ace2"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/parallel-n64-2017.08.07_7ee9ace2.tar.xz"
@@ -19,3 +20,14 @@ EMAIL="ovariegata@yahoo.com"
 =======
 EMAIL="orbea@fredslev.dk"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.11.02_d4d8f47"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/parallel-n64-2018.11.02_d4d8f47.tar.xz"
+MD5SUM="3b3c8b3e3478d53a5b6a2a708cb54449"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="RetroArch"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"
+>>>>>>> upstream/master

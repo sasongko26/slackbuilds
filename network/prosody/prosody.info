@@ -1,5 +1,6 @@
 PRGNAM="prosody"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.10.0"
 HOMEPAGE="http://prosody.im/"
 DOWNLOAD="https://prosody.im/downloads/source/prosody-0.10.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://prosody.im/"
 DOWNLOAD="https://prosody.im/downloads/source/prosody-0.10.2.tar.gz"
 MD5SUM="4cb1ac0db2b739b933ded5038551d7c2"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.11.5"
+HOMEPAGE="http://prosody.im/"
+DOWNLOAD="https://prosody.im/downloads/source/prosody-0.11.5.tar.gz"
+MD5SUM="224b9b49bd1a568a9548590ade253dd6"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="luasec luasocket luaexpat lua-filesystem"

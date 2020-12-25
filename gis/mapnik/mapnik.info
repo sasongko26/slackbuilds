@@ -1,5 +1,6 @@
 PRGNAM="mapnik"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.0.16"
 HOMEPAGE="http://mapnik.org"
 DOWNLOAD="https://github.com/mapnik/mapnik/archive/v3.0.16/mapnik-3.0.16.tar.gz \
@@ -14,6 +15,14 @@ DOWNLOAD="https://github.com/mapnik/mapnik/archive/v3.0.20/mapnik-3.0.20.tar.gz 
 MD5SUM="2f319288e2ed89e0972fd5cc0389a397 \
         efeccaf1adb1da180983445020275c9c"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.0.23"
+HOMEPAGE="https://mapnik.org"
+DOWNLOAD="https://github.com/mapnik/mapnik/archive/v3.0.23/mapnik-3.0.23.tar.gz \
+          https://github.com/mapbox/variant/archive/v1.1.6/variant-1.1.6.tar.gz"
+MD5SUM="db96c3534426f8edb9fba4d508388b18 \
+	0de5f04949027735dc5d4d824e6e5562"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

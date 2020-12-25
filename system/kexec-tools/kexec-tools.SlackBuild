@@ -5,10 +5,14 @@
 
 PRGNAM=kexec-tools
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.0.15}
 =======
 VERSION=${VERSION:-2.0.17}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.0.20}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -2,11 +2,11 @@
 
 # Slackware build script for AIDE
 # Andy Bailey <GooseYArd@gmail.com>
-# Emmanuel N. Millan <emmanueln@gmail.com> - 2018
+# Emmanuel N. Millan <emmanueln@gmail.com> - 2018,2019
 
 PRGNAM=aide
 #PKGVER=`basename $PRGNAM*tar.gz .tar.gz | cut -d- -f2`
-VERSION=${VERSION:-0.16}
+VERSION=${VERSION:-0.16.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -59,6 +59,8 @@ LDFLAGS="-L/usr/lib${LIBDIRSUFFIX}" \
   --prefix=/usr \
   --mandir=/usr/man \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
+  --with-posix-acl \
+  --with-e2fsattrs \
   --localstatedir=/var \
   --libdir=/usr/lib${LIBDIRSUFFIX} \
   --sysconfdir=/etc \

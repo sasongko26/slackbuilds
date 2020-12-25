@@ -1,5 +1,6 @@
 PRGNAM="fwupdate"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="9"
 HOMEPAGE="https://github.com/rhboot/fwupdate"
 DOWNLOAD="https://github.com/rhboot/fwupdate/archive/9/fwupdate-9.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/rhboot/fwupdate"
 DOWNLOAD="https://github.com/rhboot/fwupdate/archive/11/fwupdate-11.tar.gz"
 MD5SUM="4a0ce7eb1ab55dc5c49d865b94f79003"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="12"
+HOMEPAGE="https://github.com/rhboot/fwupdate"
+DOWNLOAD="https://github.com/rhboot/fwupdate/archive/12/fwupdate-12.tar.gz"
+MD5SUM="834e421b6aa3206358907e68fb1223c2"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="efivar libsmbios"

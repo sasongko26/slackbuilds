@@ -4,6 +4,7 @@
 
 # Written by Vincent Batts, http://hashbangbash.com/
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017 Donald Cooley South Haven, Indiana USA
 
 PRGNAM=dash
@@ -11,9 +12,12 @@ VERSION=${VERSION:-0.5.9.1}
 BUILD=${BUILD:-2}
 =======
 # Copyright 2017-2018 Donald Cooley South Haven, Indiana USA
+=======
+# Copyright 2017-2020 Donald Cooley South Haven, Indiana USA
+>>>>>>> upstream/master
 
 PRGNAM=dash
-VERSION=${VERSION:-0.5.10.2}
+VERSION=${VERSION:-0.5.11.2}
 BUILD=${BUILD:-1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}

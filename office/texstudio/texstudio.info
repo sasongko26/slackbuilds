@@ -1,5 +1,6 @@
 PRGNAM="texstudio"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.12.6"
 HOMEPAGE="http://texstudio.sourceforge.net/"
 DOWNLOAD="http://downloads.sourceforge.net/texstudio/texstudio-2.12.6.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://texstudio.sourceforge.net/"
 DOWNLOAD="https://github.com/texstudio-org/texstudio/archive/2.12.8/texstudio-2.12.8.tar.gz"
 MD5SUM="b637e5b1c39613c37031ba92e80b2909"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.12.22"
+HOMEPAGE="http://texstudio.sourceforge.net/"
+DOWNLOAD="https://github.com/texstudio-org/texstudio/archive/2.12.22/texstudio-2.12.22.tar.gz"
+MD5SUM="7b586664a7490b411a5e0e9cc4e5ce87"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

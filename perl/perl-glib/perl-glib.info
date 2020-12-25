@@ -1,5 +1,6 @@
 PRGNAM="perl-glib"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.326"
 HOMEPAGE="https://metacpan.org/pod/Glib"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-1.326.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://metacpan.org/pod/Glib"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-1.327.tar.gz"
 MD5SUM="e71fdca3c491e6395371c7bb0d92851a"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.3293"
+HOMEPAGE="https://metacpan.org/pod/Glib"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/X/XA/XAOC/Glib-1.3293.tar.gz"
+MD5SUM="7f7ce9844fdb30a7320d4881ccdeb3ca"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="perl-extutils-depends perl-extutils-pkgconfig"

@@ -1,5 +1,6 @@
 PRGNAM="mpd"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.20.6"
 HOMEPAGE="https://www.musicpd.org/"
 DOWNLOAD="https://www.musicpd.org/download/mpd/0.20/mpd-0.20.6.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.musicpd.org/"
 DOWNLOAD="https://www.musicpd.org/download/mpd/0.20/mpd-0.20.18.tar.xz"
 MD5SUM="8dc87ba95473fd738f2aff9bd69cc212"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.21.22"
+HOMEPAGE="https://www.musicpd.org/"
+DOWNLOAD="https://www.musicpd.org/download/mpd/0.21/mpd-0.21.22.tar.xz"
+MD5SUM="bb2629c875aae28460cda5cf5257434b"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES=""
+REQUIRES="meson"
 MAINTAINER="DhabyX"
 EMAIL="slack.dhabyx@gmail.com"

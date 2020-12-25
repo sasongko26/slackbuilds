@@ -1,5 +1,6 @@
 PRGNAM="ykpers"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.18.0"
 HOMEPAGE="https://developers.yubico.com/yubikey-personalization/"
 DOWNLOAD="https://developers.yubico.com/yubikey-personalization/releases/ykpers-1.18.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://developers.yubico.com/yubikey-personalization/"
 DOWNLOAD="https://developers.yubico.com/yubikey-personalization/releases/ykpers-1.18.1.tar.gz"
 MD5SUM="f92156bb2960f88bff0f787ceda5121d"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.20.0"
+HOMEPAGE="https://developers.yubico.com/yubikey-personalization/"
+DOWNLOAD="https://developers.yubico.com/yubikey-personalization/Releases/ykpers-1.20.0.tar.gz"
+MD5SUM="8749113ce5a0164fe2b429b61242ba0f"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libyubikey"

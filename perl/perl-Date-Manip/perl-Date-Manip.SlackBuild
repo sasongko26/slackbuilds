@@ -25,10 +25,14 @@
 
 PRGNAM=perl-Date-Manip
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-6.60}
 =======
 VERSION=${VERSION:-6.72}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-6.83}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -1,4 +1,5 @@
 PRGNAM="solarus"
+<<<<<<< HEAD
 VERSION="1.5.3"
 HOMEPAGE="http://www.solarus-games.org/"
 <<<<<<< HEAD
@@ -8,8 +9,14 @@ MD5SUM="a89ef1c29d4ebd171d3e77e46fb90e0a"
 DOWNLOAD="https://gitlab.com/solarus-games/solarus/-/archive/v1.5.3/solarus-v1.5.3.tar.gz"
 MD5SUM="4953477094e7e0505c27733a19e74d99"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.6.4"
+HOMEPAGE="https://www.solarus-games.org/"
+DOWNLOAD="https://gitlab.com/solarus-games/solarus/-/archive/v1.6.4/solarus-v1.6.4.tar.gz"
+MD5SUM="d06a3258910cb113d28e1349ca437125"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="OpenAL SDL2_image SDL2_ttf libmodplug luajit physfs"
+REQUIRES="OpenAL SDL2_image SDL2_ttf glm libmodplug luajit physfs"
 MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+EMAIL="orbea@riseup.net"

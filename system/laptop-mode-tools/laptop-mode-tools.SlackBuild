@@ -25,10 +25,14 @@
 
 PRGNAM=laptop-mode-tools
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.71}
 =======
 VERSION=${VERSION:-1.72.2}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.74}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

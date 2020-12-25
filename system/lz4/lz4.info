@@ -1,5 +1,6 @@
 PRGNAM="lz4"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.8.0"
 HOMEPAGE="https://lz4.github.io/lz4/"
 DOWNLOAD="https://github.com/lz4/lz4/archive/v1.8.0/lz4-1.8.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://lz4.github.io/lz4/"
 DOWNLOAD="https://github.com/lz4/lz4/archive/v1.8.2/lz4-1.8.2.tar.gz"
 MD5SUM="c2082b751d75550ec4dc163c773e1a71"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.9.3"
+HOMEPAGE="https://lz4.github.io/lz4/"
+DOWNLOAD="https://github.com/lz4/lz4/archive/v1.9.3/lz4-1.9.3.tar.gz"
+MD5SUM="3a1ab1684e14fc1afc66228ce61b2db3"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

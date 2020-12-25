@@ -23,4 +23,9 @@ when SDDM is *not* running.
 =======
 when SDDM is *not* running. Do this before installing or upgrading the
 package.
+<<<<<<< HEAD
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+
+Note that this is fixed in -current.
+>>>>>>> upstream/master

@@ -1,5 +1,6 @@
 PRGNAM="bas55"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.11"
 HOMEPAGE="http://jorgicor.sdfeu.org/bas55"
 DOWNLOAD="http://jorgicor.sdfeu.org/bas55/bas55-1.11.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://jorgicor.sdfeu.org/bas55"
 DOWNLOAD="http://jorgicor.sdfeu.org/bas55/bas55-1.16.tar.gz"
 MD5SUM="e505125590ce578b7dbe7e71b5363bec"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.18"
+HOMEPAGE="https://jorgicor.niobe.org/bas55"
+DOWNLOAD="https://jorgicor.niobe.org/bas55/bas55-1.18.tar.gz"
+MD5SUM="ab17610a5686c1215f043d9e32673f5a"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

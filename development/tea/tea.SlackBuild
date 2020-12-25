@@ -2,9 +2,8 @@
 
 # Slackware build script for tea
 # Written by Nai (bluedbs@gmail.com)
-
-# Copyright 2018 Isaac Yu <isaacyu1@isaacyu1.com>
-# All rights reserved.
+# Isaac Yu <isaacyu1@isaacyu1.com>
+# Yth | Pont-en-Royans, France | yth@ythogtha.org
 #
 # Redistribution and use of this script, with or without modification, is
 # permitted provided that the following conditions are met:
@@ -23,11 +22,12 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-
 PRGNAM=tea
-VERSION=${VERSION:-44.1.1}
+VERSION=${VERSION:-50.1.0}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
+
+SRCNAM=tea-qt
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -61,9 +61,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.bz2
-cd $PRGNAM-$VERSION
+rm -rf $SRCNAM-$VERSION
+tar xvf $CWD/$SRCNAM-$VERSION.tar.gz
+cd $SRCNAM-$VERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 -o -perm 511 \) \
@@ -71,12 +71,13 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
  -exec chmod 644 {} \;
 
-if [ ${USE_QT5:-no} = yes]; then
-	qmake-qt5 "PREFIX=/usr/bin" "QMAKE_CXXFLAGS+=$SLKCFLAGS" "QMAKE_CFLAGS+=$SLKCFLAGS"
+if [ ${QT5:-no} = yes ]; then
+	QMAKE=qmake-qt5
 else
-	qmake "PREFIX=/usr/bin" "QMAKE_CXXFLAGS+=$SLKCFLAGS" "QMAKE_CFLAGS+=$SLKCFLAGS"
+	QMAKE=qmake
 fi
 
+$QMAKE "PREFIX=/usr/bin" "QMAKE_CXXFLAGS+=$SLKCFLAGS" "QMAKE_CFLAGS+=$SLKCFLAGS"
 make
 make install INSTALL_ROOT=$PKG
 

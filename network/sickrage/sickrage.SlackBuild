@@ -24,10 +24,14 @@
 PRGNAM=sickrage
 SRCNAM=SickRage
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2017.06.05_1}
 =======
 VERSION=${VERSION:-2018.06.10_1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2018.09.17_1}
+>>>>>>> upstream/master
 SRCVER=$(echo $VERSION | tr _ -)
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}

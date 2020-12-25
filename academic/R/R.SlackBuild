@@ -2,8 +2,8 @@
 
 # SlackBuild script for R
 
-# Copyright 2014-2017 melikamp, Andrew Rowland. (Contributors are
-# listed in order of first participation.)
+# Copyright 2019-2020 Andrew Payne <phalange@komputermatrix.com>
+# Copyright 2014-2017 melikamp, Andrew Rowland
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -25,10 +25,14 @@
 
 PRGNAM=R
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.3.3}
 =======
 VERSION=${VERSION:-3.5.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-4.0.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -4,10 +4,14 @@
 
 # Copyright 2008-2012  Frank Caraballo <fecaraballo{at}gmail{dot}com>
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017  Alan Ianson, Penticton, BC Canada
 =======
 # Copyright 2017-2018  Alan Ianson, Penticton, BC Canada
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-2020  Alan Ianson, Penticton, BC Canada
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,10 +33,14 @@
 
 PRGNAM=asunder
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.9.2}
 =======
 VERSION=${VERSION:-2.9.3}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.9.6}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

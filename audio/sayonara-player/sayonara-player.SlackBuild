@@ -29,10 +29,14 @@
 
 PRGNAM=sayonara-player
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.9.3}
 BUILD=${BUILD:-2}
 =======
 VERSION=${VERSION:-1.0.0_git5_20180115}
+=======
+VERSION=${VERSION:-1.1.1_git3_20180905}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}
@@ -103,7 +107,7 @@ mv $PKG/usr/share/man $PKG/usr/man
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
-DOCS="COPYING license.txt MANUAL README.txt"
+DOCS="COPYING LICENSE MANUAL README.txt"
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a $DOCS $PKG/usr/doc/$PRGNAM-$VERSION/

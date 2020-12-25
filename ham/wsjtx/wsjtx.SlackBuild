@@ -6,7 +6,11 @@
 # Copyright 2017 Nate Bargmann <n0nb@arrl.net>
 =======
 # Copyright 2017,2018 Nate Bargmann <n0nb@arrl.net>
+<<<<<<< HEAD
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2020 JK Wood <joshuakwood@gmail.com>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -26,12 +30,17 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+<<<<<<< HEAD
 PRGNAM=${PRGNAM:-wsjtx}
 <<<<<<< HEAD
 VERSION=${VERSION:-1.8.0}
 =======
 VERSION=${VERSION:-1.9.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+PRGNAM=wsjtx
+VERSION=${VERSION:-2.1.2}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

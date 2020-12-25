@@ -1,5 +1,6 @@
 PRGNAM="envytools"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.09.29_6a23a12"
 HOMEPAGE="https://github.com/envytools/envytools/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/envytools-2017.09.29_6a23a12.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://github.com/envytools/envytools/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/envytools-2018.03.10_dd0d6c2.tar.xz"
 MD5SUM="a79cd2222ff3418b34b9066cc573c8e1"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.10.30_16dd1ff"
+HOMEPAGE="https://github.com/envytools/envytools/"
+DOWNLOAD="http://slackless.raccoons.tech/src/envytools-2018.10.30_16dd1ff.tar.xz"
+MD5SUM="4794587ac7ab89477c47344c9f4c62bd"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python3"
 MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+EMAIL="orbea@riseup.net"

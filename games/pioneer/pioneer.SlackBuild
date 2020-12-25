@@ -1,8 +1,8 @@
 #!/bin/sh
 
-# Slackware build script for Pioneer
+# Slackware build script for pioneer
 
-# Copyright 2015-2018 Hunter Sezen California, USA
+# Copyright 2015-2019 Hunter Sezen California, USA
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -25,10 +25,14 @@
 PRGNAM=pioneer
 SRCNAM=$(printf %s $PRGNAM | tr [a-z] [A-Z])
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-20170827}
 =======
 VERSION=${VERSION:-20180203}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-20191117}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -75,6 +79,7 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 DATADIR="${DATADIR:-/usr/share/games}"
 
 if [ "${DEBUG:-no}" = yes ]; then
@@ -84,51 +89,44 @@ if [ "${DEBUG:-no}" != no ]; then
   debug="--enable-debug \
          --with-no-optimise \
          --with-fno-inline"
+=======
+if [ "${DEBUG:=0}" != 0 ]; then
+  RELEASE=Debug
+>>>>>>> upstream/master
   SLKCFLAGS="$(printf %s "$SLKCFLAGS" | sed 's/-O2/-O0/')"
 else
-  debug='--with-strip'
+  RELEASE=Release
 fi
 
-# Generate the configure file
-./bootstrap
+GLEW=OFF
+LUA=OFF
 
-CFLAGS="$SLKCFLAGS" \
-CXXFLAGS="$SLKCFLAGS" \
-PIONEER_DATA_DIR="${DATADIR:-/usr/share/games}/$PRGNAM" \
-./configure \
-  --prefix=/usr \
-  --bindir=/usr/games \
-  $debug \
-  --build=$ARCH-slackware-linux
+pkg-config --exists glew && GLEW=ON
+pkg-config --exists lua5.2 && LUA=ON
 
-make
-make install DESTDIR=$PKG
+# Workaround 32-bit build failure
+# https://github.com/pioneerspacesim/pioneer/issues/4691
+patch -p1 < $CWD/alignment.patch
 
-# Write a desktop file
-mkdir -p $PKG/usr/share/applications
-cat > $PKG/usr/share/applications/$PRGNAM.desktop <<EOF
-[Desktop Entry]
-Name=$SRCNAM
-Exec=$PRGNAM
-Icon=$PRGNAM
-Type=Application
-Comment=$SRCNAM (space adventure game)
-Categories=Game;AdventureGame;
-EOF
+mkdir -p build
+cd build
+  cmake \
+    -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
+    -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_BINDIR=games \
+    -DPIONEER_DATA_DIR=/usr/share/games/$PRGNAM \
+    -DUSE_SYSTEM_LIBGLEW=$GLEW \
+    -DUSE_SYSTEM_LIBLUA=$LUA \
+    -DCMAKE_BUILD_TYPE=$RELEASE ..
+  make
+  make install DESTDIR=$PKG
+cd ..
 
-# Add missing icons to package
-for pngicon in application-icon/pngs/*.png ; do
-  if [ -f "$pngicon" ]; then
-    size="$(basename "${pngicon##*-}" .png)"
-    install -D -m644 "$pngicon" \
-      $PKG/usr/share/icons/hicolor/$size/apps/$PRGNAM.png
-  fi
-done
-install -D -m644 application-icon/badge-full.svg \
-  $PKG/usr/share/icons/hicolor/scalable/apps/$PRGNAM.svg
-
-# Remove empty .gitignore files
-find $PKG -name '.gitignore' -exec rm -f {} \;
+if [ "$DEBUG" = 0 ]; then
+  find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" |
+    grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+fi
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a licenses *.txt README.md $PKG/usr/doc/$PRGNAM-$VERSION

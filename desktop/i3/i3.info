@@ -1,5 +1,6 @@
 PRGNAM="i3"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.14.1"
 HOMEPAGE="http://www.i3wm.org"
 DOWNLOAD="http://i3wm.org/downloads/i3-4.14.1.tar.bz2"
@@ -10,8 +11,14 @@ HOMEPAGE="http://www.i3wm.org"
 DOWNLOAD="http://i3wm.org/downloads/i3-4.15.tar.bz2"
 MD5SUM="6ff0e7d59cf6983af68f9b4cdaf2a641"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.18.3"
+HOMEPAGE="https://www.i3wm.org"
+DOWNLOAD="https://i3wm.org/downloads/i3-4.18.3.tar.bz2"
+MD5SUM="7437afcd40261332ce25de99cd5aa17c"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="dmenu libev libxkbcommon xcb-util-xrm yajl perl-JSON-XS perl-AnyEvent"
-MAINTAINER="Johannes Schoepfer"
-EMAIL="slackbuilds[at]schoepfer[dot]info"
+MAINTAINER="Emmanuel N. Millan"
+EMAIL="emmanueln@gmail.com"

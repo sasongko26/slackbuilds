@@ -3,8 +3,12 @@
 # Slackware build script for zotero
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2014-2017 Petar Petrov slackalaxy@gmail.com
 =======
+=======
+# Copyright 2018-2020 Andrew Payne phalange@komputermatrix.com
+>>>>>>> upstream/master
 # Copyright 2014-2018 Petar Petrov slackalaxy@gmail.com
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 # All rights reserved.
@@ -29,10 +33,14 @@
 PRGNAM=zotero
 SRCNAM=Zotero
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-5.0.21}
 =======
 VERSION=${VERSION:-5.0.48}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-5.0.85}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

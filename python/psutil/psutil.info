@@ -1,5 +1,6 @@
 PRGNAM="psutil"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="5.4.0"
 HOMEPAGE="https://github.com/giampaolo/psutil"
 DOWNLOAD="https://github.com/giampaolo/psutil/archive/release-5.4.0/psutil-release-5.4.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/giampaolo/psutil"
 DOWNLOAD="https://github.com/giampaolo/psutil/archive/release-5.4.6/psutil-release-5.4.6.tar.gz"
 MD5SUM="32d606eebd13ceea0fa1231c42f8548a"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="5.6.7"
+HOMEPAGE="https://github.com/giampaolo/psutil"
+DOWNLOAD="https://pypi.io/packages/source/p/psutil/psutil-5.6.7.tar.gz"
+MD5SUM="b2c94e0368fc6e6f237a7252f8e85ca2"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

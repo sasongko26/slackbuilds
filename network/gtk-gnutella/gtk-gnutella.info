@@ -1,5 +1,6 @@
 PRGNAM="gtk-gnutella"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.1.11"
 HOMEPAGE="https://sourceforge.net/projects/gtk-gnutella/"
 DOWNLOAD="https://downloads.sourceforge.net/gtk-gnutella/gtk-gnutella-1.1.11.tar.bz2"
@@ -10,6 +11,12 @@ HOMEPAGE="https://sourceforge.net/projects/gtk-gnutella/"
 DOWNLOAD="https://downloads.sourceforge.net/gtk-gnutella/gtk-gnutella-1.1.13.tar.xz"
 MD5SUM="828733613d7134fefef842b8eeb36f1e"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.1.14"
+HOMEPAGE="https://sourceforge.net/projects/gtk-gnutella/"
+DOWNLOAD="https://downloads.sourceforge.net/gtk-gnutella/gtk-gnutella-1.1.14.tar.xz"
+MD5SUM="75414544a8a7bacd5c75b207e235de73"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

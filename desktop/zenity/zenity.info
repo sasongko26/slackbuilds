@@ -1,5 +1,6 @@
 PRGNAM="zenity"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.24.0"
 HOMEPAGE="http://live.gnome.org/Zenity"
 DOWNLOAD="http://ftp.acc.umu.se/pub/gnome/sources/zenity/3.24/zenity-3.24.0.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://live.gnome.org/Zenity"
 DOWNLOAD="http://ftp.acc.umu.se/pub/gnome/sources/zenity/3.26/zenity-3.26.0.tar.xz"
 MD5SUM="7c28ce3f953de31a7a5c6311a3c5d607"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.28.0"
+HOMEPAGE="http://live.gnome.org/Zenity"
+DOWNLOAD="http://ftp.acc.umu.se/pub/gnome/sources/zenity/3.28/zenity-3.28.0.tar.xz"
+MD5SUM="0916c428ed858242c0864da4dc4c7f02"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

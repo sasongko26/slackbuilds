@@ -24,10 +24,14 @@
 
 PRGNAM=xtrkcad
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-4.3.0}
 =======
 VERSION=${VERSION:-5.1.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-5.1.2a}
+>>>>>>> upstream/master
 SRCVERSION=$(echo $VERSION | tr _ -)
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
@@ -65,7 +69,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-source-$SRCVERSION
-tar xvzf $CWD/$PRGNAM-source-$SRCVERSION-1.tar.gz
+tar xvzf $CWD/$PRGNAM-source-$SRCVERSION.tar.gz
 cd $PRGNAM-source-$SRCVERSION
 chown -R root:root .
 find -L . \

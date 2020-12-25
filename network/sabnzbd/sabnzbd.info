@@ -1,5 +1,6 @@
 PRGNAM="sabnzbd"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.2.0"
 HOMEPAGE="https://sabnzbd.org"
 DOWNLOAD="https://github.com/sabnzbd/sabnzbd/releases/download/1.2.0/SABnzbd-1.2.0-src.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.sabnzbd.org/"
 DOWNLOAD="https://github.com/sabnzbd/sabnzbd/releases/download/2.3.4/SABnzbd-2.3.4-src.tar.gz"
 MD5SUM="bdb3a7d81bac23aceb3f449bfc7e4ff6"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.3.9"
+HOMEPAGE="http://sabnzbd.org"
+DOWNLOAD="https://github.com/sabnzbd/sabnzbd/releases/download/2.3.9/SABnzbd-2.3.9-src.tar.gz"
+MD5SUM="6845962498a6c3629818e28b32edeac6"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python-cheetah python-yenc pyOpenSSL unrar par2cmdline"

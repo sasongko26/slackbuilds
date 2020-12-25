@@ -1,5 +1,6 @@
 PRGNAM="ugene"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.27.0"
 HOMEPAGE="http://ugene.net/"
 DOWNLOAD="http://ugene.net/downloads/ugene-1.27.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://ugene.net/"
 DOWNLOAD="http://ugene.net/downloads/ugene-1.30.0.tar.gz"
 MD5SUM="cfdf3c93d0301d5eec6001301dfc4c0d"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="35.0"
+HOMEPAGE="http://ugene.net/"
+DOWNLOAD="https://github.com/ugeneunipro/ugene/archive/35.0/ugene-35.0.tar.gz"
+MD5SUM="c1cb1ee73140d09568706f1fc1b798dd"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="qt5-webkit libwacom"

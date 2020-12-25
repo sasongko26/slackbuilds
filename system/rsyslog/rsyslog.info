@@ -1,5 +1,6 @@
 PRGNAM="rsyslog"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="8.30.0"
 HOMEPAGE="http://www.rsyslog.com/"
 DOWNLOAD="http://www.rsyslog.com/files/download/rsyslog/rsyslog-8.30.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.rsyslog.com/"
 DOWNLOAD="https://www.rsyslog.com/files/download/rsyslog/rsyslog-8.33.1.tar.gz"
 MD5SUM="972f57f4c4cdbf48a803ee1ba0fce843"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="8.2001.0"
+HOMEPAGE="https://www.rsyslog.com/"
+DOWNLOAD="https://www.rsyslog.com/files/download/rsyslog/rsyslog-8.2001.0.tar.gz"
+MD5SUM="4dc7bd26d3e6e8fbeff9e0bd203077be"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="%README% docutils libee libestr libfastjson liblogging"

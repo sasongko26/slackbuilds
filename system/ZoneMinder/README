@@ -7,6 +7,7 @@ be controlled via web or semi-automatically using a variety of
 protocols. It can also be integrated into a home automation system
 via X.10 or other protocols.  This build includes cambozola and jscalendar.
 
+<<<<<<< HEAD
 Optional dependencies are ffmpeg (video streaming and recoding support),
 <<<<<<< HEAD
 perl-Archive-Zip (automatic event uploading), perl-X10 
@@ -18,5 +19,12 @@ perl-Archive-Zip (automatic event uploading), perl-X10
 (RS232/RS485 PTZ camera control), perl-MIME-Lite, and perl-MIME-Entity
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 (automatic event mail notification).
+=======
+Optional dependencies are php-apcu (to enable the ZoneMinder API),
+perl-Archive-Zip (automatic event uploading), perl-X10 (integration with
+X10-based home automation), perl-Device-SerialPort (RS232/RS485 PTZ camera
+control), perl-MIME-Lite, and perl-MIME-Entity (automatic event mail
+notification).
+>>>>>>> upstream/master
 
 See README.SLACKWARE for configuration information.

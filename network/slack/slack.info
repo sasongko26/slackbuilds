@@ -1,5 +1,6 @@
 PRGNAM="slack"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.8.2"
 HOMEPAGE="https://slack.com"
 DOWNLOAD="UNSUPPORTED"
@@ -14,6 +15,14 @@ MD5SUM=""
 DOWNLOAD_x86_64="https://downloads.slack-edge.com/linux_releases/slack-desktop-3.1.1-amd64.deb"
 MD5SUM_x86_64="3da6ef3d34547542191223718d46839e"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.4.2"
+HOMEPAGE="https://slack.com"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://downloads.slack-edge.com/linux_releases/slack-desktop-4.4.2-amd64.deb"
+MD5SUM_x86_64="bf426603bbaa765566435893764de83e"
+>>>>>>> upstream/master
 REQUIRES=""
-MAINTAINER="Harald Achitz"
-EMAIL="harald.achitz@gmail.com"
+MAINTAINER="Pedro R.M. Júnior"
+EMAIL="pedrormjunior@gmail.com"

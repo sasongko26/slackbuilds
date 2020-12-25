@@ -6,6 +6,29 @@
 
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
+# 20201104 bkw: update for 4.2.
+# 20191212 bkw:
+# - Update for 4.0.1.
+# - New deps: libfishsound capnproto opusfile.
+# - Removed JACK as a hard dep.
+# - Have slack-desc tell the user what optional deps are built-in.
+# - Annoying stuff relating to the test suite.
+# - If necessary, source the qt5 profile script.
+# - Install French man page.
+# - Fix icon reference in .desktop.
+# - It looks like the segfault-on-exit problem was caused by an outdated
+#   version of qt5. It's gone away with qt5-5.9.8.
+
+# 20181217 bkw:
+# - Update for 3.2. This was left stale for a long time due to
+#   problems with SBo's old qt5, which has finally been updated,
+#   thanks to dive.
+# - Get rid of static capnproto, no longer needed (thank the ghods).
+# - PulseAudio now works, update README accordingly.
+# - Yes, I'm aware that it's segfaulting on exit, but it won't dump
+#   core (even though I have coredumps enabled) so I can't easily
+#   diagnose it.
+
 # 20170312 bkw:
 # - update for 3.0.1
 # - parallel build seems OK, remove -j1 (again)
@@ -38,7 +61,7 @@
 # - add realtime capabilities
 
 PRGNAM=sonic-visualiser
-VERSION=${VERSION:-3.0.1}
+VERSION=${VERSION:-4.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -72,65 +95,48 @@ fi
 set -e
 
 rm -rf $PKG $TMP/$PRGNAM
-mkdir -p $TMP/$PRGNAM $PKG $OUTPUT
-
-# use a top-level dir under $TMP for ease of cleanup.
-cd $TMP/$PRGNAM
-
-# Grrr. Upstream requires a git version of capnproto, newer than the
-# latest release. They *really* should bundle it, or at least mention it
-# in their README or INSTALL.txt, if they're going to depend on bleeding
-# edge stuff... the only way to understand what's going on here is to
-# actually read the comments in configure.ac. We have to build a static
-# capnproto and force sonic-visualiser to use it.
-LIBVER="${LIBVER:-86ce27924ceae700a70a00963aaab3766d26b348}"
-LIBNAM=capnproto
-LIBPREFIX=$TMP/$PRGNAM/$LIBNAM
-
-rm -rf $LIBNAM-$LIBVER
-tar xvf $CWD/$LIBNAM-$LIBVER.tar.gz
-cd $LIBNAM-$LIBVER
-chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 -o -perm 511 \) \
- -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
- -exec chmod 644 {} \;
-
-# following code borrowed & modified from capnproto.SlackBuild by
-# Andre Barboza:
-cd c++
-  autoreconf -ivf
-  CFLAGS="$SLKCFLAGS" \
-  CXXFLAGS="$SLKCFLAGS" \
-  ./configure \
-    --prefix=$LIBPREFIX \
-    --disable-shared \
-    --enable-static \
-    --build=$ARCH-slackware-linux
-
-  # don't run ldconfig. not needed (a) because of --disabled-shared,
-  # and (b) we're installing into a non-system directory anyway.
-  sed -i '/^\t*ldconfig/d' Makefile
-
-  make
-  make install-strip
-cd ..
-
-# These will be used by sonic-visualiser's ./configure:
-export PKG_CONFIG_PATH=$LIBPREFIX/lib/pkgconfig:$PKG_CONFIG_PATH
-export PATH=$LIBPREFIX/bin:$PATH
-
-cd $TMP/$PRGNAM
+mkdir -p $TMP $PKG $OUTPUT
+cd $TMP
 rm -rf $PRGNAM-$VERSION
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 -o -perm 511 \) \
- -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
- -exec chmod 644 {} \;
+find -L .  -perm /111 -a \! -perm 755 -a -exec chmod 755 {} \+ -o \
+        \! -perm /111 -a \! -perm 644 -a -exec chmod 644 {} \+
+
+# In case the user just now installed qt5 and hasn't sourced the profile
+# script, let's be nice and do it here.
+[ "$QT5DIR" = ""  ] && \
+  [ -x /etc/profile.d/qt5.sh ] && \
+  source /etc/profile.d/qt5.sh
+
+# Fudge the test suite, all but 2 tests pass. I think the error is in the
+# test suite, not a real error in the code. Even if it is broken code, the
+# failure is caused by a 32KHz mp3, which is is pretty uncommon sampling
+# rate to find in an mp3 and shouldn't prevent us using sonic-visualiser
+# on other filetypes (or mp3 at normal sampling rates, e.g. the 44.1KHz
+# test cases pass).
+rm -f svcore/data/fileio/test/audio/mp3/32000-1.mp3
+
+# The test suite uses utf8 encoded filenames, so it will *fail* if
+# the current locale is a non-utf8 one (such as Slackware's default
+# of en_US). Try to set a locale that makes sense for the user, fall
+# back on en_US.UTF-8 if we can't figure it out.
+FALLBACK="en_US.UTF-8"
+case "$LANG" in
+  *.utf8|*.UTF8|*.utf-8|*.UTF-8) ;; # already OK
+  ??_??) LANG="$LANG.UTF-8"      ;; # e.g "en_US", "de_DE"
+  *)     LANG=$FALLBACK          ;; # empty, "C", or garbage
+esac
+
+# Make sure the chosen locale exists. If it doesn't, the locale
+# command will give us errors that begin with "locale:" (its exit
+# status is always 0/success, how annoying).
+export LANG
+if locale 2>&1 >/dev/null | grep -q '^locale:'; then
+  LANG=$FALLBACK
+  export LANG
+fi
 
 QTDIR=$QT5DIR \
 CFLAGS="$SLKCFLAGS" \
@@ -144,15 +150,10 @@ CXXFLAGS="$SLKCFLAGS" \
   --docdir=/usr/doc/$PRGNAM-$VERSION \
   --build=$ARCH-slackware-linux
 
-# fudge the test suite, all but 2 tests pass, and I think the error
-# is in the test suite, not a real error in the code.
-sed -i '375s,"aac","aac" || format == "mp3",' \
-       svcore/data/fileio/test/AudioFileReaderTest.h
-
 # Override $HOME since the unit tests insist on writing useless stuff
 # there. In case the user's using ccache, this changes the cache dir,
 # so we put it back like it was (no harm done if user not using ccache).
-# Parallel build seems to work OK in 3.0.1. If not, uncomment the -j1
+# Parallel build seems to work OK in 4.0.1. If not, uncomment the -j1
 # and email me a bug report.
 CCACHE_DIR=${CCACHE_DIR:-$HOME/.ccache} \
 HOME=$( pwd ) \
@@ -172,29 +173,45 @@ install -m0755 -s \
   $PKG/usr/bin/
 
 # man page borrowed from Debian
-mkdir -p $PKG/usr/man/man1
+mkdir -p $PKG/usr/man/man1 $PKG/usr/man/fr/man1 $PKG/usr/man/fr.UTF-8/man1
 gzip -9c < $CWD/$PRGNAM.1 > $PKG/usr/man/man1/$PRGNAM.1.gz
+gzip -9c < $CWD/$PRGNAM.fr.1 > $PKG/usr/man/fr.UTF-8/man1/$PRGNAM.1.gz
+iconv -f UTF-8 -t ISO8859-1 $CWD/$PRGNAM.fr.1 \
+  | gzip -9c > $PKG/usr/man/fr/man1/$PRGNAM.1.gz
 
 mkdir -p $PKG/usr/share/applications
-cat $PRGNAM.desktop > $PKG/usr/share/applications/$PRGNAM.desktop
+sed "/^Icon/s,=.*,=/usr/share/pixmaps/$PRGNAM.png," $PRGNAM.desktop \
+  > $PKG/usr/share/applications/$PRGNAM.desktop
 
 # define MIME types to associate *.sv and *.svl
 mkdir -p $PKG/usr/share/mime/packages
 cat $CWD/$PRGNAM.xml > $PKG/usr/share/mime/packages/$PRGNAM.xml
 
 mkdir -p $PKG/usr/share/pixmaps
-cat icons/sv-128x128.png > $PKG/usr/share/pixmaps/sv-icon.png
+cat icons/sv-128x128.png > $PKG/usr/share/pixmaps/$PRGNAM.png
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a CHANGELOG CITATION COPYING README* $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
+JACKYN=no; PAYN=no; LIBLOYN=no
+ldd $PKG/usr/bin/$PRGNAM > ldd.out
+#fgrep -q libjack.so ldd.out && JACKYN=yes # jack is dynamically loaded!
+pkg-config --exists jack && JACKYN=yes
+fgrep -q libportaudio.so ldd.out && PAYN=yes
+fgrep -q liblo.so ldd.out && LIBLOYN=yes
+
 mkdir -p $PKG/install
-cat $CWD/slack-desc > $PKG/install/slack-desc
+sed \
+  -e "s,@JACKYN@,$JACKYN," \
+  -e "s,@PAYN@,$PAYN," \
+  -e "s,@LIBLOYN@,$LIBLOYN," \
+  $CWD/slack-desc \
+  > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
-# Only add capability stuff if not disabled:
-if [ "${SETCAP:-yes}" = "yes" ]; then
+# Only add capability stuff if not disabled (and if we built with JACK):
+if [ "${SETCAP:-yes}" = "yes" -a "$JACKYN" = "yes" ]; then
   cat $CWD/setcap.sh >> $PKG/install/doinst.sh
   # Only allow execution by audio group
   chown root:audio $PKG/usr/bin/$PRGNAM

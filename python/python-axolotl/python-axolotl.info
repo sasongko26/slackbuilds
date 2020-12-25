@@ -1,5 +1,6 @@
 PRGNAM="python-axolotl"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.1.39"
 HOMEPAGE="https://github.com/tgalal/python-axolotl"
 DOWNLOAD="https://github.com/tgalal/python-axolotl/archive/0.1.39/python-axolotl-0.1.39.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://github.com/tgalal/python-axolotl"
 DOWNLOAD="https://github.com/tgalal/python-axolotl/archive/0.1.42/python-axolotl-0.1.42.tar.gz"
 MD5SUM="a2c03ea253877c85274c9f1f3866448f"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.2.3"
+HOMEPAGE="https://github.com/tgalal/python-axolotl"
+DOWNLOAD="https://github.com/tgalal/python-axolotl/archive/0.2.3/python-axolotl-0.2.3.tar.gz"
+MD5SUM="b11e4093fc08168a6d06d34a6cb37278"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="python-axolotl-curve25519 cryptography protobuf"
+REQUIRES="python-axolotl-curve25519 cryptography protobuf3"
 MAINTAINER="Andrew Clemons"
 EMAIL="andrew.clemons@gmail.com"

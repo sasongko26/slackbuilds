@@ -1,5 +1,6 @@
 PRGNAM="git-lfs"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.3.4"
 HOMEPAGE="https://git-lfs.github.com/"
 DOWNLOAD="https://github.com/github/git-lfs/releases/download/v2.3.4/git-lfs-linux-386-2.3.4.tar.gz"
@@ -14,6 +15,14 @@ MD5SUM="f793c87bc2faa04087c40aa8cc60791a"
 DOWNLOAD_x86_64="https://github.com/github/git-lfs/releases/download/v2.4.2/git-lfs-linux-amd64-2.4.2.tar.gz"
 MD5SUM_x86_64="b9620405963a23d079e4cb7ac8903e69"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.13.1"
+HOMEPAGE="https://git-lfs.github.com/"
+DOWNLOAD="https://github.com/git-lfs/git-lfs/releases/download/v2.13.1/git-lfs-linux-386-v2.13.1.tar.gz"
+MD5SUM="67536caa7143b7d94985c287e3aeab81"
+DOWNLOAD_x86_64="https://github.com/git-lfs/git-lfs/releases/download/v2.13.1/git-lfs-linux-amd64-v2.13.1.tar.gz"
+MD5SUM_x86_64="3a749345c0fa78c6649bbc9c4cf5c7a9"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="Willy Sudiarto Raharjo"
 EMAIL="willysr@slackbuilds.org"

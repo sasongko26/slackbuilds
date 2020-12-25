@@ -5,7 +5,7 @@
 # Written by Eric Schultz eric at schultzter.ca
 # Taken over by Vincent Batts vbatts@hashbangbash.com
 
-# Copyright (c) 2012, 2013, 2014, 2015, 2016, 2017  Vincent Batts
+# Copyright (c) 2012, 2013, 2014, 2015, 2016, 2017, 2018  Vincent Batts
 # Copyright (c) 2012 Eric Schultz
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -28,10 +28,14 @@
 
 PRGNAM=google-go-lang
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.8.5}
 =======
 VERSION=${VERSION:-1.10.2}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.13.10}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

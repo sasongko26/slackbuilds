@@ -28,10 +28,14 @@
 
 PRGNAM=bppsuite
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.3.1}
 =======
 VERSION=${VERSION:-2.4.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.4.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -104,7 +108,7 @@ rm -f $PKG/usr/info/dir
 gzip -9 $PKG/usr/info/*.info*
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a AUTHORS.txt ChangeLog COPYING.txt INSTALL.txt $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a AUTHORS.txt ChangeLog COPYING.txt INSTALL.txt README.md $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

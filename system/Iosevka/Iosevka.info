@@ -1,5 +1,6 @@
 PRGNAM="Iosevka"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.13.3"
 HOMEPAGE="https://be5invis.github.io/Iosevka/"
 DOWNLOAD="https://github.com/be5invis/Iosevka/releases/download/v1.13.3/01-iosevka-1.13.3.zip \
@@ -26,6 +27,12 @@ MD5SUM="96b9f5538e914d08587a06ae1a23e39d \
         b5c0b5f099b40f1339619e77f8188dde \
         6738ae8d40cdf2c029e1919f9ab5c071"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.0.2"
+HOMEPAGE="https://typeof.net/Iosevka/"
+DOWNLOAD="https://github.com/be5invis/Iosevka/releases/download/v4.0.2/ttc-iosevka-4.0.2.zip"
+MD5SUM="c7184df4531a297e36e7cf2f8c3073ad"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

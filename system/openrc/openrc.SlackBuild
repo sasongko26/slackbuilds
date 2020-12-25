@@ -4,10 +4,14 @@
 # Based upon https://aur.archlinux.org/packages/openrc/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2015-2017 Aaditya Bagga <aaditya_gnulinux@zoho.com>
 =======
 # Copyright 2015-2018 Aaditya Bagga <aaditya_gnulinux@zoho.com>
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2015-2019 Aaditya Bagga <aaditya_gnulinux@zoho.com>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,10 +33,14 @@
 
 PRGNAM=openrc
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.32.1}
 =======
 VERSION=${VERSION:-0.35.5}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.42.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -82,27 +90,28 @@ MAKEARGS+=(PREFIX=/usr)
 MAKEARGS+=(LIBNAME=lib${LIBDIRSUFFIX})
 MAKEARGS+=(LIBDIR=/usr/lib${LIBDIRSUFFIX})
 MAKEARGS+=(LIBEXECDIR=/usr/libexec/rc)
-MAKEARGS+=(SYSCONFDIR=/etc)
+#MAKEARGS+=(SYSCONFDIR=/etc)
+MAKEARGS+=(SYSCONFDIR=/etc/openrc)
 MAKEARGS+=(SBINDIR=/sbin)
 MAKEARGS+=(MANDIR=/usr/man)
 MAKEARGS+=(DOCDIR=/usr/doc/$PRGNAM-$VERSION)
 MAKEARGS+=(MKTERMCAP=ncurses)
+MAKEARGS+=(MKSYSVINIT=no)
 MAKEARGS+=(MKBASHCOMP=yes)
-#MAKEARGS+=(BRANDING='Slackware Linux')
+MAKEARGS+=(MKZSHCOMP=yes)
+#MAKEARGS+=(BRANDING="$(cat /etc/slackware-version)")
 
 make "${MAKEARGS[@]}"
 
 make install "${MAKEARGS[@]}" DESTDIR=$PKG
 
-# Install inittab and logrotate files
-install -m 644 support/sysvinit/inittab "$PKG"/etc/inittab.new
 install -Dm 0644 "$CWD/$PRGNAM.logrotate" "$PKG/etc/logrotate.d/${PRGNAM}.new"
 
 # Backup rc.conf
-mv "$PKG/etc/rc.conf" "$PKG/etc/rc.conf.new"
+mv "$PKG/etc/openrc/rc.conf" "$PKG/etc/openrc/rc.conf.new"
 
 # Backup config files
-for file in "$PKG"/etc/conf.d/*; do
+for file in "$PKG"/etc/openrc/conf.d/*; do
   mv "${file}" "${file}.new"
 done
 

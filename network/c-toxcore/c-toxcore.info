@@ -1,5 +1,6 @@
 PRGNAM="c-toxcore"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.1.10"
 HOMEPAGE="https://tox.chat/"
 DOWNLOAD="https://github.com/TokTok/c-toxcore/archive/v0.1.10/c-toxcore-0.1.10.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/TokTok/c-toxcore"
 DOWNLOAD="https://github.com/TokTok/c-toxcore/archive/v0.2.1/c-toxcore-0.2.1.tar.gz"
 MD5SUM="e480a1924afd07b64ba5e6315787db5e"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.2.10"
+HOMEPAGE="https://github.com/TokTok/c-toxcore"
+DOWNLOAD="https://github.com/TokTok/c-toxcore/archive/v0.2.10/c-toxcore-0.2.10.tar.gz"
+MD5SUM="862307b485238f0a33b9dd0b92e6a68c"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="%README% libsodium opus"

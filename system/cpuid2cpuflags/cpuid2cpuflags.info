@@ -1,5 +1,6 @@
 PRGNAM="cpuid2cpuflags"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.0"
 HOMEPAGE="https://github.com/mgorny/cpuid2cpuflags"
 DOWNLOAD="https://github.com/mgorny/cpuid2cpuflags/releases/download/v4/cpuid2cpuflags-4.tar.bz2"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/mgorny/cpuid2cpuflags"
 DOWNLOAD="https://github.com/mgorny/cpuid2cpuflags/releases/download/v5/cpuid2cpuflags-5.tar.bz2"
 MD5SUM="b2be0e32340fd47cf67a23167e40a0c1"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="11.0"
+HOMEPAGE="https://github.com/mgorny/cpuid2cpuflags"
+DOWNLOAD="https://github.com/mgorny/cpuid2cpuflags/releases/download/v11/cpuid2cpuflags-11.tar.bz2"
+MD5SUM="c54deede1aee5d41decd5fd5969ff2d5"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

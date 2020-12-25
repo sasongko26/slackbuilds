@@ -33,11 +33,16 @@
 
 PRGNAM=dosbox-dev
 <<<<<<< HEAD
+<<<<<<< HEAD
 REVISION=${REVISION:-4063}
 =======
 REVISION=${REVISION:-4112}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 VERSION=${VERSION:-0.74.r$REVISION}
+=======
+REVISION=${REVISION:-4358}
+VERSION=${VERSION:-0.75_pre4358}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 DOSBOXDEV=${DOSBOXDEV:-no}
@@ -75,7 +80,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 SRCNAM=$PRGNAM-$VERSION
-rm -rf $SRCNAM
+rm -rf $PRGNAM
 tar xfv $CWD/$SRCNAM.tar.xz
 cd $PRGNAM
 chown -R root:root .
@@ -84,9 +89,6 @@ find -L . \
   -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
-
-# Fix building with gcc>= 4.6.x, thanks to gentoo people
-patch -p0 < $CWD/dosbox-0.74-gcc46.patch
 
 ./autogen.sh
 CFLAGS="$SLKCFLAGS" \

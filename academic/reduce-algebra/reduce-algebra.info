@@ -1,5 +1,6 @@
 PRGNAM="reduce-algebra"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="20171112svn4264"
 HOMEPAGE="http://reduce-algebra.sourceforge.net"
 DOWNLOAD="http://downloads.sourceforge.net/reduce-algebra/snapshot_2017-11-12/Reduce-svn4264-src.tar.gz \
@@ -14,6 +15,14 @@ DOWNLOAD="http://downloads.sourceforge.net/reduce-algebra/snapshot_2018-04-06/Re
 MD5SUM="0893a2dc002afef62e812892d0d8fc01 \
         92afa1ec0d8f74f73e3e40efcfd82244"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="20201007svn5424"
+HOMEPAGE="https://reduce-algebra.sourceforge.io"
+DOWNLOAD="https://downloads.sourceforge.net/reduce-algebra/snapshot_2020-10-07/Reduce-svn5424-src.tar.gz \
+          https://downloads.sourceforge.net/reduce-algebra/snapshot_2020-10-07/linux64/reduce-common_5424_all.tgz"
+MD5SUM="46eb107df176f965a2bd011c95451382 \
+        325258e8a864bb1098940ed82e9d17b8"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

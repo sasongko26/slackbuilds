@@ -1,5 +1,6 @@
 PRGNAM="vnstat"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.17"
 HOMEPAGE="http://humdi.net/vnstat/"
 DOWNLOAD="http://humdi.net/vnstat/vnstat-1.17.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://humdi.net/vnstat/"
 DOWNLOAD="https://humdi.net/vnstat/vnstat-1.18.tar.gz"
 MD5SUM="c9abaeb0ce758c16f6cdfa247bd8606c"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.6"
+HOMEPAGE="https://humdi.net/vnstat/"
+DOWNLOAD="https://humdi.net/vnstat/vnstat-2.6.tar.gz"
+MD5SUM="fe2928a81243cc8a532a357f97221736"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

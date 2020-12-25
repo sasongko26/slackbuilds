@@ -28,12 +28,17 @@
 
 PRGNAM=eclipse-cpp
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-4.7.1a}
 SRCVERSION=${SRCVERSION:-oxygen-1a}
 =======
 VERSION=${VERSION:-4.7.3a}
 SRCVERSION=${SRCVERSION:-oxygen-3a}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-4.15}
+SRCVERSION=${SRCVERSION:-2020-03-R}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -56,11 +61,9 @@ mkdir -p $TMP $PKG/opt/$PRGNAM $OUTPUT
 cd $PKG/opt/$PRGNAM
 
 # Untar source code tarball according with ARCH value
-# ARCH can be 'i586' or 'x86_64'
+# ARCH can only be 'x86_64'
 if [ "$ARCH" = "x86_64" ]; then
-  tar --strip-components=1 -xvf $CWD/$PRGNAM-$SRCVERSION-linux-gtk-$ARCH.tar.gz
-elif case "$ARCH" in i?86) true ;; *) false ;; esac ; then
-  tar --strip-components=1 -xvf $CWD/$PRGNAM-$SRCVERSION-linux-gtk.tar.gz
+  tar --strip-components=1 -xvf $CWD/$PRGNAM-$SRCVERSION-incubation-linux-gtk-$ARCH.tar.gz
 else
   printf "$ARCH is not supported...\n"
   exit 1

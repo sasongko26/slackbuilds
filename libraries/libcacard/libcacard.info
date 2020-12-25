@@ -1,5 +1,6 @@
 PRGNAM="libcacard"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.5.2"
 HOMEPAGE="https://www.spice-space.org"
 DOWNLOAD="https://www.spice-space.org/download/libcacard/libcacard-2.5.2.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.spice-space.org"
 DOWNLOAD="https://www.spice-space.org/download/libcacard/libcacard-2.5.3.tar.xz"
 MD5SUM="362a021853699008e00aaa1fecdc26c0"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.7.0"
+HOMEPAGE="https://www.spice-space.org"
+DOWNLOAD="https://www.spice-space.org/download/libcacard/libcacard-2.7.0.tar.xz"
+MD5SUM="b4cd5746c05d92169aa96f6ed4027dec"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="pcsc-lite"

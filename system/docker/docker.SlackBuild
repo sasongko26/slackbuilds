@@ -4,10 +4,14 @@
 
 # Copyright 2014-2015 Vincent Batts <vbatts@hashbangbash.com>
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017 Audrius Kažukauskas <audrius@neutrino.lt>
 =======
 # Copyright 2017-2018 Audrius Kažukauskas <audrius@neutrino.lt>
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-2020 Audrius Kažukauskas <audrius@neutrino.lt>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,17 +33,21 @@
 
 PRGNAM=docker
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-17.09.0}
 GITHASH=${GITHASH:-afdb6d4}
 =======
 VERSION=${VERSION:-18.03.1}
 GITHASH=${GITHASH:-9ee9f40}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-19.03.8}
+GITHASH=${GITHASH:-afacb8b}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
 SRCNAM=$PRGNAM-ce
-SRCVER=$VERSION-ce
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -59,9 +67,9 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $SRCNAM-$SRCVER
-tar xvf $CWD/$SRCNAM-$SRCVER.tar.gz
-cd $SRCNAM-$SRCVER
+rm -rf $SRCNAM-$VERSION
+tar xvf $CWD/$SRCNAM-$VERSION.tar.gz
+cd $SRCNAM-$VERSION
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
@@ -71,12 +79,13 @@ find -L . \
 
 mkdir -p build/src/github.com/docker
 ( cd build/src/github.com/docker
-  ln -s $TMP/$SRCNAM-$SRCVER/components/engine docker
-  ln -s $TMP/$SRCNAM-$SRCVER/components/cli cli
+  ln -s $TMP/$SRCNAM-$VERSION/components/engine docker
+  ln -s $TMP/$SRCNAM-$VERSION/components/cli cli
 )
 
 # Build daemon.
 cd components/engine
+<<<<<<< HEAD
 DOCKER_GITCOMMIT=$GITHASH \
 DOCKER_BUILDTAGS="seccomp" \
 <<<<<<< HEAD
@@ -93,11 +102,22 @@ GOPATH=$TMP/$SRCNAM-$SRCVER/build \
 
 install -D -m 0755 $(readlink -f bundles/latest/dynbinary-daemon/dockerd) \
   $PKG/usr/bin/dockerd
+=======
+  DOCKER_GITCOMMIT=$GITHASH \
+  DOCKER_BUILDTAGS="seccomp" \
+  VERSION=$(cat ../../VERSION) \
+  GOPATH=$TMP/$SRCNAM-$VERSION/build \
+  ./hack/make.sh dynbinary
+
+  install -D -m 0755 bundles/dynbinary-daemon/dockerd-$VERSION \
+    $PKG/usr/bin/dockerd
+>>>>>>> upstream/master
 cd -
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
 # Build CLI.
 cd components/cli
+<<<<<<< HEAD
 DISABLE_WARN_OUTSIDE_CONTAINER=1 \
 make dynbinary \
   GITCOMMIT=$GITHASH \
@@ -110,8 +130,15 @@ cd ../..
 =======
   VERSION=$(cat ../../VERSION) \
   GOPATH=$TMP/$SRCNAM-$SRCVER/build
+=======
+  DISABLE_WARN_OUTSIDE_CONTAINER=1 \
+  make dynbinary \
+    GITCOMMIT=$GITHASH \
+    VERSION=$(cat ../../VERSION) \
+    GOPATH=$TMP/$SRCNAM-$VERSION/build
+>>>>>>> upstream/master
 
-install -D -m 0755 build/docker-linux-amd64 $PKG/usr/bin/docker
+  install -D -m 0755 build/docker-linux-amd64 $PKG/usr/bin/docker
 cd -
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 

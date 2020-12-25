@@ -1,5 +1,6 @@
 PRGNAM="Nevow"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.14.2"
 HOMEPAGE="https://pypi.python.org/pypi/Nevow"
 DOWNLOAD="https://pypi.python.org/packages/d1/7b/fb5906c29c2397177e7df12febcd8049610258c97add082131779d0bf49a/Nevow-0.14.2.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://pypi.python.org/pypi/Nevow"
 DOWNLOAD="https://pypi.python.org/packages/1c/78/e3d086fbea8553ce9db487da38da7120e8b8896126e194b2e5af46cab5bf/Nevow-0.14.3.tar.gz"
 MD5SUM="f709ca81a466bad1882c2192bb2bcc35"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.14.4"
+HOMEPAGE="https://pypi.python.org/pypi/Nevow"
+DOWNLOAD="https://files.pythonhosted.org/packages/d6/24/fdfae1b49587d51e4cd4cd5b8c171682fbc67d8e9c7e54581be107ae3925/Nevow-0.14.4.tar.gz"
+MD5SUM="b66b8c5ff7b8a05a77c91d30736550f8"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python-twisted"

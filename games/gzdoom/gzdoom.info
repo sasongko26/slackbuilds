@@ -1,5 +1,6 @@
 PRGNAM="gzdoom"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.1.0"
 HOMEPAGE="http://gzdoom.drdteam.org/"
 DOWNLOAD="https://github.com/coelckers/gzdoom/archive/g3.1.0/gzdoom-g3.1.0.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="http://gzdoom.drdteam.org/"
 DOWNLOAD="https://github.com/coelckers/gzdoom/archive/g3.4.0/gzdoom-g3.4.0.tar.gz"
 MD5SUM="f7b8fdc62eba166caa2551bc3689956b"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.5.0"
+HOMEPAGE="http://gzdoom.drdteam.org/"
+DOWNLOAD="https://github.com/coelckers/gzdoom/archive/g4.5.0/gzdoom-g4.5.0.tar.gz"
+MD5SUM="64b0b98c6538a75626de3319653d6539"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="SDL2 OpenAL"
+REQUIRES="SDL2 OpenAL zmusic"
 MAINTAINER="B. Watson"
 EMAIL="yalhcru@gmail.com"

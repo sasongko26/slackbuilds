@@ -1,5 +1,6 @@
 PRGNAM="xonsh"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.5.12"
 HOMEPAGE="http://xon.sh/"
 DOWNLOAD="https://pypi.python.org/packages/9c/32/ec846ab22dce56a666833889f269fb414046282ae33f9fce1b3e20d52525/xonsh-0.5.12.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="http://xon.sh/"
 DOWNLOAD="https://files.pythonhosted.org/packages/f1/e5/d206e3899816da9703ed31e70701f540d7c7c220967b05c4e81366ff48f5/xonsh-0.6.4.tar.gz"
 MD5SUM="052fae1444e0e5ff936d3da0506d8a27"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.9.12"
+HOMEPAGE="https://xon.sh/"
+DOWNLOAD="https://files.pythonhosted.org/packages/7c/be/a6269ae0440f3b860e727e4faf066f179937611bad3331616ba7dd863996/xonsh-0.9.12.tar.gz"
+MD5SUM="6cfa0915bb4b7f775049378d9b65f6b4"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="python3 python-distro"
+REQUIRES="python3"
 MAINTAINER="Dimitris Zlatanidis"
 EMAIL="d.zlatanidis@gmail.com"

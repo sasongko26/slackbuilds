@@ -24,10 +24,14 @@
 
 PRGNAM=ioquake3
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-r20170419}
 BUILD=${BUILD:-2}
 =======
 VERSION=${VERSION:-r20180602}
+=======
+VERSION=${VERSION:-r20200211}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}

@@ -1,5 +1,6 @@
 PRGNAM="spl-solaris"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.7.3"
 HOMEPAGE="http://zfsonlinux.org"
 DOWNLOAD="https://github.com/zfsonlinux/zfs/releases/download/zfs-0.7.3/spl-0.7.3.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://zfsonlinux.org"
 DOWNLOAD="https://github.com/zfsonlinux/zfs/releases/download/zfs-0.7.9/spl-0.7.9.tar.gz"
 MD5SUM="30cd00e473f8f3f589a599ecb0e71de9"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.7.13"
+HOMEPAGE="https://zfsonlinux.org"
+DOWNLOAD="https://github.com/zfsonlinux/zfs/releases/download/zfs-0.7.13/spl-0.7.13.tar.gz"
+MD5SUM="b36a84314e7fc8ebb68affeb1e22a9dd"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

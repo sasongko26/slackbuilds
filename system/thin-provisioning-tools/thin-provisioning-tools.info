@@ -1,5 +1,6 @@
 PRGNAM="thin-provisioning-tools"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.7.1"
 HOMEPAGE="https://github.com/jthornber/thin-provisioning-tools"
 DOWNLOAD="https://github.com/jthornber/thin-provisioning-tools/archive/v0.7.1/thin-provisioning-tools-0.7.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/jthornber/thin-provisioning-tools"
 DOWNLOAD="https://github.com/jthornber/thin-provisioning-tools/archive/v0.7.6/thin-provisioning-tools-0.7.6.tar.gz"
 MD5SUM="3ebdb158448d779ba0cd2035e2a2efe2"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.9.0"
+HOMEPAGE="https://github.com/jthornber/thin-provisioning-tools"
+DOWNLOAD="https://github.com/jthornber/thin-provisioning-tools/archive/v0.9.0/thin-provisioning-tools-0.9.0.tar.gz"
+MD5SUM="b3ce6f476a5b7ea64c583e7d910d2db7"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

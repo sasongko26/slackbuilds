@@ -1,5 +1,6 @@
 PRGNAM="perl-YAML-LibYAML"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.66"
 HOMEPAGE="https://metacpan.org/release/YAML-LibYAML"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-0.66.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://metacpan.org/release/YAML-LibYAML"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-0.69.tar.gz"
 MD5SUM="454856b96eb2107ed49dd96ceb358e03"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.76"
+HOMEPAGE="https://metacpan.org/release/YAML-LibYAML"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-0.76.tar.gz"
+MD5SUM="548e321a8644716c5d6c5e9ec12b598f"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

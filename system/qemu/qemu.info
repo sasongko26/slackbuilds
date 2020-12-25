@@ -1,5 +1,6 @@
 PRGNAM="qemu"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.9.0"
 HOMEPAGE="http://www.qemu-project.org"
 DOWNLOAD="http://download.qemu-project.org/qemu-2.9.0.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://www.qemu-project.org"
 DOWNLOAD="http://download.qemu-project.org/qemu-2.12.0.tar.xz"
 MD5SUM="ca553eb04c933f58111c304452fc4cc5"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.1.1"
+HOMEPAGE="https://www.qemu.org"
+DOWNLOAD="https://download.qemu.org/qemu-4.1.1.tar.xz"
+MD5SUM="53879f792ef2675c6c5e6cbf5cc1ac6c"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="SDL2"

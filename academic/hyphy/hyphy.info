@@ -1,5 +1,6 @@
 PRGNAM="hyphy"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.3.4"
 HOMEPAGE="https://veg.github.io/hyphy-site/"
 DOWNLOAD="https://github.com/veg/hyphy/archive/2.3.4/hyphy-2.3.4.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://veg.github.io/hyphy-site/"
 DOWNLOAD="https://github.com/veg/hyphy/archive/2.3.8/hyphy-2.3.8.tar.gz"
 MD5SUM="e6e50f13e428d9d3a2dfe379ace15189"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.3.14"
+HOMEPAGE="https://veg.github.io/hyphy-site/"
+DOWNLOAD="https://github.com/veg/hyphy/archive/2.3.14/hyphy-2.3.14.tar.gz"
+MD5SUM="d82809929d213e236078ed4853ea3962"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES=""
+REQUIRES="openmpi"
 MAINTAINER="Petar Petrov"
 EMAIL="slackalaxy@gmail.com"

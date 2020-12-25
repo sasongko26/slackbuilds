@@ -1,5 +1,6 @@
 PRGNAM="filezilla"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.29.0"
 HOMEPAGE="https://filezilla-project.org/"
 DOWNLOAD="https://downloads.sourceforge.net/filezilla/FileZilla_3.29.0_src.tar.bz2"
@@ -10,6 +11,12 @@ HOMEPAGE="https://filezilla-project.org/"
 DOWNLOAD="https://dl1.cdn.filezilla-project.org/client/FileZilla_3.34.0_src.tar.bz2"
 MD5SUM="de54afdd455bc368b35640ebf47d44e5"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.42.1"
+HOMEPAGE="https://filezilla-project.org/"
+DOWNLOAD="https://download.filezilla-project.org/client/FileZilla_3.42.1_src.tar.bz2"
+MD5SUM="00e2f8ff0c1ad9802c0eed6488c3565a"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="wxGTK3 libfilezilla"

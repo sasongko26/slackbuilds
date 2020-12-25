@@ -9,6 +9,11 @@ MD5SUM_x86_64=""
 REQUIRES="perl-Test-Simple"
 =======
 REQUIRES=""
+<<<<<<< HEAD
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MAINTAINER="Edinaldo P. Silva"
 EMAIL="edps.mundognu@gmail.com"
+=======
+MAINTAINER="Michel A. BEGUE"
+EMAIL="mab974@gmail.com"
+>>>>>>> upstream/master

@@ -2,7 +2,7 @@
 
 # Slackware build script for qTox
 
-# Copyright 2015, 2016, 2017, 2018  Mario Preksavec, Zagreb, Croatia
+# Copyright 2015, 2016, 2017, 2018, 2019  Mario Preksavec, Zagreb, Croatia
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,12 +24,17 @@
 
 PRGNAM=qTox
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.12.1}
 BUILD=${BUILD:-1}
 =======
 VERSION=${VERSION:-1.14.1}
 BUILD=${BUILD:-2}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-20190928_85361393}
+BUILD=${BUILD:-1}
+>>>>>>> upstream/master
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
@@ -65,7 +70,7 @@ rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz || tar xvf $CWD/$PRGNAM-$VERSION.tar.bz2
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
@@ -75,7 +80,7 @@ find -L . \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
 # gcc-7 fix
-patch -p1 <$CWD/rawdatabase.h.diff
+#patch -p1 <$CWD/rawdatabase.h.diff
 
 <<<<<<< HEAD
 # ffmpeg 3.4 fix
@@ -104,7 +109,7 @@ cd build
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DENABLE_STATUSNOTIFIER=False \
     -DENABLE_APPINDICATOR=False \
-    -DENABLE_GTK_SYSTRAY=True \
+    -DENABLE_GTK_SYSTRAY=False \
     -DCMAKE_BUILD_TYPE=Release ..
   make
   make install DESTDIR=$PKG

@@ -1,5 +1,6 @@
 PRGNAM="aide"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.15.1"
 HOMEPAGE="https://sourceforge.net/projects/aide/"
 DOWNLOAD="https://sourceforge.net/projects/aide/files/aide/0.15.1/aide-0.15.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://sourceforge.net/projects/aide/"
 DOWNLOAD="https://sourceforge.net/projects/aide/files/aide/0.16/aide-0.16.tar.gz"
 MD5SUM="25c616f67c667acd4088747ae7f6a9a3"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.16.2"
+HOMEPAGE="https://aide.github.io/"
+DOWNLOAD="https://github.com/aide/aide/releases/download/v0.16.2/aide-0.16.2.tar.gz"
+MD5SUM="9835914273bb06f9b3263ce36ef7149b"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

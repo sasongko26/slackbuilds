@@ -1,12 +1,10 @@
 PRGNAM="qm-vamp-plugins"
-VERSION="1.7"
+VERSION="1.8.0"
 HOMEPAGE="http://isophonics.net/QMVampPlugins"
-DOWNLOAD="http://code.soundsoftware.ac.uk/attachments/download/109/qm-vamp-plugins-1.7.tar.gz \
-          http://code.soundsoftware.ac.uk/attachments/download/103/qm-dsp-1.7.tar.gz"
-MD5SUM="9340d0e08d72ae712a2fb9da9f6499c5 \
-        d167a1477ab40cc3df965ed338dcd6a5"
+DOWNLOAD="https://code.soundsoftware.ac.uk/attachments/download/2624/qm-vamp-plugins-1.8.0.tar.gz"
+MD5SUM="0bcb502c5b0199cd6359df54ae7b61d4"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="atlas vamp-plugin-sdk"
+REQUIRES=""
 MAINTAINER="B. Watson"
 EMAIL="yalhcru@gmail.com"

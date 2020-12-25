@@ -1,5 +1,6 @@
 PRGNAM="tig"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.3.0"
 HOMEPAGE="https://jonas.github.io/tig/"
 DOWNLOAD="https://github.com/jonas/tig/releases/download/tig-2.3.0/tig-2.3.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://jonas.github.io/tig/"
 DOWNLOAD="https://github.com/jonas/tig/releases/download/tig-2.3.3/tig-2.3.3.tar.gz"
 MD5SUM="800a63f6772b9fa1cd9b9e1ad99f4eee"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.5.1"
+HOMEPAGE="https://jonas.github.io/tig/"
+DOWNLOAD="https://github.com/jonas/tig/releases/download/tig-2.5.1/tig-2.5.1.tar.gz"
+MD5SUM="4d810b7de2dfc842ceeb8b8d88740f2c"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

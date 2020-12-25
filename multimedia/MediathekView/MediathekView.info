@@ -1,5 +1,6 @@
 PRGNAM="MediathekView"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="13.0.3"
 HOMEPAGE="http://www.mediathekview.de"
 DOWNLOAD="https://download.mediathekview.de/stabil/MediathekView-13.0.3.tar.gz"
@@ -13,5 +14,14 @@ MD5SUM="bb54e79e9c7a540f52e7d2abbfbe02cf"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="jdk"
+=======
+VERSION="13.6.0"
+HOMEPAGE="http://www.mediathekview.de"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://download.mediathekview.de/stabil/MediathekView-13.6.0-linux.tar.gz"
+MD5SUM_x86_64="d334a24c4b61fa156238aaa49ec105dc"
+REQUIRES=""
+>>>>>>> upstream/master
 MAINTAINER="Heiko Rosemann"
 EMAIL="heiko.rosemann@web.de"

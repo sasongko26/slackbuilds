@@ -1,5 +1,6 @@
 PRGNAM="RetroArch"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.6.9"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/RetroArch-1.6.9.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="https://github.com/libretro/RetroArch/releases/download/v1.7.3/RetroArch-1.7.3.tar.xz"
 MD5SUM="9ae133fec4c2f787a12aacdf50e61e9e"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.9.0"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="https://github.com/libretro/RetroArch/archive/v1.9.0/RetroArch-1.9.0.tar.gz"
+MD5SUM="3f57a0b5e752921b6e1e5587bf546eb9"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="ilmich"
+EMAIL="ardutu@gmail.com"

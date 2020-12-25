@@ -1,5 +1,6 @@
 PRGNAM="rtags"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.16"
 HOMEPAGE="https://github.com/Andersbakken/rtags"
 DOWNLOAD="https://github.com/Andersbakken/rtags/archive/v2.16/rtags-2.16.tar.gz \
@@ -14,6 +15,14 @@ DOWNLOAD="https://github.com/Andersbakken/rtags/archive/v2.18/rtags-2.18.tar.gz 
 MD5SUM="e2df3253c1165502fb25f0a85418a193 \
         6b3d0e97d1f5a6f256d6f3a041f2bbbf"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.38"
+HOMEPAGE="https://github.com/Andersbakken/rtags"
+DOWNLOAD="https://github.com/Andersbakken/rtags/archive/v2.38/rtags-2.38.tar.gz \
+          https://github.com/Andersbakken/rct/archive/e706998/rct-e706998697b8d48fa9e5b9ab33aeded705129a66.tar.gz"
+MD5SUM="0d9b026651a2e0a51a8ef5bdbd7ead7a \
+        5ceaaff58595931418352cff0510132d"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

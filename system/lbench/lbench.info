@@ -1,5 +1,6 @@
 PRGNAM="lbench"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.4"
 HOMEPAGE="http://kornelix.net/lbench/lbench.html"
 DOWNLOAD="http://kornelix.net/downloads/tarballs/lbench-3.4.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://kornelix.net/lbench/lbench.html"
 DOWNLOAD="http://kornelix.net/downloads/tarballs/lbench-3.5.tar.gz"
 MD5SUM="d44bab1118602248ebb1e20b79d8730f"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.7"
+HOMEPAGE="http://kornelix.net/lbench/lbench.html"
+DOWNLOAD="http://ponce.cc/slackware/sources/repo/lbench-3.7.tar.gz"
+MD5SUM="ba1cf6181d3748489ebe68b3c98d3565"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

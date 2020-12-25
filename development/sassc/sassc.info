@@ -1,5 +1,6 @@
 PRGNAM="sassc"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.4.7"
 HOMEPAGE="http://sass-lang.com/libsass"
 DOWNLOAD="https://github.com/sass/sassc/archive/3.4.7/sassc-3.4.7.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://sass-lang.com/libsass"
 DOWNLOAD="https://github.com/sass/sassc/archive/3.5.0/sassc-3.5.0.tar.gz"
 MD5SUM="f5c6aeb4e98c96d093f20295fc490f2c"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.6.1"
+HOMEPAGE="http://sass-lang.com/libsass"
+DOWNLOAD="https://github.com/sass/sassc/archive/3.6.1/sassc-3.6.1.tar.gz"
+MD5SUM="dd675920c7151e50e2d2ac14f0fb222a"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libsass"

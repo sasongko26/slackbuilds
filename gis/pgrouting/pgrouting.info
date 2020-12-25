@@ -1,5 +1,6 @@
 PRGNAM="pgrouting"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.5.2"
 HOMEPAGE="http://pgrouting.org"
 DOWNLOAD="https://github.com/pgRouting/pgrouting/archive/v2.5.2/pgrouting-2.5.2.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://pgrouting.org"
 DOWNLOAD="https://github.com/pgRouting/pgrouting/archive/v2.6.0/pgrouting-2.6.0.tar.gz"
 MD5SUM="84a1a696ba6a76a88bf2bf6329cde59e"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.6.3"
+HOMEPAGE="https://pgrouting.org"
+DOWNLOAD="https://github.com/pgRouting/pgrouting/archive/v2.6.3/pgrouting-2.6.3.tar.gz"
+MD5SUM="16f8537a553d2953ef50726764dd7d66"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="CGAL postgis"

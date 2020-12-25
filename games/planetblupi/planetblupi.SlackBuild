@@ -22,10 +22,14 @@
 
 PRGNAM=planetblupi
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.12.0}
 =======
 VERSION=${VERSION:-1.12.5}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.14.2}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

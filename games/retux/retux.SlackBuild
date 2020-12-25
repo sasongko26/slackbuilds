@@ -12,9 +12,14 @@
 # won't cause problems.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 PRGNAM=retux
 VERSION=${VERSION:-1.3.4}
 =======
+=======
+# 20200206 bkw: add missing pygame dep to REQUIRES.
+
+>>>>>>> upstream/master
 # 20180217 bkw:
 # Updated for v1.3.5. Added new (undocumented!) pathlib dependency.
 

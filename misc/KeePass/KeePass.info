@@ -1,5 +1,6 @@
 PRGNAM="KeePass"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.36"
 HOMEPAGE="https://keepass.info/"
 DOWNLOAD="http://downloads.sourceforge.net/keepass/KeePass-2.36-Source.zip"
@@ -10,6 +11,12 @@ HOMEPAGE="https://keepass.info/"
 DOWNLOAD="http://downloads.sourceforge.net/keepass/KeePass-2.39.1-Source.zip"
 MD5SUM="b0d66c86a4d39442d1711c237b512c2f"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.46"
+HOMEPAGE="https://keepass.info/"
+DOWNLOAD="http://downloads.sourceforge.net/keepass/KeePass-2.46-Source.zip"
+MD5SUM="7caecfcc2d15dc7ec1b90256da527836"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="mono libgdiplus"

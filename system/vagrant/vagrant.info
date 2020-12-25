@@ -1,5 +1,6 @@
 PRGNAM="vagrant"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.0.1"
 HOMEPAGE="https://www.vagrantup.com"
 DOWNLOAD="https://releases.hashicorp.com/vagrant/2.0.1/vagrant_2.0.1_i686.rpm"
@@ -14,6 +15,14 @@ MD5SUM="d1df40a7470df8842606ee1e25e599d1"
 DOWNLOAD_x86_64="https://releases.hashicorp.com/vagrant/2.1.1/vagrant_2.1.1_x86_64.rpm"
 MD5SUM_x86_64="384caaf67cc7bfd4fa2b5c4c2ba2e85c"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.2.14"
+HOMEPAGE="https://www.vagrantup.com"
+DOWNLOAD="https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_i686.rpm"
+MD5SUM="b0d028b61fb626d8b75ffb7dd0784488"
+DOWNLOAD_x86_64="https://releases.hashicorp.com/vagrant/2.2.14/vagrant_2.2.14_x86_64.rpm"
+MD5SUM_x86_64="e5533e512f43d7e2cae299e25ba019eb"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="Benjamin Trigona-Harany"
 EMAIL="slackbuilds@jaxartes.net"

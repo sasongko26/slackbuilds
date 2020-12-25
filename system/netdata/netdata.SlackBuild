@@ -2,7 +2,7 @@
 
 # Slackware build script for netdata
 
-# Copyright 2017-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+# Copyright 2017-2019 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,10 +24,14 @@
 
 PRGNAM=netdata
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.8.0}
 =======
 VERSION=${VERSION:-1.10.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.26.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -92,7 +96,7 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-./autogen.sh
+autoreconf -fiv
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
 ./configure \
@@ -114,10 +118,10 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a COPYING ChangeLog *.md $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a LICENSE *.md $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
-mkdir -p $PKG/var/lock/subsys/
+mkdir -p $PKG/var/lock/subsys/ $PKG/var/cache/netdata $PKG/var/lib/netdata $PKG/var/log/netdata
 
 # set permission
 chown -R $NETDATA_USER:$NETDATA_GROUP $PKG/var/lib/netdata
@@ -132,29 +136,39 @@ install -m 0644 $CWD/rc.netdata $PKG/etc/rc.d/
 # handle all conf files
 touch $PKG/etc/netdata/netdata.conf.new
 
-for L in `ls $PKG/etc/netdata/*.conf`
+for L in `ls $PKG/usr/lib${LIBDIRSUFFIX}/netdata/conf.d/*.conf`
 do
 mv $L $L.new
 done
 
-for L in `ls $PKG/etc/netdata/python.d/*.conf`
+for L in `ls $PKG/usr/lib${LIBDIRSUFFIX}/netdata/conf.d/python.d/*.conf`
 do
 mv $L $L.new
 done
 
-for L in `ls $PKG/etc/netdata/charts.d/*.conf`
+for L in `ls $PKG/usr/lib${LIBDIRSUFFIX}/netdata/conf.d/charts.d/*.conf`
 do
 mv $L $L.new
 done
 
-for L in `ls $PKG/etc/netdata/health.d/*.conf`
+for L in `ls $PKG/usr/lib${LIBDIRSUFFIX}/netdata/conf.d/health.d/*.conf`
+do
+mv $L $L.new
+done
+
+#for L in `ls $PKG/usr/lib${LIBDIRSUFFIX}/netdata/conf.d/node.d/*.conf`
+#do
+#mv $L $L.new
+#done
+
+for L in `ls $PKG/usr/lib${LIBDIRSUFFIX}/netdata/conf.d/statsd.d/*.conf`
 do
 mv $L $L.new
 done
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
-cat $CWD/doinst.sh > $PKG/install/doinst.sh
+sed -e s/%LIBDIRSUFFIX%/$LIBDIRSUFFIX/g $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

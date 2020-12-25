@@ -1,5 +1,6 @@
 PRGNAM="cool-retro-term"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="20170201_e48719f"
 HOMEPAGE="https://github.com/Swordfish90/cool-retro-term"
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/cool-retro-term-20170201_e48719f.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/Swordfish90/cool-retro-term"
 DOWNLOAD="https://github.com/Swordfish90/cool-retro-term/archive/1.0.1/cool-retro-term-1.0.1.tar.gz"
 MD5SUM="44d5834d7e955def891b6ccf69442c76"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.1.1"
+HOMEPAGE="https://github.com/Swordfish90/cool-retro-term"
+DOWNLOAD="https://github.com/Swordfish90/cool-retro-term/archive/1.1.1/cool-retro-term-1.1.1.tar.gz"
+MD5SUM="0450dd6b50907168aba63a64bb0fef16"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="qmltermwidget"

@@ -1,6 +1,7 @@
 vtcol - Colour schemes for the Linux console
 
 Change the colour scheme of the virtual Linux console.
+<<<<<<< HEAD
 
 Note:
 <<<<<<< HEAD
@@ -16,3 +17,5 @@ will automatically use this tarball if found in the current directory.
 =======
 rust is required for building vtcol, but it not needed at runtime.
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+>>>>>>> upstream/master

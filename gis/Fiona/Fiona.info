@@ -1,5 +1,6 @@
 PRGNAM="Fiona"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.7.10"
 HOMEPAGE="https://github.com/Toblerity/Fiona"
 DOWNLOAD="https://github.com/Toblerity/Fiona/archive/1.7.10/Fiona-1.7.10.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://github.com/Toblerity/Fiona"
 DOWNLOAD="https://github.com/Toblerity/Fiona/archive/1.7.12/Fiona-1.7.12.tar.gz"
 MD5SUM="a2269acf64d9c87482e5d67dae19501c"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.8.18"
+HOMEPAGE="https://github.com/Toblerity/Fiona"
+DOWNLOAD="https://github.com/Toblerity/Fiona/archive/1.8.18/Fiona-1.8.18.tar.gz"
+MD5SUM="04ae3bea5d1a5765a081e5945b26ec97"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="gdal munch six"
+REQUIRES="gdal munch python3-six python3-Cython python3-attrs click-plugins cligj"
 MAINTAINER="Benjamin Trigona-Harany"
 EMAIL="slackbuilds@jaxartes.net"

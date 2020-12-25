@@ -30,10 +30,14 @@
 
 PRGNAM=zenity
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.24.0}
 =======
 VERSION=${VERSION:-3.26.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.28.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

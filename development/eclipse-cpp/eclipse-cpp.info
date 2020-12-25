@@ -1,5 +1,6 @@
 PRGNAM="eclipse-cpp"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.7.1a"
 HOMEPAGE="http://www.eclipse.org"
 DOWNLOAD="http://download.eclipse.org/technology/epp/downloads/release/oxygen/1a/eclipse-cpp-oxygen-1a-linux-gtk.tar.gz"
@@ -15,5 +16,14 @@ DOWNLOAD_x86_64="http://download.eclipse.org/technology/epp/downloads/release/ox
 MD5SUM_x86_64="44bd0218dec17e9f6aa26d8e2af6645d"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 REQUIRES="jdk webkitgtk"
+=======
+VERSION="4.15"
+HOMEPAGE="http://www.eclipse.org"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="http://download.eclipse.org/technology/epp/downloads/release/2020-03/R/eclipse-cpp-2020-03-R-incubation-linux-gtk-x86_64.tar.gz"
+MD5SUM_x86_64="c419a30918f1396c9d46106ed2350a01"
+REQUIRES="jdk webkit2gtk"
+>>>>>>> upstream/master
 MAINTAINER="Andrew Clemons"
 EMAIL="andrew.clemons@gmail.com"

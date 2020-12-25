@@ -1,5 +1,6 @@
 PRGNAM="neofetch"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.3.0"
 HOMEPAGE="https://github.com/dylanaraps/neofetch"
 DOWNLOAD="https://github.com/dylanaraps/neofetch/archive/3.3.0/neofetch-3.3.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/dylanaraps/neofetch"
 DOWNLOAD="https://github.com/dylanaraps/neofetch/archive/5.0.0/neofetch-5.0.0.tar.gz"
 MD5SUM="807c41694ff5b861e4233eb71d507be9"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="7.0.0"
+HOMEPAGE="https://github.com/dylanaraps/neofetch"
+DOWNLOAD="https://github.com/dylanaraps/neofetch/archive/7.0.0/neofetch-7.0.0.tar.gz"
+MD5SUM="b4e1231561d15be12f334de607c4327e"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

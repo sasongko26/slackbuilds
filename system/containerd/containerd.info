@@ -1,5 +1,6 @@
 PRGNAM="containerd"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.2.9_06b9cb3"
 HOMEPAGE="https://containerd.io/"
 DOWNLOAD="UNSUPPORTED"
@@ -14,6 +15,14 @@ MD5SUM=""
 DOWNLOAD_x86_64="https://github.com/containerd/containerd/archive/v1.0.3/containerd-1.0.3.tar.gz"
 MD5SUM_x86_64="70bea1ec8e89ef057b5ea7be73506157"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.2.13"
+HOMEPAGE="https://containerd.io/"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://github.com/containerd/containerd/archive/v1.2.13/containerd-1.2.13.tar.gz"
+MD5SUM_x86_64="be00b9a21903a6ccc9ec61a673f5ea28"
+>>>>>>> upstream/master
 REQUIRES="runc"
 MAINTAINER="Audrius Kažukauskas"
 EMAIL="audrius@neutrino.lt"

@@ -1,5 +1,6 @@
 PRGNAM="python-urllib3"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.21.1"
 HOMEPAGE="https://pypi.python.org/pypi/urllib3"
 DOWNLOAD="https://pypi.python.org/packages/96/d9/40e4e515d3e17ed0adbbde1078e8518f8c4e3628496b56eb8f026a02b9e4/urllib3-1.21.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://urllib3.readthedocs.io/en/latest/"
 DOWNLOAD="https://pypi.python.org/packages/ee/11/7c59620aceedcc1ef65e156cc5ce5a24ef87be4107c2b74458464e437a5d/urllib3-1.22.tar.gz"
 MD5SUM="0da7bed3fe94bf7dc59ae37885cc72f7"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.25.7"
+HOMEPAGE="https://urllib3.readthedocs.io/en/latest/"
+DOWNLOAD="https://files.pythonhosted.org/packages/ad/fc/54d62fa4fc6e675678f9519e677dfc29b8964278d75333cf142892caf015/urllib3-1.25.7.tar.gz"
+MD5SUM="85e1e3925f8c1095172bff343f3312ed"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

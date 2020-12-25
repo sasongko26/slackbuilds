@@ -1,5 +1,6 @@
 PRGNAM="weechat"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.9.1"
 HOMEPAGE="http://www.weechat.org"
 DOWNLOAD="http://weechat.org/files/src/weechat-1.9.1.tar.bz2"
@@ -10,8 +11,14 @@ HOMEPAGE="http://www.weechat.org"
 DOWNLOAD="http://weechat.org/files/src/weechat-2.1.tar.bz2"
 MD5SUM="95742ca305090321a375d2537709f9f5"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.0"
+HOMEPAGE="http://www.weechat.org"
+DOWNLOAD="http://weechat.org/files/src/weechat-3.0.tar.bz2"
+MD5SUM="b9070c170a194ac3a71c8afff6b9a4b7"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES=""
-MAINTAINER="Benjamin Trigona-Harant"
+REQUIRES="python3"
+MAINTAINER="Benjamin Trigona-Harany"
 EMAIL="slackbuilds@jaxartes.net"

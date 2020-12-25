@@ -1,5 +1,6 @@
 PRGNAM="uTox"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.16.1"
 HOMEPAGE="https://github.com/uTox/uTox"
 DOWNLOAD="https://github.com/uTox/uTox/archive/v0.16.1/uTox-0.16.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/uTox/uTox"
 DOWNLOAD="https://github.com/uTox/uTox/releases/download/v0.17.0/uTox-0.17.0-full.tar.gz"
 MD5SUM="eddb67c2348e66d791512c7662ceb76a"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.17.2"
+HOMEPAGE="https://github.com/uTox/uTox"
+DOWNLOAD="https://github.com/uTox/uTox/releases/download/v0.17.2/uTox-0.17.2-full.tar.gz"
+MD5SUM="2aedb6199ca6238bd2cf274864fd658c"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="c-toxcore libfilteraudio check"

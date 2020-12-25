@@ -4,6 +4,7 @@
 
 # Copyright 2015 Dugan Chen Canada
 # All rights reserved.
+# Yth | Pont-en-Royans, France | yth@ythogtha.org
 #
 # Redistribution and use of this script, with or without modification, is
 # permitted provided that the following conditions are met:
@@ -23,7 +24,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=ags
-VERSION=${VERSION:-3.3.4.2}
+VERSION=${VERSION:-3.5.0.27}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -7,7 +7,16 @@
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+# 20201026 bkw:
+# - updated for 5.4.
+# - make the slack-desc say whether or not the ROM is included.
+# - update the man page with new options in 5.4.
+
+# 20191202 bkw: updated for 4.8.
+>>>>>>> upstream/master
 # 20180619 bkw: updated for 4.6.
 
 # 20171218 bkw: updated for 4.2.
@@ -61,10 +70,14 @@
 
 PRGNAM=colem
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-4.1}
 =======
 VERSION=${VERSION:-4.6}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-5.4}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -117,11 +130,8 @@ mkdir $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
 unzip -aa $CWD/$ZIPNAME$ZIPVER-Source.zip
 chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-  -o -perm 511 \) -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
- -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+find -L .  -perm /111 -a \! -perm 755 -a -exec chmod 755 {} \+ -o \
+        \! -perm /111 -a \! -perm 644 -a -exec chmod 644 {} \+
 
 sed -i "s/-O2/$SLKCFLAGS/" EMULib/Rules.gcc
 
@@ -209,7 +219,10 @@ for i in coleco.rom COLECO.ROM os7.rom OS7.ROM; do
 done
 
 # If we found a ROM image, include it in the package.
-[ -n "$ROM" ] && cat $ROM > $PKG/usr/share/$PRGNAM/coleco.rom
+INCLUDES="does NOT include"
+[ -n "$ROM" ] && \
+  cat $ROM > $PKG/usr/share/$PRGNAM/coleco.rom && \
+  INCLUDES="includes"
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
@@ -219,7 +232,7 @@ cat $CWD/README > $PKG/usr/doc/$PRGNAM-$VERSION/README
 cat ../$ZIPNAME.html > $PKG/usr/doc/$PRGNAM-$VERSION/$ZIPNAME.html
 
 mkdir -p $PKG/install
-cat $CWD/slack-desc > $PKG/install/slack-desc
+sed "s,@INCLUDES@,$INCLUDES," $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
 
 cd $PKG

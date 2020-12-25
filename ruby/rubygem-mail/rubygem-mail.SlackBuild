@@ -3,10 +3,14 @@
 # Slackware build script for rubygem-mail
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017  Jostein Berntsen <jbernts@broadpark.no>
 =======
 # Copyright 2017-2018  Jostein Berntsen <jbernts@broadpark.no>
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-2020  Jostein Berntsen <jbernts@broadpark.no>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=rubygem-mail
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.6.6}
 =======
 VERSION=${VERSION:-2.7.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.7.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

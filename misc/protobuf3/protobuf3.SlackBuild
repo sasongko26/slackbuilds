@@ -2,7 +2,7 @@
 
 # Slackware build script for protobuf3
 
-# Copyright 2017-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+# Copyright 2017-2020 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,15 +24,19 @@
 
 PRGNAM=protobuf3
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.3.2}
 =======
 VERSION=${VERSION:-3.5.2}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.14.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
 GTEST=googletest-release
-GTESTVERSION=${GTESTVERSION:-1.8.0}
+GTESTVERSION=${GTESTVERSION:-1.8.1}
 
 SRCNAM=protobuf
 
@@ -70,7 +74,6 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $SRCNAM-$VERSION
 tar xvf $CWD/$SRCNAM-$VERSION.tar.gz
-tar xvf $CWD/$GTEST-$GTESTVERSION.tar.gz
 cd $SRCNAM-$VERSION
 chown -R root:root .
 find -L . \
@@ -79,12 +82,7 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-# Avoid downloading gtest automatically
-# It doesn't detect system-wide gtest installation
-rm -rf gmock googletest
-cp -rf ../$GTEST-$GTESTVERSION/googlemock gmock
-cp -rf ../$GTEST-$GTESTVERSION/googletest googletest
-ln -sf ../googletest gmock/gtest
+patch -p1 < $CWD/protobuf3.patch
 
 ./autogen.sh
 CFLAGS="$SLKCFLAGS" \

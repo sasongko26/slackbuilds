@@ -13,11 +13,15 @@ opera-developer: The desktop version runs on GNU/Linux and FreeBSD. Versions for
 opera-developer: Macintosh and Windows are also available.
 opera-developer:
 <<<<<<< HEAD
+<<<<<<< HEAD
 opera-developer: It  includes  web developer tools, news aggregation,  and the ability
 opera-developer: to compress data via Opera Turbo on congested networks.
 =======
 opera-developer: Home page: https://www.opera.com/
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+opera-developer: Homepage: https://www.opera.com/
+>>>>>>> upstream/master
 opera-developer:
 opera-developer:
 opera-developer:

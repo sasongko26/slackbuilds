@@ -2,7 +2,7 @@
 
 # Slackware build script for potrace
 
-# Copyright 2013-2017 Kyle Guinn <elyk03@gmail.com>, USA
+# Copyright 2013-2019 Kyle Guinn <elyk03@gmail.com>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -23,7 +23,7 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=potrace
-VERSION=${VERSION:-1.15}
+VERSION=${VERSION:-1.16}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

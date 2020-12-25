@@ -1,5 +1,6 @@
 PRGNAM="spades"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.11.1"
 HOMEPAGE="http://bioinf.spbau.ru/en/spades"
 DOWNLOAD="UNSUPPORTED"
@@ -14,6 +15,14 @@ MD5SUM=""
 DOWNLOAD_x86_64="http://cab.spbu.ru/files/release3.12.0/SPAdes-3.12.0.tar.gz"
 MD5SUM_x86_64="a3ca52710bd56139ab5e9af97c289380"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.14.1"
+HOMEPAGE="http://cab.spbu.ru/software/spades/"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="http://cab.spbu.ru/files/release3.14.1/SPAdes-3.14.1.tar.gz"
+MD5SUM_x86_64="239f76e0ffe0e06d26f0a24f8d38f278"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="Petar Petrov"
 EMAIL="slackalaxy@gmail.com"

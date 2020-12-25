@@ -1,5 +1,6 @@
 PRGNAM="mupdf"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.11"
 HOMEPAGE="https://www.mupdf.com/"
 DOWNLOAD="https://www.mupdf.com/downloads/archive/mupdf-1.11-source.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.mupdf.com/"
 DOWNLOAD="https://www.mupdf.com/downloads/archive/mupdf-1.13.0-source.tar.gz"
 MD5SUM="447bc5c3305efe9645e12fce759e0198"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.18.0"
+HOMEPAGE="https://www.mupdf.com/"
+DOWNLOAD="https://www.mupdf.com/downloads/archive/mupdf-1.18.0-source.tar.xz"
+MD5SUM="3135391b027cdbedf915db1787b4ea05"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="jbig2dec"

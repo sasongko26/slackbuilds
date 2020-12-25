@@ -2,7 +2,7 @@
 
 # Slackware build script for CHICKEN Scheme
 
-# Written by Erik Falor (ewfalor@gmail.com) 2017
+# Written by Erik Falor (ewfalor@gmail.com) 2020
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -22,12 +22,21 @@
 #  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
+
+# increment this number to match the Chicken library version
+CHICKEN_API_VER=11
+
 PRGNAM=chicken
+<<<<<<< HEAD
 <<<<<<< HEAD
 VERSION=${VERSION:-4.12.0}
 =======
 VERSION=${VERSION:-4.13.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-5.2.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -63,7 +72,7 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM
+rm -rf $PRGNAM-$VERSION
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 chown -R root:root .
@@ -96,8 +105,8 @@ make install \
   DOCDIR=/usr/doc/$PRGNAM-$VERSION \
   DESTDIR=$PKG
 
-# should be a symbolic link not a copy otherwise ldconfig will cry
-( cd $PKG/usr/lib${LIBDIRSUFFIX} ; rm -f *.so ; ln -s libchicken.so{.8,} )
+# This should be a symbolic link not a copy otherwise ldconfig will cry
+( cd $PKG/usr/lib${LIBDIRSUFFIX} ; rm -f *.so ; ln -s libchicken.so{.$CHICKEN_API_VER,} )
 
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | \
  grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true

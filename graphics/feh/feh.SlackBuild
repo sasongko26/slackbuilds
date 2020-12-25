@@ -6,10 +6,14 @@
 # Copyright 2011-2012 Grigorios Bouzakis <grbzks@imap.cc>
 # Copyright 2014-2015 Luka Novsak <lnovsak@gmail.com>
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017 Hunter Sezen <ovariegata@yahoo.com>
 =======
 # Copyright 2017-2018 Hunter Sezen <orbea@fredslev.dk>
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-2020 Hunter Sezen <orbea@riseup.net>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Permission to use, copy, modify, and distribute this software for any purpose
@@ -29,10 +33,14 @@
 
 PRGNAM=feh
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.22.2}
 =======
 VERSION=${VERSION:-2.26.3}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.5}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -70,6 +78,7 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION
 tar xvf $CWD/$PRGNAM-$VERSION.tar.bz2
+chmod 0755 $PRGNAM-$VERSION
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \
@@ -78,9 +87,19 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+[ "${EXIF:=0}" = 0 ] || EXIF=1
+[ "${HELP:=0}" = 0 ] || HELP=1
+[ "${INOTIFY:=0}" = 0 ] || INOTIFY=1
+[ "${STAT64:=0}" = 0 ] || STAT64=1
+
 CFLAGS="$SLKCFLAGS" \
 make \
-  PREFIX=/usr
+  PREFIX=/usr \
+  exif=$EXIF \
+  help=$HELP \
+  inotify=$INOTIFY \
+  stat64=$STAT64
+
 make install \
   DESTDIR=$PKG \
   PREFIX=/usr \
@@ -88,8 +107,8 @@ make install \
   doc_dir=$PKG/usr/doc/$PRGNAM-$VERSION \
   example_dir=$PKG/usr/doc/$PRGNAM-$VERSION/examples
 
-find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" |
+  grep ELF | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done

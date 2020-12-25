@@ -1,5 +1,6 @@
 PRGNAM="cwm"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="6.2"
 HOMEPAGE="https://github.com/chneukirchen/cwm"
 DOWNLOAD="http://chneukirchen.org/releases/cwm-6.2.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://github.com/chneukirchen/cwm"
 DOWNLOAD="http://chneukirchen.org/releases/cwm-6.3.tar.gz"
 MD5SUM="358ad04e4299f816f8fb8fdc0b00c179"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="6.7"
+HOMEPAGE="https://github.com/leahneukirchen/cwm"
+DOWNLOAD="https://github.com/leahneukirchen/cwm/archive/v6.7/cwm-6.7.tar.gz"
+MD5SUM="3d6f20f90d6a05f3628b82625f1c3e77"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
-MAINTAINER="Leonard Schmidt"
-EMAIL="lems@gmx.net"
+MAINTAINER="B. Watson"
+EMAIL="yalhcru@gmail.com"

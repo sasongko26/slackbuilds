@@ -1,5 +1,6 @@
 PRGNAM="icecat"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="52.1.0"
 HOMEPAGE="http://www.gnu.org/software/gnuzilla/"
 DOWNLOAD="https://ftp.gnu.org/gnu/gnuzilla/52.1.0/icecat-52.1.0.en-US.linux-i686.tar.bz2"
@@ -14,6 +15,14 @@ MD5SUM="cf43a3d810f93f0441b772f587f50a4b"
 DOWNLOAD_x86_64="https://ftp.gnu.org/gnu/gnuzilla/52.6.0/icecat-52.6.0.en-US.gnulinux-x86_64.tar.bz2"
 MD5SUM_x86_64="97994d4a7562e51e4ede1b64f6dc95b3"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="60.7.0"
+HOMEPAGE="http://www.gnu.org/software/gnuzilla/"
+DOWNLOAD="https://ftp.gnu.org/gnu/gnuzilla/60.7.0/icecat-60.7.0.en-US.gnulinux-i686.tar.bz2"
+MD5SUM="7d274e1d3db42886caf96b3389209230"
+DOWNLOAD_x86_64="https://ftp.gnu.org/gnu/gnuzilla/60.7.0/icecat-60.7.0.en-US.gnulinux-x86_64.tar.bz2"
+MD5SUM_x86_64="4ae5415871df868d651f12f478f479de"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="melikamp"
 EMAIL="melikamp@melikamp.net"

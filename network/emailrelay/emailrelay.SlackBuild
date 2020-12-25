@@ -29,10 +29,14 @@
 
 PRGNAM=emailrelay
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.9}
 BUILD=${BUILD:-3}
 =======
 VERSION=${VERSION:-2.0}
+=======
+VERSION=${VERSION:-2.0.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}

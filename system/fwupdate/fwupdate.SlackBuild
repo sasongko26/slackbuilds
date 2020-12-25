@@ -28,10 +28,14 @@
 
 PRGNAM=fwupdate
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-9}
 =======
 VERSION=${VERSION:-11}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-12}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -85,11 +89,14 @@ cd $PRGNAM-$VERSION
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 for sha1 in 7b593644bebe63cf73233e835c18d7bbdb8d063f ; do
   patch -p1 < $CWD/patches/$sha1.patch
 done
 
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+>>>>>>> upstream/master
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \

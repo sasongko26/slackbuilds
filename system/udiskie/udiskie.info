@@ -1,5 +1,6 @@
 PRGNAM="udiskie"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.7.0"
 HOMEPAGE="https://github.com/coldfix/udiskie"
 DOWNLOAD="https://pypi.python.org/packages/a7/92/cc36835525f61482fd2cd5e391106bc98113b988f02961b9283d1562ec6b/udiskie-1.7.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/coldfix/udiskie"
 DOWNLOAD="https://files.pythonhosted.org/packages/e0/5f/ab915ec251dfdc27f852204196976cb14e74cfb04a5dd58b7e7678592def/udiskie-1.7.5.tar.gz"
 MD5SUM="ddfb4225062577c7f11461308dd6b82b"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.7.6"
+HOMEPAGE="https://github.com/coldfix/udiskie"
+DOWNLOAD="https://files.pythonhosted.org/packages/41/cc/cdc93457255376f0a69867ce84fadade21fac102abc48684b9294195a818/udiskie-1.7.6.tar.gz"
+MD5SUM="cadf952fc38434c2f13c0b00f82999a3"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="PyYAML docopt"

@@ -1,5 +1,6 @@
 PRGNAM="poco"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.7.8"
 HOMEPAGE="https://pocoproject.org"
 DOWNLOAD="https://pocoproject.org/releases/poco-1.7.8/poco-1.7.8-all.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://pocoproject.org"
 DOWNLOAD="https://pocoproject.org/releases/poco-1.8.0.1/poco-1.8.0.1-all.tar.gz"
 MD5SUM="9590563b32dabbdeb6eaf73f606ce329"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.9.4"
+HOMEPAGE="https://pocoproject.org"
+DOWNLOAD="https://pocoproject.org/releases/poco-1.9.4/poco-1.9.4-all.tar.gz"
+MD5SUM="80c614193e81262af27ea49944d02313"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

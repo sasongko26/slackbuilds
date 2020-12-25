@@ -3,10 +3,14 @@
 # Slackware build script for glm
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2012-2017 Matteo Bernardini <ponce@slackbuilds.org>, Pisa, Italy
 =======
 # Copyright 2012-2018 Matteo Bernardini <ponce@slackbuilds.org>, Pisa, Italy
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2012-2019 Matteo Bernardini <ponce@slackbuilds.org>, Pisa, Italy
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=glm
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.9.8.4}
 =======
 VERSION=${VERSION:-0.9.8.5}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.9.9.5}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -63,9 +71,6 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-# thanks gentoo
-patch -p1 < $CWD/glm-gcc73.patch
-
 mkdir -p build
 cd build
   cmake \
@@ -77,7 +82,7 @@ cd build
 cd ..
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a readme.md copying.txt $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a *.md $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

@@ -1,5 +1,6 @@
 PRGNAM="octave"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.2.1"
 HOMEPAGE="https://www.gnu.org/software/octave/"
 DOWNLOAD="ftp://ftp.gnu.org/gnu/octave/octave-4.2.1.tar.lz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.gnu.org/software/octave/"
 DOWNLOAD="https://ftp.gnu.org/gnu/octave/octave-4.2.2.tar.lz"
 MD5SUM="e654dbdbab8ff3b753bac66a2445630b"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="5.2.0"
+HOMEPAGE="https://www.gnu.org/software/octave/"
+DOWNLOAD="https://ftp.gnu.org/gnu/octave/octave-5.2.0.tar.lz"
+MD5SUM="3c621e85026d4a807f5639901a41ae71"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="%README% blas lapack"
+REQUIRES="%README% lapack"
 MAINTAINER="Kyle Guinn"
 EMAIL="elyk03@gmail.com"

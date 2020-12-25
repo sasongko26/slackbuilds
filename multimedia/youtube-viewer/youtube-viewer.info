@@ -1,5 +1,6 @@
 PRGNAM="youtube-viewer"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.2.9"
 HOMEPAGE="https://github.com/trizen/youtube-viewer/"
 DOWNLOAD="https://github.com/trizen/youtube-viewer/archive/3.2.9/youtube-viewer-3.2.9.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://github.com/trizen/youtube-viewer/"
 DOWNLOAD="https://github.com/trizen/youtube-viewer/archive/3.3.4/youtube-viewer-3.3.4.tar.gz"
 MD5SUM="718d522be9af41c203e97e9afdbb890e"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.7.4"
+HOMEPAGE="https://github.com/trizen/youtube-viewer/"
+DOWNLOAD="https://github.com/trizen/youtube-viewer/archive/3.7.4/youtube-viewer-3.7.4.tar.gz"
+MD5SUM="17e183cdccfe30c04aed7263d26654a0"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="perl-data-dump perl-LWP-Protocol-https perl-lwp-useragent-cached perl-JSON perl-JSON-XS perl-Module-Build"
-MAINTAINER="B. Watson"
-EMAIL="yalhcru@gmail.com"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere"

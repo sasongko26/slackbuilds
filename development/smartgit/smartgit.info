@@ -1,9 +1,13 @@
 PRGNAM="smartgit"
 VERSION="7.0.3"
+<<<<<<< HEAD
 HOMEPAGE="http://www.syntevo.com/smartgit/"
 <<<<<<< HEAD
 DOWNLOAD="http://slackware.uk/sbosrcarch/by-name/development/smartgit/smartgit-generic-7_0_3.tar.gz"
 =======
+=======
+HOMEPAGE="https://www.syntevo.com/smartgit/"
+>>>>>>> upstream/master
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/smartgit-generic-7_0_3.tar.gz"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="a33819ab59229049d5b847d78b72c0c0"

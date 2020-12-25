@@ -1,5 +1,6 @@
 PRGNAM="commandergenius"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.9.9.5beta"
 HOMEPAGE="https://github.com/gerstrong/Commander-Genius"
 DOWNLOAD="https://github.com/gerstrong/Commander-Genius/archive/v1995beta/Commander-Genius-1995beta.tar.gz"
@@ -12,8 +13,14 @@ DOWNLOAD="https://sourceforge.net/projects/slackbuildsdirectlinks/files/commande
 MD5SUM="634cb2b0ccd4dd8750825dae18730c36 \
         a18b787298f1615f171f613397ee8d9b"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.6.3.1"
+HOMEPAGE="https://gitlab.com/Dringgstein/Commander-Genius"
+DOWNLOAD="https://gitlab.com/Dringgstein/Commander-Genius/-/archive/v2.6.3.1/Commander-Genius-v2.6.3.1.tar.bz2"
+MD5SUM="341168cfa1fe2a06d8349afe8c4b1acf"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES=""
+REQUIRES="SDL2_ttf SDL2_image SDL2_mixer cmake-202x"
 MAINTAINER="B. Watson"
 EMAIL="yalhcru@gmail.com"

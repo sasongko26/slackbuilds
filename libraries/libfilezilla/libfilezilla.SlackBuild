@@ -28,10 +28,14 @@
 
 PRGNAM=libfilezilla
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.11.1}
 =======
 VERSION=${VERSION:-0.12.3}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.16.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

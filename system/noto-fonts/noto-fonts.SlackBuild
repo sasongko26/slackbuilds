@@ -28,10 +28,14 @@
 
 PRGNAM=noto-fonts
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-20171026}
 =======
 VERSION=${VERSION:-20180322}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-20180624}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -43,10 +47,14 @@ PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 SRCNAM=${SRCNAM:-95558bd828a48c17a5cbe7f9d971495afcd16abd}
 =======
 SRCVER=${SRCVER:-b207fc31b093948dfc6d77b47042ce2f335bc631}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+SRCVER=${SRCVER:-449470a4d83f6eecdb4a537ab66fcbb5ff28917a}
+>>>>>>> upstream/master
 
 set -e
 

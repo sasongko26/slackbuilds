@@ -2,7 +2,7 @@
 # Slackware build script for filezilla
 
 # Copyright 2007-2009 Grigorios Bouzakis <grbzks@xsmail.com>
-# Copyright 2010-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+# Copyright 2010-2019 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 # All rights reserved.
 #
 # Permission to use, copy, modify, and distribute this software for any purpose
@@ -22,10 +22,14 @@
 
 PRGNAM=filezilla
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.29.0}
 =======
 VERSION=${VERSION:-3.34.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.42.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

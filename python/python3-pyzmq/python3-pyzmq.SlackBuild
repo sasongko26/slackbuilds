@@ -4,10 +4,14 @@
 
 # Copyright 2013 Benjamin Trigona-Harany <slackbuilds@jaxartes.net>
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2016-2017 Christoph Willing  Brisbane, Australia
 =======
 # Copyright 2016-2018 Christoph Willing  Brisbane, Australia
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2016-2019 Christoph Willing  Brisbane, Australia
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -30,10 +34,14 @@
 PRGNAM=python3-pyzmq
 SRCNAM=pyzmq
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-16.0.3}
 =======
 VERSION=${VERSION:-17.0.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-18.1.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -1,5 +1,6 @@
 PRGNAM="perl-CPANPLUS-Dist-Slackware"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.025"
 HOMEPAGE="https://metacpan.org/pod/CPANPLUS::Dist::Slackware"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/V/VO/VOEGELAS/CPANPLUS-Dist-Slackware-1.025.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://metacpan.org/pod/CPANPLUS::Dist::Slackware"
 DOWNLOAD="https://cpan.metacpan.org/authors/id/V/VO/VOEGELAS/CPANPLUS-Dist-Slackware-1.027.tar.gz"
 MD5SUM="9b97f0202575db88f64e1162370ae380"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.029"
+HOMEPAGE="https://metacpan.org/pod/CPANPLUS::Dist::Slackware"
+DOWNLOAD="https://cpan.metacpan.org/authors/id/V/VO/VOEGELAS/CPANPLUS-Dist-Slackware-1.029.tar.gz"
+MD5SUM="9b9f82c2f98cf7193f22a692b71cd737"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="fakeroot perl-CPANPLUS perl-CPANPLUS-Dist-Build perl-Module-Pluggable"

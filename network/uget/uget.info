@@ -1,5 +1,6 @@
 PRGNAM="uget"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.0.10"
 HOMEPAGE="http://ugetdm.com"
 DOWNLOAD="http://downloads.sourceforge.net/project/urlget/uget%20%28stable%29/2.0.10/uget-2.0.10.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://ugetdm.com"
 DOWNLOAD="http://downloads.sourceforge.net/project/urlget/uget%20%28stable%29/2.2.1/uget-2.2.1.tar.gz"
 MD5SUM="ef00e0d9a63051d553c4699192274db2"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.2.3_1"
+HOMEPAGE="https://ugetdm.com"
+DOWNLOAD="http://downloads.sourceforge.net/project/urlget/uget%20%28stable%29/2.2.3/uget-2.2.3-1.tar.gz"
+MD5SUM="ac623b972ec13909a05bc5d098c5254a"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

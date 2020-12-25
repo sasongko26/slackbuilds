@@ -1,5 +1,6 @@
 PRGNAM="qtile"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.10.7"
 HOMEPAGE="http://qtile.org"
 DOWNLOAD="https://github.com/qtile/qtile/archive/v0.10.7.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://qtile.org"
 DOWNLOAD="https://pypi.python.org/packages/15/c1/8aabcfa7fef59a5c18b99c77f692f525d78a3509e9784ac68c16e496664f/qtile-0.11.1.tar.gz"
 MD5SUM="88a4819b9f62ce6cb68aaa2ad8a82cfa"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.13.0"
+HOMEPAGE="http://qtile.org"
+DOWNLOAD="https://files.pythonhosted.org/packages/7b/f8/ea37a6ccb503ffb37f38c107172da614aa29c248aeaa636d0b52013db263/qtile-0.13.0.tar.gz"
+MD5SUM="edf88379b66886d6ed351489773d7c44"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python-xcffib cairocffi trollius"

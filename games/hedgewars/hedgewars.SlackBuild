@@ -24,12 +24,16 @@
 
 PRGNAM=hedgewars
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.9.23}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 SRC_VERSION=${SRC_VERSION:-0.9.23}
 =======
 VERSION=${VERSION:-0.9.24.1}
+=======
+VERSION=${VERSION:-1.0.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf

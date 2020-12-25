@@ -24,6 +24,7 @@
 
 PRGNAM=rtags
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.16}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
@@ -36,6 +37,13 @@ TAG=${TAG:-_SBo}
 
 RCT_VERSION=${RCT_VERSION:-b3e6f41d9844ef64420e628e0c65ed98278a843a}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.38}
+BUILD=${BUILD:-1}
+TAG=${TAG:-_SBo}
+
+RCT_VERSION=${RCT_VERSION:-e706998697b8d48fa9e5b9ab33aeded705129a66}
+>>>>>>> upstream/master
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in

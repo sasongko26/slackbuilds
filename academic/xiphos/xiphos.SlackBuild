@@ -3,10 +3,14 @@
 # Slackware build script for xiphos
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2015-2017 Tim Dickson, email: dickson.tim@googlemail.com
 =======
 # Copyright 2015-2018 Tim Dickson, email: dickson.tim@googlemail.com
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2015-2020 Tim Dickson, email: dickson.tim@googlemail.com
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,15 +32,17 @@
 
 PRGNAM=xiphos
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-4.0.7}
 =======
 VERSION=${VERSION:-4.1.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
+=======
+VERSION=${VERSION:-4.2.1}
+BUILD=${BUILD:-3}
+>>>>>>> upstream/master
 TAG=${TAG:-_SBo}
-#if WK2 is yes use webkit2. this requires webkit2gtk and gtkhtml (v4) instead of webkitgtk3
-WK2=${WK2:-no}
-
 #if WK2 is yes use webkit2. this requires webkit2gtk and gtkhtml (v4) instead of webkitgtk3
 WK2=${WK2:-no}
 
@@ -79,12 +85,17 @@ tar xvf $CWD/$PRGNAM-$VERSION-20170924.tar.gz
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cd $PRGNAM-$VERSION
+
+#we will use a newer version of cmake (at least 3.11)
+
+#sane permissions for everything
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
   -o -perm 511 \) -exec chmod 755 {} \; -o \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+<<<<<<< HEAD
 <<<<<<< HEAD
 if [ "x$WK2" = "xyes" ]; then
 CFLAGS="$SLKCFLAGS" \
@@ -106,11 +117,18 @@ fi
 =======
 
 ./waf distclean
+=======
+#
+#lets make newer cmake available to the xiphos build
+OLDPATH=$PATH
+export PATH=/opt/cmake-202x/bin:$PATH
+>>>>>>> upstream/master
 
 # patch navbar_versekey.gtkbuilder to work with gtk shipped with slackware 14.2
 # patch won't be needed for slackware 15
 sed -i "s/3.20/3.14/g" ui/navbar_versekey.gtkbuilder
 
+<<<<<<< HEAD
 if [ "x$WK2" = "xyes" ]; then
   CFLAGS="$SLKCFLAGS" \
   CXXFLAGS="$SLKCFLAGS" \
@@ -135,8 +153,32 @@ fi
 ./waf build
 ./waf install --destdir=$PKG
 
+=======
+mkdir -p build
+cd build
+cmake -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
+  -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
+  -DCMAKE_INSTALL_PREFIX=/usr \
+  -DLIB_SUFFIX=${LIBDIRSUFFIX} \
+  -DCMAKE_INSTALL_MANDIR=man \
+  -DHTMLHELP=ON \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DDBUS=OFF -DSTRIP=ON -DPOSTINST=OFF -DGTKHTML=ON ..
+
+#cmake should have created make file so restore PATH
+export PATH=$OLDPATH
+make
+make install DESTDIR=$PKG
+cd ..
+
+#output should be stripped but we just make sure..
+>>>>>>> upstream/master
 find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
   | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+
+#compress man pages.
+find $PKG/usr/man -type f -exec gzip -9 {} \;
+for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 mv $PKG/usr/share/doc/$PRGNAM/* $PKG/usr/doc/$PRGNAM-$VERSION

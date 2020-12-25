@@ -1,5 +1,6 @@
 PRGNAM="pepperflash-plugin"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="27.0.0.187"
 HOMEPAGE="https://get.adobe.com/flashplayer/otherversions/"
 DOWNLOAD="https://fpdownload.adobe.com/pub/flashplayer/pdc/27.0.0.187/flash_player_ppapi_linux.i386.tar.gz"
@@ -14,6 +15,14 @@ MD5SUM="b40678b795b97046e3838e6447441fe3"
 DOWNLOAD_x86_64="https://fpdownload.adobe.com/pub/flashplayer/pdc/30.0.0.113/flash_player_ppapi_linux.x86_64.tar.gz"
 MD5SUM_x86_64="23f97454519ac5dba0fe0a57d27bf1bd"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="32.0.0.465"
+HOMEPAGE="https://get.adobe.com/flashplayer/otherversions/"
+DOWNLOAD="https://fpdownload.adobe.com/pub/flashplayer/pdc/32.0.0.465/flash_player_ppapi_linux.i386.tar.gz"
+MD5SUM="1fd125d28a90892691b70a9198a6c208"
+DOWNLOAD_x86_64="https://fpdownload.adobe.com/pub/flashplayer/pdc/32.0.0.465/flash_player_ppapi_linux.x86_64.tar.gz"
+MD5SUM_x86_64="04d9e5a07f9e457b40f9e790437b2782"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="Matteo Bernardini"
 EMAIL="ponce@slackbuilds.org"

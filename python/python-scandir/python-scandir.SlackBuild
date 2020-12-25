@@ -3,10 +3,14 @@
 # Slackware build script for python-scandir
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2016-2017  Dimitris Zlatanidis  Orestiada, Greece
 =======
 # Copyright 2016-2018  Dimitris Zlatanidis  Orestiada, Greece
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2016-2019  Dimitris Zlatanidis  Orestiada, Greece
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,10 +33,14 @@
 PRGNAM=python-scandir
 SRCNAM=$(echo $PRGNAM | cut -c8-15)
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.5}
 =======
 VERSION=${VERSION:-1.7}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.10.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

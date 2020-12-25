@@ -1,5 +1,6 @@
 PRGNAM="dmd"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.077.1"
 HOMEPAGE="https://dlang.org"
 DOWNLOAD="http://downloads.dlang.org/releases/2.x/2.077.1/dmd.2.077.1.linux.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://dlang.org"
 DOWNLOAD="http://downloads.dlang.org/releases/2.x/2.080.1/dmd.2.080.1.linux.tar.xz"
 MD5SUM="8d2f4d28673ff3a4b059a3cd9eb0dd0c"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.094.2"
+HOMEPAGE="https://dlang.org"
+DOWNLOAD="http://downloads.dlang.org/releases/2.x/2.094.2/dmd.2.094.2.linux.tar.xz"
+MD5SUM="2cdc89d694d9b5eb7a2c5ee03f27dd10"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -2,7 +2,7 @@
 
 # Slackware build script for perl-Mojolicious
 
-# Copyright 2017 Andreas Guldstrand.
+# Copyright 2017-2019 Andreas Guldstrand.
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,10 +24,14 @@
 
 PRGNAM=perl-Mojolicious
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-7.46}
 =======
 VERSION=${VERSION:-7.76}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-8.11}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

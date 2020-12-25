@@ -1,5 +1,6 @@
 PRGNAM="meson"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.43.0"
 HOMEPAGE="http://mesonbuild.com"
 DOWNLOAD="https://github.com/mesonbuild/meson/releases/download/0.43.0/meson-0.43.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://mesonbuild.com"
 DOWNLOAD="https://github.com/mesonbuild/meson/releases/download/0.44.1/meson-0.44.1.tar.gz"
 MD5SUM="82b1198bf714b5a4da84bfe8376c79cc"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.55.3"
+HOMEPAGE="http://mesonbuild.com"
+DOWNLOAD="https://github.com/mesonbuild/meson/releases/download/0.55.3/meson-0.55.3.tar.gz"
+MD5SUM="99777acd77838c8669e1421fda8e31c5"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python3 ninja"

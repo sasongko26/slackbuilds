@@ -22,17 +22,27 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# Currently maintained by David Woodfall <dave@dawoodfall.net>
+# Currently maintained by David Woodfall <dave@slackbuilds.org>
+#
+# 2020-10-12 20:48:40 +0100:
+# Update to Version ff 20190801, gnulib 20200505~0747bf0
+# Added --without-libuninameslist
 
 PRGNAM=fontforge
-VERSION=${VERSION:-20170731}
+VERSION=${VERSION:-20190801}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
 ENABLE_BCINT=${ENABLE_BCINT:-yes}
-FREETYPE=${FREETYPE:-"2.6.3"}
-GNULIB=${GNULIB:-"20140202"}
-UTHASH=${UTHASH:-"1.9.9"}
+FREETYPE=${FREETYPE:-2.10.0}
+GNULIB=${GNULIB:-20200505~0747bf0}
+UTHASH=${UTHASH:-2.1.0}
+
+if [ -e $( echo /var/log/packages/$PRGNAM-*-*-* ) ]; then
+  echo "Please uninstall any previous versions of $PRGNAM first."
+  echo "Exiting."
+  exit 1
+fi
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -68,18 +78,18 @@ mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
 rm -rf $PRGNAM-$VERSION freetype-$FREETYPE
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
-tar xvf $CWD/freetype-$FREETYPE.tar.xz
+tar xvf $CWD/freetype-$FREETYPE.tar.bz2
 chown -R root:root $PRGNAM-$VERSION freetype-$FREETYPE
 chmod -R u+w,go+r-w,a-s $PRGNAM-$VERSION freetype-$FREETYPE
 cd $PRGNAM-$VERSION
-tar xvf $CWD/gnulib_$GNULIB+stable.orig.tar.gz
+tar xvf $CWD/gnulib_$GNULIB.orig.tar.gz
 tar xvf $CWD/uthash-$UTHASH.tar.gz
-mv gnulib-${GNULIB}-stable gnulib
-mv uthash-$UTHASH uthash
+mv gnulib-"$GNULIB" gnulib
+mv uthash-"$UTHASH" uthash
 chown -R root:root gnulib uthash
 chmod -R u+w,go+r-w,a-s gnulib uthash
 
-./bootstrap
+./bootstrap -f
 
 CFLAGS="$SLKCFLAGS" \
 CXXFLAGS="$SLKCFLAGS" \
@@ -94,6 +104,7 @@ CXXFLAGS="$SLKCFLAGS" \
   --enable-tile-path \
   --enable-static=no \
   --enable-shared=yes \
+  --without-libuninameslist \
   --build=$ARCH-slackware-linux
 
 make
@@ -112,7 +123,7 @@ find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a AUTHORS INSTALL LICENSE $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a AUTHORS LICENSE $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 find $PKG/usr/doc -type f -exec chmod 644 {} \;
 

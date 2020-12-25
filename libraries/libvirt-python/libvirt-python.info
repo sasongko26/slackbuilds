@@ -1,5 +1,6 @@
 PRGNAM="libvirt-python"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.9.0"
 HOMEPAGE="http://libvirt.org"
 DOWNLOAD="ftp://libvirt.org/libvirt/python/libvirt-python-3.9.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://libvirt.org"
 DOWNLOAD="ftp://libvirt.org/libvirt/python/libvirt-python-4.0.0.tar.gz"
 MD5SUM="b3db91358dd759b89fbe38bfe24e5ca1"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.5.0"
+HOMEPAGE="http://libvirt.org"
+DOWNLOAD="https://libvirt.org/sources/python/libvirt-python-4.5.0.tar.gz"
+MD5SUM="0c1b66a8878d6436b036565060707f73"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libvirt"

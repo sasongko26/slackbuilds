@@ -2,9 +2,32 @@ Memtest86+ is thorough, stand alone memory test for Intel/AMD x86
 architecture systems.  BIOS based memory tests are only a quick check
 and often miss failures that are detected by Memtest86+.
 
-Compilation may fail on 64-bit Slackware due to missing
-/usr/include/gnu/stubs-32.h from glibc.  If you experience this problem,
-copy that file from stubs-64.h in the same directory (or create a symlink),
-and you may delete your copy/symlink after you have created the package.
+This package installs a bootable image to /boot/memtest86+.bin
+which is similar to the kernel images in the same directory.
 
-See README.SLACKWARE for setup information.
+
+LILO users:  Append this to your /etc/lilo.conf:
+
+  image = /boot/memtest86+.bin
+    label = memtest86+
+
+Then run `/sbin/lilo` to update the boot loader.
+Don't forget to re-run `/sbin/lilo` if you upgrade this package.
+
+
+GRUB 2 users:  Append something like this to your /etc/grub.d/40_custom:
+
+  menuentry 'memtest86+' {
+      linux16 (hd0,1)/boot/memtest86+.bin
+  }
+
+Then run `grub-mkconfig -o /boot/grub/grub.cfg` to update the boot menu.
+
+
+GRUB Legacy users:  Append something like this to your /boot/grub/menu.lst:
+
+  title memtest86+
+      kernel (hd0,0)/boot/memtest86+.bin
+
+
+See /usr/doc/memtest86+-$VERSION/README for more info.

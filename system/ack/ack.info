@@ -1,5 +1,6 @@
 PRGNAM="ack"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.18"
 HOMEPAGE="https://beyondgrep.com"
 DOWNLOAD="https://beyondgrep.com/ack-2.18-single-file"
@@ -10,6 +11,12 @@ HOMEPAGE="https://beyondgrep.com"
 DOWNLOAD="https://beyondgrep.com/ack-2.22-single-file"
 MD5SUM="eea9d4daef7c262751f15ca9b3b70317"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.4.0"
+HOMEPAGE="https://beyondgrep.com"
+DOWNLOAD="https://beyondgrep.com/ack-v3.4.0"
+MD5SUM="f8537c7a1a89749f0130627cb7de1515"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -1,5 +1,6 @@
 PRGNAM="libsass"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.4.7"
 HOMEPAGE="http://sass-lang.com/libsass"
 DOWNLOAD="https://github.com/sass/libsass/archive/3.4.7/libsass-3.4.7.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://sass-lang.com/libsass"
 DOWNLOAD="https://github.com/sass/libsass/archive/3.5.4/libsass-3.5.4.tar.gz"
 MD5SUM="4af3f4ffd3e8cac1cb1c90ebc2dd41b2"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.6.4"
+HOMEPAGE="http://sass-lang.com/libsass"
+DOWNLOAD="https://github.com/sass/libsass/archive/3.6.4/libsass-3.6.4.tar.gz"
+MD5SUM="602f7ff300f41f9d456c60a67270e3e0"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -1,5 +1,6 @@
 PRGNAM="kbfs"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.0.36_20171122003226"
 HOMEPAGE="https://github.com/keybase/kbfs"
 DOWNLOAD="https://s3.amazonaws.com/prerelease.keybase.io/linux_binaries/deb/keybase_1.0.36-20171122003226.f68b10ef8_i386.deb"
@@ -14,6 +15,14 @@ MD5SUM="d4178bd955ea141115631ebc4c347cac"
 DOWNLOAD_x86_64="https://s3.amazonaws.com/prerelease.keybase.io/linux_binaries/deb/keybase_2.0.0-20180531221959.e59b6ec60d_amd64.deb"
 MD5SUM_x86_64="442d73d57d6dfad42754c8fe00e9a4ad"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="5.5.2_20201016183637"
+HOMEPAGE="https://github.com/keybase/kbfs"
+DOWNLOAD="https://prerelease.keybase.io/linux_binaries/deb/keybase_5.5.2-20201016183637.d4ebf7d999_i386.deb"
+MD5SUM="e1448443dc869ab60e760f18ed896a0b"
+DOWNLOAD_x86_64="https://prerelease.keybase.io/linux_binaries/deb/keybase_5.5.2-20201016183637.d4ebf7d999_amd64.deb"
+MD5SUM_x86_64="07074217c9ee15d18149f096730a51f3"
+>>>>>>> upstream/master
 REQUIRES="google-go-lang sshfs-fuse"
 MAINTAINER="Willy Sudiarto Raharjo"
 EMAIL="willysr@slackbuilds.org"

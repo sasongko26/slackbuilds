@@ -1,14 +1,19 @@
 PRGNAM="snd"
-VERSION="17.8"
+VERSION="20.3"
 HOMEPAGE="https://ccrma.stanford.edu/software/snd/"
+<<<<<<< HEAD
 <<<<<<< HEAD
 DOWNLOAD="ftp://ccrma-ftp.stanford.edu/pub/Lisp/snd-17.8.tar.gz"
 =======
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/snd-17.8.tar.gz"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="cf22ac80e116dab68ef098ab02e1ef80"
+=======
+DOWNLOAD="https://ccrma.stanford.edu/software/snd/snd-20.3.tar.gz"
+MD5SUM="111246d1b8b03d3da4d022d4277319a0"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""
-MAINTAINER="AW Green"
-EMAIL="awg@posteo.us"
+MAINTAINER="E. axillaris"
+EMAIL="elanus@i2pmail.org"

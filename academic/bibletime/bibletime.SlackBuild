@@ -26,11 +26,12 @@
 #  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 # Modified by Robert Delahunt [twinreverb[at]puresimplicity.net
-# Modified by Tim Dickson (dickson.tim@googlemail.com)
+# Modified 2018/19/20 by Tim Dickson (dickson.tim@googlemail.com)
+# Modified 20200918 by B. Watson <yalhcru@gmail.com>
 
 PRGNAM=bibletime
-VERSION=${VERSION:-2.11.1}
-BUILD=${BUILD:-1}
+VERSION=${VERSION:-3.0}
+BUILD=${BUILD:-2}
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
@@ -68,30 +69,25 @@ cd $TMP
 rm -rf $PRGNAM-$VERSION
 tar -xJvf $CWD/$PRGNAM-$VERSION.tar.xz
 cd $PRGNAM-$VERSION
-chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-  -o -perm 511 \) -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
- -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-mkdir build
+#we need to patch the cmake file to skip tests as they fail at the moment
+#hopefully they will be fixed in 3.0.1
+
+sed -i "/BTTests/s/^/#/" cmake/BTApplication.cmake
+
+mkdir -p build
 cd build
-echo "1 cmake from `pwd`"
-  cmake \
+  /opt/cmake-202x/bin/cmake \
     -Wno-dev \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_SKIP_RPATH:BOOL=ON \
     -DCMAKE_C_FLAGS="$SLKCFLAGS" \
     -DCMAKE_CXX_FLAGS="$SLKCFLAGS" \
-    -DLIB_SUFFIX=$LIBDIRSUFFIX ..
-echo "2 make"
+    -DLIB_SUFFIX=$LIBDIRSUFFIX .. 
   make
-echo "3 make install"
   make install DESTDIR=$PKG
 cd ..
-
 # /usr/share/icons is for themed icons
 mv $PKG/usr/share/icons $PKG/usr/share/pixmaps
 

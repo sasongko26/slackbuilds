@@ -1,5 +1,6 @@
 PRGNAM="tornado"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.5.2"
 HOMEPAGE="http://www.tornadoweb.org"
 DOWNLOAD="https://github.com/tornadoweb/tornado/archive/v4.5.2/tornado-4.5.2.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://www.tornadoweb.org"
 DOWNLOAD="https://github.com/tornadoweb/tornado/archive/v5.0.2/tornado-5.0.2.tar.gz"
 MD5SUM="df2dcccbf58d95d9167e18b0cdeb5879"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="5.1.1"
+HOMEPAGE="http://www.tornadoweb.org"
+DOWNLOAD="https://github.com/tornadoweb/tornado/archive/v5.1.1/tornado-5.1.1.tar.gz"
+MD5SUM="44ca12963dccbc11a97aa0cc92e9bb93"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="backports-abc python-certifi futures singledispatch"

@@ -1,5 +1,6 @@
 PRGNAM="bitcoin"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.15.1"
 HOMEPAGE="https://bitcoincore.org"
 DOWNLOAD="https://bitcoincore.org/bin/bitcoin-core-0.15.1/bitcoin-0.15.1.tar.gz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://bitcoincore.org"
 DOWNLOAD="https://bitcoincore.org/bin/bitcoin-core-0.16.1/bitcoin-0.16.1.tar.gz"
 MD5SUM="827a35eb51def9296f6f56c66aacd66a"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.20.1"
+HOMEPAGE="https://bitcoincore.org"
+DOWNLOAD="https://bitcoincore.org/bin/bitcoin-core-0.20.1/bitcoin-0.20.1.tar.gz"
+MD5SUM="737cae01e759d28ac3ece3a1ad9c69a7"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="protobuf"
+REQUIRES="protobuf qt5"
 MAINTAINER="nomnombtc"
 EMAIL="nomnombtc@arcor.de"

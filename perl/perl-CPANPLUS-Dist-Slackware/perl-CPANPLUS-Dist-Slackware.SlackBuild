@@ -3,10 +3,14 @@
 # Slackware build script for perl-CPANPLUS-Dist-Slackware
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2012-2017 Andreas Voegele <andreas@andreasvoegele.com>
 =======
 # Copyright 2012-2018 Andreas Voegele <andreas@andreasvoegele.com>
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2012-2020 Andreas Voegele <andreas@andreasvoegele.com>
+>>>>>>> upstream/master
 #
 # Permission to use, copy, modify, and distribute this software for any
 # purpose with or without fee is hereby granted, provided that the above
@@ -22,10 +26,14 @@
 
 PRGNAM=perl-CPANPLUS-Dist-Slackware
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.025}
 =======
 VERSION=${VERSION:-1.027}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.029}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -8,7 +8,13 @@
 # WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+# 20201106 bkw: update for 142_bld178.
+# 20191202 bkw: update for 142_bld150.
+# 20180911 bkw: update for 142_bld137.
+>>>>>>> upstream/master
 # 20180615 bkw: update for 142_bld134.
 
 # 20180103 bkw: update for 142_bld123. Fixes the problem where the
@@ -28,10 +34,14 @@
 PRGNAM=asl
 SRCNAM=asl-current
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-142_bld119}
 =======
 VERSION=${VERSION:-142_bld134}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-142_bld178}
+>>>>>>> upstream/master
 SRCVER=$(echo $VERSION | tr _ -)
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
@@ -72,11 +82,8 @@ rm -rf $SRCNAM
 tar xvf $CWD/$SRCNAM-$SRCVER.tar.?z*
 cd $SRCNAM
 chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \
-  -o -perm 511 \) -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
-  -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
+find -L .  -perm /111 -a \! -perm 755 -a -exec chmod 755 {} \+ -o \
+        \! -perm /111 -a \! -perm 644 -a -exec chmod 644 {} \+
 
 sed -e "/^CFLAGS/s,=.*,= $SLKCFLAGS," \
     -e 's,/local,,' \
@@ -91,7 +98,11 @@ UTF8="${UTF8:-no}"
   sed -i 's/CHARSET_ISO8859_1/CHARSET_UTF8/' Makefile.def
 
 # binaries are already stripped, no symlinks in man pages.
-make -j1 binaries install PREFIX=$PKG DOCPATH=""
+# 20201106 bkw: upstream changed PREFIX to INSTROOT, support both
+# in case someone wants to build an old version.
+DESTDIR=PREFIX
+grep -q INSTROOT Makefile && DESTDIR=INSTROOT
+make -j1 binaries install $DESTDIR=$PKG DOCPATH=""
 gzip -9 $PKG/usr/man/man?/*.?
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
@@ -137,6 +148,9 @@ for doctype in $DOCTYPES; do
     esac
   done
 done
+
+# 20191202 bkw: even after all that, I have to do this:
+rm -f $PKG/usr/doc/$PRGNAM-$VERSION/*.tex
 
 cp -a BENCHES README README.LANGS TODO changelog \
     $PKG/usr/doc/$PRGNAM-$VERSION

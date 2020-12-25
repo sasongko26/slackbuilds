@@ -1,9 +1,13 @@
 PRGNAM="gecode"
 VERSION="4.4.0"
+<<<<<<< HEAD
 HOMEPAGE="http://www.gecode.org/"
 <<<<<<< HEAD
 DOWNLOAD="http://slackware.uk/sbosrcarch/by-name/development/gecode/gecode-4.4.0.tar.gz"
 =======
+=======
+HOMEPAGE="https://www.gecode.org/"
+>>>>>>> upstream/master
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/gecode-4.4.0.tar.gz"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="a892852927b12ed291b435c72c085834"

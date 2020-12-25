@@ -1,5 +1,6 @@
 PRGNAM="gdal"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.2.2"
 HOMEPAGE="http://www.gdal.org/"
 DOWNLOAD="http://download.osgeo.org/gdal/2.2.2/gdal-2.2.2.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="http://www.gdal.org/"
 DOWNLOAD="http://download.osgeo.org/gdal/2.2.4/gdal-2.2.4.tar.xz"
 MD5SUM="51b1df61dbdf81473689fab3075e7a5e"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.0.4"
+HOMEPAGE="https://www.gdal.org/"
+DOWNLOAD="https://download.osgeo.org/gdal/3.0.4/gdal-3.0.4.tar.xz"
+MD5SUM="8996bbee51e73b5a968d8d0f48895ac8"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
-REQUIRES="geos proj"
+REQUIRES="geos proj python3"
 MAINTAINER="David Spencer"
 EMAIL="baildon.research@googlemail.com"

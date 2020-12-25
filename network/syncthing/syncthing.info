@@ -1,5 +1,6 @@
 PRGNAM="syncthing"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.14.37"
 HOMEPAGE="https://syncthing.net"
 DOWNLOAD="https://github.com/syncthing/syncthing/releases/download/v0.14.37/syncthing-linux-386-v0.14.37.tar.gz"
@@ -14,6 +15,14 @@ MD5SUM="478f3a4b08ba79601bf3dd2a35c524c0"
 DOWNLOAD_x86_64="https://github.com/syncthing/syncthing/releases/download/v0.14.43/syncthing-linux-amd64-v0.14.43.tar.gz"
 MD5SUM_x86_64="c810dcdc962a09a8857490757e1e3396"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.9.0"
+HOMEPAGE="https://syncthing.net"
+DOWNLOAD="https://github.com/syncthing/syncthing/releases/download/v1.9.0/syncthing-linux-386-v1.9.0.tar.gz"
+MD5SUM="f5d974047b4e5208ff343e36e156470d"
+DOWNLOAD_x86_64="https://github.com/syncthing/syncthing/releases/download/v1.9.0/syncthing-linux-amd64-v1.9.0.tar.gz"
+MD5SUM_x86_64="2318ea72b7e8c5ae1ef75319f4ed6e7b"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="Sebastian Arcus"
 EMAIL="s.arcus@open-t.co.uk"

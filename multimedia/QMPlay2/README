@@ -1,5 +1,6 @@
 QMPlay2 (video/audio player which can play most formats and codecs)
 
+<<<<<<< HEAD
 QMPlay2 is a video and audio player. It can play all formats supported
 <<<<<<< HEAD
 by FFmpeg, libmodplug (including J2B and SFX). It also  supports Audio
@@ -18,13 +19,14 @@ NOTE2:  If youtube-dl is not installed, you will be asked if you want
 by FFmpeg, libmodplug (including J2B and SFX). It also supports Audio
 CD, raw files, Rayman 2 music and chiptunes. It contains YouTube and
 Prostopleer browser.
+=======
+QMPlay2 is a video and audio player which can play most formats and
+codecs.
+>>>>>>> upstream/master
 
-Optional dependencies: libsidplayfp, youtube-dl.
+Do you know?
 
-NOTE1: libsidplayfp is an optional dependency, if you need it,
-install it and modify the SlackBuild, changing the value
--DUSE_CHIPTUNE_SID=OFF to DUSE_CHIPTUNE_SID=ON.
-
+<<<<<<< HEAD
 NOTE2: If youtube-dl is not installed, you will be asked if you want
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 QMPlay2 to download it for you.
@@ -39,3 +41,18 @@ Russian and Chinese languages.
 QMPlay2 is available with English, German, Spanish, French, Hungarian,
 Polish, Russian, Ukrainian and Chinese languages.
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+ * QMPlay2 supports most formats and codecs supported by FFmpeg;
+ * QMPlay2 can use youtube-dl - useful for playing various network
+streams just from the web page address;
+ * QMPlay2 has integrated libmodplug extended to play J2B
+(Jazz Jackrabbit 2) and SFX (Amiga) modules;
+ * QMPlay2 can play various network streams (http, https, rtsp,
+rtmp, mms, ...);
+ * QMPlay2 has integrated YouTube and Prostopleer browser;
+ * QMPlay2 can play Chiptunes via libgme and libsidplayfp;
+ * QMPlay2 can play AudioCD, read CD-TEXT and CDDB;
+ * QMPlay2 can play Rayman2 (*.apm) music.
+
+Optional dependencies: libsidplayfp, youtube-dl.
+>>>>>>> upstream/master

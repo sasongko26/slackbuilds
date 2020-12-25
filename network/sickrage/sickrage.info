@@ -1,5 +1,6 @@
 PRGNAM="sickrage"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.06.05_1"
 HOMEPAGE="https://sickrage.github.io/"
 DOWNLOAD="https://github.com/SickRage/SickRage/archive/v2017.06.05-1/SickRage-2017.06.05-1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://sickrage.github.io/"
 DOWNLOAD="https://github.com/SickRage/SickRage/archive/v2018.06.10-1/SickRage-2018.06.10-1.tar.gz"
 MD5SUM="653bbda7a0268be57d709905a5dd198a"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.09.17_1"
+HOMEPAGE="https://sickrage.github.io/"
+DOWNLOAD="https://github.com/SickRage/SickRage/archive/v2018.09.17-1/SickRage-v2018.09.17-1.tar.gz"
+MD5SUM="0a8531dabb84712bd703a06069c11d85"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

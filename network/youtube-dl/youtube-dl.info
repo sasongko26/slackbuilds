@@ -1,5 +1,6 @@
 PRGNAM="youtube-dl"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.11.15"
 HOMEPAGE="https://rg3.github.io/youtube-dl"
 DOWNLOAD="https://github.com/rg3/youtube-dl/archive/2017.11.15/youtube_dl-2017.11.15.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://rg3.github.io/youtube-dl"
 DOWNLOAD="https://github.com/rg3/youtube-dl/archive/2018.06.02/youtube-dl-2018.06.02.tar.gz"
 MD5SUM="2e778de1495872791dfc7eaec1bf0ef0"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2020.09.14"
+HOMEPAGE="http://www.yt-dl.org/"
+DOWNLOAD="https://yt-dl.org/downloads/2020.09.14/youtube-dl-2020.09.14.tar.gz"
+MD5SUM="27e1cab5c6cd2063a489a9cb028c4c41"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

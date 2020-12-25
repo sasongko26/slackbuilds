@@ -1,5 +1,6 @@
 PRGNAM="libretro-fceumm"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.01.27_bdf5fa7"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/libretro-fceumm-2017.01.27_bdf5fa7.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/libretro-fceumm-2017.12.19_25bb3e6.tar.xz"
 MD5SUM="a7e58fde12b0b8b075c7dd2473da85ae"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.09.29_eb17f88"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/libretro-fceumm-2018.09.29_eb17f88.tar.xz"
+MD5SUM="60f384736063dd92a6581fde0a7011a4"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"

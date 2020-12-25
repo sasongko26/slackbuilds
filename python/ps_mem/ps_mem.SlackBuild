@@ -28,10 +28,14 @@
 
 PRGNAM=ps_mem
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.9}
 =======
 VERSION=${VERSION:-3.12}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.13}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -62,13 +66,18 @@ else
   LIBDIRSUFFIX=""
 fi
 
+<<<<<<< HEAD
 SRCVER=${SRCVER:-f0891def54f1edb78a70006603d2b025236b830f}
+=======
+SRCVER=${SRCVER:-9f54e1aa3a87ec176ce8b71f02673e0d8293b344}
+>>>>>>> upstream/master
 
 set -e
 
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
+<<<<<<< HEAD
 rm -rf $PRGNAM-$VERSION
 <<<<<<< HEAD
 tar xvf $CWD/$SRCVER.tar.gz || tar xvf $CWD/$PRGNAM-$SRCVER.tar.gz
@@ -77,6 +86,11 @@ mv $PRGNAM-$SRCVER $PRGNAM-$VERSION
 tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 cd $PRGNAM-$VERSION
+=======
+rm -rf $PRGNAM-$SRCVER
+tar xvf $CWD/$PRGNAM-$SRCVER.tar.gz
+cd $PRGNAM-$SRCVER
+>>>>>>> upstream/master
 chown -R root:root .
 find -L . \
  \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 \

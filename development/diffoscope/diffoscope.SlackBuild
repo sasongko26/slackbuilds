@@ -24,10 +24,14 @@
 
 PRGNAM=diffoscope
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-88}
 =======
 VERSION=${VERSION:-96}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-106}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

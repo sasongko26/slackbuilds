@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=VICE C64 emulator
-Comment=Commodore 64 emulator from the VICE team
+Comment=A fast Commodore 64 emulator
 StartupNotify=true
 Exec=x64
 Icon=vice

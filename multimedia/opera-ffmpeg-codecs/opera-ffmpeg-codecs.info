@@ -1,5 +1,6 @@
 PRGNAM="opera-ffmpeg-codecs"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="62.0.3202.89"
 HOMEPAGE="https://repo.herecura.eu/"
 DOWNLOAD="UNSUPPORTED"
@@ -14,6 +15,14 @@ MD5SUM=""
 DOWNLOAD_x86_64="http://mirrors.niyawe.de/archlinux/community/os/x86_64/opera-ffmpeg-codecs-66.0.3359.170-1-x86_64.pkg.tar.xz"
 MD5SUM_x86_64="1fe4881b1052aeba49f25f4b2d0fdf84"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.44.1"
+HOMEPAGE="https://github.com/iteufel/nwjs-ffmpeg-prebuilt"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://github.com/iteufel/nwjs-ffmpeg-prebuilt/releases/download/0.44.1/0.44.1-linux-x64.zip"
+MD5SUM_x86_64="0ba67794b67d5160610c46f0bef77a74"
+>>>>>>> upstream/master
 REQUIRES="opera"
 MAINTAINER="Edinaldo P. Silva"
 EMAIL="edps.mundognu@gmail.com"

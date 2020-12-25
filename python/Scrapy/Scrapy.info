@@ -1,5 +1,6 @@
 PRGNAM="Scrapy"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.4.0"
 HOMEPAGE="https://scrapy.org/"
 DOWNLOAD="https://pypi.python.org/packages/c5/51/0ae702719bdd01577fc1921777bb6f7af4b5fddbe0f7ca64fdd42721e019/Scrapy-1.4.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://scrapy.org/"
 DOWNLOAD="https://pypi.python.org/packages/ec/ee/b2e27f46a6cfd7709fb410e04dfb53e4790f7972d4e84fb52d3dc1d34e3c/Scrapy-1.5.0.tar.gz"
 MD5SUM="df124666d19783dd0e1b49fe45dbef3d"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.7.3"
+HOMEPAGE="https://scrapy.org/"
+DOWNLOAD="https://files.pythonhosted.org/packages/a9/12/aa1cbcb81820f1216dc7ac5d28785334f5b5bf0eaf73294ee4026ab7db26/Scrapy-1.7.3.tar.gz"
+MD5SUM="4d209cad26d8f67aace78fea7c3fd5d3"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="python-twisted queuelib parsel PyDispatcher service_identity"

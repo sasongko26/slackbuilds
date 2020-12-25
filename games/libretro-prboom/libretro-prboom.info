@@ -1,5 +1,6 @@
 PRGNAM="libretro-prboom"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.01.26_6384659"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/libretro-prboom-2017.01.26_6384659.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/libretro-prboom-2017.10.23_79bcd0b.tar.xz"
 MD5SUM="893e0175c7365dfed6ce0d0e1c312f29"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.09.30_b516a66"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/libretro-prboom-2018.09.30_b516a66.tar.xz"
+MD5SUM="3fdccb998916cb5798efab7cfd09eb07"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"

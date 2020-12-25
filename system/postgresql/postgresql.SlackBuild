@@ -30,14 +30,18 @@
 
 PRGNAM=postgresql
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-9.6.4}
 =======
 VERSION=${VERSION:-10.2}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-10.10}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
-PG_VERSION=${PG_VERSION:-10.2}
+PG_VERSION=${PG_VERSION:-10.10}
 PG_PORT=${PG_PORT:-5432}
 PG_UID=${PG_UID:-209}
 PG_GID=${PG_GID:-209}
@@ -95,7 +99,7 @@ set -e
 rm -rf $TMP/$PRGNAM-$VERSION $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-tar xvf $CWD/$PRGNAM-$VERSION.tar.bz2
+tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
 cd $PRGNAM-$VERSION
 chown -R root:root .
 find -L . \

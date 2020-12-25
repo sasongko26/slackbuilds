@@ -3,10 +3,14 @@
 # Slackware build script for liburcu
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2013-2017 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 =======
 # Copyright 2013-2018 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2013-2020 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=liburcu
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.10.0}
 =======
 VERSION=${VERSION:-0.10.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.12.1}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 SRCNAM=userspace-rcu

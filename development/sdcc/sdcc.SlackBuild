@@ -3,10 +3,14 @@
 # Slackware build script for sdcc
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2014-2017 Kyle Guinn <elyk03@gmail.com>, USA
 =======
 # Copyright 2014-2018 Kyle Guinn <elyk03@gmail.com>, USA
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2014-2020 Kyle Guinn <elyk03@gmail.com>
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -28,10 +32,14 @@
 
 PRGNAM=sdcc
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.6.0}
 BUILD=${BUILD:-2}
 =======
 VERSION=${VERSION:-3.7.0}
+=======
+VERSION=${VERSION:-4.0.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}
@@ -73,21 +81,31 @@ set -e
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM
+rm -rf $PRGNAM-$VERSION
 tar xvf $CWD/$PRGNAM-src-$VERSION.tar.bz2
-cd $PRGNAM
+cd $PRGNAM-$VERSION
 chown -R root:root .
 chmod -R u+w,go-w,a+rX-st .
 
+<<<<<<< HEAD
 # Don't clobber bfd.info from Slackware's binutils package.
 sed -i 's/^\(INFO_DEPS =\).*/\1/' support/sdbinutils/bfd/doc/Makefile.in
+=======
+# Fix a couple source files that get installed with wrong permissions.
+chmod -x device/lib/isinf.c device/lib/isnan.c
+>>>>>>> upstream/master
 
 # A few Makefiles install (copy) the source tree _after_ building, and
 # accidentally install a bunch of build byproducts which they try to clean
 # up afterwards.  Delete some byproducts that they missed.
-for patch in $CWD/patches/* ; do
-  patch -p1 < $patch
-done
+patch -p1 < $CWD/patches/source-tree.patch
+
+# Avoid creating empty man directories.
+sed -i '/(man1dir)/d' sim/ucsim/doc/Makefile.in
+
+# make considers device/lib/pic14/aclocal.m4 out-of-date and tries to
+# rebuild it using aclocal-1.16 which doesn't exist yet on Slackware 14.2.
+(cd device/lib/pic14 && autoreconf -vif)
 
 # Requires lyx, latex2html, possibly others.  Untested.
 if [ "${ENABLE_DOC:-no}" != 'no' ]; then

@@ -5,10 +5,14 @@
 
 PRGNAM=instead
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-3.1.2}
 =======
 VERSION=${VERSION:-3.2.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.3.2}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -62,16 +66,21 @@ cd build
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DBINDIR=bin \
 <<<<<<< HEAD
+<<<<<<< HEAD
     -DDOCDIR=doc/instead \
 =======
     -DDOCDIR=doc/$PRGNAM-$VERSION \
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+    -DDOCDIR=doc/instead \
+>>>>>>> upstream/master
     -DMANDIR=man \
     -DDATADIR=share/instead \
     -DICONDIR=share/pixmaps \
     -DDESKTOPDIR=share/applications \
     -DLANGDIR=share/instead/lang/ \
     -DWITH_SDL2=ON \
+    -DWITH_LUAJIT=ON \
     -DCMAKE_BUILD_TYPE=Release ..
   make
   make install DESTDIR=$PKG
@@ -84,7 +93,7 @@ find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a AUTHORS COPYING INSTALL README $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a AUTHORS COPYING INSTALL README.md $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

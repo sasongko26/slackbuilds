@@ -1,7 +1,7 @@
 #!/bin/sh
 # Slackware build script for qmmp-qt5
 
-# Copyright 2018 Isaac Yu <isaacyu1@isaacyu1.com>
+# Copyright 2018-2020 Isaac Yu <isaacyu1@isaacyu1.com>
 # All rights reserved.
 #
 # Permission to use, copy, modify, and distribute this software for any purpose
@@ -20,10 +20,11 @@
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=qmmp-qt5
-SRCNAM=qmmp
-VERSION=${VERSION:-1.2.2}
+VERSION=${VERSION:-1.3.7}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
+
+SRCNAM=qmmp
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in

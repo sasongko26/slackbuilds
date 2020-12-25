@@ -26,10 +26,14 @@
 
 PRGNAM="icecat"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-52.1.0}
 =======
 VERSION=${VERSION:-52.6.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-60.7.0}
+>>>>>>> upstream/master
 RELEASEVER="$VERSION"
 RELEASEVERMAJ=$(echo $RELEASEVER | cut -f 1 -d .)
 BUILD=${BUILD:-1}
@@ -93,8 +97,7 @@ ln -s /usr/lib${LIBDIRSUFFIX}/${PRGNAM}-$VERSION/icecat icecat
 cd $PKG/usr/lib${LIBDIRSUFFIX}/${PRGNAM}-$VERSION/browser
 mv extensions disabled-extensions
 mkdir -p extensions
-mv "disabled-extensions/abouticecat@gnu.org.xpi" \
-   "disabled-extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi" \
+mv "disabled-extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi" \
    extensions/
 
 # Desktop integration

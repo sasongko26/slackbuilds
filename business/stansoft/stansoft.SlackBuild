@@ -24,10 +24,14 @@
 
 PRGNAM=stansoft
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-7.11}
 =======
 VERSION=${VERSION:-7.13}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-7.19}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

@@ -31,10 +31,14 @@
 
 PRGNAM="fail2ban"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-0.10.1}
 =======
 VERSION=${VERSION:-0.10.3.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-0.10.4}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -122,8 +126,8 @@ cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 # building package
 mkdir -p $PKG/install
-cat $CWD/slack-desc > $PKG/install/slack-desc
 cat $CWD/doinst.sh > $PKG/install/doinst.sh
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 # install bash completion script if requested
@@ -133,6 +137,9 @@ if [ "${BASH_COMPLETION:-no}" = "yes" ]; then
 fi
 =======
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+cat $CWD/slack-desc > $PKG/install/slack-desc
+>>>>>>> upstream/master
 
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

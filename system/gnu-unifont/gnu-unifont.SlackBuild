@@ -4,6 +4,7 @@
 
 # Copyright 2010 crocket (crockabiscuit@gmail.com)
 # Copyright 2013-2015 LukenShiro, Italy
+# Copyright 2019-2020 Tomasz Bywalec
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,7 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 PRGNAM=gnu-unifont
-VERSION=${VERSION:-8.0.01}
+VERSION=${VERSION:-13.0.04}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -37,6 +38,12 @@ OUTPUT=${OUTPUT:-/tmp}
 
 SRCNAM=unifont
 DOCFILES="ChangeLog COPYING INSTALL NEWS README"
+FONTFORMATS=${FONTFORMATS:-ttf,pcf,psf}
+
+contains()
+{
+    echo "$1" | grep -qi "\(^\|,\)$2\($\|,\)"
+}
 
 set -e
 
@@ -53,13 +60,53 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
+FONTSCOPIED=0
+
 cd font/precompiled
-mkdir -p $PKG/usr/share/fonts/{misc,TTF}
-cp -a *.pcf.gz $PKG/usr/share/fonts/misc/
-cp -a *.ttf $PKG/usr/share/fonts/TTF
-mkdir -p $PKG/usr/share/kbd/consolefonts
-cp -a *.psf.gz $PKG/usr/share/kbd/consolefonts/
+
+if contains "$FONTFORMATS" "pcf"; then
+    mkdir -p $PKG/usr/share/fonts/misc
+    cp -a *.pcf.gz $PKG/usr/share/fonts/misc
+
+    FONTSCOPIED=1
+fi
+
+if contains "$FONTFORMATS" "ttf"; then
+    mkdir -p $PKG/usr/share/fonts/TTF
+    cp -a *.ttf $PKG/usr/share/fonts/TTF
+
+    FONTSCOPIED=1
+fi
+
+if contains "$FONTFORMATS" "psf"; then
+    mkdir -p $PKG/usr/share/kbd/consolefonts
+    cp -a *.psf.gz $PKG/usr/share/kbd/consolefonts
+
+    FONTSCOPIED=1
+fi
+
+if contains "$FONTFORMATS" "otb"; then
+    mkdir -p $PKG/usr/share/fonts/misc
+    for pcf_file in *.pcf.gz; do
+        echo "Converting '$pcf_file' to OTB format."
+        otb_file=$(echo "$pcf_file" | sed 's/\.pcf\.gz$/.otb/g')
+        fonttosfnt -o "$PKG/usr/share/fonts/misc/$otb_file" "$pcf_file"
+    done
+
+    FONTSCOPIED=1
+fi
+
 cd -
+
+if [ "$FONTSCOPIED" -eq 0 ]; then
+    echo
+    echo "No fonts selected to be included in the package."
+    echo "Please check value of the FONTFORMATS environment variable."
+    exit 1
+fi
+
+# Keep the fonts names unversioned
+find -L $PKG/usr/share -type f -name "*-$VERSION*" -exec rename -- "-$VERSION" '' {} \;
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a $DOCFILES $PKG/usr/doc/$PRGNAM-$VERSION

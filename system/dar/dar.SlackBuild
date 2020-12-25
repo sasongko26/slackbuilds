@@ -4,10 +4,14 @@
 # Home Page http://dar.linux.free.fr/
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright (c) 2007-2017, Nishant Limbachia, Hoffman Estates, IL, USA
 =======
 # Copyright (c) 2007-2018, Nishant Limbachia, Hoffman Estates, IL, USA
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright (c) 2007-2019, Nishant Limbachia, Hoffman Estates, IL, USA
+>>>>>>> upstream/master
 # <nishant _AT_ mnspace _DOT_ net>
 # All rights reserved.
 #
@@ -35,10 +39,14 @@
 
 PRGNAM="dar"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-2.5.13}
 =======
 VERSION=${VERSION:-2.5.15}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-2.6.3}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

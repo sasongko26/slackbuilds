@@ -1,5 +1,6 @@
 PRGNAM="zotero"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="5.0.21"
 HOMEPAGE="https://www.zotero.org/"
 DOWNLOAD="https://download.zotero.org/client/release/5.0.21/Zotero-5.0.21_linux-i686.tar.bz2"
@@ -14,6 +15,14 @@ MD5SUM="72833990569f076daf12306adc83493c"
 DOWNLOAD_x86_64="https://download.zotero.org/client/release/5.0.48/Zotero-5.0.48_linux-x86_64.tar.bz2"
 MD5SUM_x86_64="709487e4dce2577225926a5e81d54590"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="5.0.85"
+HOMEPAGE="https://www.zotero.org/"
+DOWNLOAD="https://download.zotero.org/client/release/5.0.85/Zotero-5.0.85_linux-i686.tar.bz2"
+MD5SUM="196d758dc19a658a54d30877fe0c41b2"
+DOWNLOAD_x86_64="https://download.zotero.org/client/release/5.0.85/Zotero-5.0.85_linux-x86_64.tar.bz2"
+MD5SUM_x86_64="6509c159079ed59c2c95ac0132dc2328"
+>>>>>>> upstream/master
 REQUIRES=""
-MAINTAINER="Petar Petrov"
-EMAIL="slackalaxy@gmail.com"
+MAINTAINER="Andrew Payne"
+EMAIL="phalange@komputermatrix.com"

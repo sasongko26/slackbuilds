@@ -1,5 +1,6 @@
 PRGNAM="libqalculate"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.1.0"
 HOMEPAGE="http://qalculate.github.io/"
 DOWNLOAD="https://github.com/Qalculate/libqalculate/releases/download/v2.1.0/libqalculate-2.1.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://qalculate.github.io/"
 DOWNLOAD="https://github.com/Qalculate/libqalculate/releases/download/v2.2.0/libqalculate-2.2.0.tar.gz"
 MD5SUM="fe0fe78a9c0321028b0d12d81aa7d782"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.10.0"
+HOMEPAGE="https://qalculate.github.io/"
+DOWNLOAD="https://github.com/Qalculate/libqalculate/releases/download/v3.10.0/libqalculate-3.10.0.tar.gz"
+MD5SUM="2f68e3dfeb36de2c88fc7078cb86ab4c"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

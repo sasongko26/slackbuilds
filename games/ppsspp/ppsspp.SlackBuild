@@ -3,6 +3,7 @@
 # Slackware build script for ppsspp
 
 # Copyright 2016  Hunter Sezen California, USA
+# Copyright 2019-2020  Ruoh-Shoei LIN
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,13 +25,16 @@
 
 PRGNAM=ppsspp
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.4.2}
 =======
 VERSION=${VERSION:-1.5.4}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-1.10.3}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
-QT=${QT:-OFF}
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -70,13 +74,20 @@ cd $PRGNAM-$VERSION
 
 # The submodules are in a separate archive. This is equivalent to
 # git submodule update --init --recursive
-tar xvf $CWD/${PRGNAM}_submodules-${VERSION}.tar.xz
-mv ${PRGNAM}_submodules-${VERSION}/ext/* ext
-rmdir ${PRGNAM}_submodules-${VERSION}/ext
-mv ${PRGNAM}_submodules-${VERSION}/assets/* assets
-rmdir ${PRGNAM}_submodules-${VERSION}/assets
-mv ${PRGNAM}_submodules-${VERSION}/* .
-rmdir ${PRGNAM}_submodules-${VERSION}
+tar -xvf $CWD/hrydgard-glslang-d0850f8.tar.gz \
+    -C ext/glslang --strip-components=1
+tar -xvf $CWD/hrydgard-ppsspp-lang-1c64b8f.tar.gz \
+    -C assets/lang --strip-components=1
+tar -xvf $CWD/KhronosGroup-SPIRV-Cross-a1f7c8d.tar.gz \
+    -C ext/SPIRV-Cross --strip-components=1
+tar -xvf $CWD/Kingcom-armips-7885552.tar.gz \
+    -C ext/armips --strip-components=1
+tar -xvf $CWD/hrydgard-ppsspp-ffmpeg-55147e5.tar.gz \
+    --exclude '*/Windows*' --exclude '*/android' \
+    --exclude '*/ios' --exclude '*/blackberry'\
+    --exclude '*/macosx' --exclude '*/wiiu' \
+    --exclude '*/symbian' \
+    -C ffmpeg --strip-components=1
 
 chown -R root:root .
 find -L . \
@@ -91,50 +102,58 @@ sed -i 's/VERSION 3.6/VERSION 3.5.2/' CMakeLists.txt
 # Don't force explicit ccache invocation.
 sed -i -e '/include(ccache)/d' CMakeLists.txt
 
-mkdir -p build
-cd build
+# set git-version
+sed -i "s/unknown/${VERSION}/" git-version.cmake
+
+mkdir -p build-qt build-sdl
+
+QT=${QT:-off}
+if [ "$QT" = "on" ]; then
+    cd build-qt
+    cmake \
+	-DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
+	-DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
+	-DCMAKE_INSTALL_PREFIX=/usr \
+	-DCMAKE_SKIP_RPATH=TRUE \
+	-Wno-dev \
+	-DUSING_QT_UI=ON \
+	-DUSE_SYSTEM_LIBZIP=ON \
+	-DUSE_DISCORD=OFF \
+	-DCMAKE_BUILD_TYPE=Release ..
+    make
+    cd ..
+    install -Dm755 build-qt/PPSSPPQt $PKG/usr/games/ppsspp-qt
+    install -Dm644 $CWD/ppsspp-qt.desktop $PKG/usr/share/applications/ppsspp-qt.desktop
+fi
+
+cd build-sdl
 cmake \
   -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
   -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
   -DCMAKE_INSTALL_PREFIX=/usr \
   -DCMAKE_SKIP_RPATH=TRUE \
   -Wno-dev \
+  -DUSING_QT_UI=OFF \
+  -DHEADLESS='ON' \
+  -DUSE_SYSTEM_LIBZIP=ON \
+  -DUSE_DISCORD=OFF \
   -DCMAKE_BUILD_TYPE=Release ..
 make
 cd ..
-
-if [ "$QT" = "ON" ]; then
-  mkdir build_qt
-  cd build_qt
-  cmake \
-    -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
-    -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
-    -DCMAKE_INSTALL_PREFIX=/usr \
-    -DCMAKE_SKIP_RPATH=TRUE \
-    -Wno-dev \
-    -DUSING_QT_UI=ON \
-    -DCMAKE_BUILD_TYPE=Release ..
-  make
-  cd ..
-fi
-
-find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
-  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
+install -Dm755 build-sdl/PPSSPPHeadless $PKG/usr/games/ppsspp-headless
+install -Dm755 build-sdl/PPSSPPSDL $PKG/usr/games/ppsspp-sdl
 
 mkdir -p $PKG/usr/{games,share/{applications,icons/hicolor,pixmaps,ppsspp}}
-cp build/PPSSPPSDL $PKG/usr/games/ppsspp
-cp $CWD/ppsspp.desktop $PKG/usr/share/applications
+install -Dm644 $CWD/ppsspp.desktop $PKG/usr/share/applications/ppsspp.desktop
 cp -r assets $PKG/usr/share/ppsspp
 cp -r icons/hicolor/* $PKG/usr/share/icons/hicolor
 cp icons/icon-512.svg $PKG/usr/share/pixmaps/ppsspp.svg
 
-if [ "$QT" = "ON" ]; then
-  cp build_qt/PPSSPPQt $PKG/usr/games/ppsspp-qt
-  cp $CWD/ppsspp-qt.desktop $PKG/usr/share/applications
-fi
+find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | grep ELF \
+  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null || true
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
-cp -a LICENSE.TXT README.md korean.txt chinese.txt $PKG/usr/doc/$PRGNAM-$VERSION
+cp -v LICENSE.TXT README.md history.md headless/headless.txt $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install

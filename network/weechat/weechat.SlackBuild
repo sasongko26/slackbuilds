@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Originally written by hollywoodb (hollywoodb@fastmail.fm)
-# Maintained by sero (firebird209 at gmail dot com)
-# Maintained by Benjamin Trigona-Harany <slackbuilds@jaxartes.net>
+# Maintained 2011-2016 by sero (firebird3.0 at gmail dot com)
+# Maintained 2017-2020 by Benjamin Trigona-Harany <slackbuilds@jaxartes.net>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,10 +24,14 @@
 
 PRGNAM=weechat
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.9.1}
 =======
 VERSION=${VERSION:-2.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-3.0}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -79,6 +83,7 @@ cd build
     -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
     -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
     -DCMAKE_INSTALL_PREFIX=/usr \
+<<<<<<< HEAD
     -DENABLE_MAN=ON \
 <<<<<<< HEAD
 =======
@@ -86,6 +91,15 @@ cd build
     -DENABLE_PYTHON3=OFF \
     -DENABLE_DOC=ON \
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+    -DENABLE_MAN=OFF \
+    -DENABLE_LUA=OFF \
+    -DENABLE_JAVASCRIPT=OFF \
+    -DENABLE_PHP=OFF \
+    -DENABLE_PYTHON=ON \
+    -DENABLE_DOC=${DOC:-OFF} \
+    -DENABLE_MAN=${DOC:-OFF} \
+>>>>>>> upstream/master
     -DLIBDIR=/usr/lib${LIBDIRSUFFIX} \
     -DCMAKE_BUILD_TYPE=Release \
     ..
@@ -102,8 +116,14 @@ fi
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 <<<<<<< HEAD
+<<<<<<< HEAD
 cp -a AUTHORS.adoc COPYING ChangeLog.adoc README.adoc ReleaseNotes.adoc $PKG/usr/doc/$PRGNAM-$VERSION
 =======
+=======
+if [ -e $PKG/usr/share/doc/$PRGNAM ]; then
+  mv $PKG/usr/share/doc/$PRGNAM $PKG/usr/doc/$PRGNAM-$VERSION/html
+fi
+>>>>>>> upstream/master
 cp -a \
   AUTHORS.adoc COPYING ChangeLog.adoc README.adoc ReleaseNotes.adoc \
   $PKG/usr/doc/$PRGNAM-$VERSION

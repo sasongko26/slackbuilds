@@ -1,5 +1,6 @@
 PRGNAM="st"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.7"
 HOMEPAGE="https://st.suckless.org"
 DOWNLOAD="https://dl.suckless.org/st/st-0.7.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://st.suckless.org"
 DOWNLOAD="https://dl.suckless.org/st/st-0.8.1.tar.gz"
 MD5SUM="92135aecdba29300bb2e274a55f5b71e"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.8.2"
+HOMEPAGE="https://st.suckless.org"
+DOWNLOAD="https://dl.suckless.org/st/st-0.8.2.tar.gz"
+MD5SUM="a3d97ee92215071e6399691edc0f04b0"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -1,5 +1,6 @@
 PRGNAM="processing"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.5.1"
 HOMEPAGE="https://www.processing.org"
 DOWNLOAD="http://download.processing.org/processing-1.5.1-linux.tgz"
@@ -14,6 +15,14 @@ MD5SUM="2654a97188ff4a86c451427563ec1365"
 DOWNLOAD_x86_64="http://download.processing.org/processing-3.3.7-linux64.tgz"
 MD5SUM_x86_64="0833faaf24f0c8a55d9430a0b96252aa"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.5.4"
+HOMEPAGE="https://www.processing.org"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://download.processing.org/processing-3.5.4-linux64.tgz"
+MD5SUM_x86_64="2746cbe158425396dcf8a4103b93400f"
+>>>>>>> upstream/master
 REQUIRES="jdk"
 MAINTAINER="wigums"
 EMAIL="pioneer22675@gmail.com"

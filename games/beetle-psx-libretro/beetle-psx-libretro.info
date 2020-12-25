@@ -1,5 +1,6 @@
 PRGNAM="beetle-psx-libretro"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.08.11_a6bbea0"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/beetle-psx-libretro-2017.08.11_a6bbea0.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/beetle-psx-libretro-2018.03.28_d469c7a.tar.xz"
 MD5SUM="c08c59bb2d6f585babd028822e148054"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.11.26_a081f34"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/beetle-psx-libretro-2018.11.26_a081f34.tar.xz"
+MD5SUM="114496dfdcf210b4620d0c98636429a9"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"

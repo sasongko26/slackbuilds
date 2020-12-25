@@ -1,5 +1,6 @@
 PRGNAM="libversion"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2.3.0"
 HOMEPAGE="https://github.com/repology/libversion"
 DOWNLOAD="https://github.com/repology/libversion/archive/2.3.0/libversion-2.3.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/repology/libversion"
 DOWNLOAD="https://github.com/repology/libversion/archive/2.6.0/libversion-2.6.0.tar.gz"
 MD5SUM="8a6844f64d7ac8a03352ce59ddbcbd82"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2.9.1"
+HOMEPAGE="https://github.com/repology/libversion"
+DOWNLOAD="https://github.com/repology/libversion/archive/2.9.1/libversion-2.9.1.tar.gz"
+MD5SUM="8c23275bc0e57b7958a696d533266f8b"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

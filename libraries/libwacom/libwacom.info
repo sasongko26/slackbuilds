@@ -1,5 +1,6 @@
 PRGNAM="libwacom"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.26"
 HOMEPAGE="https://sourceforge.net/projects/linuxwacom/"
 DOWNLOAD="https://sourceforge.net/projects/linuxwacom/files/libwacom/libwacom-0.26.tar.bz2"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/linuxwacom/libwacom"
 DOWNLOAD="https://github.com/linuxwacom/libwacom/archive/libwacom-0.30/libwacom-libwacom-0.30.tar.gz"
 MD5SUM="96d18acdeb37d6f92eb97fb10a0fd219"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.6"
+HOMEPAGE="https://github.com/linuxwacom/libwacom"
+DOWNLOAD="https://github.com/linuxwacom/libwacom/archive/libwacom-1.6/libwacom-libwacom-1.6.tar.gz"
+MD5SUM="97b59b1cf6d1273efb5ab43c88efaf4e"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

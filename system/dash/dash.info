@@ -1,5 +1,6 @@
 PRGNAM="dash"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.5.9.1"
 HOMEPAGE="https://kernel.googlesource.com/pub/scm/utils/dash/dash/"
 DOWNLOAD="https://sourceforge.net/projects/slackbuildsdirectlinks/files/dash/dash-0.5.9.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="http://gondor.apana.org.au/~herbert/dash/"
 DOWNLOAD="http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.10.2.tar.gz"
 MD5SUM="8f485f126c05d0ab800e85abfe1987aa"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.5.11.2"
+HOMEPAGE="http://gondor.apana.org.au/~herbert/dash/"
+DOWNLOAD="http://gondor.apana.org.au/~herbert/dash/files/dash-0.5.11.2.tar.gz"
+MD5SUM="b9b71c72e40fdc4db9b4ffb81fc3bebc"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libedit"

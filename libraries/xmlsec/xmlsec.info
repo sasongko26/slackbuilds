@@ -1,5 +1,6 @@
 PRGNAM="xmlsec"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.2.25"
 HOMEPAGE="https://www.aleksey.com/xmlsec/"
 DOWNLOAD="https://www.aleksey.com/xmlsec/download/xmlsec1-1.2.25.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.aleksey.com/xmlsec/"
 DOWNLOAD="https://www.aleksey.com/xmlsec/download/xmlsec1-1.2.26.tar.gz"
 MD5SUM="9c4aaf9ff615a73921b9e3bf4988d878"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.2.31"
+HOMEPAGE="https://www.aleksey.com/xmlsec/"
+DOWNLOAD="https://www.aleksey.com/xmlsec/download/xmlsec1-1.2.31.tar.gz"
+MD5SUM="182f5cbdfb8ddbac535c04470c170dc3"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -1,5 +1,6 @@
 PRGNAM="transgui"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="5.11.0"
 HOMEPAGE="https://github.com/transmission-remote-gui/transgui"
 DOWNLOAD="https://github.com/transmission-remote-gui/transgui/archive/v5.11.0/transgui-5.11.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/transmission-remote-gui/transgui"
 DOWNLOAD="https://github.com/transmission-remote-gui/transgui/archive/v5.13.0/transgui-5.13.0.tar.gz"
 MD5SUM="30d95dad3eb920302a30f25eee928967"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="5.18.0"
+HOMEPAGE="https://github.com/transmission-remote-gui/transgui"
+DOWNLOAD="https://github.com/transmission-remote-gui/transgui/archive/v5.18.0/transgui-5.18.0.tar.gz"
+MD5SUM="5c5edc65a7cdec92e25091937b2162a2"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="lazarus"

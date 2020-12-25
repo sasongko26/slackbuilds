@@ -1,5 +1,6 @@
 PRGNAM="python3"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="3.6.3"
 HOMEPAGE="https://www.python.org/"
 DOWNLOAD="https://www.python.org/ftp/python/3.6.3/Python-3.6.3.tar.xz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://www.python.org/"
 DOWNLOAD="https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tar.xz"
 MD5SUM="9f49654a4d6f733ff3284ab9d227e9fd"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="3.7.2"
+HOMEPAGE="https://www.python.org/"
+DOWNLOAD="https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tar.xz"
+MD5SUM="df6ec36011808205beda239c72f947cb"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

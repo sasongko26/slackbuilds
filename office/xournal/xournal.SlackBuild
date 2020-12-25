@@ -2,9 +2,10 @@
 
 # Slackware build script for xournal
 # Written by Michael Filz <the_emmel@gmx.net>
+# Updated by Rob van Nues <sborg63@disroot.org>
 
 PRGNAM=xournal
-VERSION=${VERSION:-0.4.7}
+VERSION=${VERSION:-0.4.8.2016}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 

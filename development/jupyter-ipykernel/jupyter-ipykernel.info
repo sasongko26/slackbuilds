@@ -1,5 +1,6 @@
 PRGNAM="jupyter-ipykernel"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="4.6.1"
 HOMEPAGE="https://jupyter.org/"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/i/ipykernel/ipykernel-4.6.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://jupyter.org/"
 DOWNLOAD="https://files.pythonhosted.org/packages/source/i/ipykernel/ipykernel-4.8.2.tar.gz"
 MD5SUM="91af54e6a4ad908ded0bed383dd03374"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="4.10.0"
+HOMEPAGE="https://jupyter.org/"
+DOWNLOAD="https://files.pythonhosted.org/packages/source/i/ipykernel/ipykernel-4.10.0.tar.gz"
+MD5SUM="e4ee1bf2d025a6016fdf03a8f748aa01"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="ipython jupyter_client tornado"

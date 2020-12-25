@@ -1,5 +1,6 @@
 PRGNAM="sphinxcontrib-plantuml"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.8.1"
 HOMEPAGE="https://pypi.python.org/pypi/sphinxcontrib-plantuml"
 DOWNLOAD="https://pypi.python.org/packages/a4/ac/d2e4f6ffdebb2c5b9406243b7603dfbe483357886715dcacd5e8924bdfe5/sphinxcontrib-plantuml-0.8.1.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://pypi.python.org/pypi/sphinxcontrib-plantuml"
 DOWNLOAD="https://pypi.python.org/packages/af/22/2839812e7c9ebbc64f5b782ddc3c0046c28c7180919cb7f4fd7ea3933da4/sphinxcontrib-plantuml-0.8.2.tar.gz"
 MD5SUM="e5e5bc0e13310db5eba92915baeb0be8"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.18"
+HOMEPAGE="https://pypi.python.org/pypi/sphinxcontrib-plantuml"
+DOWNLOAD="https://files.pythonhosted.org/packages/2b/92/dcd66c09dc400400f9e98aff880cd53306c3d8c545863f6e1170e0531ba8/sphinxcontrib-plantuml-0.18.tar.gz"
+MD5SUM="0bb861d5aac0114ac5a2ac4abc280e4b"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="Sphinx"

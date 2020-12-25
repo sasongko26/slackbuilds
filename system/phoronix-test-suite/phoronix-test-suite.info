@@ -1,5 +1,6 @@
 PRGNAM="phoronix-test-suite"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="7.4.0"
 HOMEPAGE="http://phoronix-test-suite.com/"
 DOWNLOAD="http://www.phoronix-test-suite.com/releases/phoronix-test-suite-7.4.0.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://phoronix-test-suite.com/"
 DOWNLOAD="https://www.phoronix-test-suite.com/releases/phoronix-test-suite-8.0.0.tar.gz"
 MD5SUM="a0c3ac89cb06cf18acf5e52bf895e78a"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="10.0.1"
+HOMEPAGE="https://phoronix-test-suite.com/"
+DOWNLOAD="https://www.phoronix-test-suite.com/releases/phoronix-test-suite-10.0.1.tar.gz"
+MD5SUM="261818c5c45d0653880e005a74cab13e"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

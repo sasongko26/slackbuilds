@@ -1,5 +1,6 @@
 PRGNAM="libreoffice-langpack"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="5.4.3"
 HOMEPAGE="http://www.libreoffice.org"
 DOWNLOAD="http://download.documentfoundation.org/libreoffice/stable/5.4.3/rpm/x86/LibreOffice_5.4.3_Linux_x86_rpm_langpack_en-GB.tar.gz"
@@ -14,6 +15,14 @@ MD5SUM="0b7172cbc92b2919fa9ec1be08ffdfae"
 DOWNLOAD_x86_64="https://download.documentfoundation.org/libreoffice/stable/6.0.4/rpm/x86_64/LibreOffice_6.0.4_Linux_x86-64_rpm_langpack_en-GB.tar.gz"
 MD5SUM_x86_64="a43ea8dfdc0590dbf71a5aa8a8b336c9"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="6.2.8.2"
+HOMEPAGE="https://www.libreoffice.org"
+DOWNLOAD="https://downloadarchive.documentfoundation.org/libreoffice/old/6.2.8.2/rpm/x86/LibreOffice_6.2.8.2_Linux_x86_rpm_langpack_en-GB.tar.gz"
+MD5SUM="6fb9c1631dbef66750babdeb3cfed2fe"
+DOWNLOAD_x86_64="https://downloadarchive.documentfoundation.org/libreoffice/old/6.2.8.2/rpm/x86_64/LibreOffice_6.2.8.2_Linux_x86-64_rpm_langpack_en-GB.tar.gz"
+MD5SUM_x86_64="82ce56931e08b4e77e237c0fd0bf66f4"
+>>>>>>> upstream/master
 REQUIRES="libreoffice"
 MAINTAINER="Willy Sudiarto Raharjo"
 EMAIL="willysr@slackbuilds.org"

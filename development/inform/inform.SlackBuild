@@ -6,8 +6,23 @@
 
 # Licensed under the WTFPL. See http://www.wtfpl.net/txt/copying/ for details.
 
+# 20201104 bkw: updated for 6.34_6.12.4. In case anyone's wondering
+# why I use a self-hosted URL for the source, it's because upstream
+# moves the old source immediately when a new release is made. Also
+# moved the binary to /usr/games and the man page to section 6.
+
+# 20191216 bkw: updated for 6.34_6.12.2. The secondary version number
+# is the inform6 library version. This script can no longer build the
+# old 6.32.1 version, but it should be fine for future releases.
+
+# The old 6.32.1 release shipped with a lot more include
+# files. Upstream removed a lot of them because they were either buggy
+# or license-incompatible. If you're trying to compile something that
+# needs any of these old includes, please let me know. If there's enough
+# demand, I'll dig up the old includes and re-add them to the package.
+
 PRGNAM=inform
-VERSION=${VERSION:-6.32.1}
+VERSION=${VERSION:-6.34_6.12.4_1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -40,58 +55,108 @@ fi
 
 set -e
 
+MANVER="${MANVER:-4}"
+MANUAL=designers_manual_${MANVER}.zip
+TARVER="${VERSION//_/-}"
+DOCDIR=/usr/doc/$PRGNAM-$VERSION
+PKGDOC=$PKG/$DOCDIR
+
 rm -rf $PKG
 mkdir -p $TMP $PKG $OUTPUT
 cd $TMP
-rm -rf $PRGNAM-$VERSION
-tar xvf $CWD/$PRGNAM-$VERSION.tar.gz
-cd $PRGNAM-$VERSION
+rm -rf $PRGNAM-$TARVER
+tar xvf $CWD/$PRGNAM-$TARVER.tar.gz
+cd $PRGNAM-$TARVER
 chown -R root:root .
-find -L . \
- \( -perm 777 -o -perm 775 -o -perm 750 -o -perm 711 -o -perm 555 -o -perm 511 \) \
- -exec chmod 755 {} \; -o \
- \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
- -exec chmod 644 {} \;
+find -L .  -perm /111 -a \! -perm 755 -a -exec chmod 755 {} \+ -o \
+        \! -perm /111 -a \! -perm 644 -a -exec chmod 644 {} \+
 
-CFLAGS="$SLKCFLAGS" \
-CXXFLAGS="$SLKCFLAGS" \
-./configure \
-  --prefix=/usr \
-  --libdir=/usr/lib${LIBDIRSUFFIX} \
-  --sysconfdir=/etc \
-  --localstatedir=/var \
-  --mandir=/usr/man \
-  --docdir=/usr/doc/$PRGNAM-$VERSION \
-  --build=$ARCH-slackware-linux
+# 20201104 bkw: Since inform is for game purposes, install the binary
+# to /usr/games, and its man page to section 6.
+sed '1s/"1"/"6"/' $PRGNAM.1 > $PRGNAM.6
 
-make
-make install-strip DESTDIR=$PKG
+# 20201105 bkw: Minor fixes to Makefile so parallel builds work.
+patch -p1 < $CWD/parallel_make.diff
 
-# Grr. Make this a relative link. Otherwise it points to /tmp/SBo
-# after installation.
-cd $PKG/usr/bin
-  rm -f $PRGNAM
-  ln -s $PRGNAM-* $PRGNAM
-cd -
+# 20201104 bkw: Don't write to real $PREFIX! Just disable the CASETEST
+# stuff, since we're including our own set of symlinks.
+sed -i '/touch.*PREFIX/,+2d' Makefile
 
-# Move the manual to where Slack users expect it to be.
-DOCDIR=$PKG/usr/doc/$PRGNAM-$VERSION
-mkdir -p $DOCDIR
-mv $PKG/usr/share/$PRGNAM/manual $DOCDIR/manual
+# 20201104 bkw: upstream now supports DESTDIR again.
+make install-strip \
+     OPTS="$SLKCFLAGS" \
+     BINDIR=/usr/games \
+     MANDIR=/usr/man/man6 \
+     MANPAGE=$PRGNAM.6 \
+     PREFIX=/usr \
+     TUTORDIR=$DOCDIR/tutor \
+     DEMODIR=$DOCDIR/demos \
+     DESTDIR=$PKG
 
-# Install the demo sources + tutorials, too. Very instructive for someone
-# learning to use inform.
-mkdir -p $DOCDIR/demos
-cp demos/*.inf demos/README $DOCDIR/demos
-mkdir -p $DOCDIR/tutorials
-rm tutor/Make*
-cp tutor/* $DOCDIR/tutorials
+gzip $PKG/usr/man/man?/*.?
+
+# 20201104 bkw: the binary got moved, be kind and provide a symlink
+mkdir -p $PKG/usr/bin
+ln -s ../games/$PRGNAM $PKG/usr/bin/$PRGNAM
+
+# Inform started life (and is still used primarily) on OSes
+# with case-insensitive filenames, meaning that a lot of inform
+# source refers to e.g. VerbLib or even VERBLIB (with or without
+# the .h at the end, which could also be capitalized as .H). The
+# Makefile can create a few symlinks to support this, but let's
+# be more all-inclusive. We got 8 .h files, and end up with 70+
+# symlinks. There's no kill like overkill!
+( cd $PKG/usr/share/$PRGNAM/lib
+  for file in *.h; do
+    name=${file%%.*}
+    #           Name.h     NAME.h
+    for link in ${name^}.h ${name^^}.h; do
+      ln -s $file $link
+    done
+  done
+
+  # MixedCase isn't standardized, these are guesses. Some are pretty
+  # unlikely, but they don't cost much. Better to have and not need,
+  # than to need and not have.
+  for link in VerbLib VerbLIB verbLib verbLIB \
+              InFix InFIX inFix inFIX \
+              InfGlk InfGLK infGlk infGLK \
+              LinkLpa LinkLPA linkLpa linkLPA
+  do
+    ln -s ${link,,}.h $link.h
+  done
+
+  # Any of the above might appear with .H. Use readlink so all the
+  # variant names link to the real file (no symlinks to symlinks).
+  # This might be overcautious: the example code all just says
+  # e.g. 'Include "Parser"', without the .h.
+  for file in *.h; do
+    ln -s $( readlink $file ) ${file%%.*}.H
+  done
+)
+
+# Upstream removed the manual for licensing reasons. It belongs in the
+# binary package IMO.
+mkdir -p $PKGDOC/manual
+( cd $PKGDOC/manual
+  unzip $CWD/$MANUAL
+  # manual has no subdirs
+  chmod 644 *
+  chown root.root *
+)
 
 # Inform Beginners' Guide, required reading.
-cat $CWD/IBG.pdf > $DOCDIR/inform_beginners_guide.pdf
+cat $CWD/IBG.pdf > $PKGDOC/inform_beginners_guide.pdf
 
-cp -a ARTISTIC AUTHORS COPYING NEWS README docs/* $DOCDIR
-cat $CWD/$PRGNAM.SlackBuild > $DOCDIR/$PRGNAM.SlackBuild
+mkdir -p $PKGDOC/lib
+for i in ChangeLog README.txt voices_and_tenses.txt; do
+  ln -s ../../../share/$PRGNAM/lib/$i $PKGDOC/lib
+done
+
+# ARTISTIC and COPYING are redundant: src/licence.txt includes the
+# full text of both.
+cp -a AUTHORS NEWS README* src/*.txt src/*.html docs/* $PKGDOC
+cat $CWD/$PRGNAM.SlackBuild > $PKGDOC/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc

@@ -1,5 +1,6 @@
 PRGNAM="FCSalyzer"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.9.14_alpha"
 HOMEPAGE="https://sourceforge.net/projects/fcsalyzer/"
 DOWNLOAD="https://sourceforge.net/projects/fcsalyzer/files/Version%200.9.14-alpha/FCSalyzer%200.9.14-alpha.zip"
@@ -10,6 +11,12 @@ HOMEPAGE="https://sourceforge.net/projects/fcsalyzer/"
 DOWNLOAD="https://sourceforge.net/projects/fcsalyzer/files/Version%200.9.15-alpha/FCSalyzer%200.9.15-alpha.zip"
 MD5SUM="bb6422a7dd2c13286670d20471fcb04a"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.9.18_alpha"
+HOMEPAGE="https://sourceforge.net/projects/fcsalyzer/"
+DOWNLOAD="https://sourceforge.net/projects/fcsalyzer/files/Version%200.9.18-alpha/FCSalyzer%200.9.18-alpha.zip"
+MD5SUM="9926d1af7b9865615a525c0e1bf0ada2"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="jdk"

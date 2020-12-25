@@ -4,10 +4,14 @@
 # Based on the Slackware 14.2 SlackBuild
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2017, Fellype do Nascimento, Campinas - Brazil
 =======
 # Copyright 2017-2018, Fellype do Nascimento, Campinas - Brazil
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2017-2019, Fellype do Nascimento, Campinas - Brazil
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,10 +33,14 @@
 
 PRGNAM=scidavis
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.22}
 BUILD=${BUILD:-2}
 =======
 VERSION=${VERSION:-1.23}
+=======
+VERSION=${VERSION:-1.26}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 TAG=${TAG:-_SBo}
@@ -81,6 +89,7 @@ sed -i -e 's#share/man/man1/scidavis.1#man/man1#' scidavis/scidavis.pro
 sed -i -e 's#share/man#man#' scidavis/scidavis.pro
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 
+<<<<<<< HEAD
 # Correction needed in order to find qwtplot3d in its default path
 grep -rl "qwtplot3d/" libscidavis/src/ | xargs sed -i "s:<qwtplot3d/:<:"
 
@@ -98,6 +107,8 @@ patch -p1 < $CWD/crash_integration_with_too_few_points_bug_321.patch libscidavis
 # higher or lower than 1.0.0
 patch -p1 < $CWD/fix_issue_with_scipy_vesions.patch scidavis/scidavisrc.py
 
+=======
+>>>>>>> upstream/master
 # Since version 1.23 it is possible to build/use SciDAVis with Python 3 - just use
 # PYTHON3=yes before execute scidavis.SlackBuild. Default is to use python 2 (PYTHON3=no).
 # *** It does not build using Python 3 in Slackware 14.2 or previous because PyQt was not built with

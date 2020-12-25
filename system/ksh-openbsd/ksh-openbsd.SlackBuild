@@ -1,10 +1,14 @@
 #!/bin/sh
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright (c) 2010-2017 LEVAI Daniel
 =======
 # Copyright (c) 2010-2018 LEVAI Daniel
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright (c) 2010-2019 LEVAI Daniel
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -33,10 +37,14 @@
 
 PRGNAM=ksh-openbsd
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-20171122}
 =======
 VERSION=${VERSION:-20180115}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION=${VERSION:-20190804}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -87,9 +95,16 @@ CFLAGS="$SLKCFLAGS $(getconf LFS_CFLAGS)" make
 make check
 make install DESTDIR=$PKG
 
-strip --strip-unneeded $PKG/bin/pdksh
-gzip -9 $PKG/usr/man/man1/pdksh.1
-gzip -9 $PKG/usr/man/man1/pdksh-sh.1
+if [ -n "${PDKSH_BINNAME}" ];then
+	mv $PKG/bin/pdksh $PKG/bin/"${PDKSH_BINNAME}"
+	mv $PKG/usr/man/man1/pdksh.1 $PKG/usr/man/man1/"${PDKSH_BINNAME}".1
+	mv $PKG/usr/man/man1/pdksh-sh.1 $PKG/usr/man/man1/"${PDKSH_BINNAME}"-sh.1
+fi
+BINNAME=${PDKSH_BINNAME:-pdksh}
+
+strip --strip-unneeded $PKG/bin/"${BINNAME}"
+gzip -9 $PKG/usr/man/man1/"${BINNAME}".1
+gzip -9 $PKG/usr/man/man1/"${BINNAME}"-sh.1
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \

@@ -1,4 +1,5 @@
 PRGNAM="raw-thumbnailer"
+<<<<<<< HEAD
 VERSION="0.2.1"
 HOMEPAGE="https://github.com/erlendd/raw-thumbnailer"
 <<<<<<< HEAD
@@ -7,8 +8,14 @@ DOWNLOAD="http://slackware.uk/sbosrcarch/by-name/graphics/raw-thumbnailer/raw-th
 DOWNLOAD="http://ponce.cc/slackware/sources/repo/raw-thumbnailer-0.2.1.tar.gz"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 MD5SUM="a39282120d8f754e9f6adb768d65b72a"
+=======
+VERSION="3.0.0"
+HOMEPAGE="https://libopenraw.freedesktop.org/raw-thumbnailer/"
+DOWNLOAD="https://libopenraw.freedesktop.org/download/raw-thumbnailer-3.0.0.tar.bz2"
+MD5SUM="fc56f327b3e2b2c647abd99b728b27a2"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="libopenraw"
-MAINTAINER="Michiel van Wessem"
-EMAIL="michiel@slackbuilds.org"
+MAINTAINER="B. Watson"
+EMAIL="yalhcru@gmail.com"

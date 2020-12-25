@@ -1,5 +1,6 @@
 PRGNAM="libvterm"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="20170329"
 HOMEPAGE="https://github.com/neovim/libvterm"
 DOWNLOAD="https://github.com/neovim/libvterm/archive/5a748f9/libvterm-5a748f97fbf27003e141002b58933a99f3addf8d.tar.gz"
@@ -10,6 +11,12 @@ HOMEPAGE="https://github.com/neovim/libvterm"
 DOWNLOAD="https://github.com/neovim/libvterm/archive/005845/libvterm-005845cd58ca409a970d822b74e1a02a503d32e7.tar.gz"
 MD5SUM="8ab8d15ebec87bc14833138235d28d66"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.1.3"
+HOMEPAGE="http://www.leonerd.org.uk/code/libvterm/"
+DOWNLOAD="http://www.leonerd.org.uk/code/libvterm/libvterm-0.1.3.tar.gz"
+MD5SUM="4581aec6b621f5ca5cf5bff97dea6e05"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

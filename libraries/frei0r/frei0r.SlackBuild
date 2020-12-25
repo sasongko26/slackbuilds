@@ -5,10 +5,14 @@
 # Copyright 2009, Jonathan Larsen (agentc0re), SLC, UT
 # Contact Info: agentc0re 'AT' learnix 'DOT' net
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Copyright 2012-2017 Matteo Bernardini <ponce@slackbuilds.org>, Pisa, Italy
 =======
 # Copyright 2012-2018 Matteo Bernardini <ponce@slackbuilds.org>, Pisa, Italy
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Copyright 2012-2020 Matteo Bernardini <ponce@slackbuilds.org>, Pisa, Italy
+>>>>>>> upstream/master
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -48,11 +52,20 @@ VERSION=${VERSION:-1.6.0}
 =======
 # Mar 14th, 2018
 #   *Updated for 1.6.1
+# Jan 1st, 2020
+#   *Updated for 1.7.0
+# Jan 20th, 2020
+#   *Disabled opencv support
 
 PRGNAM=frei0r
+<<<<<<< HEAD
 VERSION=${VERSION:-1.6.1}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 BUILD=${BUILD:-1}
+=======
+VERSION=${VERSION:-1.7.0}
+BUILD=${BUILD:-2}
+>>>>>>> upstream/master
 TAG=${TAG:-_SBo}
 
 if [ -z "$ARCH" ]; then
@@ -97,18 +110,20 @@ find -L . \
  \( -perm 666 -o -perm 664 -o -perm 640 -o -perm 600 -o -perm 444 \
   -o -perm 440 -o -perm 400 \) -exec chmod 644 {} \;
 
-# Fix installation paths
-sed -i \
-  -e "s|lib/|lib$LIBDIRSUFFIX/|" \
-  -e "s|lib\"|lib$LIBDIRSUFFIX\"|" \
-  CMakeLists.txt || exit 1
+# Apply upstream patches if present
+if [ -d $CWD/patches ]; then
+  for i in $CWD/patches/* ; do patch -p1 < $i ; done
+fi
 
+# Disable opencv support, not compatible with 4.2.x
 mkdir -p build
 cd build
   cmake \
     -DCMAKE_C_FLAGS:STRING="$SLKCFLAGS" \
-    -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS" \
+    -DCMAKE_CXX_FLAGS:STRING="$SLKCFLAGS -std=c++11" \
     -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=/usr/lib$LIBDIRSUFFIX \
+    -DWITHOUT_OPENCV=1 \
     -DCMAKE_BUILD_TYPE=Release ..
   make
   make install DESTDIR=$PKG

@@ -1,5 +1,6 @@
 PRGNAM="gambatte-libretro"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="2017.02.03_b1af734"
 HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/gambatte-libretro-2017.02.03_b1af734.tar.xz"
@@ -10,8 +11,14 @@ HOMEPAGE="https://www.libretro.com/"
 DOWNLOAD="http://ks392457.kimsufi.com/orbea/stuff/slackbuilds/src/libretro/gambatte-libretro-2017.12.17_f3ca27f.tar.xz"
 MD5SUM="89c3031929c5f6c70ed494e763aa8452"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="2018.10.22_5ee8b1e"
+HOMEPAGE="https://www.libretro.com/"
+DOWNLOAD="http://slackless.raccoons.tech/src/libretro/gambatte-libretro-2018.10.22_5ee8b1e.tar.xz"
+MD5SUM="d02329b684152901a63f772ad03f01a7"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="RetroArch"
-MAINTAINER="Hunter Sezen"
-EMAIL="orbea@fredslev.dk"
+MAINTAINER="orphaned - no maintainer"
+EMAIL="nobody@nowhere.com"

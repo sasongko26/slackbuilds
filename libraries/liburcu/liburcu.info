@@ -1,5 +1,6 @@
 PRGNAM="liburcu"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="0.10.0"
 HOMEPAGE="http://liburcu.org/"
 DOWNLOAD="https://www.lttng.org/files/urcu/userspace-rcu-0.10.0.tar.bz2"
@@ -10,6 +11,12 @@ HOMEPAGE="http://liburcu.org/"
 DOWNLOAD="https://www.lttng.org/files/urcu/userspace-rcu-0.10.1.tar.bz2"
 MD5SUM="281a2f92fdc39c40ad6b76f6631fdbd7"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="0.12.1"
+HOMEPAGE="http://liburcu.org/"
+DOWNLOAD="https://www.lttng.org/files/urcu/userspace-rcu-0.12.1.tar.bz2"
+MD5SUM="5e419d7b30d0d98bffe0014c704ae936"
+>>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES=""

@@ -1,5 +1,6 @@
 PRGNAM="atom-amd64"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.21.0"
 HOMEPAGE="https://atom.io/"
 DOWNLOAD="UNSUPPORTED"
@@ -14,6 +15,14 @@ MD5SUM=""
 DOWNLOAD_x86_64="https://github.com/atom/atom/releases/download/v1.27.0/atom-amd64.tar.gz"
 MD5SUM_x86_64="acd1716fac8371336ce53e9a2e89ae42"
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+VERSION="1.28.0"
+HOMEPAGE="https://atom.io/"
+DOWNLOAD="UNSUPPORTED"
+MD5SUM=""
+DOWNLOAD_x86_64="https://github.com/atom/atom/releases/download/v1.28.0/atom-amd64.tar.gz"
+MD5SUM_x86_64="d0cb34707319eacfe60a73133dec20da"
+>>>>>>> upstream/master
 REQUIRES=""
 MAINTAINER="Mohammad Etemaddar"
 EMAIL="mohammad.etemaddar@gmail.com"

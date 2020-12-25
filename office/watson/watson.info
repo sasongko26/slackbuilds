@@ -1,5 +1,6 @@
 PRGNAM="watson"
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.4.0"
 HOMEPAGE="http://tailordev.github.io/Watson/"
 DOWNLOAD="https://github.com/TailorDev/Watson/archive/1.4.0/Watson-1.4.0.tar.gz"
@@ -9,9 +10,12 @@ MD5SUM_x86_64=""
 REQUIRES=""
 =======
 VERSION="1.5.2"
+=======
+VERSION="1.8.0"
+>>>>>>> upstream/master
 HOMEPAGE="http://tailordev.github.io/Watson/"
-DOWNLOAD="https://github.com/TailorDev/Watson/archive/1.5.2/Watson-1.5.2.tar.gz"
-MD5SUM="518ae1688f3b60f79d76c76e85a5df02"
+DOWNLOAD="https://github.com/TailorDev/Watson/archive/1.8.0.tar.gz"
+MD5SUM="4352a8ae25a37270f30b1aa6e034fa1f"
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
 REQUIRES="arrow click"

@@ -3,6 +3,7 @@
 # Slackware build script for dropbox
 
 # Copyright 2017 cmyster amit.ugol@gmail.com
+# Copyright 2019-2020 Willy Sudiarto Raharjo <willysr@slackbuilds.org>
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -24,6 +25,7 @@
 
 
 # Public changelog can be found in: https://www.dropboxforum.com
+<<<<<<< HEAD
 # SlackBuild changelog:
 <<<<<<< HEAD
 =======
@@ -66,6 +68,13 @@ VERSION=${VERSION:-39.4.49}
 PRGNAM=dropbox
 VERSION=${VERSION:-50.4.71}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
+=======
+# Source for x86: https://www.dropbox.com/download?plat=lnx.x86
+# Source for x86_64: https://www.dropbox.com/download?plat=lnx.x86_64
+
+PRGNAM=dropbox
+VERSION=${VERSION:-111.4.472}
+>>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
