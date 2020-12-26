@@ -1,6 +1,7 @@
 PRGNAM="netdata"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="1.8.0"
 HOMEPAGE="https://github.com/firehol/netdata"
 DOWNLOAD="https://github.com/firehol/netdata/archive/v1.8.0/netdata-1.8.0.tar.gz"
@@ -16,6 +17,12 @@ VERSION="1.26.0"
 HOMEPAGE="https://github.com/netdata/netdata"
 DOWNLOAD="https://github.com/netdata/netdata/archive/v1.26.0/netdata-1.26.0.tar.gz"
 MD5SUM="c273bed113784f0c9479a432679ec91b"
+>>>>>>> upstream/master
+=======
+VERSION="1.28.0"
+HOMEPAGE="https://github.com/netdata/netdata"
+DOWNLOAD="https://github.com/netdata/netdata/archive/v1.28.0/netdata-1.28.0.tar.gz"
+MD5SUM="336bfdc2f21f0b968b16c7f8c1065964"
 >>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""

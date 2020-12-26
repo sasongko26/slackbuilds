@@ -31,12 +31,16 @@
 PRGNAM=nvidia-kernel
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-384.90}
 =======
 VERSION=${VERSION:-390.59}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 =======
 VERSION=${VERSION:-450.80.02}
+>>>>>>> upstream/master
+=======
+VERSION=${VERSION:-460.27.04}
 >>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}

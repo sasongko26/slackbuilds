@@ -25,12 +25,16 @@
 PRGNAM=tor-browser
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-7.0.10}
 =======
 VERSION=${VERSION:-7.5.5}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 =======
 VERSION=${VERSION:-10.0.6}
+>>>>>>> upstream/master
+=======
+VERSION=${VERSION:-10.0.7}
 >>>>>>> upstream/master
 PRGLANG=${PRGLANG:-en-US}
 BUILD=${BUILD:-1}

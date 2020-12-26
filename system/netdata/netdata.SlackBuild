@@ -25,12 +25,16 @@
 PRGNAM=netdata
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-1.8.0}
 =======
 VERSION=${VERSION:-1.10.0}
 >>>>>>> 31ffa0993a78202724c2a79363e4831623be7fcf
 =======
 VERSION=${VERSION:-1.26.0}
+>>>>>>> upstream/master
+=======
+VERSION=${VERSION:-1.28.0}
 >>>>>>> upstream/master
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}

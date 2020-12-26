@@ -29,6 +29,7 @@
 PRGNAM=nvidia-driver
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION=${VERSION:-384.90}
 =======
 VERSION=${VERSION:-390.59}
@@ -37,6 +38,10 @@ BUILD=${BUILD:-1}
 =======
 VERSION=${VERSION:-450.80.02}
 BUILD=${BUILD:-2}
+>>>>>>> upstream/master
+=======
+VERSION=${VERSION:-460.27.04}
+BUILD=${BUILD:-1}
 >>>>>>> upstream/master
 TAG=${TAG:-_SBo}
 

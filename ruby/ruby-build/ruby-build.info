@@ -1,6 +1,7 @@
 PRGNAM="ruby-build"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 VERSION="20170914"
 HOMEPAGE="https://github.com/rbenv/ruby-build"
 DOWNLOAD="https://github.com/rbenv/ruby-build/archive/v20170914/ruby-build-20170914.tar.gz"
@@ -16,6 +17,12 @@ VERSION="20201210"
 HOMEPAGE="https://github.com/rbenv/ruby-build"
 DOWNLOAD="https://github.com/rbenv/ruby-build/archive/v20201210/ruby-build-20201210.tar.gz"
 MD5SUM="c8c7a991f31590797b9db23a2ac9c982"
+>>>>>>> upstream/master
+=======
+VERSION="20201221"
+HOMEPAGE="https://github.com/rbenv/ruby-build"
+DOWNLOAD="https://github.com/rbenv/ruby-build/archive/v20201221/ruby-build-20201221.tar.gz"
+MD5SUM="57f07fd05a0d47bb28a818191cf93323"
 >>>>>>> upstream/master
 DOWNLOAD_x86_64=""
 MD5SUM_x86_64=""
